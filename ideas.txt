@@ -1,0 +1,207 @@
+BOOKSVERSUSMOVIES.COM — CONSOLIDATED IDEAS & TOOLING NOTES
+============================================================
+Last updated: April 2026
+Focus: Static HTML affiliate site, 10 launch pages, Netlify deployment
+
+---
+
+## 1. MASTER REFERENCE FILE (Single Source of Truth)
+
+Each book/movie comparison page should be driven by a single JSON
+reference file (e.g., books.json or manifest.json) rather than
+hard-coded HTML. This is the most important architectural decision.
+
+### What lives in the reference file per entry:
+- Unique slug/ID (e.g., "project-hail-mary")
+- Book title, author, year
+- Film title, director, release year
+- Amazon ASIN (10-digit, uppercase)
+- Amazon affiliate tracking tag (e.g., "booksversusmovies-20")
+- YouTube trailer video ID
+- Local cover image filename (e.g., "cover-project-hail-mary.jpg")
+- Page status field: "draft" | "complete" | "live"
+  → Pages with status != "live" are hidden/excluded from build output
+- Five prose sections:
+    - what_book_does_better
+    - what_movie_does_better
+    - key_differences
+    - verdict
+    - (optional: seo_summary for meta description)
+
+### Why this matters:
+- Change your affiliate tag site-wide in ONE place
+- Add a new book by adding ~10 lines of JSON, no HTML editing
+- The status field lets you stage drafts without publishing them
+- Enables auto-generation of schema markup (JSON-LD) for rich snippets
+- Mirrors the AncientWorldReference pipeline philosophy
+
+---
+
+## 2. AFFILIATE LINK SYSTEM
+
+### Current tool: affiliate_link_finder.html
+A browser-based generator that:
+- Accepts raw Amazon URLs or bare ASINs (one per line)
+- Accepts a base tag (e.g., readingtheiliad-20) and optional
+  custom tracking suffix (e.g., "phailmary-book")
+- Constructs full tag: {site}-{custom}-{region} (e.g., readingtheiliad-odyssey-20)
+- Outputs: clean affiliate URL + ready-to-paste HTML anchor tag
+- HTML output format: <a class="book-affiliate" href="..." target="_blank" rel="noopener">Buy on Amazon →</a>
+
+### Link Manager tool (link_manager.html):
+- Styled with the site's dark/gold palette (--ink, --gold, --bg vars)
+- Same ASIN/URL input, same affiliate construction
+- Adds a real-time process log panel (terminal aesthetic)
+- Outputs SUCCESS/FAILURE/WARNING per line with timestamps
+- Final summary report: total lines, success count, failure count
+
+### Best practice for BooksVersusMovies:
+- Use a dedicated tracking tag per book (e.g., "booksversusmovies-phailmary-20")
+  so Amazon Associates reports show which titles drive clicks
+- All affiliate links use: ?tag={your-tag} appended to https://www.amazon.com/dp/{ASIN}
+- rel="noopener" and target="_blank" on every link (already in HTML output)
+
+---
+
+## 3. COVER IMAGE PIPELINE
+
+### Current tool: cover_image_fetcher.html
+A browser-based tool that:
+- Accepts CSV rows (filename, ASIN, affiliate_url), ASIN|filename pairs,
+  or bare ASINs
+- Tries four Amazon CDN URL patterns in sequence per ASIN:
+    1. images-na.ssl-images-amazon.com/images/P/{ASIN}.01.LZZZZZZZ.jpg
+    2. images-na.ssl-images-amazon.com/images/P/{ASIN}.01._SX300_.jpg
+    3. m.media-amazon.com/images/P/{ASIN}.01.LZZZZZZZ.jpg
+    4. m.media-amazon.com/images/P/{ASIN}.01._SX300_.jpg
+- Skips images under 2KB (error/placeholder images)
+- Shows live preview thumbnails as it fetches
+- Individual or bulk download with correct filenames
+- Falls back to a generated wget bash script if CORS blocks browser fetching
+
+### wget fallback script:
+Run inside your /images/ folder:
+  wget -q -O "cover-project-hail-mary.jpg" "{CDN_URL}" && echo "OK" || echo "FAIL"
+
+### Naming convention for cover files:
+  cover-{slug}.jpg
+  e.g.: cover-project-hail-mary.jpg, cover-the-odyssey-nolan.jpg
+
+---
+
+## 4. INTELLIGENT CONTENT ORCHESTRATOR (Future / Pipeline Idea)
+
+The tools above are manual. The longer-term vision is a script that
+behaves as an Intelligent Content Orchestrator — bridging the gap
+between raw ideas and deployed pages.
+
+### Algorithm outline:
+1. Initialization
+   - Load target project (BooksVersusMovies vs AncientWorld)
+   - Load affiliate tracking ID
+   - Load existing manifest to prevent duplicate entries
+
+2. Discovery & Selection
+   - Accept seed input: book title or topic
+   - Query LLM or reference DB to identify:
+       - Related translations or editions
+       - Known film adaptations and directors
+       - "Similar works" for cross-linking
+   - Score by relevance: items appearing in multiple categories rank higher
+   - Filter against existing manifest (skip already-live entries)
+
+3. Metadata Harvesting
+   - Retrieve ASIN / ISBN-to-ASIN lookup
+   - Pull YouTube trailer ID
+   - Generate cover CDN URL from ASIN
+   - Construct affiliate URL
+
+4. Audit & Validation
+   - Is the ASIN exactly 10 alphanumeric characters?
+   - Does the YouTube ID return a valid embed (not 404)?
+   - Does a local cover image already exist in /images/?
+   - Assign status: SUCCESS | WARNING (missing metadata) | FAILURE (broken)
+
+5. Output
+   - Append validated entry to master manifest JSON
+   - Generate build_report.log
+   - Optionally generate the HTML page from a template
+
+### Example heuristic ("Dune" seed):
+   Input: "Dune"
+   → Finds: Frank Herbert novel, Denis Villeneuve film (2021 + 2024)
+   → Cross-references: both appear in "Herbert works" AND "Villeneuve films"
+   → Auto-flags: Deluxe Hardcover ASIN + 2024 Sequel Trailer ID as high-priority
+   → Outputs: draft manifest entry + cover fetch command + affiliate link
+
+---
+
+## 5. CSS & VISUAL DESIGN NOTES
+
+(css_ideas.txt was empty — recording design decisions from project context instead)
+
+### Shared design system (both sites):
+- Google Fonts: Playfair Display (headings) + Source Serif 4 (body)
+- Dark header with gold accents
+- CSS variables:
+    --ink: #1a1714
+    --gold: #c8973a
+    --bg: #faf7f2
+- Consistent page template across all entries
+- Visual consistency is a core differentiator over Wikipedia / casual blogs
+
+### BooksVersusMovies page layout:
+- Book cover image (left) with affiliate link below
+- YouTube trailer embed (right)
+- Five prose sections below the fold:
+    1. What the book does better
+    2. What the movie does better
+    3. Key differences
+    4. Verdict
+    (5. Optional: Further Reading with additional affiliate links)
+
+### Performance notes:
+- Use YouTube facade pattern (thumbnail + play button CSS overlay)
+  so pages load without waiting for YouTube iframe scripts
+- Cover images: serve as locally hosted JPGs (no hotlinking Amazon CDN)
+- No CMS, no framework, no database — pure static HTML
+
+---
+
+## 6. DEPLOYMENT CHECKLIST (BooksVersusMovies Launch)
+
+- [ ] Register booksversusmovies.com (Namecheap or Cloudflare Registrar)
+- [ ] Connect domain to Netlify via DNS (A record or CNAME)
+- [ ] Sign up for Amazon Associates; get approved tracking tag
+- [ ] Run find-and-replace across all 10 HTML files:
+        placeholder → ?tag=booksversusmovies-20
+- [ ] Run cover image fetcher for all 10 titles; save to /images/
+- [ ] Validate all YouTube embed IDs still resolve
+- [ ] Submit sitemap.xml to Google Search Console
+- [ ] Add robots.txt
+- [ ] Set up Netlify redirect rules if needed (_redirects file)
+
+### Launch titles (10 pages):
+1. Project Hail Mary
+2. The Odyssey (Nolan)
+3. Wuthering Heights
+4. Hunger Games: Sunrise on the Reaping
+5. Verity
+6. Narnia
+7. Remarkably Bright Creatures
+8. Hamnet
+9. Dune
+10. The Martian
+
+---
+
+## 7. STRATEGIC NOTES
+
+- BooksVersusMovies is the faster affiliate revenue play; prioritize speed to launch
+- The Nolan Odyssey (July 2026) is the highest-traffic opportunity and bridges
+  both sites — BooksVersusMovies covers the comparison, AncientWorldReference
+  covers the source material, readingtheodyssey.com covers the text itself
+- Consider per-title tracking tags (booksversusmovies-{slug}-20) from day one
+  so Associates data is clean — harder to retrofit later
+- If the manifest/reference file is implemented early, scaling from 10 to 50+
+  pages becomes a data entry task, not a web development task

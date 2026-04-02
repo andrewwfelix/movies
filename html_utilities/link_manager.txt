@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliate Link Manager & Status Log</title>
+  <style>
+    :root { --ink: #1a1714; --gold: #c8973a; --bg: #faf7f2; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--ink); margin: 40px; line-height: 1.6; }
+    textarea, input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+    button { padding: 12px 24px; background: var(--ink); color: var(--gold); border: 1px solid var(--gold); cursor: pointer; font-weight: bold; }
+    button:hover { background: var(--gold); color: var(--ink); }
+    
+    .dashboard { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+    table { width: 100%; border-collapse: collapse; background: white; margin-top: 20px; font-size: 14px; }
+    th, td { border: 1px solid #eee; padding: 12px; text-align: left; }
+    th { background: #f4f1ec; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; }
+
+    /* Log Styling */
+    .log-container { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 4px; font-family: monospace; font-size: 12px; max-height: 400px; overflow-y: auto; }
+    .log-entry { margin-bottom: 5px; border-bottom: 1px solid #333; padding-bottom: 2px; }
+    .success { color: #4caf50; }
+    .failure { color: #f44336; font-weight: bold; }
+    .stats { margin-top: 10px; padding-top: 10px; border-top: 1px solid #555; color: var(--gold); }
+  </style>
+</head>
+<body>
+  <h1>Link Manager & Validation Log</h1>
+  <p>Paste ASINs or URLs to generate affiliate code and validate your reference data.</p>
+
+  <div class="dashboard">
+    <div class="input-area">
+      <label><strong>Tracking ID:</strong></label>
+      <input type="text" id="tag" value="readingtheodyssey-20">
+      
+      <label><strong>Input (ASIN or Link per line):</strong></label>
+      <textarea id="inputList" rows="10" placeholder="0393356256&#10;https://www.amazon.com/dp/0140268863"></textarea>
+      <button onclick="processLinks()">Generate & Log Results</button>
+
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>ASIN</th>
+            <th>Clean Link</th>
+            <th>HTML Fragment</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="log-area">
+      <h3>Process Log</h3>
+      <div id="log" class="log-container">
+        <div class="log-entry">Waiting for input...</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function processLinks() {
+      const tag = document.getElementById('tag').value.trim();
+      const input = document.getElementById('inputList').value.trim();
+      const logEl = document.getElementById('log');
+      const tbody = document.querySelector('#resultTable tbody');
+      
+      if (!input) return;
+
+      const lines = input.split('\n').filter(l => l.trim());
+      tbody.innerHTML = '';
+      logEl.innerHTML = '';
+      
+      let successCount = 0;
+      let failCount = 0;
+
+      lines.forEach((line, index) => {
+        const time = new Date().toLocaleTimeString([], { hour12: false });
+        
+        // Extract ASIN (10 alphanumeric chars) 
+        let asinMatch = line.match(/(?:\/dp\/|ASIN=|asin:)([A-Z0-9]{10})/i);
+        let asin = asinMatch ? asinMatch[1].toUpperCase() : (line.trim().length === 10 ? line.trim().toUpperCase() : null);
+
+        const logEntry = document.createElement('div');
+        logEntry.className = 'log-entry';
+
+        if (asin && /^[A-Z0-9]{10}$/.test(asin)) {
+          const url = `https://www.amazon.com/dp/${asin}?tag=${tag}`;
+          const html = `<a class="book-affiliate" href="${url}" target="_blank" rel="noopener">Buy on Amazon →</a>`;
+
+          // Update Table
+          const row = tbody.insertRow();
+          row.innerHTML = `<td>${asin}</td><td><a href="${url}" target="_blank">Link</a></td><td><code>${html.replace(/</g, '&lt;')}</code></td>`;
+          
+          // Update Log
+          logEntry.innerHTML = `[${time}] <span class="success">SUCCESS:</span> Processed ASIN ${asin}`;
+          successCount++;
+        } else {
+          logEntry.innerHTML = `[${time}] <span class="failure">FAILURE:</span> Could not resolve ASIN for line ${index + 1}: "${line.substring(0,20)}..."`;
+          failCount++;
+        }
+        
+        logEl.appendChild(logEntry);
+      });
+
+      // Final Summary Log
+      const summary = document.createElement('div');
+      summary.className = 'stats';
+      summary.innerHTML = `--- FINAL REPORT ---<br>Total Lines: ${lines.length}<br>Success: ${successCount}<br>Failures: ${failCount}`;
+      logEl.appendChild(summary);
+    }
+  </script>
+</body>
+</html>

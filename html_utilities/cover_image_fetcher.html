@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Cover Image Fetcher</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background: #f9f9f9; }
+    h1 { color: #232f3e; }
+    textarea { width: 100%; padding: 10px; margin: 10px 0; font-size: 14px; font-family: monospace; }
+    button { padding: 12px 20px; font-size: 15px; background: #232f3e; color: white; border: none; cursor: pointer; margin-right: 10px; margin-bottom: 10px; border-radius: 3px; }
+    button:hover { background: #37475a; }
+    button:disabled { background: #999; cursor: not-allowed; }
+    #progress { margin: 16px 0; font-size: 14px; color: #555; }
+    #results { margin-top: 20px; }
+    .book-row {
+      display: flex; align-items: center; gap: 16px;
+      background: white; border: 1px solid #ddd; border-radius: 4px;
+      padding: 12px 16px; margin-bottom: 8px;
+    }
+    .book-row img { width: 55px; height: 75px; object-fit: cover; border: 1px solid #ccc; border-radius: 2px; background: #eee; flex-shrink: 0; }
+    .book-row .img-placeholder { width: 55px; height: 75px; background: #ddd; border: 1px solid #ccc; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #888; text-align: center; flex-shrink: 0; }
+    .book-info { flex: 1; min-width: 0; }
+    .book-filename { font-family: monospace; font-size: 12px; color: #333; word-break: break-all; }
+    .book-asin { font-size: 12px; color: #888; margin-top: 2px; }
+    .status { font-size: 12px; font-weight: bold; white-space: nowrap; }
+    .status.ok { color: #2a7a2a; }
+    .status.fail { color: #cc0000; }
+    .status.pending { color: #888; }
+    .dl-btn { padding: 6px 12px; font-size: 12px; background: #2a7a2a; color: white; border: none; cursor: pointer; border-radius: 3px; white-space: nowrap; }
+    .dl-btn:hover { background: #1e5a1e; }
+    .dl-btn:disabled { background: #aaa; cursor: not-allowed; }
+    #wget-section { margin-top: 24px; background: white; border: 1px solid #ddd; border-radius: 4px; padding: 16px; }
+    #wget-section h3 { margin-top: 0; }
+    #wget-output { width: 100%; font-family: monospace; font-size: 12px; background: #1e1e1e; color: #d4d4d4; padding: 12px; border-radius: 4px; border: none; resize: vertical; }
+    .copy-btn { padding: 6px 14px; font-size: 12px; background: #555; color: white; border: none; cursor: pointer; border-radius: 3px; }
+    .copy-btn:hover { background: #333; }
+    .copy-btn.copied { background: #2a7a2a; }
+    #summary { margin: 12px 0; padding: 10px 16px; background: #e8f4e8; border-left: 4px solid #2a7a2a; border-radius: 0 4px 4px 0; font-size: 14px; display: none; }
+    .hint { font-size: 13px; color: #666; margin: 4px 0 12px; }
+  </style>
+</head>
+<body>
+
+<h1>📚 Book Cover Image Fetcher</h1>
+<p>Paste your CSV (image_filename, asin, affiliate_link) or just ASINs with filenames. The tool will attempt to fetch each cover from Amazon's image CDN and let you download them with the correct filename.</p>
+
+<label><strong>Input — CSV or ASIN|filename pairs (one per line):</strong></label>
+<p class="hint">Accepts: full CSV rows &nbsp;|&nbsp; <code>ASIN|filename.jpg</code> &nbsp;|&nbsp; bare ASINs (filename auto-generated)</p>
+<textarea id="csvInput" rows="14" placeholder="cover-wilson-the-odyssey.jpg,0393356256,https://www.amazon.com/dp/0393356256?tag=readingtheodyssey-20
+cover-fagles-the-odyssey.jpg,0140268863,https://www.amazon.com/dp/0140268863?tag=readingtheodyssey-20
+0520303369|cover-green-the-odyssey.jpg"></textarea>
+
+<button onclick="startFetch()">Fetch All Covers</button>
+<button onclick="downloadAll()" id="dlAllBtn" disabled>Download All Fetched</button>
+<button onclick="generateWget()">Generate wget Script</button>
+
+<div id="progress"></div>
+<div id="summary"></div>
+<div id="results"></div>
+
+<div id="wget-section" style="display:none;">
+  <h3>wget Script (run in your images/ folder)</h3>
+  <p class="hint">If browser fetching is blocked by CORS, copy this script and run it in your terminal inside your <code>images/</code> directory.</p>
+  <textarea id="wget-output" rows="20" readonly></textarea><br><br>
+  <button class="copy-btn" onclick="copyWget(this)">Copy Script</button>
+</div>
+
+<script>
+  // Amazon image CDN URL patterns to try in order
+  const cdnPatterns = [
+    asin => `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`,
+    asin => `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SX300_.jpg`,
+    asin => `https://m.media-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`,
+    asin => `https://m.media-amazon.com/images/P/${asin}.01._SX300_.jpg`,
+  ];
+
+  let fetchedImages = {}; // asin -> { blob, filename }
+
+  function parseInput(raw) {
+    const lines = raw.trim().split('\n').map(l => l.trim()).filter(l => l && !l.startsWith('image_filename'));
+    return lines.map(line => {
+      // CSV: filename,asin,url
+      const csvParts = line.split(',');
+      if (csvParts.length >= 2 && /^[A-Z0-9]{10}$/i.test(csvParts[1].trim())) {
+        return { filename: csvParts[0].trim(), asin: csvParts[1].trim().toUpperCase() };
+      }
+      // ASIN|filename
+      const pipeParts = line.split('|');
+      if (pipeParts.length === 2) {
+        const a = pipeParts[0].trim().toUpperCase();
+        const b = pipeParts[1].trim();
+        if (/^[A-Z0-9]{10}$/.test(a)) return { asin: a, filename: b };
+        if (/^[A-Z0-9]{10}$/.test(b.toUpperCase())) return { asin: b.toUpperCase(), filename: a };
+      }
+      // Bare ASIN
+      const bare = line.toUpperCase();
+      if (/^[A-Z0-9]{10}$/.test(bare)) {
+        return { asin: bare, filename: `cover-${bare.toLowerCase()}.jpg` };
+      }
+      return null;
+    }).filter(Boolean);
+  }
+
+  async function tryFetchImage(asin) {
+    for (const pattern of cdnPatterns) {
+      const url = pattern(asin);
+      try {
+        const resp = await fetch(url, { mode: 'cors' });
+        if (resp.ok) {
+          const blob = await resp.blob();
+          if (blob.size > 2000) return { blob, url }; // skip tiny error images
+        }
+      } catch(e) { /* try next */ }
+    }
+    return null;
+  }
+
+  async function startFetch() {
+    const raw = document.getElementById('csvInput').value;
+    const books = parseInput(raw);
+    if (!books.length) { alert('No valid ASINs found.'); return; }
+
+    fetchedImages = {};
+    const results = document.getElementById('results');
+    const progress = document.getElementById('progress');
+    const summary = document.getElementById('summary');
+    results.innerHTML = '';
+    summary.style.display = 'none';
+    document.getElementById('dlAllBtn').disabled = true;
+    document.getElementById('wget-section').style.display = 'none';
+
+    // Build rows
+    books.forEach(book => {
+      const row = document.createElement('div');
+      row.className = 'book-row';
+      row.id = `row-${book.asin}`;
+      row.innerHTML = `
+        <div class="img-placeholder" id="img-${book.asin}">loading...</div>
+        <div class="book-info">
+          <div class="book-filename">${book.filename}</div>
+          <div class="book-asin">ASIN: ${book.asin}</div>
+        </div>
+        <span class="status pending" id="status-${book.asin}">Pending</span>
+        <button class="dl-btn" id="dl-${book.asin}" disabled onclick="downloadOne('${book.asin}')">Download</button>
+      `;
+      results.appendChild(row);
+    });
+
+    let ok = 0, fail = 0;
+    for (let i = 0; i < books.length; i++) {
+      const book = books[i];
+      progress.textContent = `Fetching ${i + 1} of ${books.length}: ${book.filename}`;
+
+      const result = await tryFetchImage(book.asin);
+      const statusEl = document.getElementById(`status-${book.asin}`);
+      const imgEl = document.getElementById(`img-${book.asin}`);
+      const dlBtn = document.getElementById(`dl-${book.asin}`);
+
+      if (result) {
+        fetchedImages[book.asin] = { blob: result.blob, filename: book.filename };
+        const url = URL.createObjectURL(result.blob);
+        imgEl.outerHTML = `<img src="${url}" id="img-${book.asin}" title="${book.filename}" />`;
+        statusEl.textContent = '✓ Fetched';
+        statusEl.className = 'status ok';
+        dlBtn.disabled = false;
+        ok++;
+      } else {
+        statusEl.textContent = '✗ CORS blocked';
+        statusEl.className = 'status fail';
+        imgEl.textContent = 'blocked';
+        fail++;
+      }
+    }
+
+    progress.textContent = '';
+    summary.style.display = 'block';
+    summary.innerHTML = `<strong>${ok} fetched successfully</strong>${fail ? `, ${fail} blocked (use wget script below)` : ' — all done!'}`;
+    if (ok > 0) document.getElementById('dlAllBtn').disabled = false;
+  }
+
+  function downloadOne(asin) {
+    const img = fetchedImages[asin];
+    if (!img) return;
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(img.blob);
+    a.download = img.filename;
+    a.click();
+  }
+
+  function downloadAll() {
+    const keys = Object.keys(fetchedImages);
+    if (!keys.length) { alert('No images fetched yet.'); return; }
+    keys.forEach((asin, i) => {
+      setTimeout(() => downloadOne(asin), i * 300);
+    });
+  }
+
+  function generateWget() {
+    const raw = document.getElementById('csvInput').value;
+    const books = parseInput(raw);
+    if (!books.length) { alert('No valid ASINs found.'); return; }
+
+    const lines = ['#!/bin/bash', '# Run this script inside your images/ folder', '# e.g.: cd /path/to/your/images && bash fetch_covers.sh', ''];
+    books.forEach(book => {
+      const url = cdnPatterns[0](book.asin);
+      lines.push(`wget -q -O "${book.filename}" "${url}" && echo "OK: ${book.filename}" || echo "FAIL: ${book.filename}"`);
+    });
+    lines.push('', 'echo "Done."');
+
+    document.getElementById('wget-output').value = lines.join('\n');
+    document.getElementById('wget-section').style.display = 'block';
+    document.getElementById('wget-section').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function copyWget(btn) {
+    const text = document.getElementById('wget-output').value;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy Script'; btn.classList.remove('copied'); }, 1500);
+    });
+  }
+</script>
+</body>
+</html>

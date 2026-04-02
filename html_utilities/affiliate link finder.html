@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Affiliate Link Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+    textarea, input, select { width: 100%; padding: 10px; margin: 10px 0; font-size: 16px; }
+    button { padding: 12px 20px; font-size: 16px; background: #232f3e; color: white; border: none; cursor: pointer; }
+    button:hover { background: #37475a; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background: #f5f5f5; }
+    .output { background: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 20px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Amazon Affiliate Link Generator</h1>
+  <p>Paste your Amazon links or ASINs (one per line). Choose your tracking ID and generate.</p>
+
+  <!-- Your main tag -->
+  <label><strong>Your Base Tag:</strong></label><br>
+  <input type="text" id="baseTag" value="readingtheiliad-20" placeholder="readingtheiliad-20">
+
+  <label><strong>Custom Tracking ID (optional):</strong> e.g. odyssey-wilson, litcrit-odyssey</label><br>
+  <input type="text" id="customTracking" placeholder="odyssey-wilson">
+
+  <label><strong>Amazon Links or ASINs (one per line):</strong></label><br>
+  <textarea id="inputLinks" rows="10" placeholder="https://www.amazon.com/Odyssey-Homer/dp/0393356256
+0062060627
+https://www.amazon.com/Mighty-Dead-Why-Homer-Matters/dp/0007335539"></textarea>
+
+  <button onclick="generateLinks()">Generate Affiliate Links</button>
+
+  <h2>Results</h2>
+  <table id="resultTable">
+    <thead>
+      <tr>
+        <th>Original Input</th>
+        <th>Affiliate Link</th>
+        <th>HTML Code</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    function createAffiliateLink(inputStr, customTracking, baseTag) {
+      // Extract ASIN
+      let asinMatch = inputStr.match(/\/dp\/([A-Z0-9]{10})/);
+      let asin = asinMatch ? asinMatch[1] : inputStr.trim();
+
+      if (!/^[A-Z0-9]{10}$/.test(asin)) {
+        return { affiliate: "INVALID INPUT", html: "" };
+      }
+
+      // Build full tag
+      let fullTag = baseTag;
+      if (customTracking && customTracking.trim()) {
+        const mainPart = baseTag.split('-')[0];
+        const region = baseTag.split('-').pop();
+        fullTag = `${mainPart}-${customTracking.trim()}-${region}`;
+      }
+
+      const affiliateUrl = `https://www.amazon.com/dp/${asin}?tag=${fullTag}`;
+
+      const htmlCode = `<a class="book-affiliate" href="${affiliateUrl}" target="_blank" rel="noopener">Buy on Amazon →</a>`;
+
+      return { affiliate: affiliateUrl, html: htmlCode };
+    }
+
+    function generateLinks() {
+      const baseTag = document.getElementById('baseTag').value.trim() || 'readingtheiliad-20';
+      const customTracking = document.getElementById('customTracking').value.trim();
+      const inputText = document.getElementById('inputLinks').value.trim();
+
+      if (!inputText) {
+        alert("Please enter at least one Amazon link or ASIN.");
+        return;
+      }
+
+      const lines = inputText.split('\n').map(line => line.trim()).filter(line => line);
+      const tbody = document.querySelector('#resultTable tbody');
+      tbody.innerHTML = '';
+
+      lines.forEach(line => {
+        const result = createAffiliateLink(line, customTracking, baseTag);
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${line}</td>
+          <td><a href="${result.affiliate}" target="_blank">${result.affiliate}</a></td>
+          <td><code style="font-size:13px;">${result.html}</code></td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Optional: Allow pressing Enter in textarea to generate
+    document.getElementById('inputLinks').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        generateLinks();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+To achieve this, the script needs to move from a simple converter to an Intelligent Content Orchestrator.
+
+Since you want the script to "choose" relevant books and adaptations, the algorithm must incorporate a logic layer (or an LLM call via OpenRouter) to evaluate the relationships between the texts.
+
+The Unified Logic Algorithm
+1. Initialization & Input Phase
+Target Project: Identify which site/project you are building for (e.g., Iliad vs. Odyssey).
+
+Affiliate ID Injection: Load the specific Amazon Tracking ID (e.g., readingtheodyssey-20) to be used as the global suffix for all generated links.
+
+Existing Manifest: Read the existing_books.txt (a list of titles or ASINs already live on the site) to prevent duplicates.
+
+2. Discovery & Selection Phase (The "Intelligence" Layer)
+Seed Input: Accept a new topic (e.g., "The Trojan War" or "Denis Villeneuve's Dune").
+
+Relevancy Scoring: * Query a reference database (or LLM) for translations (e.g., Fagles vs. Lattimore).
+
+Identify "Adaptations" (Movies, retellings like Circe or The Song of Achilles).
+
+Filtering: Cross-reference the "New Discoveries" against the existing_books.txt. Only move forward with items not already present.
+
+3. Metadata Harvesting & Validation
+Data Retrieval: For each selected book/film, fetch:
+
+ASIN/ISBN: Ensure it's a 10-digit ASIN for Amazon link compatibility.
+
+YouTube ID: Pull the official trailer ID.
+
+Cover URL: Generate the OpenLibrary or Amazon CDN URL based on the ASIN.
+
+Affiliate Construction: Combine the ASIN + Affiliate ID into the final URL.
+
+4. The "Audit & Log" Engine
+Validation Check: * Does the YouTube ID return a 404?
+
+Is the ASIN 10 characters?
+
+Is the image file already in your local /images/ folder?
+
+Status Assignment: Label each item as SUCCESS, WARNING (missing metadata), or FAILURE (broken link).
+
+5. Output & Deployment
+JSON Update: Append the new validated items to your master_reference.json.
+
+Report Generation: Write the build_report.log summarizing what was added and what failed.
+
+Conceptual Architecture Diagram
+How this handles "Choosing"
+To make the script "choose" the best adaptations, the algorithm would use a Similarity Weighted Loop:
+
+Input: "Dune"
+
+Script Action: Calls an API to find "Works by Frank Herbert" AND "Films directed by Denis Villeneuve" AND "Books similar to Dune."
+
+Heuristic: It prioritizes items that appear in multiple categories (e.g., the Dune novel appears as both a Herbert work and a Villeneuve source material).
+
+Result: It automatically flags the 2024 Movie Trailer and the Deluxe Hardcover Book as high-priority additions.
+
+Why this fits your AEC workflow
+This mirrors Competitive Analysis in Proposal Management. Just as you would filter through past performance citations to find the most relevant "win" for a new RFP, this script filters the vast world of literature to find the most relevant "win" for your readers.
