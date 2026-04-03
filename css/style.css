@@ -223,11 +223,14 @@ nav a:hover { color: var(--gold); }
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  border-radius: 2px;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 0;
+  border: none;
 }
-.verdict-book { background: #e8f0e8; color: #2a5a2a; border: 1px solid #b0cdb0; }
-.verdict-film { background: #1e1c1a; color: var(--gold); border: 1px solid #444; }
-.verdict-tie  { background: #f0ebe0; color: #5a4a20; border: 1px solid #c8b880; }
+.verdict-book { border-left: 3px solid #4a7c4a; color: #2a4a2a; }
+.verdict-film { border-left: 3px solid #4a4a8a; color: #2a2a5a; }
+.verdict-tie  { border-left: 3px solid #c4a44a; color: #5a4a1e; }
 
 .body-text { max-width: 720px; }
 
