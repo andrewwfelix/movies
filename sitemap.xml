@@ -1,108 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://booksversusmovies.com/beloved.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://booksversusmovies.com/devil-wears-prada.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://booksversusmovies.com/frankenstein.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://booksversusmovies.com/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-03</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://booksversusmovies.com/atonement.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://booksversusmovies.com/lonesome-dove.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://booksversusmovies.com/big-little-lies.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://booksversusmovies.com/normal-people.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://booksversusmovies.com/dune.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://booksversusmovies.com/one-flew-over-the-cuckoos-nest.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://booksversusmovies.com/girl-on-the-train.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://booksversusmovies.com/pachinko.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://booksversusmovies.com/gone-girl.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://booksversusmovies.com/schindlers-list.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://booksversusmovies.com/hamnet.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://booksversusmovies.com/the-road.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://booksversusmovies.com/hunger-games-sunrise.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/kite-runner.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/narnia-magicians-nephew.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/never-let-me-go.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/no-country-for-old-men.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/project-hail-mary.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/remarkably-bright-creatures.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/room.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/the-martian.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/the-odyssey.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/the-shining.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/verity.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/wild.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://booksversusmovies.com/wuthering-heights.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://booksversusmovies.com/where-the-crawdads-sing.html</loc>
+    <lastmod>2026-04-03</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
