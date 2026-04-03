@@ -497,3 +497,11 @@ footer a { color: var(--gold); text-decoration: none; }
   color: var(--ink);
   margin-bottom: 0.4rem;
 }
+
+.affiliate-disclosure {
+  font-size: 0.7rem;
+  color: #888;
+  margin-top: 0.4rem;
+  text-align: center;
+  font-style: italic;
+}
