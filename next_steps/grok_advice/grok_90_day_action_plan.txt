@@ -1,0 +1,151 @@
+Books Versus Movies – 90-Day Action Plan
+Starting April 2026
+Commitment: ~1 hour per day (5–7 hours/week)
+Overall Goal
+Grow the site to 45–50 high-quality comparison pages, get most pages indexed by Google, launch the free lead magnet, diversify monetization, and set up for first affiliate commissions.
+
+Phase 1: Foundation & Quick Wins (Days 1–30)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WeekDaily Tasks (≈1 hour)Weekly GoalMilestone1Use Python script to improve Animal Farm + 2 more pages. Add Casting section to all 3.3 improved pagesAll pages have new structure (table, casting, buy-options, lead magnet CTA)2Improve 4 more pages. Update CSS if needed.7 total improved pagesSubmit sitemap to Google Search Console + request indexing for top 5 pages3Improve 4 pages. Create the Free “Book vs Movie Reader Guide” PDF.11 total pages + lead magnet draftedLead magnet finished4Improve 4 pages. Set up Bookshop.org + Audible accounts and add links to all improved pages.15 improved pagesMulti-affiliate “Where to Buy” section live on 15 pages
+End of Month 1 Target: 15 strong pages live, basic monetization diversified, lead magnet ready.
+
+Phase 2: Scale Content & Audience (Days 31–60)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WeekDaily Tasks (≈1 hour)Weekly GoalMilestone5Improve or write 4 new pages (focus on high-search titles).19 total pagesAdd email signup form (Mailchimp or ConvertKit free tier)6Improve/write 4 pages + promote the free guide on all pages.23 total pagesFirst 50–100 people on email list7Improve/write 4 pages. Start light promotion (Reddit, Goodreads).27 total pagesGoogle indexing begins showing movement8Improve/write 4 pages + review analytics.31+ total pagesLead magnet promoted on every page; email list growing weekly
+End of Month 2 Target: 30–35 quality pages live, email list started, early organic traffic appearing.
+
+Phase 3: Optimization & Diversification (Days 61–90)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WeekDaily Tasks (≈1 hour)Weekly GoalMilestone9Improve/write 4 pages. Test YouTube workflow (1 video).35+ pagesFirst YouTube video uploaded10Improve/write 4 pages + optimize top 5 performing pages.39 pagesInternal linking improved across site11Improve/write 4 pages + light social promotion.43 pagesFirst affiliate clicks appearing12Improve/write 3–4 pages + full review.47–50 total pagesFirst affiliate commission (or very close) + clear growth trend
+End of 90 Days Target:
+
+45–50 high-quality pages live
+Majority of pages indexed by Google
+Free lead magnet live + email list growing
+Multi-affiliate links (Amazon + Bookshop.org + Audible) active
+First YouTube video(s) published
+Realistic path to first affiliate commission(s) within the next 30–60 days
+
+
+Daily 1-Hour Routine Suggestion
+
+0–40 min: Improve or write one comparison page (use Python script when possible)
+40–50 min: Add links, schema, casting section, or buy-options block
+50–60 min: Quick promotion, analytics check, or lead-magnet tweaks
+
+Tracking Metrics (Check Weekly)
+
+Google Search Console: Impressions & clicks
+Google Analytics: Traffic & time-on-page
+Affiliate dashboards: Clicks and earnings
+Email list size
+
+
+You can now copy and paste the entire block above into Word, Google Docs, or any Markdown viewer, and the tables will stay nicely formatted.
+Would you like me to also create:
+
+A more detailed weekly checklist version?
+A printable version with checkboxes?
+Specific page recommendations for each week?

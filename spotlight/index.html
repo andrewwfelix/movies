@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BooksVersusMovies.com &mdash; Honest Book &amp; Movie Comparisons</title>
+  <meta name="description" content="Beautiful, honest comparisons of books and their film adaptations. What the book does better, what the movie does better, and whether you should read first.">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0DY0XDWVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P0DY0XDWVV');
+  </script>
+
+  <style>
+    /* ── SPOTLIGHT ──────────────────────────────────────────── */
+    .spotlight-section {
+      max-width: var(--max-w);
+      margin: 2.5rem auto 0;
+      padding: 0 2rem;
+    }
+    .spotlight-header {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .spotlight-header-star  { color: var(--gold); font-size: 0.7rem; flex-shrink: 0; }
+    .spotlight-header-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); flex-shrink: 0; white-space: nowrap; }
+    .spotlight-header-rule  { flex: 1; height: 1px; background: var(--rule); }
+
+    .spotlight-card {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      background: white;
+      min-height: 220px;
+      position: relative;
+    }
+    .spotlight-text {
+      padding: 2rem 3.5rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+    .spotlight-genre    { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+    .spotlight-title    { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; line-height: 1.1; color: var(--ink); margin-bottom: 0.4rem; }
+    .spotlight-byline   { font-size: 0.85rem; color: var(--ink-light); font-style: italic; margin-bottom: 1rem; }
+    .spotlight-pull     { font-size: 0.97rem; color: #2a2520; line-height: 1.65; border-left: 3px solid var(--gold); padding-left: 0.9rem; margin-bottom: 1.5rem; flex: 1; }
+    .spotlight-footer   { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .spotlight-verdict  { padding: 0.3em 1em; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; white-space: nowrap; }
+    .spotlight-cta      { font-size: 0.88rem; color: var(--gold); text-decoration: none; letter-spacing: 0.04em; transition: color 0.15s; white-space: nowrap; }
+    .spotlight-cta:hover { color: var(--ink); }
+
+    .spotlight-image {
+      position: relative;
+      background: var(--film-col);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .spotlight-trailer {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      position: relative;
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+    .spotlight-trailer img.thumb {
+      width: 100%; height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover; object-position: center;
+      display: block; transition: opacity 0.25s ease, transform 0.35s ease;
+    }
+    .spotlight-card:hover .spotlight-trailer img.thumb { opacity: 0.82; transform: scale(1.03); }
+    .spotlight-play {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px; height: 60px;
+      background: rgba(26,23,20,0.82); border: 2px solid var(--gold);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; color: var(--gold);
+      pointer-events: none; transition: all 0.2s ease;
+    }
+    .spotlight-trailer:hover .spotlight-play { background: var(--ink); transform: translate(-50%, -50%) scale(1.1); }
+    .spotlight-new {
+      position: absolute; top: 0.65rem; right: 0.65rem;
+      background: var(--gold); color: var(--ink);
+      font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 0.25em 0.7em; border-radius: 2px; font-weight: 700; z-index: 3;
+    }
+    .spotlight-book-cover {
+      position: absolute;
+      left: -44px; bottom: 2.25rem; z-index: 4;
+      width: 80px; height: 120px;
+      object-fit: cover; border-radius: 2px;
+      box-shadow: -3px 4px 20px rgba(0,0,0,0.5);
+      display: block; pointer-events: none;
+    }
+    @media (max-width: 760px) {
+      .spotlight-card { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+      .spotlight-image { min-height: 0; padding: 1.25rem; }
+      .spotlight-book-cover { left: auto; right: 1rem; bottom: -40px; width: 65px; height: 98px; }
+      .spotlight-text { padding: 1.5rem 1.5rem 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-logo" href="index.html">Books<span>Versus</span>Movies</a>
+    <nav>
+      <a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/index_alt.html">Browse All</a> &nbsp;&middot;&nbsp;
+      <a href="calendar.html">Upcoming</a> &nbsp;&middot;&nbsp;
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="home-hero">
+  <h1>The book was<br><em>probably</em> better.</h1>
+  <p>Honest, in-depth comparisons of books and their film adaptations. What each version does well. What gets lost. Whether to read first.</p>
+</div>
+
+<!-- ── Spotlight: injected here if index_spotlight.html exists ── -->
+<div id="spotlight-mount"></div>
+
+<div class="cards-section">
+  <h2>2026 Adaptations</h2>
+  <div class="cards-grid">
+
+    <a class="book-card" href="heated-rivalry.html">
+      <div class="book-card-img"><img src="images/heated-rivalry.jpg" alt="Heated Rivalry cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Romance / Sports Drama / LGBTQ+</span><h3>Heated Rivalry</h3><p class="card-author">Rachel Reid &mdash; Connor Storrie &amp; Hudson Williams</p></div>
+      <div class="book-card-footer">HBO Max Nov 2025 &middot; Too Close to Call</div>
+    </a>
+
+    <a class="book-card" href="project-hail-mary.html">
+      <div class="book-card-img"><img src="images/project-hail-mary.jpg" alt="Project Hail Mary cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Science Fiction</span><h3>Project Hail Mary</h3><p class="card-author">Andy Weir &mdash; Ryan Gosling stars</p></div>
+      <div class="book-card-footer">In theaters March 20, 2026 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="animal-farm.html">
+      <div class="book-card-img"><img src="images/animal-farm.jpg" alt="Animal Farm cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Political Satire</span><h3>Animal Farm</h3><p class="card-author">George Orwell &mdash; dir. Andy Serkis</p></div>
+      <div class="book-card-footer">May 1, 2026 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="the-odyssey.html">
+      <div class="book-card-img"><img src="images/the-odyssey.jpg" alt="The Odyssey cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Epic / Classic</span><h3>The Odyssey</h3><p class="card-author">Homer &mdash; dir. Christopher Nolan</p></div>
+      <div class="book-card-footer">In theaters Jul 17, 2026 &middot; Verdict TBD</div>
+    </a>
+
+    <a class="book-card" href="margos-got-money-troubles.html">
+      <div class="book-card-img"><img src="images/margos-got-money-troubles.jpg" alt="Margo&#8217;s Got Money Troubles cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Comedy / Drama</span><h3>Margo&#8217;s Got Money Troubles</h3><p class="card-author">Rufi Thorpe &mdash; Elle Fanning stars</p></div>
+      <div class="book-card-footer">Apple TV+ Apr 15, 2026 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="hunger-games-sunrise.html">
+      <div class="book-card-img"><img src="images/hunger-games-sunrise.jpg" alt="Hunger Games: Sunrise on the Reaping cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Dystopian Fiction</span><h3>Hunger Games: Sunrise on the Reaping</h3><p class="card-author">Suzanne Collins &mdash; Ralph Fiennes stars</p></div>
+      <div class="book-card-footer">In theaters Nov 20, 2026 &middot; Too Close to Call</div>
+    </a>
+
+    <a class="book-card" href="frankenstein.html">
+      <div class="book-card-img"><img src="images/frankenstein.jpg" alt="Frankenstein cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Gothic Horror / Classic</span><h3>Frankenstein</h3><p class="card-author">Mary Shelley &mdash; dir. Guillermo del Toro</p></div>
+      <div class="book-card-footer">Netflix 2026 &middot; Verdict TBD</div>
+    </a>
+
+    <a class="book-card" href="a-knight-of-the-seven-kingdoms.html">
+      <div class="book-card-img"><img src="images/a-knight-of-the-seven-kingdoms.jpg" alt="A Knight of the Seven Kingdoms cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Fantasy</span><h3>A Knight of the Seven Kingdoms</h3><p class="card-author">George R.R. Martin &mdash; HBO series</p></div>
+      <div class="book-card-footer">HBO 2025 &middot; Too Close to Call</div>
+    </a>
+
+    <a class="book-card" href="verity.html">
+      <div class="book-card-img"><img src="images/verity.jpg" alt="Verity cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Psychological Thriller</span><h3>Verity</h3><p class="card-author">Colleen Hoover &mdash; Anne Hathaway stars</p></div>
+      <div class="book-card-footer">In theaters Oct 2, 2026 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="fourth-wing.html">
+      <div class="book-card-img"><img src="images/fourth-wing.jpg" alt="Fourth Wing cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Fantasy Romance</span><h3>Fourth Wing</h3><p class="card-author">Rebecca Yarros &mdash; Amazon (TBA)</p></div>
+      <div class="book-card-footer">Series in development &middot; Book Wins</div>
+    </a>
+
+  </div>
+</div>
+
+<div class="cards-section">
+  <h2>Thrillers &amp; Page-Turners</h2>
+  <div class="cards-grid">
+
+    <a class="book-card" href="gone-girl.html">
+      <div class="book-card-img"><img src="images/gone-girl.jpg" alt="Gone Girl cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Psychological Thriller</span><h3>Gone Girl</h3><p class="card-author">Gillian Flynn &mdash; dir. David Fincher</p></div>
+      <div class="book-card-footer">Film: 2014 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="girl-on-the-train.html">
+      <div class="book-card-img"><img src="images/girl-on-the-train.jpg" alt="The Girl on the Train cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Psychological Thriller</span><h3>The Girl on the Train</h3><p class="card-author">Paula Hawkins &mdash; Emily Blunt stars</p></div>
+      <div class="book-card-footer">Film: 2016 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="big-little-lies.html">
+      <div class="book-card-img"><img src="images/big-little-lies.jpg" alt="Big Little Lies cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Domestic Thriller</span><h3>Big Little Lies</h3><p class="card-author">Liane Moriarty &mdash; Kidman &amp; Witherspoon</p></div>
+      <div class="book-card-footer">HBO: 2017 &middot; Screen Wins</div>
+    </a>
+
+    <a class="book-card" href="no-country-for-old-men.html">
+      <div class="book-card-img"><img src="images/no-country-for-old-men.jpg" alt="No Country for Old Men cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Crime / Neo-Western</span><h3>No Country for Old Men</h3><p class="card-author">Cormac McCarthy &mdash; dir. Coen Brothers</p></div>
+      <div class="book-card-footer">Film: 2007 &middot; Too Close to Call</div>
+    </a>
+
+    <a class="book-card" href="the-shining.html">
+      <div class="book-card-img"><img src="images/the-shining.jpg" alt="The Shining cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Horror / Psychological</span><h3>The Shining</h3><p class="card-author">Stephen King &mdash; dir. Stanley Kubrick</p></div>
+      <div class="book-card-footer">Film: 1980 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="silence-of-the-lambs.html">
+      <div class="book-card-img"><img src="images/silence-of-the-lambs.jpg" alt="The Silence of the Lambs cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Thriller / Crime</span><h3>The Silence of the Lambs</h3><p class="card-author">Thomas Harris &mdash; Jodie Foster stars</p></div>
+      <div class="book-card-footer">Film: 1991 &middot; Too Close to Call</div>
+    </a>
+
+    <a class="book-card" href="american-psycho.html">
+      <div class="book-card-img"><img src="images/american-psycho.jpg" alt="American Psycho cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Psychological Thriller</span><h3>American Psycho</h3><p class="card-author">Bret Easton Ellis &mdash; Christian Bale stars</p></div>
+      <div class="book-card-footer">Film: 2000 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="fight-club.html">
+      <div class="book-card-img"><img src="images/fight-club.jpg" alt="Fight Club cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Psychological Thriller</span><h3>Fight Club</h3><p class="card-author">Chuck Palahniuk &mdash; dir. David Fincher</p></div>
+      <div class="book-card-footer">Film: 1999 &middot; Too Close to Call</div>
+    </a>
+
+  </div>
+</div>
+
+<div class="cards-section">
+  <h2>Literary Fiction &amp; Drama</h2>
+  <div class="cards-grid">
+
+    <a class="book-card" href="normal-people.html">
+      <div class="book-card-img"><img src="images/normal-people.jpg" alt="Normal People cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Literary Fiction / Romance</span><h3>Normal People</h3><p class="card-author">Sally Rooney &mdash; Paul Mescal stars</p></div>
+      <div class="book-card-footer">Hulu/BBC: 2020 &middot; Too Close to Call</div>
+    </a>
+
+    <a class="book-card" href="atonement.html">
+      <div class="book-card-img"><img src="images/atonement.jpg" alt="Atonement cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Literary Fiction</span><h3>Atonement</h3><p class="card-author">Ian McEwan &mdash; dir. Joe Wright</p></div>
+      <div class="book-card-footer">Film: 2007 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="never-let-me-go.html">
+      <div class="book-card-img"><img src="images/never-let-me-go.jpg" alt="Never Let Me Go cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Literary Fiction / Sci-Fi</span><h3>Never Let Me Go</h3><p class="card-author">Kazuo Ishiguro &mdash; Carey Mulligan stars</p></div>
+      <div class="book-card-footer">Film: 2010 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="kite-runner.html">
+      <div class="book-card-img"><img src="images/kite-runner.jpg" alt="The Kite Runner cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Literary Fiction</span><h3>The Kite Runner</h3><p class="card-author">Khaled Hosseini &mdash; dir. Marc Forster</p></div>
+      <div class="book-card-footer">Film: 2007 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="schindlers-list.html">
+      <div class="book-card-img"><img src="images/schindlers-list.jpg" alt="Schindler's List cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Historical Fiction</span><h3>Schindler&#8217;s List</h3><p class="card-author">Thomas Keneally &mdash; dir. Steven Spielberg</p></div>
+      <div class="book-card-footer">Film: 1993 &middot; Too Close to Call</div>
+    </a>
+
+    <a class="book-card" href="station-eleven.html">
+      <div class="book-card-img"><img src="images/station-eleven.jpg" alt="Station Eleven cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Literary Fiction</span><h3>Station Eleven</h3><p class="card-author">Emily St. John Mandel &mdash; HBO Max series</p></div>
+      <div class="book-card-footer">Series: 2021 &middot; Too Close to Call</div>
+    </a>
+
+  </div>
+</div>
+
+<div class="cards-section">
+  <h2>Science Fiction &amp; Fantasy</h2>
+  <div class="cards-grid">
+
+    <a class="book-card" href="dune.html">
+      <div class="book-card-img"><img src="images/dune.jpg" alt="Dune cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Science Fiction / Epic</span><h3>Dune</h3><p class="card-author">Frank Herbert &mdash; dir. Denis Villeneuve</p></div>
+      <div class="book-card-footer">Film: 2021&ndash;2024 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="hitchhikers-guide.html">
+      <div class="book-card-img"><img src="images/hitchhikers-guide.jpg" alt="The Hitchhiker's Guide to the Galaxy cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Science Fiction / Comedy</span><h3>The Hitchhiker&#8217;s Guide to the Galaxy</h3><p class="card-author">Douglas Adams &mdash; dir. Garth Jennings</p></div>
+      <div class="book-card-footer">Film: 2005 &middot; Book Wins</div>
+    </a>
+
+    <a class="book-card" href="the-handmaids-tale.html">
+      <div class="book-card-img"><img src="images/the-handmaids-tale.jpg" alt="The Handmaid's Tale cover" loading="lazy"></div>
+      <div class="book-card-body"><span class="card-genre">Dystopian Fiction</span><h3>The Handmaid&#8217;s Tale</h3><p class="card-author">Margaret Atwood &mdash; Hulu series</p></div>
+      <div class="book-card-footer">Series: 2017 &middot; Book Wins</div>
+    </a>
+
+  </div>
+</div>
+
+<div class="cards-section" style="text-align:center;padding-bottom:3rem;">
+  <a href="index_alt.html" style="display:inline-block;padding:0.7em 2em;border:1px solid var(--rule);border-radius:3px;color:var(--ink-light);text-decoration:none;font-size:0.9rem;letter-spacing:0.06em;transition:border-color 0.2s,color 0.2s;">
+    Browse all comparisons &rarr;
+  </a>
+</div>
+
+<footer>
+  <p>&copy; 2026 BooksVersusMovies.com &nbsp;&mdash;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="calendar.html">Upcoming</a> &nbsp;&middot;&nbsp; <a href="about.html">About</a></p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;color:#444;">As an Amazon Associate I earn from qualifying purchases.</p>
+</footer>
+
+<script>
+  // ── Spotlight loader ──────────────────────────────────────
+  // Fetches index_spotlight.html and injects into #spotlight-mount.
+  // If the file is absent or the server returns an error, fails silently —
+  // the page looks identical without the spotlight.
+  fetch('spotlight_container.html')
+    .then(function(res) {
+      if (!res.ok) throw new Error('no spotlight');
+      return res.text();
+    })
+    .then(function(html) {
+      document.getElementById('spotlight-mount').innerHTML = html;
+    })
+    .catch(function() { /* no spotlight file — carry on */ });
+</script>
+
+</body>
+</html>

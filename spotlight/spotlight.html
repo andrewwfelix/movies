@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotlight Preview — BooksVersusMovies</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0DY0XDWVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P0DY0XDWVV');
+  </script>
+
+  <style>
+    /* ── SPOTLIGHT ──────────────────────────────────────────── */
+    .spotlight-section {
+      max-width: var(--max-w);
+      margin: 2.5rem auto 0;
+      padding: 0 2rem;
+    }
+    .spotlight-header {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .spotlight-header-star  { color: var(--gold); font-size: 0.7rem; flex-shrink: 0; }
+    .spotlight-header-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); flex-shrink: 0; white-space: nowrap; }
+    .spotlight-header-rule  { flex: 1; height: 1px; background: var(--rule); }
+
+    .spotlight-card {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      background: white;
+      min-height: 220px;
+      position: relative;
+    }
+    .spotlight-text {
+      padding: 2rem 3.5rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+    .spotlight-genre    { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+    .spotlight-title    { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; line-height: 1.1; color: var(--ink); margin-bottom: 0.4rem; }
+    .spotlight-byline   { font-size: 0.85rem; color: var(--ink-light); font-style: italic; margin-bottom: 1rem; }
+    .spotlight-pull     { font-size: 0.97rem; color: #2a2520; line-height: 1.65; border-left: 3px solid var(--gold); padding-left: 0.9rem; margin-bottom: 1.5rem; flex: 1; }
+    .spotlight-footer   { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .spotlight-verdict  { padding: 0.3em 1em; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; white-space: nowrap; }
+    .spotlight-cta      { font-size: 0.88rem; color: var(--gold); text-decoration: none; letter-spacing: 0.04em; transition: color 0.15s; white-space: nowrap; }
+    .spotlight-cta:hover { color: var(--ink); }
+
+    .spotlight-image {
+      position: relative;
+      background: var(--film-col);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .spotlight-trailer {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      position: relative;
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+    .spotlight-trailer img.thumb {
+      width: 100%; height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover; object-position: center;
+      display: block; transition: opacity 0.25s ease, transform 0.35s ease;
+    }
+    .spotlight-card:hover .spotlight-trailer img.thumb { opacity: 0.82; transform: scale(1.03); }
+    .spotlight-play {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px; height: 60px;
+      background: rgba(26,23,20,0.82); border: 2px solid var(--gold);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; color: var(--gold);
+      pointer-events: none; transition: all 0.2s ease;
+    }
+    .spotlight-trailer:hover .spotlight-play { background: var(--ink); transform: translate(-50%, -50%) scale(1.1); }
+    .spotlight-new {
+      position: absolute; top: 0.65rem; right: 0.65rem;
+      background: var(--gold); color: var(--ink);
+      font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 0.25em 0.7em; border-radius: 2px; font-weight: 700; z-index: 3;
+    }
+    .spotlight-book-cover {
+      position: absolute;
+      left: -44px; bottom: 2.25rem; z-index: 4;
+      width: 80px; height: 120px;
+      object-fit: cover; border-radius: 2px;
+      box-shadow: -3px 4px 20px rgba(0,0,0,0.5);
+      display: block; pointer-events: none;
+    }
+    @media (max-width: 760px) {
+      .spotlight-card { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+      .spotlight-image { min-height: 0; padding: 1.25rem; }
+      .spotlight-book-cover { left: auto; right: 1rem; bottom: -40px; width: 65px; height: 98px; }
+      .spotlight-text { padding: 1.5rem 1.5rem 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-logo" href="index.html">Books<span>Versus</span>Movies</a>
+    <nav>
+      <a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/index_alt.html">Browse All</a> &nbsp;&middot;&nbsp;
+      <a href="calendar.html">Upcoming</a> &nbsp;&middot;&nbsp;
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<!--
+  ════════════════════════════════════════════════════════════
+  SPOTLIGHT COMPONENT
+  ════════════════════════════════════════════════════════════
+  This is both a standalone preview page AND the source of
+  truth for the spotlight content.
+
+  Monthly update workflow:
+  1. Edit the content below (title, byline, genre, pull quote,
+     verdict, YouTube ID, book cover src, and comparison link).
+  2. Copy everything between the <section> tags into
+     index_spotlight.html — that's the file index.html fetches.
+  3. Open spotlight.html in a browser to preview before publishing.
+
+  To remove spotlight from index.html:
+  — Delete or rename index_spotlight.html. That's it.
+  ════════════════════════════════════════════════════════════
+-->
+
+<section class="spotlight-section">
+
+  <div class="spotlight-card">
+
+    <!-- ── Left: text panel ── -->
+    <div class="spotlight-text">
+      <div>
+        <!-- EDIT: genre tags -->
+        <div class="spotlight-genre">Romance &middot; Sports Drama &middot; LGBTQ+</div>
+        <!-- EDIT: title -->
+        <h2 class="spotlight-title">Heated Rivalry</h2>
+        <!-- EDIT: book author + show details -->
+        <p class="spotlight-byline">Rachel Reid (2019 novel) &mdash; Jacob Tierney (2025 HBO Max series)</p>
+        <!-- EDIT: one or two sentence editorial hook -->
+        <p class="spotlight-pull">Two rival hockey stars. A secret that spans years. One of the most talked-about adaptations of 2025 &mdash; and the book is even better than the show.</p>
+      </div>
+      <div class="spotlight-footer">
+        <!-- EDIT: verdict class = verdict-book | verdict-film | verdict-tie -->
+        <span class="spotlight-verdict verdict-tie">Too Close to Call</span>
+        <!-- EDIT: href = your comparison page -->
+        <a class="spotlight-cta" href="heated-rivalry.html">Read our comparison &rarr;</a>
+      </div>
+    </div>
+
+    <!-- ── Right: image panel ── -->
+    <div class="spotlight-image">
+      <!-- EDIT: YouTube watch URL and video ID (appears twice below) -->
+      <a class="spotlight-trailer" href="https://www.youtube.com/watch?v=lKO26odltss" target="_blank" rel="noopener">
+        <img class="thumb"
+             src="https://img.youtube.com/vi/lKO26odltss/maxresdefault.jpg"
+             alt="Heated Rivalry &mdash; official trailer HBO Max 2025"
+             loading="lazy">
+        <div class="spotlight-play">&#9658;</div>
+      </a>
+      <!-- EDIT: remove this tag once a title is no longer new -->
+      <span class="spotlight-new">New</span>
+      <!-- EDIT: book cover image path -->
+      <img class="spotlight-book-cover"
+           src="./images/heated-rivalry.jpg"
+           alt="Heated Rivalry book cover &mdash; Rachel Reid"
+           loading="lazy">
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; 2026 BooksVersusMovies.com &nbsp;&mdash;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="about.html">About</a></p>
+</footer>
+
+</body>
+</html>

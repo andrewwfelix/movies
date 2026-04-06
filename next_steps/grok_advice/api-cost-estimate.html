@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Cost Estimate — BooksVersusMovies Improvement Pipeline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:      #faf7f2;
+      --ink:        #1a1714;
+      --ink-light:  #4a4540;
+      --gold:       #c8973a;
+      --gold-light: #e8c06a;
+      --rule:       #e0d8cc;
+      --max-w:      1000px;
+      --radius:     4px;
+      --green:      #2a5a2a;
+      --green-bg:   #e8f0e8;
+      --green-border: #b0cdb0;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--ink);
+      border-bottom: 3px solid var(--gold);
+      padding: 0 1.5rem;
+    }
+    .header-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 64px;
+    }
+    .site-logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.35rem;
+      color: var(--cream);
+      text-decoration: none;
+    }
+    .site-logo span { color: var(--gold); }
+    .header-tag {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+    /* ── Hero ── */
+    .page-hero {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .genre-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 0.35em 1em;
+      margin-bottom: 1.25rem;
+      border-radius: var(--radius);
+    }
+    .page-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+    .page-hero .subtitle {
+      font-size: 1rem;
+      color: #a09888;
+      font-style: italic;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* ── Wrap ── */
+    .page-wrap {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* ── Assumptions block ── */
+    .assumptions {
+      background: white;
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .assumptions h2 {
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 400;
+    }
+    .assumptions ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.6rem 2rem;
+    }
+    .assumptions li {
+      font-size: 0.92rem;
+      color: var(--ink-light);
+      display: flex;
+      gap: 0.5rem;
+      align-items: baseline;
+    }
+    .assumptions li::before {
+      content: '—';
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .assumptions li strong { color: var(--ink); }
+
+    /* ── Section heading ── */
+    .section-heading {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      margin: 2.5rem 0 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ── Cost Table ── */
+    .table-wrap {
+      overflow-x: auto;
+      margin-bottom: 2.5rem;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.93rem;
+      min-width: 600px;
+    }
+    thead tr {
+      background: var(--ink);
+      color: var(--cream);
+    }
+    thead th {
+      padding: 0.9rem 1rem;
+      text-align: left;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    thead th:not(:first-child) { text-align: right; }
+    tbody tr { border-bottom: 1px solid var(--rule); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #f5f1eb; }
+    tbody tr.total-row {
+      background: var(--ink) !important;
+      color: var(--cream);
+      font-weight: 600;
+    }
+    tbody tr.total-row td { color: var(--cream); }
+    tbody tr.total-row td:last-child { color: var(--gold-light); }
+    td {
+      padding: 0.85rem 1rem;
+      color: var(--ink);
+    }
+    td:not(:first-child) { text-align: right; }
+    .prompt-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    .batch-val { color: var(--green); font-weight: 500; }
+    .total-row .batch-val { color: var(--gold-light); }
+
+    /* ── Insight cards ── */
+    .insights {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .insight-card {
+      background: white;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .insight-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+    }
+    .insight-card.gold::before { background: var(--gold); }
+    .insight-card.green::before { background: #4a8a4a; }
+    .insight-card.amber::before { background: #c07020; }
+    .insight-num {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .insight-card.gold .insight-num { color: var(--gold); }
+    .insight-card.green .insight-num { color: #4a8a4a; }
+    .insight-card.amber .insight-num { color: #c07020; }
+    .insight-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.75rem;
+    }
+    .insight-desc {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    /* ── Callout boxes ── */
+    .callout {
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .callout-icon {
+      font-size: 1.25rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .callout-body { flex: 1; }
+    .callout-body strong {
+      display: block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+    .callout-body p { font-size: 0.92rem; color: var(--ink-light); }
+    .callout.recommend {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+    }
+    .callout.recommend strong { color: var(--green); }
+    .callout.caution {
+      background: #fdf4e4;
+      border: 1px solid #e8d090;
+    }
+    .callout.caution strong { color: #7a5010; }
+    .callout.note {
+      background: #f0f4fa;
+      border: 1px solid #c0cce0;
+    }
+    .callout.note strong { color: #304870; }
+
+    /* ── Verdict ── */
+    .verdict-box {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: var(--radius);
+      padding: 2rem 2.25rem;
+      margin-top: 2.5rem;
+      border-top: 3px solid var(--gold);
+    }
+    .verdict-box .verdict-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .verdict-box p {
+      color: #c8c0b4;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .verdict-box p strong { color: var(--cream); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      border-top: 3px solid var(--gold);
+      color: #666;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    @media (min-width: 700px) {
+      .page-hero { padding: 5rem 2rem 4rem; }
+      .page-wrap { padding: 3.5rem 2rem 6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
+    <span class="header-tag">Internal — Pipeline Planning</span>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="genre-tag">API Cost Analysis · April 2026</div>
+  <h1>Improvement Pipeline:<br>Pricing Estimate</h1>
+  <p class="subtitle">Claude Sonnet 4.6 · 5 focused prompts · 80 HTML files · Batch API recommended</p>
+</div>
+
+<div class="page-wrap">
+
+  <div class="assumptions">
+    <h2>Assumptions</h2>
+    <ul>
+      <li><strong>Model:</strong> Claude Sonnet 4.6</li>
+      <li><strong>Input rate:</strong> $3 / million tokens</li>
+      <li><strong>Output rate:</strong> $15 / million tokens</li>
+      <li><strong>Files:</strong> 80 HTML pages (~9KB avg)</li>
+      <li><strong>Tokens/file:</strong> ~2,000–2,500 input</li>
+      <li><strong>Output/pass:</strong> ~3,000–4,000 tokens</li>
+      <li><strong>Batch discount:</strong> 50% off standard</li>
+      <li><strong>Passes:</strong> 5 isolated prompts</li>
+    </ul>
+  </div>
+
+  <h2 class="section-heading">Per-Prompt Cost Breakdown</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Prompt</th>
+          <th>Input tokens</th>
+          <th>Output tokens</th>
+          <th>Cost / file</th>
+          <th>80 files (standard)</th>
+          <th>80 files (batch)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="prompt-name">1. Casting Section</span></td>
+          <td>~3,500</td>
+          <td>~4,000</td>
+          <td>$0.071</td>
+          <td>$5.65</td>
+          <td class="batch-val">$2.83</td>
+        </tr>
+        <tr>
+          <td><span class="prompt-name">2. Verdict Box Fix</span></td>
+          <td>~3,200</td>
+          <td>~3,500</td>
+          <td>$0.062</td>
+          <td>$4.95</td>
+          <td class="batch-val">$2.48</td>
+        </tr>
+        <tr>
+          <td><span class="prompt-name">3. FAQ + Schema Markup</span></td>
+          <td>~3,500</td>
+          <td>~4,500</td>
+          <td>$0.078</td>
+          <td>$6.20</td>
+          <td class="batch-val">$3.10</td>
+        </tr>
+        <tr>
+          <td><span class="prompt-name">4. Reading Time Badge</span></td>
+          <td>~3,000</td>
+          <td>~3,200</td>
+          <td>$0.057</td>
+          <td>$4.55</td>
+          <td class="batch-val">$2.28</td>
+        </tr>
+        <tr>
+          <td><span class="prompt-name">5. Internal Linking</span></td>
+          <td>~3,500</td>
+          <td>~4,000</td>
+          <td>$0.071</td>
+          <td>$5.65</td>
+          <td class="batch-val">$2.83</td>
+        </tr>
+        <tr class="total-row">
+          <td><strong>All 5 passes</strong></td>
+          <td>—</td>
+          <td>—</td>
+          <td><strong>~$0.34</strong></td>
+          <td><strong>~$27.00</strong></td>
+          <td class="batch-val"><strong>~$13.50</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="section-heading">Key Numbers at a Glance</h2>
+
+  <div class="insights">
+    <div class="insight-card gold">
+      <div class="insight-num">$27</div>
+      <div class="insight-label">Standard API total</div>
+      <p class="insight-desc">Full run of all 5 improvement passes across 80 files at standard Sonnet 4.6 rates.</p>
+    </div>
+    <div class="insight-card green">
+      <div class="insight-num">$13.50</div>
+      <div class="insight-label">With Batch API (50% off)</div>
+      <p class="insight-desc">Processed within 24 hours. Ideal for this workflow — no real-time requirement.</p>
+    </div>
+    <div class="insight-card amber">
+      <div class="insight-num">&lt;$8</div>
+      <div class="insight-label">Batch + prompt caching</div>
+      <p class="insight-desc">Cache the system prompt (identical across all files per pass) for an additional 90% reduction on repeated input tokens.</p>
+    </div>
+  </div>
+
+  <h2 class="section-heading">Recommendations</h2>
+
+  <div class="callout recommend">
+    <div class="callout-icon">✓</div>
+    <div class="callout-body">
+      <strong>Use the Batch API</strong>
+      <p>This workflow is a textbook Batch API use case — you're processing files overnight, not in real time. The 50% discount halves your total cost with zero change to output quality. Configure it once in the script and forget it.</p>
+    </div>
+  </div>
+
+  <div class="callout recommend">
+    <div class="callout-icon">✓</div>
+    <div class="callout-body">
+      <strong>Enable Prompt Caching on the System Prompt</strong>
+      <p>Your improvement prompt is identical across every file in a given pass. That's a perfect cache candidate. After the first file, subsequent input costs drop to 10% of standard — stacking on top of the Batch discount to push total spend below $8.</p>
+    </div>
+  </div>
+
+  <div class="callout caution">
+    <div class="callout-icon">⚠</div>
+    <div class="callout-body">
+      <strong>Limit the Casting Prompt to ~20–25 Files</strong>
+      <p>For titles with no confirmed casting (older classics, books without active adaptations), the model will produce thin or fabricated content. Curate a whitelist of titles with known cast data before running this pass. This also keeps that prompt's cost proportional.</p>
+    </div>
+  </div>
+
+  <div class="callout note">
+    <div class="callout-icon">→</div>
+    <div class="callout-body">
+      <strong>Budget Time for Output Review</strong>
+      <p>The bigger cost isn't API spend — it's your time reviewing results. Spot-check at least 20% of files per pass (roughly 16 files). Run one pass at a time and validate before proceeding to the next, especially for the FAQ schema and internal linking passes where errors compound.</p>
+    </div>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-title">Bottom Line</div>
+    <p>Running all five improvement passes across your full library will cost somewhere between <strong>$8 and $27</strong> depending on which optimisations you enable. That's a remarkably low barrier for the volume of structured work involved. The real investment is in prompt quality and output review — get those right and the API spend is trivially small relative to the SEO and content value returned.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>BooksVersusMovies.com &nbsp;·&nbsp; Internal planning document &nbsp;·&nbsp; April 2026</p>
+  <p style="margin-top:0.4rem;">Pricing based on Anthropic Claude Sonnet 4.6 rates as of April 2026. Verify current rates at <a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank">platform.claude.com</a>.</p>
+</footer>
+
+</body>
+</html>

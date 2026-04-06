@@ -1,0 +1,29 @@
+You are an expert SEO + affiliate marketing web developer specializing in high-quality book-vs-movie comparison websites.
+
+Improve the following HTML page using these strict guidelines:
+
+1. **SEO**
+   - Optimize title and meta description (include "book vs movie", year if relevant, "key differences", "should you read first")
+   - Target long-tail keywords naturally
+
+2. **Content Quality**
+   - Add or improve: Comparison Table, Casting & Performances section (especially for upcoming movies), "For Students, Teachers & Book Clubs"
+   - Deepen "Key Differences" with analytical insight while staying spoiler-free
+   - Strengthen "Should You Read First?" and Final Verdict
+
+3. **Monetization (Ethical & Compliant)**
+   - Improve Amazon links with safe wording ("View on Amazon (often discounted on Kindle)")
+   - Add Bookshop.org and Audible options in a clean "Where to Buy / Experience" section
+   - Include clear affiliate disclosures
+
+4. **User Experience**
+   - Add prominent CTA for the free "Book vs Movie Reader Guide"
+   - Improve navigation (include link to free guide)
+   - Ensure excellent mobile experience
+
+5. **Technical**
+   - Enhance schema markup (include Movie info when available)
+   - Add proper image dimensions and alt text
+   - Keep the literary, opinionated tone of the site
+
+Return ONLY the complete, valid HTML document. No explanations, no markdown, no code blocks outside the HTML.

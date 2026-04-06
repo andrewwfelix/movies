@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Book Adaptations 2026 & 2027 — BooksVersusMovies</title>
+  <meta name="description" content="Every major book-to-screen adaptation coming in 2026 and 2027 — films, streaming series, and miniseries. With links to our full book vs movie comparisons.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Upcoming Book to Screen Adaptations 2026–2027",
+    "description": "A curated calendar of major book-to-film and book-to-series adaptations releasing in 2026 and 2027, with comparisons.",
+    "url": "https://booksversusmovies.com/calendar.html",
+    "author": { "@type": "Organization", "name": "BooksVersusMovies.com" }
+  }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0DY0XDWVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P0DY0XDWVV');
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:        #faf7f2;
+      --ink:          #1a1714;
+      --ink-light:    #4a4540;
+      --gold:         #c8973a;
+      --gold-light:   #e8c06a;
+      --rule:         #e0d8cc;
+      --max-w:        1100px;
+      --radius:       4px;
+      --green:        #2a5a2a;
+      --green-bg:     #e8f0e8;
+      --green-border: #b0cdb0;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    /* ── Header ── */
+    header { background: var(--ink); border-bottom: 3px solid var(--gold); padding: 0 1.5rem; }
+    .header-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: 64px; flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem 0;
+    }
+    .site-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; color: var(--cream); text-decoration: none; }
+    .site-logo span { color: var(--gold); }
+    nav a {
+      color: #b0a898; text-decoration: none; font-size: 0.8rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-left: 1.25rem; transition: color 0.2s;
+    }
+    nav a:hover, nav a.active { color: var(--gold); }
+
+    /* ── Hero ── */
+    .page-hero {
+      background: var(--ink); color: var(--cream);
+      padding: 4rem 1.5rem 3rem; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(200,151,58,0.04) 80px, rgba(200,151,58,0.04) 81px);
+      pointer-events: none;
+    }
+    .genre-tag {
+      display: inline-block; font-size: 0.72rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold);
+      padding: 0.35em 1em; margin-bottom: 1.25rem; border-radius: var(--radius);
+    }
+    .page-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+    .page-hero .subtitle { font-size: 1rem; color: #a09888; font-style: italic; max-width: 640px; margin: 0 auto 2rem; }
+
+    /* ── Year tabs ── */
+    .year-tabs { display: flex; justify-content: center; gap: 0.75rem; margin-top: 0.5rem; }
+    .year-tab {
+      padding: 0.5em 1.75em;
+      font-family: 'Playfair Display', Georgia, serif; font-size: 1rem; font-weight: 700;
+      border: 2px solid rgba(200,151,58,0.4); color: #888; background: transparent;
+      cursor: pointer; border-radius: var(--radius); transition: all 0.2s ease; letter-spacing: 0.05em;
+    }
+    .year-tab:hover { border-color: var(--gold); color: var(--gold-light); }
+    .year-tab.active { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+
+    /* ── Filter bar ── */
+    .filter-bar {
+      background: white; border-bottom: 1px solid var(--rule);
+      padding: 0.75rem 1.5rem; position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .filter-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .filter-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-right: 0.5rem; flex-shrink: 0; }
+    .filter-btn {
+      padding: 0.3em 0.9em; font-size: 0.8rem; border: 1px solid var(--rule);
+      background: transparent; color: var(--ink-light); cursor: pointer;
+      border-radius: 2rem; font-family: 'Source Serif 4', Georgia, serif; transition: all 0.15s ease;
+    }
+    .filter-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .filter-btn.active { background: var(--ink); border-color: var(--ink); color: var(--cream); }
+
+    /* ── Page wrap ── */
+    .page-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 5rem; }
+
+    /* ── Year sections ── */
+    .year-section { display: none; }
+    .year-section.visible { display: block; }
+
+    /* ── Stats bar ── */
+    .stats-bar { display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; padding: 2rem 0 0.5rem; }
+    .stat-item { text-align: center; }
+    .stat-num { font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1; }
+    .stat-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-top: 0.2rem; }
+    .stats-note { font-family: 'Playfair Display', Georgia, serif; font-size: 1rem; color: var(--ink-light); font-style: italic; padding: 2rem 0 0.5rem; }
+
+    /* ── Quarter block ── */
+    .quarter-block { margin: 3.5rem 0 0; }
+    .quarter-header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.75rem; }
+    .quarter-label { font-family: 'Playfair Display', Georgia, serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); flex-shrink: 0; }
+    .quarter-rule { flex: 1; height: 1px; background: var(--rule); }
+    .quarter-count { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; flex-shrink: 0; }
+
+    /* ── Month group ── */
+    .month-group { margin-bottom: 2.5rem; }
+    .month-heading {
+      font-family: 'Source Serif 4', Georgia, serif; font-weight: 400;
+      font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: #999; margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 1px dashed var(--rule);
+    }
+
+    /* ── Film grid ── */
+    .film-list { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+    @media (min-width: 580px) { .film-list { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 880px) { .film-list { grid-template-columns: 1fr 1fr 1fr; } }
+
+    /* ── Film card ── */
+    .film-card {
+      background: white; border: 1px solid var(--rule); border-radius: var(--radius);
+      overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex; flex-direction: column;
+    }
+    .film-card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px rgba(0,0,0,0.11); }
+    .film-card.has-page    { border-top: 3px solid var(--gold); }
+    .film-card.coming-soon { border-top: 3px solid #d8d0c4; }
+    .film-card[data-hidden] { display: none; }
+
+    /* ── Trailer thumbnail area ── */
+    .card-trailer {
+      position: relative; width: 100%; aspect-ratio: 16 / 9;
+      background: var(--ink); overflow: hidden;
+      display: block; text-decoration: none; flex-shrink: 0;
+    }
+    .card-trailer img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: opacity 0.25s ease, transform 0.35s ease;
+    }
+    .film-card:hover .card-trailer img { opacity: 0.82; transform: scale(1.04); }
+
+    /* Play button */
+    .trailer-play {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52px; height: 52px;
+      background: rgba(26,23,20,0.82); border: 2px solid var(--gold);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; color: var(--gold);
+      transition: all 0.2s ease; pointer-events: none;
+    }
+    .card-trailer:hover .trailer-play { background: var(--ink); transform: translate(-50%, -50%) scale(1.12); }
+
+    /* No-trailer placeholder */
+    .card-trailer.no-trailer { cursor: default; }
+    .placeholder-bg {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #1e1c1a 0%, #2e2926 60%, #1a1714 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+    }
+    .placeholder-title {
+      font-family: 'Playfair Display', Georgia, serif; font-size: 0.95rem;
+      color: var(--cream); text-align: center; padding: 0 1.25rem; line-height: 1.35; opacity: 0.88;
+    }
+    .placeholder-sub {
+      font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); opacity: 0.65;
+    }
+
+    /* Type badge — floats over thumbnail */
+    .card-type-tag {
+      position: absolute; top: 0.55rem; left: 0.55rem; z-index: 2;
+      font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.22em 0.65em; border-radius: 2px; font-weight: 600;
+    }
+    .tag-film      { background: rgba(20,38,90,0.88); color: #a8c0f8; }
+    .tag-series    { background: rgba(55,18,85,0.88); color: #caa8f8; }
+    .tag-streaming { background: rgba(8,55,78,0.88);  color: #88d0f8; }
+
+    /* ── Card body ── */
+    .card-body { padding: 1rem 1.1rem 0.65rem; flex: 1; }
+    .card-date { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.25rem; }
+    .card-title { font-size: 1rem; margin-bottom: 0.15rem; line-height: 1.2; }
+    .card-author { font-size: 0.75rem; color: #888; margin-bottom: 0.5rem; font-style: italic; }
+    .card-meta { font-size: 0.83rem; color: var(--ink-light); line-height: 1.55; }
+    .card-cast { font-size: 0.75rem; color: #999; margin-top: 0.4rem; }
+
+    /* ── Card footer ── */
+    .card-footer {
+      padding: 0.65rem 1.1rem 0.85rem; border-top: 1px solid var(--rule);
+      display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: auto;
+    }
+    .verdict-pill { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.22em 0.7em; border-radius: 2rem; font-weight: 600; flex-shrink: 0; }
+    .pill-book { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-border); }
+    .pill-tbd  { background: #f5f0e8; color: #999; border: 1px solid var(--rule); }
+    .card-link { font-size: 0.76rem; text-decoration: none; letter-spacing: 0.04em; transition: color 0.15s; text-align: right; }
+    .card-link.live { color: var(--gold); font-weight: 500; }
+    .card-link.live:hover { color: var(--ink); }
+    .card-link.soon { color: #ccc; cursor: default; font-style: italic; }
+
+    /* ── Lead magnet ── */
+    .lead-magnet {
+      background: var(--ink); color: var(--cream); border-radius: var(--radius);
+      padding: 2rem 2.25rem; margin: 3.5rem 0 0; text-align: center; border-top: 3px solid var(--gold);
+    }
+    .lead-magnet p { color: #a09888; margin-bottom: 1.25rem; font-size: 1rem; }
+    .lead-magnet p strong { color: var(--cream); }
+    .cta-btn {
+      display: inline-block; padding: 0.75em 2em; background: var(--gold); color: var(--ink);
+      font-size: 0.9rem; letter-spacing: 0.06em; text-decoration: none;
+      border-radius: var(--radius); font-weight: 500; transition: all 0.2s ease;
+    }
+    .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+    .updated-note { display: block; margin-top: 1.75rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; text-align: center; }
+
+    /* ── Footer ── */
+    footer { background: var(--ink); border-top: 3px solid var(--gold); color: #666; text-align: center; padding: 2.5rem 1rem; font-size: 0.82rem; }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    @media (min-width: 700px) {
+      .page-hero { padding: 5.5rem 2rem 4rem; }
+      .page-wrap { padding: 0 2rem 6rem; }
+    }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
+    <nav>
+      <a href="/">All Comparisons</a>
+      <a href="calendar.html" class="active">Upcoming Films</a>
+      <a href="about.html">About</a>
+      <a href="/free-guide">Free Guide</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="genre-tag">Release Calendar · Updated April 2026</div>
+  <h1>Books Coming to Screen</h1>
+  <p class="subtitle">Every major book-to-film and book-to-series adaptation releasing in 2026 and 2027 — with links to our full comparisons where we have them.</p>
+  <div class="year-tabs">
+    <button class="year-tab active" data-year="2026">2026</button>
+    <button class="year-tab" data-year="2027">2027</button>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-inner">
+    <span class="filter-label">Filter</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="film">Film</button>
+    <button class="filter-btn" data-filter="series">Series</button>
+    <button class="filter-btn" data-filter="streaming">Streaming</button>
+    <button class="filter-btn" data-filter="has-page">We Have a Page ✓</button>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+<!-- ══════════════════════════ 2026 ══════════════════════════ -->
+<div class="year-section visible" id="year-2026">
+
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-num">18</div><div class="stat-label">Adaptations</div></div>
+    <div class="stat-item"><div class="stat-num">6</div><div class="stat-label">We've Compared</div></div>
+    <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Theatrical Films</div></div>
+    <div class="stat-item"><div class="stat-num">14</div><div class="stat-label">Series &amp; Streaming</div></div>
+  </div>
+
+  <!-- Q1 -->
+  <div class="quarter-block">
+    <div class="quarter-header">
+      <span class="quarter-label">Q1 · Jan – Mar</span>
+      <div class="quarter-rule"></div>
+      <span class="quarter-count">3 titles</span>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">January 2026</div>
+      <div class="film-list">
+
+        <div class="film-card has-page" data-type="series" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=UPFRItMOgPo" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-series">Series</span>
+            <img src="https://img.youtube.com/vi/UPFRItMOgPo/maxresdefault.jpg" alt="A Knight of the Seven Kingdoms — official trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Jan 2026 · HBO</div>
+            <h3 class="card-title">A Knight of the Seven Kingdoms</h3>
+            <div class="card-author">George R.R. Martin</div>
+            <p class="card-meta">Ser Duncan the Tall and young Egg wander Westeros a century before Game of Thrones. HBO's latest Martinverse prequel.</p>
+            <p class="card-cast">Peter Claffey, Dexter Sol Ansell</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="a-knight-of-the-seven-kingdoms.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="streaming">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=4MLCDxfnEuU" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-streaming">Streaming</span>
+            <img src="https://img.youtube.com/vi/4MLCDxfnEuU/maxresdefault.jpg" alt="Klara and the Sun — Netflix trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Jan 2026 · Netflix</div>
+            <h3 class="card-title">Klara and the Sun</h3>
+            <div class="card-author">Kazuo Ishiguro, 2021</div>
+            <p class="card-meta">Ishiguro's novel about an artificial friend observing human emotion from the outside. Jenna Ortega stars.</p>
+            <p class="card-cast">Jenna Ortega</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <span class="card-link soon">Comparison coming</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">March 2026</div>
+      <div class="film-list">
+
+        <div class="film-card has-page" data-type="film" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=48CtX6OgU3s" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/48CtX6OgU3s/maxresdefault.jpg" alt="The Housemaid — official trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Mar 2026 · Theatrical</div>
+            <h3 class="card-title">The Housemaid</h3>
+            <div class="card-author">Freida McFadden</div>
+            <p class="card-meta">A woman hired as a maid for a wealthy couple whose secrets prove more dangerous than her own. Directed by Paul Feig.</p>
+            <p class="card-cast">Sydney Sweeney, Amanda Seyfried, Brandon Sklenar</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="the-housemaid.html">Read comparison →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div><!-- /Q1 -->
+
+  <!-- Q2 -->
+  <div class="quarter-block">
+    <div class="quarter-header">
+      <span class="quarter-label">Q2 · Apr – Jun</span>
+      <div class="quarter-rule"></div>
+      <span class="quarter-count">5 titles</span>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">April 2026</div>
+      <div class="film-list">
+
+        <div class="film-card has-page" data-type="series" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=AjI52haEerU" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-series">Series</span>
+            <img src="https://img.youtube.com/vi/AjI52haEerU/maxresdefault.jpg" alt="Margo's Got Money Troubles — Apple TV+ trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Apr 15 · Apple TV+</div>
+            <h3 class="card-title">Margo's Got Money Troubles</h3>
+            <div class="card-author">Rufi Thorpe, 2024</div>
+            <p class="card-meta">A college dropout and new mother turns to OnlyFans to make ends meet. Eight sharp episodes with an award-calibre cast.</p>
+            <p class="card-cast">Elle Fanning, Michelle Pfeiffer, Nick Offerman</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="margos-got-money-troubles.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="series">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=nC1OQQIaJJE" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-series">Series</span>
+            <img src="https://img.youtube.com/vi/nC1OQQIaJJE/maxresdefault.jpg" alt="Cape Fear 2026 — Apple TV+ trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Apr 15 · Apple TV+</div>
+            <h3 class="card-title">Cape Fear</h3>
+            <div class="card-author">John D. MacDonald — The Executioners</div>
+            <p class="card-meta">10-episode psychological thriller revisiting the novel behind the 1962 and 1991 films. Created by Nick Antosca.</p>
+            <p class="card-cast">Javier Bardem, Amy Adams, Patrick Wilson</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <span class="card-link soon">Comparison coming</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">May 2026</div>
+      <div class="film-list">
+
+        <div class="film-card has-page" data-type="film" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=g8wLmj9SiKM" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/g8wLmj9SiKM/maxresdefault.jpg" alt="Animal Farm 2026 — official trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">May 1 · Theatrical (Angel Studios)</div>
+            <h3 class="card-title">Animal Farm</h3>
+            <div class="card-author">George Orwell, 1945</div>
+            <p class="card-meta">Andy Serkis directs an animated Orwell with a remarkable voice ensemble — the year's most politically loaded adaptation.</p>
+            <p class="card-cast">Seth Rogen, Woody Harrelson, Kieran Culkin, Glenn Close</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-book">Book Wins</span>
+            <a class="card-link live" href="animal-farm.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card has-page" data-type="film" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=x--N03NO130" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/x--N03NO130/maxresdefault.jpg" alt="Frankenstein 2026 — official trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">May 2026 · Netflix</div>
+            <h3 class="card-title">Frankenstein</h3>
+            <div class="card-author">Mary Shelley, 1818</div>
+            <p class="card-meta">Guillermo del Toro's long-awaited adaptation. He's called it his favourite novel and said the best moments have never been filmed.</p>
+            <p class="card-cast">Oscar Isaac, Mia Goth, Andrew Garfield</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="frankenstein.html">Read comparison →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">June 2026</div>
+      <div class="film-list">
+
+        <div class="film-card coming-soon" data-type="streaming">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=gKFwkEwOCNg" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-streaming">Streaming</span>
+            <img src="https://img.youtube.com/vi/gKFwkEwOCNg/maxresdefault.jpg" alt="Lucky — Apple TV+ trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Jun 5 · Apple TV+</div>
+            <h3 class="card-title">Lucky</h3>
+            <div class="card-author">Marissa Stapley</div>
+            <p class="card-meta">A sharp con artist whose life unravels after a heist goes wrong. Limited series.</p>
+            <p class="card-cast">Anya Taylor-Joy, Timothy Olyphant, Annette Bening</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <span class="card-link soon">Comparison coming</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div><!-- /Q2 -->
+
+  <!-- Q3 -->
+  <div class="quarter-block">
+    <div class="quarter-header">
+      <span class="quarter-label">Q3 · Jul – Sep</span>
+      <div class="quarter-rule"></div>
+      <span class="quarter-count">4 titles</span>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">July 2026</div>
+      <div class="film-list">
+
+        <div class="film-card has-page" data-type="film" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=Mzw2ttJD2qQ" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/Mzw2ttJD2qQ/maxresdefault.jpg" alt="The Odyssey — Christopher Nolan, official trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Jul 17 · Theatrical</div>
+            <h3 class="card-title">The Odyssey</h3>
+            <div class="card-author">Homer</div>
+            <p class="card-meta">Christopher Nolan's most ambitious film yet, with perhaps the largest ensemble assembled this decade.</p>
+            <p class="card-cast">Matt Damon, Zendaya, Tom Holland, Anne Hathaway, Robert Pattinson, Charlize Theron</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="the-odyssey.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="streaming">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=4bSKM9WWT08" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-streaming">Streaming</span>
+            <img src="https://img.youtube.com/vi/4bSKM9WWT08/maxresdefault.jpg" alt="Pride and Prejudice — Netflix trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Jul 2026 · Netflix</div>
+            <h3 class="card-title">Pride and Prejudice</h3>
+            <div class="card-author">Jane Austen, 1813</div>
+            <p class="card-meta">Dolly Alderton adapts Austen for Netflix. Emma Corrin as Elizabeth Bennet, written for a new generation without losing the wit.</p>
+            <p class="card-cast">Emma Corrin, Jack Lowden, Olivia Colman</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="pride-and-prejudice.html">Read comparison →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">August – September 2026</div>
+      <div class="film-list">
+
+        <div class="film-card coming-soon" data-type="film">
+          <div class="card-trailer no-trailer">
+            <span class="card-type-tag tag-film">Film</span>
+            <div class="placeholder-bg">
+              <div class="placeholder-title">The Bride</div>
+              <div class="placeholder-sub">Trailer not yet released</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-date">Sep 2026 · Theatrical</div>
+            <h3 class="card-title">The Bride <span style="font-weight:300;font-size:0.85em">(Frankenstein)</span></h3>
+            <div class="card-author">Mary Shelley, 1818</div>
+            <p class="card-meta">Maggie Gyllenhaal's Frankenstein arrives in autumn — a second Shelley adaptation in the same year makes 2026 genuinely strange.</p>
+            <p class="card-cast">Jessie Buckley, Christian Bale</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <span class="card-link soon">Comparison coming</span>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="series">
+          <div class="card-trailer no-trailer">
+            <span class="card-type-tag tag-series">Series</span>
+            <div class="placeholder-bg">
+              <div class="placeholder-title">Washington Black</div>
+              <div class="placeholder-sub">Trailer not yet released</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-date">Aug 2026 · Hulu</div>
+            <h3 class="card-title">Washington Black</h3>
+            <div class="card-author">Esi Edugyan, 2018</div>
+            <p class="card-meta">A young enslaved boy in 1830s Barbados forms an unlikely bond with his master's brother. Booker-shortlisted novel.</p>
+            <p class="card-cast">TBC</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <span class="card-link soon">Comparison coming</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div><!-- /Q3 -->
+
+  <!-- Q4 -->
+  <div class="quarter-block">
+    <div class="quarter-header">
+      <span class="quarter-label">Q4 · Oct – Dec</span>
+      <div class="quarter-rule"></div>
+      <span class="quarter-count">4 titles</span>
+    </div>
+
+    <div class="month-group">
+      <div class="month-heading">October – December 2026</div>
+      <div class="film-list">
+
+        <div class="film-card has-page" data-type="film" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=MPjxijuBuSo" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/MPjxijuBuSo/maxresdefault.jpg" alt="Hunger Games: Sunrise on the Reaping — official trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Q4 2026 · Theatrical</div>
+            <h3 class="card-title">Hunger Games: Sunrise on the Reaping</h3>
+            <div class="card-author">Suzanne Collins, 2025</div>
+            <p class="card-meta">Ralph Fiennes as an older Snow in this prequel-to-the-prequel, based on Collins' brand new 2025 novel.</p>
+            <p class="card-cast">Ralph Fiennes, Joseph Zada</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="hunger-games-sunrise.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card has-page" data-type="streaming" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=Uu5lF4MZgPk" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-streaming">Streaming</span>
+            <img src="https://img.youtube.com/vi/Uu5lF4MZgPk/maxresdefault.jpg" alt="Never Let Me Go — trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Q4 2026 · TBC</div>
+            <h3 class="card-title">Never Let Me Go</h3>
+            <div class="card-author">Kazuo Ishiguro, 2005</div>
+            <p class="card-meta">New series adaptation of Ishiguro's quiet masterpiece about memory, mortality, and what it means to be human.</p>
+            <p class="card-cast">TBC</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="never-let-me-go.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card has-page" data-type="streaming" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=vcybDwT6Ia4" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-streaming">Streaming</span>
+            <img src="https://img.youtube.com/vi/vcybDwT6Ia4/maxresdefault.jpg" alt="Fourth Wing — trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Q4 2026 · Amazon</div>
+            <h3 class="card-title">Fourth Wing</h3>
+            <div class="card-author">Rebecca Yarros, 2023</div>
+            <p class="card-meta">The romantasy phenomenon about a war college for dragon riders. One of the most anticipated fantasy adaptations in years.</p>
+            <p class="card-cast">TBC</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <a class="card-link live" href="fourth-wing.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="film">
+          <div class="card-trailer no-trailer">
+            <span class="card-type-tag tag-film">Film</span>
+            <div class="placeholder-bg">
+              <div class="placeholder-title">Kill Your Darlings</div>
+              <div class="placeholder-sub">Trailer not yet released</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-date">Q4 2026 · Theatrical</div>
+            <h3 class="card-title">Kill Your Darlings</h3>
+            <div class="card-author">Peter Swanson, 2025</div>
+            <p class="card-meta">Julia Roberts leads this murder mystery unfolding a marriage in reverse. Based on Swanson's June 2025 novel.</p>
+            <p class="card-cast">Julia Roberts</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <span class="card-link soon">Comparison coming</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div><!-- /Q4 -->
+
+</div><!-- /year-2026 -->
+
+
+<!-- ══════════════════════════ 2027 ══════════════════════════ -->
+<div class="year-section" id="year-2027">
+
+  <p class="stats-note">2027 dates are provisional — studios announce closer to production wrap. We update this calendar monthly.</p>
+
+  <div class="quarter-block">
+    <div class="quarter-header">
+      <span class="quarter-label">Q1–Q2 · Jan – Jun</span>
+      <div class="quarter-rule"></div>
+      <span class="quarter-count">4 titles confirmed</span>
+    </div>
+    <div class="month-group">
+      <div class="month-heading">Early 2027</div>
+      <div class="film-list">
+
+        <div class="film-card has-page" data-type="streaming" data-has-page="true">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=3_9vCamtuPY" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-streaming">Streaming</span>
+            <img src="https://img.youtube.com/vi/3_9vCamtuPY/maxresdefault.jpg" alt="Dune: Part Two trailer — Part Three coming 2027" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Early 2027 · Theatrical/Streaming</div>
+            <h3 class="card-title">Dune: Part Three</h3>
+            <div class="card-author">Frank Herbert — Dune Messiah, 1969</div>
+            <p class="card-meta">Villeneuve completes his trilogy where Herbert's argument about the danger of Paul Atreides finally lands without ambiguity.</p>
+            <p class="card-cast">Timothée Chalamet, Zendaya, returning cast</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="dune.html">Read our Dune comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="film">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=m08TxIsFTRI" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/m08TxIsFTRI/maxresdefault.jpg" alt="Project Hail Mary — official trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">2027 · Theatrical</div>
+            <h3 class="card-title">Project Hail Mary</h3>
+            <div class="card-author">Andy Weir, 2021</div>
+            <p class="card-meta">Ryan Gosling as Ryland Grace — the astronaut who wakes up alone millions of miles from Earth with no memory of how he got there.</p>
+            <p class="card-cast">Ryan Gosling</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Verdict TBD</span>
+            <a class="card-link live" href="project-hail-mary.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="film">
+          <div class="card-trailer no-trailer">
+            <span class="card-type-tag tag-film">Film</span>
+            <div class="placeholder-bg">
+              <div class="placeholder-title">The Love Hypothesis</div>
+              <div class="placeholder-sub">Trailer not yet released</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-date">2027 · Theatrical</div>
+            <h3 class="card-title">The Love Hypothesis</h3>
+            <div class="card-author">Ali Hazelwood, 2021</div>
+            <p class="card-meta">The academic romance that began as Star Wars fan fiction. Lili Reinhart plays a biology student in a fake-dating arrangement.</p>
+            <p class="card-cast">Lili Reinhart, Tom Bateman</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <span class="card-link soon">Comparison coming</span>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="series">
+          <div class="card-trailer no-trailer">
+            <span class="card-type-tag tag-series">Series</span>
+            <div class="placeholder-bg">
+              <div class="placeholder-title">Pride and Prejudice</div>
+              <div class="placeholder-sub">Season 2 · 2027</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-date">2027 · Netflix</div>
+            <h3 class="card-title">Pride and Prejudice <span style="font-weight:300;font-size:0.85em">S2</span></h3>
+            <div class="card-author">Jane Austen, 1813</div>
+            <p class="card-meta">Dolly Alderton's Netflix adaptation continues into the novel's second half with Emma Corrin and Jack Lowden returning.</p>
+            <p class="card-cast">Emma Corrin, Jack Lowden</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <a class="card-link live" href="pride-and-prejudice.html">See our comparison →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="quarter-block">
+    <div class="quarter-header">
+      <span class="quarter-label">Q3–Q4 · Jul – Dec</span>
+      <div class="quarter-rule"></div>
+      <span class="quarter-count">3 titles rumoured</span>
+    </div>
+    <div class="month-group">
+      <div class="month-heading">Late 2027</div>
+      <div class="film-list">
+
+        <div class="film-card coming-soon" data-type="film">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=sLtavGjAOJY" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/sLtavGjAOJY/maxresdefault.jpg" alt="The Kite Runner — trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Late 2027 · TBC</div>
+            <h3 class="card-title">The Kite Runner</h3>
+            <div class="card-author">Khaled Hosseini, 2003</div>
+            <p class="card-meta">A new adaptation of Hosseini's generational story of friendship, betrayal, and redemption across decades of Afghan history.</p>
+            <p class="card-cast">TBC</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Coming Soon</span>
+            <a class="card-link live" href="kite-runner.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="streaming">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=x1JQuWxt3cE" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-streaming">Streaming</span>
+            <img src="https://img.youtube.com/vi/x1JQuWxt3cE/maxresdefault.jpg" alt="Normal People — trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">Late 2027 · TBC</div>
+            <h3 class="card-title">Normal People <span style="font-weight:300;font-size:0.85em">S2</span></h3>
+            <div class="card-author">Sally Rooney, 2018</div>
+            <p class="card-meta">A second series revisiting Connell and Marianne — unconfirmed but Rooney has discussed the possibility of continuing the story.</p>
+            <p class="card-cast">Paul Mescal, Daisy Edgar-Jones</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Rumoured</span>
+            <a class="card-link live" href="normal-people.html">Read comparison →</a>
+          </div>
+        </div>
+
+        <div class="film-card coming-soon" data-type="film">
+          <a class="card-trailer" href="https://www.youtube.com/watch?v=4bsjRq8kasA" target="_blank" rel="noopener">
+            <span class="card-type-tag tag-film">Film</span>
+            <img src="https://img.youtube.com/vi/4bsjRq8kasA/maxresdefault.jpg" alt="Remarkably Bright Creatures — trailer" loading="lazy">
+            <div class="trailer-play">&#9658;</div>
+          </a>
+          <div class="card-body">
+            <div class="card-date">2027 · TBC</div>
+            <h3 class="card-title">Remarkably Bright Creatures</h3>
+            <div class="card-author">Shelby Van Pelt, 2022</div>
+            <p class="card-meta">The cosy mystery narrated partly by a giant Pacific octopus has been optioned. Casting and director still to be confirmed.</p>
+            <p class="card-cast">TBC</p>
+          </div>
+          <div class="card-footer">
+            <span class="verdict-pill pill-tbd">Rumoured</span>
+            <a class="card-link live" href="remarkably-bright-creatures.html">Read comparison →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div><!-- /year-2027 -->
+
+  <div class="lead-magnet">
+    <p><strong>Not sure what to read before it hits the screen?</strong><br>Our free "Book vs Movie Reader Guide" gives you a quick verdict on 20+ titles — with a printable scorecard.</p>
+    <a href="/free-guide" class="cta-btn">Download Free Guide →</a>
+  </div>
+
+  <span class="updated-note">Calendar last updated April 2026 &middot; Release dates subject to change &middot; Updated monthly</span>
+
+</div><!-- /.page-wrap -->
+
+<footer>
+  <p>&copy; 2026 BooksVersusMovies.com &nbsp;&mdash;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="calendar.html">Upcoming Films</a> &nbsp;&middot;&nbsp; <a href="about.html">About</a></p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;color:#444;">Release dates are approximate. As an Amazon Associate I earn from qualifying purchases.</p>
+</footer>
+
+<script>
+  // ── Year tabs ──
+  document.querySelectorAll('.year-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.year-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.year-section').forEach(s => s.classList.remove('visible'));
+      tab.classList.add('active');
+      document.getElementById('year-' + tab.dataset.year).classList.add('visible');
+    });
+  });
+
+  // ── Filter buttons ──
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.film-card').forEach(card => {
+        let show = true;
+        if (filter === 'has-page') show = card.dataset.hasPage === 'true';
+        else if (filter !== 'all') show = card.dataset.type === filter;
+        if (show) delete card.dataset.hidden;
+        else card.dataset.hidden = '1';
+      });
+    });
+  });
+
+  // ── YouTube thumbnail fallback: maxresdefault → hqdefault ──
+  document.querySelectorAll('.card-trailer img').forEach(img => {
+    img.addEventListener('error', function () {
+      if (this.src.includes('maxresdefault')) {
+        this.src = this.src.replace('maxresdefault', 'hqdefault');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
