@@ -7,7 +7,6 @@
   <meta name="description" content="Frank Herbert's 1965 novel vs Denis Villeneuve's 2021–2024 films — Paul's interiority, Chani's arc, the ending's moral weight, and why the book still wins. Spoiler-free guide.">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Review Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +40,6 @@
   }
   </script>
 
-  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -82,8 +80,6 @@
     ]
   }
   </script>
-
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0DY0XDWVV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -91,330 +87,6 @@
     gtag('js', new Date());
     gtag('config', 'G-P0DY0XDWVV');
   </script>
-
-  <style>
-    /* ── Verdict Box (missing from style.css) ── */
-    .verdict-box {
-      background: var(--ink);
-      color: var(--cream);
-      border-radius: var(--radius);
-      padding: 2rem 2.25rem;
-      margin: 2.5rem 0;
-      border-left: 4px solid var(--gold);
-    }
-    .verdict-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 0.75rem;
-    }
-    .verdict-box p {
-      color: #c8c0b4;
-      font-size: 1rem;
-      line-height: 1.8;
-      margin: 0;
-    }
-    .verdict-box p strong { color: var(--cream); }
-
-    /* ── Reading time / difficulty badge ── */
-    .read-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 0.75rem 0 0;
-    }
-    .read-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      padding: 0.3em 0.85em;
-      border-radius: 2rem;
-      font-family: 'Source Serif 4', Georgia, serif;
-    }
-    .read-badge.time {
-      background: #f0ebe0;
-      color: #5a4e3a;
-      border: 1px solid #d8cdb8;
-    }
-    .read-badge.difficulty {
-      background: #fdf4e4;
-      color: #7a5010;
-      border: 1px solid #e8c878;
-    }
-    .read-badge.length {
-      background: #e8f0e8;
-      color: #2a5a2a;
-      border: 1px solid #b0cdb0;
-    }
-
-    /* ── Casting Section ── */
-    .casting-section {
-      margin: 3rem 0 2.5rem;
-    }
-    .casting-section h2 {
-      margin-bottom: 0.5rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    .casting-intro {
-      font-size: 0.97rem;
-      color: var(--ink-light);
-      margin-bottom: 2rem;
-      font-style: italic;
-    }
-    .cast-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .cast-card {
-      background: white;
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .cast-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    }
-    .cast-img-wrap {
-      position: relative;
-      aspect-ratio: 3 / 4;
-      background: #e8e0d4;
-      overflow: hidden;
-    }
-    .cast-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top center;
-    }
-    /* Placeholder state for missing images */
-    .cast-img-placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(160deg, #2a2520 0%, #1a1714 100%);
-      color: var(--gold);
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 2rem;
-      letter-spacing: 0.05em;
-    }
-    .cast-img-placeholder span {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #888;
-      margin-top: 0.5rem;
-      font-family: 'Source Serif 4', Georgia, serif;
-    }
-    .cast-verdict {
-      position: absolute;
-      bottom: 0.5rem;
-      right: 0.5rem;
-      background: var(--gold);
-      color: var(--ink);
-      font-size: 0.62rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.2em 0.6em;
-      border-radius: 2px;
-      font-weight: 600;
-    }
-    .cast-info {
-      padding: 0.9rem 1rem 1rem;
-    }
-    .cast-actor {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.1rem;
-    }
-    .cast-character {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 0.6rem;
-    }
-    .cast-note {
-      font-size: 0.85rem;
-      color: var(--ink-light);
-      line-height: 1.55;
-    }
-    .casting-verdict {
-      background: #f5f0e8;
-      border: 1px solid var(--rule);
-      border-left: 3px solid var(--gold);
-      border-radius: var(--radius);
-      padding: 1.25rem 1.5rem;
-      font-size: 0.95rem;
-      color: var(--ink-light);
-    }
-    .casting-verdict strong { color: var(--ink); }
-
-    /* ── FAQ Section ── */
-    .faq-section {
-      margin: 3rem 0 2.5rem;
-    }
-    .faq-section h2 {
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    .faq-item {
-      border-bottom: 1px solid var(--rule);
-      padding: 1.1rem 0;
-    }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-q {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-    }
-    .faq-q::after {
-      content: '+';
-      color: var(--gold);
-      font-size: 1.3rem;
-      font-weight: 300;
-      flex-shrink: 0;
-      transition: transform 0.2s ease;
-    }
-    .faq-item.open .faq-q::after {
-      transform: rotate(45deg);
-    }
-    .faq-a {
-      font-size: 0.95rem;
-      color: var(--ink-light);
-      line-height: 1.7;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-    }
-    .faq-item.open .faq-a {
-      max-height: 300px;
-    }
-
-    /* ── Comparison Table (zebra) ── */
-    tbody tr:nth-child(even) { background: #f5f1eb; }
-
-    /* ── Students section ── */
-    .students-box {
-      background: white;
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      padding: 1.5rem 1.75rem;
-      margin: 2rem 0;
-    }
-    .students-box h2 {
-      font-size: 1.1rem;
-      margin-bottom: 0.75rem;
-    }
-    .students-box ul {
-      padding-left: 1.25rem;
-      font-size: 0.94rem;
-      color: var(--ink-light);
-    }
-    .students-box li { margin-bottom: 0.4rem; }
-
-    /* ── Lead magnet ── */
-    .lead-magnet {
-      background: #f8f4eb;
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      margin: 2.5rem 0;
-      text-align: center;
-    }
-    .lead-magnet p { margin-bottom: 1rem; }
-    .cta-btn {
-      display: inline-block;
-      padding: 0.75em 1.75em;
-      background: var(--gold);
-      color: var(--ink);
-      font-size: 0.9rem;
-      letter-spacing: 0.06em;
-      text-decoration: none;
-      border-radius: var(--radius);
-      transition: all 0.2s ease;
-    }
-    .cta-btn:hover {
-      background: var(--gold-light);
-      transform: translateY(-2px);
-    }
-
-    /* ── Buy options ── */
-    .buy-options {
-      background: white;
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      margin: 2.5rem 0;
-    }
-    .buy-options h3 {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      letter-spacing: 0.05em;
-    }
-    .buy-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 0.75rem;
-    }
-    .buy-link {
-      display: inline-block;
-      padding: 0.6em 1.25em;
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      font-size: 0.88rem;
-      text-decoration: none;
-      color: var(--ink);
-      transition: all 0.2s ease;
-    }
-    .buy-link:hover {
-      border-color: var(--gold);
-      color: var(--gold);
-    }
-    .buy-link.primary {
-      background: var(--gold);
-      color: var(--ink);
-      border-color: var(--gold);
-      font-weight: 500;
-    }
-    .buy-link.primary:hover {
-      background: var(--gold-light);
-      color: var(--ink);
-    }
-    .small-note {
-      font-size: 0.78rem;
-      color: #888;
-      margin: 0;
-    }
-
-    /* ── Inline link style ── */
-    .body-text a {
-      color: var(--gold);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-    .body-text a:hover { color: var(--ink); }
-  </style>
 </head>
 <body>
 
@@ -432,11 +104,10 @@
 <div class="page-hero">
   <div class="genre-tag">Science Fiction · Epic · Political Allegory</div>
   <h1>Dune: Book vs Movie</h1>
-  <p class="subtitle">Frank Herbert (1965) vs Denis Villeneuve (2021–2024) — Key differences, casting analysis, and verdict</p>
+  <p class="subtitle">Frank Herbert (1965) vs Denis Villeneuve (2021–2024) &mdash; Key differences, casting analysis, and verdict</p>
 </div>
 
 <div class="page-wrap">
-
   <div class="comparison">
     <div class="panel-book">
       <div class="panel-label">The Book</div>
@@ -444,15 +115,10 @@
         <img class="book-cover" src="./images/dune.jpg" alt="Dune book cover — Frank Herbert, 1965" loading="lazy" width="300" height="450">
       </a>
       <a class="buy-btn" href="https://amzn.to/4c3KVYa" target="_blank" rel="noopener sponsored">View on Amazon (often discounted on Kindle)</a>
-      <div class="read-badges">
-        <span class="read-badge time">⏱ 10–12 hour read</span>
-        <span class="read-badge difficulty">★★★ Demanding</span>
-        <span class="read-badge length">188,000 words</span>
-      </div>
       <p class="affiliate-disclosure">As an Amazon Associate I earn from qualifying purchases.</p>
     </div>
     <div class="panel-film">
-      <div class="panel-label">The Movie</div>
+      <div class="panel-label">The [Film/Series]</div>
       <a class="trailer-link" href="https://www.youtube.com/watch?v=3_9vCamtuPY" target="_blank" rel="noopener">
         <div class="trailer-thumbnail">
           <img src="https://img.youtube.com/vi/3_9vCamtuPY/maxresdefault.jpg" alt="Dune 2021 — official trailer, dir. Denis Villeneuve" loading="lazy">
@@ -466,13 +132,12 @@
   <div class="meta-strip">
     <div class="meta-item"><strong>Author</strong>Frank Herbert</div>
     <div class="meta-item"><strong>Book Published</strong>1965</div>
-    <div class="meta-item"><strong>Film Released</strong>2021–2024</div>
+    <div class="meta-item"><strong>[Film/Series] Released</strong>2021–2024</div>
     <div class="meta-item"><strong>Director</strong>Denis Villeneuve</div>
     <span class="verdict-badge verdict-book">Book Wins</span>
   </div>
 
   <div class="body-text">
-
     <h2>The Story in Brief</h2>
     <p>Paul Atreides is the son of a duke sent to govern Arrakis — a desert planet that produces the most valuable substance in the universe. When his family is betrayed and destroyed by a rival house, Paul escapes into the desert with his mother and falls in with the Fremen, the planet's indigenous people. What begins as a survival story becomes something stranger: a meditation on prophecy, ecological collapse, religious manipulation, and the danger of charismatic leaders. Herbert spent six years researching and writing it. Villeneuve split the adaptation across two films released in 2021 and 2024. If you're drawn to epic political allegory, see also our comparisons of <a href="/the-handmaids-tale.html">The Handmaid's Tale</a> and <a href="/the-odyssey.html">The Odyssey</a> — both cover similar ground on power and fate.</p>
 
@@ -503,234 +168,17 @@
       <p>Mentats — humans trained to replace computers, which are banned under the Butlerian Jihad — are a key part of the political world Herbert builds. Thufir Hawat and Piter De Vries are major characters defined by this role. In the films, Mentats are present but their function is underexplained; the worldbuilding context that makes them significant is largely absent.</p>
     </div>
 
-    <h2>Comparison Table</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Aspect</th>
-          <th>Book (1965)</th>
-          <th>Movie (2021–24)</th>
-          <th>Winner</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Paul's interiority & complicity</td>
-          <td>Central — felt from inside</td>
-          <td>Visual ambiguity only</td>
-          <td>Book</td>
-        </tr>
-        <tr>
-          <td>Chani's character arc</td>
-          <td>Passive, devoted</td>
-          <td>Skeptic — far stronger</td>
-          <td>Movie</td>
-        </tr>
-        <tr>
-          <td>Bene Gesserit scheming</td>
-          <td>Fully developed, central</td>
-          <td>Background texture</td>
-          <td>Book</td>
-        </tr>
-        <tr>
-          <td>Visual spectacle</td>
-          <td>Imagination only</td>
-          <td>Extraordinary — among cinema's best sci-fi</td>
-          <td>Movie</td>
-        </tr>
-        <tr>
-          <td>Ending's moral clarity</td>
-          <td>Explicitly pyrrhic</td>
-          <td>Ambiguous, deferred</td>
-          <td>Book</td>
-        </tr>
-        <tr>
-          <td>World-building depth</td>
-          <td>Six years of research, fully realised</td>
-          <td>Impressionistic — serves the plot</td>
-          <td>Book</td>
-        </tr>
-        <tr>
-          <td>Pacing & accessibility</td>
-          <td>Slow burn, demanding opening</td>
-          <td>Immediately gripping</td>
-          <td>Movie</td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div><!-- /.body-text -->
-
-  <!-- ── CASTING SECTION ── -->
-  <div class="casting-section">
-    <h2>Casting &amp; Performances</h2>
-    <p class="casting-intro">Villeneuve assembled one of the most striking ensemble casts in recent science fiction cinema. The question isn't whether they're good — they are — but whether they capture what Herbert put on the page.</p>
-
-    <div class="cast-grid">
-
-      <div class="cast-card">
-        <div class="cast-img-wrap">
-          <!-- Replace src with: ./images/cast/timothee-chalamet.jpg -->
-          <img src="./images/cast/timothee-chalamet.jpg" alt="Timothée Chalamet as Paul Atreides in Dune 2021"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="cast-img-placeholder" style="display:none;">TC<span>image needed</span></div>
-          <span class="cast-verdict">Strong ✓</span>
-        </div>
-        <div class="cast-info">
-          <div class="cast-actor">Timothée Chalamet</div>
-          <div class="cast-character">Paul Atreides</div>
-          <p class="cast-note">Physically perfect casting — the lean, watchful quality Herbert describes. What Chalamet can't give us is Paul's internal monologue, his calculated manipulation of events. The performance reads as passive where the novel reads as terrifyingly deliberate.</p>
-        </div>
-      </div>
-
-      <div class="cast-card">
-        <div class="cast-img-wrap">
-          <img src="./images/cast/zendaya.jpg" alt="Zendaya as Chani in Dune 2021"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="cast-img-placeholder" style="display:none;">Z<span>image needed</span></div>
-          <span class="cast-verdict">Best in film ✓</span>
-        </div>
-        <div class="cast-info">
-          <div class="cast-actor">Zendaya</div>
-          <div class="cast-character">Chani</div>
-          <p class="cast-note">The adaptation's single biggest improvement over the book. Villeneuve transforms Chani from devoted companion into the story's moral conscience. Zendaya carries that burden with complete conviction — her skepticism of Paul's messianic rise is the film's sharpest critique.</p>
-        </div>
-      </div>
-
-      <div class="cast-card">
-        <div class="cast-img-wrap">
-          <img src="./images/cast/rebecca-ferguson.jpg" alt="Rebecca Ferguson as Lady Jessica in Dune 2021"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="cast-img-placeholder" style="display:none;">RF<span>image needed</span></div>
-          <span class="cast-verdict">Strong ✓</span>
-        </div>
-        <div class="cast-info">
-          <div class="cast-actor">Rebecca Ferguson</div>
-          <div class="cast-character">Lady Jessica</div>
-          <p class="cast-note">The film's most complex performance. Ferguson conveys Jessica's dual loyalty — to the Atreides and to the Bene Gesserit — through physical restraint and ambiguous expression. It's extraordinary work in a role where the novel gives us pages of interior justification she has to communicate without dialogue.</p>
-        </div>
-      </div>
-
-      <div class="cast-card">
-        <div class="cast-img-wrap">
-          <img src="./images/cast/javier-bardem.jpg" alt="Javier Bardem as Stilgar in Dune 2021"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="cast-img-placeholder" style="display:none;">JB<span>image needed</span></div>
-          <span class="cast-verdict">Scene-stealer ✓</span>
-        </div>
-        <div class="cast-info">
-          <div class="cast-actor">Javier Bardem</div>
-          <div class="cast-character">Stilgar</div>
-          <p class="cast-note">Bardem steals Part Two. His Stilgar becomes unintentionally comic in his devotion — which is exactly Herbert's point about how ordinary people enable charismatic leaders. It's a performance that gets funnier and more uncomfortable the more you think about what it's doing.</p>
-        </div>
-      </div>
-
-      <div class="cast-card">
-        <div class="cast-img-wrap">
-          <img src="./images/cast/austin-butler.jpg" alt="Austin Butler as Feyd-Rautha in Dune Part Two 2024"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="cast-img-placeholder" style="display:none;">AB<span>image needed</span></div>
-          <span class="cast-verdict">Revelation ✓</span>
-        </div>
-        <div class="cast-info">
-          <div class="cast-actor">Austin Butler</div>
-          <div class="cast-character">Feyd-Rautha</div>
-          <p class="cast-note">The most surprising casting decision and the one that pays off most completely. Butler's Feyd-Rautha is genuinely unnerving — a dark mirror of Paul that the novel sketches but the film develops into something more overtly sinister and compelling.</p>
-        </div>
-      </div>
-
-      <div class="cast-card">
-        <div class="cast-img-wrap">
-          <img src="./images/cast/charlotte-rampling.jpg" alt="Charlotte Rampling as Reverend Mother Mohiam in Dune 2021"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="cast-img-placeholder" style="display:none;">CR<span>image needed</span></div>
-          <span class="cast-verdict">Underused</span>
-        </div>
-        <div class="cast-info">
-          <div class="cast-actor">Charlotte Rampling</div>
-          <div class="cast-character">Reverend Mother Mohiam</div>
-          <p class="cast-note">Impeccable presence, but the script limits her. In the novel, the Bene Gesserit's centuries of scheming are central to the argument — Mohiam is a player in a very long game. The films use her sparingly, and the full weight of Bene Gesserit manipulation never quite lands.</p>
-        </div>
-      </div>
-
-    </div><!-- /.cast-grid -->
-
-    <div class="casting-verdict">
-      <strong>Casting verdict:</strong> Villeneuve made almost no wrong choices. The ensemble collectively elevates the material, and in Zendaya's case, demonstrably improves on it. The limitation isn't the actors — it's what film as a medium can't access: the interior voice that makes Herbert's argument so precise and so disturbing.
-    </div>
-  </div><!-- /.casting-section -->
-
-  <div class="body-text">
-
-    <h2>Should You Read the Book First?</h2>
+    <h2>Should You Read First?</h2>
     <p>Yes — but Dune is a genuinely demanding novel, and that's worth knowing going in. The first hundred pages require patience; Herbert withholds conventional narrative momentum in favour of world-construction. Push through and the payoff is enormous. The films are an excellent entry point that make the story immediately accessible, but they soften exactly the elements that make the book worth reading: the complicity, the manipulation, the warning buried in the adventure. Read it before Part Three arrives. If you find Herbert's prose difficult, consider the <a href="https://amzn.to/audible-dune" rel="noopener sponsored">Audible audiobook</a> — the full-cast production is exceptional.</p>
 
     <div class="verdict-box">
-      <div class="verdict-title">Final Verdict</div>
+      <div class="verdict-title">Verdict</div>
       <p>Villeneuve's adaptation is <strong>one of the best science fiction films ever made</strong> — and it still can't do what Herbert does. The book is an argument about power and prophecy that the films can only gesture toward. See the films. Then read the novel and notice everything they had to leave out. The book wins, but this is one of the rare cases where both versions are genuinely essential.</p>
     </div>
-
   </div>
 
-  <!-- ── STUDENTS BOX ── -->
-  <div class="students-box">
-    <h2>For Students, Teachers &amp; Book Clubs</h2>
-    <ul>
-      <li><strong>Core theme:</strong> The danger of charismatic leadership — Herbert was explicitly writing a warning, not a hero's journey.</li>
-      <li><strong>Discussion question:</strong> Does Villeneuve's film make Paul more or less sympathetic than the novel? What does that change mean?</li>
-      <li><strong>Pair with:</strong> Orwell's <a href="/animal-farm.html">Animal Farm</a> for a shorter treatment of revolution and its corruption, or <a href="/the-handmaids-tale.html">The Handmaid's Tale</a> for manufactured religion as political control.</li>
-      <li><strong>Research angle:</strong> Herbert drew extensively on real-world ecology, Islamic culture, and Cold War geopolitics — the novel rewards contextual reading.</li>
-    </ul>
-  </div>
-
-  <!-- ── BUY OPTIONS ── -->
-  <div class="buy-options">
-    <h3>Where to Buy / Experience</h3>
-    <div class="buy-links">
-      <a class="buy-link primary" href="https://amzn.to/4c3KVYa" target="_blank" rel="noopener sponsored">View on Amazon (often discounted on Kindle)</a>
-      <a class="buy-link" href="YOUR-BOOKSHOP-ORG-LINK" target="_blank" rel="noopener">Buy on Bookshop.org (supports indie bookstores)</a>
-      <a class="buy-link" href="YOUR-AUDIBLE-LINK" target="_blank" rel="noopener sponsored">Listen on Audible (full-cast production)</a>
-    </div>
-    <p class="small-note">As an Amazon Associate and Bookshop.org affiliate I earn from qualifying purchases. Prices vary — Amazon frequently discounts the Kindle edition for classics.</p>
-  </div>
-
-  <!-- ── FAQ ── -->
-  <div class="faq-section">
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="faq-item open">
-      <div class="faq-q">Should I read Dune before watching the movie?</div>
-      <div class="faq-a">
-        <p>Yes — but know it's a demanding read. The first hundred pages prioritise world-building over plot momentum. Push through and the payoff is enormous. The films make the story immediately accessible but soften exactly the elements that make the book essential: Paul's complicity, the manufactured religion, the moral warning buried in the adventure.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">How long does Dune take to read?</div>
-      <div class="faq-a">
-        <p>Dune is approximately 188,000 words. At an average adult reading pace of 250–300 words per minute, expect 10–12 hours of reading time. Most readers spread it over 1–2 weeks. The audiobook runs approximately 21 hours.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Is Dune Part Two faithful to the book?</div>
-      <div class="faq-a">
-        <p>Largely yes in plot terms, but Villeneuve makes significant character changes — most notably Chani, who becomes a skeptic of the messianic prophecy rather than a true believer. The ending's moral weight is also handled differently, with the films more ambiguous where Herbert is explicitly critical of Paul.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Is the Dune book better than the movie?</div>
-      <div class="faq-a">
-        <p>For depth, yes. Herbert's novel is a full argument about the dangers of charismatic leadership and manufactured religion that the films can only gesture toward. Villeneuve's films are visually extraordinary and among the best science fiction cinema ever made — but they work best as a companion to the book, not a replacement.</p>
-      </div>
-    </div>
-
-  </div><!-- /.faq-section -->
-
-  <!-- ── RELATED ── -->
   <div class="related-section">
-    <h3>More Comparisons</h3>
+    <h3>More Science Fiction Comparisons</h3>
     <div class="related-grid">
       <a class="related-card" href="/the-handmaids-tale.html"><span class="rel-label">Also Compare</span>The Handmaid's Tale</a>
       <a class="related-card" href="/animal-farm.html"><span class="rel-label">Also Compare</span>Animal Farm</a>
@@ -740,31 +188,6 @@
       <a class="related-card" href="/the-martian.html"><span class="rel-label">Also Compare</span>The Martian</a>
     </div>
   </div>
-
-  <!-- ── LEAD MAGNET ── -->
-  <div class="lead-magnet">
-    <p><strong>Not sure what to read next?</strong> Our free "Book vs Movie Reader Guide" covers 20+ comparisons with printable scorecards and a quick "read first?" verdict for each.</p>
-    <a href="/free-guide" class="cta-btn">Download Free Guide →</a>
-  </div>
-
-</div><!-- /.page-wrap -->
-
-<footer>
-  <p>&copy; 2026 BooksVersusMovies.com &nbsp;&mdash;&nbsp; <a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="about.html">About</a></p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;color:#444;">As an Amazon Associate and Bookshop.org affiliate I earn from qualifying purchases. All opinions are our own.</p>
-</footer>
-
-<script>
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(q => {
-    q.addEventListener('click', () => {
-      const item = q.parentElement;
-      const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!wasOpen) item.classList.add('open');
-    });
-  });
-</script>
-
+</div>
 </body>
 </html>
