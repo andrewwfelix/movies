@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /next_movies/
+Disallow: /spotlight/
+Disallow: /scripts/
+
+Sitemap: https://booksversusmovies.com/sitemap.xml
