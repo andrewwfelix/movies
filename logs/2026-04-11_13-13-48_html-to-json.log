@@ -1,0 +1,203 @@
+============================================================
+Script:  html-to-json
+Started: 2026-04-11T17:13:48.385Z
+============================================================
+[17:13:48.389] [INFO ] html-to-json.js v1
+[17:13:48.391] [INFO ] Source:  C:\Users\andre\projects\movies\reviews
+[17:13:48.391] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\1-extracted
+[17:13:48.391] [INFO ] Files:   163
+[17:13:48.391] [INFO ] Force:   yes
+
+── Processing ───────────────────────────────────
+[17:13:48.397] [PASS ] a-beautiful-mind.html — Sylvia Nasar · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.398] [PASS ] a-knight-of-the-seven-kingdoms.html — George R.R. Martin · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.400] [PASS ] a-little-life.html — Hanya Yanagihara · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.401] [PASS ] a-man-called-ove.html — Fredrik Backman · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.402] [PASS ] a-walk-to-remember.html — Nicholas Sparks · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.404] [PASS ] about-a-boy.html — Nick Hornby · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.405] [PASS ] all-quiet-on-the-western-front.html — Erich Maria Remarque · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.406] [PASS ] all-the-light-we-cannot-see.html — Anthony Doerr · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.408] [PASS ] along-came-a-spider.html — James Patterson · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.409] [PASS ] american-gods.html — Neil Gaiman · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.410] [PASS ] american-psycho.html — Bret Easton Ellis · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.412] [PASS ] animal-farm.html — George Orwell · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.413] [PASS ] annihilation.html — Jeff VanderMeer · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.414] [PASS ] atonement.html — Ian McEwan · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.415] [PASS ] band-of-brothers.html — Stephen E. Ambrose · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.416] [PASS ] beloved.html — Toni Morrison · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.417] [PASS ] big-fish.html — Daniel Wallace · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.418] [PASS ] big-little-lies-hbo.html — Liane Moriarty · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.419] [PASS ] breakfast-at-tiffanys.html — Truman Capote · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.420] [PASS ] bridgerton.html — Julia Quinn · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.422] [PASS ] brooklyn.html — Colm Tóibín · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.423] [PASS ] catch-22.html — Joseph Heller · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.424] [PASS ] catch-me-if-you-can.html — Frank Abagnale · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.425] [PASS ] cold-mountain.html — Charles Frazier · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.426] [PASS ] contact.html — Carl Sagan · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.428] [PASS ] da-vinci-code.html — Dan Brown · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.429] [PASS ] daisy-jones-and-the-six.html — Taylor Jenkins Reid · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.430] [PASS ] dark-matter.html — Blake Crouch · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.431] [PASS ] devil-wears-prada.html — Lauren Weisberger · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.432] [PASS ] divergent.html — Veronica Roth · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.433] [PASS ] doctor-sleep.html — Stephen King · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.451] [PASS ] dracula.html — Bram Stoker · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.453] [PASS ] dune.html — Frank Herbert · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.454] [PASS ] eat-pray-love.html — Elizabeth Gilbert · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.456] [PASS ] enders-game-film.html — Orson Scott Card · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.457] [PASS ] enders-game.html — Orson Scott Card · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.459] [PASS ] english-patient.html — Michael Ondaatje · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.461] [PASS ] everything-everything.html — Nicola Yoon · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.463] [PASS ] fight-club.html — Chuck Palahniuk · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.463] [PASS ] five-feet-apart.html — Rachael Lippincott · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.465] [PASS ] fourth-wing.html — Rebecca Yarros · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.466] [PASS ] frankenstein.html — Mary Shelley · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.467] [PASS ] geralds-game.html — Stephen King · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.468] [PASS ] girl-on-the-train.html — Paula Hawkins · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.469] [PASS ] girl-with-the-dragon-tattoo.html — Stieg Larsson · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.470] [PASS ] gone-girl.html — Gillian Flynn · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.471] [PASS ] good-omens.html — Terry Pratchett & Neil Gaiman · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.472] [PASS ] hamnet.html — Maggie O'Farrell · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.474] [PASS ] hannibal-series.html — Thomas Harris · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.475] [PASS ] heated-rivalry.html — Rachel Reid · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.476] [PASS ] high-fidelity.html — Nick Hornby · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.477] [PASS ] hillbilly-elegy.html — J.D. Vance · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.478] [PASS ] hitchhikers-guide.html — Douglas Adams · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.479] [PASS ] howls-moving-castle.html — Diana Wynne Jones · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.480] [PASS ] hunger-games-sunrise.html — Suzanne Collins · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.481] [PASS ] i-am-legend.html — Richard Matheson · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.482] [PASS ] i-robot.html — Isaac Asimov · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.483] [PASS ] interview-with-the-vampire-amcplus.html — Anne Rice · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.485] [PASS ] into-the-wild.html — Jon Krakauer · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.485] [PASS ] it-ends-with-us.html — Colleen Hoover · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.486] [PASS ] it-muschietti.html — Stephen King · 5 diffs · 5 FAQ · 8 chars
+[17:13:48.487] [PASS ] jane-eyre.html — Charlotte Brontë · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.488] [PASS ] jurassic-park.html — Michael Crichton · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.489] [PASS ] kite-runner.html — Khaled Hosseini · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.490] [PASS ] la-confidential.html — James Ellroy · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.492] [PASS ] les-miserables.html — Victor Hugo · 5 diffs · 5 FAQ · 7 chars
+[17:13:48.493] [PASS ] little-women.html — Louisa May Alcott · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.494] [PASS ] lonesome-dove.html — Larry McMurtry · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.496] [PASS ] looking-for-alaska.html — John Green · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.497] [PASS ] lord-of-the-flies.html — William Golding · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.498] [PASS ] love-simon.html — Becky Albertalli · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.499] [PASS ] margos-got-money-troubles.html — Rufi Thorpe · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.500] [PASS ] me-before-you.html — Jojo Moyes · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.501] [PASS ] mickey-17.html — Edward Ashton · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.502] [PASS ] misery.html — Stephen King · 5 diffs · 5 FAQ · 3 chars
+[17:13:48.503] [PASS ] my-brilliant-friend.html — Elena Ferrante · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.504] [PASS ] my-sisters-keeper.html — Jodi Picoult · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.505] [PASS ] narnia-magicians-nephew.html — C.S. Lewis · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.506] [PASS ] never-let-me-go.html — Kazuo Ishiguro · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.508] [PASS ] normal-people.html — Sally Rooney · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.509] [PASS ] of-mice-and-men.html — John Steinbeck · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.510] [PASS ] olive-kitteridge.html — Elizabeth Strout · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.511] [PASS ] on-the-road.html — Jack Kerouac · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.512] [PASS ] one-day.html — David Nicholls · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.513] [PASS ] one-flew-over-the-cuckoos-nest.html — Ken Kesey · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.514] [PASS ] outlander.html — Diana Gabaldon · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.515] [PASS ] pachinko.html — Min Jin Lee · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.516] [PASS ] people-we-meet-on-vacation.html — Emily Henry · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.517] [PASS ] perks-of-being-a-wallflower.html — Stephen Chbosky · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.518] [PASS ] pet-sematary-2019.html — Stephen King · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.519] [PASS ] presumed-innocent.html — Scott Turow · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.521] [PASS ] pride-and-prejudice.html — Jane Austen · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.522] [PASS ] project-hail-mary.html — Andy Weir · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.524] [PASS ] ready-player-one.html — Ernest Cline · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.525] [PASS ] rebecca.html — Daphne du Maurier · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.526] [PASS ] remains-of-the-day.html — Kazuo Ishiguro · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.527] [PASS ] remarkably-bright-creatures.html — Shelby Van Pelt · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.528] [PASS ] reminders-of-him.html — Colleen Hoover · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.529] [PASS ] room.html — Emma Donoghue · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.530] [PASS ] roots-2016.html — Alex Haley · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.531] [PASS ] rosemarys-baby.html — Ira Levin · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.532] [PASS ] schindlers-list.html — Thomas Keneally · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.533] [PASS ] seabiscuit.html — Laura Hillenbrand · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.534] [PASS ] sense-and-sensibility.html — Jane Austen · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.536] [PASS ] shadow-and-bone.html — Leigh Bardugo · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.537] [PASS ] sharp-objects.html — Gillian Flynn · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.538] [PASS ] shogun-2024.html — James Clavell · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.539] [PASS ] silence-of-the-lambs.html — Thomas Harris · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.540] [PASS ] sophies-choice.html — William Styron · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.541] [PASS ] sphere.html — Michael Crichton · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.542] [PASS ] stardust.html — Neil Gaiman · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.543] [PASS ] station-eleven.html — Emily St. John Mandel · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.546] [PASS ] talented-mr-ripley.html — Patricia Highsmith · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.547] [PASS ] the-book-thief.html — Markus Zusak · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.548] [PASS ] the-client.html — John Grisham · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.548] [PASS ] the-color-purple.html — Alice Walker · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.549] [PASS ] the-count-of-monte-cristo.html — Alexandre Dumas · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.550] [PASS ] the-electric-state.html — Simon Stålenhag · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.551] [PASS ] the-fault-in-our-stars.html — John Green · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.552] [PASS ] the-firm.html — John Grisham · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.553] [PASS ] the-girl-with-the-dragon-tattoo-fincher.html — Stieg Larsson · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.554] [PASS ] the-giver.html — Lois Lowry · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.555] [PASS ] the-glass-castle.html — Jeannette Walls · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.556] [PASS ] the-great-gatsby.html — F. Scott Fitzgerald · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.556] [PASS ] the-handmaids-tale.html — Margaret Atwood · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.558] [PASS ] the-haunting-of-hill-house.html — Shirley Jackson · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.559] [PASS ] the-help.html — Kathryn Stockett · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.561] [PASS ] the-hours.html — Michael Cunningham · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.562] [PASS ] the-housemaid.html — Freida McFadden · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.563] [PASS ] the-lincoln-lawyer.html — Michael Connelly · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.564] [PASS ] the-longest-ride.html — Nicholas Sparks · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.565] [PASS ] the-lovely-bones.html — Alice Sebold · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.566] [PASS ] the-martian.html — Andy Weir · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.568] [PASS ] the-maze-runner-film.html — James Dashner · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.569] [PASS ] the-maze-runner.html — James Dashner · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.570] [PASS ] the-notebook.html — Nicholas Sparks · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.571] [PASS ] the-odyssey.html — Homer · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.572] [PASS ] the-outsider.html — Stephen King · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.573] [PASS ] the-outsiders.html — S.E. Hinton · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.575] [PASS ] the-pelican-brief.html — John Grisham · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.576] [PASS ] the-pianist.html — Władysław Szpilman · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.577] [PASS ] the-picture-of-dorian-gray.html — Oscar Wilde · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.578] [PASS ] the-pillars-of-the-earth.html — Ken Follett · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.579] [PASS ] the-princess-bride.html — William Goldman · 5 diffs · 5 FAQ · 7 chars
+[17:13:48.580] [PASS ] the-road.html — Cormac McCarthy · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.581] [PASS ] the-secret-garden.html — Frances Hodgson Burnett · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.582] [PASS ] the-secret-life-of-bees.html — Sue Monk Kidd · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.583] [PASS ] the-shining.html — Stephen King · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.584] [PASS ] the-sisterhood-of-the-traveling-pants.html — Ann Brashares · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.585] [PASS ] the-three-body-problem.html — Liu Cixin · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.586] [PASS ] the-thursday-murder-club.html — Richard Osman · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.587] [PASS ] the-time-travelers-wife.html — Audrey Niffenegger · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.588] [PASS ] the-witcher.html — Andrzej Sapkowski · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.591] [PASS ] the-woman-in-the-window.html — A.J. Finn · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.593] [PASS ] thirteen-reasons-why.html — Jay Asher · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.596] [PASS ] to-kill-a-mockingbird.html — Harper Lee · 5 diffs · 5 FAQ · 6 chars
+[17:13:48.597] [PASS ] verity.html — Colleen Hoover · 5 diffs · 5 FAQ · 4 chars
+[17:13:48.598] [PASS ] water-for-elephants.html — Sara Gruen · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.599] [PASS ] where-the-crawdads-sing.html — Delia Owens · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.600] [PASS ] white-noise.html — Don DeLillo · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.601] [PASS ] wolf-hall.html — Hilary Mantel · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.602] [PASS ] world-war-z.html — Max Brooks · 5 diffs · 5 FAQ · 5 chars
+[17:13:48.603] [PASS ] wuthering-heights.html — Emily Brontë · 5 diffs · 5 FAQ · 5 chars
+
+── Summary ─────────────────────────────────────
+  Processed:           163
+  Written:             163
+  Skipped:             0
+  Errors:              0
+  Warnings:            0 files
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages have storyBrief
+  ✓  All pages have 4+ differences
+  ✓  All pages have verdictBox
+  ✓  All pages have readFirst
+  ✓  All pages have 3+ FAQ items
+  ✓  All pages have 3 related cards
+  ✓  All pages have affiliateLink
+  ✓  All pages have verdictText
+  ✓  quickAnswer null in all extracted files
+  ✓  ctaBlocks null in all extracted files
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+============================================================
+Finished: 2026-04-11T17:13:48.604Z
+Elapsed:  0.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-11_13-13-48_html-to-json.log
+============================================================

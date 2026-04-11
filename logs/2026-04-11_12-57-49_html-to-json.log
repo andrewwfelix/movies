@@ -1,0 +1,369 @@
+============================================================
+Script:  html-to-json
+Started: 2026-04-11T16:57:49.018Z
+============================================================
+[16:57:49.023] [INFO ] html-to-json.js v1
+[16:57:49.025] [INFO ] Source:  C:\Users\andre\projects\movies\reviews
+[16:57:49.025] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\1-extracted
+[16:57:49.025] [INFO ] Files:   163
+[16:57:49.025] [INFO ] Force:   yes
+
+── Processing ───────────────────────────────────
+[16:57:49.031] [WARN ] a-beautiful-mind.html: Sylvia Nasar · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.033] [WARN ] a-knight-of-the-seven-kingdoms.html: George R.R. Martin · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.052] [WARN ] a-little-life.html: Hanya Yanagihara · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.054] [WARN ] a-man-called-ove.html: Fredrik Backman · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.056] [WARN ] a-walk-to-remember.html: Nicholas Sparks · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.057] [WARN ] about-a-boy.html: Nick Hornby · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.058] [WARN ] all-quiet-on-the-western-front.html: Erich Maria Remarque · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.059] [WARN ] all-the-light-we-cannot-see.html: Anthony Doerr · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.060] [WARN ] along-came-a-spider.html: James Patterson · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.061] [WARN ] american-gods.html: Neil Gaiman · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.062] [WARN ] american-psycho.html: Bret Easton Ellis · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.064] [WARN ] animal-farm.html: George Orwell · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.065] [WARN ] annihilation.html: Jeff VanderMeer · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.066] [WARN ] atonement.html: Ian McEwan · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.068] [WARN ] band-of-brothers.html: Stephen E. Ambrose · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.069] [WARN ] beloved.html: Toni Morrison · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.071] [WARN ] big-fish.html: Daniel Wallace · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.073] [WARN ] big-little-lies-hbo.html: Liane Moriarty · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.075] [WARN ] breakfast-at-tiffanys.html: Truman Capote · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.076] [WARN ] bridgerton.html: Julia Quinn · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.077] [WARN ] brooklyn.html: Colm Tóibín · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.078] [WARN ] catch-22.html: Joseph Heller · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.080] [WARN ] catch-me-if-you-can.html: Frank Abagnale · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.081] [WARN ] cold-mountain.html: Charles Frazier · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.082] [WARN ] contact.html: Carl Sagan · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.083] [WARN ] da-vinci-code.html: Dan Brown · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.084] [WARN ] daisy-jones-and-the-six.html: Taylor Jenkins Reid · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.087] [WARN ] dark-matter.html: Blake Crouch · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.088] [WARN ] devil-wears-prada.html: Lauren Weisberger · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.090] [WARN ] divergent.html: Veronica Roth · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.091] [WARN ] doctor-sleep.html: Stephen King · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.092] [WARN ] dracula.html: Bram Stoker · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.093] [WARN ] dune.html: Frank Herbert · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.094] [WARN ] eat-pray-love.html: Elizabeth Gilbert · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.096] [WARN ] enders-game-film.html: Orson Scott Card · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.097] [WARN ] enders-game.html: Orson Scott Card · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.098] [WARN ] english-patient.html: Michael Ondaatje · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.099] [WARN ] everything-everything.html: Nicola Yoon · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.100] [WARN ] fight-club.html: Chuck Palahniuk · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.102] [WARN ] five-feet-apart.html: Rachael Lippincott · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.104] [WARN ] fourth-wing.html: Rebecca Yarros · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.105] [WARN ] frankenstein.html: Mary Shelley · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.106] [WARN ] geralds-game.html: Stephen King · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.108] [WARN ] girl-on-the-train.html: Paula Hawkins · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.109] [WARN ] girl-with-the-dragon-tattoo.html: Stieg Larsson · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.111] [WARN ] gone-girl.html: Gillian Flynn · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.112] [WARN ] good-omens.html: Terry Pratchett & Neil Gaiman · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.113] [WARN ] hamnet.html: Maggie O'Farrell · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.115] [WARN ] hannibal-series.html: Thomas Harris · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.116] [WARN ] heated-rivalry.html: Rachel Reid · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.118] [WARN ] high-fidelity.html: Nick Hornby · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.119] [WARN ] hillbilly-elegy.html: J.D. Vance · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.120] [WARN ] hitchhikers-guide.html: Douglas Adams · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.122] [WARN ] howls-moving-castle.html: Diana Wynne Jones · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.123] [WARN ] hunger-games-sunrise.html: Suzanne Collins · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.124] [WARN ] i-am-legend.html: Richard Matheson · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.125] [WARN ] i-robot.html: Isaac Asimov · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.126] [WARN ] interview-with-the-vampire-amcplus.html: Anne Rice · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.128] [WARN ] into-the-wild.html: Jon Krakauer · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.129] [WARN ] it-ends-with-us.html: Colleen Hoover · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.130] [WARN ] it-muschietti.html: Stephen King · 5 diffs · 5 FAQ · 8 chars — missing: verdict box text
+[16:57:49.132] [WARN ] jane-eyre.html: Charlotte Brontë · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.134] [WARN ] jurassic-park.html: Michael Crichton · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.135] [WARN ] kite-runner.html: Khaled Hosseini · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.136] [WARN ] la-confidential.html: James Ellroy · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.138] [WARN ] les-miserables.html: Victor Hugo · 5 diffs · 5 FAQ · 7 chars — missing: verdict box text
+[16:57:49.139] [WARN ] little-women.html: Louisa May Alcott · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.141] [WARN ] lonesome-dove.html: Larry McMurtry · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.142] [WARN ] looking-for-alaska.html: John Green · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.143] [WARN ] lord-of-the-flies.html: William Golding · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.145] [WARN ] love-simon.html: Becky Albertalli · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.146] [WARN ] margos-got-money-troubles.html: Rufi Thorpe · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.148] [WARN ] me-before-you.html: Jojo Moyes · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.149] [WARN ] mickey-17.html: Edward Ashton · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.150] [WARN ] misery.html: Stephen King · 5 diffs · 5 FAQ · 3 chars — missing: verdict box text
+[16:57:49.151] [WARN ] my-brilliant-friend.html: Elena Ferrante · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.152] [WARN ] my-sisters-keeper.html: Jodi Picoult · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.154] [WARN ] narnia-magicians-nephew.html: C.S. Lewis · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.155] [WARN ] never-let-me-go.html: Kazuo Ishiguro · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.156] [WARN ] normal-people.html: Sally Rooney · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.157] [WARN ] of-mice-and-men.html: John Steinbeck · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.158] [WARN ] olive-kitteridge.html: Elizabeth Strout · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.160] [WARN ] on-the-road.html: Jack Kerouac · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.161] [WARN ] one-day.html: David Nicholls · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.162] [WARN ] one-flew-over-the-cuckoos-nest.html: Ken Kesey · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.163] [WARN ] outlander.html: Diana Gabaldon · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.164] [WARN ] pachinko.html: Min Jin Lee · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.166] [WARN ] people-we-meet-on-vacation.html: Emily Henry · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.168] [WARN ] perks-of-being-a-wallflower.html: Stephen Chbosky · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.170] [WARN ] pet-sematary-2019.html: Stephen King · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.172] [WARN ] presumed-innocent.html: Scott Turow · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.173] [WARN ] pride-and-prejudice.html: Jane Austen · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.174] [WARN ] project-hail-mary.html: Andy Weir · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.176] [WARN ] ready-player-one.html: Ernest Cline · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.178] [WARN ] rebecca.html: Daphne du Maurier · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.179] [WARN ] remains-of-the-day.html: Kazuo Ishiguro · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.180] [WARN ] remarkably-bright-creatures.html: Shelby Van Pelt · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.181] [WARN ] reminders-of-him.html: Colleen Hoover · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.182] [WARN ] room.html: Emma Donoghue · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.183] [WARN ] roots-2016.html: Alex Haley · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.185] [WARN ] rosemarys-baby.html: Ira Levin · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.186] [WARN ] schindlers-list.html: Thomas Keneally · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.187] [WARN ] seabiscuit.html: Laura Hillenbrand · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.189] [WARN ] sense-and-sensibility.html: Jane Austen · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.190] [WARN ] shadow-and-bone.html: Leigh Bardugo · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.191] [WARN ] sharp-objects.html: Gillian Flynn · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.192] [WARN ] shogun-2024.html: James Clavell · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.193] [WARN ] silence-of-the-lambs.html: Thomas Harris · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.194] [WARN ] sophies-choice.html: William Styron · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.195] [WARN ] sphere.html: Michael Crichton · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.196] [WARN ] stardust.html: Neil Gaiman · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.198] [WARN ] station-eleven.html: Emily St. John Mandel · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.198] [WARN ] talented-mr-ripley.html: Patricia Highsmith · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.200] [WARN ] the-book-thief.html: Markus Zusak · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.203] [WARN ] the-client.html: John Grisham · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.204] [WARN ] the-color-purple.html: Alice Walker · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.205] [WARN ] the-count-of-monte-cristo.html: Alexandre Dumas · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.207] [WARN ] the-electric-state.html: Simon Stålenhag · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.208] [WARN ] the-fault-in-our-stars.html: John Green · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.209] [WARN ] the-firm.html: John Grisham · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.210] [WARN ] the-girl-with-the-dragon-tattoo-fincher.html: Stieg Larsson · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.211] [WARN ] the-giver.html: Lois Lowry · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.212] [WARN ] the-glass-castle.html: Jeannette Walls · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.213] [WARN ] the-great-gatsby.html: F. Scott Fitzgerald · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.214] [WARN ] the-handmaids-tale.html: Margaret Atwood · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.215] [WARN ] the-haunting-of-hill-house.html: Shirley Jackson · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.216] [WARN ] the-help.html: Kathryn Stockett · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.217] [WARN ] the-hours.html: Michael Cunningham · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.219] [WARN ] the-housemaid.html: Freida McFadden · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.220] [WARN ] the-lincoln-lawyer.html: Michael Connelly · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.222] [WARN ] the-longest-ride.html: Nicholas Sparks · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.223] [WARN ] the-lovely-bones.html: Alice Sebold · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.224] [WARN ] the-martian.html: Andy Weir · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.225] [WARN ] the-maze-runner-film.html: James Dashner · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.226] [WARN ] the-maze-runner.html: James Dashner · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.227] [WARN ] the-notebook.html: Nicholas Sparks · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.229] [WARN ] the-odyssey.html: Homer · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.230] [WARN ] the-outsider.html: Stephen King · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.231] [WARN ] the-outsiders.html: S.E. Hinton · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.232] [WARN ] the-pelican-brief.html: John Grisham · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.233] [WARN ] the-pianist.html: Władysław Szpilman · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.235] [WARN ] the-picture-of-dorian-gray.html: Oscar Wilde · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.236] [WARN ] the-pillars-of-the-earth.html: Ken Follett · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.237] [WARN ] the-princess-bride.html: William Goldman · 5 diffs · 5 FAQ · 7 chars — missing: verdict box text
+[16:57:49.238] [WARN ] the-road.html: Cormac McCarthy · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.239] [WARN ] the-secret-garden.html: Frances Hodgson Burnett · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.240] [WARN ] the-secret-life-of-bees.html: Sue Monk Kidd · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.241] [WARN ] the-shining.html: Stephen King · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.242] [WARN ] the-sisterhood-of-the-traveling-pants.html: Ann Brashares · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.243] [WARN ] the-three-body-problem.html: Liu Cixin · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.244] [WARN ] the-thursday-murder-club.html: Richard Osman · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.245] [WARN ] the-time-travelers-wife.html: Audrey Niffenegger · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.247] [WARN ] the-witcher.html: Andrzej Sapkowski · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.248] [WARN ] the-woman-in-the-window.html: A.J. Finn · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.249] [WARN ] thirteen-reasons-why.html: Jay Asher · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.250] [WARN ] to-kill-a-mockingbird.html: Harper Lee · 5 diffs · 5 FAQ · 6 chars — missing: verdict box text
+[16:57:49.251] [WARN ] verity.html: Colleen Hoover · 5 diffs · 5 FAQ · 4 chars — missing: verdict box text
+[16:57:49.255] [WARN ] water-for-elephants.html: Sara Gruen · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.258] [WARN ] where-the-crawdads-sing.html: Delia Owens · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.260] [WARN ] white-noise.html: Don DeLillo · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.261] [WARN ] wolf-hall.html: Hilary Mantel · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.262] [WARN ] world-war-z.html: Max Brooks · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+[16:57:49.263] [WARN ] wuthering-heights.html: Emily Brontë · 5 diffs · 5 FAQ · 5 chars — missing: verdict box text
+
+── Summary ─────────────────────────────────────
+  Processed:           163
+  Written:             163
+  Skipped:             0
+  Errors:              0
+  Warnings:            163 files
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages have storyBrief
+  ✓  All pages have 4+ differences
+  ✗  All pages have verdictBox
+       a-beautiful-mind.html, a-knight-of-the-seven-kingdoms.html, a-little-life.html, a-man-called-ove.html, a-walk-to-remember.html, about-a-boy.html, all-quiet-on-the-western-front.html, all-the-light-we-cannot-see.html, along-came-a-spider.html, american-gods.html, american-psycho.html, animal-farm.html, annihilation.html, atonement.html, band-of-brothers.html, beloved.html, big-fish.html, big-little-lies-hbo.html, breakfast-at-tiffanys.html, bridgerton.html, brooklyn.html, catch-22.html, catch-me-if-you-can.html, cold-mountain.html, contact.html, da-vinci-code.html, daisy-jones-and-the-six.html, dark-matter.html, devil-wears-prada.html, divergent.html, doctor-sleep.html, dracula.html, dune.html, eat-pray-love.html, enders-game-film.html, enders-game.html, english-patient.html, everything-everything.html, fight-club.html, five-feet-apart.html, fourth-wing.html, frankenstein.html, geralds-game.html, girl-on-the-train.html, girl-with-the-dragon-tattoo.html, gone-girl.html, good-omens.html, hamnet.html, hannibal-series.html, heated-rivalry.html, high-fidelity.html, hillbilly-elegy.html, hitchhikers-guide.html, howls-moving-castle.html, hunger-games-sunrise.html, i-am-legend.html, i-robot.html, interview-with-the-vampire-amcplus.html, into-the-wild.html, it-ends-with-us.html, it-muschietti.html, jane-eyre.html, jurassic-park.html, kite-runner.html, la-confidential.html, les-miserables.html, little-women.html, lonesome-dove.html, looking-for-alaska.html, lord-of-the-flies.html, love-simon.html, margos-got-money-troubles.html, me-before-you.html, mickey-17.html, misery.html, my-brilliant-friend.html, my-sisters-keeper.html, narnia-magicians-nephew.html, never-let-me-go.html, normal-people.html, of-mice-and-men.html, olive-kitteridge.html, on-the-road.html, one-day.html, one-flew-over-the-cuckoos-nest.html, outlander.html, pachinko.html, people-we-meet-on-vacation.html, perks-of-being-a-wallflower.html, pet-sematary-2019.html, presumed-innocent.html, pride-and-prejudice.html, project-hail-mary.html, ready-player-one.html, rebecca.html, remains-of-the-day.html, remarkably-bright-creatures.html, reminders-of-him.html, room.html, roots-2016.html, rosemarys-baby.html, schindlers-list.html, seabiscuit.html, sense-and-sensibility.html, shadow-and-bone.html, sharp-objects.html, shogun-2024.html, silence-of-the-lambs.html, sophies-choice.html, sphere.html, stardust.html, station-eleven.html, talented-mr-ripley.html, the-book-thief.html, the-client.html, the-color-purple.html, the-count-of-monte-cristo.html, the-electric-state.html, the-fault-in-our-stars.html, the-firm.html, the-girl-with-the-dragon-tattoo-fincher.html, the-giver.html, the-glass-castle.html, the-great-gatsby.html, the-handmaids-tale.html, the-haunting-of-hill-house.html, the-help.html, the-hours.html, the-housemaid.html, the-lincoln-lawyer.html, the-longest-ride.html, the-lovely-bones.html, the-martian.html, the-maze-runner-film.html, the-maze-runner.html, the-notebook.html, the-odyssey.html, the-outsider.html, the-outsiders.html, the-pelican-brief.html, the-pianist.html, the-picture-of-dorian-gray.html, the-pillars-of-the-earth.html, the-princess-bride.html, the-road.html, the-secret-garden.html, the-secret-life-of-bees.html, the-shining.html, the-sisterhood-of-the-traveling-pants.html, the-three-body-problem.html, the-thursday-murder-club.html, the-time-travelers-wife.html, the-witcher.html, the-woman-in-the-window.html, thirteen-reasons-why.html, to-kill-a-mockingbird.html, verity.html, water-for-elephants.html, where-the-crawdads-sing.html, white-noise.html, wolf-hall.html, world-war-z.html, wuthering-heights.html
+  ✓  All pages have readFirst
+  ✓  All pages have 3+ FAQ items
+  ✓  All pages have 3 related cards
+  ✓  All pages have affiliateLink
+  ✓  All pages have verdictText
+  ✓  quickAnswer null in all extracted files
+  ✓  ctaBlocks null in all extracted files
+
+────────────────────────────────────────────────
+  CHECKPOINT FAILED — resolve issues before proceeding
+
+── Warnings (163 files) ─────────────────────────
+[16:57:49.264] [WARN ] a-beautiful-mind.html: missing: verdict box text
+[16:57:49.264] [WARN ] a-knight-of-the-seven-kingdoms.html: missing: verdict box text
+[16:57:49.264] [WARN ] a-little-life.html: missing: verdict box text
+[16:57:49.264] [WARN ] a-man-called-ove.html: missing: verdict box text
+[16:57:49.264] [WARN ] a-walk-to-remember.html: missing: verdict box text
+[16:57:49.264] [WARN ] about-a-boy.html: missing: verdict box text
+[16:57:49.264] [WARN ] all-quiet-on-the-western-front.html: missing: verdict box text
+[16:57:49.264] [WARN ] all-the-light-we-cannot-see.html: missing: verdict box text
+[16:57:49.264] [WARN ] along-came-a-spider.html: missing: verdict box text
+[16:57:49.264] [WARN ] american-gods.html: missing: verdict box text
+[16:57:49.265] [WARN ] american-psycho.html: missing: verdict box text
+[16:57:49.265] [WARN ] animal-farm.html: missing: verdict box text
+[16:57:49.265] [WARN ] annihilation.html: missing: verdict box text
+[16:57:49.265] [WARN ] atonement.html: missing: verdict box text
+[16:57:49.265] [WARN ] band-of-brothers.html: missing: verdict box text
+[16:57:49.265] [WARN ] beloved.html: missing: verdict box text
+[16:57:49.265] [WARN ] big-fish.html: missing: verdict box text
+[16:57:49.265] [WARN ] big-little-lies-hbo.html: missing: verdict box text
+[16:57:49.265] [WARN ] breakfast-at-tiffanys.html: missing: verdict box text
+[16:57:49.265] [WARN ] bridgerton.html: missing: verdict box text
+[16:57:49.265] [WARN ] brooklyn.html: missing: verdict box text
+[16:57:49.265] [WARN ] catch-22.html: missing: verdict box text
+[16:57:49.265] [WARN ] catch-me-if-you-can.html: missing: verdict box text
+[16:57:49.265] [WARN ] cold-mountain.html: missing: verdict box text
+[16:57:49.265] [WARN ] contact.html: missing: verdict box text
+[16:57:49.265] [WARN ] da-vinci-code.html: missing: verdict box text
+[16:57:49.265] [WARN ] daisy-jones-and-the-six.html: missing: verdict box text
+[16:57:49.265] [WARN ] dark-matter.html: missing: verdict box text
+[16:57:49.265] [WARN ] devil-wears-prada.html: missing: verdict box text
+[16:57:49.265] [WARN ] divergent.html: missing: verdict box text
+[16:57:49.265] [WARN ] doctor-sleep.html: missing: verdict box text
+[16:57:49.265] [WARN ] dracula.html: missing: verdict box text
+[16:57:49.265] [WARN ] dune.html: missing: verdict box text
+[16:57:49.265] [WARN ] eat-pray-love.html: missing: verdict box text
+[16:57:49.265] [WARN ] enders-game-film.html: missing: verdict box text
+[16:57:49.265] [WARN ] enders-game.html: missing: verdict box text
+[16:57:49.266] [WARN ] english-patient.html: missing: verdict box text
+[16:57:49.266] [WARN ] everything-everything.html: missing: verdict box text
+[16:57:49.266] [WARN ] fight-club.html: missing: verdict box text
+[16:57:49.266] [WARN ] five-feet-apart.html: missing: verdict box text
+[16:57:49.266] [WARN ] fourth-wing.html: missing: verdict box text
+[16:57:49.266] [WARN ] frankenstein.html: missing: verdict box text
+[16:57:49.266] [WARN ] geralds-game.html: missing: verdict box text
+[16:57:49.266] [WARN ] girl-on-the-train.html: missing: verdict box text
+[16:57:49.266] [WARN ] girl-with-the-dragon-tattoo.html: missing: verdict box text
+[16:57:49.266] [WARN ] gone-girl.html: missing: verdict box text
+[16:57:49.266] [WARN ] good-omens.html: missing: verdict box text
+[16:57:49.266] [WARN ] hamnet.html: missing: verdict box text
+[16:57:49.266] [WARN ] hannibal-series.html: missing: verdict box text
+[16:57:49.266] [WARN ] heated-rivalry.html: missing: verdict box text
+[16:57:49.266] [WARN ] high-fidelity.html: missing: verdict box text
+[16:57:49.266] [WARN ] hillbilly-elegy.html: missing: verdict box text
+[16:57:49.266] [WARN ] hitchhikers-guide.html: missing: verdict box text
+[16:57:49.266] [WARN ] howls-moving-castle.html: missing: verdict box text
+[16:57:49.266] [WARN ] hunger-games-sunrise.html: missing: verdict box text
+[16:57:49.266] [WARN ] i-am-legend.html: missing: verdict box text
+[16:57:49.266] [WARN ] i-robot.html: missing: verdict box text
+[16:57:49.266] [WARN ] interview-with-the-vampire-amcplus.html: missing: verdict box text
+[16:57:49.266] [WARN ] into-the-wild.html: missing: verdict box text
+[16:57:49.266] [WARN ] it-ends-with-us.html: missing: verdict box text
+[16:57:49.266] [WARN ] it-muschietti.html: missing: verdict box text
+[16:57:49.266] [WARN ] jane-eyre.html: missing: verdict box text
+[16:57:49.266] [WARN ] jurassic-park.html: missing: verdict box text
+[16:57:49.266] [WARN ] kite-runner.html: missing: verdict box text
+[16:57:49.267] [WARN ] la-confidential.html: missing: verdict box text
+[16:57:49.267] [WARN ] les-miserables.html: missing: verdict box text
+[16:57:49.267] [WARN ] little-women.html: missing: verdict box text
+[16:57:49.267] [WARN ] lonesome-dove.html: missing: verdict box text
+[16:57:49.267] [WARN ] looking-for-alaska.html: missing: verdict box text
+[16:57:49.267] [WARN ] lord-of-the-flies.html: missing: verdict box text
+[16:57:49.267] [WARN ] love-simon.html: missing: verdict box text
+[16:57:49.267] [WARN ] margos-got-money-troubles.html: missing: verdict box text
+[16:57:49.267] [WARN ] me-before-you.html: missing: verdict box text
+[16:57:49.267] [WARN ] mickey-17.html: missing: verdict box text
+[16:57:49.267] [WARN ] misery.html: missing: verdict box text
+[16:57:49.267] [WARN ] my-brilliant-friend.html: missing: verdict box text
+[16:57:49.267] [WARN ] my-sisters-keeper.html: missing: verdict box text
+[16:57:49.267] [WARN ] narnia-magicians-nephew.html: missing: verdict box text
+[16:57:49.267] [WARN ] never-let-me-go.html: missing: verdict box text
+[16:57:49.267] [WARN ] normal-people.html: missing: verdict box text
+[16:57:49.267] [WARN ] of-mice-and-men.html: missing: verdict box text
+[16:57:49.267] [WARN ] olive-kitteridge.html: missing: verdict box text
+[16:57:49.267] [WARN ] on-the-road.html: missing: verdict box text
+[16:57:49.267] [WARN ] one-day.html: missing: verdict box text
+[16:57:49.267] [WARN ] one-flew-over-the-cuckoos-nest.html: missing: verdict box text
+[16:57:49.267] [WARN ] outlander.html: missing: verdict box text
+[16:57:49.267] [WARN ] pachinko.html: missing: verdict box text
+[16:57:49.267] [WARN ] people-we-meet-on-vacation.html: missing: verdict box text
+[16:57:49.267] [WARN ] perks-of-being-a-wallflower.html: missing: verdict box text
+[16:57:49.267] [WARN ] pet-sematary-2019.html: missing: verdict box text
+[16:57:49.268] [WARN ] presumed-innocent.html: missing: verdict box text
+[16:57:49.268] [WARN ] pride-and-prejudice.html: missing: verdict box text
+[16:57:49.268] [WARN ] project-hail-mary.html: missing: verdict box text
+[16:57:49.268] [WARN ] ready-player-one.html: missing: verdict box text
+[16:57:49.268] [WARN ] rebecca.html: missing: verdict box text
+[16:57:49.268] [WARN ] remains-of-the-day.html: missing: verdict box text
+[16:57:49.268] [WARN ] remarkably-bright-creatures.html: missing: verdict box text
+[16:57:49.268] [WARN ] reminders-of-him.html: missing: verdict box text
+[16:57:49.268] [WARN ] room.html: missing: verdict box text
+[16:57:49.268] [WARN ] roots-2016.html: missing: verdict box text
+[16:57:49.268] [WARN ] rosemarys-baby.html: missing: verdict box text
+[16:57:49.268] [WARN ] schindlers-list.html: missing: verdict box text
+[16:57:49.268] [WARN ] seabiscuit.html: missing: verdict box text
+[16:57:49.268] [WARN ] sense-and-sensibility.html: missing: verdict box text
+[16:57:49.268] [WARN ] shadow-and-bone.html: missing: verdict box text
+[16:57:49.268] [WARN ] sharp-objects.html: missing: verdict box text
+[16:57:49.268] [WARN ] shogun-2024.html: missing: verdict box text
+[16:57:49.268] [WARN ] silence-of-the-lambs.html: missing: verdict box text
+[16:57:49.268] [WARN ] sophies-choice.html: missing: verdict box text
+[16:57:49.268] [WARN ] sphere.html: missing: verdict box text
+[16:57:49.268] [WARN ] stardust.html: missing: verdict box text
+[16:57:49.269] [WARN ] station-eleven.html: missing: verdict box text
+[16:57:49.269] [WARN ] talented-mr-ripley.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-book-thief.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-client.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-color-purple.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-count-of-monte-cristo.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-electric-state.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-fault-in-our-stars.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-firm.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-girl-with-the-dragon-tattoo-fincher.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-giver.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-glass-castle.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-great-gatsby.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-handmaids-tale.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-haunting-of-hill-house.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-help.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-hours.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-housemaid.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-lincoln-lawyer.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-longest-ride.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-lovely-bones.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-martian.html: missing: verdict box text
+[16:57:49.269] [WARN ] the-maze-runner-film.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-maze-runner.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-notebook.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-odyssey.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-outsider.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-outsiders.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-pelican-brief.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-pianist.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-picture-of-dorian-gray.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-pillars-of-the-earth.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-princess-bride.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-road.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-secret-garden.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-secret-life-of-bees.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-shining.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-sisterhood-of-the-traveling-pants.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-three-body-problem.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-thursday-murder-club.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-time-travelers-wife.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-witcher.html: missing: verdict box text
+[16:57:49.270] [WARN ] the-woman-in-the-window.html: missing: verdict box text
+[16:57:49.270] [WARN ] thirteen-reasons-why.html: missing: verdict box text
+[16:57:49.270] [WARN ] to-kill-a-mockingbird.html: missing: verdict box text
+[16:57:49.270] [WARN ] verity.html: missing: verdict box text
+[16:57:49.270] [WARN ] water-for-elephants.html: missing: verdict box text
+[16:57:49.270] [WARN ] where-the-crawdads-sing.html: missing: verdict box text
+[16:57:49.270] [WARN ] white-noise.html: missing: verdict box text
+[16:57:49.270] [WARN ] wolf-hall.html: missing: verdict box text
+[16:57:49.271] [WARN ] world-war-z.html: missing: verdict box text
+[16:57:49.271] [WARN ] wuthering-heights.html: missing: verdict box text
+
+============================================================
+Finished: 2026-04-11T16:57:49.271Z
+Elapsed:  0.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-11_12-57-49_html-to-json.log
+============================================================

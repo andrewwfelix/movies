@@ -221,10 +221,11 @@ function extractReadFirst(html) {
 // ── Verdict box ───────────────────────────────────────────────────────────────
 
 function extractVerdictBox(html) {
-  const box = html.match(/<div[^>]*class=["']verdict-box["'][^>]*>([\s\S]*?)<\/div>/i);
-  if (!box) return null;
-  const para = box[1].match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-  return para ? cleanText(strip(decode(para[1]))) : null;
+  // The verdict-box contains a nested .verdict-title div before the <p>.
+  // Matching to the first </div> captures the inner div only, so we
+  // search for the verdict-box opening and then grab the <p> directly.
+  const m = html.match(/<div[^>]*class=["']verdict-box["'][^>]*>[\s\S]*?<p[^>]*>([\s\S]*?)<\/p>/i);
+  return m ? cleanText(strip(decode(m[1]))) : null;
 }
 
 // ── FAQ (visible section) ─────────────────────────────────────────────────────

@@ -5,3 +5,4 @@
 	b. running as issues, broken links check
 4. Think about a 'fix all' script of some kind that updates all pages based on new movies
  
+5. Inform LLM to log all files to the logs directory
