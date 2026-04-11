@@ -1,0 +1,40 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Node ──────────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Pipeline working directories ──────────────────────────────────────────────
+# These are regenerable scratch space — do not commit
+pipeline/1-extracted/
+pipeline/2-revised/
+pipeline/3-rendered/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+# Uncomment the line below if you prefer not to commit logs
+# logs/
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ── Temporary files ───────────────────────────────────────────────────────────
+*.tmp
+*.bak
+*.swp
+*~
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+# Canonical review JSON is committed once approved
+# Raw extraction and working files are regenerable
+# Uncomment if you prefer not to commit metadata CSVs
+# data/extracted_metadata.csv
+# data/metadata-issues.csv
