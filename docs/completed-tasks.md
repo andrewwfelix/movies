@@ -11,19 +11,29 @@ Format: [YYYY-MM-DD] Description
 [2026-04-11] Moved twilight.html and unbroken.html to reviews-to-review (v1 generation)
 [2026-04-11] Deleted spotlight.html (index page feature, not a review)
 [2026-04-11] Renamed failures-to-reprocess/ to reviews-to-review/
+[2026-04-11] Archived legacy scripts to scripts/archive/ (audit-reviews, fix-all,
+             rebuild-metadata, site-survey, script-fix-paths)
+[2026-04-11] Deleted old data/extracted_metadata.csv and data/spotlight.zip
+[2026-04-11] Deleted old metadata.csv (superseded by new extractor output)
 
 ## Scripts
-[2026-04-11] Created scripts/extract-metadata.js (v1 — initial extraction, needs update per step 1.2)
+[2026-04-11] Created scripts/extract-metadata.js (v1 — needs update per step 1.2)
 [2026-04-11] Created scripts/tree.js
-[2026-04-11] Created scripts/next-steps.js
+[2026-04-11] Created scripts/generate-next-steps.js (v1)
+[2026-04-11] Updated scripts/generate-next-steps.js (v2 — corrected naming conventions,
+             dynamic header parsing, next action moved to top of report)
 
 ## Documentation
 [2026-04-11] Created docs/action-plan.txt
 [2026-04-11] Created docs/pipeline-notes.md
 [2026-04-11] Created docs/project-objectives.md
 [2026-04-11] Created docs/business-strategy.md
-[2026-04-11] Created docs/llm-strategy.md
+[2026-04-11] Created docs/llm-strategy.md (shelved — superseded by business-strategy.md)
 [2026-04-11] Created docs/completed-tasks.md
 
 ## Data
-[2026-04-11] Generated data/metadata.csv and data/metadata-issues.csv (first full extraction run)
+[2026-04-11] Generated data/extracted_metadata.csv and data/metadata-issues.csv
+             (first full extraction run with new extractor)
+
+## Version Control
+[2026-04-11] Committed and pushed full project restructure to git

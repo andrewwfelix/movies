@@ -1,0 +1,7 @@
+1. Think about making affiliate links less time consuming. Wordpress has a plugin. Is it feasible to build the same kind of interface to replicate that?
+2. Think about making this project a template for other projects that use affiliate marketing.
+3. Think overnight batch processes that might be helpful. 
+	a. updating metadata the last updated dates on html files?
+	b. running as issues, broken links check
+4. Think about a 'fix all' script of some kind that updates all pages based on new movies
+ 

@@ -5,14 +5,15 @@
  * BooksVersusMovies.com — consolidated next steps briefing
  *
  * Reads project files and produces a briefing document summarising:
- *   - Current action plan          (docs/action-plan.txt)
- *   - Completed tasks              (docs/completed-tasks.md)
- *   - Pipeline data state          (data/extracted_metadata.csv, data/metadata-issues.csv)
- *   - Review JSON state            (data/reviews/)
- *   - Pipeline folder state        (pipeline/1-extracted, 2-revised, 3-rendered)
- *   - Prompt inventory             (scripts/prompts/)
- *   - Quarantine                   (reviews-to-review/)
- *   - GSC / Analytics reports      (data/reports/)
+ *   - New ideas + priority assessment  (docs/new-ideas.md)
+ *   - Current action plan              (docs/action-plan.txt)
+ *   - Completed tasks                  (docs/completed-tasks.md)
+ *   - Pipeline data state              (data/extracted_metadata.csv, data/metadata-issues.csv)
+ *   - Review JSON state                (data/reviews/)
+ *   - Pipeline folder state            (pipeline/1-extracted, 2-revised, 3-rendered)
+ *   - Prompt inventory                 (scripts/prompts/)
+ *   - Quarantine                       (reviews-to-review/)
+ *   - GSC / Analytics reports          (data/reports/)
  *
  * Usage:
  *   node generate-next-steps.js
@@ -24,9 +25,9 @@
  *   --clipboard  Also copy output to clipboard (pbcopy / clip / xclip)
  */
 
-const fs             = require('fs');
-const path           = require('path');
-const { execSync }   = require('child_process');
+const fs           = require('fs');
+const path         = require('path');
+const { execSync } = require('child_process');
 
 // ── CLI ───────────────────────────────────────────────────────────────────────
 
@@ -45,8 +46,8 @@ const out   = s => lines.push(s === undefined ? '' : s);
 
 // ── File helpers ──────────────────────────────────────────────────────────────
 
-const abs      = rel => path.join(ROOT, rel);
-const exists   = rel => fs.existsSync(abs(rel));
+const abs    = rel => path.join(ROOT, rel);
+const exists = rel => fs.existsSync(abs(rel));
 
 function readFile(rel) {
   try   { return fs.readFileSync(abs(rel), 'utf8'); }
@@ -57,9 +58,7 @@ function countFiles(rel, ext) {
   try {
     if (!exists(rel)) return 0;
     return fs.readdirSync(abs(rel))
-      .filter(f => {
-        try { return fs.statSync(path.join(abs(rel), f)).isFile(); } catch { return false; }
-      })
+      .filter(f => { try { return fs.statSync(path.join(abs(rel), f)).isFile(); } catch { return false; } })
       .filter(f => !ext || path.extname(f).toLowerCase() === ext)
       .length;
   } catch { return 0; }
@@ -69,9 +68,7 @@ function listFiles(rel, ext) {
   try {
     if (!exists(rel)) return [];
     return fs.readdirSync(abs(rel))
-      .filter(f => {
-        try { return fs.statSync(path.join(abs(rel), f)).isFile(); } catch { return false; }
-      })
+      .filter(f => { try { return fs.statSync(path.join(abs(rel), f)).isFile(); } catch { return false; } })
       .filter(f => !ext || path.extname(f).toLowerCase() === ext)
       .sort();
   } catch { return []; }
@@ -108,24 +105,17 @@ function parseCompletedTasks(content) {
 function parseMetadataCsv(content) {
   const empty = { total: 0, v1: 0, v2: 0, missingAffiliate: 0, hasQuickAnswer: 0, hasFaq: 0 };
   if (!content) return empty;
-
-  // Parse header to find column indices dynamically — robust to column order changes
   const rows = content.split('\n').filter(Boolean);
   if (rows.length < 2) return empty;
-
-  const headers = rows[0].split(',');
-  const idx = name => headers.indexOf(name);
-
+  const headers    = rows[0].split(',');
+  const idx        = name => headers.indexOf(name);
   const iGen       = idx('generation');
   const iAffiliate = idx('affiliateLinkCount');
   const iQuick     = idx('hasQuickAnswer');
   const iFaq       = idx('hasFaqSection');
-
   let total = 0, v1 = 0, v2 = 0, missingAffiliate = 0, hasQuickAnswer = 0, hasFaq = 0;
-
   for (const row of rows.slice(1)) {
     if (!row.trim()) continue;
-    // Handle quoted fields with basic split (sufficient for this file's structure)
     const cols = row.split(',');
     total++;
     if (iGen       >= 0 && cols[iGen]       === 'v1')   v1++;
@@ -134,11 +124,88 @@ function parseMetadataCsv(content) {
     if (iQuick     >= 0 && cols[iQuick]     === 'true') hasQuickAnswer++;
     if (iFaq       >= 0 && cols[iFaq]       === 'true') hasFaq++;
   }
-
   return { total, v1, v2, missingAffiliate, hasQuickAnswer, hasFaq };
 }
 
-// ── Infer next action ─────────────────────────────────────────────────────────
+// ── New ideas parser ──────────────────────────────────────────────────────────
+//
+// Expects docs/new-ideas.md to use this loose format:
+//
+//   ## Idea title
+//   Description text (any number of lines)
+//   Priority: high | medium | low   (optional — inferred as medium if absent)
+//   Status: pending | in-progress | done | deferred   (optional)
+//
+// Ideas marked Status: done or Status: deferred are excluded from the report.
+
+function parseNewIdeas(content) {
+  if (!content) return [];
+  const ideas   = [];
+  let current   = null;
+
+  for (const raw of content.split('\n')) {
+    const line = raw.trim();
+
+    // New idea starts at any ## heading
+    if (/^##\s+/.test(line)) {
+      if (current) ideas.push(current);
+      current = { title: line.replace(/^##\s+/, '').trim(), priority: 'medium', status: 'pending', notes: [] };
+      continue;
+    }
+
+    if (!current) continue;
+
+    // Priority tag
+    const pMatch = line.match(/^[*-]?\s*[Pp]riority\s*:\s*(high|medium|low)/i);
+    if (pMatch) { current.priority = pMatch[1].toLowerCase(); continue; }
+
+    // Status tag
+    const sMatch = line.match(/^[*-]?\s*[Ss]tatus\s*:\s*(pending|in-progress|done|deferred)/i);
+    if (sMatch) { current.status = sMatch[1].toLowerCase(); continue; }
+
+    // Skip blank lines and top-level h1
+    if (!line || /^#\s/.test(line)) continue;
+
+    current.notes.push(line);
+  }
+
+  if (current) ideas.push(current);
+
+  // Exclude closed ideas
+  return ideas.filter(i => i.status !== 'done' && i.status !== 'deferred');
+}
+
+// ── Priority classifier ───────────────────────────────────────────────────────
+//
+// Maps a new idea against the current pipeline state to suggest whether it
+// should be actioned now, queued after the pipeline, or noted for later.
+
+function classifyIdea(idea, { extracted, revised, rendered, metaExists }) {
+  const pipelineRunning = extracted > 0 || revised > 0 || rendered > 0;
+  const pipelineDone    = rendered > 0 && rendered === extracted && extracted > 0;
+
+  // Ideas explicitly marked high priority always surface
+  if (idea.priority === 'high') {
+    return { when: 'NOW', reason: 'marked high priority' };
+  }
+
+  // During active pipeline work, only high-priority ideas should interrupt
+  if (pipelineRunning && !pipelineDone && idea.priority !== 'high') {
+    return { when: 'AFTER PIPELINE', reason: 'pipeline in progress — avoid context switching' };
+  }
+
+  // Pre-pipeline and medium priority — queue after current step
+  if (!metaExists && idea.priority === 'medium') {
+    return { when: 'QUEUE', reason: 'complete housekeeping steps first' };
+  }
+
+  if (idea.priority === 'medium') return { when: 'QUEUE', reason: 'add to backlog after current step' };
+  if (idea.priority === 'low')    return { when: 'LATER', reason: 'low priority — revisit at milestone' };
+
+  return { when: 'QUEUE', reason: '' };
+}
+
+// ── Infer next pipeline action ────────────────────────────────────────────────
 
 function inferNextAction({ metaExists, dataState, extracted, revised, rendered, prompts, reviewJsonCount }) {
   if (!metaExists) {
@@ -206,29 +273,84 @@ function buildReport() {
   out(`Generated: ${now}`);
   out();
 
-  // ── 1. Inferred next action (top of report for quick scanning) ───────────────
-  const metaContent   = readFile('data/extracted_metadata.csv');
-  const issuesContent = readFile('data/metadata-issues.csv');
-  const dataState     = parseMetadataCsv(metaContent || '');
-  const metaExists    = !!metaContent;
-
-  const extracted     = countFiles('pipeline/1-extracted', '.json');
-  const revised       = countFiles('pipeline/2-revised',   '.json');
-  const rendered      = countFiles('pipeline/3-rendered',  '.html');
-  const prompts       = listFiles('scripts/prompts', '.txt');
+  // Gather state once — used by multiple sections
+  const metaContent     = readFile('data/extracted_metadata.csv');
+  const issuesContent   = readFile('data/metadata-issues.csv');
+  const dataState       = parseMetadataCsv(metaContent || '');
+  const metaExists      = !!metaContent;
+  const extracted       = countFiles('pipeline/1-extracted', '.json');
+  const revised         = countFiles('pipeline/2-revised',   '.json');
+  const rendered        = countFiles('pipeline/3-rendered',  '.html');
+  const prompts         = listFiles('scripts/prompts', '.txt');
   const reviewJsonCount = countFiles('data/reviews', '.json');
+  const reportGscCount  = countFiles('data/reports/gsc', '.csv');
+  const reportGaCount   = countFiles('data/reports/analytics', '.csv');
 
+  // ── 1. Next pipeline action ──────────────────────────────────────────────────
   const nextActions = inferNextAction({
-    metaExists, dataState, extracted, revised, rendered,
-    prompts, reviewJsonCount,
+    metaExists, dataState, extracted, revised, rendered, prompts, reviewJsonCount,
   });
 
-  out(`NEXT ACTION`);
-  out(`-----------`);
+  out(`NEXT PIPELINE ACTION`);
+  out(`--------------------`);
   nextActions.forEach(a => out(`  → ${a}`));
   out();
 
-  // ── 2. Action plan ───────────────────────────────────────────────────────────
+  // ── 2. New ideas ─────────────────────────────────────────────────────────────
+  const ideasContent = readFile('docs/new-ideas.md');
+  const ideas        = parseNewIdeas(ideasContent || '');
+
+  out(`NEW IDEAS (${ideas.length} active)`);
+  out(`----------`);
+
+  if (!ideasContent) {
+    out(`  docs/new-ideas.md not found — create it to track new ideas`);
+  } else if (ideas.length === 0) {
+    out(`  No active ideas — all marked done or deferred`);
+  } else {
+    // Group by classification
+    const classified = ideas.map(idea => ({
+      ...idea,
+      classification: classifyIdea(idea, { extracted, revised, rendered, metaExists }),
+    }));
+
+    const now_ideas   = classified.filter(i => i.classification.when === 'NOW');
+    const queue_ideas = classified.filter(i => i.classification.when === 'QUEUE');
+    const after_ideas = classified.filter(i => i.classification.when === 'AFTER PIPELINE');
+    const later_ideas = classified.filter(i => i.classification.when === 'LATER');
+
+    const printIdea = (idea) => {
+      out(`  [${idea.priority.toUpperCase()}] ${idea.title}`);
+      if (idea.notes.length > 0) {
+        // Print first note line only for brevity — full detail in the file
+        out(`        ${idea.notes[0]}${idea.notes.length > 1 ? ' …' : ''}`);
+      }
+      out(`        → ${idea.classification.when}: ${idea.classification.reason}`);
+    };
+
+    if (now_ideas.length > 0) {
+      out(`  ── Action now ──`);
+      now_ideas.forEach(printIdea);
+      out();
+    }
+    if (queue_ideas.length > 0) {
+      out(`  ── Queue after current step ──`);
+      queue_ideas.forEach(printIdea);
+      out();
+    }
+    if (after_ideas.length > 0) {
+      out(`  ── After pipeline complete ──`);
+      after_ideas.forEach(printIdea);
+      out();
+    }
+    if (later_ideas.length > 0) {
+      out(`  ── Later / low priority ──`);
+      later_ideas.forEach(printIdea);
+      out();
+    }
+  }
+
+  // ── 3. Action plan ───────────────────────────────────────────────────────────
   const planContent = readFile('docs/action-plan.txt');
   const plan        = parseActionPlan(planContent);
 
@@ -243,7 +365,7 @@ function buildReport() {
   }
   out();
 
-  // ── 3. Completed tasks ───────────────────────────────────────────────────────
+  // ── 4. Completed tasks ───────────────────────────────────────────────────────
   const completedContent = readFile('docs/completed-tasks.md');
   const completed        = parseCompletedTasks(completedContent || '');
 
@@ -264,10 +386,7 @@ function buildReport() {
   }
   out();
 
-  // ── 4. Data state ────────────────────────────────────────────────────────────
-  const reportGscCount = countFiles('data/reports/gsc', '.csv');
-  const reportGaCount  = countFiles('data/reports/analytics', '.csv');
-
+  // ── 5. Data state ────────────────────────────────────────────────────────────
   out(`DATA STATE`);
   out(`----------`);
   if (!metaExists) {
@@ -288,13 +407,12 @@ function buildReport() {
   out(`  Analytics reports:       ${reportGaCount}`);
   out();
 
-  // ── 5. Pipeline state ────────────────────────────────────────────────────────
+  // ── 6. Pipeline state ────────────────────────────────────────────────────────
   out(`PIPELINE STATE`);
   out(`--------------`);
   out(`  1-extracted/   ${extracted} JSON files`);
   out(`  2-revised/     ${revised} JSON files`);
   out(`  3-rendered/    ${rendered} HTML files`);
-
   if (extracted === 0 && revised === 0 && rendered === 0) {
     out(`  Status: not yet started`);
   } else if (extracted > 0 && revised === 0) {
@@ -308,7 +426,7 @@ function buildReport() {
   }
   out();
 
-  // ── 6. Prompt inventory ──────────────────────────────────────────────────────
+  // ── 7. Prompt inventory ──────────────────────────────────────────────────────
   const expectedPrompts = ['pass1-structural.txt', 'pass2-conversion.txt', 'greenfield.txt'];
 
   out(`PROMPT INVENTORY`);
@@ -326,7 +444,7 @@ function buildReport() {
   }
   out();
 
-  // ── 7. Reviews to review ─────────────────────────────────────────────────────
+  // ── 8. Reviews to review ─────────────────────────────────────────────────────
   const quarantined = listFiles('reviews-to-review', '.html');
 
   out(`REVIEWS TO REVIEW (${quarantined.length} files)`);
@@ -338,7 +456,7 @@ function buildReport() {
   }
   out();
 
-  // ── 8. GSC reports ───────────────────────────────────────────────────────────
+  // ── 9. GSC reports ───────────────────────────────────────────────────────────
   if (reportGscCount > 0) {
     const gscFiles = listFiles('data/reports/gsc', '.csv');
     out(`GSC REPORTS`);
