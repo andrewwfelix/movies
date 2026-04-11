@@ -1,0 +1,46 @@
+movies/
+├── docs/
+│   ├── action-plan.txt
+│   └── pipeline-notes.md
+│
+├── config/
+│
+├── css/
+│   └── style.css
+│
+├── data/
+│   ├── metadata.csv
+│   ├── metadata-issues.csv
+│   └── reviews/                    ← canonical JSON, source of truth
+│       ├── atonement.json
+│       └── ...
+│
+├── pipeline/
+│   ├── 1-extracted/                ← html-to-json.js output (raw extraction)
+│   ├── 2-revised/                  ← revise.js output (after Pass 1 + Pass 2)
+│   └── 3-rendered/                 ← render.js output (final HTML, pre-deploy)
+│
+├── scripts/
+│   ├── extract-metadata.js
+│   ├── html-to-json.js
+│   ├── revise.js
+│   ├── render.js
+│   ├── generate.js
+│   └── prompts/
+│       ├── pass1-structural.txt
+│       ├── pass2-conversion.txt
+│       └── greenfield.txt
+│
+├── images/
+├── reviews/                        ← live deployed HTML
+├── reviews-to-review/
+├── logs/
+├── archive/
+│
+├── about.html
+├── browse.html
+├── index.html
+├── robots.txt
+├── sitemap.xml
+├── package.json
+└── package-lock.json
