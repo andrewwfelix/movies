@@ -58,3 +58,47 @@ dynamic header parsing, next action moved to top of report)
 
 \[2026-04-11] Step 1 complete
 
+
+
+\[2026-04-11] Created docs/review-schema.md — canonical JSON schema v1
+
+\[2026-04-11] Created scripts/logger.js — shared pipeline logger
+
+\[2026-04-11] Created scripts/html-to-json.js — HTML to JSON extractor
+
+\[2026-04-11] Ran html-to-json.js — 163 files extracted, 0 warnings, checkpoint passed
+
+\[2026-04-11] Fixed extractVerdictBox regex (nested div boundary)
+
+\[2026-04-11] Steps 2.1 and 2.2 complete
+
+
+
+
+
+\[2026-04-11] Step 2.3 complete — quick-answer, comparison-table, cta-block added to style.css
+
+\[2026-04-11] Section 2 complete
+
+
+
+1:30 PM New naming convention:
+
+scripts/
+
+&#x20; pipeline-extract.js      ← rename of html-to-json.js
+
+&#x20; pipeline-revise.js       ← rename of revise.js  
+
+&#x20; pipeline-render.js       ← step 4 (to build)
+
+&#x20; pipeline-generate.js     ← step 5 (to build)
+
+&#x20; extract-metadata.js      ← utility, keep as-is
+
+&#x20; generate-next-steps.js   ← utility, keep as-is
+
+&#x20; tree.js                  ← utility, keep as-is
+
+&#x20; logger.js                ← shared module, keep as-is
+

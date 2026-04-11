@@ -1,0 +1,20 @@
+{
+  "pass1": {
+    "model": "anthropic/claude-haiku-4-5",
+    "maxTokens": 4096,
+    "temperature": 0.3,
+    "notes": "Structural overlay — low voice risk, high volume. Keep temperature low."
+  },
+  "pass2": {
+    "model": "anthropic/claude-haiku-4-5",
+    "maxTokens": 2048,
+    "temperature": 0.4,
+    "notes": "Conversion layer — CTA wording, short outputs. Slightly more creative latitude."
+  },
+  "greenfield": {
+    "model": "anthropic/claude-sonnet-4-5",
+    "maxTokens": 6000,
+    "temperature": 0.5,
+    "notes": "Full review generation — voice matters most here. Use the better model."
+  }
+}
