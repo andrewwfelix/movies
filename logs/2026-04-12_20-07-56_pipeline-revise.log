@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T00:07:56.594Z
+============================================================
+[00:07:56.597] [INFO ] Model config loaded from config/models.json
+[00:07:56.599] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[00:07:56.599] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[00:07:56.599] [INFO ] pipeline-revise.js
+[00:07:56.599] [INFO ] Pass:    1
+[00:07:56.599] [INFO ] Files:   1
+[00:07:56.600] [INFO ] Force:   yes
+[00:07:56.600] [INFO ] Dry run: no
+[00:07:56.600] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:08:35.655] [PASS ] the-help.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Three equal first-person voices cannot be compressed into film's single narrative centre."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[00:08:35.656] [INFO ] Single file mode — skipping full checkpoint
+[00:08:35.657] [INFO ] quickAnswer.winner:        Book
+[00:08:35.657] [INFO ] quickAnswer.readFirst:     Yes
+[00:08:35.657] [INFO ] quickAnswer.oneLineReason: Three equal first-person voices cannot be compressed into film's single narrative centre.
+[00:08:35.657] [INFO ] pageTitle: The Help: Book vs Film — Three Voices vs. One (Stockett)
+
+============================================================
+Finished: 2026-04-12T00:08:35.657Z
+Elapsed:  39.1s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_20-07-56_pipeline-revise.log
+============================================================

@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T00:04:51.901Z
+============================================================
+[00:04:51.904] [INFO ] Model config loaded from config/models.json
+[00:04:51.906] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[00:04:51.906] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[00:04:51.906] [INFO ] pipeline-revise.js
+[00:04:51.906] [INFO ] Pass:    1
+[00:04:51.906] [INFO ] Files:   1
+[00:04:51.906] [INFO ] Force:   yes
+[00:04:51.907] [INFO ] Dry run: no
+[00:04:51.907] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:05:31.235] [PASS ] the-count-of-monte-cristo.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's interconnected revenge schemes collapse into simplified confrontations on screen."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[00:05:31.237] [INFO ] Single file mode — skipping full checkpoint
+[00:05:31.237] [INFO ] quickAnswer.winner:        Book
+[00:05:31.237] [INFO ] quickAnswer.readFirst:     Yes
+[00:05:31.237] [INFO ] quickAnswer.oneLineReason: The novel's interconnected revenge schemes collapse into simplified confrontations on screen.
+[00:05:31.237] [INFO ] pageTitle: The Count of Monte Cristo: Book vs Film — Dumas vs de la Patellière
+
+============================================================
+Finished: 2026-04-12T00:05:31.237Z
+Elapsed:  39.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_20-04-51_pipeline-revise.log
+============================================================

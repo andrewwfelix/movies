@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T00:22:14.938Z
+============================================================
+[00:22:14.941] [INFO ] Model config loaded from config/models.json
+[00:22:14.943] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[00:22:14.944] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[00:22:14.944] [INFO ] pipeline-revise.js
+[00:22:14.944] [INFO ] Pass:    1
+[00:22:14.944] [INFO ] Files:   1
+[00:22:14.944] [INFO ] Force:   yes
+[00:22:14.944] [INFO ] Dry run: no
+[00:22:14.944] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:22:53.537] [PASS ] the-sisterhood-of-the-traveling-pants.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Rotating first-person chapters give each girl's interior life a depth film cannot match."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[00:22:53.538] [INFO ] Single file mode — skipping full checkpoint
+[00:22:53.538] [INFO ] quickAnswer.winner:        Book
+[00:22:53.539] [INFO ] quickAnswer.readFirst:     Yes
+[00:22:53.539] [INFO ] quickAnswer.oneLineReason: Rotating first-person chapters give each girl's interior life a depth film cannot match.
+[00:22:53.539] [INFO ] pageTitle: The Sisterhood of the Traveling Pants: Book vs Film — Brashares' Interiority Wins
+
+============================================================
+Finished: 2026-04-12T00:22:53.539Z
+Elapsed:  38.6s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_20-22-14_pipeline-revise.log
+============================================================

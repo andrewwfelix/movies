@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T23:59:34.528Z
+============================================================
+[23:59:34.531] [INFO ] Model config loaded from config/models.json
+[23:59:34.532] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[23:59:34.533] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[23:59:34.533] [INFO ] pipeline-revise.js
+[23:59:34.533] [INFO ] Pass:    1
+[23:59:34.534] [INFO ] Files:   1
+[23:59:34.534] [INFO ] Force:   yes
+[23:59:34.534] [INFO ] Dry run: no
+[23:59:34.534] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:00:14.104] [PASS ] hannibal-series.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Harris's novels are the source; Fuller's series is a formal reinvention."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[00:00:14.106] [INFO ] Single file mode — skipping full checkpoint
+[00:00:14.106] [INFO ] quickAnswer.winner:        Book
+[00:00:14.106] [INFO ] quickAnswer.readFirst:     Yes
+[00:00:14.106] [INFO ] quickAnswer.oneLineReason: Harris's novels are the source; Fuller's series is a formal reinvention.
+[00:00:14.106] [INFO ] pageTitle: Hannibal: Book vs Series — Which Is Better? (Thomas Harris)
+
+============================================================
+Finished: 2026-04-12T00:00:14.107Z
+Elapsed:  39.6s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-11_19-59-34_pipeline-revise.log
+============================================================

@@ -1,0 +1,73 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T18:09:42.984Z
+============================================================
+[18:09:42.987] [INFO ] Model config loaded from config/models.json
+[18:09:42.989] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[18:09:42.989] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[18:09:42.989] [INFO ] pipeline-revise.js
+[18:09:42.989] [INFO ] Pass:    1
+[18:09:42.989] [INFO ] Files:   163
+[18:09:42.990] [INFO ] Force:   no
+[18:09:42.990] [INFO ] Dry run: no
+[18:09:42.990] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[18:09:42.990] [SKIP ] a-beautiful-mind.json (already exists in 2-revised)
+[18:09:43.496] [SKIP ] a-knight-of-the-seven-kingdoms.json (already exists in 2-revised)
+[18:10:17.144] [PASS ] a-little-life.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Only the novel's 700-page accumulation makes Jude's trauma feel inescapable."
+[18:10:54.768] [PASS ] a-man-called-ove.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ove's caustic internal monologue is the experience the film cannot replicate."
+[18:11:26.395] [PASS ] a-walk-to-remember.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Retrospective narration and 1950s setting earn emotional weight the film cannot replicate."
+[18:11:57.248] [PASS ] about-a-boy.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Grant's performance matches Hornby's prose; both versions equally rewarding."
+[18:12:33.099] [WARN ] all-quiet-on-the-western-front.json: Pass 1 validation: quickAnswer.oneLineReason too long (16 words)
+[18:13:07.113] [PASS ] all-the-light-we-cannot-see.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Doerr's prose renders Marie-Laure's blindness as heightened perception, not limitation."
+[18:13:36.961] [PASS ] along-came-a-spider.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Jezzie's betrayal and Soneji's fractured psychology vanish in the film."
+[18:14:09.696] [PASS ] american-gods.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel finishes; the series was cancelled unresolved."
+[18:14:40.144] [PASS ] american-psycho.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ellis's unreliable narrator and graphic violence are inseparable from the satire."
+[18:15:11.879] [PASS ] animal-farm.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Orwell's prose economy — the allegory lives in compression."
+[18:15:47.916] [PASS ] annihilation.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The biologist's unnamed first-person voice creates dread that film cannot replicate."
+[18:15:48.419] [SKIP ] atonement.json (already exists in 2-revised)
+[18:16:24.304] [PASS ] band-of-brothers.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "The series gives faces to the book's voices; the book gives context the series compresses."
+[18:16:56.774] [PASS ] beloved.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Morrison's fragmented prose enacts trauma; film cannot replicate this."
+[18:16:57.279] [SKIP ] big-fish.json (already exists in 2-revised)
+[18:17:34.716] [PASS ] big-little-lies-hbo.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Moriarty's comic voice sharper on page; Kidman's performance deeper on screen."
+[18:18:08.729] [PASS ] breakfast-at-tiffanys.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "The book's ambiguous ending contradicts the film's romantic resolution entirely."
+[18:18:46.222] [PASS ] bridgerton.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "Quinn's tighter focus on Daphne and Simon's emotional negotiation over spectacle."
+[18:19:15.341] [PASS ] brooklyn.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's meaning lives in what Eilis doesn't say."
+[18:19:48.447] [PASS ] catch-22.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's circular structure is the formal argument itself."
+[18:20:20.241] [PASS ] catch-me-if-you-can.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Book teaches fraud mechanics; film invents emotional father-son drama."
+[18:20:50.372] [PASS ] cold-mountain.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Frazier's prose rhythm—long rolling sentences mimicking walking—is inseparable from meaning."
+[18:21:22.132] [PASS ] contact.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "The novel's final mathematical revelation reframes everything that precedes it."
+[18:21:53.488] [PASS ] da-vinci-code.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The book's chapter-ending cliffhangers create puzzle-solving momentum the film cannot replicate."
+[18:22:28.380] [PASS ] daisy-jones-and-the-six.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The oral history format is irreplaceable—form and meaning are inseparable."
+[18:23:00.381] [PASS ] dark-matter.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel's velocity versus Edgerton's dual performance—each irreplaceable."
+[18:23:33.436] [PASS ] devil-wears-prada.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's Andy is more morally compromised and its satire meaner."
+[18:24:05.436] [PASS ] divergent.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Tris's first-person voice and moral ambivalence are lost in the film's pace-driven compression."
+[18:24:40.126] [PASS ] doctor-sleep.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "King's recovery narrative has authenticity Flanagan's film cannot match in two hours."
+[18:25:15.726] [PASS ] dracula.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The epistolary format makes Dracula terrifying through absence, not spectacle."
+[18:25:49.008] [PASS ] dune.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Herbert makes Paul's complicity explicit; the films leave it ambiguous."
+[18:26:17.944] [PASS ] eat-pray-love.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Gilbert's voice—witty, self-aware, intellectually rigorous—exists only on the page."
+[18:26:51.672] [PASS ] enders-game.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's psychological interiority cannot be translated to film."
+[18:27:29.040] [PASS ] enders-game-film.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's power lives inside Ender's head; the film cannot replicate sustained interiority."
+[18:28:05.866] [PASS ] english-patient.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "The novel's Kip is gutted in the film; read first to know what Ondaatje intended."
+[18:34:33.376] [PASS ] everything-everything.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The medical twist recontextualizes the entire story; the film rushes past its psychological horror."
+[18:35:04.957] [PASS ] fight-club.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Fincher's formal innovation matches Palahniuk's prose aggression with equal precision."
+[18:35:38.052] [PASS ] five-feet-apart.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Stella's first-person anxiety and Will's cartoons reveal psychological depth the film flattens."
+[18:36:08.643] [PASS ] fourth-wing.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Violet's internal voice—wit and tactical thinking—exists only on the page."
+[18:36:43.566] [PASS ] frankenstein.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The creature's voice and philosophical arguments exist only on the page."
+[18:37:17.026] [PASS ] geralds-game.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "King's internal archaeology of trauma is richer on the page than any externalized equivalent."
+[18:37:50.151] [PASS ] girl-on-the-train.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Rachel's fractured first-person voice only works on the page."
+[18:38:22.581] [PASS ] girl-with-the-dragon-tattoo.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Larsson's novel contains Lisbeth's interior world; the film can only show her surface."
+[18:38:57.489] [PASS ] gone-girl.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Pike's performance matches the novel's psychological depth through different means."
+[18:39:35.542] [PASS ] good-omens.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "The novel's footnotes are irreplaceable; the series makes their friendship visible."
+[18:40:09.013] [PASS ] hamnet.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Only the novel sustains 300 pages inside Agnes's consciousness."
+[18:40:47.929] [ERROR] hannibal-series.json: Pass 1 failed: Expected double-quoted property name in JSON at position 16375 (line 118 column 53)
+[18:41:14.230] [PASS ] heated-rivalry.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "The novel's interior voice deepens what the show's performances can only approximate."
+[18:43:33.401] [PASS ] high-fidelity.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Cusack's monologues match Hornby's confessional prose perfectly."
+[18:44:11.215] [WARN ] hillbilly-elegy.json: Pass 1 validation: differences array was modified — must not change in Pass 1
+[18:44:48.046] [PASS ] hitchhikers-guide.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The narrative voice and prose rhythm are the jokes themselves."
+[18:45:21.403] [PASS ] howls-moving-castle.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Novel's puzzle-box plotting and Sophie's hidden magic work best unseen."
+[18:45:55.486] [PASS ] hunger-games-sunrise.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Book offers political depth; film delivers Fiennes and visual spectacle."
+[18:46:28.939] [PASS ] i-am-legend.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The ending redefines Neville as the monster, not the hero."
+[18:47:03.801] [WARN ] i-robot.json: Pass 1 validation: quickAnswer.oneLineReason too long (16 words)
+[19:39:06.516] [ERROR] interview-with-the-vampire-amcplus.json: Pass 1 failed: read ECONNRESET

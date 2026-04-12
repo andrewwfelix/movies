@@ -1,0 +1,178 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T22:26:43.325Z
+============================================================
+[22:26:43.328] [INFO ] Model config loaded from config/models.json
+[22:26:43.330] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[22:26:43.331] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[22:26:43.331] [INFO ] pipeline-revise.js
+[22:26:43.331] [INFO ] Pass:    1
+[22:26:43.332] [INFO ] Files:   163
+[22:26:43.332] [INFO ] Force:   no
+[22:26:43.332] [INFO ] Dry run: no
+[22:26:43.332] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:26:43.332] [SKIP ] a-beautiful-mind.json (already exists in 2-revised)
+[22:26:43.836] [SKIP ] a-knight-of-the-seven-kingdoms.json (already exists in 2-revised)
+[22:26:44.340] [SKIP ] a-little-life.json (already exists in 2-revised)
+[22:26:44.850] [SKIP ] a-man-called-ove.json (already exists in 2-revised)
+[22:26:45.358] [SKIP ] a-walk-to-remember.json (already exists in 2-revised)
+[22:26:45.866] [SKIP ] about-a-boy.json (already exists in 2-revised)
+[22:26:46.372] [SKIP ] all-quiet-on-the-western-front.json (already exists in 2-revised)
+[22:26:46.878] [SKIP ] all-the-light-we-cannot-see.json (already exists in 2-revised)
+[22:26:47.386] [SKIP ] along-came-a-spider.json (already exists in 2-revised)
+[22:26:47.893] [SKIP ] american-gods.json (already exists in 2-revised)
+[22:26:48.393] [SKIP ] american-psycho.json (already exists in 2-revised)
+[22:26:48.898] [SKIP ] animal-farm.json (already exists in 2-revised)
+[22:26:49.404] [SKIP ] annihilation.json (already exists in 2-revised)
+[22:26:49.909] [SKIP ] atonement.json (already exists in 2-revised)
+[22:26:50.414] [SKIP ] band-of-brothers.json (already exists in 2-revised)
+[22:26:50.919] [SKIP ] beloved.json (already exists in 2-revised)
+[22:26:51.423] [SKIP ] big-fish.json (already exists in 2-revised)
+[22:26:51.927] [SKIP ] big-little-lies-hbo.json (already exists in 2-revised)
+[22:26:52.432] [SKIP ] breakfast-at-tiffanys.json (already exists in 2-revised)
+[22:26:52.937] [SKIP ] bridgerton.json (already exists in 2-revised)
+[22:26:53.441] [SKIP ] brooklyn.json (already exists in 2-revised)
+[22:26:53.947] [SKIP ] catch-22.json (already exists in 2-revised)
+[22:26:54.452] [SKIP ] catch-me-if-you-can.json (already exists in 2-revised)
+[22:26:54.958] [SKIP ] cold-mountain.json (already exists in 2-revised)
+[22:26:55.464] [SKIP ] contact.json (already exists in 2-revised)
+[22:26:55.969] [SKIP ] da-vinci-code.json (already exists in 2-revised)
+[22:26:56.474] [SKIP ] daisy-jones-and-the-six.json (already exists in 2-revised)
+[22:26:56.979] [SKIP ] dark-matter.json (already exists in 2-revised)
+[22:26:57.484] [SKIP ] devil-wears-prada.json (already exists in 2-revised)
+[22:26:57.989] [SKIP ] divergent.json (already exists in 2-revised)
+[22:26:58.494] [SKIP ] doctor-sleep.json (already exists in 2-revised)
+[22:26:59.000] [SKIP ] dracula.json (already exists in 2-revised)
+[22:26:59.505] [SKIP ] dune.json (already exists in 2-revised)
+[22:27:00.010] [SKIP ] eat-pray-love.json (already exists in 2-revised)
+[22:27:00.516] [SKIP ] enders-game.json (already exists in 2-revised)
+[22:27:01.022] [SKIP ] enders-game-film.json (already exists in 2-revised)
+[22:27:01.527] [SKIP ] english-patient.json (already exists in 2-revised)
+[22:27:02.033] [SKIP ] everything-everything.json (already exists in 2-revised)
+[22:27:02.537] [SKIP ] fight-club.json (already exists in 2-revised)
+[22:27:03.042] [SKIP ] five-feet-apart.json (already exists in 2-revised)
+[22:27:03.548] [SKIP ] fourth-wing.json (already exists in 2-revised)
+[22:27:04.054] [SKIP ] frankenstein.json (already exists in 2-revised)
+[22:27:04.559] [SKIP ] geralds-game.json (already exists in 2-revised)
+[22:27:05.064] [SKIP ] girl-on-the-train.json (already exists in 2-revised)
+[22:27:05.569] [SKIP ] girl-with-the-dragon-tattoo.json (already exists in 2-revised)
+[22:27:06.072] [SKIP ] gone-girl.json (already exists in 2-revised)
+[22:27:06.577] [SKIP ] good-omens.json (already exists in 2-revised)
+[22:27:07.077] [SKIP ] hamnet.json (already exists in 2-revised)
+[22:27:46.904] [ERROR] hannibal-series.json: Pass 1 failed: Unexpected end of JSON input
+[22:27:47.406] [SKIP ] heated-rivalry.json (already exists in 2-revised)
+[22:27:47.912] [SKIP ] high-fidelity.json (already exists in 2-revised)
+[22:27:48.422] [SKIP ] hillbilly-elegy.json (already exists in 2-revised)
+[22:27:48.927] [SKIP ] hitchhikers-guide.json (already exists in 2-revised)
+[22:27:49.432] [SKIP ] howls-moving-castle.json (already exists in 2-revised)
+[22:27:49.936] [SKIP ] hunger-games-sunrise.json (already exists in 2-revised)
+[22:27:50.440] [SKIP ] i-am-legend.json (already exists in 2-revised)
+[22:27:50.946] [SKIP ] i-robot.json (already exists in 2-revised)
+[22:27:51.451] [SKIP ] interview-with-the-vampire-amcplus.json (already exists in 2-revised)
+[22:28:29.543] [ERROR] into-the-wild.json: Pass 1 failed: Unterminated string in JSON at position 16171 (line 134 column 9)
+[22:28:30.059] [SKIP ] it-ends-with-us.json (already exists in 2-revised)
+[22:29:09.090] [ERROR] it-muschietti.json: Pass 1 failed: Unterminated string in JSON at position 15487 (line 148 column 19)
+[22:29:09.595] [SKIP ] jane-eyre.json (already exists in 2-revised)
+[22:29:39.322] [PASS ] jurassic-park.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's chaos theory argument survives only on the page."
+[22:30:17.795] [ERROR] kite-runner.json: Pass 1 failed: Expected ',' or ']' after array element in JSON at position 15812 (line 131 column 6)
+[22:30:53.059] [PASS ] la-confidential.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel sprawls; film distills. Both perfect in their form."
+[22:31:28.654] [ERROR] les-miserables.json: Pass 1 failed: Unterminated string in JSON at position 15475 (line 116 column 224)
+[22:32:02.400] [PASS ] little-women.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Gerwig's non-linear structure and meta-textual ending reframe Alcott's ambivalence about marriage."
+[22:32:35.376] [PASS ] lonesome-dove.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "McMurtry's interior monologues give Gus and Call depths no performance can fully capture."
+[22:33:07.814] [PASS ] looking-for-alaska.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "First-person narration traps you inside Pudge's grief; the series watches from outside."
+[22:33:42.413] [PASS ] lord-of-the-flies.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Golding's ironic prose frame makes the horror philosophically resonant, not just visceral."
+[22:34:15.785] [PASS ] love-simon.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "First-person voice captures Simon's anxiety; film flattens it to charm."
+[22:34:46.856] [PASS ] margos-got-money-troubles.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Thorpe's first-person prose voice cannot be replicated on screen."
+[22:35:19.299] [PASS ] me-before-you.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Alternating first-person chapters give you Will's interiority, not just his performance."
+[22:35:53.918] [PASS ] mickey-17.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ashton's internal monologue sustains existential questions the film resolves for catharsis."
+[22:36:25.171] [PASS ] misery.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Bates's performance equals King's prose; the novel's interior depth matches the film's visual terror."
+[22:36:59.674] [PASS ] my-brilliant-friend.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Elena's first-person narration exposes her jealousy; the series shows only events."
+[22:37:35.111] [PASS ] my-sisters-keeper.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Seven narrators create moral complexity the film's single voiceover cannot replicate."
+[22:38:10.956] [PASS ] narnia-magicians-nephew.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Aslan's creation song works only in imagination before Gerwig's version replaces it."
+[22:38:42.567] [PASS ] never-let-me-go.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Kathy's digressive narration creates intimacy no voiceover can replicate."
+[22:38:43.076] [SKIP ] normal-people.json (already exists in 2-revised)
+[22:39:18.825] [PASS ] of-mice-and-men.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Malkovich's Lennie deepens the prose; Steinbeck's repetition accumulates beyond film."
+[22:39:49.372] [PASS ] olive-kitteridge.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's fragmented structure reveals Olive obliquely; the miniseries makes her the constant subject."
+[22:40:22.221] [PASS ] on-the-road.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Kerouac's spontaneous prose is the experience; images cannot replace it."
+[22:40:54.453] [PASS ] one-day.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The annual structure accumulates emotional weight that two hours cannot replicate."
+[22:41:27.699] [PASS ] one-flew-over-the-cuckoos-nest.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Bromden's hallucinatory narration is the novel's moral center; the film removes it entirely."
+[22:41:58.625] [PASS ] outlander.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "Claire's first-person voice and interior monologue exist only on the page."
+[22:49:07.548] [PASS ] pachinko.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's four-generation scope makes Noa's tragedy irreplaceable."
+[22:49:39.922] [PASS ] people-we-meet-on-vacation.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Henry's first-person prose voice is the novel's primary pleasure."
+[22:50:09.967] [PASS ] perks-of-being-a-wallflower.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "The novel's epistolary voice matches Miller's Patrick and the tunnel scene in film."
+[22:50:49.387] [PASS ] pet-sematary-2019.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Louis's interior descent into catastrophe only works through the novel's interiority."
+[22:55:51.250] [PASS ] presumed-innocent.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Turow's procedural precision and first-person narration are the story's intellectual core."
+[22:56:23.099] [PASS ] pride-and-prejudice.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Austen's ironic voice and Elizabeth's interior observations live only on the page."
+[22:56:55.762] [PASS ] project-hail-mary.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Grace's internal monologue lets you solve problems alongside him, not just watch."
+[22:57:31.326] [PASS ] ready-player-one.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Cline's puzzle box rewards encyclopedic 1980s gaming knowledge Spielberg replaces."
+[22:57:59.812] [PASS ] rebecca.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The narrator's namelessness and Maxim's murder are lost to the Hays Code."
+[22:58:30.302] [PASS ] remains-of-the-day.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Stevens's unreliable narration—the entire point—cannot be filmed."
+[22:59:05.572] [PASS ] remarkably-bright-creatures.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Marcellus's first-person narration is genuinely alien—only prose captures it."
+[22:59:37.340] [PASS ] reminders-of-him.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's dual perspective and Kenna's letters carry emotional weight the film cannot replicate."
+[23:00:09.327] [PASS ] room.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Jack's five-year-old narration is irreplaceable; Larson and Tremblay's performances are unrepeatable."
+[23:00:43.904] [PASS ] roots-2016.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The book's 200 pages of Kunta's African life make his defiance spiritual, not spectacle."
+[23:01:23.242] [ERROR] rosemarys-baby.json: Pass 1 failed: Unterminated string in JSON at position 16597 (line 128 column 18)
+[23:01:52.652] [PASS ] schindlers-list.json — Pass 1 — winner: "Film" · readFirst: "No" · reason: "Spielberg's black-and-white cinematography and Fiennes' performance transcend what prose can achieve."
+[23:02:27.255] [PASS ] seabiscuit.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Hillenbrand reveals Pollard's functional blindness and Smith's frontier philosophy—details the film omits."
+[23:02:58.872] [PASS ] sense-and-sensibility.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Austen's ironic distance and moral complexity sharpen what the film's warmth softens."
+[23:03:32.871] [PASS ] shadow-and-bone.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's focused intimacy with Alina's internal voice outweighs the series' ensemble spectacle."
+[23:04:04.406] [PASS ] sharp-objects.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Flynn's first-person narration captures Camille's interior damage in ways no camera can replicate."
+[23:04:37.340] [PASS ] shogun-2024.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "The novel's thousand pages immerse you; the series corrects its Eurocentric perspective."
+[23:05:08.314] [PASS ] silence-of-the-lambs.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Demme's direct-address camera translates Harris's interiority into pure cinema."
+[23:05:41.980] [PASS ] sophies-choice.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel builds moral complexity through revelation; film distills it into Streep's performance."
+[23:06:17.468] [PASS ] sphere.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Norman's interior paranoia exists only in prose, not on screen."
+[23:06:50.023] [PASS ] stardust.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Gaiman's archaic prose cannot be replicated; the film's ending is arguably superior."
+[23:07:27.648] [PASS ] station-eleven.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "The novel's formal precision matches the series' emotional generosity equally."
+[23:08:00.675] [PASS ] talented-mr-ripley.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Highsmith's Tom is a chillingly alien sociopath; Minghella's is sympathetically wounded."
+[23:08:35.236] [PASS ] the-book-thief.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Death's narrative voice announces deaths before they happen, transforming grief into structure."
+[23:09:13.212] [WARN ] the-client.json: Pass 1 validation: quickAnswer.oneLineReason too long (16 words)
+[23:09:43.260] [PASS ] the-color-purple.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Celie's epistolary voice—written in vernacular—cannot be filmed."
+[23:10:19.797] [ERROR] the-count-of-monte-cristo.json: Pass 1 failed: Unterminated string in JSON at position 16096 (line 114 column 139)
+[23:10:48.941] [PASS ] the-electric-state.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Stålenhag's paintings create atmosphere cinema cannot pause to absorb."
+[23:11:26.114] [PASS ] the-fault-in-our-stars.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Hazel's first-person voice is sardonic and precise; no performance can replicate it."
+[23:11:55.143] [PASS ] the-firm.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's billing fraud ending is smarter than the film's chase climax."
+[23:12:25.618] [PASS ] the-girl-with-the-dragon-tattoo-fincher.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel's institutional depth versus Fincher's formal mastery and ending."
+[23:13:01.338] [PASS ] the-giver.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's power is compression; the film expands it into something less affecting."
+[23:13:38.668] [PASS ] the-glass-castle.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Walls refuses to soften parental neglect; the film makes it forgivable."
+[23:14:08.993] [PASS ] the-great-gatsby.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Fitzgerald's prose is the experience; no film can replicate it."
+[23:14:47.857] [PASS ] the-handmaids-tale.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Atwood's narration and Historical Notes cannot be replicated on screen."
+[23:15:27.930] [ERROR] the-haunting-of-hill-house.json: Pass 1 failed: Expected ',' or '}' after property value in JSON at position 16907 (line 126 column 29)
+[23:25:37.125] [ERROR] the-help.json: Pass 1 failed: Unterminated string in JSON at position 17023 (line 128 column 7)
+[23:26:12.571] [PASS ] the-hours.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel's prose echoes Woolf; film's Glass score does in music what Cunningham does in prose."
+[23:26:43.935] [PASS ] the-housemaid.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's twist lands harder with 300 pages of accumulated misdirection."
+[23:27:14.239] [PASS ] the-lincoln-lawyer.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's procedural detail and interior monologue earn the moral complexity the film rushes past."
+[23:27:48.236] [PASS ] the-longest-ride.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ira's first-person voice accumulates across four hundred pages into Sparks's best character."
+[23:28:18.912] [PASS ] the-lovely-bones.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Susie's restrained narrative voice is irreplaceable on screen."
+[23:28:53.051] [PASS ] the-martian.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Book's log entries versus film's rescue sequence—both excel differently."
+[23:29:24.143] [PASS ] the-maze-runner.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "First-person interiority and Teresa's telepathic connection exist only on the page."
+[23:29:58.136] [PASS ] the-maze-runner-film.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's slow immersion in the Glade's society gives it texture the film compresses."
+[23:30:27.815] [PASS ] the-notebook.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "The novel gives Noah's grief and interiority the film cannot access."
+[23:31:01.009] [PASS ] the-odyssey.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Epic similes are untranslatable to film; read Homer first."
+[23:31:33.304] [PASS ] the-outsider.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The genre pivot lands harder when procedural logic builds across the full novel."
+[23:32:09.470] [PASS ] the-outsiders.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel owns Ponyboy's voice; film owns the ensemble cast."
+[23:32:42.411] [PASS ] the-pelican-brief.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's detailed legal research and morally compromised characters give weight to the thriller."
+[23:33:19.634] [PASS ] the-pianist.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Testimony versus witness—both refuse to comfort you."
+[23:33:54.934] [PASS ] the-picture-of-dorian-gray.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Wilde's epigrammatic prose and Lord Henry's philosophy are irreplaceable."
+[23:34:30.005] [PASS ] the-pillars-of-the-earth.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel teaches you how cathedrals are built; the series shows you them rise."
+[23:35:03.256] [PASS ] the-princess-bride.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Goldman's meta-fiction matches Patinkin's Inigo — different, equal pleasures."
+[23:35:31.993] [PASS ] the-road.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "McCarthy's stripped prose enacts the degradation; the film can only show it."
+[23:36:06.358] [PASS ] the-secret-garden.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Burnett's pacing is the point—healing happens through repetition, not magic."
+[23:36:40.786] [PASS ] the-secret-life-of-bees.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's interior guilt and racial complexity can't survive compression to film."
+[23:37:17.056] [PASS ] the-shining.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "King's Jack is corrupted by evil; Kubrick's already contains it."
+[23:37:53.976] [ERROR] the-sisterhood-of-the-traveling-pants.json: Pass 1 failed: Unterminated string in JSON at position 15780 (line 128 column 18)
+[23:38:30.523] [PASS ] the-three-body-problem.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The Cultural Revolution context is the novel's moral engine, not set dressing."
+[23:39:08.934] [PASS ] the-thursday-murder-club.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Joyce's diary entries and Osman's voice don't survive voiceover adaptation."
+[23:39:40.190] [PASS ] the-time-travelers-wife.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's non-linear structure is irreplaceable; the film linearises it into conventional romance."
+[23:40:18.212] [ERROR] the-witcher.json: Pass 1 failed: Unterminated string in JSON at position 16550 (line 104 column 42)
+[23:40:49.352] [PASS ] the-woman-in-the-window.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "First-person unreliable narration makes you complicit; the film externalizes it."
+[23:41:22.091] [PASS ] thirteen-reasons-why.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's single-night structure and Hannah's off-page death preserve emotional impact over spectacle."
+[23:41:53.303] [PASS ] to-kill-a-mockingbird.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Scout's double narration exists only in the novel; Peck's Atticus exists only in the film."
+[23:42:26.444] [PASS ] verity.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's ambiguity survives on the page; film must commit to visual interpretation."
+[23:43:00.013] [PASS ] water-for-elephants.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The dual timeline structure and nursing home framing exist only on the page."
+[23:43:30.909] [PASS ] where-the-crawdads-sing.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The firefly passages and nature writing define the novel's voice."
+[23:44:07.822] [PASS ] white-noise.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "DeLillo's prose—brand names, fragmented rhythm, linguistic breakdown—cannot be translated to film."
+[23:44:42.040] [PASS ] wolf-hall.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Mantel's present-tense narration seals you inside Cromwell's consciousness."
+[23:45:16.831] [PASS ] world-war-z.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The oral history format cannot survive translation to film."
+[23:45:54.147] [PASS ] wuthering-heights.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The nested narrative structure and withheld interiority only work on the page."

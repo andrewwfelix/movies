@@ -1,0 +1,31 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T17:50:33.934Z
+============================================================
+[17:50:33.937] [INFO ] Model config loaded from config/models.json
+[17:50:33.939] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[17:50:33.940] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[17:50:33.941] [INFO ] Created output directory: C:\Users\andre\projects\movies\pipeline\2-revised
+[17:50:33.941] [INFO ] pipeline-revise.js
+[17:50:33.941] [INFO ] Pass:    1
+[17:50:33.941] [INFO ] Files:   1
+[17:50:33.941] [INFO ] Force:   no
+[17:50:33.941] [INFO ] Dry run: yes
+
+── Processing ───────────────────────────────────
+[17:50:33.943] [INFO ] [DRY] Would run Pass 1 on atonement using anthropic/claude-haiku-4-5
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             yes
+────────────────────────────────────────────────
+
+============================================================
+Finished: 2026-04-11T17:50:33.944Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-11_13-50-33_pipeline-revise.log
+============================================================

@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T18:00:21.090Z
+============================================================
+[18:00:21.093] [INFO ] Model config loaded from config/models.json
+[18:00:21.094] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[18:00:21.094] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[18:00:21.095] [INFO ] pipeline-revise.js
+[18:00:21.095] [INFO ] Pass:    1
+[18:00:21.095] [INFO ] Files:   1
+[18:00:21.095] [INFO ] Force:   no
+[18:00:21.095] [INFO ] Dry run: no
+[18:00:21.095] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[18:01:01.091] [PASS ] atonement.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The metafictional ending only works on the page."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[18:01:01.093] [INFO ] Single file mode — skipping full checkpoint
+[18:01:01.093] [INFO ] quickAnswer.winner:        Book
+[18:01:01.093] [INFO ] quickAnswer.readFirst:     Yes
+[18:01:01.093] [INFO ] quickAnswer.oneLineReason: The metafictional ending only works on the page.
+[18:01:01.093] [INFO ] pageTitle: Atonement Book vs Movie: McEwan vs Joe Wright
+
+============================================================
+Finished: 2026-04-11T18:01:01.093Z
+Elapsed:  40.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-11_14-00-21_pipeline-revise.log
+============================================================

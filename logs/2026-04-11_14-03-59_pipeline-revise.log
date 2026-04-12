@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T18:03:59.477Z
+============================================================
+[18:03:59.480] [INFO ] Model config loaded from config/models.json
+[18:03:59.481] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[18:03:59.482] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[18:03:59.482] [INFO ] pipeline-revise.js
+[18:03:59.482] [INFO ] Pass:    1
+[18:03:59.482] [INFO ] Files:   1
+[18:03:59.482] [INFO ] Force:   no
+[18:03:59.482] [INFO ] Dry run: no
+[18:03:59.482] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[18:04:31.890] [PASS ] big-fish.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel's gaps versus film's daffodils—both complete the story differently."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[18:04:31.891] [INFO ] Single file mode — skipping full checkpoint
+[18:04:31.892] [INFO ] quickAnswer.winner:        Too Close to Call
+[18:04:31.892] [INFO ] quickAnswer.readFirst:     Either order works
+[18:04:31.892] [INFO ] quickAnswer.oneLineReason: Novel's gaps versus film's daffodils—both complete the story differently.
+[18:04:31.892] [INFO ] pageTitle: Big Fish: Book vs Film — Which Is Better? (Daniel Wallace)
+
+============================================================
+Finished: 2026-04-11T18:04:31.892Z
+Elapsed:  32.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-11_14-03-59_pipeline-revise.log
+============================================================

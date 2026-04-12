@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T18:05:05.745Z
+============================================================
+[18:05:05.748] [INFO ] Model config loaded from config/models.json
+[18:05:05.750] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[18:05:05.750] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[18:05:05.750] [INFO ] pipeline-revise.js
+[18:05:05.750] [INFO ] Pass:    1
+[18:05:05.751] [INFO ] Files:   1
+[18:05:05.751] [INFO ] Force:   no
+[18:05:05.751] [INFO ] Dry run: no
+[18:05:05.751] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[18:05:38.971] [PASS ] normal-people.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Free indirect prose versus physical performance—each reveals what the other cannot."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[18:05:38.991] [INFO ] Single file mode — skipping full checkpoint
+[18:05:38.991] [INFO ] quickAnswer.winner:        Too Close to Call
+[18:05:38.991] [INFO ] quickAnswer.readFirst:     Either order works
+[18:05:38.991] [INFO ] quickAnswer.oneLineReason: Free indirect prose versus physical performance—each reveals what the other cannot.
+[18:05:38.991] [INFO ] pageTitle: Normal People: Book vs TV Series — Sally Rooney Adaptation Explained
+
+============================================================
+Finished: 2026-04-11T18:05:38.991Z
+Elapsed:  33.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-11_14-05-05_pipeline-revise.log
+============================================================

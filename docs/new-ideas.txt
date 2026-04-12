@@ -6,3 +6,8 @@
 4. Think about a 'fix all' script of some kind that updates all pages based on new movies
  
 5. Inform LLM to log all files to the logs directory
+6. Add a few 3? Session retries in case of a moment or two of internet disconnection/latency 
+	a. add this to our best practices document
+
+7. Some kind of structured logging? Pino + OpenTelemetry + Datadog (or Loki) is the modern default stack. Transition to AWS or Azure or Vercel?
+	8. Let's thionk about transitiong to vercenl, we could potentially build and maintain a movie database as well, which might be nice. 

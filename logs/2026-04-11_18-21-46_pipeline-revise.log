@@ -1,0 +1,77 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T22:21:46.228Z
+============================================================
+[22:21:46.231] [INFO ] Model config loaded from config/models.json
+[22:21:46.232] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[22:21:46.233] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[22:21:46.233] [INFO ] pipeline-revise.js
+[22:21:46.233] [INFO ] Pass:    1
+[22:21:46.233] [INFO ] Files:   163
+[22:21:46.233] [INFO ] Force:   no
+[22:21:46.234] [INFO ] Dry run: no
+[22:21:46.234] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:21:46.234] [SKIP ] a-beautiful-mind.json (already exists in 2-revised)
+[22:21:46.742] [SKIP ] a-knight-of-the-seven-kingdoms.json (already exists in 2-revised)
+[22:21:47.252] [SKIP ] a-little-life.json (already exists in 2-revised)
+[22:21:47.763] [SKIP ] a-man-called-ove.json (already exists in 2-revised)
+[22:21:48.271] [SKIP ] a-walk-to-remember.json (already exists in 2-revised)
+[22:21:48.781] [SKIP ] about-a-boy.json (already exists in 2-revised)
+[22:21:49.287] [SKIP ] all-quiet-on-the-western-front.json (already exists in 2-revised)
+[22:21:49.793] [SKIP ] all-the-light-we-cannot-see.json (already exists in 2-revised)
+[22:21:50.297] [SKIP ] along-came-a-spider.json (already exists in 2-revised)
+[22:21:50.803] [SKIP ] american-gods.json (already exists in 2-revised)
+[22:21:51.309] [SKIP ] american-psycho.json (already exists in 2-revised)
+[22:21:51.813] [SKIP ] animal-farm.json (already exists in 2-revised)
+[22:21:52.319] [SKIP ] annihilation.json (already exists in 2-revised)
+[22:21:52.826] [SKIP ] atonement.json (already exists in 2-revised)
+[22:21:53.331] [SKIP ] band-of-brothers.json (already exists in 2-revised)
+[22:21:53.836] [SKIP ] beloved.json (already exists in 2-revised)
+[22:21:54.341] [SKIP ] big-fish.json (already exists in 2-revised)
+[22:21:54.847] [SKIP ] big-little-lies-hbo.json (already exists in 2-revised)
+[22:21:55.353] [SKIP ] breakfast-at-tiffanys.json (already exists in 2-revised)
+[22:21:55.859] [SKIP ] bridgerton.json (already exists in 2-revised)
+[22:21:56.366] [SKIP ] brooklyn.json (already exists in 2-revised)
+[22:21:56.872] [SKIP ] catch-22.json (already exists in 2-revised)
+[22:21:57.378] [SKIP ] catch-me-if-you-can.json (already exists in 2-revised)
+[22:21:57.891] [SKIP ] cold-mountain.json (already exists in 2-revised)
+[22:21:58.395] [SKIP ] contact.json (already exists in 2-revised)
+[22:21:58.900] [SKIP ] da-vinci-code.json (already exists in 2-revised)
+[22:21:59.406] [SKIP ] daisy-jones-and-the-six.json (already exists in 2-revised)
+[22:21:59.911] [SKIP ] dark-matter.json (already exists in 2-revised)
+[22:22:00.418] [SKIP ] devil-wears-prada.json (already exists in 2-revised)
+[22:22:00.924] [SKIP ] divergent.json (already exists in 2-revised)
+[22:22:01.431] [SKIP ] doctor-sleep.json (already exists in 2-revised)
+[22:22:01.936] [SKIP ] dracula.json (already exists in 2-revised)
+[22:22:02.441] [SKIP ] dune.json (already exists in 2-revised)
+[22:22:02.946] [SKIP ] eat-pray-love.json (already exists in 2-revised)
+[22:22:03.451] [SKIP ] enders-game.json (already exists in 2-revised)
+[22:22:03.956] [SKIP ] enders-game-film.json (already exists in 2-revised)
+[22:22:04.461] [SKIP ] english-patient.json (already exists in 2-revised)
+[22:22:04.969] [SKIP ] everything-everything.json (already exists in 2-revised)
+[22:22:05.475] [SKIP ] fight-club.json (already exists in 2-revised)
+[22:22:05.980] [SKIP ] five-feet-apart.json (already exists in 2-revised)
+[22:22:06.486] [SKIP ] fourth-wing.json (already exists in 2-revised)
+[22:22:06.994] [SKIP ] frankenstein.json (already exists in 2-revised)
+[22:22:07.499] [SKIP ] geralds-game.json (already exists in 2-revised)
+[22:22:08.003] [SKIP ] girl-on-the-train.json (already exists in 2-revised)
+[22:22:08.509] [SKIP ] girl-with-the-dragon-tattoo.json (already exists in 2-revised)
+[22:22:09.015] [SKIP ] gone-girl.json (already exists in 2-revised)
+[22:22:09.521] [SKIP ] good-omens.json (already exists in 2-revised)
+[22:22:10.025] [SKIP ] hamnet.json (already exists in 2-revised)
+[22:22:48.903] [ERROR] hannibal-series.json: Pass 1 failed: Unterminated string in JSON at position 16369 (line 121 column 34)
+[22:22:49.415] [SKIP ] heated-rivalry.json (already exists in 2-revised)
+[22:22:49.920] [SKIP ] high-fidelity.json (already exists in 2-revised)
+[22:22:50.433] [SKIP ] hillbilly-elegy.json (already exists in 2-revised)
+[22:22:50.934] [SKIP ] hitchhikers-guide.json (already exists in 2-revised)
+[22:22:51.448] [SKIP ] howls-moving-castle.json (already exists in 2-revised)
+[22:22:51.952] [SKIP ] hunger-games-sunrise.json (already exists in 2-revised)
+[22:22:52.454] [SKIP ] i-am-legend.json (already exists in 2-revised)
+[22:22:52.968] [SKIP ] i-robot.json (already exists in 2-revised)
+[22:23:27.967] [PASS ] interview-with-the-vampire-amcplus.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Rice's baroque prose is the experience; no screen adaptation replicates it."
+[22:24:04.966] [ERROR] into-the-wild.json: Pass 1 failed: Unterminated string in JSON at position 16173 (line 134 column 9)
+[22:24:35.799] [PASS ] it-ends-with-us.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's interior monologue captures Lily's psychological rationalizations; the film cannot."
+[22:25:14.417] [ERROR] it-muschietti.json: Pass 1 failed: Unexpected end of JSON input
+[22:25:46.114] [PASS ] jane-eyre.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Jane's direct address to the reader cannot be filmed."

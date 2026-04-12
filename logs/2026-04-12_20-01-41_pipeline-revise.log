@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T00:01:41.391Z
+============================================================
+[00:01:41.394] [INFO ] Model config loaded from config/models.json
+[00:01:41.396] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[00:01:41.396] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[00:01:41.397] [INFO ] pipeline-revise.js
+[00:01:41.397] [INFO ] Pass:    1
+[00:01:41.397] [INFO ] Files:   1
+[00:01:41.397] [INFO ] Force:   yes
+[00:01:41.397] [INFO ] Dry run: no
+[00:01:41.398] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:02:21.164] [PASS ] rosemarys-baby.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Novel's first-person ambiguity beats film's visual certainty."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[00:02:21.167] [INFO ] Single file mode — skipping full checkpoint
+[00:02:21.167] [INFO ] quickAnswer.winner:        Too Close to Call
+[00:02:21.167] [INFO ] quickAnswer.readFirst:     Yes
+[00:02:21.167] [INFO ] quickAnswer.oneLineReason: Novel's first-person ambiguity beats film's visual certainty.
+[00:02:21.167] [INFO ] pageTitle: Rosemary's Baby: Book vs Film — Which Is Better? (Ira Levin)
+
+============================================================
+Finished: 2026-04-12T00:02:21.167Z
+Elapsed:  39.8s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_20-01-41_pipeline-revise.log
+============================================================

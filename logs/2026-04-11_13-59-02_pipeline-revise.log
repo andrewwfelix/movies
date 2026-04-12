@@ -1,0 +1,16 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T17:59:02.183Z
+============================================================
+[17:59:02.187] [INFO ] Model config loaded from config/models.json
+[17:59:02.188] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[17:59:02.189] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[17:59:02.189] [INFO ] pipeline-revise.js
+[17:59:02.189] [INFO ] Pass:    1
+[17:59:02.189] [INFO ] Files:   1
+[17:59:02.189] [INFO ] Force:   no
+[17:59:02.189] [INFO ] Dry run: no
+[17:59:02.189] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[17:59:02.569] [ERROR] atonement.json: Pass 1 failed: OpenRouter error: User not found.

@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T00:06:57.041Z
+============================================================
+[00:06:57.044] [INFO ] Model config loaded from config/models.json
+[00:06:57.046] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[00:06:57.046] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[00:06:57.046] [INFO ] pipeline-revise.js
+[00:06:57.046] [INFO ] Pass:    1
+[00:06:57.047] [INFO ] Files:   1
+[00:06:57.047] [INFO ] Force:   yes
+[00:06:57.047] [INFO ] Dry run: no
+[00:06:57.047] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:07:36.269] [PASS ] the-haunting-of-hill-house.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Jackson's prose performs psychological dissolution; Flanagan's series cannot replicate it."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[00:07:36.270] [INFO ] Single file mode — skipping full checkpoint
+[00:07:36.270] [INFO ] quickAnswer.winner:        Too Close to Call
+[00:07:36.270] [INFO ] quickAnswer.readFirst:     Yes
+[00:07:36.270] [INFO ] quickAnswer.oneLineReason: Jackson's prose performs psychological dissolution; Flanagan's series cannot replicate it.
+[00:07:36.270] [INFO ] pageTitle: The Haunting of Hill House: Jackson vs Flanagan — Book vs Series
+
+============================================================
+Finished: 2026-04-12T00:07:36.270Z
+Elapsed:  39.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_20-06-57_pipeline-revise.log
+============================================================

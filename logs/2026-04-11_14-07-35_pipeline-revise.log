@@ -1,0 +1,17 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-11T18:07:35.028Z
+============================================================
+[18:07:35.030] [INFO ] Model config loaded from config/models.json
+[18:07:35.032] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[18:07:35.032] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[18:07:35.033] [INFO ] pipeline-revise.js
+[18:07:35.033] [INFO ] Pass:    1
+[18:07:35.033] [INFO ] Files:   163
+[18:07:35.033] [INFO ] Force:   no
+[18:07:35.033] [INFO ] Dry run: no
+[18:07:35.033] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[18:08:12.396] [WARN ] a-beautiful-mind.json: Pass 1 validation: quickAnswer.oneLineReason too long (16 words)
+[18:08:45.934] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novellas offer prose warmth; series expands the world visually."

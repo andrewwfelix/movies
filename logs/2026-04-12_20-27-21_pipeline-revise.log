@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T00:27:21.649Z
+============================================================
+[00:27:21.652] [INFO ] Model config loaded from config/models.json
+[00:27:21.654] [INFO ] Pass 1 model: anthropic/claude-haiku-4-5 (temp: 0.3)
+[00:27:21.655] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[00:27:21.655] [INFO ] pipeline-revise.js
+[00:27:21.655] [INFO ] Pass:    1
+[00:27:21.655] [INFO ] Files:   1
+[00:27:21.655] [INFO ] Force:   yes
+[00:27:21.655] [INFO ] Dry run: no
+[00:27:21.655] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:28:02.301] [PASS ] the-witcher.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Short story form delivers moral clarity the multi-timeline series obscures."
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                1
+  Dry run:             no
+────────────────────────────────────────────────
+[00:28:02.302] [INFO ] Single file mode — skipping full checkpoint
+[00:28:02.302] [INFO ] quickAnswer.winner:        Book
+[00:28:02.303] [INFO ] quickAnswer.readFirst:     Yes
+[00:28:02.303] [INFO ] quickAnswer.oneLineReason: Short story form delivers moral clarity the multi-timeline series obscures.
+[00:28:02.303] [INFO ] pageTitle: The Witcher: Book vs Series — Which Is Better? (Sapkowski)
+
+============================================================
+Finished: 2026-04-12T00:28:02.303Z
+Elapsed:  40.7s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_20-27-21_pipeline-revise.log
+============================================================
