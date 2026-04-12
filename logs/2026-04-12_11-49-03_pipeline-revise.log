@@ -1,0 +1,30 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T15:49:03.592Z
+============================================================
+[15:49:03.595] [INFO ] Model config loaded from config/models.json
+[15:49:03.597] [INFO ] Pass 1 model:  openai/gpt-4o-mini (temp: 0.3)
+[15:49:03.597] [INFO ] Titles model:  openai/gpt-4o-mini (temp: 0.4)
+[15:49:03.597] [INFO ] Pass 2 model:  openai/gpt-4o-mini (temp: 0.4)
+[15:49:03.597] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[15:49:03.598] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[15:49:03.598] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[15:49:03.599] [INFO ] pipeline-revise.js
+[15:49:03.599] [INFO ] Pass:    all
+[15:49:03.599] [INFO ] Files:   163
+[15:49:03.599] [INFO ] Force:   no
+[15:49:03.599] [INFO ] Dry run: no
+[15:49:03.600] [INFO ] Delay:   200ms between calls
+
+── Processing ───────────────────────────────────
+[15:49:03.600] [INFO ]   ↻  a-beautiful-mind — Pass 1 (openai/gpt-4o-mini)…
+[15:49:52.387] [PASS ] a-beautiful-mind.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both versions present compelling but different narratives of Nash."
+[15:49:52.387] [INFO ]   ↻  a-beautiful-mind — titles (openai/gpt-4o-mini)…
+[15:49:53.844] [PASS ] a-beautiful-mind.json — Titles complete
+[15:49:53.844] [INFO ]   BEFORE title (59 chars): A Beautiful Mind: Sylvia Nasar vs Ron Howard — Book vs Film
+[15:49:53.844] [INFO ]   AFTER  title (62 chars): A Beautiful Mind: Two Compelling Narratives of Nash's Struggle
+[15:49:53.844] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[15:49:53.845] [INFO ]   AFTER  meta  (123 chars): Both book and film offer unique insights into Nash's genius and madness, making it impossible to choose one over the other.
+[15:49:53.845] [INFO ]   ↻  a-beautiful-mind — Pass 2 (openai/gpt-4o-mini)…
+[15:50:01.793] [ERROR] a-beautiful-mind.json: Pass 2 failed: Unterminated string in JSON at position 3816 (line 50 column 114)
+[15:50:02.009] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — Pass 1 (openai/gpt-4o-mini)…

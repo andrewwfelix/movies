@@ -1,0 +1,145 @@
+{
+  "slug": "project-hail-mary",
+  "filename": "project-hail-mary.html",
+  "lastUpdated": "2026-04-11",
+  "pipelineVersion": "1",
+  "pageTitle": "Project Hail Mary Book vs Movie: Should You Read First?",
+  "metaDesc": "Andy Weir",
+  "reviewBody": "Weir's novel is a pure shot of scientific optimism and one of the most purely enjoyable reads of recent years. Ryan Gosling stars in the 2026 film adaptation.",
+  "ratingValue": "5",
+  "bookTitle": "Project Hail Mary",
+  "author": "Andy Weir",
+  "bookYear": "2021",
+  "genre": "Science Fiction",
+  "mediaType": "film",
+  "mediaLabel": "The Film",
+  "filmYear": "2026",
+  "director": "Phil Lord & Christopher Miller",
+  "starringLine": "Starring Ryan Gosling, Sandra Hüller, Lionel Boyce — In theaters March 20, 2026",
+  "verdictText": "Book Wins",
+  "verdictClass": "verdict-book",
+  "affiliateLink": "https://amzn.to/41eYYFs",
+  "affiliateLinkAlt": "https://amzn.to/41eYYFs",
+  "videoAffiliateLink": null,
+  "youtubeId": "m08TxIsFTRI",
+  "trailerUrl": "https://www.youtube.com/watch?v=m08TxIsFTRI",
+  "bookCoverImage": "project-hail-mary.jpg",
+  "storyBrief": "Ryland Grace wakes up alone on a spaceship with no memory of who he is or why he's there. As recollections return in fragments, he pieces together the truth: he's the sole surviving crew member of a last-ditch mission to a distant star, tasked with finding a way to save Earth from an extinction-level threat called Astrophage — a microorganism that's dimming the sun and will cause mass extinction within decades. Grace, a former middle school science teacher who became a microbiologist, was chosen for the mission by Eva Stratt, the ruthless project director who assembled the Hail Mary crew through methods that skirted international law.\n\nThe novel's central pleasure is watching a brilliantly curious mind work through impossible problems — and then, unexpectedly, make a friend. Rocky, a five-legged alien engineer from the planet Erid whom Grace encounters near Tau Ceti, is one of the most inventive alien-contact concepts in recent science fiction. The two scientists must overcome a complete language barrier and incompatible biology to solve a problem that threatens both their worlds. Phil Lord and Christopher Miller, who made The Lego Movie and Spider-Man: Into the Spider-Verse, adapt it with Ryan Gosling as Grace, Sandra Hüller as Stratt, and a practical puppet design for Rocky that gives the alien genuine physical presence.\n\nThe novel became a bestseller immediately upon publication in 2021, spending months on the New York Times list and earning comparisons to Weir's debut, The Martian. Critics praised its optimistic vision of science and international cooperation, and the Grace-Rocky friendship became the emotional anchor that elevated the book beyond pure problem-solving thriller.",
+  "quickAnswer": null,
+  "characters": [
+    {
+      "name": "Ryland Grace",
+      "actor": "Ryan Gosling",
+      "inBook": "A former middle school science teacher turned microbiologist whose internal monologue is funny, self-deprecating, and relentlessly curious about every problem he encounters.",
+      "inFilm": "Gosling captures Grace's essential decency and humor but necessarily loses the constant stream of scientific reasoning that defines the character on the page."
+    },
+    {
+      "name": "Rocky",
+      "actor": "Practical puppet with CGI enhancement",
+      "inBook": "A five-legged Eridian engineer who communicates through musical tones and becomes Grace's closest friend through patient, methodical problem-solving.",
+      "inFilm": "The puppet design gives Rocky tactile weight and allows Gosling to react to a physical presence, making the friendship feel more immediate than pure CGI would allow."
+    },
+    {
+      "name": "Eva Stratt",
+      "actor": "Sandra Hüller",
+      "inBook": "A coldly effective administrator who does whatever it takes to give the mission a chance, including morally questionable decisions that Weir never asks you to forgive.",
+      "inFilm": "Hüller's Stratt is warmer and more sympathetic, a change that makes her more palatable for a blockbuster audience but softens the character's uncomfortable edges."
+    },
+    {
+      "name": "Commander Yáo",
+      "actor": "Lionel Boyce",
+      "inBook": "The Hail Mary's mission commander who dies in stasis before Grace wakes, appearing only in flashbacks as a competent, no-nonsense leader.",
+      "inFilm": "Boyce appears in the film's flashback sequences, which are more extensive than in the novel and give Yáo more screen time to establish the crew dynamics."
+    },
+    {
+      "name": "Dr. Ilyukhina",
+      "actor": "Not yet cast in available materials",
+      "inBook": "The Hail Mary's engineer who also dies in stasis, a brilliant scientist whose loss Grace mourns throughout the mission.",
+      "inFilm": "The film compresses the flashbacks to the crew's training and selection, giving Ilyukhina less development than Yáo receives."
+    }
+  ],
+  "differences": [
+    {
+      "title": "Grace's internal monologue is the novel's engine",
+      "body": "Weir's novel is driven by first-person narration — Grace's voice is funny, self-deprecating, and relentlessly curious, and the slow revelation of his backstory through carefully placed flashbacks creates genuine dread alongside the comedy. The prose puts you inside a mind that finds genuine delight in each new discovery, no matter how terrifying the situation.\n\nThe film captures Grace's personality through Gosling's performance, which is warm and engaging, but it cannot replicate what the prose does: give you direct access to the scientific reasoning as it happens. Gosling's Grace explains things aloud or through voiceover, but the texture of thought — the false starts, the sudden insights, the pleasure of a hypothesis confirmed — is necessarily flattened."
+    },
+    {
+      "title": "Rocky's communication system arrives faster on screen",
+      "body": "One of the book's great inventions is the musical language Grace and Rocky develop to communicate. Grace works out the physics of Rocky's sound-based speech, they build a shared vocabulary from scratch, and Weir savours every step of this process across dozens of pages. The gradual construction of mutual understanding is as thrilling as any action sequence.\n\nThe film necessarily compresses it. The connection between Grace and Rocky arrives faster and with less of the earned difficulty that makes it so moving on the page. Lord and Miller use montage to convey the language-building process, which is effective but removes the methodical pleasure of watching two scientists invent communication from nothing."
+    },
+    {
+      "title": "The science is compressed for pacing",
+      "body": "Weir's novel luxuriates in scientific detail — the solutions Grace arrives at are worked out step by methodical step, and the book trusts readers to follow the reasoning. When Grace figures out how Astrophage reproduces, or how to synthesize Taumoeba, or how to survive the return trip, you see the full chain of logic.\n\nThe film compresses the science considerably. Grace still solves problems, but the explanations are shorter and the intermediate steps are often skipped. This improves pacing and makes the film more accessible, but it removes the particular pleasure of watching a real problem get solved in real time. The film is about a scientist; the book lets you be one."
+    },
+    {
+      "title": "Eva Stratt is softened for mainstream appeal",
+      "body": "In the novel, Stratt is a coldly effective bureaucrat who does whatever it takes to give the mission a chance — she conscripts Grace against his will, she ignores international law, and she makes decisions that cost lives. Weir doesn't ask you to like her. She's necessary, not heroic.\n\nHüller's Stratt is warmer and more sympathetic. The film gives her moments of doubt and vulnerability that the novel withholds. It's a defensible change for a blockbuster that needs more emotional access points, but it softens one of the book's more interesting supporting characters. The novel's Stratt is uncomfortable to watch; the film's Stratt is someone you root for."
+    },
+    {
+      "title": "Rocky as a practical puppet is a genuine triumph",
+      "body": "This is one area where the film potentially improves on the reading experience. Lord and Miller built Rocky as a practical puppet with CGI enhancements rather than a pure digital creation. The five-legged alien has weight and texture; Gosling could touch Rocky during filming, and the puppet's physical presence grounds the friendship in a way that no reader's imagination quite matches.\n\nSeeing Rocky move — the way the legs articulate, the way the carapace shifts when Rocky \"speaks\" — is genuinely affecting in a different way from how it works on the page. The puppet design makes Rocky feel real in a manner that pure CGI rarely achieves. It's the film's smartest creative decision.\n\nYes — unequivocally. The novel's central pleasure is spending hundreds of pages inside a brilliant, funny, relentlessly curious mind as it unpacks the universe one hypothesis at a time. Weir's prose gives you the full texture of Grace's internal monologue and his almost childlike delight at each new discovery. The scientific problem-solving is the point, not just the vehicle for plot, and the book trusts you to follow the reasoning without dumbing it down.\n\nThe film captures the heart of that experience — Gosling's Grace is charming and the friendship with Rocky is genuinely moving — but it cannot replicate the specific pleasure of reading Weir's prose. Watch the film after reading and you'll appreciate what Lord and Miller managed to preserve. Watch it first and you'll miss what makes the novel special: the sense that you're solving the problems alongside Grace, not just watching him solve them."
+    }
+  ],
+  "readFirst": "Yes — unequivocally. The novel's central pleasure is spending hundreds of pages inside a brilliant, funny, relentlessly curious mind as it unpacks the universe one hypothesis at a time. Weir's prose gives you the full texture of Grace's internal monologue and his almost childlike delight at each new discovery. The scientific problem-solving is the point, not just the vehicle for plot, and the book trusts you to follow the reasoning without dumbing it down.\n\nThe film captures the heart of that experience — Gosling's Grace is charming and the friendship with Rocky is genuinely moving — but it cannot replicate the specific pleasure of reading Weir's prose. Watch the film after reading and you'll appreciate what Lord and Miller managed to preserve. Watch it first and you'll miss what makes the novel special: the sense that you're solving the problems alongside Grace, not just watching him solve them.",
+  "verdictBox": "The book is the richer, deeper experience — Weir's scientific imagination is best encountered at the page's own pace, where you can follow every step of Grace's reasoning without compression. The film is a triumph in its own right, and Gosling's Grace is one of the most likeable protagonists in recent blockbuster cinema, but it's a different kind of pleasure. Read first, then watch Rocky come to life.",
+  "faq": [
+    {
+      "question": "Is Project Hail Mary connected to The Martian?",
+      "answer": "No. Both novels are by Andy Weir and share his signature problem-solving approach to science fiction, but they exist in separate universes. Project Hail Mary is a standalone novel with no narrative connection to Mark Watney's story on Mars."
+    },
+    {
+      "question": "How does the film handle Rocky's appearance?",
+      "answer": "Lord and Miller built Rocky as a practical puppet with CGI enhancements rather than a fully digital creation. The five-legged alien engineer has a physical presence on set that Gosling could react to directly. The result is one of the most tactile alien designs in recent blockbuster cinema."
+    },
+    {
+      "question": "Does the film change the ending?",
+      "answer": "The film preserves the novel's emotional climax and Grace's final choice. The mechanics of how he arrives at that decision are compressed, but the thematic resolution remains intact. Readers will recognize the ending even if some of the scientific steps are abbreviated."
+    },
+    {
+      "question": "Is the science in the book accurate?",
+      "answer": "Weir extrapolates from real physics and biology, though he invents the Astrophage organism and its properties. The problem-solving methods Grace uses are grounded in actual scientific reasoning. Weir consulted with scientists during the writing process to ensure the speculative elements had plausible foundations."
+    },
+    {
+      "question": "Will there be a sequel to Project Hail Mary?",
+      "answer": "As of 2025, Andy Weir has not announced plans for a sequel. The novel was written as a standalone story with a complete arc. Weir has moved on to other projects, though he has not ruled out returning to this universe in the future."
+    }
+  ],
+  "ctaBlocks": [
+    {
+      "location": "after-quick-answer",
+      "text": "Read the book first →",
+      "href": "https://amzn.to/41eYYFs"
+    },
+    {
+      "location": "after-read-first",
+      "text": "Get the book on Amazon →",
+      "href": "https://amzn.to/41eYYFs"
+    },
+    {
+      "location": "after-verdict",
+      "text": "Start with Project Hail Mary →",
+      "href": "https://amzn.to/41eYYFs"
+    }
+  ],
+  "relatedSectionTitle": "More Science Fiction Comparisons",
+  "related": [
+    {
+      "slug": "the-odyssey",
+      "title": "The Odyssey"
+    },
+    {
+      "slug": "dune",
+      "title": "Dune"
+    },
+    {
+      "slug": "the-martian",
+      "title": "The Martian"
+    }
+  ],
+  "hasSpoilerWarning": true,
+  "hasQuickAnswer": false,
+  "hasCharTable": true,
+  "generation": "v2",
+  "_warnings": [],
+  "_warningCount": 0
+}

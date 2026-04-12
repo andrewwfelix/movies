@@ -1,0 +1,28 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T16:35:44.232Z
+============================================================
+[16:35:44.235] [INFO ] Model config loaded from config/models.json
+[16:35:44.237] [INFO ] Pass 1 model:  openai/gpt-4o-mini (temp: 0.3)
+[16:35:44.237] [INFO ] Titles model:  openai/gpt-4o-mini (temp: 0.4)
+[16:35:44.237] [INFO ] Pass 2 model:  openai/gpt-4o-mini (temp: 0.4)
+[16:35:44.238] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[16:35:44.238] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[16:35:44.239] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[16:35:44.240] [INFO ] pipeline-revise.js
+[16:35:44.240] [INFO ] Pass:    all
+[16:35:44.240] [INFO ] Files:   163
+[16:35:44.241] [INFO ] Force:   no
+[16:35:44.241] [INFO ] Dry run: no
+[16:35:44.241] [INFO ] Delay:   200ms between calls
+
+── Processing ───────────────────────────────────
+[16:35:44.242] [INFO ]   ↻  a-beautiful-mind — Pass 1 (openai/gpt-4o-mini)…
+[16:36:06.467] [PASS ] a-beautiful-mind.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both portrayals offer compelling but differing perspectives on Nash."
+[16:36:06.467] [INFO ]   ↻  a-beautiful-mind — titles (openai/gpt-4o-mini)…
+[16:36:07.638] [PASS ] a-beautiful-mind.json — Titles complete
+[16:36:07.638] [INFO ]   BEFORE title (59 chars): A Beautiful Mind: Sylvia Nasar vs Ron Howard — Book vs Film
+[16:36:07.638] [INFO ]   AFTER  title (55 chars): A Beautiful Mind: Two Visions of Nash's Genius and Pain
+[16:36:07.638] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[16:36:07.638] [INFO ]   AFTER  meta  (120 chars): Both the book and film deliver unique insights into Nash's struggles, making it impossible to choose one over the other.
+[16:36:07.638] [INFO ]   ↻  a-beautiful-mind — Pass 2 (openai/gpt-4o-mini)…

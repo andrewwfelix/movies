@@ -1,0 +1,20 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T15:47:42.790Z
+============================================================
+[15:47:42.792] [INFO ] Model config loaded from config/models.json
+[15:47:42.794] [INFO ] Pass 1 model:  deepseek/deepseek-chat (temp: 0.3)
+[15:47:42.794] [INFO ] Titles model:  deepseek/deepseek-chat (temp: 0.4)
+[15:47:42.795] [INFO ] Pass 2 model:  deepseek/deepseek-chat (temp: 0.4)
+[15:47:42.795] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[15:47:42.795] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[15:47:42.796] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[15:47:42.797] [INFO ] pipeline-revise.js
+[15:47:42.797] [INFO ] Pass:    all
+[15:47:42.797] [INFO ] Files:   163
+[15:47:42.797] [INFO ] Force:   no
+[15:47:42.797] [INFO ] Dry run: no
+[15:47:42.797] [INFO ] Delay:   200ms between calls
+
+── Processing ───────────────────────────────────
+[15:47:42.798] [INFO ]   ↻  a-beautiful-mind — Pass 1 (deepseek/deepseek-chat)…

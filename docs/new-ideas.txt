@@ -20,3 +20,15 @@ Notes:
 	heated rivalry has multiple books, etc.
 
 10. add a note to have retry-intervals for any batch processing scripts
+
+let's add a note to perhaps maintain tow config files and we'll through test or prod into our arguments.
+
+config/
+  models.json          ← prod (current)
+  models.test.json     ← test/logic check (DeepSeek)
+  models.dev.json      ← dev (smallest/cheapest, for single page testing)
+And a --env flag on the pipeline scripts:
+cmdnode scripts\pipeline-revise.js --slug atonement --pass all --env test
+node scripts\pipeline-revise.js --all --pass all --env prod
+The script would resolve config/models.${env}.json and fall back to config/models.json if the env-specific file doesn't exist.
+Add it to docs/new-ideas.md under a new idea called "Environment-based model config" with Priority: medium. It's a clean 30-minute addition once the pipeline is stable. Go ahead and run:

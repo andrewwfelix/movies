@@ -1,0 +1,19 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T15:41:38.170Z
+============================================================
+[15:41:38.172] [INFO ] Model config loaded from config/models.json
+[15:41:38.174] [INFO ] Pass 1 model:  openai/gpt-4o-mini (temp: 0.3)
+[15:41:38.174] [INFO ] Titles model:  openai/gpt-4o-mini (temp: 0.4)
+[15:41:38.174] [INFO ] Pass 2 model:  openai/gpt-4o-mini (temp: 0.4)
+[15:41:38.175] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[15:41:38.175] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[15:41:38.175] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[15:41:38.177] [INFO ] pipeline-revise.js
+[15:41:38.177] [INFO ] Pass:    all
+[15:41:38.177] [INFO ] Files:   163
+[15:41:38.177] [INFO ] Force:   no
+[15:41:38.177] [INFO ] Dry run: no
+[15:41:38.177] [INFO ] Delay:   200ms between calls
+
+── Processing ───────────────────────────────────

@@ -54,13 +54,18 @@ const FORCE       = hasFlag('--force');
 const DRY_RUN     = hasFlag('--dry');
 const DELAY_MS    = parseInt(get('--delay', '500'), 10);
 
+const EXTRACTED_DIR = path.resolve(__dirname, '../pipeline/1-extracted');
+const REVISED_DIR   = path.resolve(__dirname, '../pipeline/2-revised');
+const OUT_DIR       = REVISED_DIR;
+
 // Derived pass flags
 const RUN_PASS1   = ['1', 'both', 'all'].includes(PASS);
 const RUN_TITLES  = ['titles', 'all'].includes(PASS);
 const RUN_PASS2   = ['2', 'both', 'all'].includes(PASS);
 
-const IN_DIR      = path.resolve(__dirname, '../pipeline/1-extracted');
-const OUT_DIR     = path.resolve(__dirname, '../pipeline/2-revised');
+// Input directory: Pass 1 reads from 1-extracted; all other passes read
+// from 2-revised to pick up Pass 1 output.
+const IN_DIR = RUN_PASS1 ? EXTRACTED_DIR : REVISED_DIR;
 const PROMPTS_DIR = path.resolve(__dirname, './prompts');
 const CONFIG_PATH = path.resolve(__dirname, '../config/models.json');
 
@@ -127,6 +132,8 @@ function callOpenRouterOnce(model, systemPrompt, userContent, maxTokens, tempera
       },
     };
 
+    const SOCKET_TIMEOUT_MS = 90000; // 90 seconds — abort if no response by then
+
     const req = https.request(options, res => {
       let data = '';
       res.on('data', chunk => { data += chunk; });
@@ -147,6 +154,10 @@ function callOpenRouterOnce(model, systemPrompt, userContent, maxTokens, tempera
           reject(new Error(`Failed to parse response: ${e.message}\nRaw: ${data.slice(0, 200)}`));
         }
       });
+    });
+
+    req.setTimeout(SOCKET_TIMEOUT_MS, () => {
+      req.destroy(new Error(`Request timed out after ${SOCKET_TIMEOUT_MS / 1000}s`));
     });
 
     req.on('error', reject);
@@ -227,7 +238,7 @@ function validateTitles(pageTitle, metaDesc) {
   if (pageTitle?.length > 75)        errors.push(`pageTitle too long: ${pageTitle.length} chars — will not write`);
   else if (pageTitle?.length > 65)   warnings.push(`pageTitle slightly long: ${pageTitle.length} chars (target 65)`);
   if (!metaDesc)                     errors.push('metaDesc missing');
-  if (metaDesc?.length > 160)        errors.push(`metaDesc too long: ${metaDesc.length} chars`);
+  if (metaDesc?.length > 155)        errors.push(`metaDesc too long: ${metaDesc.length} chars (max 155) — not written`);
   return { errors, warnings };
 }
 
@@ -326,6 +337,7 @@ async function processFile(slug, modelConfig, prompts, log, titlesReview) {
     if (DRY_RUN) {
       log.info(`[DRY] Would run Pass 1 on ${slug} using ${modelConfig.pass1.model}`);
     } else {
+      log.info(`  ↻  ${slug} — Pass 1 (${modelConfig.pass1.model})…`);
       try {
         const raw     = await callOpenRouter(
           modelConfig.pass1.model, prompts.pass1,
@@ -356,6 +368,7 @@ async function processFile(slug, modelConfig, prompts, log, titlesReview) {
     } else if (DRY_RUN) {
       log.info(`[DRY] Would run titles pass on ${slug} using ${modelConfig.titles.model}`);
     } else {
+      log.info(`  ↻  ${slug} — titles (${modelConfig.titles.model})…`);
       try {
         const payload = buildTitlesPayload(current);
         const raw     = await callOpenRouter(
@@ -398,6 +411,7 @@ async function processFile(slug, modelConfig, prompts, log, titlesReview) {
     } else if (DRY_RUN) {
       log.info(`[DRY] Would run Pass 2 on ${slug} using ${modelConfig.pass2.model}`);
     } else {
+      log.info(`  ↻  ${slug} — Pass 2 (${modelConfig.pass2.model})…`);
       try {
         const raw     = await callOpenRouter(
           modelConfig.pass2.model, prompts.pass2,

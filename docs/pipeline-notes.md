@@ -29,12 +29,13 @@ Input:  pipeline/1-extracted/*.json  (or data/reviews/*.json for re-runs)
 Output: pipeline/2-revised/\*.json
 Passes:
 Pass 1 — Structural overlay
-- Generates quick-answer block
-- Verifies FAQ quality and coverage
-- Checks CTA placement against decision moments
+
+* Generates quick-answer block
+* Verifies FAQ quality and coverage
+* Checks CTA placement against decision moments
 Pass 2 — Conversion layer
-- Improves CTA wording (intent-driven language)
-- Adds mid-article CTAs after answer, recommendation, and verdict sections
+* Improves CTA wording (intent-driven language)
+* Adds mid-article CTAs after answer, recommendation, and verdict sections
 Notes:  Run Pass 1 on a single page and review JSON output before scaling.
 Adjust prompt before running Pass 2 or processing more pages.
 
@@ -110,4 +111,8 @@ We want to make sure netify continues to serve pages at https://booksversusmovie
 pipeline/3-rendered/\*.html  →  copy to project root
 
 pipeline/2-revised/\*.json   →  copy to data/reviews/
+
+
+
+For the action plan going forward — add a note to docs/pipeline-notes.md that the pipeline should eventually be refactored to use per-pass subdirectories. For now, the --pass all approach is the pragmatic fix.
 

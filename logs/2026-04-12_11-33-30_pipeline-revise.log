@@ -1,0 +1,25 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T15:33:30.324Z
+============================================================
+[15:33:30.326] [INFO ] Model config loaded from config/models.json
+[15:33:30.328] [INFO ] Pass 1 model:  deepseek/deepseek-chat (temp: 0.3)
+[15:33:30.329] [INFO ] Titles model:  deepseek/deepseek-chat (temp: 0.4)
+[15:33:30.329] [INFO ] Pass 2 model:  deepseek/deepseek-chat (temp: 0.4)
+[15:33:30.346] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[15:33:30.347] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[15:33:30.347] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[15:33:30.349] [INFO ] pipeline-revise.js
+[15:33:30.349] [INFO ] Pass:    all
+[15:33:30.349] [INFO ] Files:   163
+[15:33:30.349] [INFO ] Force:   no
+[15:33:30.349] [INFO ] Dry run: no
+[15:33:30.349] [INFO ] Delay:   200ms between calls
+
+── Processing ───────────────────────────────────
+[15:36:13.006] [PASS ] a-beautiful-mind.json — Pass 1 — winner: "Too Close to Call" · readFirst: "No" · reason: "The film's hallucinated characters enhance cinematic impact."
+[15:36:16.099] [WARN ] a-beautiful-mind.json: Titles written with warnings: pageTitle slightly long: 68 chars (target 65)
+[15:36:16.099] [INFO ]   BEFORE title (62 chars): A Beautiful Mind Book vs Film: Which Is Better? (Sylvia Nasar)
+[15:36:16.099] [INFO ]   AFTER  title (68 chars): A Beautiful Mind: The Film's Hallucinations Make Nash's Mind Visible
+[15:36:16.099] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[15:36:16.099] [INFO ]   AFTER  meta  (134 chars): Ron Howard's visual metaphors for schizophrenia achieve what Nasar's prose cannot — a visceral experience of Nash's fractured reality.

@@ -1,0 +1,38 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-12T14:59:53.413Z
+============================================================
+[14:59:53.417] [INFO ] pipeline-render.js
+[14:59:53.419] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[14:59:53.419] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[14:59:53.419] [INFO ] Files:   1
+[14:59:53.419] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[14:59:53.421] [PASS ] atonement.html — 23356 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✗  All pages have quick-answer block
+       atonement
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT FAILED — resolve issues before proceeding
+
+============================================================
+Finished: 2026-04-12T14:59:53.422Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-59-53_pipeline-render.log
+============================================================

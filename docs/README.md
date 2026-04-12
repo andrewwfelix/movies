@@ -274,6 +274,51 @@ Commit locally as often as you like. Push only when a section or
 deployment batch is complete.
 
 
+## API Resilience Best Practices
+
+### Socket timeout
+All HTTP requests to OpenRouter include a 90-second socket timeout. Without
+this, a dropped connection mid-response causes the process to hang indefinitely
+— the retry logic never fires because the promise never rejects.
+
+If you see a pipeline run that appears frozen with no output for several
+minutes, the socket timeout wasn't firing. Check that the timeout is set in
+callOpenRouterOnce() in pipeline-revise.js.
+
+### Retry logic
+Three attempts with exponential backoff: 10s, 20s. Total retry window is
+~30 seconds per attempt set. Auth errors (401, user not found) are not
+retried since they require manual intervention.
+
+Do NOT retry on:
+- OPENROUTER_API_KEY expired or invalid
+- 400 bad request (prompt or payload issue)
+- 401 unauthorized
+
+DO retry on:
+- ECONNRESET (connection dropped)
+- ETIMEDOUT (request timed out)
+- 429 rate limit (back off and retry)
+- 500/503 server errors
+
+### Environment-based model config (planned)
+Currently all model assignments live in config/models.json. The plan is to
+support config/models.test.json and config/models.dev.json with a --env flag:
+
+  node scripts\pipeline-revise.js --all --pass all --env test   ← DeepSeek
+  node scripts\pipeline-revise.js --all --pass all --env prod   ← Haiku/Sonnet
+
+Script falls back to config/models.json if env-specific file doesn't exist.
+See docs/new-ideas.md for implementation notes.
+
+### Resume capability
+All pipeline scripts support resume after interruption. Without --force,
+scripts skip files that already exist in the output directory. For pipeline-
+revise.js, the smart skip logic checks whether required fields are populated
+rather than just whether the file exists — so a file missing ctaBlocks will
+be re-processed even without --force.
+
+
 ## Key Decisions Log
 
 | Date       | Decision                                              | Reason                                      |

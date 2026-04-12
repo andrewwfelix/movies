@@ -1,0 +1,24 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T15:53:38.930Z
+============================================================
+[15:53:38.933] [INFO ] Model config loaded from config/models.json
+[15:53:38.934] [INFO ] Pass 1 model:  openai/gpt-4o-mini (temp: 0.3)
+[15:53:38.934] [INFO ] Titles model:  openai/gpt-4o-mini (temp: 0.4)
+[15:53:38.934] [INFO ] Pass 2 model:  openai/gpt-4o-mini (temp: 0.4)
+[15:53:38.935] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[15:53:38.935] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[15:53:38.936] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[15:53:38.937] [INFO ] pipeline-revise.js
+[15:53:38.937] [INFO ] Pass:    all
+[15:53:38.937] [INFO ] Files:   163
+[15:53:38.937] [INFO ] Force:   no
+[15:53:38.937] [INFO ] Dry run: no
+[15:53:38.937] [INFO ] Delay:   200ms between calls
+
+── Processing ───────────────────────────────────
+[15:53:38.938] [INFO ]   ↻  a-beautiful-mind — Pass 1 (openai/gpt-4o-mini)…
+[15:55:06.355] [PASS ] a-beautiful-mind.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Nasar's biography reveals Nash's complex reality beyond Hollywood's gloss."
+[15:55:06.355] [INFO ]   ↻  a-beautiful-mind — titles (openai/gpt-4o-mini)…
+[15:55:07.799] [WARN ] a-beautiful-mind.json: Titles validation failed — not written: metaDesc too long: 164 chars
+[15:55:07.799] [INFO ]   ↻  a-beautiful-mind — Pass 2 (openai/gpt-4o-mini)…

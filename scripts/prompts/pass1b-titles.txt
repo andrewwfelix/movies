@@ -58,7 +58,10 @@ only sharpen the emotional claim. Do not replace a good title with a
 worse one.
 
 META DESCRIPTION RULES:
-1. Maximum 150 characters
+1. Maximum 150 characters — HARD LIMIT. Count every character before responding.
+   If your draft is over 150 characters, cut it. Do not exceed this limit.
+   Example of correct length (143 chars):
+   "Wright made one of the most beautiful films of the 2000s. It still can't do what McEwan does on the page. Read the book first."
 2. Extend the title's emotional claim — don't repeat it
 3. Name something specific: a character, scene, actor, structural choice
 4. End with an implication or sharp verdict
