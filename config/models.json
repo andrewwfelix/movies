@@ -5,9 +5,15 @@
     "temperature": 0.3,
     "notes": "Structural overlay — low voice risk, high volume. Keep temperature low."
   },
+  "titles": {
+    "model": "anthropic/claude-sonnet-4-5",
+    "maxTokens": 500,
+    "temperature": 0.4,
+    "notes": "Title and meta description optimisation. Small payload, Sonnet for quality. ~$0.85 for full run."
+  },
   "pass2": {
     "model": "anthropic/claude-haiku-4-5",
-    "maxTokens": 6000,
+    "maxTokens": 2048,
     "temperature": 0.4,
     "notes": "Conversion layer — CTA wording, short outputs. Slightly more creative latitude."
   },

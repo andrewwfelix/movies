@@ -4,19 +4,28 @@
  * pipeline-revise.js
  * BooksVersusMovies.com — LLM revision pipeline
  *
- * Runs extracted JSON through Pass 1 (structural overlay) and optionally
- * Pass 2 (conversion layer) via OpenRouter. Output goes to pipeline/2-revised/.
+ * Runs extracted JSON through revision passes via OpenRouter.
+ * Output goes to pipeline/2-revised/.
  *
  * Usage:
- *   node pipeline-revise.js --slug atonement              (single page, Pass 1 only)
- *   node pipeline-revise.js --slug atonement --pass both  (single page, Pass 1 + 2)
- *   node pipeline-revise.js --all                         (all pages, Pass 1 only)
+ *   node pipeline-revise.js --slug atonement              (Pass 1 only)
+ *   node pipeline-revise.js --slug atonement --pass titles (titles only)
+ *   node pipeline-revise.js --slug atonement --pass both  (Pass 1 + 2)
+ *   node pipeline-revise.js --all                         (all pages, Pass 1)
+ *   node pipeline-revise.js --all --pass titles           (all pages, titles)
  *   node pipeline-revise.js --all --pass both             (all pages, Pass 1 + 2)
+ *
+ * Pass values:
+ *   1       — structural overlay (quickAnswer, FAQ cleanup)
+ *   titles  — page title + meta description optimisation (Sonnet)
+ *   2       — conversion layer (ctaBlocks)
+ *   both    — Pass 1 + Pass 2 (no titles)
+ *   all     — Pass 1 + titles + Pass 2
  *
  * Options:
  *   --slug    Process a single page by slug
  *   --all     Process all files in pipeline/1-extracted/
- *   --pass    1 | 2 | both  (default: 1)
+ *   --pass    1 | titles | 2 | both | all  (default: 1)
  *   --force   Overwrite existing files in pipeline/2-revised/
  *   --dry     Dry run — print what would happen without calling the API
  *   --delay   Milliseconds between API calls (default: 500)
@@ -24,9 +33,7 @@
  * Environment (.env in project root):
  *   OPENROUTER_API_KEY   Required.
  *
- * Models:
- *   Configured in config/models.json
- *   Override per-pass with PASS1_MODEL / PASS2_MODEL environment variables.
+ * Models: configured in config/models.json
  */
 
 const fs               = require('fs');
@@ -46,6 +53,11 @@ const PASS        = get('--pass', '1');
 const FORCE       = hasFlag('--force');
 const DRY_RUN     = hasFlag('--dry');
 const DELAY_MS    = parseInt(get('--delay', '500'), 10);
+
+// Derived pass flags
+const RUN_PASS1   = ['1', 'both', 'all'].includes(PASS);
+const RUN_TITLES  = ['titles', 'all'].includes(PASS);
+const RUN_PASS2   = ['2', 'both', 'all'].includes(PASS);
 
 const IN_DIR      = path.resolve(__dirname, '../pipeline/1-extracted');
 const OUT_DIR     = path.resolve(__dirname, '../pipeline/2-revised');
@@ -122,12 +134,12 @@ function callOpenRouter(model, systemPrompt, userContent, maxTokens, temperature
           }
           const text = parsed.choices?.[0]?.message?.content;
           if (!text) {
-            reject(new Error(`Empty response from OpenRouter: ${JSON.stringify(parsed)}`));
+            reject(new Error(`Empty response: ${JSON.stringify(parsed)}`));
             return;
           }
           resolve(text);
         } catch (e) {
-          reject(new Error(`Failed to parse API response: ${e.message}\nRaw: ${data.slice(0, 200)}`));
+          reject(new Error(`Failed to parse response: ${e.message}\nRaw: ${data.slice(0, 200)}`));
         }
       });
     });
@@ -149,7 +161,42 @@ function parseJsonResponse(text) {
   return JSON.parse(cleaned);
 }
 
-// ── Validate revised record ───────────────────────────────────────────────────
+// ── Build titles payload ──────────────────────────────────────────────────────
+// Sends only the fields needed for title generation — keeps token count low
+// and avoids truncation errors on longer pages.
+
+function buildTitlesPayload(record) {
+  return JSON.stringify({
+    slug:         record.slug,
+    bookTitle:    record.bookTitle,
+    author:       record.author,
+    genre:        record.genre,
+    mediaType:    record.mediaType,
+    mediaLabel:   record.mediaLabel,
+    filmYear:     record.filmYear,
+    bookYear:     record.bookYear,
+    director:     record.director,
+    verdictText:  record.verdictText,
+    verdictClass: record.verdictClass,
+    reviewBody:   record.reviewBody,
+    currentPageTitle: record.pageTitle,
+    currentMetaDesc:  record.metaDesc,
+    quickAnswer:  record.quickAnswer,
+  }, null, 2);
+}
+
+// ── Validate titles response ──────────────────────────────────────────────────
+
+function validateTitles(pageTitle, metaDesc) {
+  const errors = [];
+  if (!pageTitle)                   errors.push('pageTitle missing');
+  if (pageTitle?.length > 70)       errors.push(`pageTitle too long: ${pageTitle.length} chars`);
+  if (!metaDesc)                    errors.push('metaDesc missing');
+  if (metaDesc?.length > 160)       errors.push(`metaDesc too long: ${metaDesc.length} chars`);
+  return errors;
+}
+
+// ── Validate revision ─────────────────────────────────────────────────────────
 
 function validateRevision(original, revised, pass) {
   const errors = [];
@@ -167,12 +214,12 @@ function validateRevision(original, revised, pass) {
     }
   }
 
-  if (pass === '1' || pass === 'both') {
+  if (pass === '1') {
     if (!revised.quickAnswer) {
       errors.push('quickAnswer is still null after Pass 1');
     } else {
-      if (!revised.quickAnswer.winner)       errors.push('quickAnswer.winner missing');
-      if (!revised.quickAnswer.readFirst)    errors.push('quickAnswer.readFirst missing');
+      if (!revised.quickAnswer.winner)        errors.push('quickAnswer.winner missing');
+      if (!revised.quickAnswer.readFirst)     errors.push('quickAnswer.readFirst missing');
       if (!revised.quickAnswer.oneLineReason) errors.push('quickAnswer.oneLineReason missing');
       const wordCount = (revised.quickAnswer.oneLineReason || '').split(' ').length;
       if (wordCount > 15) errors.push(`quickAnswer.oneLineReason too long (${wordCount} words)`);
@@ -185,7 +232,7 @@ function validateRevision(original, revised, pass) {
     }
   }
 
-  if (pass === '2' || pass === 'both') {
+  if (pass === '2') {
     if (!revised.ctaBlocks || revised.ctaBlocks.length === 0) {
       errors.push('ctaBlocks is still null/empty after Pass 2');
     } else {
@@ -206,7 +253,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // ── Process single file ───────────────────────────────────────────────────────
 
-async function processFile(slug, modelConfig, pass1Prompt, pass2Prompt, log) {
+async function processFile(slug, modelConfig, prompts, log) {
   const inPath  = path.join(IN_DIR,  `${slug}.json`);
   const outPath = path.join(OUT_DIR, `${slug}.json`);
 
@@ -221,23 +268,20 @@ async function processFile(slug, modelConfig, pass1Prompt, pass2Prompt, log) {
   }
 
   const original = JSON.parse(fs.readFileSync(inPath, 'utf8'));
-  let current    = JSON.parse(JSON.stringify(original)); // deep copy
+  let current    = JSON.parse(JSON.stringify(original));
 
   // ── Pass 1 ───────────────────────────────────────────────────────────────────
-  if (PASS === '1' || PASS === 'both') {
+  if (RUN_PASS1) {
     if (DRY_RUN) {
       log.info(`[DRY] Would run Pass 1 on ${slug} using ${modelConfig.pass1.model}`);
     } else {
       try {
-        const rawResponse = await callOpenRouter(
-          modelConfig.pass1.model,
-          pass1Prompt,
+        const raw     = await callOpenRouter(
+          modelConfig.pass1.model, prompts.pass1,
           JSON.stringify(current, null, 2),
-          modelConfig.pass1.maxTokens,
-          modelConfig.pass1.temperature,
+          modelConfig.pass1.maxTokens, modelConfig.pass1.temperature,
         );
-
-        const revised = parseJsonResponse(rawResponse);
+        const revised = parseJsonResponse(raw);
         const errors  = validateRevision(original, revised, '1');
 
         if (errors.length > 0) {
@@ -246,7 +290,6 @@ async function processFile(slug, modelConfig, pass1Prompt, pass2Prompt, log) {
           const qa = revised.quickAnswer;
           log.pass(`${slug}.json`, `Pass 1 — winner: "${qa.winner}" · readFirst: "${qa.readFirst}" · reason: "${qa.oneLineReason}"`);
         }
-
         current = revised;
       } catch (err) {
         log.error(`${slug}.json`, `Pass 1 failed: ${err.message}`);
@@ -255,23 +298,51 @@ async function processFile(slug, modelConfig, pass1Prompt, pass2Prompt, log) {
     }
   }
 
+  // ── Titles pass ───────────────────────────────────────────────────────────────
+  if (RUN_TITLES) {
+    if (!prompts.titles) {
+      log.warn(`${slug}.json`, 'Titles pass requested but pass1b-titles.txt not found — skipping');
+    } else if (DRY_RUN) {
+      log.info(`[DRY] Would run titles pass on ${slug} using ${modelConfig.titles.model}`);
+    } else {
+      try {
+        const payload = buildTitlesPayload(current);
+        const raw     = await callOpenRouter(
+          modelConfig.titles.model, prompts.titles,
+          payload,
+          modelConfig.titles.maxTokens, modelConfig.titles.temperature,
+        );
+        const result  = parseJsonResponse(raw);
+        const errors  = validateTitles(result.pageTitle, result.metaDesc);
+
+        if (errors.length > 0) {
+          log.warn(`${slug}.json`, `Titles validation: ${errors.join(' | ')}`);
+        } else {
+          current.pageTitle = result.pageTitle;
+          current.metaDesc  = result.metaDesc;
+          log.pass(`${slug}.json`, `Titles — "${result.pageTitle}" (${result.pageTitle.length} chars)`);
+        }
+      } catch (err) {
+        log.error(`${slug}.json`, `Titles pass failed: ${err.message}`);
+        // Non-fatal — continue with existing title
+      }
+    }
+  }
+
   // ── Pass 2 ───────────────────────────────────────────────────────────────────
-  if (PASS === '2' || PASS === 'both') {
-    if (!pass2Prompt) {
+  if (RUN_PASS2) {
+    if (!prompts.pass2) {
       log.warn(`${slug}.json`, 'Pass 2 requested but pass2-conversion.txt not found — skipping');
     } else if (DRY_RUN) {
       log.info(`[DRY] Would run Pass 2 on ${slug} using ${modelConfig.pass2.model}`);
     } else {
       try {
-        const rawResponse = await callOpenRouter(
-          modelConfig.pass2.model,
-          pass2Prompt,
+        const raw     = await callOpenRouter(
+          modelConfig.pass2.model, prompts.pass2,
           JSON.stringify(current, null, 2),
-          modelConfig.pass2.maxTokens,
-          modelConfig.pass2.temperature,
+          modelConfig.pass2.maxTokens, modelConfig.pass2.temperature,
         );
-
-        const revised = parseJsonResponse(rawResponse);
+        const revised = parseJsonResponse(raw);
         const errors  = validateRevision(original, revised, '2');
 
         if (errors.length > 0) {
@@ -279,7 +350,6 @@ async function processFile(slug, modelConfig, pass1Prompt, pass2Prompt, log) {
         } else {
           log.pass(`${slug}.json`, `Pass 2 — ${revised.ctaBlocks?.length || 0} CTA blocks added`);
         }
-
         current = revised;
       } catch (err) {
         log.error(`${slug}.json`, `Pass 2 failed: ${err.message}`);
@@ -307,37 +377,48 @@ function runCheckpoint(results, log) {
     return;
   }
 
-  const checks = [
-    {
-      name:   'All revised pages have quickAnswer',
-      passed: records.every(r => r.quickAnswer !== null),
-      detail: records.filter(r => !r.quickAnswer).map(r => r.slug).join(', '),
-    },
-    {
-      name:   'All quickAnswer.winner values are valid',
-      passed: records.every(r => ['Book','Film','Series','Too Close to Call'].includes(r.quickAnswer?.winner)),
-      detail: records.filter(r => !['Book','Film','Series','Too Close to Call'].includes(r.quickAnswer?.winner))
-        .map(r => `${r.slug}: "${r.quickAnswer?.winner}"`).join(', '),
-    },
-    {
-      name:   'All quickAnswer.oneLineReason under 15 words',
-      passed: records.every(r => (r.quickAnswer?.oneLineReason || '').split(' ').length <= 15),
-      detail: records.filter(r => (r.quickAnswer?.oneLineReason || '').split(' ').length > 15)
-        .map(r => `${r.slug}: "${r.quickAnswer?.oneLineReason}"`).join(', '),
-    },
-    {
-      name:   'No immutable fields changed',
-      passed: results.filter(r => r.immutableChanged).length === 0,
-      detail: results.filter(r => r.immutableChanged).map(r => r.slug).join(', '),
-    },
-    {
-      name:   'All revised files written to 2-revised/',
-      passed: records.every(r => DRY_RUN || fs.existsSync(path.join(OUT_DIR, `${r.slug}.json`))),
-      detail: 'check pipeline/2-revised/ for missing files',
-    },
-  ];
+  const checks = [];
 
-  if (PASS === '2' || PASS === 'both') {
+  if (RUN_PASS1) {
+    checks.push(
+      {
+        name:   'All revised pages have quickAnswer',
+        passed: records.every(r => r.quickAnswer !== null),
+        detail: records.filter(r => !r.quickAnswer).map(r => r.slug).join(', '),
+      },
+      {
+        name:   'All quickAnswer.winner values are valid',
+        passed: records.every(r => ['Book','Film','Series','Too Close to Call'].includes(r.quickAnswer?.winner)),
+        detail: records.filter(r => !['Book','Film','Series','Too Close to Call'].includes(r.quickAnswer?.winner))
+          .map(r => `${r.slug}: "${r.quickAnswer?.winner}"`).join(', '),
+      },
+      {
+        name:   'All quickAnswer.oneLineReason under 15 words',
+        passed: records.every(r => (r.quickAnswer?.oneLineReason || '').split(' ').length <= 15),
+        detail: records.filter(r => (r.quickAnswer?.oneLineReason || '').split(' ').length > 15)
+          .map(r => `${r.slug}: "${r.quickAnswer?.oneLineReason}"`).join(', '),
+      },
+    );
+  }
+
+  if (RUN_TITLES) {
+    checks.push(
+      {
+        name:   'All pages have pageTitle under 70 chars',
+        passed: records.every(r => r.pageTitle && r.pageTitle.length <= 70),
+        detail: records.filter(r => !r.pageTitle || r.pageTitle.length > 70)
+          .map(r => `${r.slug} (${r.pageTitle?.length})`).join(', '),
+      },
+      {
+        name:   'All pages have metaDesc under 160 chars',
+        passed: records.every(r => r.metaDesc && r.metaDesc.length <= 160),
+        detail: records.filter(r => !r.metaDesc || r.metaDesc.length > 160)
+          .map(r => `${r.slug} (${r.metaDesc?.length})`).join(', '),
+      },
+    );
+  }
+
+  if (RUN_PASS2) {
     checks.push({
       name:   'All revised pages have ctaBlocks',
       passed: records.every(r => r.ctaBlocks && r.ctaBlocks.length > 0),
@@ -345,6 +426,12 @@ function runCheckpoint(results, log) {
         .map(r => r.slug).join(', '),
     });
   }
+
+  checks.push({
+    name:   'No immutable fields changed',
+    passed: results.filter(r => r.immutableChanged).length === 0,
+    detail: results.filter(r => r.immutableChanged).map(r => r.slug).join(', '),
+  });
 
   const allPassed = checks.every(c => c.passed);
   log.checkpoint(allPassed ? 'PASSED' : 'FAILED', checks);
@@ -356,7 +443,6 @@ function runCheckpoint(results, log) {
 async function run() {
   const log = createLogger('pipeline-revise');
 
-  // Guards
   if (!DRY_RUN && !API_KEY) {
     log.error('pipeline-revise.js', 'OPENROUTER_API_KEY not set — add it to .env');
     log.close();
@@ -369,45 +455,47 @@ async function run() {
     process.exit(1);
   }
 
-  // Load config and prompts
+  // Load model config
   let modelConfig;
   try {
     modelConfig = loadModelConfig();
     log.info(`Model config loaded from config/models.json`);
-    log.info(`Pass 1 model: ${modelConfig.pass1.model} (temp: ${modelConfig.pass1.temperature})`);
-    if (PASS === '2' || PASS === 'both') {
-      log.info(`Pass 2 model: ${modelConfig.pass2.model} (temp: ${modelConfig.pass2.temperature})`);
-    }
+    if (RUN_PASS1)  log.info(`Pass 1 model:  ${modelConfig.pass1.model} (temp: ${modelConfig.pass1.temperature})`);
+    if (RUN_TITLES) log.info(`Titles model:  ${modelConfig.titles.model} (temp: ${modelConfig.titles.temperature})`);
+    if (RUN_PASS2)  log.info(`Pass 2 model:  ${modelConfig.pass2.model} (temp: ${modelConfig.pass2.temperature})`);
   } catch (e) {
     log.error('pipeline-revise.js', e.message);
     log.close();
     process.exit(1);
   }
 
-  // Allow env var overrides
-  if (process.env.PASS1_MODEL) {
-    modelConfig.pass1.model = process.env.PASS1_MODEL;
-    log.info(`Pass 1 model overridden by env: ${modelConfig.pass1.model}`);
-  }
-  if (process.env.PASS2_MODEL) {
-    modelConfig.pass2.model = process.env.PASS2_MODEL;
-    log.info(`Pass 2 model overridden by env: ${modelConfig.pass2.model}`);
-  }
+  // Load prompts
+  const prompts = {};
 
-  let pass1Prompt, pass2Prompt;
-  try {
-    pass1Prompt = loadPrompt('pass1-structural.txt');
-    log.info(`Loaded pass1-structural.txt (${pass1Prompt.length} chars)`);
-  } catch (e) {
-    log.error('pipeline-revise.js', e.message);
-    log.close();
-    process.exit(1);
-  }
-
-  if (PASS === '2' || PASS === 'both') {
+  if (RUN_PASS1) {
     try {
-      pass2Prompt = loadPrompt('pass2-conversion.txt');
-      log.info(`Loaded pass2-conversion.txt (${pass2Prompt.length} chars)`);
+      prompts.pass1 = loadPrompt('pass1-structural.txt');
+      log.info(`Loaded pass1-structural.txt (${prompts.pass1.length} chars)`);
+    } catch (e) {
+      log.error('pipeline-revise.js', e.message);
+      log.close();
+      process.exit(1);
+    }
+  }
+
+  if (RUN_TITLES) {
+    try {
+      prompts.titles = loadPrompt('pass1b-titles.txt');
+      log.info(`Loaded pass1b-titles.txt (${prompts.titles.length} chars)`);
+    } catch {
+      log.warn('pipeline-revise.js', 'pass1b-titles.txt not found — titles pass will be skipped');
+    }
+  }
+
+  if (RUN_PASS2) {
+    try {
+      prompts.pass2 = loadPrompt('pass2-conversion.txt');
+      log.info(`Loaded pass2-conversion.txt (${prompts.pass2.length} chars)`);
     } catch {
       log.warn('pipeline-revise.js', 'pass2-conversion.txt not found — Pass 2 will be skipped');
     }
@@ -419,7 +507,7 @@ async function run() {
     log.info(`Created output directory: ${OUT_DIR}`);
   }
 
-  // Determine files to process
+  // Determine files
   let slugs = [];
   if (SINGLE_SLUG) {
     slugs = [SINGLE_SLUG];
@@ -450,7 +538,7 @@ async function run() {
   let failed    = 0;
 
   for (let i = 0; i < slugs.length; i++) {
-    const result = await processFile(slugs[i], modelConfig, pass1Prompt, pass2Prompt, log);
+    const result = await processFile(slugs[i], modelConfig, prompts, log);
     results.push(result);
 
     if (result.skipped)      skipped++;
@@ -476,11 +564,16 @@ async function run() {
   } else if (!DRY_RUN && results.length === 1) {
     log.info('Single file mode — skipping full checkpoint');
     const r = results[0];
-    if (r.success && r.record?.quickAnswer) {
-      log.info(`quickAnswer.winner:        ${r.record.quickAnswer.winner}`);
-      log.info(`quickAnswer.readFirst:     ${r.record.quickAnswer.readFirst}`);
-      log.info(`quickAnswer.oneLineReason: ${r.record.quickAnswer.oneLineReason}`);
-      log.info(`pageTitle: ${r.record.pageTitle}`);
+    if (r.success && r.record) {
+      if (r.record.quickAnswer) {
+        log.info(`quickAnswer.winner:        ${r.record.quickAnswer.winner}`);
+        log.info(`quickAnswer.readFirst:     ${r.record.quickAnswer.readFirst}`);
+        log.info(`quickAnswer.oneLineReason: ${r.record.quickAnswer.oneLineReason}`);
+      }
+      if (RUN_TITLES) {
+        log.info(`pageTitle (${r.record.pageTitle?.length} chars): ${r.record.pageTitle}`);
+        log.info(`metaDesc  (${r.record.metaDesc?.length} chars): ${r.record.metaDesc}`);
+      }
     }
   }
 
