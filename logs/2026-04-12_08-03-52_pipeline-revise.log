@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:03:52.467Z
+============================================================
+[12:03:52.470] [INFO ] Model config loaded from config/models.json
+[12:03:52.471] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[12:03:52.472] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[12:03:52.472] [INFO ] pipeline-revise.js
+[12:03:52.472] [INFO ] Pass:    titles
+[12:03:52.472] [INFO ] Files:   1
+[12:03:52.472] [INFO ] Force:   yes
+[12:03:52.472] [INFO ] Dry run: no
+[12:03:52.472] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:03:56.476] [WARN ] the-glass-castle.json: Titles validation: pageTitle too long: 72 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[12:03:56.478] [INFO ] Single file mode — skipping full checkpoint
+[12:03:56.478] [INFO ] BEFORE title (74 chars): The Glass Castle: Book vs Movie — Key Differences & Should You Read First?
+[12:03:56.478] [INFO ] AFTER  title (74 chars): The Glass Castle: Book vs Movie — Key Differences & Should You Read First?
+[12:03:56.478] [INFO ] BEFORE meta  (15 chars): Jeannette Walls
+[12:03:56.478] [INFO ] AFTER  meta  (15 chars): Jeannette Walls
+
+============================================================
+Finished: 2026-04-12T12:03:56.479Z
+Elapsed:  4.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_08-03-52_pipeline-revise.log
+============================================================

@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:33:32.826Z
+============================================================
+[11:33:32.830] [INFO ] Model config loaded from config/models.json
+[11:33:32.831] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:33:32.832] [INFO ] Loaded pass1b-titles.txt (3873 chars)
+[11:33:32.832] [INFO ] pipeline-revise.js
+[11:33:32.832] [INFO ] Pass:    titles
+[11:33:32.832] [INFO ] Files:   1
+[11:33:32.832] [INFO ] Force:   yes
+[11:33:32.832] [INFO ] Dry run: no
+[11:33:32.832] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:33:34.853] [PASS ] silence-of-the-lambs.json — Titles complete
+[11:33:34.853] [INFO ]   BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:33:34.853] [INFO ]   AFTER  title (62 chars): The Silence of the Lambs: The Rare Case Where Both Are Perfect
+[11:33:34.853] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[11:33:34.854] [INFO ]   AFTER  meta  (121 chars): Harris wrote a masterwork. Demme made a masterwork from it. One of the only adaptations where ranking them is impossible.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:33:34.855] [INFO ] Single file mode — skipping full checkpoint
+[11:33:34.856] [INFO ] BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:33:34.856] [INFO ] AFTER  title (62 chars): The Silence of the Lambs: The Rare Case Where Both Are Perfect
+[11:33:34.856] [INFO ] BEFORE meta  (13 chars): Thomas Harris
+[11:33:34.856] [INFO ] AFTER  meta  (121 chars): Harris wrote a masterwork. Demme made a masterwork from it. One of the only adaptations where ranking them is impossible.
+
+============================================================
+Finished: 2026-04-12T11:33:34.856Z
+Elapsed:  2.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-33-32_pipeline-revise.log
+============================================================

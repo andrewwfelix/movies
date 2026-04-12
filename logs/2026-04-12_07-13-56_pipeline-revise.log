@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:13:56.030Z
+============================================================
+[11:13:56.033] [INFO ] Model config loaded from config/models.json
+[11:13:56.034] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:13:56.035] [INFO ] Loaded pass1b-titles.txt (3873 chars)
+[11:13:56.035] [INFO ] pipeline-revise.js
+[11:13:56.035] [INFO ] Pass:    titles
+[11:13:56.035] [INFO ] Files:   1
+[11:13:56.035] [INFO ] Force:   yes
+[11:13:56.035] [INFO ] Dry run: no
+[11:13:56.035] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:13:59.240] [PASS ] big-fish.json — Titles complete
+[11:13:59.241] [INFO ]   BEFORE title (66 chars): Big Fish: Book vs Movie — Key Differences & Should You Read First?
+[11:13:59.241] [INFO ]   AFTER  title (58 chars): Big Fish: Wallace's Spare Grief vs Burton's Generous Heart
+[11:13:59.241] [INFO ]   BEFORE meta  (14 chars): Daniel Wallace
+[11:13:59.242] [INFO ]   AFTER  meta  (142 chars): The novel withholds what the film gives freely—and both choices honor a son trying to know his father. A rare tie where excess serves emotion.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:13:59.243] [INFO ] Single file mode — skipping full checkpoint
+[11:13:59.243] [INFO ] BEFORE title (66 chars): Big Fish: Book vs Movie — Key Differences & Should You Read First?
+[11:13:59.244] [INFO ] AFTER  title (58 chars): Big Fish: Wallace's Spare Grief vs Burton's Generous Heart
+[11:13:59.244] [INFO ] BEFORE meta  (14 chars): Daniel Wallace
+[11:13:59.244] [INFO ] AFTER  meta  (142 chars): The novel withholds what the film gives freely—and both choices honor a son trying to know his father. A rare tie where excess serves emotion.
+
+============================================================
+Finished: 2026-04-12T11:13:59.244Z
+Elapsed:  3.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-13-56_pipeline-revise.log
+============================================================

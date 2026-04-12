@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:45:47.902Z
+============================================================
+[11:45:47.905] [INFO ] Model config loaded from config/models.json
+[11:45:47.907] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:45:47.907] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[11:45:47.907] [INFO ] pipeline-revise.js
+[11:45:47.908] [INFO ] Pass:    titles
+[11:45:47.908] [INFO ] Files:   1
+[11:45:47.908] [INFO ] Force:   yes
+[11:45:47.908] [INFO ] Dry run: no
+[11:45:47.908] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:45:50.295] [PASS ] big-fish.json — Titles complete
+[11:45:50.295] [INFO ]   BEFORE title (66 chars): Big Fish: Book vs Movie — Key Differences & Should You Read First?
+[11:45:50.295] [INFO ]   AFTER  title (55 chars): Big Fish: Burton's Excess Saves What Wallace Kept Spare
+[11:45:50.295] [INFO ]   BEFORE meta  (14 chars): Daniel Wallace
+[11:45:50.295] [INFO ]   AFTER  meta  (150 chars): Wallace wrote melancholy. Burton made it moving. The rare case where visual extravagance serves restraint—both versions own something the other can't.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:45:50.296] [INFO ] Single file mode — skipping full checkpoint
+[11:45:50.297] [INFO ] BEFORE title (66 chars): Big Fish: Book vs Movie — Key Differences & Should You Read First?
+[11:45:50.297] [INFO ] AFTER  title (55 chars): Big Fish: Burton's Excess Saves What Wallace Kept Spare
+[11:45:50.297] [INFO ] BEFORE meta  (14 chars): Daniel Wallace
+[11:45:50.297] [INFO ] AFTER  meta  (150 chars): Wallace wrote melancholy. Burton made it moving. The rare case where visual extravagance serves restraint—both versions own something the other can't.
+
+============================================================
+Finished: 2026-04-12T11:45:50.297Z
+Elapsed:  2.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-45-47_pipeline-revise.log
+============================================================

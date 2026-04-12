@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:13:44.725Z
+============================================================
+[12:13:44.727] [INFO ] Model config loaded from config/models.json
+[12:13:44.729] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[12:13:44.729] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[12:13:44.729] [INFO ] pipeline-revise.js
+[12:13:44.729] [INFO ] Pass:    titles
+[12:13:44.730] [INFO ] Files:   1
+[12:13:44.730] [INFO ] Force:   yes
+[12:13:44.730] [INFO ] Dry run: no
+[12:13:44.730] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:13:48.088] [WARN ] water-for-elephants.json: Titles written with warnings: pageTitle slightly long: 75 chars (target 65)
+[12:13:48.089] [INFO ]   BEFORE title (77 chars): Water for Elephants: Book vs Movie — Key Differences & Should You Read First?
+[12:13:48.089] [INFO ]   AFTER  title (75 chars): Water for Elephants: Gruen's Circus Feels Dangerous. Lawrence's Feels Safe.
+[12:13:48.089] [INFO ]   BEFORE meta  (10 chars): Sara Gruen
+[12:13:48.089] [INFO ]   AFTER  meta  (135 chars): The novel's violence and desperation vanish in a sanitized romance. Pattinson and Witherspoon can't carry what the book makes visceral.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[12:13:48.090] [INFO ] Single file mode — skipping full checkpoint
+[12:13:48.090] [INFO ] BEFORE title (77 chars): Water for Elephants: Book vs Movie — Key Differences & Should You Read First?
+[12:13:48.091] [INFO ] AFTER  title (75 chars): Water for Elephants: Gruen's Circus Feels Dangerous. Lawrence's Feels Safe.
+[12:13:48.091] [INFO ] BEFORE meta  (10 chars): Sara Gruen
+[12:13:48.091] [INFO ] AFTER  meta  (135 chars): The novel's violence and desperation vanish in a sanitized romance. Pattinson and Witherspoon can't carry what the book makes visceral.
+
+============================================================
+Finished: 2026-04-12T12:13:48.091Z
+Elapsed:  3.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_08-13-44_pipeline-revise.log
+============================================================

@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:13:13.689Z
+============================================================
+[12:13:13.692] [INFO ] Model config loaded from config/models.json
+[12:13:13.693] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[12:13:13.694] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[12:13:13.694] [INFO ] pipeline-revise.js
+[12:13:13.694] [INFO ] Pass:    titles
+[12:13:13.694] [INFO ] Files:   1
+[12:13:13.694] [INFO ] Force:   yes
+[12:13:13.694] [INFO ] Dry run: no
+[12:13:13.695] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:13:18.999] [PASS ] the-princess-bride.json — Titles complete
+[12:13:18.999] [INFO ]   BEFORE title (76 chars): The Princess Bride: Book vs Movie — Key Differences & Should You Read First?
+[12:13:18.999] [INFO ]   AFTER  title (57 chars): The Princess Bride: Goldman Wrote Both. Both Are Perfect.
+[12:13:18.999] [INFO ]   BEFORE meta  (15 chars): William Goldman
+[12:13:18.999] [INFO ]   AFTER  meta  (120 chars): The novel has the framing device. The film has Mandy Patinkin. Goldman knew what each medium needed and gave it to them.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[12:13:19.001] [INFO ] Single file mode — skipping full checkpoint
+[12:13:19.001] [INFO ] BEFORE title (76 chars): The Princess Bride: Book vs Movie — Key Differences & Should You Read First?
+[12:13:19.001] [INFO ] AFTER  title (57 chars): The Princess Bride: Goldman Wrote Both. Both Are Perfect.
+[12:13:19.001] [INFO ] BEFORE meta  (15 chars): William Goldman
+[12:13:19.001] [INFO ] AFTER  meta  (120 chars): The novel has the framing device. The film has Mandy Patinkin. Goldman knew what each medium needed and gave it to them.
+
+============================================================
+Finished: 2026-04-12T12:13:19.001Z
+Elapsed:  5.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_08-13-13_pipeline-revise.log
+============================================================

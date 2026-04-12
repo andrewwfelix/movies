@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:12:35.983Z
+============================================================
+[12:12:35.986] [INFO ] Model config loaded from config/models.json
+[12:12:35.988] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[12:12:35.988] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[12:12:35.988] [INFO ] pipeline-revise.js
+[12:12:35.989] [INFO ] Pass:    titles
+[12:12:35.989] [INFO ] Files:   1
+[12:12:35.989] [INFO ] Force:   yes
+[12:12:35.989] [INFO ] Dry run: no
+[12:12:35.989] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:12:39.458] [PASS ] the-longest-ride.json — Titles complete
+[12:12:39.459] [INFO ]   BEFORE title (74 chars): The Longest Ride: Book vs Movie — Key Differences & Should You Read First?
+[12:12:39.459] [INFO ]   AFTER  title (64 chars): The Longest Ride: Sparks Earns the Parallel. The Film Just Cuts.
+[12:12:39.459] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[12:12:39.459] [INFO ]   AFTER  meta  (143 chars): The dual timeline works in the novel because Sparks builds the connection scene by scene. Tillman's film rushes it and the payoff rings hollow.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[12:12:39.460] [INFO ] Single file mode — skipping full checkpoint
+[12:12:39.461] [INFO ] BEFORE title (74 chars): The Longest Ride: Book vs Movie — Key Differences & Should You Read First?
+[12:12:39.461] [INFO ] AFTER  title (64 chars): The Longest Ride: Sparks Earns the Parallel. The Film Just Cuts.
+[12:12:39.461] [INFO ] BEFORE meta  (15 chars): Nicholas Sparks
+[12:12:39.461] [INFO ] AFTER  meta  (143 chars): The dual timeline works in the novel because Sparks builds the connection scene by scene. Tillman's film rushes it and the payoff rings hollow.
+
+============================================================
+Finished: 2026-04-12T12:12:39.461Z
+Elapsed:  3.5s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_08-12-35_pipeline-revise.log
+============================================================

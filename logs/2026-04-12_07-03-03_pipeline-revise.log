@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:03:03.247Z
+============================================================
+[11:03:03.250] [INFO ] Model config loaded from config/models.json
+[11:03:03.252] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:03:03.252] [INFO ] Loaded pass1b-titles.txt (4423 chars)
+[11:03:03.253] [INFO ] pipeline-revise.js
+[11:03:03.253] [INFO ] Pass:    titles
+[11:03:03.253] [INFO ] Files:   1
+[11:03:03.253] [INFO ] Force:   yes
+[11:03:03.253] [INFO ] Dry run: no
+[11:03:03.253] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:03:05.919] [PASS ] atonement.json — Titles complete
+[11:03:05.919] [INFO ]   BEFORE title (45 chars): Atonement Book vs Movie: McEwan vs Joe Wright
+[11:03:05.919] [INFO ]   AFTER  title (56 chars): Atonement: McEwan's Ending Does What Wright's Film Can't
+[11:03:05.919] [INFO ]   BEFORE meta  (10 chars): Ian McEwan
+[11:03:05.919] [INFO ]   AFTER  meta  (134 chars): Wright made one of the most beautiful films of the 2000s. It still can't do what McEwan does. The novel haunts you longer. Here's why.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:03:05.921] [INFO ] Single file mode — skipping full checkpoint
+[11:03:05.921] [INFO ] BEFORE title (45 chars): Atonement Book vs Movie: McEwan vs Joe Wright
+[11:03:05.921] [INFO ] AFTER  title (56 chars): Atonement: McEwan's Ending Does What Wright's Film Can't
+[11:03:05.921] [INFO ] BEFORE meta  (10 chars): Ian McEwan
+[11:03:05.921] [INFO ] AFTER  meta  (134 chars): Wright made one of the most beautiful films of the 2000s. It still can't do what McEwan does. The novel haunts you longer. Here's why.
+
+============================================================
+Finished: 2026-04-12T11:03:05.921Z
+Elapsed:  2.7s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-03-03_pipeline-revise.log
+============================================================

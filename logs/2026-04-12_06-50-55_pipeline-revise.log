@@ -1,0 +1,34 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T10:50:55.570Z
+============================================================
+[10:50:55.572] [INFO ] Model config loaded from config/models.json
+[10:50:55.574] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[10:50:55.575] [INFO ] Loaded pass1b-titles.txt (3427 chars)
+[10:50:55.575] [INFO ] pipeline-revise.js
+[10:50:55.575] [INFO ] Pass:    titles
+[10:50:55.575] [INFO ] Files:   1
+[10:50:55.576] [INFO ] Force:   yes
+[10:50:55.576] [INFO ] Dry run: no
+[10:50:55.576] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[10:50:58.631] [PASS ] the-notebook.json — Titles — "The Notebook: Sparks Wins — Book vs 2004 Film" (45 chars)
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[10:50:58.632] [INFO ] Single file mode — skipping full checkpoint
+[10:50:58.632] [INFO ] pageTitle (45 chars): The Notebook: Sparks Wins — Book vs 2004 Film
+[10:50:58.632] [INFO ] metaDesc  (140 chars): Sparks' 1996 novel is better-written than Cassavetes' beloved adaptation. Gosling and McAdams bring chemistry, but the book has more weight.
+
+============================================================
+Finished: 2026-04-12T10:50:58.632Z
+Elapsed:  3.1s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_06-50-55_pipeline-revise.log
+============================================================

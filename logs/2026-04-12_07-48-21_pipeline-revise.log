@@ -1,0 +1,806 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:48:21.917Z
+============================================================
+[11:48:21.920] [INFO ] Model config loaded from config/models.json
+[11:48:21.922] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:48:21.922] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[11:48:21.940] [INFO ] pipeline-revise.js
+[11:48:21.940] [INFO ] Pass:    titles
+[11:48:21.941] [INFO ] Files:   163
+[11:48:21.941] [INFO ] Force:   yes
+[11:48:21.941] [INFO ] Dry run: no
+[11:48:21.941] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:48:24.712] [PASS ] a-beautiful-mind.json — Titles complete
+[11:48:24.713] [INFO ]   BEFORE title (74 chars): A Beautiful Mind: Book vs Movie — Key Differences & Should You Read First?
+[11:48:24.713] [INFO ]   AFTER  title (64 chars): A Beautiful Mind: Nasar's Chaos vs Crowe's Controlled Unraveling
+[11:48:24.713] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[11:48:24.713] [INFO ]   AFTER  meta  (130 chars): The book gives you Nash's full madness. Howard gives you a performance you can follow. Both portraits are true — and incompatible.
+[11:48:28.324] [PASS ] a-knight-of-the-seven-kingdoms.json — Titles complete
+[11:48:28.324] [INFO ]   BEFORE title (65 chars): A Knight of the Seven Kingdoms: Book vs TV Series — Martin vs HBO
+[11:48:28.325] [INFO ]   AFTER  title (60 chars): A Knight of the Seven Kingdoms: Martin's Warmth, HBO's Scale
+[11:48:28.325] [INFO ]   BEFORE meta  (18 chars): George R.R. Martin
+[11:48:28.325] [INFO ]   AFTER  meta  (137 chars): The novellas give you intimacy Martin rarely allows. The series gives you spectacle without cynicism. Both earn the world they're set in.
+[11:48:31.118] [PASS ] a-little-life.json — Titles complete
+[11:48:31.119] [INFO ]   BEFORE title (57 chars): A Little Life: Book vs Movie — Key Differences & Analysis
+[11:48:31.119] [INFO ]   AFTER  title (58 chars): A Little Life: Yanagihara's Prose Does What van Hove Can't
+[11:48:31.119] [INFO ]   BEFORE meta  (16 chars): Hanya Yanagihara
+[11:48:31.119] [INFO ]   AFTER  meta  (141 chars): The novel's interiority — Jude's self-loathing rendered sentence by sentence — becomes mere spectacle onstage. Read first or miss everything.
+[11:48:34.382] [PASS ] a-man-called-ove.json — Titles complete
+[11:48:34.382] [INFO ]   BEFORE title (74 chars): A Man Called Ove: Book vs Movie — Key Differences & Should You Read First?
+[11:48:34.382] [INFO ]   AFTER  title (65 chars): A Man Called Ove: Backman's Ove Breaks Your Heart. Holm's Charms.
+[11:48:34.382] [INFO ]   BEFORE meta  (15 chars): Fredrik Backman
+[11:48:34.382] [INFO ]   AFTER  meta  (128 chars): The film captures Ove's grumpiness but misses the devastating interiority that makes Backman's novel unbearable in the best way.
+[11:48:38.612] [PASS ] a-walk-to-remember.json — Titles complete
+[11:48:38.613] [INFO ]   BEFORE title (76 chars): A Walk to Remember: Book vs Movie — Key Differences & Should You Read First?
+[11:48:38.613] [INFO ]   AFTER  title (61 chars): A Walk to Remember: Sparks Earns the Tears Moore Only Borrows
+[11:48:38.613] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[11:48:38.613] [INFO ]   AFTER  meta  (133 chars): The novel's 1950s narrator and faith-forward restraint make the loss devastating. The film updates, softens, and coasts on chemistry.
+[11:48:42.248] [PASS ] about-a-boy.json — Titles complete
+[11:48:42.248] [INFO ]   BEFORE title (69 chars): About a Boy: Book vs Movie — Key Differences & Should You Read First?
+[11:48:42.249] [INFO ]   AFTER  title (59 chars): About a Boy: Hornby's Precision vs Grant's Charm — Both Win
+[11:48:42.249] [INFO ]   BEFORE meta  (11 chars): Nick Hornby
+[11:48:42.249] [INFO ]   AFTER  meta  (132 chars): The novel's comic timing is surgical. The film's warmth is effortless. Hornby and the Weitz brothers each nail what the other can't.
+[11:48:46.365] [PASS ] all-quiet-on-the-western-front.json — Titles complete
+[11:48:46.366] [INFO ]   BEFORE title (88 chars): All Quiet on the Western Front: Book vs Movie — Key Differences & Should You Read First?
+[11:48:46.366] [INFO ]   AFTER  title (56 chars): All Quiet: Remarque Was There. Berger Makes You Feel It.
+[11:48:46.366] [INFO ]   BEFORE meta  (20 chars): Erich Maria Remarque
+[11:48:46.366] [INFO ]   AFTER  meta  (124 chars): The novel has the fury of witness. The film has the visceral terror no page can hold. Both essential, for different reasons.
+[11:48:49.232] [PASS ] all-the-light-we-cannot-see.json — Titles complete
+[11:48:49.233] [INFO ]   BEFORE title (86 chars): All the Light We Cannot See: Book vs Series — Key Differences & Should You Read First?
+[11:48:49.233] [INFO ]   AFTER  title (55 chars): All the Light We Cannot See: Doerr's Prose Is the Story
+[11:48:49.233] [INFO ]   BEFORE meta  (13 chars): Anthony Doerr
+[11:48:49.233] [INFO ]   AFTER  meta  (139 chars): Netflix captures the plot but loses the language that makes the war feel intimate. Without Doerr's sentences, it's just another WWII drama.
+[11:48:52.226] [PASS ] along-came-a-spider.json — Titles complete
+[11:48:52.227] [INFO ]   BEFORE title (77 chars): Along Came a Spider: Book vs Movie — Key Differences & Should You Read First?
+[11:48:52.227] [INFO ]   AFTER  title (65 chars): Along Came a Spider: Patterson's Twists Work. The Film Just Lies.
+[11:48:52.227] [INFO ]   BEFORE meta  (15 chars): James Patterson
+[11:48:52.227] [INFO ]   AFTER  meta  (134 chars): The book earns its reveals through character. The movie manufactures them through misdirection that feels cheap when the credits roll.
+[11:48:56.036] [PASS ] american-gods.json — Titles complete
+[11:48:56.036] [INFO ]   BEFORE title (72 chars): American Gods: Book vs Series — Key Differences & Should You Read First?
+[11:48:56.036] [INFO ]   AFTER  title (65 chars): American Gods: Fuller's Visuals Can't Save What Gaiman Built Slow
+[11:48:56.036] [INFO ]   BEFORE meta  (11 chars): Neil Gaiman
+[11:48:56.036] [INFO ]   AFTER  meta  (132 chars): The series front-loads spectacle. The novel earns its mythology across five hundred pages. One's a road trip. The other's just loud.
+[11:49:00.050] [PASS ] american-psycho.json — Titles complete
+[11:49:00.050] [INFO ]   BEFORE title (65 chars): American Psycho: Book vs Movie — Bret Easton Ellis vs Mary Harron
+[11:49:00.050] [INFO ]   AFTER  title (64 chars): American Psycho: Ellis's Bateman Is Unfilmable. Harron Knows It.
+[11:49:00.050] [INFO ]   BEFORE meta  (17 chars): Bret Easton Ellis
+[11:49:00.050] [INFO ]   AFTER  meta  (139 chars): The novel's violence and interiority can't transfer to screen—Harron's genius is making that limitation the film's sharpest satirical edge.
+[11:49:03.662] [WARN ] animal-farm.json: Titles validation: pageTitle too long: 71 chars
+[11:49:07.146] [PASS ] annihilation.json — Titles complete
+[11:49:07.146] [INFO ]   BEFORE title (70 chars): Annihilation: Book vs Movie — Key Differences & Should You Read First?
+[11:49:07.146] [INFO ]   AFTER  title (66 chars): Annihilation: VanderMeer's Horror Accumulates. Garland's Explodes.
+[11:49:07.146] [INFO ]   BEFORE meta  (15 chars): Jeff VanderMeer
+[11:49:07.146] [INFO ]   AFTER  meta  (139 chars): The novel withholds and unsettles. The film gives you the Shimmer in full color. Both refuse answers, but VanderMeer's refusal cuts deeper.
+[11:49:10.726] [PASS ] atonement.json — Titles complete
+[11:49:10.726] [INFO ]   BEFORE title (45 chars): Atonement Book vs Movie: McEwan vs Joe Wright
+[11:49:10.726] [INFO ]   AFTER  title (61 chars): Atonement: Wright's Film Is Beautiful. McEwan's Novel Haunts.
+[11:49:10.727] [INFO ]   BEFORE meta  (10 chars): Ian McEwan
+[11:49:10.727] [INFO ]   AFTER  meta  (132 chars): The 2007 film is one of the decade's most stunning — and it still can't replicate what McEwan does on the page. Read the book first.
+[11:49:14.165] [PASS ] band-of-brothers.json — Titles complete
+[11:49:14.165] [INFO ]   BEFORE title (75 chars): Band of Brothers: Book vs Series — Key Differences & Should You Read First?
+[11:49:14.165] [INFO ]   AFTER  title (63 chars): Band of Brothers: Ambrose Gives You History. HBO Gives You War.
+[11:49:14.166] [INFO ]   BEFORE meta  (15 chars): Stephen Ambrose
+[11:49:14.166] [INFO ]   AFTER  meta  (129 chars): The book is testimony and dates. The series is Bastogne snow and the weight of a rifle. Both are essential for different reasons.
+[11:49:16.712] [PASS ] beloved.json — Titles complete
+[11:49:16.712] [INFO ]   BEFORE title (56 chars): Beloved: Book vs Movie — Toni Morrison vs Jonathan Demme
+[11:49:16.712] [INFO ]   AFTER  title (56 chars): Beloved: Morrison's Prose Does What Demme's Images Can't
+[11:49:16.712] [INFO ]   BEFORE meta  (13 chars): Toni Morrison
+[11:49:16.712] [INFO ]   AFTER  meta  (130 chars): The film is faithful. The novel is untranslatable. Morrison's fractured time and haunted syntax create what no camera can capture.
+[11:49:20.087] [PASS ] big-fish.json — Titles complete
+[11:49:20.087] [INFO ]   BEFORE title (66 chars): Big Fish: Book vs Movie — Key Differences & Should You Read First?
+[11:49:20.087] [INFO ]   AFTER  title (55 chars): Big Fish: Burton's Excess Saves What Wallace Kept Spare
+[11:49:20.087] [INFO ]   BEFORE meta  (14 chars): Daniel Wallace
+[11:49:20.087] [INFO ]   AFTER  meta  (150 chars): Wallace wrote melancholy. Burton made it moving. The rare case where visual extravagance serves restraint—both versions own something the other can't.
+[11:49:24.310] [PASS ] big-little-lies-hbo.json — Titles complete
+[11:49:24.311] [INFO ]   BEFORE title (74 chars): Big Little Lies: Book vs Series — Key Differences & Should You Read First?
+[11:49:24.311] [INFO ]   AFTER  title (63 chars): Big Little Lies: Moriarty's Wit Meets Kidman's Fury in Rare Tie
+[11:49:24.311] [INFO ]   BEFORE meta  (14 chars): Liane Moriarty
+[11:49:24.311] [INFO ]   AFTER  meta  (140 chars): The novel's structural cleverness survives intact. Kidman and Witherspoon add what prose can't. Both versions own something the other lacks.
+[11:49:27.482] [PASS ] breakfast-at-tiffanys.json — Titles complete
+[11:49:27.482] [INFO ]   BEFORE title (80 chars): Breakfast at Tiffany's: Book vs Movie — Key Differences & Should You Read First?
+[11:49:27.483] [INFO ]   AFTER  title (56 chars): Breakfast at Tiffany's: Capote's Holly vs Hepburn's Icon
+[11:49:27.483] [INFO ]   BEFORE meta  (13 chars): Truman Capote
+[11:49:27.483] [INFO ]   AFTER  meta  (127 chars): Capote wrote a call girl with sharp edges. Edwards cast Audrey Hepburn and made her a romantic lead. Both Hollys are essential.
+[11:49:31.317] [PASS ] bridgerton.json — Titles complete
+[11:49:31.318] [INFO ]   BEFORE title (69 chars): Bridgerton: Book vs Series — Key Differences & Should You Read First?
+[11:49:31.318] [INFO ]   AFTER  title (65 chars): Bridgerton: Quinn's Simon Is Broken. The Show's Is Just Brooding.
+[11:49:31.318] [INFO ]   BEFORE meta  (11 chars): Julia Quinn
+[11:49:31.318] [INFO ]   AFTER  meta  (143 chars): The book gives you a damaged duke who can't love. Netflix gives you Regé-Jean Page smoldering in waistcoats. One is romance. One is aesthetics.
+[11:49:34.183] [PASS ] brooklyn.json — Titles complete
+[11:49:34.183] [INFO ]   BEFORE title (48 chars): Brooklyn: Book vs Movie — Tóibín vs John Crowley
+[11:49:34.184] [INFO ]   AFTER  title (53 chars): Brooklyn: Tóibín's Silences Are What Ronan Can't Show
+[11:49:34.184] [INFO ]   BEFORE meta  (11 chars): Colm Tóibín
+[11:49:34.184] [INFO ]   AFTER  meta  (125 chars): The novel lives in the gap between what Eilis feels and what she says. Ronan's face can't carry what Tóibín's restraint does.
+[11:49:37.698] [PASS ] catch-22.json — Titles complete
+[11:49:37.698] [INFO ]   BEFORE title (66 chars): Catch-22: Book vs Movie — Key Differences & Should You Read First?
+[11:49:37.698] [INFO ]   AFTER  title (60 chars): Catch-22: Heller's Circular Logic Is What Nichols Can't Film
+[11:49:37.698] [INFO ]   BEFORE meta  (13 chars): Joseph Heller
+[11:49:37.698] [INFO ]   AFTER  meta  (139 chars): The novel's anti-logic accumulates across 400 pages. The 1970 film collects scenes without the trap closing. Read Heller's structure first.
+[11:49:41.629] [PASS ] catch-me-if-you-can.json — Titles complete
+[11:49:41.629] [INFO ]   BEFORE title (77 chars): Catch Me If You Can: Book vs Movie — Key Differences & Should You Read First?
+[11:49:41.629] [INFO ]   AFTER  title (59 chars): Catch Me If You Can: Abagnale's Hustle vs Spielberg's Heart
+[11:49:41.630] [INFO ]   BEFORE meta  (14 chars): Frank Abagnale
+[11:49:41.630] [INFO ]   AFTER  meta  (125 chars): The memoir gives you the con. Spielberg gives you the father-son ache Abagnale never wrote. Both feel true in different ways.
+[11:49:45.177] [PASS ] cold-mountain.json — Titles complete
+[11:49:45.177] [INFO ]   BEFORE title (59 chars): Cold Mountain: Book vs Movie — Frazier vs Anthony Minghella
+[11:49:45.177] [INFO ]   AFTER  title (70 chars): Cold Mountain: Frazier's Prose Is the Journey. The Film's Just Pretty.
+[11:49:45.178] [INFO ]   BEFORE meta  (15 chars): Charles Frazier
+[11:49:45.178] [INFO ]   AFTER  meta  (146 chars): Minghella gives you scenery and Zellweger. Frazier gives you the weight of every step Inman takes. The novel earns what the film only photographs.
+[11:49:49.156] [PASS ] contact.json — Titles complete
+[11:49:49.156] [INFO ]   BEFORE title (61 chars): Contact: Book (1985) vs. Movie (1997) | BooksVersusMovies.com
+[11:49:49.156] [INFO ]   AFTER  title (60 chars): Contact: Sagan's Science vs. Foster's Faith — Both Essential
+[11:49:49.156] [INFO ]   BEFORE meta  (10 chars): Carl Sagan
+[11:49:49.156] [INFO ]   AFTER  meta  (138 chars): The novel gives you the cosmos. The film gives you Ellie's face in the pod. Sagan's intellectual scope vs. Zemeckis's emotional precision.
+[11:49:53.720] [PASS ] da-vinci-code.json — Titles complete
+[11:49:53.720] [INFO ]   BEFORE title (58 chars): The Da Vinci Code: Book vs Movie — Dan Brown vs Ron Howard
+[11:49:53.720] [INFO ]   AFTER  title (61 chars): The Da Vinci Code: Brown's Mechanism Works. Howard's Doesn't.
+[11:49:53.720] [INFO ]   BEFORE meta  (9 chars): Dan Brown
+[11:49:53.721] [INFO ]   AFTER  meta  (134 chars): The book is impossible to put down. The film is handsome, competent, and loses what made you turn pages. Different pleasures entirely.
+[11:49:56.667] [PASS ] daisy-jones-and-the-six.json — Titles complete
+[11:49:56.667] [INFO ]   BEFORE title (80 chars): Daisy Jones & The Six: Book vs Series — Key Differences & Should You Read First?
+[11:49:56.667] [INFO ]   AFTER  title (59 chars): Daisy Jones: Reid's Oral History Does What the Series Can't
+[11:49:56.667] [INFO ]   BEFORE meta  (19 chars): Taylor Jenkins Reid
+[11:49:56.667] [INFO ]   AFTER  meta  (150 chars): The contradictions between interview subjects create the band. The series just shows you what happened. Read first or you'll miss the format's genius.
+[11:49:59.597] [PASS ] dark-matter.json — Titles complete
+[11:49:59.597] [INFO ]   BEFORE title (58 chars): Dark Matter: Book vs TV Series — Blake Crouch vs Apple TV+
+[11:49:59.597] [INFO ]   AFTER  title (56 chars): Dark Matter: Crouch's Thriller vs Edgerton's Performance
+[11:49:59.597] [INFO ]   BEFORE meta  (12 chars): Blake Crouch
+[11:49:59.598] [INFO ]   AFTER  meta  (117 chars): The book is pure velocity. The series trades some speed for Joel Edgerton's face. Both versions earn their existence.
+[11:50:04.478] [PASS ] devil-wears-prada.json — Titles complete
+[11:50:04.479] [INFO ]   BEFORE title (64 chars): The Devil Wears Prada Book vs Movie 2026: Should You Read First?
+[11:50:04.479] [INFO ]   AFTER  title (59 chars): Devil Wears Prada: Weisberger's Andy Has Teeth Streep Can't
+[11:50:04.479] [INFO ]   BEFORE meta  (17 chars): Lauren Weisberger
+[11:50:04.479] [INFO ]   AFTER  meta  (139 chars): The novel is sharper and less forgiving—Andy quits without redemption, Miranda stays monstrous. The film softens both into something safer.
+[11:50:07.607] [PASS ] divergent.json — Titles complete
+[11:50:07.607] [INFO ]   BEFORE title (55 chars): Divergent: Book vs Movie — Veronica Roth vs Neil Burger
+[11:50:07.607] [INFO ]   AFTER  title (59 chars): Divergent: Roth's Moral Weight Becomes Burger's Action Blur
+[11:50:07.608] [INFO ]   BEFORE meta  (13 chars): Veronica Roth
+[11:50:07.608] [INFO ]   AFTER  meta  (132 chars): Woodley's excellent, but the film trades the novel's dystopian seriousness for pace. The books finish what the film series couldn't.
+[11:50:11.304] [PASS ] doctor-sleep.json — Titles complete
+[11:50:11.304] [INFO ]   BEFORE title (70 chars): Doctor Sleep: Book vs Movie — Key Differences & Should You Read First?
+[11:50:11.304] [INFO ]   AFTER  title (63 chars): Doctor Sleep: King's Danny Survives. Flanagan's Just Remembers.
+[11:50:11.305] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[11:50:11.305] [INFO ]   AFTER  meta  (138 chars): McGregor nails the performance, but King gives Danny decades of recovery Flanagan can't. The novel earns its ending. The film borrows one.
+[11:50:14.683] [PASS ] dracula.json — Titles complete
+[11:50:14.683] [INFO ]   BEFORE title (65 chars): Dracula: Book vs Movie — Key Differences & Should You Read First?
+[11:50:14.683] [INFO ]   AFTER  title (60 chars): Dracula: Stoker's Restraint Terrifies. Coppola Just Dazzles.
+[11:50:14.684] [INFO ]   BEFORE meta  (11 chars): Bram Stoker
+[11:50:14.684] [INFO ]   AFTER  meta  (121 chars): The novel builds horror through letters and silence. The film drowns it in spectacle. One scares you. One entertains you.
+[11:50:18.525] [PASS ] dune.json — Titles complete
+[11:50:18.526] [INFO ]   BEFORE title (59 chars): Dune Book vs Movie: Key Differences & Should You Read First
+[11:50:18.526] [INFO ]   AFTER  title (58 chars): Dune: Villeneuve Shows the Desert. Herbert Shows the Trap.
+[11:50:18.526] [INFO ]   BEFORE meta  (13 chars): Frank Herbert
+[11:50:18.526] [INFO ]   AFTER  meta  (140 chars): The film is stunning, but Herbert's argument about prophecy and power becomes spectacle in Villeneuve's hands. Read first or miss the point.
+[11:50:21.977] [PASS ] eat-pray-love.json — Titles complete
+[11:50:21.978] [INFO ]   BEFORE title (63 chars): Eat Pray Love: Book vs Movie — Elizabeth Gilbert vs Ryan Murphy
+[11:50:21.978] [INFO ]   AFTER  title (58 chars): Eat Pray Love: Gilbert's Wit Gets Lost in Murphy's Scenery
+[11:50:21.978] [INFO ]   BEFORE meta  (17 chars): Elizabeth Gilbert
+[11:50:21.978] [INFO ]   AFTER  meta  (133 chars): The memoir has intellectual bite. The film has Julia Roberts in pretty locations. Gilbert's humor and honesty don't survive the trip.
+[11:50:25.045] [PASS ] enders-game.json — Titles complete
+[11:50:25.045] [INFO ]   BEFORE title (60 chars): Ender's Game: Book vs Movie — Orson Scott Card vs Gavin Hood
+[11:50:25.046] [INFO ]   AFTER  title (63 chars): Ender's Game: Card's Moral Weight Lost in Hood's Rush to Battle
+[11:50:25.046] [INFO ]   BEFORE meta  (16 chars): Orson Scott Card
+[11:50:25.046] [INFO ]   AFTER  meta  (154 chars): The novel makes you complicit in Ender's choices. The film makes you a spectator. Card's strategy becomes Hood's spectacle—and the ending loses its sting.
+[11:50:28.254] [PASS ] enders-game-film.json — Titles complete
+[11:50:28.254] [INFO ]   BEFORE title (70 chars): Ender's Game: Book vs Movie — Key Differences & Should You Read First?
+[11:50:28.254] [INFO ]   AFTER  title (60 chars): Ender's Game: Card's Ender Thinks. Hood's Ender Just Fights.
+[11:50:28.254] [INFO ]   BEFORE meta  (16 chars): Orson Scott Card
+[11:50:28.255] [INFO ]   AFTER  meta  (143 chars): The novel is a child's mind being weaponised from the inside. The film is just battle sequences. Read first or you'll never know what was lost.
+[11:50:31.611] [PASS ] english-patient.json — Titles complete
+[11:50:31.611] [INFO ]   BEFORE title (74 chars): The English Patient: Book vs Movie — Michael Ondaatje vs Anthony Minghella
+[11:50:31.612] [INFO ]   AFTER  title (65 chars): The English Patient: Ondaatje's Strange Novel vs Minghella's Epic
+[11:50:31.612] [INFO ]   BEFORE meta  (16 chars): Michael Ondaatje
+[11:50:31.612] [INFO ]   AFTER  meta  (136 chars): The film is a masterpiece of adaptation. The book is richer, stranger, more ambitious. Both essential—the argument between them matters.
+[11:50:34.959] [PASS ] everything-everything.json — Titles complete
+[11:50:34.959] [INFO ]   BEFORE title (80 chars): Everything, Everything: Book vs Movie — Key Differences & Should You Read First?
+[11:50:34.960] [INFO ]   AFTER  title (65 chars): Everything, Everything: Yoon's Twist Lands. The Film Just Shrugs.
+[11:50:34.960] [INFO ]   BEFORE meta  (11 chars): Nicola Yoon
+[11:50:34.960] [INFO ]   AFTER  meta  (126 chars): The book's reveal recontextualizes everything you've read. The 2017 film treats it like a plot point and moves on. Read first.
+[11:50:38.311] [PASS ] fight-club.json — Titles complete
+[11:50:38.311] [INFO ]   BEFORE title (68 chars): Fight Club: Book vs Movie — Key Differences & Should You Read First?
+[11:50:38.311] [INFO ]   AFTER  title (50 chars): Fight Club: Palahniuk's Chaos vs Fincher's Control
+[11:50:38.311] [INFO ]   BEFORE meta  (15 chars): Chuck Palahniuk
+[11:50:38.311] [INFO ]   AFTER  meta  (131 chars): The novel's unhinged voice makes Tyler feel real. The film's precision makes him iconic. Both nail the twist—neither owns it alone.
+[11:50:41.763] [PASS ] five-feet-apart.json — Titles complete
+[11:50:41.763] [INFO ]   BEFORE title (73 chars): Five Feet Apart: Book vs Movie — Key Differences & Should You Read First?
+[11:50:41.764] [INFO ]   AFTER  title (60 chars): Five Feet Apart: The Book Gives Stella a Voice Baldoni Can't
+[11:50:41.764] [INFO ]   BEFORE meta  (18 chars): Rachael Lippincott
+[11:50:41.764] [INFO ]   AFTER  meta  (137 chars): Lippincott's internal monologue makes Stella's control feel desperate, not cute. The film turns grief into a meet-cute with oxygen tanks.
+[11:50:44.796] [PASS ] fourth-wing.json — Titles complete
+[11:50:44.796] [INFO ]   BEFORE title (71 chars): Fourth Wing: Book vs Upcoming TV Series — Rebecca Yarros vs Prime Video
+[11:50:44.796] [INFO ]   AFTER  title (63 chars): Fourth Wing: Read Yarros Now — The Series Hasn't Earned You Yet
+[11:50:44.796] [INFO ]   BEFORE meta  (14 chars): Rebecca Yarros
+[11:50:44.796] [INFO ]   AFTER  meta  (143 chars): Yarros wrote the defining romantasy of its moment. Prime Video's adaptation is still in development. The novel is the only version that exists.
+[11:50:48.218] [PASS ] frankenstein.json — Titles complete
+[11:50:48.218] [INFO ]   BEFORE title (54 chars): Frankenstein: Book vs Movie — Mary Shelley vs del Toro
+[11:50:48.219] [INFO ]   AFTER  title (63 chars): Frankenstein: Shelley's Creature Speaks. Del Toro's Just Roars.
+[11:50:48.219] [INFO ]   BEFORE meta  (12 chars): Mary Shelley
+[11:50:48.219] [INFO ]   AFTER  meta  (122 chars): Del Toro made the most faithful adaptation ever. It's still not close. The creature's voice exists only on Shelley's page.
+[11:50:51.041] [PASS ] geralds-game.json — Titles complete
+[11:50:51.042] [INFO ]   BEFORE title (71 chars): Gerald's Game: Book vs Movie — Key Differences & Should You Read First?
+[11:50:51.042] [INFO ]   AFTER  title (58 chars): Gerald's Game: King's Inner Voice Does What Flanagan Can't
+[11:50:51.042] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[11:50:51.042] [INFO ]   AFTER  meta  (131 chars): Flanagan's film is a technical triumph, but King's psychological archaeology goes deeper than any camera can follow. The book wins.
+[11:50:54.567] [PASS ] girl-on-the-train.json — Titles complete
+[11:50:54.567] [INFO ]   BEFORE title (52 chars): The Girl on the Train Book vs Movie: Key Differences
+[11:50:54.568] [INFO ]   AFTER  title (61 chars): The Girl on the Train: Blunt Can't Save What London Made Work
+[11:50:54.568] [INFO ]   BEFORE meta  (13 chars): Paula Hawkins
+[11:50:54.568] [INFO ]   AFTER  meta  (125 chars): The novel's claustrophobic commuter intimacy dies when Taylor moves it to New York. Rachel's unreliable voice loses its grip.
+[11:50:57.896] [PASS ] girl-with-the-dragon-tattoo.json — Titles complete
+[11:50:57.896] [INFO ]   BEFORE title (67 chars): The Girl with the Dragon Tattoo: Book vs Movie — Larsson vs Fincher
+[11:50:57.896] [INFO ]   AFTER  title (61 chars): Dragon Tattoo: Fincher Made a Thriller. Larsson Made Lisbeth.
+[11:50:57.896] [INFO ]   BEFORE meta  (13 chars): Stieg Larsson
+[11:50:57.896] [INFO ]   AFTER  meta  (133 chars): Mara's performance is unforgettable, but Larsson gives you the interior life Fincher can only hint at. The book is a character study.
+[11:51:00.801] [PASS ] gone-girl.json — Titles complete
+[11:51:00.801] [INFO ]   BEFORE title (67 chars): Gone Girl: Book vs Movie — Key Differences & Should You Read First?
+[11:51:00.801] [INFO ]   AFTER  title (52 chars): Gone Girl: Flynn's Amy vs Pike's Amy — You Need Both
+[11:51:00.801] [INFO ]   BEFORE meta  (13 chars): Gillian Flynn
+[11:51:00.802] [INFO ]   AFTER  meta  (150 chars): The book gives you the architecture of her sociopathy. The film gives you Pike's face doing things no prose can. Different manipulations, same genius.
+[11:51:03.870] [PASS ] good-omens.json — Titles complete
+[11:51:03.871] [INFO ]   BEFORE title (69 chars): Good Omens: Book vs Series — Key Differences & Should You Read First?
+[11:51:03.871] [INFO ]   AFTER  title (64 chars): Good Omens: Pratchett's Wit on the Page, Sheen's Heart on Screen
+[11:51:03.871] [INFO ]   BEFORE meta  (31 chars): Terry Pratchett and Neil Gaiman
+[11:51:03.871] [INFO ]   AFTER  meta  (140 chars): The novel's sustained comic brilliance meets the series' warmth — Gaiman's involvement makes both versions feel essential in different ways.
+[11:51:07.091] [PASS ] hamnet.json — Titles complete
+[11:51:07.091] [INFO ]   BEFORE title (50 chars): Hamnet Book vs Movie: O'Farrell vs Chloé Zhao 2026
+[11:51:07.092] [INFO ]   AFTER  title (56 chars): Hamnet: O'Farrell's Grief Lives in Prose Zhao Can't Film
+[11:51:07.092] [INFO ]   BEFORE meta  (8 chars): Maggie O
+[11:51:07.092] [INFO ]   AFTER  meta  (133 chars): Buckley brings presence, but the novel's intimacy with loss requires O'Farrell's sentences. The film shows grief. The book enacts it.
+[11:51:10.726] [PASS ] hannibal-series.json — Titles complete
+[11:51:10.726] [INFO ]   BEFORE title (67 chars): Hannibal: Book vs Series — Key Differences & Should You Read First?
+[11:51:10.727] [INFO ]   AFTER  title (64 chars): Hannibal: Harris Created the Monster. Fuller Made Him Beautiful.
+[11:51:10.727] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[11:51:10.727] [INFO ]   AFTER  meta  (129 chars): The novels are essential thrillers. The series is a gothic reinvention that stands alone. Both matter—neither replaces the other.
+[11:51:14.340] [PASS ] heated-rivalry.json — Titles complete
+[11:51:14.340] [INFO ]   BEFORE title (59 chars): Heated Rivalry: Book vs Show — Rachel Reid vs Jacob Tierney
+[11:51:14.340] [INFO ]   AFTER  title (54 chars): Heated Rivalry: Reid's Intimacy vs Tierney's Restraint
+[11:51:14.340] [INFO ]   BEFORE meta  (11 chars): Rachel Reid
+[11:51:14.341] [INFO ]   AFTER  meta  (141 chars): The novel gives you Shane's spiral in real time. The show gives you Ilya's face across a hotel room. Both hurt in ways the other can't touch.
+[11:51:29.581] [PASS ] high-fidelity.json — Titles complete
+[11:51:29.582] [INFO ]   BEFORE title (71 chars): High Fidelity: Book vs Movie — Key Differences & Should You Read First?
+[11:51:29.582] [INFO ]   AFTER  title (61 chars): High Fidelity: Hornby's London Ache vs Cusack's Chicago Charm
+[11:51:29.582] [INFO ]   BEFORE meta  (11 chars): Nick Hornby
+[11:51:29.582] [INFO ]   AFTER  meta  (133 chars): The novel's self-loathing cuts deeper. The film's warmth lands harder. Both versions understand Rob — they just love him differently.
+[11:51:34.097] [PASS ] hillbilly-elegy.json — Titles complete
+[11:51:34.098] [INFO ]   BEFORE title (73 chars): Hillbilly Elegy: Book vs Movie — Key Differences & Should You Read First?
+[11:51:34.098] [INFO ]   AFTER  title (58 chars): Hillbilly Elegy: Vance's Nuance Becomes Howard's Melodrama
+[11:51:34.098] [INFO ]   BEFORE meta  (10 chars): J.D. Vance
+[11:51:34.098] [INFO ]   AFTER  meta  (133 chars): The memoir trusts you with complexity. The film gives you Glenn Close in prosthetics and a plot that thinks poverty needs explaining.
+[11:51:37.324] [PASS ] hitchhikers-guide.json — Titles complete
+[11:51:37.325] [INFO ]   BEFORE title (94 chars): The Hitchhiker's Guide to the Galaxy: Book vs Movie — Key Differences & Should You Read First?
+[11:51:37.325] [INFO ]   AFTER  title (64 chars): Hitchhiker's Guide: Adams' Prose IS the Joke. The Film Has None.
+[11:51:37.325] [INFO ]   BEFORE meta  (13 chars): Douglas Adams
+[11:51:37.325] [INFO ]   AFTER  meta  (140 chars): The asides, the footnotes, the narrative voice — Adams built comedy into the prose itself. Jennings can only illustrate what's already lost.
+[11:51:39.935] [PASS ] howls-moving-castle.json — Titles complete
+[11:51:39.935] [INFO ]   BEFORE title (78 chars): Howl's Moving Castle: Book vs Movie — Key Differences & Should You Read First?
+[11:51:39.935] [INFO ]   AFTER  title (64 chars): Howl's Moving Castle: Jones Gives Sophie Power. Miyazaki Dreams.
+[11:51:39.935] [INFO ]   BEFORE meta  (17 chars): Diana Wynne Jones
+[11:51:39.935] [INFO ]   AFTER  meta  (131 chars): The novel is wittier and more plotted. The film is one of the great animated works. Both are essential. Neither replaces the other.
+[11:51:43.159] [PASS ] hunger-games-sunrise.json — Titles complete
+[11:51:43.160] [INFO ]   BEFORE title (55 chars): Hunger Games: Sunrise on the Reaping Book vs Movie 2026
+[11:51:43.160] [INFO ]   AFTER  title (64 chars): Hunger Games: Sunrise on the Reaping — Collins vs. Lawrence 2026
+[11:51:43.160] [INFO ]   BEFORE meta  (15 chars): Suzanne Collins
+[11:51:43.160] [INFO ]   AFTER  meta  (131 chars): Collins expands Panem's mythology on the page. Lawrence brings Fiennes to the arena. Both versions rewrite what we thought we knew.
+[11:51:47.459] [PASS ] i-am-legend.json — Titles complete
+[11:51:47.460] [INFO ]   BEFORE title (69 chars): I Am Legend: Book vs Movie — Key Differences & Should You Read First?
+[11:51:47.460] [INFO ]   AFTER  title (65 chars): I Am Legend: Matheson's Ending Redefines Horror. The Film Blinks.
+[11:51:47.460] [INFO ]   BEFORE meta  (16 chars): Richard Matheson
+[11:51:47.460] [INFO ]   AFTER  meta  (136 chars): The novel's final twist makes Neville the monster. The 2007 film keeps him the hero. One ending changes everything you thought you knew.
+[11:51:50.982] [PASS ] i-robot.json — Titles complete
+[11:51:50.982] [INFO ]   BEFORE title (66 chars): I, Robot: Book vs Movie — Key Differences & Should You Read First?
+[11:51:50.982] [INFO ]   AFTER  title (51 chars): I, Robot: Asimov's Puzzles vs. Will Smith's Punches
+[11:51:50.983] [INFO ]   BEFORE meta  (12 chars): Isaac Asimov
+[11:51:50.983] [INFO ]   AFTER  meta  (143 chars): The book is philosophy. The film is explosions with the same title. Proyas borrows the Three Laws and makes an action movie Asimov never wrote.
+[11:51:54.431] [PASS ] interview-with-the-vampire-amcplus.json — Titles complete
+[11:51:54.431] [INFO ]   BEFORE title (85 chars): Interview with the Vampire: Book vs Series — Key Differences & Should You Read First?
+[11:51:54.431] [INFO ]   AFTER  title (65 chars): Interview with the Vampire: Rice's Grief Cuts Deeper Than AMC Can
+[11:51:54.431] [INFO ]   BEFORE meta  (9 chars): Anne Rice
+[11:51:54.432] [INFO ]   AFTER  meta  (139 chars): The series reimagines race and power brilliantly, but Rice's gothic regret is something no screen version has matched. Read the book first.
+[11:51:57.598] [PASS ] into-the-wild.json — Titles complete
+[11:51:57.598] [INFO ]   BEFORE title (71 chars): Into the Wild: Book vs Movie — Key Differences & Should You Read First?
+[11:51:57.598] [INFO ]   AFTER  title (65 chars): Into the Wild: Krakauer Questions McCandless. Penn Canonizes Him.
+[11:51:57.599] [INFO ]   BEFORE meta  (12 chars): Jon Krakauer
+[11:51:57.599] [INFO ]   AFTER  meta  (133 chars): The book admits its own romanticism and complicates the myth. The film turns Chris into a saint. Read first or you'll miss the doubt.
+[11:52:00.508] [PASS ] it-ends-with-us.json — Titles complete
+[11:52:00.508] [INFO ]   BEFORE title (65 chars): It Ends With Us: Book vs Movie — Colleen Hoover vs Justin Baldoni
+[11:52:00.508] [INFO ]   AFTER  title (63 chars): It Ends With Us: Hoover's Abuse Story Loses Its Nerve on Screen
+[11:52:00.508] [INFO ]   BEFORE meta  (14 chars): Colleen Hoover
+[11:52:00.508] [INFO ]   AFTER  meta  (125 chars): The novel takes domestic violence seriously inside a romance structure. Baldoni's film softens what Hoover refused to soften.
+[11:52:04.029] [PASS ] it-muschietti.json — Titles complete
+[11:52:04.030] [INFO ]   BEFORE title (60 chars): It: Book vs Movie — Key Differences & Should You Read First?
+[11:52:04.030] [INFO ]   AFTER  title (63 chars): It: King's Novel Haunts You. Muschietti's Film Just Scares You.
+[11:52:04.030] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[11:52:04.030] [INFO ]   AFTER  meta  (139 chars): The book gives you a thousand pages of dread that lingers. The film gives you two hours of terror that fades. Both work—but only one stays.
+[11:52:07.911] [WARN ] jane-eyre.json: Titles validation: metaDesc too long: 168 chars
+[11:52:11.460] [PASS ] jurassic-park.json — Titles complete
+[11:52:11.461] [INFO ]   BEFORE title (52 chars): Jurassic Park: Book vs Movie — Crichton vs Spielberg
+[11:52:11.461] [INFO ]   AFTER  title (70 chars): Jurassic Park: Spielberg Made a Thrill Ride. Crichton Wrote a Warning.
+[11:52:11.461] [INFO ]   BEFORE meta  (16 chars): Michael Crichton
+[11:52:11.461] [INFO ]   AFTER  meta  (136 chars): The film gives you wonder and terror. The novel gives you the argument about why the park was doomed from the start. Both irreplaceable.
+[11:52:15.283] [PASS ] kite-runner.json — Titles complete
+[11:52:15.283] [INFO ]   BEFORE title (46 chars): The Kite Runner Book vs Movie: Key Differences
+[11:52:15.284] [INFO ]   AFTER  title (66 chars): The Kite Runner: Hosseini's Guilt Haunts. Forster's Just Explains.
+[11:52:15.284] [INFO ]   BEFORE meta  (15 chars): Khaled Hosseini
+[11:52:15.284] [INFO ]   AFTER  meta  (141 chars): The film shows Amir's betrayal. The book makes you live inside his shame for 300 pages. Forster's sincerity can't replicate that suffocation.
+[11:52:18.152] [PASS ] la-confidential.json — Titles complete
+[11:52:18.152] [INFO ]   BEFORE title (62 chars): LA Confidential: Book vs Movie — James Ellroy vs Curtis Hanson
+[11:52:18.153] [INFO ]   AFTER  title (60 chars): LA Confidential: Ellroy's Sprawl vs Hanson's Perfect Machine
+[11:52:18.153] [INFO ]   BEFORE meta  (12 chars): James Ellroy
+[11:52:18.153] [INFO ]   AFTER  meta  (122 chars): The novel is more ambitious, the film more perfectly constructed. This is one of the rare genuine ties—both are essential.
+[11:52:21.751] [PASS ] les-miserables.json — Titles complete
+[11:52:21.751] [INFO ]   BEFORE title (72 chars): Les Misérables: Book vs Movie — Key Differences & Should You Read First?
+[11:52:21.751] [INFO ]   AFTER  title (61 chars): Les Misérables: Hugo's Sewers and Barricades Need 1,400 Pages
+[11:52:21.752] [INFO ]   BEFORE meta  (11 chars): Victor Hugo
+[11:52:21.752] [INFO ]   AFTER  meta  (131 chars): Hooper's film gives you the songs. Hugo gives you the revolution's philosophy, Valjean's theology, and Paris itself as a character.
+[11:52:25.233] [PASS ] little-women.json — Titles complete
+[11:52:25.233] [INFO ]   BEFORE title (70 chars): Little Women: Book vs Movie — Key Differences & Should You Read First?
+[11:52:25.233] [INFO ]   AFTER  title (60 chars): Little Women: Alcott Wrote Ambition. Gerwig Filmed Its Cost.
+[11:52:25.234] [INFO ]   BEFORE meta  (17 chars): Louisa May Alcott
+[11:52:25.234] [INFO ]   AFTER  meta  (136 chars): The novel gives you Jo's refusal. The film gives you the structure of that refusal—two timelines, one compromise. Both hurt differently.
+[11:52:28.867] [PASS ] lonesome-dove.json — Titles complete
+[11:52:28.867] [INFO ]   BEFORE title (61 chars): Lonesome Dove: Book vs Miniseries — McMurtry's Epic Explained
+[11:52:28.867] [INFO ]   AFTER  title (64 chars): Lonesome Dove: McMurtry's Gus Lives in Your Head. Duvall's Dies.
+[11:52:28.868] [INFO ]   BEFORE meta  (14 chars): Larry McMurtry
+[11:52:28.868] [INFO ]   AFTER  meta  (145 chars): The novel gives you 800 pages inside Augustus McCrae. The miniseries gives you Robert Duvall's face as he bleeds out. Both wreck you differently.
+[11:52:32.531] [PASS ] looking-for-alaska.json — Titles complete
+[11:52:32.531] [INFO ]   BEFORE title (82 chars): Looking for Alaska: Book vs Hulu Series — Key Differences & Should You Read First?
+[11:52:32.531] [INFO ]   AFTER  title (60 chars): Looking for Alaska: Green's Grief Hits Where Hulu Just Aches
+[11:52:32.531] [INFO ]   BEFORE meta  (10 chars): John Green
+[11:52:32.532] [INFO ]   AFTER  meta  (134 chars): The series gives you Alaska's death. The book makes you live inside Miles' head as he tries to understand it. One aches. One destroys.
+[11:52:35.997] [PASS ] lord-of-the-flies.json — Titles complete
+[11:52:35.997] [INFO ]   BEFORE title (75 chars): Lord of the Flies: Book vs Movie — Key Differences & Should You Read First?
+[11:52:35.997] [INFO ]   AFTER  title (60 chars): Lord of the Flies: Golding Implicates You. Brook Just Shows.
+[11:52:35.998] [INFO ]   BEFORE meta  (15 chars): William Golding
+[11:52:35.998] [INFO ]   AFTER  meta  (132 chars): The novel's prose makes you complicit in the horror. The film only lets you watch boys descend. Read first or you miss the argument.
+[11:52:39.623] [PASS ] love-simon.json — Titles complete
+[11:52:39.623] [INFO ]   BEFORE title (76 chars): Simon vs. the Homo Sapiens Agenda: Book vs Movie — Key Differences & Verdict
+[11:52:39.623] [INFO ]   AFTER  title (55 chars): Love, Simon: The Film Softens What Albertalli Made Ache
+[11:52:39.624] [INFO ]   BEFORE meta  (16 chars): Becky Albertalli
+[11:52:39.624] [INFO ]   AFTER  meta  (149 chars): Berlanti's adaptation turns Simon's messy, anxious coming-out into a feel-good rom-com. The book's sharper edges — and deeper loneliness — disappear.
+[11:52:42.976] [PASS ] margos-got-money-troubles.json — Titles complete
+[11:52:42.977] [INFO ]   BEFORE title (72 chars): Margo's Got Money Troubles: Book vs TV Series — Rufi Thorpe vs Apple TV+
+[11:52:42.977] [INFO ]   AFTER  title (64 chars): Margo's Got Money Troubles: Thorpe's Sharp Edges Get Sanded Down
+[11:52:42.977] [INFO ]   BEFORE meta  (11 chars): Rufi Thorpe
+[11:52:42.977] [INFO ]   AFTER  meta  (142 chars): The novel is funnier and meaner than the series dares to be. Walsh's casting is perfect, but Kelley's warmth softens what made the book sting.
+[11:52:47.029] [PASS ] me-before-you.json — Titles complete
+[11:52:47.029] [INFO ]   BEFORE title (58 chars): Me Before You: Book vs Movie — Jojo Moyes vs Thea Sharrock
+[11:52:47.029] [INFO ]   AFTER  title (56 chars): Me Before You: Moyes Wrote What Clarke Can't Quite Carry
+[11:52:47.030] [INFO ]   BEFORE meta  (10 chars): Jojo Moyes
+[11:52:47.030] [INFO ]   AFTER  meta  (131 chars): The novel trusts you with the moral weight. The film softens it into something safer. Clarke is luminous, but Moyes doesn't flinch.
+[11:52:50.154] [PASS ] mickey-17.json — Titles complete
+[11:52:50.155] [INFO ]   BEFORE title (67 chars): Mickey 17: Book vs Movie — Key Differences & Should You Read First?
+[11:52:50.155] [INFO ]   AFTER  title (58 chars): Mickey 17: Ashton's Clones Ask Questions Bong Can't Answer
+[11:52:50.155] [INFO ]   BEFORE meta  (13 chars): Edward Ashton
+[11:52:50.155] [INFO ]   AFTER  meta  (130 chars): Bong's visuals are stunning, but the novel's philosophical core—what makes a person a person—gets lost in translation. Read first.
+[11:52:54.022] [PASS ] misery.json — Titles complete
+[11:52:54.022] [INFO ]   BEFORE title (50 chars): Misery: Book vs Movie — Stephen King vs Rob Reiner
+[11:52:54.022] [INFO ]   AFTER  title (45 chars): Misery: King's Axe vs Bates's Face — Both Win
+[11:52:54.022] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[11:52:54.022] [INFO ]   AFTER  meta  (138 chars): The novel gives you the full horror of the hobbling. The film gives you Kathy Bates. One of the rare King adaptations where neither loses.
+[11:52:57.130] [PASS ] my-brilliant-friend.json — Titles complete
+[11:52:57.131] [INFO ]   BEFORE title (82 chars): My Brilliant Friend: Book vs HBO Series — Key Differences & Should You Read First?
+[11:52:57.131] [INFO ]   AFTER  title (66 chars): My Brilliant Friend: Ferrante's Naples Lives. The Film Just Visits
+[11:52:57.131] [INFO ]   BEFORE meta  (14 chars): Elena Ferrante
+[11:52:57.131] [INFO ]   AFTER  meta  (133 chars): The series captures faces and streets, but Ferrante's prose makes you feel the weight of every friendship betrayal and class barrier.
+[11:53:00.117] [PASS ] my-sisters-keeper.json — Titles complete
+[11:53:00.117] [INFO ]   BEFORE title (76 chars): My Sister's Keeper: Book vs Movie — Key Differences & Should You Read First?
+[11:53:00.118] [INFO ]   AFTER  title (66 chars): My Sister's Keeper: The Film Erases the Ending That Justifies Anna
+[11:53:00.118] [INFO ]   BEFORE meta  (12 chars): Jodi Picoult
+[11:53:00.118] [INFO ]   AFTER  meta  (117 chars): Cassavetes rewrites Picoult's devastating final twist into a tidy resolution. The ethical stakes collapse without it.
+[11:53:03.866] [PASS ] narnia-magicians-nephew.json — Titles complete
+[11:53:03.866] [INFO ]   BEFORE title (48 chars): Narnia: The Magician's Nephew Book vs Movie 2026
+[11:53:03.867] [INFO ]   AFTER  title (57 chars): The Magician's Nephew: Lewis Created a World. Can Gerwig?
+[11:53:03.867] [INFO ]   BEFORE meta  (10 chars): C.S. Lewis
+[11:53:03.867] [INFO ]   AFTER  meta  (129 chars): Lewis's Narnia origin story is one of literature's great acts of world-building. Gerwig's 2026 film faces an impossible standard.
+[11:53:07.617] [PASS ] never-let-me-go.json — Titles complete
+[11:53:07.617] [INFO ]   BEFORE title (50 chars): Never Let Me Go Book vs Movie: Ishiguro vs Romanek
+[11:53:07.617] [INFO ]   AFTER  title (60 chars): Never Let Me Go: Romanek's Faithful. Ishiguro's Devastating.
+[11:53:07.618] [INFO ]   BEFORE meta  (14 chars): Kazuo Ishiguro
+[11:53:07.618] [INFO ]   AFTER  meta  (123 chars): The film gets every scene right and still can't replicate what Ishiguro does with Kathy's voice. Faithfulness isn't enough.
+[11:53:10.268] [PASS ] normal-people.json — Titles complete
+[11:53:10.268] [INFO ]   BEFORE title (68 chars): Normal People: Book vs TV Series — Sally Rooney Adaptation Explained
+[11:53:10.268] [INFO ]   AFTER  title (50 chars): Normal People: Rooney's Silences vs. Mescal's Face
+[11:53:10.268] [INFO ]   BEFORE meta  (12 chars): Sally Rooney
+[11:53:10.269] [INFO ]   AFTER  meta  (131 chars): The prose withholds what the camera reveals. The camera reveals what the prose withholds. Both are essential for different reasons.
+[11:53:13.637] [PASS ] of-mice-and-men.json — Titles complete
+[11:53:13.637] [INFO ]   BEFORE title (73 chars): Of Mice and Men: Book vs Movie — Key Differences & Should You Read First?
+[11:53:13.637] [INFO ]   AFTER  title (62 chars): Of Mice and Men: Steinbeck's Spare Prose vs Malkovich's Lennie
+[11:53:13.637] [INFO ]   BEFORE meta  (14 chars): John Steinbeck
+[11:53:13.638] [INFO ]   AFTER  meta  (138 chars): Steinbeck wrote inevitability into every line. Sinise and Malkovich made you see it coming and still broke your heart. Both are essential.
+[11:53:17.789] [PASS ] olive-kitteridge.json — Titles complete
+[11:53:17.789] [INFO ]   BEFORE title (83 chars): Olive Kitteridge: Book vs HBO Miniseries — Key Differences & Should You Read First?
+[11:53:17.790] [INFO ]   AFTER  title (59 chars): Olive Kitteridge: Strout's Fractures Need 13 Stories, Not 4
+[11:53:17.790] [INFO ]   BEFORE meta  (16 chars): Elizabeth Strout
+[11:53:17.790] [INFO ]   AFTER  meta  (118 chars): The novel's mosaic structure makes Olive unknowable in ways that matter. HBO's compression makes her merely difficult.
+[11:53:21.843] [PASS ] on-the-road.json — Titles complete
+[11:53:21.843] [INFO ]   BEFORE title (53 chars): On the Road: Book vs Movie — Kerouac vs Walter Salles
+[11:53:21.844] [INFO ]   AFTER  title (63 chars): On the Road: The Jazz Is in Kerouac's Sentences, Not the Scenes
+[11:53:21.844] [INFO ]   BEFORE meta  (12 chars): Jack Kerouac
+[11:53:21.844] [INFO ]   AFTER  meta  (147 chars): Salles films the events beautifully. But the road lives in Kerouac's prose rhythm—what made the book a generation's Bible can't transfer to screen.
+[11:53:26.087] [PASS ] one-day.json — Titles complete
+[11:53:26.087] [INFO ]   BEFORE title (65 chars): One Day: Book vs Movie — Key Differences & Should You Read First?
+[11:53:26.087] [INFO ]   AFTER  title (65 chars): One Day: Nicholls's 20-Year Arc Breaks You. The Film Just Rushes.
+[11:53:26.088] [INFO ]   BEFORE meta  (14 chars): David Nicholls
+[11:53:26.088] [INFO ]   AFTER  meta  (132 chars): The novel's annual snapshots accumulate into tragedy. The 2011 film compresses them into sentiment. Hathaway's casting doesn't help.
+[11:53:28.866] [PASS ] one-flew-over-the-cuckoos-nest.json — Titles complete
+[11:53:28.866] [INFO ]   BEFORE title (56 chars): One Flew Over the Cuckoo's Nest: Book vs Movie Explained
+[11:53:28.867] [INFO ]   AFTER  title (61 chars): One Flew Over the Cuckoo's Nest: Kesey Gives You Chief's Mind
+[11:53:28.867] [INFO ]   BEFORE meta  (9 chars): Ken Kesey
+[11:53:28.867] [INFO ]   AFTER  meta  (131 chars): Forman made a masterpiece by removing what makes Kesey's novel a masterpiece—Bromden's narrating consciousness. Both are essential.
+[11:53:32.804] [PASS ] outlander.json — Titles complete
+[11:53:32.804] [INFO ]   BEFORE title (54 chars): Outlander: Book vs TV Series — Diana Gabaldon vs Starz
+[11:53:32.804] [INFO ]   AFTER  title (62 chars): Outlander: Gabaldon's Jamie Lives in Your Head. Heughan Can't.
+[11:53:32.804] [INFO ]   BEFORE meta  (14 chars): Diana Gabaldon
+[11:53:32.805] [INFO ]   AFTER  meta  (150 chars): The series cast it perfectly and the first season soars, but the novel's interiority makes Claire's impossible choice feel real in ways TV never will.
+[11:53:36.076] [PASS ] pachinko.json — Titles complete
+[11:53:36.076] [INFO ]   BEFORE title (62 chars): Pachinko: Book vs Apple TV+ Series — Key Differences Explained
+[11:53:36.076] [INFO ]   AFTER  title (60 chars): Pachinko: Lee's Four Generations Need 500 Pages, Not 8 Hours
+[11:53:36.076] [INFO ]   BEFORE meta  (11 chars): Min Jin Lee
+[11:53:36.076] [INFO ]   AFTER  meta  (133 chars): The series is stunning—but it compresses what Lee spent decades building. You lose the weight of time, and that weight is everything.
+[11:53:39.835] [WARN ] people-we-meet-on-vacation.json: Titles validation: pageTitle too long: 71 chars | metaDesc too long: 178 chars
+[11:53:44.145] [WARN ] perks-of-being-a-wallflower.json: Titles validation: pageTitle too long: 85 chars
+[11:53:47.904] [PASS ] pet-sematary-2019.json — Titles complete
+[11:53:47.904] [INFO ]   BEFORE title (70 chars): Pet Sematary: Book vs Movie — Key Differences & Should You Read First?
+[11:53:47.905] [INFO ]   AFTER  title (65 chars): Pet Sematary: King Scared Himself. The 2019 Film Just Scares You.
+[11:53:47.905] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[11:53:47.905] [INFO ]   AFTER  meta  (132 chars): King wrote the book that frightened him most—about a father's love turning monstrous. The film changes the twist without earning it.
+[11:53:52.038] [PASS ] presumed-innocent.json — Titles complete
+[11:53:52.038] [INFO ]   BEFORE title (76 chars): Presumed Innocent: Book vs Series — Key Differences & Should You Read First?
+[11:53:52.038] [INFO ]   AFTER  title (62 chars): Presumed Innocent: Turow Invented the Genre. Gyllenhaal Can't.
+[11:53:52.039] [INFO ]   BEFORE meta  (11 chars): Scott Turow
+[11:53:52.039] [INFO ]   AFTER  meta  (139 chars): The 1987 novel created the legal thriller template. The 2024 series updates it beautifully, but Rusty's inner voice belongs to Turow alone.
+[11:53:54.986] [PASS ] pride-and-prejudice.json — Titles complete
+[11:53:54.987] [INFO ]   BEFORE title (62 chars): Pride and Prejudice: Book vs Movie — Jane Austen vs Joe Wright
+[11:53:54.987] [INFO ]   AFTER  title (49 chars): Pride and Prejudice: Austen's Wit Can't Be Filmed
+[11:53:54.987] [INFO ]   BEFORE meta  (11 chars): Jane Austen
+[11:53:54.988] [INFO ]   AFTER  meta  (128 chars): Wright's 2005 film is beautiful, Macfadyen's Darcy is perfect, but the novel's formal precision and irony live only on the page.
+[11:53:58.610] [PASS ] project-hail-mary.json — Titles complete
+[11:53:58.610] [INFO ]   BEFORE title (55 chars): Project Hail Mary Book vs Movie: Should You Read First?
+[11:53:58.611] [INFO ]   AFTER  title (56 chars): Project Hail Mary: Weir's Science Is Joy. Film Can't Be.
+[11:53:58.611] [INFO ]   BEFORE meta  (9 chars): Andy Weir
+[11:53:58.611] [INFO ]   AFTER  meta  (142 chars): The novel makes problem-solving feel like wonder. Gosling will give you stakes, but he can't give you the equations that make this story sing.
+[11:54:01.747] [PASS ] ready-player-one.json — Titles complete
+[11:54:01.747] [INFO ]   BEFORE title (59 chars): Ready Player One: Book vs Movie — Ernest Cline vs Spielberg
+[11:54:01.747] [INFO ]   AFTER  title (61 chars): Ready Player One: Cline's Geek Bible vs Spielberg's Spectacle
+[11:54:01.747] [INFO ]   BEFORE meta  (12 chars): Ernest Cline
+[11:54:01.747] [INFO ]   AFTER  meta  (145 chars): The novel rewards obsession with internal logic. Spielberg made a theme park ride that forgets why any of it mattered to Wade in the first place.
+[11:54:05.027] [PASS ] rebecca.json — Titles complete
+[11:54:05.027] [INFO ]   BEFORE title (55 chars): Rebecca: Book vs Movie — Daphne du Maurier vs Hitchcock
+[11:54:05.028] [INFO ]   AFTER  title (59 chars): Rebecca: Du Maurier's Ending Is Dark. Hitchcock's Is Tamed.
+[11:54:05.028] [INFO ]   BEFORE meta  (17 chars): Daphne du Maurier
+[11:54:05.028] [INFO ]   AFTER  meta  (130 chars): The novel ends with complicity and moral rot. The film ends with a fire and relief. Du Maurier wrote what Hitchcock couldn't show.
+[11:54:08.084] [PASS ] remains-of-the-day.json — Titles complete
+[11:54:08.084] [INFO ]   BEFORE title (63 chars): The Remains of the Day: Book vs Movie — Ishiguro vs James Ivory
+[11:54:08.084] [INFO ]   AFTER  title (62 chars): The Remains of the Day: What Stevens Won't Say Can't Be Filmed
+[11:54:08.085] [INFO ]   BEFORE meta  (14 chars): Kazuo Ishiguro
+[11:54:08.085] [INFO ]   AFTER  meta  (143 chars): Ishiguro's meaning lives in the silences between words. Hopkins gives you the face, but the novel gives you the devastating refusal beneath it.
+[11:54:11.424] [PASS ] remarkably-bright-creatures.json — Titles complete
+[11:54:11.424] [INFO ]   BEFORE title (48 chars): Remarkably Bright Creatures Book vs Netflix 2026
+[11:54:11.425] [INFO ]   AFTER  title (66 chars): Remarkably Bright Creatures: The Octopus Loses His Voice on Screen
+[11:54:11.425] [INFO ]   BEFORE meta  (15 chars): Shelby Van Pelt
+[11:54:11.425] [INFO ]   AFTER  meta  (142 chars): Van Pelt's novel is narrated by Marcellus the octopus. Netflix can't replicate that without turning charm into gimmick. Field deserves better.
+[11:54:14.734] [PASS ] reminders-of-him.json — Titles complete
+[11:54:14.734] [INFO ]   BEFORE title (67 chars): Reminders of Him: Book vs Movie — Colleen Hoover vs Vanessa Caswill
+[11:54:14.734] [INFO ]   AFTER  title (65 chars): Reminders of Him: Hoover's Grief Hits Harder Than Monroe Can Show
+[11:54:14.735] [INFO ]   BEFORE meta  (14 chars): Colleen Hoover
+[11:54:14.735] [INFO ]   AFTER  meta  (129 chars): Caswill's film is faithful and Monroe delivers, but Kenna's interiority — the weight of what she's lost — only lands on the page.
+[11:54:19.051] [PASS ] room.json — Titles complete
+[11:54:19.051] [INFO ]   BEFORE title (42 chars): Room Book vs Movie: Donoghue vs Abrahamson
+[11:54:19.051] [INFO ]   AFTER  title (55 chars): Room: Jack's Voice on the Page, Larson's Face on Screen
+[11:54:19.051] [INFO ]   BEFORE meta  (13 chars): Emma Donoghue
+[11:54:19.051] [INFO ]   AFTER  meta  (146 chars): Donoghue's first-person narration gives you Jack's mind. Larson and Tremblay give you something the novel can't: Ma's breaking point in real time.
+[11:54:33.986] [PASS ] roots-2016.json — Titles complete
+[11:54:33.986] [INFO ]   BEFORE title (73 chars): Roots: Book vs 2016 Miniseries — Key Differences & Should You Read First?
+[11:54:33.986] [INFO ]   AFTER  title (60 chars): Roots: Haley's Generations Feel Real. The Miniseries Rushes.
+[11:54:33.986] [INFO ]   BEFORE meta  (10 chars): Alex Haley
+[11:54:33.986] [INFO ]   AFTER  meta  (136 chars): The 2016 remake compresses seven generations into spectacle. Haley gives you the weight of each life lived. The difference is immersion.
+[11:54:37.521] [PASS ] rosemarys-baby.json — Titles complete
+[11:54:37.521] [INFO ]   BEFORE title (73 chars): Rosemary's Baby: Book vs Movie — Key Differences & Should You Read First?
+[11:54:37.522] [INFO ]   AFTER  title (65 chars): Rosemary's Baby: Levin's Paranoia, Farrow's Face — Both Essential
+[11:54:37.522] [INFO ]   BEFORE meta  (9 chars): Ira Levin
+[11:54:37.522] [INFO ]   AFTER  meta  (131 chars): The novel plants the conspiracy in your head. The film traps you in the Bramford with Mia Farrow. Neither version lets you breathe.
+[11:54:40.410] [PASS ] schindlers-list.json — Titles complete
+[11:54:40.410] [INFO ]   BEFORE title (69 chars): Schindler's List: Book vs Movie — One of the Rare Times the Film Wins
+[11:54:40.410] [INFO ]   AFTER  title (55 chars): Schindler's List: Spielberg Made What Keneally Couldn't
+[11:54:40.410] [INFO ]   BEFORE meta  (15 chars): Thomas Keneally
+[11:54:40.411] [INFO ]   AFTER  meta  (144 chars): The girl in red. Neeson's silence. The shower scene. Cinema does things with this story prose can't—this is one of the rare times the film wins.
+[11:54:44.281] [PASS ] seabiscuit.json — Titles complete
+[11:54:44.282] [INFO ]   BEFORE title (68 chars): Seabiscuit: Book vs Movie — Key Differences & Should You Read First?
+[11:54:44.282] [INFO ]   AFTER  title (59 chars): Seabiscuit: Hillenbrand's Depression-Era Detail Drowns Ross
+[11:54:44.282] [INFO ]   BEFORE meta  (17 chars): Laura Hillenbrand
+[11:54:44.282] [INFO ]   AFTER  meta  (146 chars): The film gives you the horse race. The book gives you the jockey's cracked ribs, the owner's grief, the trainer's instinct—the whole aching world.
+[11:54:47.914] [PASS ] sense-and-sensibility.json — Titles complete
+[11:54:47.914] [INFO ]   BEFORE title (61 chars): Sense and Sensibility: Book vs Movie — Jane Austen vs Ang Lee
+[11:54:47.915] [INFO ]   AFTER  title (57 chars): Sense and Sensibility: Austen's Precision vs Lee's Warmth
+[11:54:47.915] [INFO ]   BEFORE meta  (11 chars): Jane Austen
+[11:54:47.915] [INFO ]   AFTER  meta  (144 chars): Thompson's script is brilliant, but Austen's formal control makes every emotional beat land harder. The film is exceptional. The book is better.
+[11:54:51.769] [PASS ] shadow-and-bone.json — Titles complete
+[11:54:51.770] [INFO ]   BEFORE title (74 chars): Shadow and Bone: Book vs Series — Key Differences & Should You Read First?
+[11:54:51.770] [INFO ]   AFTER  title (61 chars): Shadow and Bone: Bardugo's Villain Earns What Netflix Borrows
+[11:54:51.770] [INFO ]   BEFORE meta  (13 chars): Leigh Bardugo
+[11:54:51.770] [INFO ]   AFTER  meta  (128 chars): The Darkling works because Bardugo built him across 400 pages. The series imports Kaz and Inej to compensate for what it rushes.
+[11:55:06.397] [PASS ] sharp-objects.json — Titles complete
+[11:55:06.397] [INFO ]   BEFORE title (72 chars): Sharp Objects: Book vs Series — Key Differences & Should You Read First?
+[11:55:06.398] [INFO ]   AFTER  title (59 chars): Sharp Objects: Flynn's Interiority Is What Adams Can't Show
+[11:55:06.398] [INFO ]   BEFORE meta  (13 chars): Gillian Flynn
+[11:55:06.398] [INFO ]   AFTER  meta  (133 chars): Vallée's series is gorgeous and Adams is haunting—but Camille's self-destruction only suffocates when you're trapped inside her head.
+[11:55:09.823] [PASS ] shogun-2024.json — Titles complete
+[11:55:09.823] [INFO ]   BEFORE title (65 chars): Shogun: Book vs Series — Key Differences & Should You Read First?
+[11:55:09.823] [INFO ]   AFTER  title (60 chars): Shogun: Clavell's Blackthorne Can't See What the Series Does
+[11:55:09.824] [INFO ]   BEFORE meta  (13 chars): James Clavell
+[11:55:09.824] [INFO ]   AFTER  meta  (129 chars): The novel traps you in Blackthorne's perspective. The series gives Toranaga and Mariko their own voices — and changes everything.
+[11:55:14.415] [PASS ] silence-of-the-lambs.json — Titles complete
+[11:55:14.415] [INFO ]   BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:55:14.416] [INFO ]   AFTER  title (58 chars): Silence of the Lambs: Harris Wrote Dread. Demme Filmed It.
+[11:55:14.416] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[11:55:14.416] [INFO ]   AFTER  meta  (128 chars): The rare adaptation where Hopkins owns what Harris invented and neither version loses. Both are essential—for different reasons.
+[11:55:17.656] [PASS ] sophies-choice.json — Titles complete
+[11:55:17.656] [INFO ]   BEFORE title (73 chars): Sophie's Choice: Book vs Movie — Key Differences & Should You Read First?
+[11:55:17.656] [INFO ]   AFTER  title (63 chars): Sophie's Choice: Streep Owns the Screen. Styron Owns Your Mind.
+[11:55:17.656] [INFO ]   BEFORE meta  (14 chars): William Styron
+[11:55:17.656] [INFO ]   AFTER  meta  (122 chars): The film gives you Meryl's face in the moment. The novel gives you the decades of silence that made the moment inevitable.
+[11:55:21.156] [PASS ] sphere.json — Titles complete
+[11:55:21.156] [INFO ]   BEFORE title (64 chars): Sphere: Book vs Movie — Key Differences & Should You Read First?
+[11:55:21.156] [INFO ]   AFTER  title (67 chars): Sphere: Crichton's Paranoia Is Suffocating. Levinson's Is Just Wet.
+[11:55:21.157] [INFO ]   BEFORE meta  (16 chars): Michael Crichton
+[11:55:21.157] [INFO ]   AFTER  meta  (142 chars): The novel traps you inside minds unraveling. The film traps you in a submarine set. One is psychological horror; the other is just underwater.
+[11:55:24.076] [PASS ] stardust.json — Titles complete
+[11:55:24.076] [INFO ]   BEFORE title (66 chars): Stardust: Book vs Movie — Key Differences & Should You Read First?
+[11:55:24.076] [INFO ]   AFTER  title (57 chars): Stardust: Gaiman Wrote a Fairy Tale. Vaughn Made It Warm.
+[11:55:24.076] [INFO ]   BEFORE meta  (11 chars): Neil Gaiman
+[11:55:24.076] [INFO ]   AFTER  meta  (132 chars): The novel is elegant Victorian fantasy. The film is funnier, warmer, and fixes the ending. Both own something the other can't touch.
+[11:55:27.040] [PASS ] station-eleven.json — Titles complete
+[11:55:27.040] [INFO ]   BEFORE title (64 chars): Station Eleven: Book vs TV Series — Emily St. John Mandel vs HBO
+[11:55:27.040] [INFO ]   AFTER  title (61 chars): Station Eleven: Mandel's Precision vs Somerville's Generosity
+[11:55:27.040] [INFO ]   BEFORE meta  (21 chars): Emily St. John Mandel
+[11:55:27.040] [INFO ]   AFTER  meta  (132 chars): The novel constructs what survives. The series makes you feel why it matters. Both are essential, and neither can replace the other.
+[11:55:30.424] [WARN ] talented-mr-ripley.json: Titles validation: pageTitle too long: 74 chars
+[11:55:33.730] [PASS ] the-book-thief.json — Titles complete
+[11:55:33.731] [INFO ]   BEFORE title (72 chars): The Book Thief: Book vs Movie — Key Differences & Should You Read First?
+[11:55:33.731] [INFO ]   AFTER  title (67 chars): The Book Thief: Death's Voice Makes the Book. The Film Is Just War.
+[11:55:33.731] [INFO ]   BEFORE meta  (12 chars): Markus Zusak
+[11:55:33.731] [INFO ]   AFTER  meta  (143 chars): Zusak's narrator transforms a WWII story into something formally extraordinary. Percival's film is handsome but conventional—the voice is gone.
+[11:55:37.024] [PASS ] the-client.json — Titles complete
+[11:55:37.024] [INFO ]   BEFORE title (68 chars): The Client: Book vs Movie — Key Differences & Should You Read First?
+[11:55:37.024] [INFO ]   AFTER  title (64 chars): The Client: Grisham's Mark Sway Has Depth Schumacher Can't Touch
+[11:55:37.024] [INFO ]   BEFORE meta  (12 chars): John Grisham
+[11:55:37.024] [INFO ]   AFTER  meta  (144 chars): The film gives you a precocious kid. The book gives you a traumatized child making impossible choices. Schumacher simplifies what Grisham earns.
+[11:55:40.842] [PASS ] the-color-purple.json — Titles complete
+[11:55:40.842] [INFO ]   BEFORE title (66 chars): The Color Purple: Book vs Movie — Alice Walker vs Steven Spielberg
+[11:55:40.842] [INFO ]   AFTER  title (64 chars): The Color Purple: Walker's Letters Cut Deeper Than Spielberg Can
+[11:55:40.843] [INFO ]   BEFORE meta  (12 chars): Alice Walker
+[11:55:40.843] [INFO ]   AFTER  meta  (154 chars): The novel's epistolary form makes Celie's voice radical. The film makes it palatable. Goldberg is extraordinary, but she's performing what Walker enacted.
+[11:55:44.201] [PASS ] the-count-of-monte-cristo.json — Titles complete
+[11:55:44.201] [INFO ]   BEFORE title (83 chars): The Count of Monte Cristo: Book vs Movie — Key Differences & Should You Read First?
+[11:55:44.201] [INFO ]   AFTER  title (61 chars): The Count of Monte Cristo: The Film Rushes What Dumas Savored
+[11:55:44.201] [INFO ]   BEFORE meta  (15 chars): Alexandre Dumas
+[11:55:44.202] [INFO ]   AFTER  meta  (136 chars): The 2025 film compresses Dumas's sprawling revenge into spectacle. The novel earns its justice through patience the screen can't afford.
+[11:55:47.260] [PASS ] the-electric-state.json — Titles complete
+[11:55:47.261] [INFO ]   BEFORE title (76 chars): The Electric State: Book vs Movie — Key Differences & Should You Read First?
+[11:55:47.261] [INFO ]   AFTER  title (68 chars): The Electric State: Stålenhag's Silence Is What the Russos Can't Buy
+[11:55:47.261] [INFO ]   BEFORE meta  (15 chars): Simon Stålenhag
+[11:55:47.261] [INFO ]   AFTER  meta  (138 chars): The book haunts through restraint and Stålenhag's paintings. The film trades atmosphere for spectacle and loses what made the world eerie.
+[11:55:50.923] [PASS ] the-fault-in-our-stars.json — Titles complete
+[11:55:50.923] [INFO ]   BEFORE title (80 chars): The Fault in Our Stars: Book vs Movie — Key Differences & Should You Read First?
+[11:55:50.924] [INFO ]   AFTER  title (63 chars): The Fault in Our Stars: Green's Wit Survives What Boone Softens
+[11:55:50.924] [INFO ]   BEFORE meta  (10 chars): John Green
+[11:55:50.924] [INFO ]   AFTER  meta  (138 chars): The film is faithful but too polished—Green's sharpness about dying becomes something safer. Read first: Hazel's voice is the whole point.
+[11:55:54.243] [PASS ] the-firm.json — Titles complete
+[11:55:54.243] [INFO ]   BEFORE title (56 chars): The Firm: Book vs Movie — John Grisham vs Sydney Pollack
+[11:55:54.244] [INFO ]   AFTER  title (64 chars): The Firm: Grisham's Ending Is Brilliant. Pollack Throws It Away.
+[11:55:54.244] [INFO ]   BEFORE meta  (12 chars): John Grisham
+[11:55:54.244] [INFO ]   AFTER  meta  (135 chars): The novel's final twist rewrites the entire thriller. The film replaces it with a courtroom speech. Cruise is electric, but read first.
+[11:55:57.576] [PASS ] the-girl-with-the-dragon-tattoo-fincher.json — Titles complete
+[11:55:57.576] [INFO ]   BEFORE title (89 chars): The Girl with the Dragon Tattoo: Book vs Movie — Key Differences & Should You Read First?
+[11:55:57.576] [INFO ]   AFTER  title (62 chars): Dragon Tattoo: Larsson's Lisbeth vs Fincher's — Both Essential
+[11:55:57.576] [INFO ]   BEFORE meta  (13 chars): Stieg Larsson
+[11:55:57.577] [INFO ]   AFTER  meta  (126 chars): The book gives you her world. Fincher gives you cinema's coldest entrance. Neither version replaces the other — you need both.
+[11:56:00.903] [PASS ] the-giver.json — Titles complete
+[11:56:00.903] [INFO ]   BEFORE title (67 chars): The Giver: Book vs Movie — Key Differences & Should You Read First?
+[11:56:00.903] [INFO ]   AFTER  title (59 chars): The Giver: Lowry's Restraint Does What Noyce's Action Can't
+[11:56:00.904] [INFO ]   BEFORE meta  (10 chars): Lois Lowry
+[11:56:00.904] [INFO ]   AFTER  meta  (137 chars): The novel withholds. The film explains. One creates dread, the other just spectacle. Lowry's quiet devastation doesn't survive expansion.
+[11:56:04.189] [WARN ] the-glass-castle.json: Titles validation: pageTitle too long: 72 chars
+[11:56:07.163] [PASS ] the-great-gatsby.json — Titles complete
+[11:56:07.164] [INFO ]   BEFORE title (60 chars): The Great Gatsby: Book vs Movie — Fitzgerald vs Baz Luhrmann
+[11:56:07.164] [INFO ]   AFTER  title (62 chars): The Great Gatsby: Fitzgerald's 180 Pages Last. Luhrmann Fades.
+[11:56:07.164] [INFO ]   BEFORE meta  (19 chars): F. Scott Fitzgerald
+[11:56:07.164] [INFO ]   AFTER  meta  (139 chars): DiCaprio's face can't carry what Fitzgerald makes permanent in three hours of reading. The novel is the thing — the film is just beautiful.
+[11:56:11.277] [PASS ] the-handmaids-tale.json — Titles complete
+[11:56:11.278] [INFO ]   BEFORE title (72 chars): The Handmaid's Tale: Book vs Movie vs TV — Atwood vs Schlöndorff vs Hulu
+[11:56:11.278] [INFO ]   AFTER  title (59 chars): The Handmaid's Tale: Atwood's Precision vs Hulu's Expansion
+[11:56:11.278] [INFO ]   BEFORE meta  (15 chars): Margaret Atwood
+[11:56:11.278] [INFO ]   AFTER  meta  (149 chars): The novel is formally perfect. The series extends it into spectacle. Schlöndorff's film misses both. Read Atwood first or you'll never feel the trap.
+[11:56:14.410] [PASS ] the-haunting-of-hill-house.json — Titles complete
+[11:56:14.411] [INFO ]   BEFORE title (85 chars): The Haunting of Hill House: Book vs Series — Key Differences & Should You Read First?
+[11:56:14.411] [INFO ]   AFTER  title (63 chars): The Haunting of Hill House: Jackson's Mind vs Flanagan's Family
+[11:56:14.411] [INFO ]   BEFORE meta  (15 chars): Shirley Jackson
+[11:56:14.411] [INFO ]   AFTER  meta  (140 chars): Jackson traps you in Eleanor's consciousness. Flanagan builds a family tragedy across decades. Both are masterworks that share only a house.
+[11:56:18.026] [PASS ] the-help.json — Titles complete
+[11:56:18.026] [INFO ]   BEFORE title (66 chars): The Help: Book vs Movie — Key Differences & Should You Read First?
+[11:56:18.026] [INFO ]   AFTER  title (59 chars): The Help: Stockett's Three Voices Do What Davis Alone Can't
+[11:56:18.026] [INFO ]   BEFORE meta  (16 chars): Kathryn Stockett
+[11:56:18.026] [INFO ]   AFTER  meta  (144 chars): The film has Viola Davis. The book has Aibileen, Minny, and Skeeter each claiming their own chapters. That structural choice changes everything.
+[11:56:21.434] [PASS ] the-hours.json — Titles complete
+[11:56:21.435] [INFO ]   BEFORE title (67 chars): The Hours: Book vs Movie — Key Differences & Should You Read First?
+[11:56:21.435] [INFO ]   AFTER  title (54 chars): The Hours: Cunningham's Rhythms vs. Three Performances
+[11:56:21.435] [INFO ]   BEFORE meta  (18 chars): Michael Cunningham
+[11:56:21.435] [INFO ]   AFTER  meta  (132 chars): The novel echoes Woolf's prose in ways film can't. The film gives you Kidman, Moore, and Streep in ways prose can't. Both essential.
+[11:56:25.700] [PASS ] the-housemaid.json — Titles complete
+[11:56:25.700] [INFO ]   BEFORE title (59 chars): The Housemaid: Book vs Movie — Freida McFadden vs Paul Feig
+[11:56:25.700] [INFO ]   AFTER  title (58 chars): The Housemaid: McFadden's Payoff Lands. Feig's Just Winks.
+[11:56:25.700] [INFO ]   BEFORE meta  (15 chars): Freida McFadden
+[11:56:25.701] [INFO ]   AFTER  meta  (145 chars): The novel earns its twist through precision. The film trades suspense for camp and one great performance. Read first or the reveal means nothing.
+[11:56:29.592] [PASS ] the-lincoln-lawyer.json — Titles complete
+[11:56:29.592] [INFO ]   BEFORE title (76 chars): The Lincoln Lawyer: Book vs Movie — Key Differences & Should You Read First?
+[11:56:29.593] [INFO ]   AFTER  title (66 chars): The Lincoln Lawyer: Connelly's Trap Tightens. The Film Just Moves.
+[11:56:29.593] [INFO ]   BEFORE meta  (16 chars): Michael Connelly
+[11:56:29.593] [INFO ]   AFTER  meta  (150 chars): The book makes you feel Haller realising he's been played. McConaughey sells the charm, but Furman rushes past the dread Connelly builds page by page.
+[11:56:36.562] [WARN ] the-longest-ride.json: Titles validation: pageTitle too long: 72 chars
+[11:56:41.723] [PASS ] the-lovely-bones.json — Titles complete
+[11:56:41.724] [INFO ]   BEFORE title (74 chars): The Lovely Bones: Book vs Movie — Key Differences & Should You Read First?
+[11:56:41.724] [INFO ]   AFTER  title (59 chars): The Lovely Bones: Sebold's Restraint vs Jackson's Spectacle
+[11:56:41.724] [INFO ]   BEFORE meta  (12 chars): Alice Sebold
+[11:56:41.724] [INFO ]   AFTER  meta  (111 chars): The novel trusts grief's quiet weight. The film drowns it in CGI heaven. Tucci's the only reason to watch both.
+[11:56:45.094] [PASS ] the-martian.json — Titles complete
+[11:56:45.094] [INFO ]   BEFORE title (47 chars): The Martian Book vs Movie: Weir vs Ridley Scott
+[11:56:45.094] [INFO ]   AFTER  title (59 chars): The Martian: Weir's Math vs Damon's Face — Both Save Watney
+[11:56:45.094] [INFO ]   BEFORE meta  (9 chars): Andy Weir
+[11:56:45.095] [INFO ]   AFTER  meta  (132 chars): The book gives you the engineering. The film gives you the loneliness. Scott's humor lands because Weir built the scaffolding first.
+[11:56:48.982] [PASS ] the-maze-runner.json — Titles complete
+[11:56:48.982] [INFO ]   BEFORE title (58 chars): The Maze Runner: Book vs Movie — James Dashner vs Wes Ball
+[11:56:48.983] [INFO ]   AFTER  title (62 chars): The Maze Runner: Dashner's Mystery Sustains. Ball's Just Runs.
+[11:56:48.983] [INFO ]   BEFORE meta  (13 chars): James Dashner
+[11:56:48.983] [INFO ]   AFTER  meta  (145 chars): The novel makes you feel Thomas's confusion and dread. The film shows you a well-designed maze and loses the interior stakes that made it matter.
+[11:56:53.693] [PASS ] the-maze-runner-film.json — Titles complete
+[11:56:53.693] [INFO ]   BEFORE title (73 chars): The Maze Runner: Book vs Movie — Key Differences & Should You Read First?
+[11:56:53.693] [INFO ]   AFTER  title (59 chars): The Maze Runner: Dashner's Mystery Unfolds. Ball Just Runs.
+[11:56:53.693] [INFO ]   BEFORE meta  (13 chars): James Dashner
+[11:56:53.694] [INFO ]   AFTER  meta  (138 chars): The novel earns its world through Thomas's ignorance. The film suggests it. The Glade's rules feel lived-in on the page, rushed on screen.
+[11:56:56.783] [PASS ] the-notebook.json — Titles complete
+[11:56:56.783] [INFO ]   BEFORE title (64 chars): The Notebook: Book vs Movie — Nicholas Sparks vs Nick Cassavetes
+[11:56:56.783] [INFO ]   AFTER  title (58 chars): The Notebook: Sparks Wrote the Love. Gosling Just Sold It.
+[11:56:56.784] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[11:56:56.784] [INFO ]   AFTER  meta  (123 chars): The novel earns its emotion through structure and restraint. The film trades that for charisma—and it works, but only once.
+[11:57:00.260] [PASS ] the-odyssey.json — Titles complete
+[11:57:00.260] [INFO ]   BEFORE title (61 chars): The Odyssey Book vs Nolan's 2026 Film: Should You Read First?
+[11:57:00.260] [INFO ]   AFTER  title (58 chars): The Odyssey: Nolan's 2026 Film vs. Homer's 2,800-Year Test
+[11:57:00.260] [INFO ]   BEFORE meta  (5 chars): Homer
+[11:57:00.261] [INFO ]   AFTER  meta  (147 chars): The foundation of Western storytelling meets the director who reinvented time itself. One invented the hero's journey. The other might redefine it.
+[11:57:04.517] [PASS ] the-outsider.json — Titles complete
+[11:57:04.518] [INFO ]   BEFORE title (71 chars): The Outsider: Book vs Series — Key Differences & Should You Read First?
+[11:57:04.518] [INFO ]   AFTER  title (52 chars): The Outsider: King's Pivot Lands. HBO Telegraphs It.
+[11:57:04.518] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[11:57:04.518] [INFO ]   AFTER  meta  (146 chars): The novel earns its supernatural turn through procedural discipline. The series announces it from episode one. Mendelsohn's great, but read first.
+[11:57:07.764] [PASS ] the-outsiders.json — Titles complete
+[11:57:07.765] [INFO ]   BEFORE title (71 chars): The Outsiders: Book vs Movie — Key Differences & Should You Read First?
+[11:57:07.765] [INFO ]   AFTER  title (56 chars): The Outsiders: Hinton Wrote Raw. Coppola Made It Sacred.
+[11:57:07.765] [INFO ]   BEFORE meta  (11 chars): S.E. Hinton
+[11:57:07.765] [INFO ]   AFTER  meta  (114 chars): The novel's teenage urgency vs. Coppola's reverential beauty — both essential, neither complete without the other.
+[11:57:11.163] [PASS ] the-pelican-brief.json — Titles complete
+[11:57:11.163] [INFO ]   BEFORE title (75 chars): The Pelican Brief: Book vs Movie — Key Differences & Should You Read First?
+[11:57:11.164] [INFO ]   AFTER  title (68 chars): The Pelican Brief: Grisham's Conspiracy Thrills. Pakula's Just Runs.
+[11:57:11.164] [INFO ]   BEFORE meta  (12 chars): John Grisham
+[11:57:11.164] [INFO ]   AFTER  meta  (155 chars): The film trades the book's intricate legal conspiracy for chase scenes and star power. Roberts and Washington have chemistry, but the plot loses its teeth.
+[11:57:13.912] [PASS ] the-pianist.json — Titles complete
+[11:57:13.913] [INFO ]   BEFORE title (69 chars): The Pianist: Book vs Movie — Key Differences & Should You Read First?
+[11:57:13.913] [INFO ]   AFTER  title (55 chars): The Pianist: Szpilman's Restraint vs Polanski's Silence
+[11:57:13.913] [INFO ]   BEFORE meta  (18 chars): Władysław Szpilman
+[11:57:13.913] [INFO ]   AFTER  meta  (144 chars): The memoir records survival with clinical detachment. The film makes you feel the isolation. Both essential, neither complete without the other.
+[11:57:18.225] [WARN ] the-picture-of-dorian-gray.json: Titles validation: pageTitle too long: 75 chars
+[11:57:23.164] [WARN ] the-pillars-of-the-earth.json: Titles validation: pageTitle too long: 99 chars
+[11:57:26.845] [WARN ] the-princess-bride.json: Titles validation: pageTitle too long: 71 chars
+[11:57:31.052] [PASS ] the-road.json — Titles complete
+[11:57:31.053] [INFO ]   BEFORE title (58 chars): The Road: Book vs Movie — Cormac McCarthy vs John Hillcoat
+[11:57:31.053] [INFO ]   AFTER  title (64 chars): The Road: McCarthy's Prose Is the Story. Hillcoat Just Films It.
+[11:57:31.053] [INFO ]   BEFORE meta  (15 chars): Cormac McCarthy
+[11:57:31.053] [INFO ]   AFTER  meta  (129 chars): The film is faithful but hollow—McCarthy's language enacts the desolation his characters endure. Hillcoat can only photograph it.
+[11:57:34.249] [PASS ] the-secret-garden.json — Titles complete
+[11:57:34.249] [INFO ]   BEFORE title (75 chars): The Secret Garden: Book vs Movie — Key Differences & Should You Read First?
+[11:57:34.249] [INFO ]   AFTER  title (58 chars): The Secret Garden: Burnett's Slow Healing vs Munden's Rush
+[11:57:34.249] [INFO ]   BEFORE meta  (23 chars): Frances Hodgson Burnett
+[11:57:34.250] [INFO ]   AFTER  meta  (144 chars): The 2020 film is gorgeous but speeds past what Burnett understood: recovery is slow, difficult work. The novel earns what the film merely shows.
+[11:57:38.064] [PASS ] the-secret-life-of-bees.json — Titles complete
+[11:57:38.064] [INFO ]   BEFORE title (81 chars): The Secret Life of Bees: Book vs Movie — Key Differences & Should You Read First?
+[11:57:38.065] [INFO ]   AFTER  title (66 chars): The Secret Life of Bees: Kidd's Lily Grows Up. Fanning Just Cries.
+[11:57:38.065] [INFO ]   BEFORE meta  (13 chars): Sue Monk Kidd
+[11:57:38.065] [INFO ]   AFTER  meta  (124 chars): The film gives you grief and Queen Latifah. The book gives you a girl becoming herself in ways Prince-Bythewood can't touch.
+[11:57:41.243] [PASS ] the-shining.json — Titles complete
+[11:57:41.243] [INFO ]   BEFORE title (52 chars): The Shining Book vs Movie: King vs Kubrick Explained
+[11:57:41.243] [INFO ]   AFTER  title (60 chars): The Shining: King's Horror Story vs Kubrick's Haunted Object
+[11:57:41.243] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[11:57:41.243] [INFO ]   AFTER  meta  (125 chars): King wrote the better horror story. Kubrick made the more haunting film. Both are masterworks—but they're not the same thing.
+[11:57:44.948] [PASS ] the-sisterhood-of-the-traveling-pants.json — Titles complete
+[11:57:44.948] [INFO ]   BEFORE title (95 chars): The Sisterhood of the Traveling Pants: Book vs Movie — Key Differences & Should You Read First?
+[11:57:44.948] [INFO ]   AFTER  title (65 chars): Sisterhood: Brashares Gives You Four Girls. Kwapis Gives You One.
+[11:57:44.948] [INFO ]   BEFORE meta  (13 chars): Ann Brashares
+[11:57:44.949] [INFO ]   AFTER  meta  (141 chars): The novel braids four distinct voices into something intimate. The film flattens them into a single YA tone—and loses what made them sisters.
+[11:57:48.319] [PASS ] the-three-body-problem.json — Titles complete
+[11:57:48.319] [INFO ]   BEFORE title (89 chars): The Three-Body Problem: Book vs Netflix Series — Key Differences & Should You Read First?
+[11:57:48.319] [INFO ]   AFTER  title (62 chars): The Three-Body Problem: Liu's Physics Makes Netflix Look Small
+[11:57:48.319] [INFO ]   BEFORE meta  (9 chars): Liu Cixin
+[11:57:48.319] [INFO ]   AFTER  meta  (145 chars): The series rushes through ideas the novel lets you feel. Benioff & Weiss simplify what Liu made sublime. Read first or the science means nothing.
+[11:57:51.329] [PASS ] the-thursday-murder-club.json — Titles complete
+[11:57:51.329] [INFO ]   BEFORE title (82 chars): The Thursday Murder Club: Book vs Movie — Key Differences & Should You Read First?
+[11:57:51.329] [INFO ]   AFTER  title (62 chars): The Thursday Murder Club: Osman's Wit Gets Lost in Translation
+[11:57:51.329] [INFO ]   BEFORE meta  (13 chars): Richard Osman
+[11:57:51.329] [INFO ]   AFTER  meta  (122 chars): The novel's sharpest jokes and character beats don't survive the adaptation. What worked on the page feels flat on screen.
+[11:57:54.459] [PASS ] the-time-travelers-wife.json — Titles complete
+[11:57:54.459] [INFO ]   BEFORE title (82 chars): The Time Traveler's Wife: Book vs Movie — Key Differences & Should You Read First?
+[11:57:54.459] [INFO ]   AFTER  title (62 chars): The Time Traveler's Wife: Niffenegger's Structure Is the Story
+[11:57:54.460] [INFO ]   BEFORE meta  (18 chars): Audrey Niffenegger
+[11:57:54.460] [INFO ]   AFTER  meta  (140 chars): The film straightens the timeline and loses what made Clare's waiting devastating. Schwentke gives you romance. Niffenegger gives you grief.
+[11:57:58.656] [PASS ] the-witcher.json — Titles complete
+[11:57:58.657] [INFO ]   BEFORE title (70 chars): The Witcher: Book vs Series — Key Differences & Should You Read First?
+[11:57:58.657] [INFO ]   AFTER  title (66 chars): The Witcher: Sapkowski's Cynicism Gets Lost in Netflix's Timelines
+[11:57:58.657] [INFO ]   BEFORE meta  (9 chars): Sapkowski
+[11:57:58.657] [INFO ]   AFTER  meta  (141 chars): The books give you a weary monster-hunter who refuses to be a hero. The series gives you spectacle across three timelines that blur his edge.
+[11:58:01.883] [PASS ] the-woman-in-the-window.json — Titles complete
+[11:58:01.884] [INFO ]   BEFORE title (81 chars): The Woman in the Window: Book vs Movie — Key Differences & Should You Read First?
+[11:58:01.884] [INFO ]   AFTER  title (68 chars): The Woman in the Window: Finn's Twist Works. Wright Just Looks Good.
+[11:58:01.884] [INFO ]   BEFORE meta  (9 chars): A.J. Finn
+[11:58:01.884] [INFO ]   AFTER  meta  (133 chars): The unreliable narrator does real work on the page. On screen, it's just Amy Adams in a beautiful house with no mechanism underneath.
+[11:58:05.405] [PASS ] thirteen-reasons-why.json — Titles complete
+[11:58:05.406] [INFO ]   BEFORE title (79 chars): Thirteen Reasons Why: Book vs Series — Key Differences & Should You Read First?
+[11:58:05.406] [INFO ]   AFTER  title (62 chars): Thirteen Reasons Why: The Book Trusts You. The Series Doesn't.
+[11:58:05.406] [INFO ]   BEFORE meta  (9 chars): Jay Asher
+[11:58:05.406] [INFO ]   AFTER  meta  (152 chars): Asher's novel lets Hannah's voice carry the weight. Netflix adds subplots, graphic scenes, and explanations that dilute what made the story devastating.
+[11:58:08.754] [PASS ] to-kill-a-mockingbird.json — Titles complete
+[11:58:08.754] [INFO ]   BEFORE title (68 chars): To Kill a Mockingbird: Book vs Movie — Harper Lee vs Robert Mulligan
+[11:58:08.755] [INFO ]   AFTER  title (56 chars): To Kill a Mockingbird: Scout's Voice vs. Peck's Presence
+[11:58:08.755] [INFO ]   BEFORE meta  (10 chars): Harper Lee
+[11:58:08.755] [INFO ]   AFTER  meta  (125 chars): Lee gives you Scout's consciousness. Mulligan gives you Atticus as American icon. Both are essential. Both are irreplaceable.
+[11:58:11.980] [PASS ] verity.json — Titles complete
+[11:58:11.981] [INFO ]   BEFORE title (61 chars): Verity Book vs Movie: Key Differences & Should You Read First
+[11:58:11.981] [INFO ]   AFTER  title (56 chars): Verity: Hoover's Manuscript Twist Only Works on the Page
+[11:58:11.981] [INFO ]   BEFORE meta  (14 chars): Colleen Hoover
+[11:58:11.981] [INFO ]   AFTER  meta  (144 chars): The film can show you the manuscript. It can't make you doubt whether it's real. That uncertainty is what makes the book unbearable to put down.
+[11:58:15.235] [WARN ] water-for-elephants.json: Titles validation: pageTitle too long: 73 chars
+[11:58:20.180] [WARN ] where-the-crawdads-sing.json: Titles validation: pageTitle too long: 71 chars
+[11:58:23.346] [PASS ] white-noise.json — Titles complete
+[11:58:23.346] [INFO ]   BEFORE title (51 chars): White Noise: Book vs Movie — Should You Read First?
+[11:58:23.346] [INFO ]   AFTER  title (63 chars): White Noise: DeLillo's Dread Lives in Prose Baumbach Can't Film
+[11:58:23.347] [INFO ]   BEFORE meta  (11 chars): Don DeLillo
+[11:58:23.347] [INFO ]   AFTER  meta  (132 chars): The novel's rhythm enacts the anxiety it describes. Baumbach stages the scenes but loses the existential hum beneath every sentence.
+[11:58:26.512] [PASS ] wolf-hall.json — Titles complete
+[11:58:26.512] [INFO ]   BEFORE title (68 chars): Wolf Hall: Book vs Series — Key Differences & Should You Read First?
+[11:58:26.512] [INFO ]   AFTER  title (62 chars): Wolf Hall: Mantel Gives You Cromwell's Mind. Rylance His Face.
+[11:58:26.512] [INFO ]   BEFORE meta  (13 chars): Hilary Mantel
+[11:58:26.512] [INFO ]   AFTER  meta  (144 chars): The novel's present-tense intimacy puts you inside every calculation. Rylance's performance is definitive, but it's still watching from outside.
+[11:58:30.478] [PASS ] world-war-z.json — Titles complete
+[11:58:30.478] [INFO ]   BEFORE title (69 chars): World War Z: Book vs Movie — Key Differences & Should You Read First?
+[11:58:30.479] [INFO ]   AFTER  title (63 chars): World War Z: Brooks' Oral History vs Forster's Generic Thriller
+[11:58:30.479] [INFO ]   BEFORE meta  (10 chars): Max Brooks
+[11:58:30.479] [INFO ]   AFTER  meta  (139 chars): The book is a formal experiment in documentary fiction. The film is a Brad Pitt vehicle that borrowed the title. They share almost nothing.
+[11:58:34.090] [PASS ] wuthering-heights.json — Titles complete
+[11:58:34.091] [INFO ]   BEFORE title (53 chars): Wuthering Heights Book vs Emerald Fennell's 2026 Film
+[11:58:34.091] [INFO ]   AFTER  title (66 chars): Wuthering Heights: Brontë's Strangeness Is What Fennell Can't Film
+[11:58:34.091] [INFO ]   BEFORE meta  (12 chars): Emily Brontë
+[11:58:34.091] [INFO ]   AFTER  meta  (129 chars): The novel's Gothic weirdness lives in its voice and structure. Fennell's 2026 adaptation risks making Heathcliff merely romantic.
+
+── Summary ─────────────────────────────────────
+  Total:               163
+  Succeeded:           163
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✗  All pages have pageTitle under 70 chars
+       the-glass-castle (74), the-longest-ride (74), the-picture-of-dorian-gray (84), the-pillars-of-the-earth (83), the-princess-bride (76), water-for-elephants (77)
+  ✓  All pages have metaDesc under 160 chars
+  ✓  No immutable fields changed
+
+────────────────────────────────────────────────
+  CHECKPOINT FAILED — resolve issues before proceeding
+
+============================================================
+Finished: 2026-04-12T11:58:34.094Z
+Elapsed:  612.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-48-21_pipeline-revise.log
+============================================================

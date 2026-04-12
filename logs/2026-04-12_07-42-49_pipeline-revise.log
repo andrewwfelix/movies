@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:42:49.967Z
+============================================================
+[11:42:49.970] [INFO ] Model config loaded from config/models.json
+[11:42:49.972] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:42:49.972] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[11:42:49.972] [INFO ] pipeline-revise.js
+[11:42:49.972] [INFO ] Pass:    titles
+[11:42:49.973] [INFO ] Files:   1
+[11:42:49.973] [INFO ] Force:   yes
+[11:42:49.973] [INFO ] Dry run: no
+[11:42:49.973] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:42:52.804] [PASS ] silence-of-the-lambs.json — Titles complete
+[11:42:52.804] [INFO ]   BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:42:52.804] [INFO ]   AFTER  title (58 chars): Silence of the Lambs: Harris Wrote Dread. Demme Filmed It.
+[11:42:52.804] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[11:42:52.805] [INFO ]   AFTER  meta  (131 chars): The novel builds Lecter in your mind. The film puts Hopkins in front of your face. Both are masterworks—neither replaces the other.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:42:52.806] [INFO ] Single file mode — skipping full checkpoint
+[11:42:52.806] [INFO ] BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:42:52.807] [INFO ] AFTER  title (58 chars): Silence of the Lambs: Harris Wrote Dread. Demme Filmed It.
+[11:42:52.807] [INFO ] BEFORE meta  (13 chars): Thomas Harris
+[11:42:52.807] [INFO ] AFTER  meta  (131 chars): The novel builds Lecter in your mind. The film puts Hopkins in front of your face. Both are masterworks—neither replaces the other.
+
+============================================================
+Finished: 2026-04-12T11:42:52.807Z
+Elapsed:  2.8s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-42-49_pipeline-revise.log
+============================================================

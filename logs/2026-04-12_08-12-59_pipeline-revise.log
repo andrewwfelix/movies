@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:12:59.497Z
+============================================================
+[12:12:59.500] [INFO ] Model config loaded from config/models.json
+[12:12:59.502] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[12:12:59.502] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[12:12:59.502] [INFO ] pipeline-revise.js
+[12:12:59.502] [INFO ] Pass:    titles
+[12:12:59.502] [INFO ] Files:   1
+[12:12:59.502] [INFO ] Force:   yes
+[12:12:59.502] [INFO ] Dry run: no
+[12:12:59.503] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:13:02.966] [WARN ] the-pillars-of-the-earth.json: Titles validation failed — not written: pageTitle too long: 76 chars — will not write
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[12:13:02.968] [INFO ] Single file mode — skipping full checkpoint
+[12:13:02.968] [INFO ] BEFORE title (83 chars): The Pillars of the Earth: Book vs Series — Key Differences & Should You Read First?
+[12:13:02.968] [INFO ] AFTER  title (83 chars): The Pillars of the Earth: Book vs Series — Key Differences & Should You Read First?
+[12:13:02.968] [INFO ] BEFORE meta  (11 chars): Ken Follett
+[12:13:02.969] [INFO ] AFTER  meta  (11 chars): Ken Follett
+
+============================================================
+Finished: 2026-04-12T12:13:02.969Z
+Elapsed:  3.5s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_08-12-59_pipeline-revise.log
+============================================================

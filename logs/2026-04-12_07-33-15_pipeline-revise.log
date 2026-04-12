@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:33:15.317Z
+============================================================
+[11:33:15.320] [INFO ] Model config loaded from config/models.json
+[11:33:15.323] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:33:15.323] [INFO ] Loaded pass1b-titles.txt (3873 chars)
+[11:33:15.323] [INFO ] pipeline-revise.js
+[11:33:15.323] [INFO ] Pass:    titles
+[11:33:15.323] [INFO ] Files:   1
+[11:33:15.323] [INFO ] Force:   yes
+[11:33:15.323] [INFO ] Dry run: no
+[11:33:15.323] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:33:17.914] [PASS ] big-fish.json — Titles complete
+[11:33:17.915] [INFO ]   BEFORE title (66 chars): Big Fish: Book vs Movie — Key Differences & Should You Read First?
+[11:33:17.915] [INFO ]   AFTER  title (55 chars): Big Fish: Burton's Excess Saves What Wallace Kept Spare
+[11:33:17.915] [INFO ]   BEFORE meta  (14 chars): Daniel Wallace
+[11:33:17.915] [INFO ]   AFTER  meta  (151 chars): Wallace wrote melancholy. Burton made it generous. One of the rare times a film's visual extravagance serves a father-son story instead of drowning it.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:33:17.916] [INFO ] Single file mode — skipping full checkpoint
+[11:33:17.917] [INFO ] BEFORE title (66 chars): Big Fish: Book vs Movie — Key Differences & Should You Read First?
+[11:33:17.917] [INFO ] AFTER  title (55 chars): Big Fish: Burton's Excess Saves What Wallace Kept Spare
+[11:33:17.917] [INFO ] BEFORE meta  (14 chars): Daniel Wallace
+[11:33:17.917] [INFO ] AFTER  meta  (151 chars): Wallace wrote melancholy. Burton made it generous. One of the rare times a film's visual extravagance serves a father-son story instead of drowning it.
+
+============================================================
+Finished: 2026-04-12T11:33:17.917Z
+Elapsed:  2.6s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-33-15_pipeline-revise.log
+============================================================

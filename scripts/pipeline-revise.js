@@ -167,6 +167,11 @@ function parseJsonResponse(text) {
 
 function buildTitlesPayload(record) {
   return JSON.stringify({
+    // ── TITLE ANCHOR — BUILD YOUR TITLE FROM THIS LINE ──────────────────────
+    // This is the sharpest distillation of what makes this comparison unique.
+    // Your title must transform this insight into something emotionally felt.
+    TITLE_ANCHOR: record.quickAnswer?.oneLineReason || null,
+    // ────────────────────────────────────────────────────────────────────────
     slug:         record.slug,
     bookTitle:    record.bookTitle,
     author:       record.author,
@@ -188,12 +193,14 @@ function buildTitlesPayload(record) {
 // ── Validate titles response ──────────────────────────────────────────────────
 
 function validateTitles(pageTitle, metaDesc) {
-  const errors = [];
-  if (!pageTitle)                   errors.push('pageTitle missing');
-  if (pageTitle?.length > 70)       errors.push(`pageTitle too long: ${pageTitle.length} chars`);
-  if (!metaDesc)                    errors.push('metaDesc missing');
-  if (metaDesc?.length > 160)       errors.push(`metaDesc too long: ${metaDesc.length} chars`);
-  return errors;
+  const errors  = [];
+  const warnings = [];
+  if (!pageTitle)                    errors.push('pageTitle missing');
+  if (pageTitle?.length > 75)        errors.push(`pageTitle too long: ${pageTitle.length} chars — will not write`);
+  else if (pageTitle?.length > 65)   warnings.push(`pageTitle slightly long: ${pageTitle.length} chars (target 65)`);
+  if (!metaDesc)                     errors.push('metaDesc missing');
+  if (metaDesc?.length > 160)        errors.push(`metaDesc too long: ${metaDesc.length} chars`);
+  return { errors, warnings };
 }
 
 // ── Validate revision ─────────────────────────────────────────────────────────
@@ -253,7 +260,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // ── Process single file ───────────────────────────────────────────────────────
 
-async function processFile(slug, modelConfig, prompts, log) {
+async function processFile(slug, modelConfig, prompts, log, titlesReview) {
   const inPath  = path.join(IN_DIR,  `${slug}.json`);
   const outPath = path.join(OUT_DIR, `${slug}.json`);
 
@@ -312,15 +319,26 @@ async function processFile(slug, modelConfig, prompts, log) {
           payload,
           modelConfig.titles.maxTokens, modelConfig.titles.temperature,
         );
-        const result  = parseJsonResponse(raw);
-        const errors  = validateTitles(result.pageTitle, result.metaDesc);
+        const result      = parseJsonResponse(raw);
+        const { errors, warnings } = validateTitles(result.pageTitle, result.metaDesc);
 
         if (errors.length > 0) {
-          log.warn(`${slug}.json`, `Titles validation: ${errors.join(' | ')}`);
+          // Hard failure — do not write
+          log.warn(`${slug}.json`, `Titles validation failed — not written: ${errors.join(' | ')}`);
         } else {
+          const oldTitle = current.pageTitle;
+          const oldMeta  = current.metaDesc;
           current.pageTitle = result.pageTitle;
           current.metaDesc  = result.metaDesc;
-          log.pass(`${slug}.json`, `Titles — "${result.pageTitle}" (${result.pageTitle.length} chars)`);
+          if (warnings.length > 0) {
+            log.warn(`${slug}.json`, `Titles written with warnings: ${warnings.join(' | ')}`);
+          } else {
+            log.pass(`${slug}.json`, `Titles complete`);
+          }
+          log.info(`  BEFORE title (${oldTitle?.length || 0} chars): ${oldTitle}`);
+          log.info(`  AFTER  title (${result.pageTitle.length} chars): ${result.pageTitle}`);
+          log.info(`  BEFORE meta  (${oldMeta?.length || 0} chars): ${oldMeta}`);
+          log.info(`  AFTER  meta  (${result.metaDesc.length} chars): ${result.metaDesc}`);
         }
       } catch (err) {
         log.error(`${slug}.json`, `Titles pass failed: ${err.message}`);
@@ -404,9 +422,15 @@ function runCheckpoint(results, log) {
   if (RUN_TITLES) {
     checks.push(
       {
-        name:   'All pages have pageTitle under 70 chars',
-        passed: records.every(r => r.pageTitle && r.pageTitle.length <= 70),
-        detail: records.filter(r => !r.pageTitle || r.pageTitle.length > 70)
+        name:   'All pages have pageTitle under 75 chars',
+        passed: records.every(r => r.pageTitle && r.pageTitle.length <= 75),
+        detail: records.filter(r => !r.pageTitle || r.pageTitle.length > 75)
+          .map(r => `${r.slug} (${r.pageTitle?.length})`).join(', '),
+      },
+      {
+        name:   'All pages have pageTitle at target 65 chars or under',
+        passed: records.every(r => r.pageTitle && r.pageTitle.length <= 65),
+        detail: records.filter(r => !r.pageTitle || r.pageTitle.length > 65)
           .map(r => `${r.slug} (${r.pageTitle?.length})`).join(', '),
       },
       {
@@ -532,13 +556,14 @@ async function run() {
 
   log.section('Processing');
 
-  const results = [];
+  const results      = [];
+  const titlesReview = [];
   let succeeded = 0;
   let skipped   = 0;
   let failed    = 0;
 
   for (let i = 0; i < slugs.length; i++) {
-    const result = await processFile(slugs[i], modelConfig, prompts, log);
+    const result = await processFile(slugs[i], modelConfig, prompts, log, titlesReview);
     results.push(result);
 
     if (result.skipped)      skipped++;
@@ -559,6 +584,38 @@ async function run() {
     'Dry run:':   DRY_RUN ? 'yes' : 'no',
   });
 
+  // Write titles review file
+  if (!DRY_RUN && RUN_TITLES && titlesReview.length > 0) {
+    const reviewDate = new Date().toISOString().split('T')[0];
+    const reviewPath = path.resolve(__dirname, `../logs/titles-review-${reviewDate}.txt`);
+    const lines = [
+      `BooksVersusMovies.com — Titles Review`,
+      `Generated: ${new Date().toISOString()}`,
+      `Pages: ${titlesReview.length}`,
+      '='.repeat(60),
+      '',
+    ];
+    for (const entry of titlesReview) {
+      lines.push(`${entry.slug}  [${entry.status}]`);
+      if (entry.anchor) {
+        lines.push(`  ANCHOR: ${entry.anchor}`);
+      }
+      lines.push(`  BEFORE title (${entry.before.title?.length || 0}): ${entry.before.title}`);
+      lines.push(`  AFTER  title (${entry.after.title?.length  || 0}): ${entry.after.title}`);
+      lines.push(`  BEFORE meta  (${entry.before.meta?.length  || 0}): ${entry.before.meta}`);
+      lines.push(`  AFTER  meta  (${entry.after.meta?.length   || 0}): ${entry.after.meta}`);
+      if (entry.warnings?.length > 0) {
+        lines.push(`  WARNINGS: ${entry.warnings.join(' | ')}`);
+      }
+      if (entry.reason) {
+        lines.push(`  FAILED: ${entry.reason}`);
+      }
+      lines.push('');
+    }
+    fs.writeFileSync(reviewPath, lines.join('\n'), 'utf8');
+    console.log(`\n✓ Titles review → ${reviewPath}`);
+  }
+
   if (!DRY_RUN && results.length > 1) {
     runCheckpoint(results, log);
   } else if (!DRY_RUN && results.length === 1) {
@@ -571,8 +628,11 @@ async function run() {
         log.info(`quickAnswer.oneLineReason: ${r.record.quickAnswer.oneLineReason}`);
       }
       if (RUN_TITLES) {
-        log.info(`pageTitle (${r.record.pageTitle?.length} chars): ${r.record.pageTitle}`);
-        log.info(`metaDesc  (${r.record.metaDesc?.length} chars): ${r.record.metaDesc}`);
+        const src = JSON.parse(fs.readFileSync(path.join(IN_DIR, `${r.slug}.json`), 'utf8'));
+        log.info(`BEFORE title (${src.pageTitle?.length || 0} chars): ${src.pageTitle}`);
+        log.info(`AFTER  title (${r.record.pageTitle?.length} chars): ${r.record.pageTitle}`);
+        log.info(`BEFORE meta  (${src.metaDesc?.length || 0} chars): ${src.metaDesc}`);
+        log.info(`AFTER  meta  (${r.record.metaDesc?.length} chars): ${r.record.metaDesc}`);
       }
     }
   }

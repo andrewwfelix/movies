@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:14:18.576Z
+============================================================
+[11:14:18.579] [INFO ] Model config loaded from config/models.json
+[11:14:18.580] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:14:18.581] [INFO ] Loaded pass1b-titles.txt (3873 chars)
+[11:14:18.581] [INFO ] pipeline-revise.js
+[11:14:18.581] [INFO ] Pass:    titles
+[11:14:18.581] [INFO ] Files:   1
+[11:14:18.581] [INFO ] Force:   yes
+[11:14:18.581] [INFO ] Dry run: no
+[11:14:18.581] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:14:20.777] [PASS ] silence-of-the-lambs.json — Titles complete
+[11:14:20.777] [INFO ]   BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:14:20.778] [INFO ]   AFTER  title (62 chars): Silence of the Lambs: The Rare Adaptation That Equals the Book
+[11:14:20.778] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[11:14:20.778] [INFO ]   AFTER  meta  (134 chars): Harris wrote a masterwork. Demme made a masterwork from it. This is one of the handful of adaptations where ranking them is pointless.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:14:20.779] [INFO ] Single file mode — skipping full checkpoint
+[11:14:20.780] [INFO ] BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:14:20.780] [INFO ] AFTER  title (62 chars): Silence of the Lambs: The Rare Adaptation That Equals the Book
+[11:14:20.780] [INFO ] BEFORE meta  (13 chars): Thomas Harris
+[11:14:20.780] [INFO ] AFTER  meta  (134 chars): Harris wrote a masterwork. Demme made a masterwork from it. This is one of the handful of adaptations where ranking them is pointless.
+
+============================================================
+Finished: 2026-04-12T11:14:20.780Z
+Elapsed:  2.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-14-18_pipeline-revise.log
+============================================================

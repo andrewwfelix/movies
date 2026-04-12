@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:12:25.360Z
+============================================================
+[12:12:25.363] [INFO ] Model config loaded from config/models.json
+[12:12:25.365] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[12:12:25.365] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[12:12:25.365] [INFO ] pipeline-revise.js
+[12:12:25.365] [INFO ] Pass:    titles
+[12:12:25.365] [INFO ] Files:   1
+[12:12:25.365] [INFO ] Force:   yes
+[12:12:25.366] [INFO ] Dry run: no
+[12:12:25.366] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:12:29.568] [PASS ] the-glass-castle.json — Titles complete
+[12:12:29.568] [INFO ]   BEFORE title (74 chars): The Glass Castle: Book vs Movie — Key Differences & Should You Read First?
+[12:12:29.568] [INFO ]   AFTER  title (64 chars): The Glass Castle: Walls's Forgiveness Earned. Larson's Borrowed.
+[12:12:29.568] [INFO ]   BEFORE meta  (15 chars): Jeannette Walls
+[12:12:29.568] [INFO ]   AFTER  meta  (144 chars): The memoir makes you understand why she forgave them. The film just asks you to accept it. Brie Larson can't replicate what Walls lived through.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[12:12:29.570] [INFO ] Single file mode — skipping full checkpoint
+[12:12:29.570] [INFO ] BEFORE title (74 chars): The Glass Castle: Book vs Movie — Key Differences & Should You Read First?
+[12:12:29.570] [INFO ] AFTER  title (64 chars): The Glass Castle: Walls's Forgiveness Earned. Larson's Borrowed.
+[12:12:29.570] [INFO ] BEFORE meta  (15 chars): Jeannette Walls
+[12:12:29.570] [INFO ] AFTER  meta  (144 chars): The memoir makes you understand why she forgave them. The film just asks you to accept it. Brie Larson can't replicate what Walls lived through.
+
+============================================================
+Finished: 2026-04-12T12:12:29.571Z
+Elapsed:  4.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_08-12-25_pipeline-revise.log
+============================================================

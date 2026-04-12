@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:46:00.949Z
+============================================================
+[11:46:00.952] [INFO ] Model config loaded from config/models.json
+[11:46:00.954] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:46:00.954] [INFO ] Loaded pass1b-titles.txt (5258 chars)
+[11:46:00.954] [INFO ] pipeline-revise.js
+[11:46:00.954] [INFO ] Pass:    titles
+[11:46:00.954] [INFO ] Files:   1
+[11:46:00.954] [INFO ] Force:   yes
+[11:46:00.954] [INFO ] Dry run: no
+[11:46:00.955] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:46:04.673] [PASS ] silence-of-the-lambs.json — Titles complete
+[11:46:04.673] [INFO ]   BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:46:04.673] [INFO ]   AFTER  title (58 chars): Silence of the Lambs: Harris Wrote Dread. Demme Filmed It.
+[11:46:04.673] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[11:46:04.673] [INFO ]   AFTER  meta  (143 chars): The rare adaptation where neither version loses anything essential. Hopkins owns the screen; Harris owns your nightmares. Both are masterworks.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:46:04.675] [INFO ] Single file mode — skipping full checkpoint
+[11:46:04.675] [INFO ] BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[11:46:04.675] [INFO ] AFTER  title (58 chars): Silence of the Lambs: Harris Wrote Dread. Demme Filmed It.
+[11:46:04.675] [INFO ] BEFORE meta  (13 chars): Thomas Harris
+[11:46:04.675] [INFO ] AFTER  meta  (143 chars): The rare adaptation where neither version loses anything essential. Hopkins owns the screen; Harris owns your nightmares. Both are masterworks.
+
+============================================================
+Finished: 2026-04-12T11:46:04.675Z
+Elapsed:  3.7s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-46-00_pipeline-revise.log
+============================================================

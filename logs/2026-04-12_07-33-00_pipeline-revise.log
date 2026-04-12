@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T11:33:00.370Z
+============================================================
+[11:33:00.373] [INFO ] Model config loaded from config/models.json
+[11:33:00.375] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[11:33:00.375] [INFO ] Loaded pass1b-titles.txt (3873 chars)
+[11:33:00.375] [INFO ] pipeline-revise.js
+[11:33:00.375] [INFO ] Pass:    titles
+[11:33:00.376] [INFO ] Files:   1
+[11:33:00.376] [INFO ] Force:   yes
+[11:33:00.376] [INFO ] Dry run: no
+[11:33:00.376] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[11:33:02.529] [PASS ] atonement.json — Titles complete
+[11:33:02.530] [INFO ]   BEFORE title (45 chars): Atonement Book vs Movie: McEwan vs Joe Wright
+[11:33:02.530] [INFO ]   AFTER  title (65 chars): Atonement: Wright's Film Haunts You. McEwan's Novel Won't Let Go.
+[11:33:02.530] [INFO ]   BEFORE meta  (10 chars): Ian McEwan
+[11:33:02.530] [INFO ]   AFTER  meta  (110 chars): Joe Wright made one of the most beautiful films of the 2000s. It still cannot do what McEwan does on the page.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[11:33:02.531] [INFO ] Single file mode — skipping full checkpoint
+[11:33:02.532] [INFO ] BEFORE title (45 chars): Atonement Book vs Movie: McEwan vs Joe Wright
+[11:33:02.532] [INFO ] AFTER  title (65 chars): Atonement: Wright's Film Haunts You. McEwan's Novel Won't Let Go.
+[11:33:02.532] [INFO ] BEFORE meta  (10 chars): Ian McEwan
+[11:33:02.532] [INFO ] AFTER  meta  (110 chars): Joe Wright made one of the most beautiful films of the 2000s. It still cannot do what McEwan does on the page.
+
+============================================================
+Finished: 2026-04-12T11:33:02.532Z
+Elapsed:  2.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_07-33-00_pipeline-revise.log
+============================================================

@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T10:54:53.474Z
+============================================================
+[10:54:53.477] [INFO ] Model config loaded from config/models.json
+[10:54:53.479] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[10:54:53.479] [INFO ] Loaded pass1b-titles.txt (3427 chars)
+[10:54:53.479] [INFO ] pipeline-revise.js
+[10:54:53.480] [INFO ] Pass:    titles
+[10:54:53.480] [INFO ] Files:   1
+[10:54:53.480] [INFO ] Force:   yes
+[10:54:53.480] [INFO ] Dry run: no
+[10:54:53.480] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[10:54:56.103] [PASS ] the-notebook.json — Titles complete
+[10:54:56.104] [INFO ]   BEFORE title (64 chars): The Notebook: Book vs Movie — Nicholas Sparks vs Nick Cassavetes
+[10:54:56.104] [INFO ]   AFTER  title (45 chars): The Notebook: Sparks Wins — Book vs 2004 Film
+[10:54:56.104] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[10:54:56.104] [INFO ]   AFTER  meta  (150 chars): Sparks wrote a cleaner, more deliberate love story. Cassavetes made the more beloved film. But the novel is better-written — here's why the book wins.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[10:54:56.105] [INFO ] Single file mode — skipping full checkpoint
+[10:54:56.105] [INFO ] BEFORE title (64 chars): The Notebook: Book vs Movie — Nicholas Sparks vs Nick Cassavetes
+[10:54:56.105] [INFO ] AFTER  title (45 chars): The Notebook: Sparks Wins — Book vs 2004 Film
+[10:54:56.105] [INFO ] BEFORE meta  (15 chars): Nicholas Sparks
+[10:54:56.105] [INFO ] AFTER  meta  (150 chars): Sparks wrote a cleaner, more deliberate love story. Cassavetes made the more beloved film. But the novel is better-written — here's why the book wins.
+
+============================================================
+Finished: 2026-04-12T10:54:56.106Z
+Elapsed:  2.6s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_06-54-53_pipeline-revise.log
+============================================================
