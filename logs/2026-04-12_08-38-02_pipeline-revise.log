@@ -1,0 +1,16 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:38:02.189Z
+============================================================
+[12:38:02.192] [INFO ] Model config loaded from config/models.json
+[12:38:02.193] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[12:38:02.194] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[12:38:02.194] [INFO ] pipeline-revise.js
+[12:38:02.194] [INFO ] Pass:    2
+[12:38:02.194] [INFO ] Files:   1
+[12:38:02.194] [INFO ] Force:   yes
+[12:38:02.195] [INFO ] Dry run: no
+[12:38:02.195] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:38:22.169] [ERROR] atonement.json: Pass 2 failed: Unterminated string in JSON at position 7561 (line 72 column 756)

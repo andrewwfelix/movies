@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T14:42:37.956Z
+============================================================
+[14:42:37.959] [INFO ] Model config loaded from config/models.json
+[14:42:37.961] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[14:42:37.962] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[14:42:37.962] [INFO ] pipeline-revise.js
+[14:42:37.962] [INFO ] Pass:    2
+[14:42:37.962] [INFO ] Files:   1
+[14:42:37.962] [INFO ] Force:   yes
+[14:42:37.962] [INFO ] Dry run: no
+[14:42:37.962] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[14:43:14.590] [PASS ] white-noise.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[14:43:14.591] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-12T14:43:14.591Z
+Elapsed:  36.6s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-42-37_pipeline-revise.log
+============================================================

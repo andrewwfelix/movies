@@ -11,3 +11,12 @@
 
 7. Some kind of structured logging? Pino + OpenTelemetry + Datadog (or Loki) is the modern default stack. Transition to AWS or Azure or Vercel?
 	8. Let's thionk about transitiong to vercenl, we could potentially build and maintain a movie database as well, which might be nice. 
+
+Notes:
+8. add a daily task to review files indexed and to review indexed files, and possible indexing of apges to google search if necessary
+
+9. figure out what to do with other sceneario that aren't one-to many
+	dune has three books in the series as lord of the ringt
+	heated rivalry has multiple books, etc.
+
+10. add a note to have retry-intervals for any batch processing scripts

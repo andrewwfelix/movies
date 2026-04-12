@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T14:40:56.401Z
+============================================================
+[14:40:56.403] [INFO ] Model config loaded from config/models.json
+[14:40:56.405] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[14:40:56.405] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[14:40:56.406] [INFO ] pipeline-revise.js
+[14:40:56.406] [INFO ] Pass:    2
+[14:40:56.406] [INFO ] Files:   1
+[14:40:56.406] [INFO ] Force:   yes
+[14:40:56.406] [INFO ] Dry run: no
+[14:40:56.406] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[14:41:29.208] [PASS ] verity.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[14:41:29.210] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-12T14:41:29.210Z
+Elapsed:  32.8s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-40-56_pipeline-revise.log
+============================================================

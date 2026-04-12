@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T14:37:29.515Z
+============================================================
+[14:37:29.518] [INFO ] Model config loaded from config/models.json
+[14:37:29.520] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[14:37:29.520] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[14:37:29.520] [INFO ] pipeline-revise.js
+[14:37:29.520] [INFO ] Pass:    2
+[14:37:29.520] [INFO ] Files:   1
+[14:37:29.520] [INFO ] Force:   yes
+[14:37:29.521] [INFO ] Dry run: no
+[14:37:29.521] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[14:38:07.801] [PASS ] the-thursday-murder-club.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[14:38:07.802] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-12T14:38:07.803Z
+Elapsed:  38.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-37-29_pipeline-revise.log
+============================================================

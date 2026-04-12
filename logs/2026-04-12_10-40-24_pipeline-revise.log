@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T14:40:24.593Z
+============================================================
+[14:40:24.596] [INFO ] Model config loaded from config/models.json
+[14:40:24.597] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[14:40:24.597] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[14:40:24.598] [INFO ] pipeline-revise.js
+[14:40:24.598] [INFO ] Pass:    2
+[14:40:24.598] [INFO ] Files:   1
+[14:40:24.598] [INFO ] Force:   yes
+[14:40:24.598] [INFO ] Dry run: no
+[14:40:24.598] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[14:40:56.339] [PASS ] to-kill-a-mockingbird.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[14:40:56.341] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-12T14:40:56.341Z
+Elapsed:  31.7s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-40-24_pipeline-revise.log
+============================================================

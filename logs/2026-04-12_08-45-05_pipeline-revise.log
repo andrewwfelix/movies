@@ -1,0 +1,178 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:45:05.643Z
+============================================================
+[12:45:05.645] [INFO ] Model config loaded from config/models.json
+[12:45:05.648] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[12:45:05.648] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[12:45:05.649] [INFO ] pipeline-revise.js
+[12:45:05.649] [INFO ] Pass:    2
+[12:45:05.649] [INFO ] Files:   163
+[12:45:05.649] [INFO ] Force:   yes
+[12:45:05.649] [INFO ] Dry run: no
+[12:45:05.649] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:45:42.090] [PASS ] a-beautiful-mind.json — Pass 2 — 3 CTA blocks added
+[12:46:15.860] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 2 — 3 CTA blocks added
+[12:46:52.663] [PASS ] a-little-life.json — Pass 2 — 3 CTA blocks added
+[12:47:29.754] [PASS ] a-man-called-ove.json — Pass 2 — 3 CTA blocks added
+[12:48:00.740] [PASS ] a-walk-to-remember.json — Pass 2 — 3 CTA blocks added
+[12:48:31.473] [PASS ] about-a-boy.json — Pass 2 — 3 CTA blocks added
+[12:49:07.564] [PASS ] all-quiet-on-the-western-front.json — Pass 2 — 3 CTA blocks added
+[12:49:42.743] [PASS ] all-the-light-we-cannot-see.json — Pass 2 — 3 CTA blocks added
+[12:50:13.581] [PASS ] along-came-a-spider.json — Pass 2 — 3 CTA blocks added
+[12:50:46.087] [PASS ] american-gods.json — Pass 2 — 3 CTA blocks added
+[12:51:16.457] [PASS ] american-psycho.json — Pass 2 — 3 CTA blocks added
+[12:51:49.439] [PASS ] animal-farm.json — Pass 2 — 3 CTA blocks added
+[12:52:25.420] [PASS ] annihilation.json — Pass 2 — 3 CTA blocks added
+[12:53:04.851] [PASS ] atonement.json — Pass 2 — 3 CTA blocks added
+[12:53:40.200] [PASS ] band-of-brothers.json — Pass 2 — 3 CTA blocks added
+[12:54:10.447] [PASS ] beloved.json — Pass 2 — 3 CTA blocks added
+[12:54:43.889] [PASS ] big-fish.json — Pass 2 — 3 CTA blocks added
+[12:55:20.826] [PASS ] big-little-lies-hbo.json — Pass 2 — 3 CTA blocks added
+[12:55:57.555] [PASS ] breakfast-at-tiffanys.json — Pass 2 — 3 CTA blocks added
+[12:56:35.559] [PASS ] bridgerton.json — Pass 2 — 3 CTA blocks added
+[12:57:06.129] [PASS ] brooklyn.json — Pass 2 — 3 CTA blocks added
+[12:57:38.086] [PASS ] catch-22.json — Pass 2 — 3 CTA blocks added
+[12:58:10.837] [PASS ] catch-me-if-you-can.json — Pass 2 — 3 CTA blocks added
+[12:58:41.186] [PASS ] cold-mountain.json — Pass 2 — 3 CTA blocks added
+[12:59:14.778] [PASS ] contact.json — Pass 2 — 3 CTA blocks added
+[12:59:47.584] [PASS ] da-vinci-code.json — Pass 2 — 3 CTA blocks added
+[13:00:24.120] [PASS ] daisy-jones-and-the-six.json — Pass 2 — 3 CTA blocks added
+[13:00:57.170] [PASS ] dark-matter.json — Pass 2 — 3 CTA blocks added
+[13:01:30.310] [PASS ] devil-wears-prada.json — Pass 2 — 3 CTA blocks added
+[13:02:03.524] [PASS ] divergent.json — Pass 2 — 3 CTA blocks added
+[13:02:39.298] [PASS ] doctor-sleep.json — Pass 2 — 3 CTA blocks added
+[13:03:16.388] [PASS ] dracula.json — Pass 2 — 3 CTA blocks added
+[13:03:49.706] [PASS ] dune.json — Pass 2 — 3 CTA blocks added
+[13:04:19.667] [PASS ] eat-pray-love.json — Pass 2 — 3 CTA blocks added
+[13:04:54.612] [PASS ] enders-game.json — Pass 2 — 3 CTA blocks added
+[13:05:31.255] [PASS ] enders-game-film.json — Pass 2 — 3 CTA blocks added
+[13:06:07.125] [PASS ] english-patient.json — Pass 2 — 3 CTA blocks added
+[13:06:39.328] [PASS ] everything-everything.json — Pass 2 — 3 CTA blocks added
+[13:07:11.786] [PASS ] fight-club.json — Pass 2 — 3 CTA blocks added
+[13:07:45.080] [PASS ] five-feet-apart.json — Pass 2 — 3 CTA blocks added
+[13:08:18.144] [PASS ] fourth-wing.json — Pass 2 — 3 CTA blocks added
+[13:08:52.693] [PASS ] frankenstein.json — Pass 2 — 3 CTA blocks added
+[13:09:25.424] [PASS ] geralds-game.json — Pass 2 — 3 CTA blocks added
+[13:09:58.142] [PASS ] girl-on-the-train.json — Pass 2 — 3 CTA blocks added
+[13:10:33.653] [PASS ] girl-with-the-dragon-tattoo.json — Pass 2 — 3 CTA blocks added
+[13:11:08.669] [PASS ] gone-girl.json — Pass 2 — 3 CTA blocks added
+[13:11:46.646] [PASS ] good-omens.json — Pass 2 — 3 CTA blocks added
+[13:12:20.437] [PASS ] hamnet.json — Pass 2 — 3 CTA blocks added
+[13:13:00.512] [PASS ] hannibal-series.json — Pass 2 — 3 CTA blocks added
+[13:13:26.885] [PASS ] heated-rivalry.json — Pass 2 — 3 CTA blocks added
+[13:14:01.865] [PASS ] high-fidelity.json — Pass 2 — 3 CTA blocks added
+[13:14:40.819] [PASS ] hillbilly-elegy.json — Pass 2 — 3 CTA blocks added
+[13:15:17.306] [PASS ] hitchhikers-guide.json — Pass 2 — 3 CTA blocks added
+[13:15:50.621] [PASS ] howls-moving-castle.json — Pass 2 — 3 CTA blocks added
+[13:16:23.939] [PASS ] hunger-games-sunrise.json — Pass 2 — 3 CTA blocks added
+[13:16:57.379] [PASS ] i-am-legend.json — Pass 2 — 3 CTA blocks added
+[13:17:33.732] [PASS ] i-robot.json — Pass 2 — 3 CTA blocks added
+[13:18:08.044] [PASS ] interview-with-the-vampire-amcplus.json — Pass 2 — 3 CTA blocks added
+[13:18:47.411] [PASS ] into-the-wild.json — Pass 2 — 3 CTA blocks added
+[13:19:19.127] [PASS ] it-ends-with-us.json — Pass 2 — 3 CTA blocks added
+[13:19:57.364] [PASS ] it-muschietti.json — Pass 2 — 3 CTA blocks added
+[13:20:30.849] [PASS ] jane-eyre.json — Pass 2 — 3 CTA blocks added
+[13:21:00.494] [PASS ] jurassic-park.json — Pass 2 — 3 CTA blocks added
+[13:21:40.889] [PASS ] kite-runner.json — Pass 2 — 3 CTA blocks added
+[13:22:14.419] [PASS ] la-confidential.json — Pass 2 — 3 CTA blocks added
+[13:22:54.087] [PASS ] les-miserables.json — Pass 2 — 3 CTA blocks added
+[13:23:30.432] [PASS ] little-women.json — Pass 2 — 3 CTA blocks added
+[13:24:03.889] [PASS ] lonesome-dove.json — Pass 2 — 3 CTA blocks added
+[13:24:37.906] [PASS ] looking-for-alaska.json — Pass 2 — 3 CTA blocks added
+[13:25:13.245] [PASS ] lord-of-the-flies.json — Pass 2 — 3 CTA blocks added
+[13:25:47.729] [PASS ] love-simon.json — Pass 2 — 3 CTA blocks added
+[13:26:20.275] [PASS ] margos-got-money-troubles.json — Pass 2 — 3 CTA blocks added
+[13:26:52.026] [PASS ] me-before-you.json — Pass 2 — 3 CTA blocks added
+[13:27:25.079] [PASS ] mickey-17.json — Pass 2 — 3 CTA blocks added
+[13:27:56.005] [PASS ] misery.json — Pass 2 — 3 CTA blocks added
+[13:28:31.179] [PASS ] my-brilliant-friend.json — Pass 2 — 3 CTA blocks added
+[13:29:07.161] [PASS ] my-sisters-keeper.json — Pass 2 — 3 CTA blocks added
+[13:29:42.551] [PASS ] narnia-magicians-nephew.json — Pass 2 — 3 CTA blocks added
+[13:30:15.826] [PASS ] never-let-me-go.json — Pass 2 — 3 CTA blocks added
+[13:30:49.367] [PASS ] normal-people.json — Pass 2 — 3 CTA blocks added
+[13:31:26.553] [PASS ] of-mice-and-men.json — Pass 2 — 3 CTA blocks added
+[13:31:58.122] [PASS ] olive-kitteridge.json — Pass 2 — 3 CTA blocks added
+[13:32:30.681] [PASS ] on-the-road.json — Pass 2 — 3 CTA blocks added
+[13:33:02.844] [PASS ] one-day.json — Pass 2 — 3 CTA blocks added
+[13:33:38.584] [PASS ] one-flew-over-the-cuckoos-nest.json — Pass 2 — 3 CTA blocks added
+[13:34:10.060] [PASS ] outlander.json — Pass 2 — 3 CTA blocks added
+[13:34:44.598] [PASS ] pachinko.json — Pass 2 — 3 CTA blocks added
+[13:35:19.127] [PASS ] people-we-meet-on-vacation.json — Pass 2 — 3 CTA blocks added
+[13:35:49.328] [PASS ] perks-of-being-a-wallflower.json — Pass 2 — 3 CTA blocks added
+[13:36:28.771] [PASS ] pet-sematary-2019.json — Pass 2 — 3 CTA blocks added
+[13:37:01.596] [PASS ] presumed-innocent.json — Pass 2 — 3 CTA blocks added
+[13:37:34.718] [PASS ] pride-and-prejudice.json — Pass 2 — 3 CTA blocks added
+[13:38:07.524] [PASS ] project-hail-mary.json — Pass 2 — 3 CTA blocks added
+[13:43:27.053] [ERROR] ready-player-one.json: Pass 2 failed: read ECONNRESET
+[13:43:56.069] [PASS ] rebecca.json — Pass 2 — 3 CTA blocks added
+[13:44:27.617] [PASS ] remains-of-the-day.json — Pass 2 — 3 CTA blocks added
+[13:45:03.068] [PASS ] remarkably-bright-creatures.json — Pass 2 — 3 CTA blocks added
+[13:45:35.011] [PASS ] reminders-of-him.json — Pass 2 — 3 CTA blocks added
+[13:46:08.176] [PASS ] room.json — Pass 2 — 3 CTA blocks added
+[13:46:44.004] [PASS ] roots-2016.json — Pass 2 — 3 CTA blocks added
+[13:47:23.158] [PASS ] rosemarys-baby.json — Pass 2 — 3 CTA blocks added
+[13:47:53.893] [PASS ] schindlers-list.json — Pass 2 — 3 CTA blocks added
+[13:48:30.898] [PASS ] seabiscuit.json — Pass 2 — 3 CTA blocks added
+[13:49:02.896] [PASS ] sense-and-sensibility.json — Pass 2 — 3 CTA blocks added
+[13:49:37.233] [PASS ] shadow-and-bone.json — Pass 2 — 3 CTA blocks added
+[13:50:10.365] [PASS ] sharp-objects.json — Pass 2 — 3 CTA blocks added
+[13:50:43.477] [PASS ] shogun-2024.json — Pass 2 — 3 CTA blocks added
+[13:51:14.920] [PASS ] silence-of-the-lambs.json — Pass 2 — 3 CTA blocks added
+[13:51:47.067] [PASS ] sophies-choice.json — Pass 2 — 3 CTA blocks added
+[13:52:28.736] [PASS ] sphere.json — Pass 2 — 3 CTA blocks added
+[13:53:01.902] [PASS ] stardust.json — Pass 2 — 3 CTA blocks added
+[13:53:38.875] [PASS ] station-eleven.json — Pass 2 — 3 CTA blocks added
+[13:54:12.973] [PASS ] talented-mr-ripley.json — Pass 2 — 3 CTA blocks added
+[13:54:47.197] [PASS ] the-book-thief.json — Pass 2 — 3 CTA blocks added
+[13:55:30.496] [PASS ] the-client.json — Pass 2 — 3 CTA blocks added
+[13:56:01.173] [PASS ] the-color-purple.json — Pass 2 — 3 CTA blocks added
+[13:56:40.140] [PASS ] the-count-of-monte-cristo.json — Pass 2 — 3 CTA blocks added
+[13:57:09.820] [PASS ] the-electric-state.json — Pass 2 — 3 CTA blocks added
+[13:57:47.532] [PASS ] the-fault-in-our-stars.json — Pass 2 — 3 CTA blocks added
+[13:58:16.518] [PASS ] the-firm.json — Pass 2 — 3 CTA blocks added
+[13:58:48.842] [PASS ] the-girl-with-the-dragon-tattoo-fincher.json — Pass 2 — 3 CTA blocks added
+[13:59:23.200] [PASS ] the-giver.json — Pass 2 — 3 CTA blocks added
+[14:00:04.468] [PASS ] the-glass-castle.json — Pass 2 — 3 CTA blocks added
+[14:00:34.946] [PASS ] the-great-gatsby.json — Pass 2 — 3 CTA blocks added
+[14:01:11.305] [PASS ] the-handmaids-tale.json — Pass 2 — 3 CTA blocks added
+[14:01:51.449] [PASS ] the-haunting-of-hill-house.json — Pass 2 — 3 CTA blocks added
+[14:02:30.298] [PASS ] the-help.json — Pass 2 — 3 CTA blocks added
+[14:03:07.791] [PASS ] the-hours.json — Pass 2 — 3 CTA blocks added
+[14:03:39.115] [PASS ] the-housemaid.json — Pass 2 — 3 CTA blocks added
+[14:04:10.051] [PASS ] the-lincoln-lawyer.json — Pass 2 — 3 CTA blocks added
+[14:04:43.189] [PASS ] the-longest-ride.json — Pass 2 — 3 CTA blocks added
+[14:05:14.030] [PASS ] the-lovely-bones.json — Pass 2 — 3 CTA blocks added
+[14:05:48.517] [PASS ] the-martian.json — Pass 2 — 3 CTA blocks added
+[14:06:21.149] [PASS ] the-maze-runner.json — Pass 2 — 3 CTA blocks added
+[14:06:56.870] [PASS ] the-maze-runner-film.json — Pass 2 — 3 CTA blocks added
+[14:07:27.788] [PASS ] the-notebook.json — Pass 2 — 3 CTA blocks added
+[14:08:02.230] [PASS ] the-odyssey.json — Pass 2 — 3 CTA blocks added
+[14:08:35.209] [PASS ] the-outsider.json — Pass 2 — 3 CTA blocks added
+[14:09:12.295] [PASS ] the-outsiders.json — Pass 2 — 3 CTA blocks added
+[14:09:45.001] [PASS ] the-pelican-brief.json — Pass 2 — 3 CTA blocks added
+[14:10:20.111] [PASS ] the-pianist.json — Pass 2 — 3 CTA blocks added
+[14:10:55.678] [PASS ] the-picture-of-dorian-gray.json — Pass 2 — 3 CTA blocks added
+[14:11:34.698] [ERROR] the-pillars-of-the-earth.json: Pass 2 failed: read ECONNRESET
+[14:11:46.284] [ERROR] the-princess-bride.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:11:57.884] [ERROR] the-road.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:11:58.412] [ERROR] the-secret-garden.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:11:58.933] [ERROR] the-secret-life-of-bees.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:11:59.465] [ERROR] the-shining.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:11:59.998] [ERROR] the-sisterhood-of-the-traveling-pants.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:00.516] [ERROR] the-three-body-problem.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:01.048] [ERROR] the-thursday-murder-club.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:01.583] [ERROR] the-time-travelers-wife.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:02.107] [ERROR] the-witcher.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:02.634] [ERROR] the-woman-in-the-window.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:03.152] [ERROR] thirteen-reasons-why.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:03.685] [ERROR] to-kill-a-mockingbird.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:04.218] [ERROR] verity.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:04.752] [ERROR] water-for-elephants.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:05.270] [ERROR] where-the-crawdads-sing.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:05.787] [ERROR] white-noise.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:06.305] [ERROR] wolf-hall.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:06.837] [ERROR] world-war-z.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai
+[14:12:07.358] [ERROR] wuthering-heights.json: Pass 2 failed: getaddrinfo ENOTFOUND openrouter.ai

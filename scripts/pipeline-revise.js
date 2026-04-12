@@ -96,8 +96,13 @@ function loadPrompt(filename) {
 }
 
 // ── OpenRouter API call ───────────────────────────────────────────────────────
+// Includes retry logic with exponential backoff for transient errors.
+// MAX_RETRIES attempts, starting at RETRY_BASE_MS delay, doubling each time.
 
-function callOpenRouter(model, systemPrompt, userContent, maxTokens, temperature) {
+const MAX_RETRIES    = 3;
+const RETRY_BASE_MS  = 10000; // 10 seconds — enough for brief connectivity drops
+
+function callOpenRouterOnce(model, systemPrompt, userContent, maxTokens, temperature) {
   return new Promise((resolve, reject) => {
     const body = JSON.stringify({
       model,
@@ -148,6 +153,29 @@ function callOpenRouter(model, systemPrompt, userContent, maxTokens, temperature
     req.write(body);
     req.end();
   });
+}
+
+async function callOpenRouter(model, systemPrompt, userContent, maxTokens, temperature) {
+  let lastError;
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      return await callOpenRouterOnce(model, systemPrompt, userContent, maxTokens, temperature);
+    } catch (err) {
+      lastError = err;
+      // Don't retry on auth errors or bad request errors — they won't recover
+      const msg = err.message.toLowerCase();
+      if (msg.includes('user not found') || msg.includes('invalid api key') ||
+          msg.includes('401') || msg.includes('400')) {
+        throw err;
+      }
+      if (attempt < MAX_RETRIES) {
+        const delayMs = RETRY_BASE_MS * Math.pow(2, attempt - 1);
+        console.log(`  ↻  Attempt ${attempt} failed (${err.message.slice(0, 60)}). Retrying in ${delayMs / 1000}s...`);
+        await new Promise(r => setTimeout(r, delayMs));
+      }
+    }
+  }
+  throw new Error(`Failed after ${MAX_RETRIES} attempts: ${lastError.message}`);
 }
 
 // ── JSON response parser ──────────────────────────────────────────────────────
@@ -270,8 +298,24 @@ async function processFile(slug, modelConfig, prompts, log, titlesReview) {
   }
 
   if (!FORCE && fs.existsSync(outPath)) {
-    log.skip(`${slug}.json`, 'already exists in 2-revised');
-    return { success: true, slug, skipped: true };
+    // Smart skip — check whether the required fields for the requested pass
+    // are already populated. If not, process even without --force.
+    let needsProcessing = false;
+    try {
+      const existing = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+      if (RUN_PASS1  && !existing.quickAnswer)                              needsProcessing = true;
+      if (RUN_TITLES && (!existing.pageTitle || existing.pageTitle.length < 10)) needsProcessing = true;
+      if (RUN_PASS2  && (!existing.ctaBlocks || existing.ctaBlocks.length === 0)) needsProcessing = true;
+    } catch {
+      needsProcessing = true; // Can't parse — reprocess
+    }
+
+    if (!needsProcessing) {
+      log.skip(`${slug}.json`, 'already exists in 2-revised');
+      return { success: true, slug, skipped: true };
+    }
+    // Fall through — file exists but is missing required fields
+    log.info(`${slug}.json — re-processing (missing required fields for pass: ${PASS})`);
   }
 
   const original = JSON.parse(fs.readFileSync(inPath, 'utf8'));

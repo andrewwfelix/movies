@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T14:34:14.902Z
+============================================================
+[14:34:14.905] [INFO ] Model config loaded from config/models.json
+[14:34:14.907] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[14:34:14.907] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[14:34:14.907] [INFO ] pipeline-revise.js
+[14:34:14.907] [INFO ] Pass:    2
+[14:34:14.908] [INFO ] Files:   1
+[14:34:14.908] [INFO ] Force:   yes
+[14:34:14.908] [INFO ] Dry run: no
+[14:34:14.908] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[14:34:52.819] [PASS ] the-secret-garden.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[14:34:52.821] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-12T14:34:52.821Z
+Elapsed:  37.9s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-34-14_pipeline-revise.log
+============================================================

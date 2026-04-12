@@ -1,0 +1,23 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T12:44:04.817Z
+============================================================
+[12:44:04.821] [INFO ] Model config loaded from config/models.json
+[12:44:04.823] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[12:44:04.823] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[12:44:04.824] [INFO ] pipeline-revise.js
+[12:44:04.824] [INFO ] Pass:    2
+[12:44:04.824] [INFO ] Files:   163
+[12:44:04.824] [INFO ] Force:   no
+[12:44:04.824] [INFO ] Dry run: no
+[12:44:04.824] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[12:44:04.844] [SKIP ] a-beautiful-mind.json (already exists in 2-revised)
+[12:44:05.350] [SKIP ] a-knight-of-the-seven-kingdoms.json (already exists in 2-revised)
+[12:44:05.853] [SKIP ] a-little-life.json (already exists in 2-revised)
+[12:44:06.354] [SKIP ] a-man-called-ove.json (already exists in 2-revised)
+[12:44:06.856] [SKIP ] a-walk-to-remember.json (already exists in 2-revised)
+[12:44:07.372] [SKIP ] about-a-boy.json (already exists in 2-revised)
+[12:44:07.887] [SKIP ] all-quiet-on-the-western-front.json (already exists in 2-revised)
+[12:44:08.389] [SKIP ] all-the-light-we-cannot-see.json (already exists in 2-revised)

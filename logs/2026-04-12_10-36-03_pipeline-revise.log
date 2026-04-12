@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T14:36:03.155Z
+============================================================
+[14:36:03.157] [INFO ] Model config loaded from config/models.json
+[14:36:03.159] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[14:36:03.159] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[14:36:03.159] [INFO ] pipeline-revise.js
+[14:36:03.160] [INFO ] Pass:    2
+[14:36:03.160] [INFO ] Files:   1
+[14:36:03.160] [INFO ] Force:   yes
+[14:36:03.160] [INFO ] Dry run: no
+[14:36:03.160] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[14:36:52.644] [PASS ] the-sisterhood-of-the-traveling-pants.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[14:36:52.645] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-12T14:36:52.645Z
+Elapsed:  49.5s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-36-03_pipeline-revise.log
+============================================================

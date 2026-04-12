@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T14:43:49.158Z
+============================================================
+[14:43:49.163] [INFO ] Model config loaded from config/models.json
+[14:43:49.165] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[14:43:49.166] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[14:43:49.166] [INFO ] pipeline-revise.js
+[14:43:49.166] [INFO ] Pass:    2
+[14:43:49.166] [INFO ] Files:   1
+[14:43:49.166] [INFO ] Force:   yes
+[14:43:49.166] [INFO ] Dry run: no
+[14:43:49.166] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[14:44:24.187] [PASS ] world-war-z.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[14:44:24.189] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-12T14:44:24.189Z
+Elapsed:  35.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-12_10-43-49_pipeline-revise.log
+============================================================
