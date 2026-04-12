@@ -123,3 +123,161 @@ Currently mitigated by --pass all running in memory, but proper folder
 separation would be more robust.
 Priority: medium
 Status: pending
+
+## Abbreviated payloads for dev/test pipeline runs
+Pass 1 and Pass 2 send the full JSON (~4000-6000 tokens) but only need
+a small subset of fields to do their job. In dev/test mode, send only
+the fields each pass actually needs:
+
+Pass 1 minimal: slug, bookTitle, author, verdictText, verdictClass,
+  verdictBox, readFirst, differences, quickAnswer
+Pass 2 minimal: slug, bookTitle, verdictText, affiliateLink, ctaBlocks
+
+Cuts token count by 60-70%, eliminates truncation errors on large pages,
+reduces cost significantly for test runs. Implement as part of the --env
+flag work — dev/test use abbreviated payloads, prod uses full JSON.
+Priority: high
+Status: pending
+
+## Priority tiers for content generation
+Not all pages are equal — some titles have high search volume and strong
+affiliate potential, others are lower priority. Consider a priority field
+in the JSON schema (1-3) that controls:
+  - Which model to use (Sonnet for tier 1, Haiku for tier 2-3)
+  - Whether to use full or abbreviated article length
+  - Which pages get greenfield regeneration first
+  - Which pages get titles re-run with Sonnet vs cheaper model
+
+This is a cost optimisation for scale — not needed now but worth building
+in as the site grows beyond 163 pages.
+Priority: low
+Status: pending
+
+## Model quality comparison process
+Before committing to expensive production models, establish a formal process
+for evaluating whether cheaper models produce "good enough" output:
+
+1. Run a sample of 10-20 pages through each model tier (dev/test/prod)
+2. Use review-pipeline-output.js to export a comparison table
+3. Evaluate on specific criteria:
+   - oneLineReason specificity (is it grounded in the content?)
+   - Title emotional resonance (would you click it?)
+   - Meta description quality (does it extend the title?)
+   - ctaBlocks correctness (right text for verdict type?)
+4. Score each model tier 1-5 on each criterion
+5. Calculate cost per page for each tier
+6. Make an explicit ROI decision: is the quality delta worth the cost delta?
+
+This process should be run:
+- When considering a new model (e.g. DeepSeek vs Haiku vs Sonnet)
+- When a cheaper model releases that might match current quality
+- When scaling to significantly more pages where cost matters more
+
+The goal is not to always use the cheapest model but to make the
+cost/quality tradeoff explicit and data-driven rather than assumed.
+Priority: medium
+Status: pending
+
+## Periodic quality sanity checks during batch runs
+During batch pipeline runs, execute a quality check every N pages and
+hard-stop if the check fails. This catches prompt drift, model degradation,
+or API issues early rather than discovering problems after 163 pages.
+
+Implementation:
+  - Add --quality-check-interval N flag to pipeline-revise.js (default: off)
+  - Every N pages, run a lightweight quality check on the last N processed files
+  - Hard-stop (process.exit(1)) if check fails, log which page triggered it
+
+Quality checks to run every N pages:
+  1. quickAnswer.winner is a valid value (Book/Film/Series/Too Close to Call)
+  2. quickAnswer.oneLineReason is under 15 words and non-generic
+     (flag if it contains "both versions" or "offers more depth")
+  3. pageTitle is under 65 chars and doesn't match the generic pattern
+  4. metaDesc is under 155 chars
+  5. ctaBlocks has exactly 3 items with valid locations
+  6. No immutable fields changed from 1-extracted source
+
+Generic oneLineReason detector — flag if contains any of:
+  "both versions", "offers more depth", "has its strengths",
+  "each version", "depending on", "both have"
+
+Usage:
+  node scripts\pipeline-revise.js --all --pass all --quality-check-interval 5
+
+If check fails at page 25:
+  QUALITY CHECK FAILED at iteration 5 (pages 21-25)
+  Triggered by: the-firm.json
+  Issue: oneLineReason too generic: "Both versions have their strengths."
+  Stopping batch. Fix prompt or re-run from --slug the-firm.
+
+This prevents wasting API spend on a degraded run and catches prompt
+issues before they affect the full batch.
+Priority: high
+Status: pending
+
+## GSC export protocol — define and standardise
+Establish exactly what to export from Google Search Console, with what
+filters, at what interval, and in what format. Without this, data is
+inconsistent and hard to compare over time.
+
+Proposed protocol:
+
+WEEKLY export (every Monday):
+  Report: Performance > Search results
+  Date range: Last 7 days
+  Dimensions: Query + Page
+  Filters: none (full site)
+  Format: CSV
+  Filename: data/reports/gsc/YYYY-MM-DD-weekly-performance.csv
+
+MONTHLY export (1st of each month):
+  Report: Performance > Search results
+  Date range: Last 28 days (not calendar month — more consistent)
+  Dimensions: Query + Page
+  Filters: none
+  Format: CSV
+  Filename: data/reports/gsc/YYYY-MM-DD-monthly-performance.csv
+
+POST-DEPLOYMENT export (within 48 hours of any deployment):
+  Report: Performance > Search results
+  Date range: Last 7 days
+  Dimensions: Page
+  Filters: none
+  Format: CSV
+  Filename: data/reports/gsc/YYYY-MM-DD-post-deploy.csv
+  Purpose: baseline to compare against next week's export
+
+INDEXING STATUS export (monthly):
+  Report: Indexing > Pages
+  Export each status group separately:
+    - Indexed
+    - Crawled not indexed
+    - Discovered not indexed
+  Filename: data/reports/gsc/YYYY-MM-DD-indexing-status.csv
+
+Also consider: automate via GSC API once manual protocol is established
+and patterns are understood. Low priority until manual process is stable.
+Priority: medium
+Status: pending
+
+## GSC API automation
+Automate GSC exports using the Search Console API once the manual export
+protocol is established and stable.
+
+Auth: service account (preferred over OAuth2 for automated scripts)
+Package: googleapis (npm) or raw HTTP to searchconsole.googleapis.com
+
+Planned scripts:
+  scripts/gsc-report.js --weekly       ← last 7 days performance
+  scripts/gsc-report.js --post-deploy  ← baseline after deployment
+  scripts/gsc-report.js --indexing     ← full indexing status
+
+Also worth exploring:
+  - URL inspection API to programmatically request indexing after deploy
+  - Sitemap submission API to auto-submit after render run
+  - Alerting if indexed page count drops unexpectedly
+
+Prerequisite: establish manual protocol first (see GSC export protocol idea)
+and confirm what data is actually useful before automating.
+Priority: low
+Status: pending

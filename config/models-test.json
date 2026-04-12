@@ -1,0 +1,28 @@
+{
+  "pass1": {
+    "model": "openai/gpt-4o-mini",
+    "maxTokens": 9000,
+    "temperature": 0.3,
+    "notes": "TEST MODE — logic verification only. Switch back to anthropic/claude-haiku-4-5 for production."
+  },
+  "titles": {
+    "model": "openai/gpt-4o-mini",
+    "maxTokens": 9000,
+    "temperature": 0.4,
+    "notes": "TEST MODE — logic verification only. Switch back to anthropic/claude-sonnet-4-5 for production."
+  },
+  "pass2": {
+    "model": "openai/gpt-4o-mini",
+    "maxTokens": 9000,
+    "temperature": 0.4,
+    "notes": "TEST MODE — logic verification only. Switch back to anthropic/claude-haiku-4-5 for production."
+  },
+  "greenfield": {
+    "model": "openai/gpt-4o-mini",
+    "maxTokens": 9000,
+    "temperature": 0.5,
+    "notes": "Full review generation — voice matters most here. Use the better model."
+  }
+}
+
+

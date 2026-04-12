@@ -255,3 +255,64 @@ If one insight from this document is worth holding onto, it is this:
 The site does not need more content. It needs the existing content to work.
 The pipeline is not a content project — it is a revenue unlock on 170 pages
 that are already close. Do that first. Everything else follows.
+
+
+BUSINESS ACTION ROADMAP
+-----------------------
+Non-engineering actions that drive growth. Prioritised and sequenced.
+
+
+IMMEDIATE (this week)
+  [ ] Deploy pipeline output to production
+  [ ] Submit sitemap to Google Search Console
+  [ ] Request indexing for all 163 pages via GSC URL Inspection tool
+      Priority order: pages already crawled-not-indexed first
+  [ ] Do post-deployment GSC export as baseline
+      Save to: data/reports/gsc/YYYY-MM-DD-post-deploy.csv
+  [ ] Verify Amazon Associates account is fully approved (need 3 sales)
+  [ ] Confirm all affiliate links use correct tracking ID (readingtheill-20)
+
+
+SHORT TERM (months 1-2)
+  [ ] Establish weekly GSC review cadence (every Monday, 15 minutes)
+      Export: last 7 days, Query + Page dimensions
+      Watch: CTR changes on pages with new titles, position improvements
+  [ ] Set up ConvertKit or Mailchimp account (free tier, do it before you
+      need it — building the list from day one costs nothing)
+  [ ] Add email opt-in form to site (see ROADMAP-PRODUCT.md)
+  [ ] Build first backlinks:
+        - Submit to niche directories (BookRiot, LitHub resources pages)
+        - Reach out to 5 book bloggers who cover adaptations
+        - Post in r/books, r/movies when relevant (genuine contributions)
+        - Comment on film criticism newsletters with site link where natural
+  [ ] Add site to relevant resource lists:
+        - "Best book vs movie comparison sites"
+        - Literary fiction reading guides
+        - Film adaptation recommendation lists
+
+
+MEDIUM TERM (months 3-6)
+  [ ] Add Bookshop.org affiliate links alongside Amazon links
+      Serves readers who prefer independent bookstores
+      Apply at: bookshop.org/affiliates
+  [ ] Explore Audible affiliate program
+      Natural CTA: "Listen to the book" for commuters
+      Apply at: affiliate-program.amazon.com (Audible program)
+  [ ] Reach out to 3 editorial outlets for coverage:
+        - Book Riot (book/film crossover content)
+        - LitHub (literary criticism audience)
+        - One major film criticism newsletter
+  [ ] Consider a "Featured in" press page once first editorial mention lands
+  [ ] Expand catalog to 220+ pages using pipeline-generate.js
+      Focus on: recent releases, anticipated adaptations, evergreen classics
+
+
+LONGER TERM (year 2)
+  [ ] Evaluate display advertising when sessions exceed 50,000/month
+      Only Mediavine or similar premium networks — no AdSense
+  [ ] Explore sponsored content with publishers around film tie-in editions
+      Requires: demonstrated reach + rate card
+  [ ] Consider podcast or YouTube channel if newsletter reaches 2,000+ subscribers
+      Low cost extension of existing critical voice
+  [ ] Evaluate international expansion (UK Amazon Associates, etc.)
+      When: once US affiliate revenue is consistent

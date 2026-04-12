@@ -1,28 +1,27 @@
 {
   "pass1": {
-    "model": "openai/gpt-4o-mini",
+    "model": "anthropic/claude-haiku-4-5",
     "maxTokens": 9000,
     "temperature": 0.3,
-    "notes": "TEST MODE — logic verification only. Switch back to anthropic/claude-haiku-4-5 for production."
+    "notes": "Structural overlay — low voice risk, high volume. Keep temperature low."
   },
   "titles": {
-    "model": "openai/gpt-4o-mini",
+    "model": "anthropic/claude-sonnet-4-5",
     "maxTokens": 9000,
     "temperature": 0.4,
-    "notes": "TEST MODE — logic verification only. Switch back to anthropic/claude-sonnet-4-5 for production."
+    "notes": "Title and meta description optimisation. Small payload, Sonnet for quality. ~$0.85 for full run."
   },
   "pass2": {
-    "model": "openai/gpt-4o-mini",
+    "model": "anthropic/claude-haiku-4-5",
     "maxTokens": 9000,
     "temperature": 0.4,
-    "notes": "TEST MODE — logic verification only. Switch back to anthropic/claude-haiku-4-5 for production."
+    "notes": "Conversion layer — CTA wording, short outputs. Slightly more creative latitude."
   },
   "greenfield": {
-    "model": "openai/gpt-4o-mini",
+    "model": "anthropic/claude-sonnet-4-5",
     "maxTokens": 9000,
     "temperature": 0.5,
     "notes": "Full review generation — voice matters most here. Use the better model."
   }
 }
-
 

@@ -1,0 +1,28 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T19:09:29.262Z
+============================================================
+[19:09:29.264] [INFO ] Model config loaded from config/models.json
+[19:09:29.266] [INFO ] Pass 1 model:  anthropic/claude-haiku-4-5 (temp: 0.3)
+[19:09:29.267] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[19:09:29.267] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[19:09:29.267] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[19:09:29.267] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[19:09:29.268] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[19:09:29.268] [INFO ] pipeline-revise.js
+[19:09:29.268] [INFO ] Pass:    all
+[19:09:29.268] [INFO ] Files:   163
+[19:09:29.269] [INFO ] Force:   no
+[19:09:29.269] [INFO ] Dry run: no
+[19:09:29.269] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[19:09:29.269] [INFO ]   ↻  a-beautiful-mind — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:10:20.025] [WARN ] a-beautiful-mind.json: Pass 1 validation: quickAnswer.oneLineReason too long (16 words)
+[19:10:20.026] [INFO ]   ↻  a-beautiful-mind — titles (anthropic/claude-sonnet-4-5)…
+[19:10:23.054] [WARN ] a-beautiful-mind.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[19:10:23.054] [INFO ]   BEFORE title (48 chars): A Beautiful Mind: Nasar vs Howard — Book vs Film
+[19:10:23.054] [INFO ]   AFTER  title (66 chars): A Beautiful Mind: Nasar Tells the Truth. Howard Makes You Feel It.
+[19:10:23.055] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[19:10:23.055] [INFO ]   AFTER  meta  (141 chars): The book reveals Nash's bisexuality and decades Howard erased. The film makes schizophrenia visceral in ways biography can't. Both essential.
+[19:10:23.055] [INFO ]   ↻  a-beautiful-mind — Pass 2 (anthropic/claude-haiku-4-5)…

@@ -1,0 +1,290 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T16:37:27.472Z
+============================================================
+[16:37:27.475] [INFO ] Model config loaded from config/models.json
+[16:37:27.476] [INFO ] Pass 1 model:  openai/gpt-4o-mini (temp: 0.3)
+[16:37:27.476] [INFO ] Titles model:  openai/gpt-4o-mini (temp: 0.4)
+[16:37:27.476] [INFO ] Pass 2 model:  openai/gpt-4o-mini (temp: 0.4)
+[16:37:27.477] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[16:37:27.477] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[16:37:27.478] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[16:37:27.479] [INFO ] pipeline-revise.js
+[16:37:27.479] [INFO ] Pass:    all
+[16:37:27.479] [INFO ] Files:   163
+[16:37:27.479] [INFO ] Force:   no
+[16:37:27.480] [INFO ] Dry run: no
+[16:37:27.480] [INFO ] Delay:   200ms between calls
+
+── Processing ───────────────────────────────────
+[16:37:27.480] [INFO ]   ↻  a-beautiful-mind — Pass 1 (openai/gpt-4o-mini)…
+[16:37:49.360] [PASS ] a-beautiful-mind.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both portrayals capture Nash's complexity but differ significantly."
+[16:37:49.360] [INFO ]   ↻  a-beautiful-mind — titles (openai/gpt-4o-mini)…
+[16:37:50.044] [PASS ] a-beautiful-mind.json — Titles complete
+[16:37:50.045] [INFO ]   BEFORE title (59 chars): A Beautiful Mind: Sylvia Nasar vs Ron Howard — Book vs Film
+[16:37:50.045] [INFO ]   AFTER  title (60 chars): A Beautiful Mind: Two Visions of Nash's Brilliant Complexity
+[16:37:50.045] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[16:37:50.045] [INFO ]   AFTER  meta  (142 chars): Nasar's biography and Howard's film both illuminate Nash's genius, yet each offers a distinct emotional journey that shapes our understanding.
+[16:37:50.045] [INFO ]   ↻  a-beautiful-mind — Pass 2 (openai/gpt-4o-mini)…
+[16:39:01.020] [PASS ] a-beautiful-mind.json — Pass 2 — 3 CTA blocks added
+[16:39:01.224] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — Pass 1 (openai/gpt-4o-mini)…
+[16:39:21.311] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both versions have distinct strengths, and neither diminishes the other."
+[16:39:21.311] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — titles (openai/gpt-4o-mini)…
+[16:39:22.750] [PASS ] a-knight-of-the-seven-kingdoms.json — Titles complete
+[16:39:22.750] [INFO ]   BEFORE title (65 chars): A Knight of the Seven Kingdoms: Book vs TV Series — Martin vs HBO
+[16:39:22.750] [INFO ]   AFTER  title (61 chars): A Knight of the Seven Kingdoms: Adventure Lives in Both Forms
+[16:39:22.750] [INFO ]   BEFORE meta  (18 chars): George R.R. Martin
+[16:39:22.751] [INFO ]   AFTER  meta  (138 chars): Martin's novellas radiate warmth, while HBO's series expands their spirit. Each version offers unique strengths that complement the other.
+[16:39:22.751] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — Pass 2 (openai/gpt-4o-mini)…
+[16:40:17.182] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 2 — 3 CTA blocks added
+[16:40:17.406] [INFO ]   ↻  a-little-life — Pass 1 (openai/gpt-4o-mini)…
+[16:41:23.570] [PASS ] a-little-life.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The film sanitizes Jude's self-harm, losing its visceral impact."
+[16:41:23.570] [INFO ]   ↻  a-little-life — titles (openai/gpt-4o-mini)…
+[16:41:24.539] [PASS ] a-little-life.json — Titles complete
+[16:41:24.539] [INFO ]   BEFORE title (63 chars): A Little Life Book vs Film: Which Is Better? (Hanya Yanagihara)
+[16:41:24.539] [INFO ]   AFTER  title (54 chars): A Little Life: The Film Sanitizes Jude's Painful Truth
+[16:41:24.539] [INFO ]   BEFORE meta  (16 chars): Hanya Yanagihara
+[16:41:24.539] [INFO ]   AFTER  meta  (132 chars): Yanagihara's unflinching portrayal of self-harm is lost in the film's sanitization, leaving a hollow echo of the novel's raw impact.
+[16:41:24.540] [INFO ]   ↻  a-little-life — Pass 2 (openai/gpt-4o-mini)…
+[16:41:30.595] [ERROR] a-little-life.json: Pass 2 failed: Unterminated string in JSON at position 2000 (line 27 column 851)
+[16:41:30.811] [INFO ]   ↻  a-man-called-ove — Pass 1 (openai/gpt-4o-mini)…
+[16:42:34.928] [PASS ] a-man-called-ove.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ove's internal monologue adds depth the film lacks."
+[16:42:34.929] [INFO ]   ↻  a-man-called-ove — titles (openai/gpt-4o-mini)…
+[16:42:36.014] [PASS ] a-man-called-ove.json — Titles complete
+[16:42:36.015] [INFO ]   BEFORE title (65 chars): A Man Called Ove Book vs Film: Which Is Better? (Fredrik Backman)
+[16:42:36.015] [INFO ]   AFTER  title (60 chars): A Man Called Ove: Ove's Inner Voice Makes the Book Essential
+[16:42:36.015] [INFO ]   BEFORE meta  (15 chars): Fredrik Backman
+[16:42:36.015] [INFO ]   AFTER  meta  (126 chars): Backman's poignant internal monologue reveals Ove's true heart, a depth the film's charm can't replicate. Read the book first.
+[16:42:36.015] [INFO ]   ↻  a-man-called-ove — Pass 2 (openai/gpt-4o-mini)…
+[16:43:47.264] [PASS ] a-man-called-ove.json — Pass 2 — 3 CTA blocks added
+[16:43:47.476] [INFO ]   ↻  a-walk-to-remember — Pass 1 (openai/gpt-4o-mini)…
+[16:44:46.431] [PASS ] a-walk-to-remember.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The retrospective narration gives the novel deeper emotional weight."
+[16:44:46.431] [INFO ]   ↻  a-walk-to-remember — titles (openai/gpt-4o-mini)…
+[16:44:48.033] [PASS ] a-walk-to-remember.json — Titles complete
+[16:44:48.033] [INFO ]   BEFORE title (67 chars): A Walk to Remember: Nicholas Sparks vs Adam Shankman — Book vs Film
+[16:44:48.033] [INFO ]   AFTER  title (56 chars): A Walk to Remember: The Book's Retrospective Weight Wins
+[16:44:48.033] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[16:44:48.033] [INFO ]   AFTER  meta  (128 chars): Sparks's narration captures loss and faith in ways the film softens. The book's emotional depth is irreplaceable. Read it first.
+[16:44:48.033] [INFO ]   ↻  a-walk-to-remember — Pass 2 (openai/gpt-4o-mini)…
+[16:44:52.113] [ERROR] a-walk-to-remember.json: Pass 2 failed: Unterminated string in JSON at position 1531 (line 27 column 211)
+[16:44:52.338] [INFO ]   ↻  about-a-boy — Pass 1 (openai/gpt-4o-mini)…
+[16:45:52.888] [PASS ] about-a-boy.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both versions reward you with warmth and humor."
+[16:45:52.888] [INFO ]   ↻  about-a-boy — titles (openai/gpt-4o-mini)…
+[16:45:55.479] [PASS ] about-a-boy.json — Titles complete
+[16:45:55.479] [INFO ]   BEFORE title (54 chars): About a Boy: Nick Hornby vs Chris Weitz — Book vs Film
+[16:45:55.480] [INFO ]   AFTER  title (48 chars): About a Boy: Both Versions Offer Heartfelt Humor
+[16:45:55.480] [INFO ]   BEFORE meta  (11 chars): Nick Hornby
+[16:45:55.480] [INFO ]   AFTER  meta  (135 chars): Hornby's warmth and the Weitz brothers' charm create a delightful experience. Each version uniquely captures the essence of connection.
+[16:45:55.480] [INFO ]   ↻  about-a-boy — Pass 2 (openai/gpt-4o-mini)…
+[16:46:18.827] [PASS ] about-a-boy.json — Pass 2 — 3 CTA blocks added
+[16:46:19.060] [INFO ]   ↻  all-quiet-on-the-western-front — Pass 1 (openai/gpt-4o-mini)…
+[16:47:24.271] [PASS ] all-quiet-on-the-western-front.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both adaptations offer unique perspectives on the same material."
+[16:47:24.271] [INFO ]   ↻  all-quiet-on-the-western-front — titles (openai/gpt-4o-mini)…
+[16:47:25.886] [PASS ] all-quiet-on-the-western-front.json — Titles complete
+[16:47:25.887] [INFO ]   BEFORE title (87 chars): All Quiet on the Western Front: Book vs Film — Key Differences & Should You Read First?
+[16:47:25.887] [INFO ]   AFTER  title (59 chars): All Quiet on the Western Front: Two Visions of War's Horror
+[16:47:25.887] [INFO ]   BEFORE meta  (20 chars): Erich Maria Remarque
+[16:47:25.887] [INFO ]   AFTER  meta  (139 chars): Remarque's intimate fury and Berger's bold visuals create essential perspectives on war. Both adaptations are vital, yet uniquely powerful.
+[16:47:25.887] [INFO ]   ↻  all-quiet-on-the-western-front — Pass 2 (openai/gpt-4o-mini)…
+[16:47:42.788] [ERROR] all-quiet-on-the-western-front.json: Pass 2 failed: Unterminated string in JSON at position 9914 (line 84 column 1382)
+[16:47:43.008] [INFO ]   ↻  all-the-light-we-cannot-see — Pass 1 (openai/gpt-4o-mini)…
+[16:49:21.257] [PASS ] all-the-light-we-cannot-see.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The prose is the experience, and the series cannot replicate it."
+[16:49:21.257] [INFO ]   ↻  all-the-light-we-cannot-see — titles (openai/gpt-4o-mini)…
+[16:49:24.717] [PASS ] all-the-light-we-cannot-see.json — Titles complete
+[16:49:24.718] [INFO ]   BEFORE title (76 chars): All the Light We Cannot See Book vs Series: Which Is Better? (Anthony Doerr)
+[16:49:24.718] [INFO ]   AFTER  title (56 chars): All the Light We Cannot See: The Prose Is the Experience
+[16:49:24.718] [INFO ]   BEFORE meta  (13 chars): Anthony Doerr
+[16:49:24.718] [INFO ]   AFTER  meta  (134 chars): Doerr's lyrical prose immerses you in war's intimacy, while the series merely skims the surface. Read the book to feel the difference.
+[16:49:24.718] [INFO ]   ↻  all-the-light-we-cannot-see — Pass 2 (openai/gpt-4o-mini)…
+[16:50:28.300] [PASS ] all-the-light-we-cannot-see.json — Pass 2 — 3 CTA blocks added
+[16:50:28.522] [INFO ]   ↻  along-came-a-spider — Pass 1 (openai/gpt-4o-mini)…
+[16:50:31.209] [ERROR] along-came-a-spider.json: Pass 1 failed: Unterminated string in JSON at position 1375 (line 27 column 395)
+[16:50:31.433] [INFO ]   ↻  american-gods — Pass 1 (openai/gpt-4o-mini)…
+[16:50:51.231] [PASS ] american-gods.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The book's road-trip accumulation of mythological America is unmatched."
+[16:50:51.231] [INFO ]   ↻  american-gods — titles (openai/gpt-4o-mini)…
+[16:50:51.994] [PASS ] american-gods.json — Titles complete
+[16:50:51.994] [INFO ]   BEFORE title (60 chars): American Gods Book vs Series: Which Is Better? (Neil Gaiman)
+[16:50:51.995] [INFO ]   AFTER  title (63 chars): American Gods: Gaiman's Mythological Road Trip Beats the Series
+[16:50:51.995] [INFO ]   BEFORE meta  (11 chars): Neil Gaiman
+[16:50:51.995] [INFO ]   AFTER  meta  (142 chars): Gaiman's novel weaves a dense tapestry of mythological America that Fuller's series can't replicate. Read the book first for the full journey.
+[16:50:51.995] [INFO ]   ↻  american-gods — Pass 2 (openai/gpt-4o-mini)…
+[16:51:15.742] [PASS ] american-gods.json — Pass 2 — 3 CTA blocks added
+[16:51:15.974] [INFO ]   ↻  american-psycho — Pass 1 (openai/gpt-4o-mini)…
+[16:52:26.774] [PASS ] american-psycho.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's unreliable narration is crucial to its impact."
+[16:52:26.774] [INFO ]   ↻  american-psycho — titles (openai/gpt-4o-mini)…
+[16:52:27.656] [PASS ] american-psycho.json — Titles complete
+[16:52:27.656] [INFO ]   BEFORE title (65 chars): American Psycho: Book vs Movie — Bret Easton Ellis vs Mary Harron
+[16:52:27.656] [INFO ]   AFTER  title (56 chars): American Psycho: The Novel's Unreliable Narration Haunts
+[16:52:27.657] [INFO ]   BEFORE meta  (17 chars): Bret Easton Ellis
+[16:52:27.657] [INFO ]   AFTER  meta  (134 chars): Ellis's radical narrative disturbs in ways Bale's performance can't. The book's complexity makes it essential reading before the film.
+[16:52:27.657] [INFO ]   ↻  american-psycho — Pass 2 (openai/gpt-4o-mini)…
+[16:52:51.945] [PASS ] american-psycho.json — Pass 2 — 3 CTA blocks added
+[16:52:52.161] [INFO ]   ↻  animal-farm — Pass 1 (openai/gpt-4o-mini)…
+[16:53:12.853] [PASS ] animal-farm.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Orwell's prose is the experience; the allegory lives in the compression."
+[16:53:12.853] [INFO ]   ↻  animal-farm — titles (openai/gpt-4o-mini)…
+[16:53:14.288] [PASS ] animal-farm.json — Titles complete
+[16:53:14.289] [INFO ]   BEFORE title (57 chars): Animal Farm: Book vs Movie — George Orwell vs Andy Serkis
+[16:53:14.289] [INFO ]   AFTER  title (54 chars): Animal Farm: Orwell's Prose Captures What Serkis Can't
+[16:53:14.289] [INFO ]   BEFORE meta  (13 chars): George Orwell
+[16:53:14.289] [INFO ]   AFTER  meta  (142 chars): Orwell's fable is a political masterpiece, while Serkis's film is a visual treat. Read the book for the true experience that lasts a lifetime.
+[16:53:14.289] [INFO ]   ↻  animal-farm — Pass 2 (openai/gpt-4o-mini)…
+[16:53:44.450] [PASS ] animal-farm.json — Pass 2 — 3 CTA blocks added
+[16:53:44.657] [INFO ]   ↻  annihilation — Pass 1 (openai/gpt-4o-mini)…
+[16:53:58.079] [ERROR] annihilation.json: Pass 1 failed: Unterminated string in JSON at position 9328 (line 84 column 681)
+[16:53:58.296] [INFO ]   ↻  atonement — Pass 1 (openai/gpt-4o-mini)…
+[16:55:02.506] [PASS ] atonement.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The metafictional ending only works on the page."
+[16:55:02.506] [INFO ]   ↻  atonement — titles (openai/gpt-4o-mini)…
+[16:55:03.444] [PASS ] atonement.json — Titles complete
+[16:55:03.444] [INFO ]   BEFORE title (45 chars): Atonement Book vs Movie: McEwan vs Joe Wright
+[16:55:03.444] [INFO ]   AFTER  title (54 chars): Atonement: Read the Book or the Ending Loses Its Power
+[16:55:03.444] [INFO ]   BEFORE meta  (10 chars): Ian McEwan
+[16:55:03.444] [INFO ]   AFTER  meta  (133 chars): Wright's film captivates but can't replicate McEwan's haunting metafiction. Experience the novel first for the full emotional weight.
+[16:55:03.444] [INFO ]   ↻  atonement — Pass 2 (openai/gpt-4o-mini)…
+[16:55:38.421] [PASS ] atonement.json — Pass 2 — 3 CTA blocks added
+[16:55:38.643] [INFO ]   ↻  band-of-brothers — Pass 1 (openai/gpt-4o-mini)…
+[16:56:31.196] [PASS ] band-of-brothers.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both the book and series are essential experiences."
+[16:56:31.196] [INFO ]   ↻  band-of-brothers — titles (openai/gpt-4o-mini)…
+[16:56:32.291] [PASS ] band-of-brothers.json — Titles complete
+[16:56:32.291] [INFO ]   BEFORE title (75 chars): Band of Brothers: Book vs Series — Key Differences & Should You Read First?
+[16:56:32.292] [INFO ]   AFTER  title (62 chars): Band of Brothers: The Essential Experiences of Book and Series
+[16:56:32.292] [INFO ]   BEFORE meta  (15 chars): Stephen Ambrose
+[16:56:32.292] [INFO ]   AFTER  meta  (127 chars): Ambrose's history and Spielberg's visuals create a perfect blend. Both the book and series are vital for understanding the war.
+[16:56:32.292] [INFO ]   ↻  band-of-brothers — Pass 2 (openai/gpt-4o-mini)…
+[16:57:05.226] [PASS ] band-of-brothers.json — Pass 2 — 3 CTA blocks added
+[16:57:05.456] [INFO ]   ↻  beloved — Pass 1 (openai/gpt-4o-mini)…
+[16:57:15.175] [ERROR] beloved.json: Pass 1 failed: Unterminated string in JSON at position 6870 (line 76 column 579)
+[16:57:15.396] [INFO ]   ↻  big-fish — Pass 1 (openai/gpt-4o-mini)…
+[16:58:01.510] [PASS ] big-fish.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both versions illuminate each other beautifully."
+[16:58:01.511] [INFO ]   ↻  big-fish — titles (openai/gpt-4o-mini)…
+[16:58:02.797] [PASS ] big-fish.json — Titles complete
+[16:58:02.797] [INFO ]   BEFORE title (53 chars): Big Fish: Daniel Wallace vs Tim Burton — Book vs Film
+[16:58:02.797] [INFO ]   AFTER  title (60 chars): Big Fish: Wallace's Spare Prose Meets Burton's Visual Excess
+[16:58:02.797] [INFO ]   BEFORE meta  (14 chars): Daniel Wallace
+[16:58:02.798] [INFO ]   AFTER  meta  (138 chars): Wallace's melancholy stories and Burton's vibrant visuals create a unique dialogue. Each version enriches the other in unforgettable ways.
+[16:58:02.798] [INFO ]   ↻  big-fish — Pass 2 (openai/gpt-4o-mini)…
+[16:59:01.467] [PASS ] big-fish.json — Pass 2 — 3 CTA blocks added
+[16:59:01.687] [INFO ]   ↻  big-little-lies-hbo — Pass 1 (openai/gpt-4o-mini)…
+[16:59:21.913] [PASS ] big-little-lies-hbo.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both versions transpose the story into different keys."
+[16:59:21.913] [INFO ]   ↻  big-little-lies-hbo — titles (openai/gpt-4o-mini)…
+[16:59:22.602] [PASS ] big-little-lies-hbo.json — Titles complete
+[16:59:22.603] [INFO ]   BEFORE title (74 chars): Big Little Lies: Book vs Series — Key Differences & Should You Read First?
+[16:59:22.603] [INFO ]   AFTER  title (60 chars): Big Little Lies: The Book's Wit Meets the Series' Star Power
+[16:59:22.603] [INFO ]   BEFORE meta  (14 chars): Liane Moriarty
+[16:59:22.603] [INFO ]   AFTER  meta  (129 chars): Moriarty's sharp humor contrasts with Vallée's visual flair, making both versions essential. Discover how they uniquely resonate.
+[16:59:22.603] [INFO ]   ↻  big-little-lies-hbo — Pass 2 (openai/gpt-4o-mini)…
+[16:59:41.798] [ERROR] big-little-lies-hbo.json: Pass 2 failed: Unterminated string in JSON at position 8677 (line 80 column 437)
+[16:59:42.009] [INFO ]   ↻  breakfast-at-tiffanys — Pass 1 (openai/gpt-4o-mini)…
+[16:59:54.470] [ERROR] breakfast-at-tiffanys.json: Pass 1 failed: Unterminated string in JSON at position 8349 (line 84 column 341)
+[16:59:54.684] [INFO ]   ↻  bridgerton — Pass 1 (openai/gpt-4o-mini)…
+[17:00:16.180] [PASS ] bridgerton.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "The book's sharper focus enhances the central romance."
+[17:00:16.181] [INFO ]   ↻  bridgerton — titles (openai/gpt-4o-mini)…
+[17:00:17.540] [PASS ] bridgerton.json — Titles complete
+[17:00:17.540] [INFO ]   BEFORE title (57 chars): Bridgerton Book vs Series: Which Is Better? (Julia Quinn)
+[17:00:17.540] [INFO ]   AFTER  title (60 chars): Bridgerton: The Book Captures Simon and Daphne's Love Better
+[17:00:17.540] [INFO ]   BEFORE meta  (11 chars): Julia Quinn
+[17:00:17.541] [INFO ]   AFTER  meta  (130 chars): Quinn's sharp focus on romance deepens Simon and Daphne's connection, while the series distracts with its alternate-history flair.
+[17:00:17.541] [INFO ]   ↻  bridgerton — Pass 2 (openai/gpt-4o-mini)…
+[17:00:51.686] [PASS ] bridgerton.json — Pass 2 — 3 CTA blocks added
+[17:00:51.921] [INFO ]   ↻  brooklyn — Pass 1 (openai/gpt-4o-mini)…
+[17:01:11.011] [PASS ] brooklyn.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's meaning lives in the gap between Eilis's feelings."
+[17:01:11.012] [INFO ]   ↻  brooklyn — titles (openai/gpt-4o-mini)…
+[17:01:11.702] [PASS ] brooklyn.json — Titles complete
+[17:01:11.702] [INFO ]   BEFORE title (48 chars): Brooklyn: Book vs Movie — Tóibín vs John Crowley
+[17:01:11.702] [INFO ]   AFTER  title (59 chars): Brooklyn: Eilis's Unspoken Feelings Make the Book Essential
+[17:01:11.702] [INFO ]   BEFORE meta  (11 chars): Colm Tóibín
+[17:01:11.703] [INFO ]   AFTER  meta  (120 chars): Tóibín captures Eilis's inner turmoil in ways Crowley's film can't. Read the novel to grasp its deeper emotional truths.
+[17:01:11.703] [INFO ]   ↻  brooklyn — Pass 2 (openai/gpt-4o-mini)…
+[17:02:07.644] [PASS ] brooklyn.json — Pass 2 — 3 CTA blocks added
+[17:02:07.876] [INFO ]   ↻  catch-22 — Pass 1 (openai/gpt-4o-mini)…
+[17:03:17.535] [PASS ] catch-22.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's circular structure is the argument itself."
+[17:03:17.535] [INFO ]   ↻  catch-22 — titles (openai/gpt-4o-mini)…
+[17:03:19.028] [PASS ] catch-22.json — Titles complete
+[17:03:19.029] [INFO ]   BEFORE title (55 chars): Catch-22 Book vs Film: Which Is Better? (Joseph Heller)
+[17:03:19.029] [INFO ]   AFTER  title (61 chars): Catch-22: The Novel's Circular Logic Makes the Film Pointless
+[17:03:19.029] [INFO ]   BEFORE meta  (13 chars): Joseph Heller
+[17:03:19.029] [INFO ]   AFTER  meta  (129 chars): Heller's darkly funny anti-logic captures the futility of war. The film lacks the novel's cumulative impact. Read the book first.
+[17:03:19.029] [INFO ]   ↻  catch-22 — Pass 2 (openai/gpt-4o-mini)…
+[17:04:40.481] [PASS ] catch-22.json — Pass 2 — 3 CTA blocks added
+[17:04:40.706] [INFO ]   ↻  catch-me-if-you-can — Pass 1 (openai/gpt-4o-mini)…
+[17:05:03.283] [PASS ] catch-me-if-you-can.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "The film invents emotional stakes absent in the book."
+[17:05:03.283] [INFO ]   ↻  catch-me-if-you-can — titles (openai/gpt-4o-mini)…
+[17:05:04.742] [WARN ] catch-me-if-you-can.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[17:05:04.743] [INFO ]   BEFORE title (78 chars): Catch Me If You Can: Book vs Film — Emotional Architecture and Key Differences
+[17:05:04.743] [INFO ]   AFTER  title (66 chars): Catch Me If You Can: The Film Adds Emotional Stakes the Book Lacks
+[17:05:04.743] [INFO ]   BEFORE meta  (14 chars): Frank Abagnale
+[17:05:04.743] [INFO ]   AFTER  meta  (135 chars): Both versions thrill, but Spielberg's film elevates the stakes with emotional depth that Abagnale's memoir only hints at. A close call.
+[17:05:04.744] [INFO ]   ↻  catch-me-if-you-can — Pass 2 (openai/gpt-4o-mini)…
+[17:05:34.465] [PASS ] catch-me-if-you-can.json — Pass 2 — 3 CTA blocks added
+[17:05:34.683] [INFO ]   ↻  cold-mountain — Pass 1 (openai/gpt-4o-mini)…
+[17:05:54.251] [PASS ] cold-mountain.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's philosophical depth outweighs the film's visuals."
+[17:05:54.252] [INFO ]   ↻  cold-mountain — titles (openai/gpt-4o-mini)…
+[17:05:58.579] [PASS ] cold-mountain.json — Titles complete
+[17:05:58.580] [INFO ]   BEFORE title (59 chars): Cold Mountain: Book vs Movie — Frazier vs Anthony Minghella
+[17:05:58.580] [INFO ]   AFTER  title (61 chars): Cold Mountain: Frazier's Depth Makes Minghella's Visuals Fade
+[17:05:58.580] [INFO ]   BEFORE meta  (15 chars): Charles Frazier
+[17:05:58.580] [INFO ]   AFTER  meta  (123 chars): Minghella's adaptation is beautiful, but it can't match Frazier's profound journey. Read the novel for the true experience.
+[17:05:58.580] [INFO ]   ↻  cold-mountain — Pass 2 (openai/gpt-4o-mini)…
+[17:07:00.095] [PASS ] cold-mountain.json — Pass 2 — 3 CTA blocks added
+[17:07:00.313] [INFO ]   ↻  contact — Pass 1 (openai/gpt-4o-mini)…
+[17:07:20.629] [PASS ] contact.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "The film's emotional resolution lacks the novel's profound ending."
+[17:07:20.629] [INFO ]   ↻  contact — titles (openai/gpt-4o-mini)…
+[17:07:21.856] [PASS ] contact.json — Titles complete
+[17:07:21.857] [INFO ]   BEFORE title (49 chars): Contact: Book vs Film — Ending Changes Everything
+[17:07:21.857] [INFO ]   AFTER  title (59 chars): Contact: The Novel's Profound Ending vs. The Film's Emotion
+[17:07:21.857] [INFO ]   BEFORE meta  (10 chars): Carl Sagan
+[17:07:21.857] [INFO ]   AFTER  meta  (146 chars): Sagan's book offers a profound resolution that the film can't match. Zemeckis's adaptation shines emotionally but lacks depth. Both are essential.
+[17:07:21.857] [INFO ]   ↻  contact — Pass 2 (openai/gpt-4o-mini)…
+[18:34:43.700] [PASS ] contact.json — Pass 2 — 3 CTA blocks added
+[18:34:43.909] [INFO ]   ↻  da-vinci-code — Pass 1 (openai/gpt-4o-mini)…
+[18:34:46.709] [ERROR] da-vinci-code.json: Pass 1 failed: Unterminated string in JSON at position 1365 (line 27 column 158)
+[18:34:46.921] [INFO ]   ↻  daisy-jones-and-the-six — Pass 1 (openai/gpt-4o-mini)…
+[18:35:41.548] [PASS ] daisy-jones-and-the-six.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The oral history format is the experience."
+[18:35:41.548] [INFO ]   ↻  daisy-jones-and-the-six — titles (openai/gpt-4o-mini)…
+[18:35:42.662] [PASS ] daisy-jones-and-the-six.json — Titles complete
+[18:35:42.662] [INFO ]   BEFORE title (76 chars): Daisy Jones & The Six Book vs Series: Which Is Better? (Taylor Jenkins Reid)
+[18:35:42.662] [INFO ]   AFTER  title (59 chars): Daisy Jones & The Six: The Oral History Format Is Essential
+[18:35:42.662] [INFO ]   BEFORE meta  (19 chars): Taylor Jenkins Reid
+[18:35:42.663] [INFO ]   AFTER  meta  (138 chars): Reid's oral history captures the band's essence, while the series loses its unique structure. Read the book first for the true experience.
+[18:35:42.663] [INFO ]   ↻  daisy-jones-and-the-six — Pass 2 (openai/gpt-4o-mini)…
+[18:35:58.161] [ERROR] daisy-jones-and-the-six.json: Pass 2 failed: Unterminated string in JSON at position 6690 (line 78 column 528)
+[18:35:58.379] [INFO ]   ↻  dark-matter — Pass 1 (openai/gpt-4o-mini)…
+[18:37:15.735] [PASS ] dark-matter.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Both versions are genuinely competitive and worth experiencing."
+[18:37:15.736] [INFO ]   ↻  dark-matter — titles (openai/gpt-4o-mini)…
+[18:37:17.193] [PASS ] dark-matter.json — Titles complete
+[18:37:17.193] [INFO ]   BEFORE title (58 chars): Dark Matter: Book vs TV Series — Blake Crouch vs Apple TV+
+[18:37:17.193] [INFO ]   AFTER  title (61 chars): Dark Matter: Crouch's Thrilling Novel vs. His Riveting Series
+[18:37:17.193] [INFO ]   BEFORE meta  (12 chars): Blake Crouch
+[18:37:17.193] [INFO ]   AFTER  meta  (123 chars): Crouch's gripping novel pulls you in, while the series, led by Edgerton, expands the story. Both are essential experiences.
+[18:37:17.193] [INFO ]   ↻  dark-matter — Pass 2 (openai/gpt-4o-mini)…
+[18:37:47.236] [PASS ] dark-matter.json — Pass 2 — 3 CTA blocks added
+[18:37:47.472] [INFO ]   ↻  devil-wears-prada — Pass 1 (openai/gpt-4o-mini)…
+[18:38:07.261] [PASS ] devil-wears-prada.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's satire of fashion culture is sharper and funnier."
+[18:38:07.261] [INFO ]   ↻  devil-wears-prada — titles (openai/gpt-4o-mini)…
+[18:38:08.477] [PASS ] devil-wears-prada.json — Titles complete
+[18:38:08.478] [INFO ]   BEFORE title (72 chars): The Devil Wears Prada: Lauren Weisberger vs David Frankel — Book vs Film
+[18:38:08.478] [INFO ]   AFTER  title (64 chars): The Devil Wears Prada: Weisberger's Satire Cuts Deeper Than Film
+[18:38:08.478] [INFO ]   BEFORE meta  (17 chars): Lauren Weisberger
+[18:38:08.478] [INFO ]   AFTER  meta  (136 chars): Weisberger's novel delivers a sharper, funnier critique of fashion culture that the film can't match. Read it first for the full impact.
+[18:38:08.478] [INFO ]   ↻  devil-wears-prada — Pass 2 (openai/gpt-4o-mini)…
+[18:38:36.583] [PASS ] devil-wears-prada.json — Pass 2 — 3 CTA blocks added
+[18:38:36.818] [INFO ]   ↻  divergent — Pass 1 (openai/gpt-4o-mini)…
+[18:38:55.609] [PASS ] divergent.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Tris's moral complexity is lost in the film adaptation."
+[18:38:55.609] [INFO ]   ↻  divergent — titles (openai/gpt-4o-mini)…
+[18:38:56.225] [PASS ] divergent.json — Titles complete
+[18:38:56.226] [INFO ]   BEFORE title (55 chars): Divergent: Book vs Movie — Veronica Roth vs Neil Burger
+[18:38:56.226] [INFO ]   AFTER  title (54 chars): Divergent: Tris's Moral Complexity Is Lost in the Film
+[18:38:56.226] [INFO ]   BEFORE meta  (13 chars): Veronica Roth
+[18:38:56.226] [INFO ]   AFTER  meta  (138 chars): Roth's novel explores Tris's inner conflicts with depth, while Burger's film sacrifices this for pace. Read the book to grasp her journey.
+[18:38:56.226] [INFO ]   ↻  divergent — Pass 2 (openai/gpt-4o-mini)…
+[18:39:26.180] [PASS ] divergent.json — Pass 2 — 3 CTA blocks added
+[18:39:26.401] [INFO ]   ↻  doctor-sleep — Pass 1 (openai/gpt-4o-mini)…
+[18:40:11.019] [PASS ] doctor-sleep.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's treatment of recovery is more authentic."
+[18:40:11.020] [INFO ]   ↻  doctor-sleep — titles (openai/gpt-4o-mini)…
+[18:40:12.426] [PASS ] doctor-sleep.json — Titles complete
+[18:40:12.427] [INFO ]   BEFORE title (69 chars): Doctor Sleep: Book vs Film — Key Differences & Should You Read First?
+[18:40:12.427] [INFO ]   AFTER  title (62 chars): Doctor Sleep: Recovery's Raw Truth on the Page, Not the Screen
+[18:40:12.427] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[18:40:12.427] [INFO ]   AFTER  meta  (133 chars): King's portrayal of Danny's recovery is deeply authentic, while Flanagan's film glosses over the emotional grit. Read the book first.
+[18:40:12.428] [INFO ]   ↻  doctor-sleep — Pass 2 (openai/gpt-4o-mini)…
+[18:40:17.915] [ERROR] doctor-sleep.json: Pass 2 failed: Unterminated string in JSON at position 1997 (line 27 column 572)
+[18:40:18.146] [INFO ]   ↻  dracula — Pass 1 (openai/gpt-4o-mini)…

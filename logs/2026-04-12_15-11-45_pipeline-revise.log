@@ -1,0 +1,48 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T19:11:45.042Z
+============================================================
+[19:11:45.044] [INFO ] Model config loaded from config/models.json
+[19:11:45.047] [INFO ] Pass 1 model:  anthropic/claude-haiku-4-5 (temp: 0.3)
+[19:11:45.047] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[19:11:45.047] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[19:11:45.047] [INFO ] Loaded pass1-structural.txt (3965 chars)
+[19:11:45.048] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[19:11:45.048] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[19:11:45.049] [INFO ] pipeline-revise.js
+[19:11:45.049] [INFO ] Pass:    all
+[19:11:45.049] [INFO ] Files:   163
+[19:11:45.049] [INFO ] Force:   no
+[19:11:45.049] [INFO ] Dry run: no
+[19:11:45.049] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[19:11:45.050] [INFO ]   ↻  a-beautiful-mind — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:12:21.931] [PASS ] a-beautiful-mind.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Book reveals Nash's bisexuality and abandoned son; film invents Parcher to visualize delusions."
+[19:12:21.932] [INFO ]   ↻  a-beautiful-mind — titles (anthropic/claude-sonnet-4-5)…
+[19:12:24.931] [PASS ] a-beautiful-mind.json — Titles complete
+[19:12:24.932] [INFO ]   BEFORE title (48 chars): A Beautiful Mind: Nasar vs Howard — Book vs Film
+[19:12:24.932] [INFO ]   AFTER  title (62 chars): A Beautiful Mind: Nasar Tells the Truth. Howard Tells a Story.
+[19:12:24.932] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[19:12:24.932] [INFO ]   AFTER  meta  (128 chars): The book includes Nash's bisexuality and abandoned son. The film invents Parcher to make delusions cinematic. Both choices work.
+[19:12:24.932] [INFO ]   ↻  a-beautiful-mind — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:13:03.759] [PASS ] a-beautiful-mind.json — Pass 2 — 3 CTA blocks added
+[19:13:04.263] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:13:37.069] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novellas offer prose warmth; series expands the world visually."
+[19:13:37.069] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — titles (anthropic/claude-sonnet-4-5)…
+[19:13:40.681] [PASS ] a-knight-of-the-seven-kingdoms.json — Titles complete
+[19:13:40.681] [INFO ]   BEFORE title (65 chars): A Knight of the Seven Kingdoms: Book vs TV Series — Martin vs HBO
+[19:13:40.682] [INFO ]   AFTER  title (62 chars): A Knight of the Seven Kingdoms: Martin's Warmth vs HBO's World
+[19:13:40.682] [INFO ]   BEFORE meta  (18 chars): George R.R. Martin
+[19:13:40.682] [INFO ]   AFTER  meta  (129 chars): Martin gave Westeros three novellas of hope. HBO gave them scale and spectacle. Both honour Dunk and Egg in ways the other can't.
+[19:13:40.682] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:14:15.347] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 2 — 3 CTA blocks added
+[19:14:15.865] [INFO ]   ↻  a-little-life — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:14:56.599] [PASS ] a-little-life.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Only the novel's 700-page accumulation can make trauma feel inescapable."
+[19:14:56.599] [INFO ]   ↻  a-little-life — titles (anthropic/claude-sonnet-4-5)…
+[19:14:59.634] [PASS ] a-little-life.json — Titles complete
+[19:14:59.634] [INFO ]   BEFORE title (52 chars): A Little Life: Yanagihara vs van Hove — Book vs Film
+[19:14:59.634] [INFO ]   AFTER  title (56 chars): A Little Life: The Novel Traps You. The Film Just Hurts.
+[19:14:59.634] [INFO ]   BEFORE meta  (16 chars): Hanya Yanagihara
+[19:14:59.634] [INFO ]   AFTER  meta  (120 chars): Van Hove's stage adaptation can't replicate what 700 pages do: make Jude's trauma feel inescapable. Read the book first.
+[19:14:59.634] [INFO ]   ↻  a-little-life — Pass 2 (anthropic/claude-haiku-4-5)…

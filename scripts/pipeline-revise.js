@@ -23,12 +23,13 @@
  *   all     — Pass 1 + titles + Pass 2
  *
  * Options:
- *   --slug    Process a single page by slug
- *   --all     Process all files in pipeline/1-extracted/
- *   --pass    1 | titles | 2 | both | all  (default: 1)
- *   --force   Overwrite existing files in pipeline/2-revised/
- *   --dry     Dry run — print what would happen without calling the API
- *   --delay   Milliseconds between API calls (default: 500)
+ *   --slug                    Process a single page by slug
+ *   --all                     Process all files in pipeline/1-extracted/
+ *   --pass                    1 | titles | 2 | both | all  (default: 1)
+ *   --force                   Overwrite existing files in pipeline/2-revised/
+ *   --dry                     Dry run — print what would happen without calling the API
+ *   --delay                   Milliseconds between API calls (default: 500)
+ *   --quality-check-interval  Run quality gate every N pages, hard-stop on failure (default: off)
  *
  * Environment (.env in project root):
  *   OPENROUTER_API_KEY   Required.
@@ -40,6 +41,7 @@ const fs               = require('fs');
 const path             = require('path');
 const https            = require('https');
 const { createLogger } = require('./logger');
+const { checkRecord }  = require('./quality-gate');
 
 // ── CLI ───────────────────────────────────────────────────────────────────────
 
@@ -47,12 +49,13 @@ const args    = process.argv.slice(2);
 const get     = (flag, fallback) => { const i = args.indexOf(flag); return i !== -1 && args[i+1] ? args[i+1] : fallback; };
 const hasFlag = flag => args.includes(flag);
 
-const SINGLE_SLUG = get('--slug', null);
-const RUN_ALL     = hasFlag('--all');
-const PASS        = get('--pass', '1');
-const FORCE       = hasFlag('--force');
-const DRY_RUN     = hasFlag('--dry');
-const DELAY_MS    = parseInt(get('--delay', '500'), 10);
+const SINGLE_SLUG      = get('--slug', null);
+const RUN_ALL          = hasFlag('--all');
+const PASS             = get('--pass', '1');
+const FORCE            = hasFlag('--force');
+const DRY_RUN          = hasFlag('--dry');
+const DELAY_MS         = parseInt(get('--delay', '500'), 10);
+const QUALITY_INTERVAL = parseInt(get('--quality-check-interval', '0'), 10);
 
 const EXTRACTED_DIR = path.resolve(__dirname, '../pipeline/1-extracted');
 const REVISED_DIR   = path.resolve(__dirname, '../pipeline/2-revised');
@@ -630,6 +633,44 @@ async function run() {
 
     if (!DRY_RUN && DELAY_MS > 0 && i < slugs.length - 1) {
       await sleep(DELAY_MS);
+    }
+
+    // ── Periodic quality gate ─────────────────────────────────────────────────
+    if (!DRY_RUN && QUALITY_INTERVAL > 0 && (i + 1) % QUALITY_INTERVAL === 0) {
+      log.section(`Quality gate — pages ${i + 2 - QUALITY_INTERVAL} to ${i + 1}`);
+      const recentSlugs = slugs.slice(Math.max(0, i + 1 - QUALITY_INTERVAL), i + 1);
+      let gateFailed = false;
+
+      for (const s of recentSlugs) {
+        const revPath  = path.join(OUT_DIR, `${s}.json`);
+        const origPath = path.join(EXTRACTED_DIR, `${s}.json`);
+        if (!fs.existsSync(revPath)) continue;
+        try {
+          const record   = JSON.parse(fs.readFileSync(revPath, 'utf8'));
+          const original = fs.existsSync(origPath)
+            ? JSON.parse(fs.readFileSync(origPath, 'utf8')) : null;
+          const { failures, warnings } = checkRecord(record, original);
+          if (failures.length > 0) {
+            log.error(`${s}.json`, `Quality gate: ${failures.join(' | ')}`);
+            gateFailed = true;
+          } else if (warnings.length > 0) {
+            log.warn(`${s}.json`, `Quality gate warnings: ${warnings.join(' | ')}`);
+          } else {
+            log.pass(`${s}.json`, 'Quality gate passed');
+          }
+        } catch (e) {
+          log.error(`${s}.json`, `Quality gate parse error: ${e.message}`);
+          gateFailed = true;
+        }
+      }
+
+      if (gateFailed) {
+        log.error('pipeline-revise.js', `Quality gate FAILED at page ${i + 1} — stopping batch. Fix issues and re-run.`);
+        log.close();
+        process.exit(1);
+      } else {
+        log.info(`Quality gate passed for pages ${i + 2 - QUALITY_INTERVAL}-${i + 1}`);
+      }
     }
   }
 

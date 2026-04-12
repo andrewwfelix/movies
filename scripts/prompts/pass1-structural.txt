@@ -25,6 +25,17 @@ You will receive a review JSON object. You must return a valid JSON object with 
      BAD: "Both versions have their strengths."
      The one-line reason must be defensible from the existing verdictBox or differences content.
 
+     For "Too Close to Call" verdicts specifically:
+     Name what each version UNIQUELY OWNS — not that both are good, but what
+     is irreplaceable in each. The reader should feel the specific trade-off.
+     GOOD: "Hornby's internal monologue exists only on the page; Grant owns the screen."
+     GOOD: "Burton's excess serves what Wallace kept spare."
+     BAD: "Both versions equally rewarding."
+     BAD: "Grant's performance matches Hornby's prose."
+     BAD: "Neither diminishes the other."
+     Never use: "both versions", "equally rewarding", "complement each other",
+     "neither diminishes", "both are", "worth experiencing", "illuminate each other".
+
 2. pageTitle (OPTIONAL improvement — only change if current title is weak)
    Current titles to LEAVE AS-IS if they already contain:
    - "Which Is Better" or "which is better"
