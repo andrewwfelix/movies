@@ -147,7 +147,6 @@ function renderHeader() {
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
       <a href="/">Home</a> &nbsp;&middot;&nbsp;
-      <a href="/browse">Browse All</a> &nbsp;&middot;&nbsp;
       <a href="/about">About</a>
     </nav>
   </div>
