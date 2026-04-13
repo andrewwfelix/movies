@@ -1,3 +1,11 @@
+# quick win: create a few new pages that could add immediate value
+
+liek "film critics ranked" or "what do film screen terms mean (dolby, imax, etc)
+
+other quick win ideas? I have movie adaptations ranked already. I like film critics ranked.
+
+# 
+
 # BooksVersusMovies.com — New Ideas
 
 ====================================
@@ -276,9 +284,10 @@ Purpose: baseline to compare against next week's export
 INDEXING STATUS export (monthly):
 Report: Indexing > Pages
 Export each status group separately:
-- Indexed
-- Crawled not indexed
-- Discovered not indexed
+
+* Indexed
+* Crawled not indexed
+* Discovered not indexed
 Filename: data/reports/gsc/YYYY-MM-DD-indexing-status.csv
 
 Also consider: automate via GSC API once manual protocol is established
@@ -449,7 +458,7 @@ Stage 1 — Factual extraction (cheap model, fast):
 
 Input: bookTitle, slug, filmYear (optional)
 
-Output: author, bookYear, filmYear, director, starring, genre, 
+Output: author, bookYear, filmYear, director, starring, genre,
 
 &#x20;       mediaType, mediaLabel, starringLine, reviewBody (one sentence)
 
@@ -463,7 +472,7 @@ Stage 2 — Editorial generation (Sonnet, the real work):
 
 Input: full Stage 1 output + affiliateLink + youtubeId + videoAffiliateLink
 
-Output: storyBrief, characters, differences, readFirst, verdictBox, 
+Output: storyBrief, characters, differences, readFirst, verdictBox,
 
 &#x20;       verdictText, verdictClass, faq, related, relatedSectionTitle
 
@@ -480,8 +489,4 @@ Stage 2 only runs on verified data
 You can review Stage 1 output in a CSV before triggering Stage 2
 
 Add to new-ideas.md for tomorrow, and let's call it a night — good session.
-
-
-
-
 
