@@ -1,0 +1,1447 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-12T19:38:58.771Z
+============================================================
+[19:38:58.774] [INFO ] Model config loaded from config/models.json
+[19:38:58.776] [INFO ] Pass 1 model:  anthropic/claude-haiku-4-5 (temp: 0.3)
+[19:38:58.776] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[19:38:58.777] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[19:38:58.777] [INFO ] Loaded pass1-structural.txt (4631 chars)
+[19:38:58.777] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[19:38:58.777] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[19:38:58.778] [INFO ] pipeline-revise.js
+[19:38:58.778] [INFO ] Pass:    all
+[19:38:58.778] [INFO ] Files:   163
+[19:38:58.778] [INFO ] Force:   no
+[19:38:58.778] [INFO ] Dry run: no
+[19:38:58.778] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[19:38:58.779] [INFO ]   ↻  a-beautiful-mind — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:39:35.358] [PASS ] a-beautiful-mind.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Nasar's biography owns Nash's full truth; Howard's film owns the terror of losing your mind."
+[19:39:35.359] [INFO ]   ↻  a-beautiful-mind — titles (anthropic/claude-sonnet-4-5)…
+[19:39:38.185] [PASS ] a-beautiful-mind.json — Titles complete
+[19:39:38.185] [INFO ]   BEFORE title (48 chars): A Beautiful Mind: Nasar vs Howard — Book vs Film
+[19:39:38.185] [INFO ]   AFTER  title (63 chars): A Beautiful Mind: Nasar Owns the Truth. Howard Owns the Terror.
+[19:39:38.186] [INFO ]   BEFORE meta  (12 chars): Sylvia Nasar
+[19:39:38.186] [INFO ]   AFTER  meta  (148 chars): The biography gives you Nash's full life—the cruelty, the brilliance, the decades of illness. The film gives you what it feels like to lose reality.
+[19:39:38.186] [INFO ]   ↻  a-beautiful-mind — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:40:15.508] [PASS ] a-beautiful-mind.json — Pass 2 — 3 CTA blocks added
+[19:40:16.011] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:40:50.428] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Martin's prose warmth versus HBO's fully realised world—each irreplaceable."
+[19:40:50.428] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — titles (anthropic/claude-sonnet-4-5)…
+[19:40:52.682] [PASS ] a-knight-of-the-seven-kingdoms.json — Titles complete
+[19:40:52.682] [INFO ]   BEFORE title (65 chars): A Knight of the Seven Kingdoms: Book vs TV Series — Martin vs HBO
+[19:40:52.682] [INFO ]   AFTER  title (62 chars): A Knight of the Seven Kingdoms: Martin's Warmth vs HBO's World
+[19:40:52.682] [INFO ]   BEFORE meta  (18 chars): George R.R. Martin
+[19:40:52.682] [INFO ]   AFTER  meta  (135 chars): Martin gave Westeros heart in three novellas. HBO gave it scale and faces. Both versions are irreplaceable—read and watch in any order.
+[19:40:52.682] [INFO ]   ↻  a-knight-of-the-seven-kingdoms — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:41:26.645] [PASS ] a-knight-of-the-seven-kingdoms.json — Pass 2 — 3 CTA blocks added
+[19:41:27.161] [INFO ]   ↻  a-little-life — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:42:03.264] [PASS ] a-little-life.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's 700-page accumulation of trauma cannot survive two-hour compression."
+[19:42:03.265] [INFO ]   ↻  a-little-life — titles (anthropic/claude-sonnet-4-5)…
+[19:42:06.231] [PASS ] a-little-life.json — Titles complete
+[19:42:06.231] [INFO ]   BEFORE title (59 chars): A Little Life: Book vs Film — Which Is Better? (Yanagihara)
+[19:42:06.231] [INFO ]   AFTER  title (60 chars): A Little Life: Yanagihara's 700 Pages Can't Fit in Two Hours
+[19:42:06.232] [INFO ]   BEFORE meta  (16 chars): Hanya Yanagihara
+[19:42:06.232] [INFO ]   AFTER  meta  (134 chars): Van Hove's film compresses what only works through accumulation. The novel's slow devastation becomes rushed suffering. Read the book.
+[19:42:06.232] [INFO ]   ↻  a-little-life — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:42:43.811] [PASS ] a-little-life.json — Pass 2 — 3 CTA blocks added
+[19:42:44.318] [INFO ]   ↻  a-man-called-ove — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:43:19.694] [PASS ] a-man-called-ove.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ove's caustic internal monologue exists only on the page."
+[19:43:19.694] [INFO ]   ↻  a-man-called-ove — titles (anthropic/claude-sonnet-4-5)…
+[19:43:21.936] [PASS ] a-man-called-ove.json — Titles complete
+[19:43:21.936] [INFO ]   BEFORE title (59 chars): A Man Called Ove: Book vs Film — Backman's Interiority Wins
+[19:43:21.936] [INFO ]   AFTER  title (59 chars): A Man Called Ove: Without His Inner Voice, He's Just Grumpy
+[19:43:21.936] [INFO ]   BEFORE meta  (15 chars): Fredrik Backman
+[19:43:21.936] [INFO ]   AFTER  meta  (139 chars): Hannes Holm's film captures the warmth. It can't capture the caustic brilliance that makes Ove more than a curmudgeon. Read the book first.
+[19:43:21.936] [INFO ]   ↻  a-man-called-ove — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:43:59.673] [PASS ] a-man-called-ove.json — Pass 2 — 3 CTA blocks added
+[19:44:00.179] [INFO ]   ↻  a-walk-to-remember — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:44:30.237] [PASS ] a-walk-to-remember.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Retrospective narration and 1950s setting earn emotional weight the film cannot replicate."
+[19:44:30.237] [INFO ]   ↻  a-walk-to-remember — titles (anthropic/claude-sonnet-4-5)…
+[19:44:33.181] [PASS ] a-walk-to-remember.json — Titles complete
+[19:44:33.182] [INFO ]   BEFORE title (70 chars): A Walk to Remember: Book vs Movie — Which Is Better? (Nicholas Sparks)
+[19:44:33.182] [INFO ]   AFTER  title (63 chars): A Walk to Remember: Sparks's 1950s Grief Earns What Moore Can't
+[19:44:33.182] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[19:44:33.182] [INFO ]   AFTER  meta  (134 chars): The novel's retrospective voice and period setting make the loss feel earned. The 2002 film is easier to cry at—but harder to believe.
+[19:44:33.182] [INFO ]   ↻  a-walk-to-remember — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:45:04.706] [PASS ] a-walk-to-remember.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 1 to 5 ──────────────────
+[19:45:05.221] [PASS ] a-beautiful-mind.json — Quality gate passed
+[19:45:05.224] [PASS ] a-knight-of-the-seven-kingdoms.json — Quality gate passed
+[19:45:05.226] [PASS ] a-little-life.json — Quality gate passed
+[19:45:05.226] [PASS ] a-man-called-ove.json — Quality gate passed
+[19:45:05.227] [PASS ] a-walk-to-remember.json — Quality gate passed
+[19:45:05.227] [INFO ] Quality gate passed for pages 1-5
+[19:45:05.228] [INFO ]   ↻  about-a-boy — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:45:35.353] [PASS ] about-a-boy.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Hornby's prose owns Marcus's strangeness; Grant owns Will's weaponized charm."
+[19:45:35.354] [INFO ]   ↻  about-a-boy — titles (anthropic/claude-sonnet-4-5)…
+[19:45:37.964] [PASS ] about-a-boy.json — Titles complete
+[19:45:37.964] [INFO ]   BEFORE title (47 chars): About a Boy: Hornby vs Weitz — Which Is Better?
+[19:45:37.964] [INFO ]   AFTER  title (49 chars): About a Boy: Hornby Owns Marcus. Grant Owns Will.
+[19:45:37.964] [INFO ]   BEFORE meta  (11 chars): Nick Hornby
+[19:45:37.964] [INFO ]   AFTER  meta  (134 chars): The novel gets inside Marcus's head in ways the film can't. The film gives Will a face Hornby never quite managed. Both are essential.
+[19:45:37.964] [INFO ]   ↻  about-a-boy — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:46:10.364] [PASS ] about-a-boy.json — Pass 2 — 3 CTA blocks added
+[19:46:10.875] [INFO ]   ↻  all-quiet-on-the-western-front — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:46:46.153] [PASS ] all-quiet-on-the-western-front.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Remarque's first-person voice irreplaceable; Berger's German perspective and armistice framing irreplaceable."
+[19:46:46.153] [INFO ]   ↻  all-quiet-on-the-western-front — titles (anthropic/claude-sonnet-4-5)…
+[19:46:49.802] [PASS ] all-quiet-on-the-western-front.json — Titles complete
+[19:46:49.803] [INFO ]   BEFORE title (65 chars): All Quiet on the Western Front: Remarque vs Berger — Book vs Film
+[19:46:49.803] [INFO ]   AFTER  title (57 chars): All Quiet: Remarque's Voice vs Berger's Armistice Framing
+[19:46:49.803] [INFO ]   BEFORE meta  (20 chars): Erich Maria Remarque
+[19:46:49.803] [INFO ]   AFTER  meta  (136 chars): Remarque wrote from the trenches in first person. Berger made the first honest German-language film. Both are irreplaceable. Read first.
+[19:46:49.803] [INFO ]   ↻  all-quiet-on-the-western-front — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:47:26.160] [PASS ] all-quiet-on-the-western-front.json — Pass 2 — 3 CTA blocks added
+[19:47:26.674] [INFO ]   ↻  all-the-light-we-cannot-see — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:48:00.221] [PASS ] all-the-light-we-cannot-see.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Doerr's prose renders Marie-Laure's blindness as heightened perception; no camera can replicate that."
+[19:48:00.222] [INFO ]   ↻  all-the-light-we-cannot-see — titles (anthropic/claude-sonnet-4-5)…
+[19:48:02.849] [PASS ] all-the-light-we-cannot-see.json — Titles complete
+[19:48:02.850] [INFO ]   BEFORE title (78 chars): All the Light We Cannot See: Book vs Series — Which Is Better? (Anthony Doerr)
+[19:48:02.850] [INFO ]   AFTER  title (62 chars): All the Light: Doerr Makes You See Through Marie-Laure's Hands
+[19:48:02.850] [INFO ]   BEFORE meta  (13 chars): Anthony Doerr
+[19:48:02.850] [INFO ]   AFTER  meta  (128 chars): Netflix captured the plot. It can't capture the prose that turns blindness into a way of knowing the world. Read the book first.
+[19:48:02.850] [INFO ]   ↻  all-the-light-we-cannot-see — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:48:38.119] [PASS ] all-the-light-we-cannot-see.json — Pass 2 — 3 CTA blocks added
+[19:48:38.629] [INFO ]   ↻  along-came-a-spider — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:49:09.736] [PASS ] along-came-a-spider.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Jezzie's betrayal and Soneji's fractured psychology exist only on the page."
+[19:49:09.736] [INFO ]   ↻  along-came-a-spider — titles (anthropic/claude-sonnet-4-5)…
+[19:49:12.314] [PASS ] along-came-a-spider.json — Titles complete
+[19:49:12.314] [INFO ]   BEFORE title (70 chars): Along Came a Spider: Book vs Film — Which Is Better? (James Patterson)
+[19:49:12.315] [INFO ]   AFTER  title (61 chars): Along Came a Spider: Jezzie's Betrayal Only Works on the Page
+[19:49:12.315] [INFO ]   BEFORE meta  (15 chars): James Patterson
+[19:49:12.315] [INFO ]   AFTER  meta  (135 chars): Patterson's Jezzie twist devastates. The film turns her into a generic corrupt cop. Soneji's fractured mind? Gone. Read the book first.
+[19:49:12.315] [INFO ]   ↻  along-came-a-spider — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:49:43.623] [PASS ] along-came-a-spider.json — Pass 2 — 3 CTA blocks added
+[19:49:44.127] [INFO ]   ↻  american-gods — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:50:15.322] [PASS ] american-gods.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel completes its mystery; the series was cancelled unresolved."
+[19:50:15.322] [INFO ]   ↻  american-gods — titles (anthropic/claude-sonnet-4-5)…
+[19:50:17.800] [PASS ] american-gods.json — Titles complete
+[19:50:17.800] [INFO ]   BEFORE title (62 chars): American Gods: Book vs Series — Which Is Better? (Neil Gaiman)
+[19:50:17.800] [INFO ]   AFTER  title (64 chars): American Gods: The Series Was Cancelled. The Book Has an Ending.
+[19:50:17.801] [INFO ]   BEFORE meta  (11 chars): Neil Gaiman
+[19:50:17.801] [INFO ]   AFTER  meta  (137 chars): Fuller's first season is visually stunning. Then the show collapsed and left Gaiman's mystery unfinished. Read the book—it actually ends.
+[19:50:17.801] [INFO ]   ↻  american-gods — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:50:52.038] [PASS ] american-gods.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 6 to 10 ─────────────────
+[19:50:52.541] [PASS ] about-a-boy.json — Quality gate passed
+[19:50:52.542] [WARN ] all-quiet-on-the-western-front.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[19:50:52.543] [PASS ] all-the-light-we-cannot-see.json — Quality gate passed
+[19:50:52.543] [PASS ] along-came-a-spider.json — Quality gate passed
+[19:50:52.544] [PASS ] american-gods.json — Quality gate passed
+[19:50:52.544] [INFO ] Quality gate passed for pages 6-10
+[19:50:52.545] [INFO ]   ↻  american-psycho — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:51:22.350] [PASS ] american-psycho.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ellis's unreliable narrator and graphic violence exist only on the page."
+[19:51:22.350] [INFO ]   ↻  american-psycho — titles (anthropic/claude-sonnet-4-5)…
+[19:51:25.518] [PASS ] american-psycho.json — Titles complete
+[19:51:25.519] [INFO ]   BEFORE title (65 chars): American Psycho: Book vs Movie — Bret Easton Ellis vs Mary Harron
+[19:51:25.519] [INFO ]   AFTER  title (63 chars): American Psycho: Ellis's Bateman Is Unfilmable. Harron Knew It.
+[19:51:25.519] [INFO ]   BEFORE meta  (17 chars): Bret Easton Ellis
+[19:51:25.519] [INFO ]   AFTER  meta  (144 chars): The novel's violence and unreliable narration can't survive adaptation. Harron made a sharp satire instead. Read Ellis first—it's still radical.
+[19:51:25.520] [INFO ]   ↻  american-psycho — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:52:03.454] [PASS ] american-psycho.json — Pass 2 — 3 CTA blocks added
+[19:52:03.966] [INFO ]   ↻  animal-farm — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:52:34.922] [PASS ] animal-farm.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Orwell's prose economy — eighty pages of surgical precision — cannot be expanded without loss."
+[19:52:34.922] [INFO ]   ↻  animal-farm — titles (anthropic/claude-sonnet-4-5)…
+[19:52:38.157] [PASS ] animal-farm.json — Titles complete
+[19:52:38.157] [INFO ]   BEFORE title (57 chars): Animal Farm: Book vs Movie — George Orwell vs Andy Serkis
+[19:52:38.157] [INFO ]   AFTER  title (62 chars): Animal Farm: Orwell's 80 Pages Are Perfect. Serkis Had to Add.
+[19:52:38.157] [INFO ]   BEFORE meta  (13 chars): George Orwell
+[19:52:38.158] [INFO ]   AFTER  meta  (143 chars): The novella is surgical. The film is sincere and beautiful. But every scene Serkis adds to reach feature length dilutes what Orwell kept spare.
+[19:52:38.158] [INFO ]   ↻  animal-farm — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:53:10.569] [PASS ] animal-farm.json — Pass 2 — 3 CTA blocks added
+[19:53:11.082] [INFO ]   ↻  annihilation — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:53:46.294] [PASS ] annihilation.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The biologist's unnamed first-person voice cannot be filmed."
+[19:53:46.295] [INFO ]   ↻  annihilation — titles (anthropic/claude-sonnet-4-5)…
+[19:53:48.589] [PASS ] annihilation.json — Titles complete
+[19:53:48.590] [INFO ]   BEFORE title (58 chars): Annihilation: Book vs Film — Which Is Better? (VanderMeer)
+[19:53:48.590] [INFO ]   AFTER  title (62 chars): Annihilation: VanderMeer's Nameless Voice Is What Garland Lost
+[19:53:48.590] [INFO ]   BEFORE meta  (15 chars): Jeff VanderMeer
+[19:53:48.590] [INFO ]   AFTER  meta  (138 chars): Garland made one of the most beautiful sci-fi films in years. He still can't replicate VanderMeer's unnamed narrator. Read the book first.
+[19:53:48.590] [INFO ]   ↻  annihilation — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:54:24.457] [PASS ] annihilation.json — Pass 2 — 3 CTA blocks added
+[19:54:24.959] [INFO ]   ↻  atonement — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:55:01.535] [PASS ] atonement.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The metafictional ending only works on the page."
+[19:55:01.536] [INFO ]   ↻  atonement — titles (anthropic/claude-sonnet-4-5)…
+[19:55:03.911] [PASS ] atonement.json — Titles complete
+[19:55:03.911] [INFO ]   BEFORE title (45 chars): Atonement Book vs Movie: McEwan vs Joe Wright
+[19:55:03.912] [INFO ]   AFTER  title (61 chars): Atonement: Read It First or Briony's Confession Means Nothing
+[19:55:03.912] [INFO ]   BEFORE meta  (10 chars): Ian McEwan
+[19:55:03.912] [INFO ]   AFTER  meta  (126 chars): Wright made one of the most beautiful films of the 2000s. It still can't do what McEwan does on the page. Read the book first.
+[19:55:03.912] [INFO ]   ↻  atonement — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:55:43.011] [PASS ] atonement.json — Pass 2 — 3 CTA blocks added
+[19:55:43.521] [INFO ]   ↻  band-of-brothers — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:56:17.741] [PASS ] band-of-brothers.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Ambrose's history owns the record; the series owns the visceral experience of combat."
+[19:56:17.741] [INFO ]   ↻  band-of-brothers — titles (anthropic/claude-sonnet-4-5)…
+[19:56:20.303] [PASS ] band-of-brothers.json — Titles complete
+[19:56:20.303] [INFO ]   BEFORE title (61 chars): Band of Brothers: Book vs Series — Which Is Better? (Ambrose)
+[19:56:20.304] [INFO ]   AFTER  title (60 chars): Band of Brothers: Ambrose Owns the Record. HBO Owns the War.
+[19:56:20.304] [INFO ]   BEFORE meta  (15 chars): Stephen Ambrose
+[19:56:20.304] [INFO ]   AFTER  meta  (109 chars): The book is history. The series is the finest combat television ever made. You need both. Either order works.
+[19:56:20.304] [INFO ]   ↻  band-of-brothers — Pass 2 (anthropic/claude-haiku-4-5)…
+[19:56:55.697] [PASS ] band-of-brothers.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 11 to 15 ────────────────
+[19:56:56.206] [PASS ] american-psycho.json — Quality gate passed
+[19:56:56.207] [PASS ] animal-farm.json — Quality gate passed
+[19:56:56.208] [PASS ] annihilation.json — Quality gate passed
+[19:56:56.208] [PASS ] atonement.json — Quality gate passed
+[19:56:56.209] [PASS ] band-of-brothers.json — Quality gate passed
+[19:56:56.209] [INFO ] Quality gate passed for pages 11-15
+[19:56:56.209] [INFO ]   ↻  beloved — Pass 1 (anthropic/claude-haiku-4-5)…
+[19:57:26.710] [PASS ] beloved.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Morrison's fragmented prose enacts trauma; film must proceed chronologically."
+[19:57:26.710] [INFO ]   ↻  beloved — titles (anthropic/claude-sonnet-4-5)…
+[19:57:29.776] [PASS ] beloved.json — Titles complete
+[19:57:29.777] [INFO ]   BEFORE title (56 chars): Beloved: Book vs Movie — Toni Morrison vs Jonathan Demme
+[19:57:29.777] [INFO ]   AFTER  title (64 chars): Beloved: Morrison's Fragments Enact Trauma. Demme Just Shows It.
+[19:57:29.777] [INFO ]   BEFORE meta  (13 chars): Toni Morrison
+[19:57:29.777] [INFO ]   AFTER  meta  (134 chars): The novel's structure is the trauma—nonlinear, circling, refusing closure. Demme's film proceeds chronologically. Read the book first.
+[19:57:29.777] [INFO ]   ↻  beloved — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:44:45.276] [PASS ] beloved.json — Pass 2 — 3 CTA blocks added
+[20:44:45.783] [INFO ]   ↻  big-fish — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:45:18.278] [PASS ] big-fish.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Wallace's gaps exist only on the page; Burton's daffodils only on screen."
+[20:45:18.278] [INFO ]   ↻  big-fish — titles (anthropic/claude-sonnet-4-5)…
+[20:45:20.874] [PASS ] big-fish.json — Titles complete
+[20:45:20.875] [INFO ]   BEFORE title (42 chars): Big Fish: Wallace vs Burton — Book vs Film
+[20:45:20.875] [INFO ]   AFTER  title (61 chars): Big Fish: Wallace's Gaps vs Burton's Daffodils—Both Essential
+[20:45:20.875] [INFO ]   BEFORE meta  (14 chars): Daniel Wallace
+[20:45:20.875] [INFO ]   AFTER  meta  (138 chars): Wallace wrote spare melancholy. Burton made visual extravagance. Each owns something the other can't touch. Read or watch first—both work.
+[20:45:20.875] [INFO ]   ↻  big-fish — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:45:54.398] [PASS ] big-fish.json — Pass 2 — 3 CTA blocks added
+[20:45:54.909] [INFO ]   ↻  big-little-lies-hbo — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:46:30.319] [PASS ] big-little-lies-hbo.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Moriarty's comic voice sustains on the page; Kidman's performance deepens the screen."
+[20:46:30.320] [INFO ]   ↻  big-little-lies-hbo — titles (anthropic/claude-sonnet-4-5)…
+[20:46:33.126] [PASS ] big-little-lies-hbo.json — Titles complete
+[20:46:33.126] [INFO ]   BEFORE title (67 chars): Big Little Lies: Book vs Series — Which Is Better? (Liane Moriarty)
+[20:46:33.126] [INFO ]   AFTER  title (63 chars): Big Little Lies: Moriarty's Wit vs. Kidman's Wrecked Perfection
+[20:46:33.127] [INFO ]   BEFORE meta  (14 chars): Liane Moriarty
+[20:46:33.127] [INFO ]   AFTER  meta  (139 chars): The novel is funnier. The series is more devastating. Vallée's Monterey sharpens what Moriarty kept light. Both versions earn their ending.
+[20:46:33.127] [INFO ]   ↻  big-little-lies-hbo — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:47:10.221] [PASS ] big-little-lies-hbo.json — Pass 2 — 3 CTA blocks added
+[20:47:10.732] [INFO ]   ↻  breakfast-at-tiffanys — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:47:43.699] [PASS ] breakfast-at-tiffanys.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Capote's ambiguous ending honors Holly's restlessness; Hepburn's icon transcends the source."
+[20:47:43.699] [INFO ]   ↻  breakfast-at-tiffanys — titles (anthropic/claude-sonnet-4-5)…
+[20:47:46.544] [PASS ] breakfast-at-tiffanys.json — Titles complete
+[20:47:46.544] [INFO ]   BEFORE title (56 chars): Breakfast at Tiffany's: Capote vs Edwards — Book vs Film
+[20:47:46.544] [INFO ]   AFTER  title (58 chars): Breakfast at Tiffany's: Capote Lets Her Go. Hepburn Stays.
+[20:47:46.544] [INFO ]   BEFORE meta  (13 chars): Truman Capote
+[20:47:46.544] [INFO ]   AFTER  meta  (135 chars): The novella ends with Holly vanished and unknowable. The film ends with a kiss in the rain. Both choices are perfect for what they are.
+[20:47:46.545] [INFO ]   ↻  breakfast-at-tiffanys — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:48:20.580] [PASS ] breakfast-at-tiffanys.json — Pass 2 — 3 CTA blocks added
+[20:48:21.084] [INFO ]   ↻  bridgerton — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:48:56.941] [PASS ] bridgerton.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "Quinn's tighter focus on Daphne and Simon's emotional negotiation outweighs the series's spectacle."
+[20:48:56.941] [INFO ]   ↻  bridgerton — titles (anthropic/claude-sonnet-4-5)…
+[20:48:59.542] [PASS ] bridgerton.json — Titles complete
+[20:48:59.542] [INFO ]   BEFORE title (57 chars): Bridgerton Book vs Series: Which Is Better? (Julia Quinn)
+[20:48:59.543] [INFO ]   AFTER  title (57 chars): Bridgerton: Quinn's Intimacy Beats the Series's Spectacle
+[20:48:59.543] [INFO ]   BEFORE meta  (11 chars): Julia Quinn
+[20:48:59.543] [INFO ]   AFTER  meta  (128 chars): The show is gorgeous. But Quinn keeps you inside Daphne and Simon's negotiation in ways the series can't. The book's focus wins.
+[20:48:59.543] [INFO ]   ↻  bridgerton — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:49:36.249] [PASS ] bridgerton.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 16 to 20 ────────────────
+[20:49:36.767] [PASS ] beloved.json — Quality gate passed
+[20:49:36.768] [PASS ] big-fish.json — Quality gate passed
+[20:49:36.769] [PASS ] big-little-lies-hbo.json — Quality gate passed
+[20:49:36.770] [PASS ] breakfast-at-tiffanys.json — Quality gate passed
+[20:49:36.770] [PASS ] bridgerton.json — Quality gate passed
+[20:49:36.770] [INFO ] Quality gate passed for pages 16-20
+[20:49:36.771] [INFO ]   ↻  brooklyn — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:50:04.714] [PASS ] brooklyn.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Tóibín's prose restraint—the gap between what Eilis feels and says—cannot be replicated on screen."
+[20:50:04.715] [INFO ]   ↻  brooklyn — titles (anthropic/claude-sonnet-4-5)…
+[20:50:07.736] [PASS ] brooklyn.json — Titles complete
+[20:50:07.736] [INFO ]   BEFORE title (48 chars): Brooklyn: Book vs Movie — Tóibín vs John Crowley
+[20:50:07.736] [INFO ]   AFTER  title (57 chars): Brooklyn: What Eilis Doesn't Say Is What Tóibín Does Best
+[20:50:07.736] [INFO ]   BEFORE meta  (11 chars): Colm Tóibín
+[20:50:07.736] [INFO ]   AFTER  meta  (131 chars): Ronan's performance is luminous. But the novel's power lives in the silence between feeling and speech—something no actor can show.
+[20:50:07.737] [INFO ]   ↻  brooklyn — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:50:36.791] [PASS ] brooklyn.json — Pass 2 — 3 CTA blocks added
+[20:50:37.303] [INFO ]   ↻  catch-22 — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:51:08.631] [PASS ] catch-22.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's circular structure is the formal argument itself."
+[20:51:08.632] [INFO ]   ↻  catch-22 — titles (anthropic/claude-sonnet-4-5)…
+[20:51:11.788] [PASS ] catch-22.json — Titles complete
+[20:51:11.789] [INFO ]   BEFORE title (57 chars): Catch-22: Book vs Film — Which Is Better? (Joseph Heller)
+[20:51:11.789] [INFO ]   AFTER  title (63 chars): Catch-22: Heller's Circles Are the Point. Nichols Just Repeats.
+[20:51:11.789] [INFO ]   BEFORE meta  (13 chars): Joseph Heller
+[20:51:11.789] [INFO ]   AFTER  meta  (128 chars): The novel loops back on itself until war's logic collapses. The film gives you the scenes without the trap. Read the book first.
+[20:51:11.789] [INFO ]   ↻  catch-22 — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:51:43.227] [PASS ] catch-22.json — Pass 2 — 3 CTA blocks added
+[20:51:43.734] [INFO ]   ↻  catch-me-if-you-can — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:52:17.107] [PASS ] catch-me-if-you-can.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Book teaches fraud mechanics; film owns the emotional father-son story Spielberg invented."
+[20:52:17.108] [INFO ]   ↻  catch-me-if-you-can — titles (anthropic/claude-sonnet-4-5)…
+[20:52:20.165] [WARN ] catch-me-if-you-can.json: Titles written with warnings: pageTitle slightly long: 69 chars (target 65)
+[20:52:20.165] [INFO ]   BEFORE title (78 chars): Catch Me If You Can: Book vs Film — Abagnale's Confession vs Spielberg's Caper
+[20:52:20.166] [INFO ]   AFTER  title (69 chars): Catch Me If You Can: Abagnale Teaches Crime. Spielberg Invents Heart.
+[20:52:20.166] [INFO ]   BEFORE meta  (14 chars): Frank Abagnale
+[20:52:20.166] [INFO ]   AFTER  meta  (128 chars): The memoir shows you how the cons worked. The film gives Frank a father worth chasing. Both are essential for different reasons.
+[20:52:20.166] [INFO ]   ↻  catch-me-if-you-can — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:52:54.479] [PASS ] catch-me-if-you-can.json — Pass 2 — 3 CTA blocks added
+[20:52:54.992] [INFO ]   ↻  cold-mountain — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:53:23.803] [PASS ] cold-mountain.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Frazier's prose rhythm—long rolling sentences mimicking the walk itself—is inseparable from meaning."
+[20:53:23.803] [INFO ]   ↻  cold-mountain — titles (anthropic/claude-sonnet-4-5)…
+[20:53:26.991] [PASS ] cold-mountain.json — Titles complete
+[20:53:26.992] [INFO ]   BEFORE title (59 chars): Cold Mountain: Book vs Movie — Frazier vs Anthony Minghella
+[20:53:26.992] [INFO ]   AFTER  title (63 chars): Cold Mountain: Frazier's Sentences Walk. Minghella's Just Show.
+[20:53:26.992] [INFO ]   BEFORE meta  (15 chars): Charles Frazier
+[20:53:26.992] [INFO ]   AFTER  meta  (141 chars): The novel's rhythm is the journey—long, rolling sentences that enact Inman's walk home. The film can only photograph it. Read the book first.
+[20:53:26.992] [INFO ]   ↻  cold-mountain — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:53:56.012] [PASS ] cold-mountain.json — Pass 2 — 3 CTA blocks added
+[20:53:56.527] [INFO ]   ↻  contact — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:54:28.436] [PASS ] contact.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Sagan's pi revelation exists only on the page; Foster owns the screen."
+[20:54:28.437] [INFO ]   ↻  contact — titles (anthropic/claude-sonnet-4-5)…
+[20:54:31.514] [PASS ] contact.json — Titles complete
+[20:54:31.514] [INFO ]   BEFORE title (53 chars): Contact: Book vs Film — Which Is Better? (Carl Sagan)
+[20:54:31.514] [INFO ]   AFTER  title (65 chars): Contact: Sagan's Pi Ending Can't Be Filmed. Foster Can't Be Read.
+[20:54:31.514] [INFO ]   BEFORE meta  (10 chars): Carl Sagan
+[20:54:31.514] [INFO ]   AFTER  meta  (135 chars): The novel ends with a mathematical proof of God. The film ends with Jodie Foster's face. Both are transcendent. Read first, then watch.
+[20:54:31.515] [INFO ]   ↻  contact — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:55:05.034] [PASS ] contact.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 21 to 25 ────────────────
+[20:55:05.545] [PASS ] brooklyn.json — Quality gate passed
+[20:55:05.546] [PASS ] catch-22.json — Quality gate passed
+[20:55:05.547] [WARN ] catch-me-if-you-can.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[20:55:05.547] [PASS ] cold-mountain.json — Quality gate passed
+[20:55:05.548] [WARN ] contact.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[20:55:05.548] [INFO ] Quality gate passed for pages 21-25
+[20:55:05.549] [INFO ]   ↻  da-vinci-code — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:55:36.135] [PASS ] da-vinci-code.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Brown's chapter-ending cliffhangers create puzzle-solving momentum the film cannot replicate."
+[20:55:36.135] [INFO ]   ↻  da-vinci-code — titles (anthropic/claude-sonnet-4-5)…
+[20:55:39.085] [PASS ] da-vinci-code.json — Titles complete
+[20:55:39.085] [INFO ]   BEFORE title (58 chars): The Da Vinci Code: Book vs Movie — Dan Brown vs Ron Howard
+[20:55:39.085] [INFO ]   AFTER  title (61 chars): The Da Vinci Code: Brown's Cliffhangers Make It Unputdownable
+[20:55:39.085] [INFO ]   BEFORE meta  (9 chars): Dan Brown
+[20:55:39.085] [INFO ]   AFTER  meta  (138 chars): Howard made a handsome film. Brown made a thriller you physically cannot stop reading. The book is an experience the movie just describes.
+[20:55:39.085] [INFO ]   ↻  da-vinci-code — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:56:11.009] [PASS ] da-vinci-code.json — Pass 2 — 3 CTA blocks added
+[20:56:11.525] [INFO ]   ↻  daisy-jones-and-the-six — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:56:46.358] [PASS ] daisy-jones-and-the-six.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The oral history format—truth assembled from contradictory testimony—only works on the page."
+[20:56:46.358] [INFO ]   ↻  daisy-jones-and-the-six — titles (anthropic/claude-sonnet-4-5)…
+[20:56:48.772] [PASS ] daisy-jones-and-the-six.json — Titles complete
+[20:56:48.772] [INFO ]   BEFORE title (78 chars): Daisy Jones & The Six: Book vs Series — Which Is Better? (Taylor Jenkins Reid)
+[20:56:48.772] [INFO ]   AFTER  title (59 chars): Daisy Jones: Reid's Oral History Does What the Series Can't
+[20:56:48.772] [INFO ]   BEFORE meta  (19 chars): Taylor Jenkins Reid
+[20:56:48.772] [INFO ]   AFTER  meta  (125 chars): The contradictions between band members create the truth in Reid's novel. The series just dramatizes it. Read the book first.
+[20:56:48.772] [INFO ]   ↻  daisy-jones-and-the-six — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:57:23.662] [PASS ] daisy-jones-and-the-six.json — Pass 2 — 3 CTA blocks added
+[20:57:24.181] [INFO ]   ↻  dark-matter — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:57:55.093] [PASS ] dark-matter.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel's velocity versus Edgerton's dual performance—each irreplaceable."
+[20:57:55.094] [INFO ]   ↻  dark-matter — titles (anthropic/claude-sonnet-4-5)…
+[20:57:58.140] [PASS ] dark-matter.json — Titles complete
+[20:57:58.140] [INFO ]   BEFORE title (58 chars): Dark Matter: Book vs TV Series — Blake Crouch vs Apple TV+
+[20:57:58.140] [INFO ]   AFTER  title (55 chars): Dark Matter: Crouch's Velocity vs Edgerton's Two Jasons
+[20:57:58.141] [INFO ]   BEFORE meta  (12 chars): Blake Crouch
+[20:57:58.141] [INFO ]   AFTER  meta  (122 chars): The novel is propulsive in ways TV can't be. Edgerton does things with Jason's split that prose can't. Both are essential.
+[20:57:58.141] [INFO ]   ↻  dark-matter — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:58:30.480] [PASS ] dark-matter.json — Pass 2 — 3 CTA blocks added
+[20:58:30.995] [INFO ]   ↻  devil-wears-prada — Pass 1 (anthropic/claude-haiku-4-5)…
+[20:59:04.807] [PASS ] devil-wears-prada.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Weisberger's Andy is morally compromised; the films softened her into sympathy."
+[20:59:04.807] [INFO ]   ↻  devil-wears-prada — titles (anthropic/claude-sonnet-4-5)…
+[20:59:07.385] [PASS ] devil-wears-prada.json — Titles complete
+[20:59:07.385] [INFO ]   BEFORE title (65 chars): The Devil Wears Prada Book vs Film: Which Is Better? (Weisberger)
+[20:59:07.386] [INFO ]   AFTER  title (61 chars): The Devil Wears Prada: The Book's Andy Deserves Your Judgment
+[20:59:07.386] [INFO ]   BEFORE meta  (17 chars): Lauren Weisberger
+[20:59:07.386] [INFO ]   AFTER  meta  (136 chars): Weisberger wrote a protagonist who sells out and knows it. The film made her sympathetic. That's the whole problem. Read the book first.
+[20:59:07.386] [INFO ]   ↻  devil-wears-prada — Pass 2 (anthropic/claude-haiku-4-5)…
+[20:59:41.256] [PASS ] devil-wears-prada.json — Pass 2 — 3 CTA blocks added
+[20:59:41.764] [INFO ]   ↻  divergent — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:00:13.718] [PASS ] divergent.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Tris's first-person voice carries moral ambivalence the film's screenplay cannot match."
+[21:00:13.719] [INFO ]   ↻  divergent — titles (anthropic/claude-sonnet-4-5)…
+[21:00:16.897] [PASS ] divergent.json — Titles complete
+[21:00:16.897] [INFO ]   BEFORE title (55 chars): Divergent: Book vs Movie — Veronica Roth vs Neil Burger
+[21:00:16.897] [INFO ]   AFTER  title (60 chars): Divergent: Roth's Tris Questions Herself. Woodley Just Acts.
+[21:00:16.897] [INFO ]   BEFORE meta  (13 chars): Veronica Roth
+[21:00:16.897] [INFO ]   AFTER  meta  (127 chars): The novel gives you a narrator who doubts her own choices. The film gives you a hero who looks conflicted. Read the book first.
+[21:00:16.897] [INFO ]   ↻  divergent — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:00:49.518] [PASS ] divergent.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 26 to 30 ────────────────
+[21:00:50.028] [PASS ] da-vinci-code.json — Quality gate passed
+[21:00:50.028] [PASS ] daisy-jones-and-the-six.json — Quality gate passed
+[21:00:50.029] [PASS ] dark-matter.json — Quality gate passed
+[21:00:50.029] [PASS ] devil-wears-prada.json — Quality gate passed
+[21:00:50.030] [PASS ] divergent.json — Quality gate passed
+[21:00:50.030] [INFO ] Quality gate passed for pages 26-30
+[21:00:50.031] [INFO ]   ↻  doctor-sleep — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:01:24.070] [PASS ] doctor-sleep.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "King's recovery narrative and True Knot backstory exceed what film can hold."
+[21:01:24.070] [INFO ]   ↻  doctor-sleep — titles (anthropic/claude-sonnet-4-5)…
+[21:01:26.698] [PASS ] doctor-sleep.json — Titles complete
+[21:01:26.698] [INFO ]   BEFORE title (60 chars): Doctor Sleep: Book vs Film — Which Is Better? (Stephen King)
+[21:01:26.698] [INFO ]   AFTER  title (61 chars): Doctor Sleep: King's Recovery Arc Is What Flanagan Can't Film
+[21:01:26.698] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[21:01:26.698] [INFO ]   AFTER  meta  (135 chars): McGregor nails Danny. But King spends 500 pages inside an addict's mind in ways no film can match. The book earns what the film rushes.
+[21:01:26.698] [INFO ]   ↻  doctor-sleep — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:02:02.654] [PASS ] doctor-sleep.json — Pass 2 — 3 CTA blocks added
+[21:02:03.162] [INFO ]   ↻  dracula — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:02:38.134] [PASS ] dracula.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Stoker's epistolary format renders Dracula through terrified fragments; Coppola shows him constantly, romantically."
+[21:02:38.135] [INFO ]   ↻  dracula — titles (anthropic/claude-sonnet-4-5)…
+[21:02:40.616] [PASS ] dracula.json — Titles complete
+[21:02:40.616] [INFO ]   BEFORE title (41 chars): Dracula: Stoker vs Coppola — Book vs Film
+[21:02:40.616] [INFO ]   AFTER  title (61 chars): Dracula: Stoker Never Shows the Monster. That's Why It Works.
+[21:02:40.616] [INFO ]   BEFORE meta  (11 chars): Bram Stoker
+[21:02:40.617] [INFO ]   AFTER  meta  (136 chars): Coppola's Dracula is gorgeous, operatic, everywhere. Stoker's is fragments, terror, absence. The novel is stranger and more frightening.
+[21:02:40.617] [INFO ]   ↻  dracula — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:03:16.776] [PASS ] dracula.json — Pass 2 — 3 CTA blocks added
+[21:03:17.311] [INFO ]   ↻  dune — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:03:49.123] [PASS ] dune.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Herbert makes Paul's complicity explicit; the films leave it ambiguous."
+[21:03:49.123] [INFO ]   ↻  dune — titles (anthropic/claude-sonnet-4-5)…
+[21:03:52.691] [PASS ] dune.json — Titles complete
+[21:03:52.692] [INFO ]   BEFORE title (51 chars): Dune Book vs Film: Which Is Better? (Frank Herbert)
+[21:03:52.692] [INFO ]   AFTER  title (64 chars): Dune: Herbert Makes Paul a Villain. Villeneuve Makes Him a Hero.
+[21:03:52.692] [INFO ]   BEFORE meta  (13 chars): Frank Herbert
+[21:03:52.692] [INFO ]   AFTER  meta  (136 chars): The book is an argument about power and prophecy. The film is a spectacle that gestures toward it. Read Herbert first or miss the point.
+[21:03:52.692] [INFO ]   ↻  dune — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:04:26.266] [PASS ] dune.json — Pass 2 — 3 CTA blocks added
+[21:04:26.799] [INFO ]   ↻  eat-pray-love — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:04:55.124] [PASS ] eat-pray-love.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Gilbert's voice—witty, self-aware, intellectually rigorous—exists only on the page."
+[21:04:55.125] [INFO ]   ↻  eat-pray-love — titles (anthropic/claude-sonnet-4-5)…
+[21:04:57.832] [WARN ] eat-pray-love.json: Titles written with warnings: pageTitle slightly long: 69 chars (target 65)
+[21:04:57.832] [INFO ]   BEFORE title (63 chars): Eat Pray Love: Book vs Movie — Elizabeth Gilbert vs Ryan Murphy
+[21:04:57.832] [INFO ]   AFTER  title (69 chars): Eat Pray Love: Gilbert's Wit Lives on the Page. Roberts Just Travels.
+[21:04:57.832] [INFO ]   BEFORE meta  (17 chars): Elizabeth Gilbert
+[21:04:57.832] [INFO ]   AFTER  meta  (141 chars): Murphy made a beautiful travelogue. Gilbert wrote a memoir of intellectual rigor and self-awareness Roberts can't touch. Read the book first.
+[21:04:57.832] [INFO ]   ↻  eat-pray-love — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:05:27.512] [PASS ] eat-pray-love.json — Pass 2 — 3 CTA blocks added
+[21:05:28.043] [INFO ]   ↻  enders-game — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:06:03.122] [PASS ] enders-game.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Card's prose reveals Ender's mind; the film only shows his victories."
+[21:06:03.122] [INFO ]   ↻  enders-game — titles (anthropic/claude-sonnet-4-5)…
+[21:06:05.795] [WARN ] enders-game.json: Titles written with warnings: pageTitle slightly long: 67 chars (target 65)
+[21:06:05.795] [INFO ]   BEFORE title (60 chars): Ender's Game: Book vs Movie — Orson Scott Card vs Gavin Hood
+[21:06:05.795] [INFO ]   AFTER  title (67 chars): Ender's Game: Card Shows You Ender's Mind. Hood Just Shows Battles.
+[21:06:05.795] [INFO ]   BEFORE meta  (16 chars): Orson Scott Card
+[21:06:05.795] [INFO ]   AFTER  meta  (142 chars): The novel is about strategy and moral weight. The film is about spectacle. Hood made a competent adaptation of an unfilmable book. Read first.
+[21:06:05.795] [INFO ]   ↻  enders-game — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:06:39.957] [PASS ] enders-game.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 31 to 35 ────────────────
+[21:06:40.481] [PASS ] doctor-sleep.json — Quality gate passed
+[21:06:40.499] [PASS ] dracula.json — Quality gate passed
+[21:06:40.500] [PASS ] dune.json — Quality gate passed
+[21:06:40.501] [WARN ] eat-pray-love.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[21:06:40.501] [WARN ] enders-game.json: Quality gate warnings: pageTitle slightly long: 67 chars (target 65)
+[21:06:40.502] [INFO ] Quality gate passed for pages 31-35
+[21:06:40.503] [INFO ]   ↻  enders-game-film — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:07:15.285] [PASS ] enders-game-film.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's sustained interiority cannot exist on screen."
+[21:07:15.286] [INFO ]   ↻  enders-game-film — titles (anthropic/claude-sonnet-4-5)…
+[21:07:17.949] [PASS ] enders-game-film.json — Titles complete
+[21:07:17.949] [INFO ]   BEFORE title (65 chars): Ender's Game: Book vs Movie — Which Is Better? (Orson Scott Card)
+[21:07:17.949] [INFO ]   AFTER  title (64 chars): Ender's Game: Hood Shows the War. Card Shows the Child Breaking.
+[21:07:17.949] [INFO ]   BEFORE meta  (16 chars): Orson Scott Card
+[21:07:17.950] [INFO ]   AFTER  meta  (140 chars): The Battle Room looks stunning. But Card's novel lives inside Ender's mind as it's weaponized—something no film can do. Read the book first.
+[21:07:17.950] [INFO ]   ↻  enders-game-film — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:07:54.379] [PASS ] enders-game-film.json — Pass 2 — 3 CTA blocks added
+[21:07:54.913] [INFO ]   ↻  english-patient — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:08:31.661] [PASS ] english-patient.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Minghella perfects the love story; Ondaatje owns Kip's political reckoning."
+[21:08:31.661] [INFO ]   ↻  english-patient — titles (anthropic/claude-sonnet-4-5)…
+[21:08:35.044] [WARN ] english-patient.json: Titles written with warnings: pageTitle slightly long: 67 chars (target 65)
+[21:08:35.044] [INFO ]   BEFORE title (74 chars): The English Patient: Book vs Movie — Michael Ondaatje vs Anthony Minghella
+[21:08:35.044] [INFO ]   AFTER  title (67 chars): The English Patient: Minghella Gets the Romance. Ondaatje Gets Kip.
+[21:08:35.044] [INFO ]   BEFORE meta  (16 chars): Michael Ondaatje
+[21:08:35.044] [INFO ]   AFTER  meta  (132 chars): The film won nine Oscars for its love story. The novel has Kip's rage at Hiroshima—the political reckoning Minghella cut. Read both.
+[21:08:35.044] [INFO ]   ↻  english-patient — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:09:11.628] [PASS ] english-patient.json — Pass 2 — 3 CTA blocks added
+[21:09:12.149] [INFO ]   ↻  everything-everything — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:09:42.708] [PASS ] everything-everything.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Yoon's multimedia format and psychological depth make the medical twist devastate on the page."
+[21:09:42.709] [INFO ]   ↻  everything-everything — titles (anthropic/claude-sonnet-4-5)…
+[21:09:45.407] [WARN ] everything-everything.json: Titles validation failed — not written: pageTitle too long: 79 chars — will not write
+[21:09:45.407] [INFO ]   ↻  everything-everything — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:10:16.509] [PASS ] everything-everything.json — Pass 2 — 3 CTA blocks added
+[21:10:17.042] [INFO ]   ↻  fight-club — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:10:49.535] [PASS ] fight-club.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Palahniuk's staccato prose owns the page; Fincher's subliminal editing owns the screen."
+[21:10:49.536] [INFO ]   ↻  fight-club — titles (anthropic/claude-sonnet-4-5)…
+[21:10:51.703] [PASS ] fight-club.json — Titles complete
+[21:10:51.704] [INFO ]   BEFORE title (66 chars): Fight Club: Book vs Film — Which Is Better? (Palahniuk vs Fincher)
+[21:10:51.704] [INFO ]   AFTER  title (58 chars): Fight Club: Palahniuk's Prose vs Fincher's Subliminal Cuts
+[21:10:51.704] [INFO ]   BEFORE meta  (15 chars): Chuck Palahniuk
+[21:10:51.704] [INFO ]   AFTER  meta  (144 chars): The novel's rhythm lives in sentence fragments. The film's lives in frames you don't see. Both are perfect for their medium. Either order works.
+[21:10:51.704] [INFO ]   ↻  fight-club — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:11:25.067] [PASS ] fight-club.json — Pass 2 — 3 CTA blocks added
+[21:11:25.589] [INFO ]   ↻  five-feet-apart — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:11:57.415] [PASS ] five-feet-apart.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Stella's spiraling internal monologue reveals why her rules matter more than romance."
+[21:11:57.415] [INFO ]   ↻  five-feet-apart — titles (anthropic/claude-sonnet-4-5)…
+[21:11:59.957] [PASS ] five-feet-apart.json — Titles complete
+[21:11:59.958] [INFO ]   BEFORE title (68 chars): Five Feet Apart: Book vs Film — Lippincott's Internal Monologue Wins
+[21:11:59.958] [INFO ]   AFTER  title (62 chars): Five Feet Apart: Stella's Rules Mean Nothing Without Her Voice
+[21:11:59.958] [INFO ]   BEFORE meta  (18 chars): Rachael Lippincott
+[21:11:59.958] [INFO ]   AFTER  meta  (132 chars): Baldoni's film makes the distance romantic. Lippincott's book makes it survival. The internal spiral is what makes the rules matter.
+[21:11:59.958] [INFO ]   ↻  five-feet-apart — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:12:33.337] [PASS ] five-feet-apart.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 36 to 40 ────────────────
+[21:12:33.849] [PASS ] enders-game-film.json — Quality gate passed
+[21:12:33.850] [WARN ] english-patient.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional | pageTitle slightly long: 67 chars (target 65)
+[21:12:33.851] [WARN ] everything-everything.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65) | metaDesc suspiciously short: 11 chars — may not have been updated
+[21:12:33.851] [PASS ] fight-club.json — Quality gate passed
+[21:12:33.852] [PASS ] five-feet-apart.json — Quality gate passed
+[21:12:33.852] [INFO ] Quality gate passed for pages 36-40
+[21:12:33.870] [INFO ]   ↻  fourth-wing — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:13:06.406] [PASS ] fourth-wing.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Violet's internal voice—wit, tactical thinking, self-awareness—exists only on the page."
+[21:13:06.406] [INFO ]   ↻  fourth-wing — titles (anthropic/claude-sonnet-4-5)…
+[21:13:09.349] [PASS ] fourth-wing.json — Titles complete
+[21:13:09.349] [INFO ]   BEFORE title (71 chars): Fourth Wing: Book vs Upcoming TV Series — Rebecca Yarros vs Prime Video
+[21:13:09.349] [INFO ]   AFTER  title (57 chars): Fourth Wing: Violet's Wit Lives in Her Head—Not on Screen
+[21:13:09.349] [INFO ]   BEFORE meta  (14 chars): Rebecca Yarros
+[21:13:09.349] [INFO ]   AFTER  meta  (145 chars): Yarros built Violet through internal voice: tactical thinking, self-awareness, razor wit. That's the hardest thing to adapt. Read the book first.
+[21:13:09.349] [INFO ]   ↻  fourth-wing — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:13:41.124] [PASS ] fourth-wing.json — Pass 2 — 3 CTA blocks added
+[21:13:41.659] [INFO ]   ↻  frankenstein — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:14:15.270] [PASS ] frankenstein.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The creature's philosophical voice and moral arguments exist only on the page."
+[21:14:15.270] [INFO ]   ↻  frankenstein — titles (anthropic/claude-sonnet-4-5)…
+[21:14:17.581] [PASS ] frankenstein.json — Titles complete
+[21:14:17.581] [INFO ]   BEFORE title (54 chars): Frankenstein: Book vs Movie — Mary Shelley vs del Toro
+[21:14:17.581] [INFO ]   AFTER  title (58 chars): Frankenstein: Shelley's Creature Argues. Del Toro's Roars.
+[21:14:17.581] [INFO ]   BEFORE meta  (12 chars): Mary Shelley
+[21:14:17.582] [INFO ]   AFTER  meta  (128 chars): Del Toro made the most faithful adaptation in cinema history. It still can't give you the creature's voice. Read the book first.
+[21:14:17.582] [INFO ]   ↻  frankenstein — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:14:52.217] [PASS ] frankenstein.json — Pass 2 — 3 CTA blocks added
+[21:14:52.744] [INFO ]   ↻  geralds-game — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:15:23.710] [PASS ] geralds-game.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "King's sustained psychological excavation of dissociated consciousness cannot be externalized."
+[21:15:23.710] [INFO ]   ↻  geralds-game — titles (anthropic/claude-sonnet-4-5)…
+[21:15:26.697] [PASS ] geralds-game.json — Titles complete
+[21:15:26.697] [INFO ]   BEFORE title (62 chars): Gerald's Game: Book vs Movie — Which Is Better? (Stephen King)
+[21:15:26.697] [INFO ]   AFTER  title (65 chars): Gerald's Game: Flanagan's Triumph Still Can't Get Inside Her Head
+[21:15:26.698] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[21:15:26.698] [INFO ]   AFTER  meta  (144 chars): King spends 332 pages inside Jessie's fracturing mind. Flanagan made a masterpiece—but dissociation only works on the page. Read the book first.
+[21:15:26.698] [INFO ]   ↻  geralds-game — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:15:59.445] [PASS ] geralds-game.json — Pass 2 — 3 CTA blocks added
+[21:15:59.976] [INFO ]   ↻  girl-on-the-train — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:16:32.297] [PASS ] girl-on-the-train.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Rachel's fractured first-person narration only works on the page."
+[21:16:32.298] [INFO ]   ↻  girl-on-the-train — titles (anthropic/claude-sonnet-4-5)…
+[21:16:35.190] [PASS ] girl-on-the-train.json — Titles complete
+[21:16:35.190] [INFO ]   BEFORE title (69 chars): The Girl on the Train Book vs Movie: Which Is Better? (Paula Hawkins)
+[21:16:35.190] [INFO ]   AFTER  title (57 chars): The Girl on the Train: Blunt Can't Give You Rachel's Mind
+[21:16:35.190] [INFO ]   BEFORE meta  (13 chars): Paula Hawkins
+[21:16:35.190] [INFO ]   AFTER  meta  (129 chars): Hawkins traps you inside an unreliable narrator's spiral. Taylor can only show you a drunk woman on a train. Read the book first.
+[21:16:35.191] [INFO ]   ↻  girl-on-the-train — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:17:09.145] [PASS ] girl-on-the-train.json — Pass 2 — 3 CTA blocks added
+[21:17:09.697] [INFO ]   ↻  girl-with-the-dragon-tattoo — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:17:41.382] [PASS ] girl-with-the-dragon-tattoo.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Larsson's institutional critique and Lisbeth's interior world exist only on the page."
+[21:17:41.382] [INFO ]   ↻  girl-with-the-dragon-tattoo — titles (anthropic/claude-sonnet-4-5)…
+[21:17:44.109] [PASS ] girl-with-the-dragon-tattoo.json — Titles complete
+[21:17:44.110] [INFO ]   BEFORE title (67 chars): The Girl with the Dragon Tattoo: Book vs Movie — Larsson vs Fincher
+[21:17:44.110] [INFO ]   AFTER  title (65 chars): Dragon Tattoo: Fincher Nails the Thriller. Larsson Wrote Lisbeth.
+[21:17:44.110] [INFO ]   BEFORE meta  (13 chars): Stieg Larsson
+[21:17:44.110] [INFO ]   AFTER  meta  (139 chars): Mara's performance is stunning. But Larsson gives you Lisbeth's interior world and Sweden's rot in ways Fincher can't. Read the book first.
+[21:17:44.110] [INFO ]   ↻  girl-with-the-dragon-tattoo — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:18:16.380] [PASS ] girl-with-the-dragon-tattoo.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 41 to 45 ────────────────
+[21:18:16.885] [PASS ] fourth-wing.json — Quality gate passed
+[21:18:16.886] [PASS ] frankenstein.json — Quality gate passed
+[21:18:16.887] [PASS ] geralds-game.json — Quality gate passed
+[21:18:16.888] [PASS ] girl-on-the-train.json — Quality gate passed
+[21:18:16.888] [PASS ] girl-with-the-dragon-tattoo.json — Quality gate passed
+[21:18:16.888] [INFO ] Quality gate passed for pages 41-45
+[21:18:16.889] [INFO ]   ↻  gone-girl — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:18:51.140] [PASS ] gone-girl.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Pike's face owns the screen; Flynn's Amazing Amy owns the page."
+[21:18:51.140] [INFO ]   ↻  gone-girl — titles (anthropic/claude-sonnet-4-5)…
+[21:18:53.340] [PASS ] gone-girl.json — Titles complete
+[21:18:53.340] [INFO ]   BEFORE title (58 chars): Gone Girl: Book vs Film — Which Is Better? (Gillian Flynn)
+[21:18:53.340] [INFO ]   AFTER  title (55 chars): Gone Girl: Pike Owns the Screen. Flynn Owns Amy's Mind.
+[21:18:53.340] [INFO ]   BEFORE meta  (13 chars): Gillian Flynn
+[21:18:53.340] [INFO ]   AFTER  meta  (131 chars): Fincher's film gives you Rosamund Pike's face. Flynn's novel gives you Amazing Amy's architecture. Both manipulate you differently.
+[21:18:53.340] [INFO ]   ↻  gone-girl — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:19:28.046] [PASS ] gone-girl.json — Pass 2 — 3 CTA blocks added
+[21:19:28.569] [INFO ]   ↻  good-omens — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:20:06.215] [WARN ] good-omens.json: Pass 1 validation: quickAnswer.oneLineReason too long (17 words)
+[21:20:06.216] [INFO ]   ↻  good-omens — titles (anthropic/claude-sonnet-4-5)…
+[21:20:10.460] [PASS ] good-omens.json — Titles complete
+[21:20:10.460] [INFO ]   BEFORE title (66 chars): Good Omens: Book vs Series — Which Is Better? (Pratchett & Gaiman)
+[21:20:10.460] [INFO ]   AFTER  title (54 chars): Good Omens: Pratchett's Footnotes vs Sheen and Tennant
+[21:20:10.460] [INFO ]   BEFORE meta  (31 chars): Terry Pratchett and Neil Gaiman
+[21:20:10.460] [INFO ]   AFTER  meta  (131 chars): The novel's wit lives in the margins. The series lives in two performances you can't replicate on the page. Read first, then watch.
+[21:20:10.460] [INFO ]   ↻  good-omens — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:20:48.924] [PASS ] good-omens.json — Pass 2 — 3 CTA blocks added
+[21:20:49.449] [INFO ]   ↻  hamnet — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:21:21.620] [PASS ] hamnet.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Only prose can sustain 300 pages inside Agnes's consciousness."
+[21:21:21.620] [INFO ]   ↻  hamnet — titles (anthropic/claude-sonnet-4-5)…
+[21:21:24.810] [PASS ] hamnet.json — Titles complete
+[21:21:24.811] [INFO ]   BEFORE title (50 chars): Hamnet Book vs Movie: O'Farrell vs Chloé Zhao 2026
+[21:21:24.811] [INFO ]   AFTER  title (60 chars): Hamnet: Buckley Can't Give You 300 Pages Inside Agnes's Mind
+[21:21:24.811] [INFO ]   BEFORE meta  (8 chars): Maggie O
+[21:21:24.811] [INFO ]   AFTER  meta  (139 chars): O'Farrell makes you live inside grief. Zhao can only show you its face. The novel's intimacy is what makes the loss unbearable. Read first.
+[21:21:24.811] [INFO ]   ↻  hamnet — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:21:57.815] [PASS ] hamnet.json — Pass 2 — 3 CTA blocks added
+[21:21:58.347] [INFO ]   ↻  hannibal-series — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:22:36.785] [PASS ] hannibal-series.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Harris's thrillers are tightly plotted source material; Fuller's visual language is irreplaceable."
+[21:22:36.785] [INFO ]   ↻  hannibal-series — titles (anthropic/claude-sonnet-4-5)…
+[21:22:39.085] [PASS ] hannibal-series.json — Titles complete
+[21:22:39.085] [INFO ]   BEFORE title (59 chars): Hannibal: Book vs Series — Which Is Better? (Thomas Harris)
+[21:22:39.085] [INFO ]   AFTER  title (62 chars): Hannibal: Harris Built the Monster. Fuller Made Him Beautiful.
+[21:22:39.085] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[21:22:39.085] [INFO ]   AFTER  meta  (140 chars): The novels are essential thrillers. Fuller's series is formally extraordinary. Both irreplaceable — neither a substitute. Read Harris first.
+[21:22:39.085] [INFO ]   ↻  hannibal-series — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:24:32.194] [PASS ] hannibal-series.json — Pass 2 — 3 CTA blocks added
+[21:24:32.729] [INFO ]   ↻  heated-rivalry — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:24:57.280] [PASS ] heated-rivalry.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Reid's interior voice lives only on the page; Tierney's compression tightens what matters most."
+[21:24:57.280] [INFO ]   ↻  heated-rivalry — titles (anthropic/claude-sonnet-4-5)…
+[21:24:59.922] [PASS ] heated-rivalry.json — Titles complete
+[21:24:59.922] [INFO ]   BEFORE title (59 chars): Heated Rivalry: Book vs Show — Rachel Reid vs Jacob Tierney
+[21:24:59.923] [INFO ]   AFTER  title (61 chars): Heated Rivalry: Reid Owns the Longing. Tierney Owns the Risk.
+[21:24:59.923] [INFO ]   BEFORE meta  (11 chars): Rachel Reid
+[21:24:59.923] [INFO ]   AFTER  meta  (132 chars): The novel gives you Ilya's silence. The show gives you the glances that break it. Both versions are essential for different reasons.
+[21:24:59.923] [INFO ]   ↻  heated-rivalry — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:25:26.592] [PASS ] heated-rivalry.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 46 to 50 ────────────────
+[21:25:27.108] [PASS ] gone-girl.json — Quality gate passed
+[21:25:27.109] [WARN ] good-omens.json: Quality gate warnings: oneLineReason too long: 17 words — "The novel's footnotes and dual authorship exist only on the page; Sheen and Tennant own the screen." | Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[21:25:27.110] [PASS ] hamnet.json — Quality gate passed
+[21:25:27.111] [PASS ] hannibal-series.json — Quality gate passed
+[21:25:27.112] [PASS ] heated-rivalry.json — Quality gate passed
+[21:25:27.112] [INFO ] Quality gate passed for pages 46-50
+[21:25:27.113] [INFO ]   ↻  high-fidelity — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:26:01.820] [PASS ] high-fidelity.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Hornby's interior prose irreplaceable; Cusack's monologues own the screen."
+[21:26:01.820] [INFO ]   ↻  high-fidelity — titles (anthropic/claude-sonnet-4-5)…
+[21:26:06.645] [PASS ] high-fidelity.json — Titles complete
+[21:26:06.646] [INFO ]   BEFORE title (60 chars): High Fidelity: Book vs Film — Which Is Better? (Nick Hornby)
+[21:26:06.646] [INFO ]   AFTER  title (64 chars): High Fidelity: Hornby's Lists Hide Pain. Cusack's Voice Owns It.
+[21:26:06.646] [INFO ]   BEFORE meta  (11 chars): Nick Hornby
+[21:26:06.646] [INFO ]   AFTER  meta  (120 chars): Hornby wrote a man who hides behind music. Cusack plays him as someone who can't. Both versions work. Start with either.
+[21:26:06.646] [INFO ]   ↻  high-fidelity — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:26:42.706] [PASS ] high-fidelity.json — Pass 2 — 3 CTA blocks added
+[21:26:43.210] [INFO ]   ↻  hillbilly-elegy — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:27:19.277] [PASS ] hillbilly-elegy.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The memoir's sociological analysis of class and culture vanishes entirely from the film."
+[21:27:19.277] [INFO ]   ↻  hillbilly-elegy — titles (anthropic/claude-sonnet-4-5)…
+[21:27:22.565] [WARN ] hillbilly-elegy.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[21:27:22.565] [INFO ]   BEFORE title (62 chars): Hillbilly Elegy: Book vs Movie — Which Is Better? (J.D. Vance)
+[21:27:22.566] [INFO ]   AFTER  title (66 chars): Hillbilly Elegy: Vance Explains Appalachia. Howard Just Pities It.
+[21:27:22.566] [INFO ]   BEFORE meta  (10 chars): J.D. Vance
+[21:27:22.566] [INFO ]   AFTER  meta  (139 chars): The book is sociology disguised as memoir. The film is melodrama disguised as empathy. Read the book first or you'll miss the entire point.
+[21:27:22.566] [INFO ]   ↻  hillbilly-elegy — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:28:00.752] [PASS ] hillbilly-elegy.json — Pass 2 — 3 CTA blocks added
+[21:28:01.273] [INFO ]   ↻  hitchhikers-guide — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:28:37.202] [PASS ] hitchhikers-guide.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Adams's narrative voice—the asides, digressions, deadpan prose—is the joke itself."
+[21:28:37.202] [INFO ]   ↻  hitchhikers-guide — titles (anthropic/claude-sonnet-4-5)…
+[21:28:39.902] [PASS ] hitchhikers-guide.json — Titles complete
+[21:28:39.903] [INFO ]   BEFORE title (78 chars): The Hitchhiker's Guide to the Galaxy: Book vs Film — Adams's Prose Is the Joke
+[21:28:39.903] [INFO ]   AFTER  title (59 chars): Hitchhiker's Guide: The Film Gets the Gags, Loses the Voice
+[21:28:39.903] [INFO ]   BEFORE meta  (13 chars): Douglas Adams
+[21:28:39.903] [INFO ]   AFTER  meta  (129 chars): Adams wrote a novel where the narrator is funnier than the plot. Jennings cast it well and missed the point. Read the book first.
+[21:28:39.903] [INFO ]   ↻  hitchhikers-guide — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:29:16.442] [PASS ] hitchhikers-guide.json — Pass 2 — 3 CTA blocks added
+[21:29:16.983] [INFO ]   ↻  howls-moving-castle — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:29:48.118] [PASS ] howls-moving-castle.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Jones's Sophie unknowingly breaks curses through magic; Miyazaki's transforms through feeling."
+[21:29:48.118] [INFO ]   ↻  howls-moving-castle — titles (anthropic/claude-sonnet-4-5)…
+[21:29:50.512] [PASS ] howls-moving-castle.json — Titles complete
+[21:29:50.513] [INFO ]   BEFORE title (73 chars): Howl's Moving Castle: Book vs Film — Which Is Better? (Diana Wynne Jones)
+[21:29:50.513] [INFO ]   AFTER  title (65 chars): Howl's Moving Castle: Jones Gives Sophie Magic. Miyazaki Feeling.
+[21:29:50.513] [INFO ]   BEFORE meta  (17 chars): Diana Wynne Jones
+[21:29:50.513] [INFO ]   AFTER  meta  (135 chars): Jones's Sophie breaks curses without knowing it. Miyazaki's breaks them by feeling everything. Both are essential. Read the book first.
+[21:29:50.514] [INFO ]   ↻  howls-moving-castle — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:30:22.450] [PASS ] howls-moving-castle.json — Pass 2 — 3 CTA blocks added
+[21:30:22.973] [INFO ]   ↻  hunger-games-sunrise — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:30:54.743] [PASS ] hunger-games-sunrise.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Collins's propaganda argument exists only on the page; Fiennes's Snow exists only on screen."
+[21:30:54.744] [INFO ]   ↻  hunger-games-sunrise — titles (anthropic/claude-sonnet-4-5)…
+[21:30:57.144] [PASS ] hunger-games-sunrise.json — Titles complete
+[21:30:57.144] [INFO ]   BEFORE title (68 chars): Hunger Games: Sunrise on the Reaping Book vs Film — Which Is Better?
+[21:30:57.144] [INFO ]   AFTER  title (52 chars): Hunger Games: Collins's Propaganda vs Fiennes's Snow
+[21:30:57.144] [INFO ]   BEFORE meta  (15 chars): Suzanne Collins
+[21:30:57.145] [INFO ]   AFTER  meta  (134 chars): The book gives you the ideology behind the Games. The film will give you the man who built them. Both are essential—in different ways.
+[21:30:57.145] [INFO ]   ↻  hunger-games-sunrise — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:31:29.944] [PASS ] hunger-games-sunrise.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 51 to 55 ────────────────
+[21:31:30.457] [PASS ] high-fidelity.json — Quality gate passed
+[21:31:30.458] [WARN ] hillbilly-elegy.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[21:31:30.458] [PASS ] hitchhikers-guide.json — Quality gate passed
+[21:31:30.459] [WARN ] howls-moving-castle.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[21:31:30.459] [PASS ] hunger-games-sunrise.json — Quality gate passed
+[21:31:30.459] [INFO ] Quality gate passed for pages 51-55
+[21:31:30.461] [INFO ]   ↻  i-am-legend — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:32:03.611] [PASS ] i-am-legend.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novella's ending redefines Neville as monster, not hero—the film inverts this entirely."
+[21:32:03.611] [INFO ]   ↻  i-am-legend — titles (anthropic/claude-sonnet-4-5)…
+[21:32:06.188] [WARN ] i-am-legend.json: Titles validation failed — not written: pageTitle too long: 77 chars — will not write
+[21:32:06.188] [INFO ]   ↻  i-am-legend — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:32:39.945] [PASS ] i-am-legend.json — Pass 2 — 3 CTA blocks added
+[21:32:40.466] [INFO ]   ↻  i-robot — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:33:14.064] [PASS ] i-robot.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Asimov's Three Laws function as philosophical puzzles; the film uses them as plot furniture."
+[21:33:14.064] [INFO ]   ↻  i-robot — titles (anthropic/claude-sonnet-4-5)…
+[21:33:16.467] [PASS ] i-robot.json — Titles complete
+[21:33:16.468] [INFO ]   BEFORE title (63 chars): I, Robot: Book vs Film — Asimov's Philosophy vs Proyas's Action
+[21:33:16.468] [INFO ]   AFTER  title (52 chars): I, Robot: Asimov's Puzzles Become Will Smith's Props
+[21:33:16.468] [INFO ]   BEFORE meta  (12 chars): Isaac Asimov
+[21:33:16.468] [INFO ]   AFTER  meta  (127 chars): The Three Laws are the foundation of science fiction ethics. Proyas uses them as window dressing for explosions. Read the book.
+[21:33:16.468] [INFO ]   ↻  i-robot — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:33:51.508] [PASS ] i-robot.json — Pass 2 — 3 CTA blocks added
+[21:33:52.029] [INFO ]   ↻  interview-with-the-vampire-amcplus — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:34:24.588] [PASS ] interview-with-the-vampire-amcplus.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Rice's baroque prose cannot be replicated on screen."
+[21:34:24.589] [INFO ]   ↻  interview-with-the-vampire-amcplus — titles (anthropic/claude-sonnet-4-5)…
+[21:34:27.295] [PASS ] interview-with-the-vampire-amcplus.json — Titles complete
+[21:34:27.296] [INFO ]   BEFORE title (73 chars): Interview with the Vampire: Book vs Series — Which Is Better? (Anne Rice)
+[21:34:27.296] [INFO ]   AFTER  title (59 chars): Interview with the Vampire: Rice's Grief Lives in Sentences
+[21:34:27.296] [INFO ]   BEFORE meta  (9 chars): Anne Rice
+[21:34:27.296] [INFO ]   AFTER  meta  (116 chars): AMC's series is bold and brilliant. It still can't give you what Rice does with language alone. Read the book first.
+[21:34:27.296] [INFO ]   ↻  interview-with-the-vampire-amcplus — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:35:01.627] [PASS ] interview-with-the-vampire-amcplus.json — Pass 2 — 3 CTA blocks added
+[21:35:02.155] [INFO ]   ↻  into-the-wild — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:35:38.414] [PASS ] into-the-wild.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Krakauer's parallel stories of other wilderness seekers provide context Penn's film omits."
+[21:35:38.414] [INFO ]   ↻  into-the-wild — titles (anthropic/claude-sonnet-4-5)…
+[21:35:41.517] [WARN ] into-the-wild.json: Titles written with warnings: pageTitle slightly long: 69 chars (target 65)
+[21:35:41.517] [INFO ]   BEFORE title (61 chars): Into the Wild: Book vs Film — Which Is Better? (Jon Krakauer)
+[21:35:41.517] [INFO ]   AFTER  title (69 chars): Into the Wild: Penn Made McCandless a Martyr. Krakauer Made Him Real.
+[21:35:41.517] [INFO ]   BEFORE meta  (12 chars): Jon Krakauer
+[21:35:41.518] [INFO ]   AFTER  meta  (132 chars): The book gives you Everett Ruess, Gene Rosellini, the context that explains Chris. The film gives you a beautiful death. Read first.
+[21:35:41.518] [INFO ]   ↻  into-the-wild — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:36:20.045] [PASS ] into-the-wild.json — Pass 2 — 3 CTA blocks added
+[21:36:20.548] [INFO ]   ↻  it-ends-with-us — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:36:49.200] [PASS ] it-ends-with-us.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Lily's interior rationalizations of abuse exist only in Hoover's prose."
+[21:36:49.201] [INFO ]   ↻  it-ends-with-us — titles (anthropic/claude-sonnet-4-5)…
+[21:36:52.475] [PASS ] it-ends-with-us.json — Titles complete
+[21:36:52.475] [INFO ]   BEFORE title (65 chars): It Ends With Us: Book vs Movie — Colleen Hoover vs Justin Baldoni
+[21:36:52.476] [INFO ]   AFTER  title (65 chars): It Ends With Us: Hoover Shows Why Lily Stays. Baldoni Just Shows.
+[21:36:52.476] [INFO ]   BEFORE meta  (14 chars): Colleen Hoover
+[21:36:52.476] [INFO ]   AFTER  meta  (130 chars): The novel makes you understand the rationalizations that keep Lily trapped. The film only shows the violence. Read the book first.
+[21:36:52.476] [INFO ]   ↻  it-ends-with-us — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:37:22.251] [PASS ] it-ends-with-us.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 56 to 60 ────────────────
+[21:37:22.765] [WARN ] i-am-legend.json: Quality gate warnings: metaDesc suspiciously short: 16 chars — may not have been updated
+[21:37:22.766] [PASS ] i-robot.json — Quality gate passed
+[21:37:22.766] [PASS ] interview-with-the-vampire-amcplus.json — Quality gate passed
+[21:37:22.767] [WARN ] into-the-wild.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[21:37:22.768] [PASS ] it-ends-with-us.json — Quality gate passed
+[21:37:22.768] [INFO ] Quality gate passed for pages 56-60
+[21:37:22.785] [INFO ]   ↻  it-muschietti — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:37:59.690] [PASS ] it-muschietti.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "King's dual timeline and cosmic mythology exist only on the page."
+[21:37:59.691] [INFO ]   ↻  it-muschietti — titles (anthropic/claude-sonnet-4-5)…
+[21:38:02.944] [PASS ] it-muschietti.json — Titles complete
+[21:38:02.945] [INFO ]   BEFORE title (50 chars): It: Book vs Film — Which Is Better? (Stephen King)
+[21:38:02.945] [INFO ]   AFTER  title (61 chars): It: King's Cosmic Horror Lives Only in the Book's 1,000 Pages
+[21:38:02.945] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[21:38:02.945] [INFO ]   AFTER  meta  (142 chars): Muschietti made the best King adaptation in years. He still can't touch the novel's dual timeline or what It actually is. Read the book first.
+[21:38:02.945] [INFO ]   ↻  it-muschietti — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:38:41.083] [PASS ] it-muschietti.json — Pass 2 — 3 CTA blocks added
+[21:38:41.606] [INFO ]   ↻  jane-eyre — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:39:12.654] [PASS ] jane-eyre.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Jane's direct address to the reader exists only on the page."
+[21:39:12.654] [INFO ]   ↻  jane-eyre — titles (anthropic/claude-sonnet-4-5)…
+[21:39:14.930] [PASS ] jane-eyre.json — Titles complete
+[21:39:14.930] [INFO ]   BEFORE title (65 chars): Jane Eyre: Book vs Movie — Charlotte Brontë vs Cary Joji Fukunaga
+[21:39:14.931] [INFO ]   AFTER  title (63 chars): Jane Eyre: Brontë's 'Reader, I Married Him' Can't Exist on Film
+[21:39:14.931] [INFO ]   BEFORE meta  (16 chars): Charlotte Brontë
+[21:39:14.931] [INFO ]   AFTER  meta  (116 chars): Fukunaga made the finest adaptation yet. It's still considerably less than the novel. Jane's voice is its own world.
+[21:39:14.931] [INFO ]   ↻  jane-eyre — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:39:45.777] [PASS ] jane-eyre.json — Pass 2 — 3 CTA blocks added
+[21:39:46.310] [INFO ]   ↻  jurassic-park — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:40:13.655] [PASS ] jurassic-park.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Crichton's chaos theory argument survives only on the page; Spielberg's dinosaurs exist only on screen."
+[21:40:13.655] [INFO ]   ↻  jurassic-park — titles (anthropic/claude-sonnet-4-5)…
+[21:40:16.646] [WARN ] jurassic-park.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[21:40:16.646] [INFO ]   BEFORE title (52 chars): Jurassic Park: Book vs Movie — Crichton vs Spielberg
+[21:40:16.647] [INFO ]   AFTER  title (66 chars): Jurassic Park: Crichton's Chaos Argument Dies in Spielberg's Hands
+[21:40:16.647] [INFO ]   BEFORE meta  (16 chars): Michael Crichton
+[21:40:16.647] [INFO ]   AFTER  meta  (132 chars): Spielberg made cinema magic. Crichton wrote a warning about hubris that the film turned into a theme park ride. Read the book first.
+[21:40:16.647] [INFO ]   ↻  jurassic-park — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:40:46.197] [PASS ] jurassic-park.json — Pass 2 — 3 CTA blocks added
+[21:40:46.726] [INFO ]   ↻  kite-runner — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:41:25.689] [PASS ] kite-runner.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Only the novel traps you inside Amir's guilty conscience for four hundred pages."
+[21:41:25.690] [INFO ]   ↻  kite-runner — titles (anthropic/claude-sonnet-4-5)…
+[21:41:28.274] [PASS ] kite-runner.json — Titles complete
+[21:41:28.274] [INFO ]   BEFORE title (58 chars): The Kite Runner Book vs Movie: Which Is Better? (Hosseini)
+[21:41:28.274] [INFO ]   AFTER  title (55 chars): The Kite Runner: Forster Can't Trap You in Amir's Guilt
+[21:41:28.274] [INFO ]   BEFORE meta  (15 chars): Khaled Hosseini
+[21:41:28.274] [INFO ]   AFTER  meta  (134 chars): Hosseini makes you live inside Amir's shame for 400 pages. Forster's film is sincere but can't replicate that suffocation. Read first.
+[21:41:28.275] [INFO ]   ↻  kite-runner — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:42:07.194] [PASS ] kite-runner.json — Pass 2 — 3 CTA blocks added
+[21:42:07.727] [INFO ]   ↻  la-confidential — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:42:39.356] [PASS ] la-confidential.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Ellroy's staccato prose owns the page; Hanson's visual compression owns the screen."
+[21:42:39.356] [INFO ]   ↻  la-confidential — titles (anthropic/claude-sonnet-4-5)…
+[21:42:41.311] [WARN ] la-confidential.json: Titles written with warnings: pageTitle slightly long: 73 chars (target 65)
+[21:42:41.311] [INFO ]   BEFORE title (62 chars): LA Confidential: Book vs Movie — James Ellroy vs Curtis Hanson
+[21:42:41.311] [INFO ]   AFTER  title (73 chars): LA Confidential: Ellroy's Staccato Owns the Page. Hanson Owns the Screen.
+[21:42:41.311] [INFO ]   BEFORE meta  (12 chars): James Ellroy
+[21:42:41.311] [INFO ]   AFTER  meta  (133 chars): One of the great American crime novels. One of the great American crime films. Different achievements at different scales. Read both.
+[21:42:41.311] [INFO ]   ↻  la-confidential — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:43:14.513] [PASS ] la-confidential.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 61 to 65 ────────────────
+[21:43:15.025] [PASS ] it-muschietti.json — Quality gate passed
+[21:43:15.026] [PASS ] jane-eyre.json — Quality gate passed
+[21:43:15.027] [WARN ] jurassic-park.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[21:43:15.027] [PASS ] kite-runner.json — Quality gate passed
+[21:43:15.028] [WARN ] la-confidential.json: Quality gate warnings: pageTitle slightly long: 73 chars (target 65)
+[21:43:15.028] [INFO ] Quality gate passed for pages 61-65
+[21:43:15.046] [INFO ]   ↻  les-miserables — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:43:52.202] [PASS ] les-miserables.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Hugo's philosophical digressions and Valjean's internal crises cannot be sung."
+[21:43:52.202] [INFO ]   ↻  les-miserables — titles (anthropic/claude-sonnet-4-5)…
+[21:43:54.666] [PASS ] les-miserables.json — Titles complete
+[21:43:54.666] [INFO ]   BEFORE title (69 chars): Les Misérables: Book vs Film — Hugo's Digressions vs Hooper's Musical
+[21:43:54.666] [INFO ]   AFTER  title (59 chars): Les Misérables: Hugo's Valjean Thinks. Hooper's Just Sings.
+[21:43:54.667] [INFO ]   BEFORE meta  (11 chars): Victor Hugo
+[21:43:54.667] [INFO ]   AFTER  meta  (135 chars): The musical is magnificent spectacle. It still can't give you the moral crisis that happens inside Valjean's head. Read the book first.
+[21:43:54.667] [INFO ]   ↻  les-miserables — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:44:33.518] [PASS ] les-miserables.json — Pass 2 — 3 CTA blocks added
+[21:44:34.045] [INFO ]   ↻  little-women — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:45:07.077] [PASS ] little-women.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Alcott's moral voice exists only on the page; Gerwig's non-linear structure exists only on screen."
+[21:45:07.077] [INFO ]   ↻  little-women — titles (anthropic/claude-sonnet-4-5)…
+[21:45:10.857] [PASS ] little-women.json — Titles complete
+[21:45:10.857] [INFO ]   BEFORE title (45 chars): Little Women: Alcott vs Gerwig — Book vs Film
+[21:45:10.858] [INFO ]   AFTER  title (56 chars): Little Women: Alcott's Moral Voice vs Gerwig's Structure
+[21:45:10.858] [INFO ]   BEFORE meta  (17 chars): Louisa May Alcott
+[21:45:10.858] [INFO ]   AFTER  meta  (144 chars): Alcott wrote the great American novel of female ambition. Gerwig made it formally inventive. Both are essential. Read and watch in either order.
+[21:45:10.858] [INFO ]   ↻  little-women — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:45:45.023] [PASS ] little-women.json — Pass 2 — 3 CTA blocks added
+[21:45:45.544] [INFO ]   ↻  lonesome-dove — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:46:18.518] [PASS ] lonesome-dove.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "McMurtry's interior monologues give Gus and Call depths Duvall and Jones cannot fully capture."
+[21:46:18.518] [INFO ]   ↻  lonesome-dove — titles (anthropic/claude-sonnet-4-5)…
+[21:46:21.445] [PASS ] lonesome-dove.json — Titles complete
+[21:46:21.445] [INFO ]   BEFORE title (61 chars): Lonesome Dove: Book vs Miniseries — McMurtry's Epic Explained
+[21:46:21.446] [INFO ]   AFTER  title (62 chars): Lonesome Dove: Duvall Is Perfect. He Still Can't Show You Gus.
+[21:46:21.446] [INFO ]   BEFORE meta  (14 chars): Larry McMurtry
+[21:46:21.446] [INFO ]   AFTER  meta  (139 chars): McMurtry gives you decades of silence between Call and Gus. The miniseries gives you their faces. Read the book first—then watch them ride.
+[21:46:21.446] [INFO ]   ↻  lonesome-dove — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:46:54.607] [PASS ] lonesome-dove.json — Pass 2 — 3 CTA blocks added
+[21:46:55.141] [INFO ]   ↻  looking-for-alaska — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:47:27.490] [PASS ] looking-for-alaska.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "First-person narration traps you inside Pudge's grief; the series watches from outside."
+[21:47:27.490] [INFO ]   ↻  looking-for-alaska — titles (anthropic/claude-sonnet-4-5)…
+[21:47:30.120] [WARN ] looking-for-alaska.json: Titles written with warnings: pageTitle slightly long: 67 chars (target 65)
+[21:47:30.121] [INFO ]   BEFORE title (71 chars): Looking for Alaska: Book vs Hulu Series — Which Is Better? (John Green)
+[21:47:30.121] [INFO ]   AFTER  title (67 chars): Looking for Alaska: Green Traps You in Pudge's Grief. Hulu Watches.
+[21:47:30.121] [INFO ]   BEFORE meta  (10 chars): John Green
+[21:47:30.121] [INFO ]   AFTER  meta  (141 chars): The novel's first-person spiral makes Alaska's death unbearable in ways the series can't touch. You need to feel it from inside Pudge's head.
+[21:47:30.121] [INFO ]   ↻  looking-for-alaska — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:48:03.525] [PASS ] looking-for-alaska.json — Pass 2 — 3 CTA blocks added
+[21:48:04.058] [INFO ]   ↻  lord-of-the-flies — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:48:38.136] [PASS ] lord-of-the-flies.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Golding's ironic narrative voice implicates the reader; the film presents events without that frame."
+[21:48:38.136] [INFO ]   ↻  lord-of-the-flies — titles (anthropic/claude-sonnet-4-5)…
+[21:48:40.944] [PASS ] lord-of-the-flies.json — Titles complete
+[21:48:40.944] [INFO ]   BEFORE title (60 chars): Lord of the Flies: Book vs Film — Which Is Better? (Golding)
+[21:48:40.944] [INFO ]   AFTER  title (65 chars): Lord of the Flies: Golding Makes You Complicit. Brook Just Shows.
+[21:48:40.944] [INFO ]   BEFORE meta  (15 chars): William Golding
+[21:48:40.944] [INFO ]   AFTER  meta  (134 chars): The novel's ironic voice implicates the reader in the horror. Brook's film is raw and sincere, but it can't argue what Golding argues.
+[21:48:40.944] [INFO ]   ↻  lord-of-the-flies — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:49:16.075] [PASS ] lord-of-the-flies.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 66 to 70 ────────────────
+[21:49:16.604] [PASS ] les-miserables.json — Quality gate passed
+[21:49:16.605] [PASS ] little-women.json — Quality gate passed
+[21:49:16.606] [PASS ] lonesome-dove.json — Quality gate passed
+[21:49:16.607] [WARN ] looking-for-alaska.json: Quality gate warnings: pageTitle slightly long: 67 chars (target 65)
+[21:49:16.607] [PASS ] lord-of-the-flies.json — Quality gate passed
+[21:49:16.607] [INFO ] Quality gate passed for pages 66-70
+[21:49:16.625] [INFO ]   ↻  love-simon — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:49:49.716] [PASS ] love-simon.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Albertalli's first-person voice captures Simon's neuroses; the film smooths them away."
+[21:49:49.716] [INFO ]   ↻  love-simon — titles (anthropic/claude-sonnet-4-5)…
+[21:50:04.366] [PASS ] love-simon.json — Titles complete
+[21:50:04.366] [INFO ]   BEFORE title (80 chars): Simon vs. the Homo Sapiens Agenda: Book vs Movie — Which Is Better? (Albertalli)
+[21:50:04.366] [INFO ]   AFTER  title (65 chars): Love, Simon: The Film Makes Him Likable. The Book Makes Him Real.
+[21:50:04.366] [INFO ]   BEFORE meta  (16 chars): Becky Albertalli
+[21:50:04.366] [INFO ]   AFTER  meta  (138 chars): Albertalli's Simon is anxious, messy, self-sabotaging. Berlanti's is a rom-com lead. The neuroses are what make the coming-out story work.
+[21:50:04.366] [INFO ]   ↻  love-simon — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:50:39.055] [PASS ] love-simon.json — Pass 2 — 3 CTA blocks added
+[21:50:39.583] [INFO ]   ↻  margos-got-money-troubles — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:51:10.360] [PASS ] margos-got-money-troubles.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Thorpe's first-person prose voice—witty, precise, irreplaceable—is the novel's defining asset."
+[21:51:10.360] [INFO ]   ↻  margos-got-money-troubles — titles (anthropic/claude-sonnet-4-5)…
+[21:51:13.695] [WARN ] margos-got-money-troubles.json: Titles written with warnings: pageTitle slightly long: 68 chars (target 65)
+[21:51:13.695] [INFO ]   BEFORE title (72 chars): Margo's Got Money Troubles: Book vs TV Series — Rufi Thorpe vs Apple TV+
+[21:51:13.695] [INFO ]   AFTER  title (68 chars): Margo's Got Money Troubles: Thorpe's Voice Is What TV Can't Give You
+[21:51:13.695] [INFO ]   BEFORE meta  (11 chars): Rufi Thorpe
+[21:51:13.695] [INFO ]   AFTER  meta  (137 chars): Walsh cast it perfectly. The series is warm, sharp, excellent. But Thorpe's first-person wit lives only on the page. Read the book first.
+[21:51:13.696] [INFO ]   ↻  margos-got-money-troubles — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:51:45.844] [PASS ] margos-got-money-troubles.json — Pass 2 — 3 CTA blocks added
+[21:51:46.360] [INFO ]   ↻  me-before-you — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:52:17.170] [PASS ] me-before-you.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Will's alternating first-person chapters give you his reasoning; the film shows only his exterior."
+[21:52:17.171] [INFO ]   ↻  me-before-you — titles (anthropic/claude-sonnet-4-5)…
+[21:52:19.951] [PASS ] me-before-you.json — Titles complete
+[21:52:19.951] [INFO ]   BEFORE title (58 chars): Me Before You: Book vs Movie — Jojo Moyes vs Thea Sharrock
+[21:52:19.951] [INFO ]   AFTER  title (65 chars): Me Before You: The Book Lets Will Explain. The Film Just Watches.
+[21:52:19.951] [INFO ]   BEFORE meta  (10 chars): Jojo Moyes
+[21:52:19.951] [INFO ]   AFTER  meta  (134 chars): Moyes gives you Will's reasoning in his own voice. Clarke can only show his exterior. The novel earns what the film can't. Read first.
+[21:52:19.951] [INFO ]   ↻  me-before-you — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:52:53.221] [PASS ] me-before-you.json — Pass 2 — 3 CTA blocks added
+[21:52:53.748] [INFO ]   ↻  mickey-17 — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:53:26.128] [PASS ] mickey-17.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ashton's internal monologue sustains existential dread the film resolves too easily."
+[21:53:26.128] [INFO ]   ↻  mickey-17 — titles (anthropic/claude-sonnet-4-5)…
+[21:53:29.260] [PASS ] mickey-17.json — Titles complete
+[21:53:29.260] [INFO ]   BEFORE title (58 chars): Mickey 17: Book vs Film — Which Is Better? (Edward Ashton)
+[21:53:29.261] [INFO ]   AFTER  title (51 chars): Mickey 17: Ashton's Dread Lingers. Bong's Resolves.
+[21:53:29.261] [INFO ]   BEFORE meta  (13 chars): Edward Ashton
+[21:53:29.261] [INFO ]   AFTER  meta  (127 chars): Joon-ho made a stunning film. It still can't hold the existential terror Ashton sustains in Mickey's head. Read the book first.
+[21:53:29.261] [INFO ]   ↻  mickey-17 — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:54:01.998] [PASS ] mickey-17.json — Pass 2 — 3 CTA blocks added
+[21:54:02.515] [INFO ]   ↻  misery — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:54:33.532] [PASS ] misery.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "King's interior monologue and serial killer backstory versus Bates's definitive Oscar-winning performance."
+[21:54:33.532] [INFO ]   ↻  misery — titles (anthropic/claude-sonnet-4-5)…
+[21:54:35.921] [PASS ] misery.json — Titles complete
+[21:54:35.921] [INFO ]   BEFORE title (50 chars): Misery: Book vs Movie — Stephen King vs Rob Reiner
+[21:54:35.921] [INFO ]   AFTER  title (45 chars): Misery: King's Axe vs Bates's Face — Both Win
+[21:54:35.921] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[21:54:35.921] [INFO ]   AFTER  meta  (146 chars): The novel has Paul's terror and the full horror of the hobbling. The film has Kathy Bates. One of the rare ties where both versions are essential.
+[21:54:35.921] [INFO ]   ↻  misery — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:55:07.495] [PASS ] misery.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 71 to 75 ────────────────
+[21:55:08.001] [PASS ] love-simon.json — Quality gate passed
+[21:55:08.001] [WARN ] margos-got-money-troubles.json: Quality gate warnings: pageTitle slightly long: 68 chars (target 65)
+[21:55:08.002] [PASS ] me-before-you.json — Quality gate passed
+[21:55:08.002] [PASS ] mickey-17.json — Quality gate passed
+[21:55:08.003] [PASS ] misery.json — Quality gate passed
+[21:55:08.003] [INFO ] Quality gate passed for pages 71-75
+[21:55:08.021] [INFO ]   ↻  my-brilliant-friend — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:55:41.901] [PASS ] my-brilliant-friend.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Elena's jealous, unreliable narration exists only on the page."
+[21:55:41.901] [INFO ]   ↻  my-brilliant-friend — titles (anthropic/claude-sonnet-4-5)…
+[21:55:45.016] [PASS ] my-brilliant-friend.json — Titles complete
+[21:55:45.017] [INFO ]   BEFORE title (75 chars): My Brilliant Friend: Book vs HBO Series — Which Is Better? (Elena Ferrante)
+[21:55:45.017] [INFO ]   AFTER  title (62 chars): My Brilliant Friend: Without Elena's Jealousy, Lila Disappears
+[21:55:45.017] [INFO ]   BEFORE meta  (14 chars): Elena Ferrante
+[21:55:45.017] [INFO ]   AFTER  meta  (132 chars): Costanzo's series is beautiful. But Ferrante's unreliable narrator is the story—and HBO can't show what Elena won't admit she feels.
+[21:55:45.017] [INFO ]   ↻  my-brilliant-friend — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:56:19.945] [PASS ] my-brilliant-friend.json — Pass 2 — 3 CTA blocks added
+[21:56:20.474] [INFO ]   ↻  my-sisters-keeper — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:56:54.021] [PASS ] my-sisters-keeper.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Seven narrators create moral complexity the film's single voiceover cannot replicate."
+[21:56:54.022] [INFO ]   ↻  my-sisters-keeper — titles (anthropic/claude-sonnet-4-5)…
+[21:56:57.583] [WARN ] my-sisters-keeper.json: Titles validation failed — not written: pageTitle too long: 76 chars — will not write
+[21:56:57.583] [INFO ]   ↻  my-sisters-keeper — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:57:32.206] [PASS ] my-sisters-keeper.json — Pass 2 — 3 CTA blocks added
+[21:57:32.731] [INFO ]   ↻  narnia-magicians-nephew — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:58:07.964] [PASS ] narnia-magicians-nephew.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Lewis's creation song only works when you imagine it yourself."
+[21:58:07.964] [INFO ]   ↻  narnia-magicians-nephew — titles (anthropic/claude-sonnet-4-5)…
+[21:58:10.646] [PASS ] narnia-magicians-nephew.json — Titles complete
+[21:58:10.646] [INFO ]   BEFORE title (53 chars): The Magician's Nephew: Lewis vs Gerwig — Book vs Film
+[21:58:10.646] [INFO ]   AFTER  title (60 chars): The Magician's Nephew: Aslan's Song Can't Survive the Screen
+[21:58:10.647] [INFO ]   BEFORE meta  (10 chars): C.S. Lewis
+[21:58:10.647] [INFO ]   AFTER  meta  (137 chars): Lewis made you hear creation in silence. Gerwig will give you a soundtrack. The book's magic lives in what you imagine, not what you see.
+[21:58:10.647] [INFO ]   ↻  narnia-magicians-nephew — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:58:46.523] [PASS ] narnia-magicians-nephew.json — Pass 2 — 3 CTA blocks added
+[21:58:47.026] [INFO ]   ↻  never-let-me-go — Pass 1 (anthropic/claude-haiku-4-5)…
+[21:59:18.041] [PASS ] never-let-me-go.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Kathy's digressive narration—the novel's irreplaceable formal achievement—cannot be replicated on screen."
+[21:59:18.041] [INFO ]   ↻  never-let-me-go — titles (anthropic/claude-sonnet-4-5)…
+[21:59:21.465] [PASS ] never-let-me-go.json — Titles complete
+[21:59:21.465] [INFO ]   BEFORE title (50 chars): Never Let Me Go Book vs Movie: Ishiguro vs Romanek
+[21:59:21.465] [INFO ]   AFTER  title (63 chars): Never Let Me Go: Kathy's Voice Is Everything Romanek Can't Film
+[21:59:21.465] [INFO ]   BEFORE meta  (14 chars): Kazuo Ishiguro
+[21:59:21.466] [INFO ]   AFTER  meta  (135 chars): Ishiguro's digressions are the point—they enact memory, denial, grief. The film is faithful and heartbreaking. It still isn't the book.
+[21:59:21.466] [INFO ]   ↻  never-let-me-go — Pass 2 (anthropic/claude-haiku-4-5)…
+[21:59:53.602] [PASS ] never-let-me-go.json — Pass 2 — 3 CTA blocks added
+[21:59:54.116] [INFO ]   ↻  normal-people — Pass 1 (anthropic/claude-haiku-4-5)…
+[22:00:26.777] [PASS ] normal-people.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Rooney's free indirect style exists only on the page; Mescal and Edgar-Jones own the screen."
+[22:00:26.777] [INFO ]   ↻  normal-people — titles (anthropic/claude-sonnet-4-5)…
+[22:00:30.870] [PASS ] normal-people.json — Titles complete
+[22:00:30.870] [INFO ]   BEFORE title (68 chars): Normal People: Book vs TV Series — Sally Rooney Adaptation Explained
+[22:00:30.870] [INFO ]   AFTER  title (49 chars): Normal People: Rooney's Silence vs. Mescal's Face
+[22:00:30.870] [INFO ]   BEFORE meta  (12 chars): Sally Rooney
+[22:00:30.870] [INFO ]   AFTER  meta  (123 chars): The novel gives you what Connell can't say. The series gives you what he can't hide. Both are essential. Start with either.
+[22:00:30.871] [INFO ]   ↻  normal-people — Pass 2 (anthropic/claude-haiku-4-5)…
+[22:01:05.021] [PASS ] normal-people.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 76 to 80 ────────────────
+[22:01:05.533] [PASS ] my-brilliant-friend.json — Quality gate passed
+[22:01:05.534] [WARN ] my-sisters-keeper.json: Quality gate warnings: pageTitle slightly long: 67 chars (target 65) | metaDesc suspiciously short: 12 chars — may not have been updated
+[22:01:05.535] [PASS ] narnia-magicians-nephew.json — Quality gate passed
+[22:01:05.535] [PASS ] never-let-me-go.json — Quality gate passed
+[22:01:05.536] [PASS ] normal-people.json — Quality gate passed
+[22:01:05.536] [INFO ] Quality gate passed for pages 76-80
+[22:01:05.553] [INFO ]   ↻  of-mice-and-men — Pass 1 (anthropic/claude-haiku-4-5)…
+[22:01:40.597] [PASS ] of-mice-and-men.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Steinbeck's repeated phrases accumulate on the page; Malkovich's eyes own the screen."
+[22:01:40.597] [INFO ]   ↻  of-mice-and-men — titles (anthropic/claude-sonnet-4-5)…
+[22:01:43.740] [PASS ] of-mice-and-men.json — Titles complete
+[22:01:43.740] [INFO ]   BEFORE title (60 chars): Of Mice and Men: Book vs Film — Which Is Better? (Steinbeck)
+[22:01:43.740] [INFO ]   AFTER  title (59 chars): Of Mice and Men: Steinbeck's Refrain vs Malkovich's Silence
+[22:01:43.740] [INFO ]   BEFORE meta  (14 chars): John Steinbeck
+[22:01:43.740] [INFO ]   AFTER  meta  (132 chars): The novella builds through repetition. The film builds through Malkovich's face. Both versions break your heart. Either order works.
+[22:01:43.741] [INFO ]   ↻  of-mice-and-men — Pass 2 (anthropic/claude-haiku-4-5)…
+[22:02:19.464] [PASS ] of-mice-and-men.json — Pass 2 — 3 CTA blocks added
+[22:02:19.975] [INFO ]   ↻  olive-kitteridge — Pass 1 (anthropic/claude-haiku-4-5)…
+[22:02:49.673] [PASS ] olive-kitteridge.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's fragmented structure reveals Olive obliquely; the miniseries centers her constantly."
+[22:02:49.673] [INFO ]   ↻  olive-kitteridge — titles (anthropic/claude-sonnet-4-5)…
+[22:02:52.488] [PASS ] olive-kitteridge.json — Titles complete
+[22:02:52.489] [INFO ]   BEFORE title (68 chars): Olive Kitteridge: Book vs HBO Miniseries — Which Is Better? (Strout)
+[22:02:52.489] [INFO ]   AFTER  title (63 chars): Olive Kitteridge: Strout Hides Her. HBO Won't Stop Showing Her.
+[22:02:52.489] [INFO ]   BEFORE meta  (16 chars): Elizabeth Strout
+[22:02:52.489] [INFO ]   AFTER  meta  (134 chars): The book lets Olive haunt the edges of other people's stories. The miniseries makes her the star of every scene. Read the novel first.
+[22:02:52.489] [INFO ]   ↻  olive-kitteridge — Pass 2 (anthropic/claude-haiku-4-5)…
+[22:03:23.205] [PASS ] olive-kitteridge.json — Pass 2 — 3 CTA blocks added
+[22:03:23.725] [INFO ]   ↻  on-the-road — Pass 1 (anthropic/claude-haiku-4-5)…
+[22:03:55.388] [PASS ] on-the-road.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Kerouac's spontaneous prose style is the experience; images cannot replace it."
+[22:03:55.388] [INFO ]   ↻  on-the-road — titles (anthropic/claude-sonnet-4-5)…
+[22:03:58.718] [PASS ] on-the-road.json — Titles complete
+[22:03:58.718] [INFO ]   BEFORE title (53 chars): On the Road: Book vs Movie — Kerouac vs Walter Salles
+[22:03:58.718] [INFO ]   AFTER  title (61 chars): On the Road: The Novel Is the Trip. The Film Is Just the Map.
+[22:03:58.718] [INFO ]   BEFORE meta  (12 chars): Jack Kerouac
+[22:03:58.719] [INFO ]   AFTER  meta  (127 chars): Salles made a beautiful film. It still can't do what Kerouac does in the sentences. The road is the prose. Read the book first.
+[22:03:58.719] [INFO ]   ↻  on-the-road — Pass 2 (anthropic/claude-haiku-4-5)…
+[22:04:32.961] [PASS ] on-the-road.json — Pass 2 — 3 CTA blocks added
+[22:04:33.491] [INFO ]   ↻  one-day — Pass 1 (anthropic/claude-haiku-4-5)…
+[22:16:20.069] [PASS ] one-day.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The annual structure accumulates emotional weight that two-hour compression cannot replicate."
+[22:16:20.069] [INFO ]   ↻  one-day — titles (anthropic/claude-sonnet-4-5)…
+[22:16:23.135] [PASS ] one-day.json — Titles complete
+[22:16:23.135] [INFO ]   BEFORE title (58 chars): One Day: Book vs Movie — Which Is Better? (David Nicholls)
+[22:16:23.135] [INFO ]   AFTER  title (60 chars): One Day: Twenty Years in Two Hours Loses What Nicholls Built
+[22:16:23.135] [INFO ]   BEFORE meta  (14 chars): David Nicholls
+[22:16:23.135] [INFO ]   AFTER  meta  (126 chars): Nicholls's annual snapshots accumulate meaning the 2011 film can't replicate. The structure is the story. Read the book first.
+[22:16:23.135] [INFO ]   ↻  one-day — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:17:35.578] [PASS ] one-day.json — Pass 2 — 3 CTA blocks added
+[23:17:36.111] [INFO ]   ↻  one-flew-over-the-cuckoos-nest — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:18:09.904] [PASS ] one-flew-over-the-cuckoos-nest.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Bromden's hallucinatory narration exists only on the page; Nicholson's performance owns the screen."
+[23:18:09.905] [INFO ]   ↻  one-flew-over-the-cuckoos-nest — titles (anthropic/claude-sonnet-4-5)…
+[23:18:12.907] [PASS ] one-flew-over-the-cuckoos-nest.json — Titles complete
+[23:18:12.907] [INFO ]   BEFORE title (72 chars): One Flew Over the Cuckoo's Nest: Book vs Film — Which Is Better? (Kesey)
+[23:18:12.907] [INFO ]   AFTER  title (60 chars): Cuckoo's Nest: Kesey Gave You Bromden. Forman Gave You Jack.
+[23:18:12.907] [INFO ]   BEFORE meta  (9 chars): Ken Kesey
+[23:18:12.907] [INFO ]   AFTER  meta  (138 chars): The novel is Bromden's hallucination. The film is Nicholson's rebellion. Both are masterpieces. Read the book first—the Chief deserves it.
+[23:18:12.907] [INFO ]   ↻  one-flew-over-the-cuckoos-nest — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:18:48.603] [PASS ] one-flew-over-the-cuckoos-nest.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 81 to 85 ────────────────
+[23:18:49.111] [PASS ] of-mice-and-men.json — Quality gate passed
+[23:18:49.111] [PASS ] olive-kitteridge.json — Quality gate passed
+[23:18:49.112] [PASS ] on-the-road.json — Quality gate passed
+[23:18:49.113] [PASS ] one-day.json — Quality gate passed
+[23:18:49.113] [WARN ] one-flew-over-the-cuckoos-nest.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[23:18:49.113] [INFO ] Quality gate passed for pages 81-85
+[23:18:49.114] [INFO ]   ↻  outlander — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:19:19.809] [PASS ] outlander.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "Claire's first-person voice and interior monologue exist only on the page."
+[23:19:19.809] [INFO ]   ↻  outlander — titles (anthropic/claude-sonnet-4-5)…
+[23:19:22.634] [PASS ] outlander.json — Titles complete
+[23:19:22.635] [INFO ]   BEFORE title (54 chars): Outlander: Book vs TV Series — Diana Gabaldon vs Starz
+[23:19:22.635] [INFO ]   AFTER  title (48 chars): Outlander: You Never Hear Claire Think on Screen
+[23:19:22.635] [INFO ]   BEFORE meta  (14 chars): Diana Gabaldon
+[23:19:22.635] [INFO ]   AFTER  meta  (134 chars): Balfe is perfect casting. But Gabaldon's first-person narration gives you Claire's mind in ways the series can't. Read the book first.
+[23:19:22.635] [INFO ]   ↻  outlander — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:19:53.710] [PASS ] outlander.json — Pass 2 — 3 CTA blocks added
+[23:19:54.235] [INFO ]   ↻  pachinko — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:20:25.916] [PASS ] pachinko.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's four-generation scope and Noa's devastating arc are irreplaceable."
+[23:20:25.916] [INFO ]   ↻  pachinko — titles (anthropic/claude-sonnet-4-5)…
+[23:20:28.766] [PASS ] pachinko.json — Titles complete
+[23:20:28.766] [INFO ]   BEFORE title (67 chars): Pachinko: Book vs Apple TV+ Series — Which Is Better? (Min Jin Lee)
+[23:20:28.767] [INFO ]   AFTER  title (57 chars): Pachinko: The Series Can't Break Your Heart Like Noa Does
+[23:20:28.767] [INFO ]   BEFORE meta  (11 chars): Min Jin Lee
+[23:20:28.767] [INFO ]   AFTER  meta  (145 chars): Apple TV+ made a beautiful adaptation. It still can't replicate the four-generation scope that makes Noa's fate devastating. Read the book first.
+[23:20:28.767] [INFO ]   ↻  pachinko — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:21:01.736] [PASS ] pachinko.json — Pass 2 — 3 CTA blocks added
+[23:21:02.243] [INFO ]   ↻  people-we-meet-on-vacation — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:21:33.930] [PASS ] people-we-meet-on-vacation.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Henry's first-person voice and ten-year accumulation earn the payoff completely."
+[23:21:33.931] [INFO ]   ↻  people-we-meet-on-vacation — titles (anthropic/claude-sonnet-4-5)…
+[23:21:36.726] [PASS ] people-we-meet-on-vacation.json — Titles complete
+[23:21:36.727] [INFO ]   BEFORE title (70 chars): People We Meet on Vacation: Book vs Movie — Emily Henry vs Brett Haley
+[23:21:36.727] [INFO ]   AFTER  title (65 chars): People We Meet on Vacation: Ten Years in Poppy's Voice or Nothing
+[23:21:36.727] [INFO ]   BEFORE meta  (11 chars): Emily Henry
+[23:21:36.727] [INFO ]   AFTER  meta  (140 chars): Henry earns every moment of that final payoff through a decade of accumulation. Haley's film rushes what the book lets you feel. Read first.
+[23:21:36.727] [INFO ]   ↻  people-we-meet-on-vacation — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:22:35.801] [PASS ] people-we-meet-on-vacation.json — Pass 2 — 3 CTA blocks added
+[23:22:36.352] [INFO ]   ↻  perks-of-being-a-wallflower — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:23:04.399] [WARN ] perks-of-being-a-wallflower.json: Pass 1 validation: quickAnswer.oneLineReason too long (17 words)
+[23:23:04.399] [INFO ]   ↻  perks-of-being-a-wallflower — titles (anthropic/claude-sonnet-4-5)…
+[23:23:07.329] [PASS ] perks-of-being-a-wallflower.json — Titles complete
+[23:23:07.329] [INFO ]   BEFORE title (67 chars): The Perks of Being a Wallflower: Book vs Movie — Chbosky vs Chbosky
+[23:23:07.329] [INFO ]   AFTER  title (61 chars): Perks: Chbosky's Letters vs. Miller's Patrick and That Tunnel
+[23:23:07.329] [INFO ]   BEFORE meta  (15 chars): Stephen Chbosky
+[23:23:07.329] [INFO ]   AFTER  meta  (125 chars): The novel gives you Charlie's voice on the page. The film gives you Ezra Miller and 'Landslide' at 60mph. Both are essential.
+[23:23:07.329] [INFO ]   ↻  perks-of-being-a-wallflower — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:23:36.793] [PASS ] perks-of-being-a-wallflower.json — Pass 2 — 3 CTA blocks added
+[23:23:37.318] [INFO ]   ↻  pet-sematary-2019 — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:24:15.518] [PASS ] pet-sematary-2019.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Louis's interior descent into catastrophe only exists on the page."
+[23:24:15.519] [INFO ]   ↻  pet-sematary-2019 — titles (anthropic/claude-sonnet-4-5)…
+[23:24:18.360] [PASS ] pet-sematary-2019.json — Titles complete
+[23:24:18.360] [INFO ]   BEFORE title (61 chars): Pet Sematary: Book vs Movie — Which Is Better? (Stephen King)
+[23:24:18.360] [INFO ]   AFTER  title (63 chars): Pet Sematary: King's Louis Creed Breaks Where the Film Can't Go
+[23:24:18.360] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[23:24:18.360] [INFO ]   AFTER  meta  (136 chars): The 2019 film is atmospheric and competent. It still can't show you a father's mind collapsing into monstrosity. Read King's book first.
+[23:24:18.360] [INFO ]   ↻  pet-sematary-2019 — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:24:57.967] [PASS ] pet-sematary-2019.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 86 to 90 ────────────────
+[23:24:58.484] [PASS ] outlander.json — Quality gate passed
+[23:24:58.485] [PASS ] pachinko.json — Quality gate passed
+[23:24:58.486] [PASS ] people-we-meet-on-vacation.json — Quality gate passed
+[23:24:58.486] [WARN ] perks-of-being-a-wallflower.json: Quality gate warnings: oneLineReason too long: 17 words — "The novel owns Charlie's epistolary voice; the film owns Ezra Miller's Patrick and the tunnel in motion."
+[23:24:58.487] [PASS ] pet-sematary-2019.json — Quality gate passed
+[23:24:58.487] [INFO ] Quality gate passed for pages 86-90
+[23:24:58.489] [INFO ]   ↻  presumed-innocent — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:25:29.526] [PASS ] presumed-innocent.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Turow's first-person narration and legal precision are irreplaceable on the page."
+[23:25:29.526] [INFO ]   ↻  presumed-innocent — titles (anthropic/claude-sonnet-4-5)…
+[23:25:32.840] [PASS ] presumed-innocent.json — Titles complete
+[23:25:32.840] [INFO ]   BEFORE title (66 chars): Presumed Innocent: Book vs Series — Which Is Better? (Scott Turow)
+[23:25:32.841] [INFO ]   AFTER  title (65 chars): Presumed Innocent: Turow's Inner Voice Does What Gyllenhaal Can't
+[23:25:32.841] [INFO ]   BEFORE meta  (11 chars): Scott Turow
+[23:25:32.841] [INFO ]   AFTER  meta  (145 chars): The series is confident and handsome. It still can't replicate Turow's first-person legal precision. Read the book that invented the genre first.
+[23:25:32.841] [INFO ]   ↻  presumed-innocent — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:26:05.515] [PASS ] presumed-innocent.json — Pass 2 — 3 CTA blocks added
+[23:26:06.037] [INFO ]   ↻  pride-and-prejudice — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:26:37.795] [PASS ] pride-and-prejudice.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Austen's ironic voice and Elizabeth's interior observations exist only on the page."
+[23:26:37.795] [INFO ]   ↻  pride-and-prejudice — titles (anthropic/claude-sonnet-4-5)…
+[23:26:41.300] [PASS ] pride-and-prejudice.json — Titles complete
+[23:26:41.301] [INFO ]   BEFORE title (62 chars): Pride and Prejudice: Book vs Movie — Jane Austen vs Joe Wright
+[23:26:41.301] [INFO ]   AFTER  title (63 chars): Pride and Prejudice: Austen's Irony Dies the Moment You Film It
+[23:26:41.301] [INFO ]   BEFORE meta  (11 chars): Jane Austen
+[23:26:41.301] [INFO ]   AFTER  meta  (152 chars): Wright made a beautiful film. Macfadyen's Darcy is perfect. But Elizabeth's interior voice—the thing that makes the novel great—can't survive on screen.
+[23:26:41.301] [INFO ]   ↻  pride-and-prejudice — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:27:13.070] [PASS ] pride-and-prejudice.json — Pass 2 — 3 CTA blocks added
+[23:27:13.583] [INFO ]   ↻  project-hail-mary — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:27:45.082] [PASS ] project-hail-mary.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Grace's internal monologue lets you solve problems alongside him, not just watch."
+[23:27:45.083] [INFO ]   ↻  project-hail-mary — titles (anthropic/claude-sonnet-4-5)…
+[23:27:47.946] [PASS ] project-hail-mary.json — Titles complete
+[23:27:47.947] [INFO ]   BEFORE title (60 chars): Project Hail Mary Book vs Film: Which Is Better? (Andy Weir)
+[23:27:47.947] [INFO ]   AFTER  title (65 chars): Project Hail Mary: Weir Makes You Solve. Gosling Makes You Watch.
+[23:27:47.947] [INFO ]   BEFORE meta  (9 chars): Andy Weir
+[23:27:47.947] [INFO ]   AFTER  meta  (138 chars): Grace's internal monologue is the book's engine—you work through the science with him. The film can only show you the answers. Read first.
+[23:27:47.947] [INFO ]   ↻  project-hail-mary — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:28:20.605] [PASS ] project-hail-mary.json — Pass 2 — 3 CTA blocks added
+[23:28:21.107] [INFO ]   ↻  ready-player-one — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:28:54.464] [PASS ] ready-player-one.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Cline's puzzle box rewards encyclopedic 1980s knowledge; Spielberg replaces it with spectacle."
+[23:28:54.464] [INFO ]   ↻  ready-player-one — titles (anthropic/claude-sonnet-4-5)…
+[23:28:57.364] [WARN ] ready-player-one.json: Titles written with warnings: pageTitle slightly long: 69 chars (target 65)
+[23:28:57.364] [INFO ]   BEFORE title (59 chars): Ready Player One: Book vs Movie — Ernest Cline vs Spielberg
+[23:28:57.364] [INFO ]   AFTER  title (69 chars): Ready Player One: Cline's Puzzles Reward You. Spielberg Just Dazzles.
+[23:28:57.364] [INFO ]   BEFORE meta  (12 chars): Ernest Cline
+[23:28:57.364] [INFO ]   AFTER  meta  (146 chars): The novel makes you earn every gate with obscure trivia. The film gives you spectacle without the work. Read the book first—it's a different game.
+[23:28:57.364] [INFO ]   ↻  ready-player-one — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:29:32.780] [PASS ] ready-player-one.json — Pass 2 — 3 CTA blocks added
+[23:29:33.310] [INFO ]   ↻  rebecca — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:30:00.418] [PASS ] rebecca.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The narrator's unnamed identity and Maxim's actual murder exist only on the page."
+[23:30:00.418] [INFO ]   ↻  rebecca — titles (anthropic/claude-sonnet-4-5)…
+[23:30:03.198] [WARN ] rebecca.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[23:30:03.198] [INFO ]   BEFORE title (55 chars): Rebecca: Book vs Movie — Daphne du Maurier vs Hitchcock
+[23:30:03.198] [INFO ]   AFTER  title (66 chars): Rebecca: Hitchcock Changed the Murder. Du Maurier's Truth Matters.
+[23:30:03.198] [INFO ]   BEFORE meta  (17 chars): Daphne du Maurier
+[23:30:03.198] [INFO ]   AFTER  meta  (142 chars): The Production Code forced Hitchcock to rewrite Maxim's crime. Du Maurier's version is darker, truer, and the reason the book still unsettles.
+[23:30:03.198] [INFO ]   ↻  rebecca — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:30:32.003] [PASS ] rebecca.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 91 to 95 ────────────────
+[23:30:32.510] [PASS ] presumed-innocent.json — Quality gate passed
+[23:30:32.510] [PASS ] pride-and-prejudice.json — Quality gate passed
+[23:30:32.511] [PASS ] project-hail-mary.json — Quality gate passed
+[23:30:32.512] [WARN ] ready-player-one.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[23:30:32.512] [WARN ] rebecca.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[23:30:32.512] [INFO ] Quality gate passed for pages 91-95
+[23:30:32.514] [INFO ]   ↻  remains-of-the-day — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:31:03.195] [PASS ] remains-of-the-day.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Stevens's unreliable narration—his refusal to acknowledge what he means—cannot be filmed."
+[23:31:03.195] [INFO ]   ↻  remains-of-the-day — titles (anthropic/claude-sonnet-4-5)…
+[23:31:05.253] [PASS ] remains-of-the-day.json — Titles complete
+[23:31:05.253] [INFO ]   BEFORE title (63 chars): The Remains of the Day: Book vs Movie — Ishiguro vs James Ivory
+[23:31:05.253] [INFO ]   AFTER  title (62 chars): The Remains of the Day: What Stevens Won't Say Can't Be Filmed
+[23:31:05.253] [INFO ]   BEFORE meta  (14 chars): Kazuo Ishiguro
+[23:31:05.253] [INFO ]   AFTER  meta  (140 chars): Ivory made one of the great literary adaptations. It's still lesser than Ishiguro's novel. The meaning lives in what Stevens refuses to say.
+[23:31:05.253] [INFO ]   ↻  remains-of-the-day — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:31:35.449] [PASS ] remains-of-the-day.json — Pass 2 — 3 CTA blocks added
+[23:31:35.976] [INFO ]   ↻  remarkably-bright-creatures — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:32:09.318] [PASS ] remarkably-bright-creatures.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Marcellus's alien first-person narration exists only in prose."
+[23:32:09.319] [INFO ]   ↻  remarkably-bright-creatures — titles (anthropic/claude-sonnet-4-5)…
+[23:32:11.800] [WARN ] remarkably-bright-creatures.json: Titles written with warnings: pageTitle slightly long: 69 chars (target 65)
+[23:32:11.800] [INFO ]   BEFORE title (72 chars): Remarkably Bright Creatures Book vs Netflix: Which Is Better? (Van Pelt)
+[23:32:11.800] [INFO ]   AFTER  title (69 chars): Remarkably Bright Creatures: Without Marcellus's Voice, It's Just Sad
+[23:32:11.800] [INFO ]   BEFORE meta  (15 chars): Shelby Van Pelt
+[23:32:11.800] [INFO ]   AFTER  meta  (137 chars): Van Pelt's octopus narrator is what makes the book transcendent. Newman's film will have Sally Field, but it can't have Marcellus's mind.
+[23:32:11.800] [INFO ]   ↻  remarkably-bright-creatures — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:32:46.542] [PASS ] remarkably-bright-creatures.json — Pass 2 — 3 CTA blocks added
+[23:32:47.047] [INFO ]   ↻  reminders-of-him — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:33:17.119] [PASS ] reminders-of-him.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Hoover's dual perspective and Kenna's letters carry emotional weight the film cannot replicate."
+[23:33:17.119] [INFO ]   ↻  reminders-of-him — titles (anthropic/claude-sonnet-4-5)…
+[23:33:20.787] [PASS ] reminders-of-him.json — Titles complete
+[23:33:20.787] [INFO ]   BEFORE title (67 chars): Reminders of Him: Book vs Movie — Colleen Hoover vs Vanessa Caswill
+[23:33:20.787] [INFO ]   AFTER  title (59 chars): Reminders of Him: Kenna's Letters Lose Everything on Screen
+[23:33:20.787] [INFO ]   BEFORE meta  (14 chars): Colleen Hoover
+[23:33:20.788] [INFO ]   AFTER  meta  (139 chars): Monroe is perfectly cast, but Hoover's dual perspective and the letters that anchor the novel's grief can't survive adaptation. Read first.
+[23:33:20.788] [INFO ]   ↻  reminders-of-him — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:33:52.461] [PASS ] reminders-of-him.json — Pass 2 — 3 CTA blocks added
+[23:33:52.965] [INFO ]   ↻  room — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:34:25.081] [PASS ] room.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Jack's five-year-old narration exists only on the page; Larson and Tremblay own the screen."
+[23:34:25.081] [INFO ]   ↻  room — titles (anthropic/claude-sonnet-4-5)…
+[23:34:27.652] [PASS ] room.json — Titles complete
+[23:34:27.652] [INFO ]   BEFORE title (42 chars): Room Book vs Movie: Donoghue vs Abrahamson
+[23:34:27.653] [INFO ]   AFTER  title (62 chars): Room: Jack's Voice Lives on the Page. Tremblay Lives Onscreen.
+[23:34:27.653] [INFO ]   BEFORE meta  (13 chars): Emma Donoghue
+[23:34:27.653] [INFO ]   AFTER  meta  (127 chars): Donoghue's narration is irreplaceable. Larson and Tremblay are unrepeatable. Both versions are essential for different reasons.
+[23:34:27.653] [INFO ]   ↻  room — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:35:00.837] [PASS ] room.json — Pass 2 — 3 CTA blocks added
+[23:35:01.373] [INFO ]   ↻  roots-2016 — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:35:34.301] [PASS ] roots-2016.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Haley's internal monologues and generational accumulation exist only on the page."
+[23:35:34.302] [INFO ]   ↻  roots-2016 — titles (anthropic/claude-sonnet-4-5)…
+[23:35:37.551] [PASS ] roots-2016.json — Titles complete
+[23:35:37.551] [INFO ]   BEFORE title (62 chars): Roots: Book vs 2016 Miniseries — Which Is Better? (Alex Haley)
+[23:35:37.552] [INFO ]   AFTER  title (62 chars): Roots: Haley's Inner Voices Are What the Miniseries Can't Film
+[23:35:37.552] [INFO ]   BEFORE meta  (10 chars): Alex Haley
+[23:35:37.552] [INFO ]   AFTER  meta  (141 chars): The 2016 adaptation is powerful, but Haley's internal monologues—the generational weight that builds across centuries—exist only on the page.
+[23:35:37.552] [INFO ]   ↻  roots-2016 — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:36:10.929] [PASS ] roots-2016.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 96 to 100 ───────────────
+[23:36:11.436] [PASS ] remains-of-the-day.json — Quality gate passed
+[23:36:11.437] [WARN ] remarkably-bright-creatures.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[23:36:11.438] [PASS ] reminders-of-him.json — Quality gate passed
+[23:36:11.439] [PASS ] room.json — Quality gate passed
+[23:36:11.439] [PASS ] roots-2016.json — Quality gate passed
+[23:36:11.439] [INFO ] Quality gate passed for pages 96-100
+[23:36:11.457] [INFO ]   ↻  rosemarys-baby — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:36:49.284] [PASS ] rosemarys-baby.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Levin's first-person ambiguity exists only on the page; Farrow and Gordon own the screen."
+[23:36:49.284] [INFO ]   ↻  rosemarys-baby — titles (anthropic/claude-sonnet-4-5)…
+[23:36:52.521] [PASS ] rosemarys-baby.json — Titles complete
+[23:36:52.521] [INFO ]   BEFORE title (60 chars): Rosemary's Baby: Book vs Film — Which Is Better? (Ira Levin)
+[23:36:52.521] [INFO ]   AFTER  title (65 chars): Rosemary's Baby: Levin Makes You Doubt. Farrow Makes You Believe.
+[23:36:52.521] [INFO ]   BEFORE meta  (9 chars): Ira Levin
+[23:36:52.522] [INFO ]   AFTER  meta  (132 chars): The novel's first-person ambiguity can't be filmed. Polanski's suffocating visuals can't be written. Both are essential. Read first.
+[23:36:52.522] [INFO ]   ↻  rosemarys-baby — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:37:30.803] [PASS ] rosemarys-baby.json — Pass 2 — 3 CTA blocks added
+[23:37:31.326] [INFO ]   ↻  schindlers-list — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:37:59.175] [PASS ] schindlers-list.json — Pass 1 — winner: "Film" · readFirst: "No" · reason: "Spielberg's black-and-white cinematography and the red coat achieve what prose cannot."
+[23:37:59.175] [INFO ]   ↻  schindlers-list — titles (anthropic/claude-sonnet-4-5)…
+[23:38:01.302] [PASS ] schindlers-list.json — Titles complete
+[23:38:01.303] [INFO ]   BEFORE title (69 chars): Schindler's List: Book vs Movie — One of the Rare Times the Film Wins
+[23:38:01.303] [INFO ]   AFTER  title (61 chars): Schindler's List: The Red Coat Does What Keneally Never Could
+[23:38:01.303] [INFO ]   BEFORE meta  (15 chars): Thomas Keneally
+[23:38:01.303] [INFO ]   AFTER  meta  (140 chars): Spielberg made one of cinema's rare transcendent adaptations. Keneally's history is essential, but the film is the masterpiece. Watch first.
+[23:38:01.303] [INFO ]   ↻  schindlers-list — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:38:30.835] [PASS ] schindlers-list.json — Pass 2 — 3 CTA blocks added
+[23:38:31.340] [INFO ]   ↻  seabiscuit — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:39:05.126] [PASS ] seabiscuit.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Hillenbrand reveals Pollard's functional blindness and Smith's frontier philosophy; the film reduces both to footnotes."
+[23:39:05.126] [INFO ]   ↻  seabiscuit — titles (anthropic/claude-sonnet-4-5)…
+[23:39:07.572] [PASS ] seabiscuit.json — Titles complete
+[23:39:07.572] [INFO ]   BEFORE title (62 chars): Seabiscuit: Book vs Film — Hillenbrand's Depth vs Ross's Drama
+[23:39:07.572] [INFO ]   AFTER  title (59 chars): Seabiscuit: Pollard Was Blind. The Film Barely Mentions It.
+[23:39:07.572] [INFO ]   BEFORE meta  (17 chars): Laura Hillenbrand
+[23:39:07.572] [INFO ]   AFTER  meta  (138 chars): Hillenbrand builds her story on Pollard's blindness and Smith's frontier code. Ross's film turns both into background details. Read first.
+[23:39:07.573] [INFO ]   ↻  seabiscuit — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:39:43.239] [PASS ] seabiscuit.json — Pass 2 — 3 CTA blocks added
+[23:39:43.761] [INFO ]   ↻  sense-and-sensibility — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:40:14.727] [PASS ] sense-and-sensibility.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Austen's ironic distance and formal intelligence exceed the film's warmer, more emotionally direct approach."
+[23:40:14.727] [INFO ]   ↻  sense-and-sensibility — titles (anthropic/claude-sonnet-4-5)…
+[23:40:17.045] [PASS ] sense-and-sensibility.json — Titles complete
+[23:40:17.045] [INFO ]   BEFORE title (61 chars): Sense and Sensibility: Book vs Movie — Jane Austen vs Ang Lee
+[23:40:17.045] [INFO ]   AFTER  title (57 chars): Sense and Sensibility: Austen's Irony Does What Lee Can't
+[23:40:17.046] [INFO ]   BEFORE meta  (11 chars): Jane Austen
+[23:40:17.046] [INFO ]   AFTER  meta  (129 chars): Thompson's script is brilliant. Lee's direction is warm. Neither can replicate Austen's formal intelligence. Read the book first.
+[23:40:17.046] [INFO ]   ↻  sense-and-sensibility — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:40:48.775] [PASS ] sense-and-sensibility.json — Pass 2 — 3 CTA blocks added
+[23:40:49.308] [INFO ]   ↻  shadow-and-bone — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:41:23.195] [PASS ] shadow-and-bone.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's focused intimacy with Alina's internal voice outweighs the series' ensemble gains."
+[23:41:23.195] [INFO ]   ↻  shadow-and-bone — titles (anthropic/claude-sonnet-4-5)…
+[23:41:26.108] [PASS ] shadow-and-bone.json — Titles complete
+[23:41:26.109] [INFO ]   BEFORE title (66 chars): Shadow and Bone: Book vs Series — Which Is Better? (Leigh Bardugo)
+[23:41:26.109] [INFO ]   AFTER  title (61 chars): Shadow and Bone: Bardugo's Alina Gets Lost in Netflix's Crowd
+[23:41:26.109] [INFO ]   BEFORE meta  (13 chars): Leigh Bardugo
+[23:41:26.109] [INFO ]   AFTER  meta  (135 chars): The series adds Kaz and the Crows. It works—but you lose the one thing that made Bardugo's original worth reading. Start with the book.
+[23:41:26.109] [INFO ]   ↻  shadow-and-bone — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:42:01.238] [PASS ] shadow-and-bone.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 101 to 105 ──────────────
+[23:42:01.761] [WARN ] rosemarys-baby.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[23:42:01.762] [PASS ] schindlers-list.json — Quality gate passed
+[23:42:01.762] [PASS ] seabiscuit.json — Quality gate passed
+[23:42:01.763] [PASS ] sense-and-sensibility.json — Quality gate passed
+[23:42:01.764] [PASS ] shadow-and-bone.json — Quality gate passed
+[23:42:01.764] [INFO ] Quality gate passed for pages 101-105
+[23:42:01.782] [INFO ]   ↻  sharp-objects — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:42:32.378] [PASS ] sharp-objects.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Flynn's first-person narration captures the interior voice; Vallée can only show the surface."
+[23:42:32.379] [INFO ]   ↻  sharp-objects — titles (anthropic/claude-sonnet-4-5)…
+[23:42:34.812] [PASS ] sharp-objects.json — Titles complete
+[23:42:34.812] [INFO ]   BEFORE title (64 chars): Sharp Objects: Book vs Series — Which Is Better? (Gillian Flynn)
+[23:42:34.812] [INFO ]   AFTER  title (61 chars): Sharp Objects: Flynn Gets Inside Camille's Head. Adams Can't.
+[23:42:34.812] [INFO ]   BEFORE meta  (13 chars): Gillian Flynn
+[23:42:34.812] [INFO ]   AFTER  meta  (142 chars): Vallée's series is gorgeous and Adams is perfect. But Flynn's suffocating first-person narration does what no camera can. Read the book first.
+[23:42:34.813] [INFO ]   ↻  sharp-objects — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:43:06.174] [PASS ] sharp-objects.json — Pass 2 — 3 CTA blocks added
+[23:43:06.705] [INFO ]   ↻  shogun-2024 — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:43:38.364] [PASS ] shogun-2024.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "The novel's thousand pages of immersion outweigh the series' superior perspective on Japanese characters."
+[23:43:38.364] [INFO ]   ↻  shogun-2024 — titles (anthropic/claude-sonnet-4-5)…
+[23:43:40.816] [PASS ] shogun-2024.json — Titles complete
+[23:43:40.816] [INFO ]   BEFORE title (57 chars): Shogun: Book vs Series — Which Is Better? (James Clavell)
+[23:43:40.816] [INFO ]   AFTER  title (57 chars): Shogun: Clavell's Immersion vs. the Series' Japanese Soul
+[23:43:40.816] [INFO ]   BEFORE meta  (13 chars): James Clavell
+[23:43:40.816] [INFO ]   AFTER  meta  (125 chars): The 2024 series gives Mariko and Toranaga what Clavell never could. The novel still wins on sheer depth. Read the book first.
+[23:43:40.816] [INFO ]   ↻  shogun-2024 — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:44:14.395] [PASS ] shogun-2024.json — Pass 2 — 3 CTA blocks added
+[23:44:14.923] [INFO ]   ↻  silence-of-the-lambs — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:44:45.613] [PASS ] silence-of-the-lambs.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Harris's interiority owns the page; Demme's direct-address camera owns the screen."
+[23:44:45.613] [INFO ]   ↻  silence-of-the-lambs — titles (anthropic/claude-sonnet-4-5)…
+[23:44:49.442] [WARN ] silence-of-the-lambs.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[23:44:49.442] [INFO ]   BEFORE title (66 chars): The Silence of the Lambs: Book vs Movie — Harris vs Jonathan Demme
+[23:44:49.443] [INFO ]   AFTER  title (66 chars): Silence of the Lambs: Harris Owns Your Mind. Demme Owns Your Eyes.
+[23:44:49.443] [INFO ]   BEFORE meta  (13 chars): Thomas Harris
+[23:44:49.443] [INFO ]   AFTER  meta  (125 chars): Harris gives you Clarice's fear from inside. Demme makes Lecter stare through you. Both are masterworks. Read and watch both.
+[23:44:49.443] [INFO ]   ↻  silence-of-the-lambs — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:45:20.813] [PASS ] silence-of-the-lambs.json — Pass 2 — 3 CTA blocks added
+[23:45:21.327] [INFO ]   ↻  sophies-choice — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:45:51.658] [PASS ] sophies-choice.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Styron's nested revelations demand reading first; Streep's performance owns the screen."
+[23:45:51.658] [INFO ]   ↻  sophies-choice — titles (anthropic/claude-sonnet-4-5)…
+[23:45:54.416] [PASS ] sophies-choice.json — Titles complete
+[23:45:54.417] [INFO ]   BEFORE title (48 chars): Sophie's Choice: Styron vs Pakula — Book vs Film
+[23:45:54.417] [INFO ]   AFTER  title (62 chars): Sophie's Choice: Styron Reveals in Layers. Streep in One Look.
+[23:45:54.417] [INFO ]   BEFORE meta  (14 chars): William Styron
+[23:45:54.417] [INFO ]   AFTER  meta  (135 chars): The novel withholds the choice until you've earned it. The film gives you Streep's face. Both devastate differently. Start with either.
+[23:45:54.417] [INFO ]   ↻  sophies-choice — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:46:26.277] [PASS ] sophies-choice.json — Pass 2 — 3 CTA blocks added
+[23:46:26.812] [INFO ]   ↻  sphere — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:46:59.971] [PASS ] sphere.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Norman's interior paranoia exists only in prose, not on screen."
+[23:46:59.971] [INFO ]   ↻  sphere — titles (anthropic/claude-sonnet-4-5)…
+[23:47:02.628] [PASS ] sphere.json — Titles complete
+[23:47:02.628] [INFO ]   BEFORE title (51 chars): Sphere: Book vs Movie — Which Is Better? (Crichton)
+[23:47:02.628] [INFO ]   AFTER  title (60 chars): Sphere: Crichton Traps You in Norman's Mind. Levinson Can't.
+[23:47:02.628] [INFO ]   BEFORE meta  (16 chars): Michael Crichton
+[23:47:02.628] [INFO ]   AFTER  meta  (139 chars): The novel makes you feel Norman's paranoia from inside. The film can only show it from outside. Read the book first—the fear is structural.
+[23:47:02.628] [INFO ]   ↻  sphere — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:47:36.734] [PASS ] sphere.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 106 to 110 ──────────────
+[23:47:37.242] [PASS ] sharp-objects.json — Quality gate passed
+[23:47:37.242] [PASS ] shogun-2024.json — Quality gate passed
+[23:47:37.243] [WARN ] silence-of-the-lambs.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[23:47:37.243] [PASS ] sophies-choice.json — Quality gate passed
+[23:47:37.244] [PASS ] sphere.json — Quality gate passed
+[23:47:37.244] [INFO ] Quality gate passed for pages 106-110
+[23:47:37.262] [INFO ]   ↻  stardust — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:48:09.413] [PASS ] stardust.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Gaiman's archaic prose exists only on the page; De Niro and Pfeiffer own the screen."
+[23:48:09.413] [INFO ]   ↻  stardust — titles (anthropic/claude-sonnet-4-5)…
+[23:48:12.231] [PASS ] stardust.json — Titles complete
+[23:48:12.231] [INFO ]   BEFORE title (54 chars): Stardust: Neil Gaiman vs Matthew Vaughn — Book vs Film
+[23:48:12.231] [INFO ]   AFTER  title (57 chars): Stardust: Gaiman's Prose vs De Niro's Captain Shakespeare
+[23:48:12.231] [INFO ]   BEFORE meta  (11 chars): Neil Gaiman
+[23:48:12.231] [INFO ]   AFTER  meta  (140 chars): Vaughn's film is warmer and funnier than the novel. Gaiman's Victorian elegance can't transfer. Both versions earn their ending differently.
+[23:48:12.231] [INFO ]   ↻  stardust — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:48:44.401] [PASS ] stardust.json — Pass 2 — 3 CTA blocks added
+[23:48:44.927] [INFO ]   ↻  station-eleven — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:49:22.054] [PASS ] station-eleven.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Mandel's formal precision survives only on the page; Somerville's emotional generosity only on screen."
+[23:49:22.054] [INFO ]   ↻  station-eleven — titles (anthropic/claude-sonnet-4-5)…
+[23:49:25.045] [PASS ] station-eleven.json — Titles complete
+[23:49:25.046] [INFO ]   BEFORE title (64 chars): Station Eleven: Book vs TV Series — Emily St. John Mandel vs HBO
+[23:49:25.046] [INFO ]   AFTER  title (65 chars): Station Eleven: Mandel Built It Perfect. Somerville Made It Hurt.
+[23:49:25.046] [INFO ]   BEFORE meta  (21 chars): Emily St. John Mandel
+[23:49:25.046] [INFO ]   AFTER  meta  (141 chars): The novel is a formal masterpiece. The series breaks your heart in ways the book can't. Both are essential. Read or watch first—either works.
+[23:49:25.046] [INFO ]   ↻  station-eleven — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:50:02.558] [PASS ] station-eleven.json — Pass 2 — 3 CTA blocks added
+[23:50:03.084] [INFO ]   ↻  talented-mr-ripley — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:50:34.672] [PASS ] talented-mr-ripley.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Highsmith's Tom is coldly alien; Minghella's is sympathetically wounded."
+[23:50:34.673] [INFO ]   ↻  talented-mr-ripley — titles (anthropic/claude-sonnet-4-5)…
+[23:50:37.199] [WARN ] talented-mr-ripley.json: Titles written with warnings: pageTitle slightly long: 68 chars (target 65)
+[23:50:37.199] [INFO ]   BEFORE title (63 chars): The Talented Mr. Ripley: Book vs Movie — Highsmith vs Minghella
+[23:50:37.199] [INFO ]   AFTER  title (68 chars): The Talented Mr. Ripley: Highsmith's Sociopath vs Minghella's Victim
+[23:50:37.199] [INFO ]   BEFORE meta  (18 chars): Patricia Highsmith
+[23:50:37.199] [INFO ]   AFTER  meta  (138 chars): Minghella made Tom comprehensible. Highsmith made him genuinely alien. The film is gorgeous. The novel is unsettling. Read the book first.
+[23:50:37.199] [INFO ]   ↻  talented-mr-ripley — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:51:10.436] [PASS ] talented-mr-ripley.json — Pass 2 — 3 CTA blocks added
+[23:51:10.959] [INFO ]   ↻  the-book-thief — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:51:43.475] [PASS ] the-book-thief.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Death's narrative voice announces deaths before they happen—irreplaceable on the page."
+[23:51:43.475] [INFO ]   ↻  the-book-thief — titles (anthropic/claude-sonnet-4-5)…
+[23:51:46.443] [PASS ] the-book-thief.json — Titles complete
+[23:51:46.444] [INFO ]   BEFORE title (62 chars): The Book Thief: Book vs Film — Which Is Better? (Markus Zusak)
+[23:51:46.444] [INFO ]   AFTER  title (65 chars): The Book Thief: Death Tells You Who Dies. The Film Just Shows It.
+[23:51:46.444] [INFO ]   BEFORE meta  (12 chars): Markus Zusak
+[23:51:46.444] [INFO ]   AFTER  meta  (151 chars): Zusak's narrator announces deaths pages before they happen—a formal choice that makes the novel devastating. Percival's film is beautiful but ordinary.
+[23:51:46.444] [INFO ]   ↻  the-book-thief — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:52:20.835] [PASS ] the-book-thief.json — Pass 2 — 3 CTA blocks added
+[23:52:21.359] [INFO ]   ↻  the-client — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:52:58.104] [PASS ] the-client.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Reggie's trauma and Mark's guilt exist only on the page."
+[23:52:58.104] [INFO ]   ↻  the-client — titles (anthropic/claude-sonnet-4-5)…
+[23:53:01.255] [PASS ] the-client.json — Titles complete
+[23:53:01.255] [INFO ]   BEFORE title (58 chars): The Client: John Grisham vs Joel Schumacher — Book vs Film
+[23:53:01.255] [INFO ]   AFTER  title (58 chars): The Client: Grisham's Mark Carries Guilt Schumacher Erased
+[23:53:01.255] [INFO ]   BEFORE meta  (12 chars): John Grisham
+[23:53:01.256] [INFO ]   AFTER  meta  (127 chars): The film gives you a plucky kid and a tough lawyer. The book gives you a traumatized child who can't sleep. Read Grisham first.
+[23:53:01.256] [INFO ]   ↻  the-client — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:53:37.434] [PASS ] the-client.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 111 to 115 ──────────────
+[23:53:37.937] [PASS ] stardust.json — Quality gate passed
+[23:53:37.938] [PASS ] station-eleven.json — Quality gate passed
+[23:53:37.938] [WARN ] talented-mr-ripley.json: Quality gate warnings: pageTitle slightly long: 68 chars (target 65)
+[23:53:37.939] [PASS ] the-book-thief.json — Quality gate passed
+[23:53:37.940] [PASS ] the-client.json — Quality gate passed
+[23:53:37.940] [INFO ] Quality gate passed for pages 111-115
+[23:53:37.941] [INFO ]   ↻  the-color-purple — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:54:05.724] [PASS ] the-color-purple.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Celie's epistolary voice—her vernacular letters to God—cannot be filmed."
+[23:54:05.724] [INFO ]   ↻  the-color-purple — titles (anthropic/claude-sonnet-4-5)…
+[23:54:08.299] [PASS ] the-color-purple.json — Titles complete
+[23:54:08.299] [INFO ]   BEFORE title (66 chars): The Color Purple: Book vs Movie — Alice Walker vs Steven Spielberg
+[23:54:08.299] [INFO ]   AFTER  title (56 chars): The Color Purple: Celie's Letters to God Can't Be Filmed
+[23:54:08.299] [INFO ]   BEFORE meta  (12 chars): Alice Walker
+[23:54:08.299] [INFO ]   AFTER  meta  (130 chars): Walker's vernacular epistolary voice is the novel's soul. Spielberg gives you Goldberg's face. Both matter. The book matters more.
+[23:54:08.299] [INFO ]   ↻  the-color-purple — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:54:37.619] [PASS ] the-color-purple.json — Pass 2 — 3 CTA blocks added
+[23:54:38.148] [INFO ]   ↻  the-count-of-monte-cristo — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:55:14.849] [PASS ] the-count-of-monte-cristo.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Dumas' interconnected revenge schemes reward patient readers; the film collapses them into simplified spectacle."
+[23:55:14.849] [INFO ]   ↻  the-count-of-monte-cristo — titles (anthropic/claude-sonnet-4-5)…
+[23:55:18.042] [PASS ] the-count-of-monte-cristo.json — Titles complete
+[23:55:18.042] [INFO ]   BEFORE title (92 chars): The Count of Monte Cristo: Book vs Film — Dumas' Intricate Revenge vs. Streamlined Spectacle
+[23:55:18.042] [INFO ]   AFTER  title (60 chars): The Count of Monte Cristo: The Film Turns Dumas Into a Heist
+[23:55:18.042] [INFO ]   BEFORE meta  (15 chars): Alexandre Dumas
+[23:55:18.042] [INFO ]   AFTER  meta  (135 chars): Dumas spent 1,200 pages weaving revenge schemes that echo across Paris. The film gives you three targets and a sword fight. Read first.
+[23:55:18.042] [INFO ]   ↻  the-count-of-monte-cristo — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:56:00.238] [PASS ] the-count-of-monte-cristo.json — Pass 2 — 3 CTA blocks added
+[23:56:00.760] [INFO ]   ↻  the-electric-state — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:56:29.063] [PASS ] the-electric-state.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Stålenhag's paintings create melancholic beauty that cinema cannot pause to absorb."
+[23:56:29.063] [INFO ]   ↻  the-electric-state — titles (anthropic/claude-sonnet-4-5)…
+[23:56:31.715] [WARN ] the-electric-state.json: Titles written with warnings: pageTitle slightly long: 74 chars (target 65)
+[23:56:31.715] [INFO ]   BEFORE title (62 chars): The Electric State: Stålenhag vs Russo Brothers — Book vs Film
+[23:56:31.715] [INFO ]   AFTER  title (74 chars): The Electric State: Stålenhag's Paintings Demand Silence Cinema Can't Give
+[23:56:31.716] [INFO ]   BEFORE meta  (15 chars): Simon Stålenhag
+[23:56:31.716] [INFO ]   AFTER  meta  (126 chars): The Russos made a spectacle. Stålenhag made something you need to sit with. The book's melancholy only works at your own pace.
+[23:56:31.716] [INFO ]   ↻  the-electric-state — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:57:00.472] [PASS ] the-electric-state.json — Pass 2 — 3 CTA blocks added
+[23:57:00.974] [INFO ]   ↻  the-fault-in-our-stars — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:57:41.139] [PASS ] the-fault-in-our-stars.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Hazel's first-person voice is sardonic and precise; no performance can replicate it."
+[23:57:41.139] [INFO ]   ↻  the-fault-in-our-stars — titles (anthropic/claude-sonnet-4-5)…
+[23:57:43.645] [WARN ] the-fault-in-our-stars.json: Titles written with warnings: pageTitle slightly long: 69 chars (target 65)
+[23:57:43.645] [INFO ]   BEFORE title (68 chars): The Fault in Our Stars: Book vs Film — Which Is Better? (John Green)
+[23:57:43.645] [INFO ]   AFTER  title (69 chars): The Fault in Our Stars: Shailene Woodley Can't Give You Hazel's Voice
+[23:57:43.645] [INFO ]   BEFORE meta  (10 chars): John Green
+[23:57:43.645] [INFO ]   AFTER  meta  (146 chars): Green's Hazel is sardonic, precise, and darkly funny. The film smooths her into something softer. Read the book first—the voice is the experience.
+[23:57:43.645] [INFO ]   ↻  the-fault-in-our-stars — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:58:20.452] [PASS ] the-fault-in-our-stars.json — Pass 2 — 3 CTA blocks added
+[23:58:20.974] [INFO ]   ↻  the-firm — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:58:48.604] [PASS ] the-firm.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's billing fraud ending is smarter than the film's chase climax."
+[23:58:48.604] [INFO ]   ↻  the-firm — titles (anthropic/claude-sonnet-4-5)…
+[23:58:51.377] [PASS ] the-firm.json — Titles complete
+[23:58:51.377] [INFO ]   BEFORE title (56 chars): The Firm: Book vs Movie — John Grisham vs Sydney Pollack
+[23:58:51.378] [INFO ]   AFTER  title (63 chars): The Firm: Grisham's Ending Is Brilliant. Pollack Threw It Away.
+[23:58:51.378] [INFO ]   BEFORE meta  (12 chars): John Grisham
+[23:58:51.378] [INFO ]   AFTER  meta  (138 chars): The novel ends with billing fraud brilliance. The film ends with a chase. Pollack made Cruise watchable but lost what made Grisham clever.
+[23:58:51.378] [INFO ]   ↻  the-firm — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:59:20.105] [PASS ] the-firm.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 116 to 120 ──────────────
+[23:59:20.613] [PASS ] the-color-purple.json — Quality gate passed
+[23:59:20.613] [PASS ] the-count-of-monte-cristo.json — Quality gate passed
+[23:59:20.614] [WARN ] the-electric-state.json: Quality gate warnings: pageTitle slightly long: 74 chars (target 65)
+[23:59:20.615] [WARN ] the-fault-in-our-stars.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[23:59:20.616] [PASS ] the-firm.json — Quality gate passed
+[23:59:20.616] [INFO ] Quality gate passed for pages 116-120
+[23:59:20.633] [INFO ]   ↻  the-girl-with-the-dragon-tattoo-fincher — Pass 1 (anthropic/claude-haiku-4-5)…
+[23:59:49.665] [PASS ] the-girl-with-the-dragon-tattoo-fincher.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Larsson's institutional depth versus Fincher's formal mastery and Mara's iconic performance."
+[23:59:49.666] [INFO ]   ↻  the-girl-with-the-dragon-tattoo-fincher — titles (anthropic/claude-sonnet-4-5)…
+[23:59:53.170] [PASS ] the-girl-with-the-dragon-tattoo-fincher.json — Titles complete
+[23:59:53.170] [INFO ]   BEFORE title (70 chars): The Girl with the Dragon Tattoo: Larsson vs Fincher — Which Is Better?
+[23:59:53.170] [INFO ]   AFTER  title (49 chars): Dragon Tattoo: Larsson's Sweden vs Mara's Lisbeth
+[23:59:53.170] [INFO ]   BEFORE meta  (13 chars): Stieg Larsson
+[23:59:53.170] [INFO ]   AFTER  meta  (137 chars): The book gives you institutional rot and Lisbeth's full world. Fincher gives you one of cinema's great character reveals. Both essential.
+[23:59:53.171] [INFO ]   ↻  the-girl-with-the-dragon-tattoo-fincher — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:00:23.123] [PASS ] the-girl-with-the-dragon-tattoo-fincher.json — Pass 2 — 3 CTA blocks added
+[00:00:23.637] [INFO ]   ↻  the-giver — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:00:56.725] [PASS ] the-giver.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's restraint and twelve-year-old protagonist create dread the film's expansion cannot replicate."
+[00:00:56.725] [INFO ]   ↻  the-giver — titles (anthropic/claude-sonnet-4-5)…
+[00:01:00.229] [PASS ] the-giver.json — Titles complete
+[00:01:00.229] [INFO ]   BEFORE title (56 chars): The Giver: Book vs Movie — Which Is Better? (Lois Lowry)
+[00:01:00.229] [INFO ]   AFTER  title (60 chars): The Giver: Lowry's Restraint Creates Dread the Film Destroys
+[00:01:00.229] [INFO ]   BEFORE meta  (10 chars): Lois Lowry
+[00:01:00.229] [INFO ]   AFTER  meta  (143 chars): The novel withholds what the film expands into action. That restraint is the entire point. The 2014 adaptation misses what made it devastating.
+[00:01:00.229] [INFO ]   ↻  the-giver — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:01:33.737] [PASS ] the-giver.json — Pass 2 — 3 CTA blocks added
+[00:01:34.267] [INFO ]   ↻  the-glass-castle — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:02:10.332] [PASS ] the-glass-castle.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Walls refuses to soften Rex's violence; the film sanitizes it into charm."
+[00:02:10.333] [INFO ]   ↻  the-glass-castle — titles (anthropic/claude-sonnet-4-5)…
+[00:02:14.113] [WARN ] the-glass-castle.json: Titles validation failed — not written: pageTitle too long: 82 chars — will not write
+[00:02:14.114] [INFO ]   ↻  the-glass-castle — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:02:50.818] [PASS ] the-glass-castle.json — Pass 2 — 3 CTA blocks added
+[00:02:51.353] [INFO ]   ↻  the-great-gatsby — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:03:20.028] [PASS ] the-great-gatsby.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Fitzgerald's prose is the experience; no film can replicate it."
+[00:03:20.029] [INFO ]   ↻  the-great-gatsby — titles (anthropic/claude-sonnet-4-5)…
+[00:03:25.442] [WARN ] the-great-gatsby.json: Titles written with warnings: pageTitle slightly long: 72 chars (target 65)
+[00:03:25.443] [INFO ]   BEFORE title (60 chars): The Great Gatsby: Book vs Movie — Fitzgerald vs Baz Luhrmann
+[00:03:25.443] [INFO ]   AFTER  title (72 chars): The Great Gatsby: Luhrmann Can't Film What Fitzgerald Does in a Sentence
+[00:03:25.443] [INFO ]   BEFORE meta  (19 chars): F. Scott Fitzgerald
+[00:03:25.443] [INFO ]   AFTER  meta  (145 chars): DiCaprio's face is beautiful. The prose is the thing. One hundred and eighty pages that no amount of visual spectacle can replace. Read it first.
+[00:03:25.443] [INFO ]   ↻  the-great-gatsby — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:03:55.211] [PASS ] the-great-gatsby.json — Pass 2 — 3 CTA blocks added
+[00:03:55.723] [INFO ]   ↻  the-handmaids-tale — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:04:31.006] [PASS ] the-handmaids-tale.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Atwood's narration and Historical Notes metafiction cannot be replicated on screen."
+[00:04:31.007] [INFO ]   ↻  the-handmaids-tale — titles (anthropic/claude-sonnet-4-5)…
+[00:04:34.065] [PASS ] the-handmaids-tale.json — Titles complete
+[00:04:34.066] [INFO ]   BEFORE title (72 chars): The Handmaid's Tale: Book vs Movie vs TV — Atwood vs Schlöndorff vs Hulu
+[00:04:34.066] [INFO ]   AFTER  title (57 chars): The Handmaid's Tale: Offred's Voice Only Exists in Atwood
+[00:04:34.066] [INFO ]   BEFORE meta  (15 chars): Margaret Atwood
+[00:04:34.066] [INFO ]   AFTER  meta  (146 chars): Schlöndorff tried. Hulu tried harder. Neither can do what Atwood does with first-person uncertainty and the Historical Notes. Read the book first.
+[00:04:34.066] [INFO ]   ↻  the-handmaids-tale — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:05:10.577] [PASS ] the-handmaids-tale.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 121 to 125 ──────────────

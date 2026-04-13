@@ -1,0 +1,616 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T00:11:31.267Z
+============================================================
+[00:11:31.270] [INFO ] Model config loaded from config/models.json
+[00:11:31.272] [INFO ] Pass 1 model:  anthropic/claude-haiku-4-5 (temp: 0.3)
+[00:11:31.273] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[00:11:31.273] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[00:11:31.273] [INFO ] Loaded pass1-structural.txt (4631 chars)
+[00:11:31.274] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[00:11:31.274] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[00:11:31.275] [INFO ] pipeline-revise.js
+[00:11:31.275] [INFO ] Pass:    all
+[00:11:31.275] [INFO ] Files:   163
+[00:11:31.275] [INFO ] Force:   no
+[00:11:31.275] [INFO ] Dry run: no
+[00:11:31.275] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:11:31.276] [SKIP ] a-beautiful-mind.json (already exists in 2-revised)
+[00:11:31.793] [SKIP ] a-knight-of-the-seven-kingdoms.json (already exists in 2-revised)
+[00:11:32.296] [SKIP ] a-little-life.json (already exists in 2-revised)
+[00:11:32.797] [SKIP ] a-man-called-ove.json (already exists in 2-revised)
+[00:11:33.300] [SKIP ] a-walk-to-remember.json (already exists in 2-revised)
+
+── Quality gate — pages 1 to 5 ──────────────────
+[00:11:33.813] [PASS ] a-beautiful-mind.json — Quality gate passed
+[00:11:33.814] [PASS ] a-knight-of-the-seven-kingdoms.json — Quality gate passed
+[00:11:33.815] [PASS ] a-little-life.json — Quality gate passed
+[00:11:33.816] [PASS ] a-man-called-ove.json — Quality gate passed
+[00:11:33.817] [PASS ] a-walk-to-remember.json — Quality gate passed
+[00:11:33.817] [INFO ] Quality gate passed for pages 1-5
+[00:11:33.817] [SKIP ] about-a-boy.json (already exists in 2-revised)
+[00:11:34.330] [SKIP ] all-quiet-on-the-western-front.json (already exists in 2-revised)
+[00:11:34.831] [SKIP ] all-the-light-we-cannot-see.json (already exists in 2-revised)
+[00:11:35.348] [SKIP ] along-came-a-spider.json (already exists in 2-revised)
+[00:11:35.850] [SKIP ] american-gods.json (already exists in 2-revised)
+
+── Quality gate — pages 6 to 10 ─────────────────
+[00:11:36.351] [PASS ] about-a-boy.json — Quality gate passed
+[00:11:36.352] [WARN ] all-quiet-on-the-western-front.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[00:11:36.353] [PASS ] all-the-light-we-cannot-see.json — Quality gate passed
+[00:11:36.354] [PASS ] along-came-a-spider.json — Quality gate passed
+[00:11:36.354] [PASS ] american-gods.json — Quality gate passed
+[00:11:36.354] [INFO ] Quality gate passed for pages 6-10
+[00:11:36.355] [SKIP ] american-psycho.json (already exists in 2-revised)
+[00:11:36.866] [SKIP ] animal-farm.json (already exists in 2-revised)
+[00:11:37.366] [SKIP ] annihilation.json (already exists in 2-revised)
+[00:11:37.868] [SKIP ] atonement.json (already exists in 2-revised)
+[00:11:38.369] [SKIP ] band-of-brothers.json (already exists in 2-revised)
+
+── Quality gate — pages 11 to 15 ────────────────
+[00:11:38.885] [PASS ] american-psycho.json — Quality gate passed
+[00:11:38.886] [PASS ] animal-farm.json — Quality gate passed
+[00:11:38.887] [PASS ] annihilation.json — Quality gate passed
+[00:11:38.888] [PASS ] atonement.json — Quality gate passed
+[00:11:38.888] [PASS ] band-of-brothers.json — Quality gate passed
+[00:11:38.889] [INFO ] Quality gate passed for pages 11-15
+[00:11:38.889] [SKIP ] beloved.json (already exists in 2-revised)
+[00:11:39.399] [SKIP ] big-fish.json (already exists in 2-revised)
+[00:11:39.902] [SKIP ] big-little-lies-hbo.json (already exists in 2-revised)
+[00:11:40.403] [SKIP ] breakfast-at-tiffanys.json (already exists in 2-revised)
+[00:11:40.920] [SKIP ] bridgerton.json (already exists in 2-revised)
+
+── Quality gate — pages 16 to 20 ────────────────
+[00:11:41.427] [PASS ] beloved.json — Quality gate passed
+[00:11:41.428] [PASS ] big-fish.json — Quality gate passed
+[00:11:41.429] [PASS ] big-little-lies-hbo.json — Quality gate passed
+[00:11:41.429] [PASS ] breakfast-at-tiffanys.json — Quality gate passed
+[00:11:41.430] [PASS ] bridgerton.json — Quality gate passed
+[00:11:41.430] [INFO ] Quality gate passed for pages 16-20
+[00:11:41.430] [SKIP ] brooklyn.json (already exists in 2-revised)
+[00:11:41.932] [SKIP ] catch-22.json (already exists in 2-revised)
+[00:11:42.438] [SKIP ] catch-me-if-you-can.json (already exists in 2-revised)
+[00:11:42.954] [SKIP ] cold-mountain.json (already exists in 2-revised)
+[00:11:43.469] [SKIP ] contact.json (already exists in 2-revised)
+
+── Quality gate — pages 21 to 25 ────────────────
+[00:11:43.971] [PASS ] brooklyn.json — Quality gate passed
+[00:11:43.972] [PASS ] catch-22.json — Quality gate passed
+[00:11:43.973] [WARN ] catch-me-if-you-can.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[00:11:43.974] [PASS ] cold-mountain.json — Quality gate passed
+[00:11:43.975] [WARN ] contact.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[00:11:43.975] [INFO ] Quality gate passed for pages 21-25
+[00:11:43.975] [SKIP ] da-vinci-code.json (already exists in 2-revised)
+[00:11:44.491] [SKIP ] daisy-jones-and-the-six.json (already exists in 2-revised)
+[00:11:45.009] [SKIP ] dark-matter.json (already exists in 2-revised)
+[00:11:45.524] [SKIP ] devil-wears-prada.json (already exists in 2-revised)
+[00:11:46.025] [SKIP ] divergent.json (already exists in 2-revised)
+
+── Quality gate — pages 26 to 30 ────────────────
+[00:11:46.535] [PASS ] da-vinci-code.json — Quality gate passed
+[00:11:46.535] [PASS ] daisy-jones-and-the-six.json — Quality gate passed
+[00:11:46.536] [PASS ] dark-matter.json — Quality gate passed
+[00:11:46.537] [PASS ] devil-wears-prada.json — Quality gate passed
+[00:11:46.537] [PASS ] divergent.json — Quality gate passed
+[00:11:46.537] [INFO ] Quality gate passed for pages 26-30
+[00:11:46.537] [SKIP ] doctor-sleep.json (already exists in 2-revised)
+[00:11:47.042] [SKIP ] dracula.json (already exists in 2-revised)
+[00:11:47.544] [SKIP ] dune.json (already exists in 2-revised)
+[00:11:48.044] [SKIP ] eat-pray-love.json (already exists in 2-revised)
+[00:11:48.559] [SKIP ] enders-game.json (already exists in 2-revised)
+
+── Quality gate — pages 31 to 35 ────────────────
+[00:11:49.062] [PASS ] doctor-sleep.json — Quality gate passed
+[00:11:49.063] [PASS ] dracula.json — Quality gate passed
+[00:11:49.064] [PASS ] dune.json — Quality gate passed
+[00:11:49.064] [WARN ] eat-pray-love.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[00:11:49.065] [WARN ] enders-game.json: Quality gate warnings: pageTitle slightly long: 67 chars (target 65)
+[00:11:49.065] [INFO ] Quality gate passed for pages 31-35
+[00:11:49.066] [SKIP ] enders-game-film.json (already exists in 2-revised)
+[00:11:49.575] [SKIP ] english-patient.json (already exists in 2-revised)
+[00:11:50.080] [SKIP ] everything-everything.json (already exists in 2-revised)
+[00:11:50.596] [SKIP ] fight-club.json (already exists in 2-revised)
+[00:11:51.100] [SKIP ] five-feet-apart.json (already exists in 2-revised)
+
+── Quality gate — pages 36 to 40 ────────────────
+[00:11:51.614] [PASS ] enders-game-film.json — Quality gate passed
+[00:11:51.614] [WARN ] english-patient.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional | pageTitle slightly long: 67 chars (target 65)
+[00:11:51.615] [WARN ] everything-everything.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65) | metaDesc suspiciously short: 11 chars — may not have been updated
+[00:11:51.616] [PASS ] fight-club.json — Quality gate passed
+[00:11:51.617] [PASS ] five-feet-apart.json — Quality gate passed
+[00:11:51.617] [INFO ] Quality gate passed for pages 36-40
+[00:11:51.617] [SKIP ] fourth-wing.json (already exists in 2-revised)
+[00:11:52.130] [SKIP ] frankenstein.json (already exists in 2-revised)
+[00:11:52.646] [SKIP ] geralds-game.json (already exists in 2-revised)
+[00:11:53.167] [SKIP ] girl-on-the-train.json (already exists in 2-revised)
+[00:11:53.682] [SKIP ] girl-with-the-dragon-tattoo.json (already exists in 2-revised)
+
+── Quality gate — pages 41 to 45 ────────────────
+[00:11:54.199] [PASS ] fourth-wing.json — Quality gate passed
+[00:11:54.199] [PASS ] frankenstein.json — Quality gate passed
+[00:11:54.200] [PASS ] geralds-game.json — Quality gate passed
+[00:11:54.201] [PASS ] girl-on-the-train.json — Quality gate passed
+[00:11:54.202] [PASS ] girl-with-the-dragon-tattoo.json — Quality gate passed
+[00:11:54.202] [INFO ] Quality gate passed for pages 41-45
+[00:11:54.202] [SKIP ] gone-girl.json (already exists in 2-revised)
+[00:11:54.703] [SKIP ] good-omens.json (already exists in 2-revised)
+[00:11:55.206] [SKIP ] hamnet.json (already exists in 2-revised)
+[00:11:55.716] [SKIP ] hannibal-series.json (already exists in 2-revised)
+[00:11:56.236] [SKIP ] heated-rivalry.json (already exists in 2-revised)
+
+── Quality gate — pages 46 to 50 ────────────────
+[00:11:56.753] [PASS ] gone-girl.json — Quality gate passed
+[00:11:56.754] [WARN ] good-omens.json: Quality gate warnings: oneLineReason too long: 17 words — "The novel's footnotes and dual authorship exist only on the page; Sheen and Tennant own the screen." | Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[00:11:56.754] [PASS ] hamnet.json — Quality gate passed
+[00:11:56.755] [PASS ] hannibal-series.json — Quality gate passed
+[00:11:56.756] [PASS ] heated-rivalry.json — Quality gate passed
+[00:11:56.756] [INFO ] Quality gate passed for pages 46-50
+[00:11:56.756] [SKIP ] high-fidelity.json (already exists in 2-revised)
+[00:11:57.269] [SKIP ] hillbilly-elegy.json (already exists in 2-revised)
+[00:11:57.772] [SKIP ] hitchhikers-guide.json (already exists in 2-revised)
+[00:11:58.285] [SKIP ] howls-moving-castle.json (already exists in 2-revised)
+[00:11:58.788] [SKIP ] hunger-games-sunrise.json (already exists in 2-revised)
+
+── Quality gate — pages 51 to 55 ────────────────
+[00:11:59.305] [PASS ] high-fidelity.json — Quality gate passed
+[00:11:59.306] [WARN ] hillbilly-elegy.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[00:11:59.307] [PASS ] hitchhikers-guide.json — Quality gate passed
+[00:11:59.307] [WARN ] howls-moving-castle.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[00:11:59.308] [PASS ] hunger-games-sunrise.json — Quality gate passed
+[00:11:59.308] [INFO ] Quality gate passed for pages 51-55
+[00:11:59.309] [SKIP ] i-am-legend.json (already exists in 2-revised)
+[00:11:59.814] [SKIP ] i-robot.json (already exists in 2-revised)
+[00:12:00.317] [SKIP ] interview-with-the-vampire-amcplus.json (already exists in 2-revised)
+[00:12:00.822] [SKIP ] into-the-wild.json (already exists in 2-revised)
+[00:12:01.340] [SKIP ] it-ends-with-us.json (already exists in 2-revised)
+
+── Quality gate — pages 56 to 60 ────────────────
+[00:12:01.845] [WARN ] i-am-legend.json: Quality gate warnings: metaDesc suspiciously short: 16 chars — may not have been updated
+[00:12:01.846] [PASS ] i-robot.json — Quality gate passed
+[00:12:01.847] [PASS ] interview-with-the-vampire-amcplus.json — Quality gate passed
+[00:12:01.847] [WARN ] into-the-wild.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[00:12:01.848] [PASS ] it-ends-with-us.json — Quality gate passed
+[00:12:01.848] [INFO ] Quality gate passed for pages 56-60
+[00:12:01.849] [SKIP ] it-muschietti.json (already exists in 2-revised)
+[00:12:02.357] [SKIP ] jane-eyre.json (already exists in 2-revised)
+[00:12:02.865] [SKIP ] jurassic-park.json (already exists in 2-revised)
+[00:12:03.374] [SKIP ] kite-runner.json (already exists in 2-revised)
+[00:12:03.875] [SKIP ] la-confidential.json (already exists in 2-revised)
+
+── Quality gate — pages 61 to 65 ────────────────
+[00:12:04.389] [PASS ] it-muschietti.json — Quality gate passed
+[00:12:04.390] [PASS ] jane-eyre.json — Quality gate passed
+[00:12:04.391] [WARN ] jurassic-park.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[00:12:04.391] [PASS ] kite-runner.json — Quality gate passed
+[00:12:04.392] [WARN ] la-confidential.json: Quality gate warnings: pageTitle slightly long: 73 chars (target 65)
+[00:12:04.392] [INFO ] Quality gate passed for pages 61-65
+[00:12:04.393] [SKIP ] les-miserables.json (already exists in 2-revised)
+[00:12:04.895] [SKIP ] little-women.json (already exists in 2-revised)
+[00:12:05.411] [SKIP ] lonesome-dove.json (already exists in 2-revised)
+[00:12:05.912] [SKIP ] looking-for-alaska.json (already exists in 2-revised)
+[00:12:06.427] [SKIP ] lord-of-the-flies.json (already exists in 2-revised)
+
+── Quality gate — pages 66 to 70 ────────────────
+[00:12:06.930] [PASS ] les-miserables.json — Quality gate passed
+[00:12:06.930] [PASS ] little-women.json — Quality gate passed
+[00:12:06.931] [PASS ] lonesome-dove.json — Quality gate passed
+[00:12:06.931] [WARN ] looking-for-alaska.json: Quality gate warnings: pageTitle slightly long: 67 chars (target 65)
+[00:12:06.932] [PASS ] lord-of-the-flies.json — Quality gate passed
+[00:12:06.932] [INFO ] Quality gate passed for pages 66-70
+[00:12:06.932] [SKIP ] love-simon.json (already exists in 2-revised)
+[00:12:07.443] [SKIP ] margos-got-money-troubles.json (already exists in 2-revised)
+[00:12:07.948] [SKIP ] me-before-you.json (already exists in 2-revised)
+[00:12:08.448] [SKIP ] mickey-17.json (already exists in 2-revised)
+[00:12:08.965] [SKIP ] misery.json (already exists in 2-revised)
+
+── Quality gate — pages 71 to 75 ────────────────
+[00:12:09.480] [PASS ] love-simon.json — Quality gate passed
+[00:12:09.481] [WARN ] margos-got-money-troubles.json: Quality gate warnings: pageTitle slightly long: 68 chars (target 65)
+[00:12:09.481] [PASS ] me-before-you.json — Quality gate passed
+[00:12:09.482] [PASS ] mickey-17.json — Quality gate passed
+[00:12:09.483] [PASS ] misery.json — Quality gate passed
+[00:12:09.483] [INFO ] Quality gate passed for pages 71-75
+[00:12:09.483] [SKIP ] my-brilliant-friend.json (already exists in 2-revised)
+[00:12:09.990] [SKIP ] my-sisters-keeper.json (already exists in 2-revised)
+[00:12:10.496] [SKIP ] narnia-magicians-nephew.json (already exists in 2-revised)
+[00:12:10.999] [SKIP ] never-let-me-go.json (already exists in 2-revised)
+[00:12:11.514] [SKIP ] normal-people.json (already exists in 2-revised)
+
+── Quality gate — pages 76 to 80 ────────────────
+[00:12:12.031] [PASS ] my-brilliant-friend.json — Quality gate passed
+[00:12:12.032] [WARN ] my-sisters-keeper.json: Quality gate warnings: pageTitle slightly long: 67 chars (target 65) | metaDesc suspiciously short: 12 chars — may not have been updated
+[00:12:12.032] [PASS ] narnia-magicians-nephew.json — Quality gate passed
+[00:12:12.033] [PASS ] never-let-me-go.json — Quality gate passed
+[00:12:12.033] [PASS ] normal-people.json — Quality gate passed
+[00:12:12.034] [INFO ] Quality gate passed for pages 76-80
+[00:12:12.034] [SKIP ] of-mice-and-men.json (already exists in 2-revised)
+[00:12:12.551] [SKIP ] olive-kitteridge.json (already exists in 2-revised)
+[00:12:13.053] [SKIP ] on-the-road.json (already exists in 2-revised)
+[00:12:13.568] [SKIP ] one-day.json (already exists in 2-revised)
+[00:12:14.080] [SKIP ] one-flew-over-the-cuckoos-nest.json (already exists in 2-revised)
+
+── Quality gate — pages 81 to 85 ────────────────
+[00:12:14.586] [PASS ] of-mice-and-men.json — Quality gate passed
+[00:12:14.587] [PASS ] olive-kitteridge.json — Quality gate passed
+[00:12:14.588] [PASS ] on-the-road.json — Quality gate passed
+[00:12:14.588] [PASS ] one-day.json — Quality gate passed
+[00:12:14.589] [WARN ] one-flew-over-the-cuckoos-nest.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[00:12:14.589] [INFO ] Quality gate passed for pages 81-85
+[00:12:14.590] [SKIP ] outlander.json (already exists in 2-revised)
+[00:12:15.104] [SKIP ] pachinko.json (already exists in 2-revised)
+[00:12:15.620] [SKIP ] people-we-meet-on-vacation.json (already exists in 2-revised)
+[00:12:16.136] [SKIP ] perks-of-being-a-wallflower.json (already exists in 2-revised)
+[00:12:16.640] [SKIP ] pet-sematary-2019.json (already exists in 2-revised)
+
+── Quality gate — pages 86 to 90 ────────────────
+[00:12:17.141] [PASS ] outlander.json — Quality gate passed
+[00:12:17.142] [PASS ] pachinko.json — Quality gate passed
+[00:12:17.142] [PASS ] people-we-meet-on-vacation.json — Quality gate passed
+[00:12:17.143] [WARN ] perks-of-being-a-wallflower.json: Quality gate warnings: oneLineReason too long: 17 words — "The novel owns Charlie's epistolary voice; the film owns Ezra Miller's Patrick and the tunnel in motion."
+[00:12:17.143] [PASS ] pet-sematary-2019.json — Quality gate passed
+[00:12:17.144] [INFO ] Quality gate passed for pages 86-90
+[00:12:17.144] [SKIP ] presumed-innocent.json (already exists in 2-revised)
+[00:12:17.651] [SKIP ] pride-and-prejudice.json (already exists in 2-revised)
+[00:12:18.155] [SKIP ] project-hail-mary.json (already exists in 2-revised)
+[00:12:18.668] [SKIP ] ready-player-one.json (already exists in 2-revised)
+[00:12:19.178] [SKIP ] rebecca.json (already exists in 2-revised)
+
+── Quality gate — pages 91 to 95 ────────────────
+[00:12:19.693] [PASS ] presumed-innocent.json — Quality gate passed
+[00:12:19.694] [PASS ] pride-and-prejudice.json — Quality gate passed
+[00:12:19.695] [PASS ] project-hail-mary.json — Quality gate passed
+[00:12:19.696] [WARN ] ready-player-one.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[00:12:19.696] [WARN ] rebecca.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[00:12:19.696] [INFO ] Quality gate passed for pages 91-95
+[00:12:19.697] [SKIP ] remains-of-the-day.json (already exists in 2-revised)
+[00:12:20.199] [SKIP ] remarkably-bright-creatures.json (already exists in 2-revised)
+[00:12:20.702] [SKIP ] reminders-of-him.json (already exists in 2-revised)
+[00:12:21.208] [SKIP ] room.json (already exists in 2-revised)
+[00:12:21.712] [SKIP ] roots-2016.json (already exists in 2-revised)
+
+── Quality gate — pages 96 to 100 ───────────────
+[00:12:22.214] [PASS ] remains-of-the-day.json — Quality gate passed
+[00:12:22.214] [WARN ] remarkably-bright-creatures.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[00:12:22.215] [PASS ] reminders-of-him.json — Quality gate passed
+[00:12:22.215] [PASS ] room.json — Quality gate passed
+[00:12:22.216] [PASS ] roots-2016.json — Quality gate passed
+[00:12:22.216] [INFO ] Quality gate passed for pages 96-100
+[00:12:22.216] [SKIP ] rosemarys-baby.json (already exists in 2-revised)
+[00:12:22.720] [SKIP ] schindlers-list.json (already exists in 2-revised)
+[00:12:23.227] [SKIP ] seabiscuit.json (already exists in 2-revised)
+[00:12:23.743] [SKIP ] sense-and-sensibility.json (already exists in 2-revised)
+[00:12:24.244] [SKIP ] shadow-and-bone.json (already exists in 2-revised)
+
+── Quality gate — pages 101 to 105 ──────────────
+[00:12:24.756] [WARN ] rosemarys-baby.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[00:12:24.757] [PASS ] schindlers-list.json — Quality gate passed
+[00:12:24.757] [PASS ] seabiscuit.json — Quality gate passed
+[00:12:24.758] [PASS ] sense-and-sensibility.json — Quality gate passed
+[00:12:24.758] [PASS ] shadow-and-bone.json — Quality gate passed
+[00:12:24.758] [INFO ] Quality gate passed for pages 101-105
+[00:12:24.759] [SKIP ] sharp-objects.json (already exists in 2-revised)
+[00:12:25.265] [SKIP ] shogun-2024.json (already exists in 2-revised)
+[00:12:25.777] [SKIP ] silence-of-the-lambs.json (already exists in 2-revised)
+[00:12:26.283] [SKIP ] sophies-choice.json (already exists in 2-revised)
+[00:12:26.791] [SKIP ] sphere.json (already exists in 2-revised)
+
+── Quality gate — pages 106 to 110 ──────────────
+[00:12:27.294] [PASS ] sharp-objects.json — Quality gate passed
+[00:12:27.294] [PASS ] shogun-2024.json — Quality gate passed
+[00:12:27.295] [WARN ] silence-of-the-lambs.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[00:12:27.296] [PASS ] sophies-choice.json — Quality gate passed
+[00:12:27.296] [PASS ] sphere.json — Quality gate passed
+[00:12:27.296] [INFO ] Quality gate passed for pages 106-110
+[00:12:27.297] [SKIP ] stardust.json (already exists in 2-revised)
+[00:12:27.812] [SKIP ] station-eleven.json (already exists in 2-revised)
+[00:12:28.319] [SKIP ] talented-mr-ripley.json (already exists in 2-revised)
+[00:12:28.830] [SKIP ] the-book-thief.json (already exists in 2-revised)
+[00:12:29.332] [SKIP ] the-client.json (already exists in 2-revised)
+
+── Quality gate — pages 111 to 115 ──────────────
+[00:12:29.837] [PASS ] stardust.json — Quality gate passed
+[00:12:29.838] [PASS ] station-eleven.json — Quality gate passed
+[00:12:29.838] [WARN ] talented-mr-ripley.json: Quality gate warnings: pageTitle slightly long: 68 chars (target 65)
+[00:12:29.839] [PASS ] the-book-thief.json — Quality gate passed
+[00:12:29.839] [PASS ] the-client.json — Quality gate passed
+[00:12:29.839] [INFO ] Quality gate passed for pages 111-115
+[00:12:29.839] [SKIP ] the-color-purple.json (already exists in 2-revised)
+[00:12:30.344] [SKIP ] the-count-of-monte-cristo.json (already exists in 2-revised)
+[00:12:30.850] [SKIP ] the-electric-state.json (already exists in 2-revised)
+[00:12:31.351] [SKIP ] the-fault-in-our-stars.json (already exists in 2-revised)
+[00:12:31.854] [SKIP ] the-firm.json (already exists in 2-revised)
+
+── Quality gate — pages 116 to 120 ──────────────
+[00:12:32.356] [PASS ] the-color-purple.json — Quality gate passed
+[00:12:32.357] [PASS ] the-count-of-monte-cristo.json — Quality gate passed
+[00:12:32.357] [WARN ] the-electric-state.json: Quality gate warnings: pageTitle slightly long: 74 chars (target 65)
+[00:12:32.358] [WARN ] the-fault-in-our-stars.json: Quality gate warnings: pageTitle slightly long: 69 chars (target 65)
+[00:12:32.358] [PASS ] the-firm.json — Quality gate passed
+[00:12:32.359] [INFO ] Quality gate passed for pages 116-120
+[00:12:32.359] [SKIP ] the-girl-with-the-dragon-tattoo-fincher.json (already exists in 2-revised)
+[00:12:32.873] [SKIP ] the-giver.json (already exists in 2-revised)
+[00:12:33.374] [SKIP ] the-glass-castle.json (already exists in 2-revised)
+[00:12:33.890] [SKIP ] the-great-gatsby.json (already exists in 2-revised)
+[00:12:34.392] [SKIP ] the-handmaids-tale.json (already exists in 2-revised)
+
+── Quality gate — pages 121 to 125 ──────────────
+[00:12:34.905] [PASS ] the-girl-with-the-dragon-tattoo-fincher.json — Quality gate passed
+[00:12:34.906] [PASS ] the-giver.json — Quality gate passed
+[00:12:34.906] [WARN ] the-glass-castle.json: Quality gate warnings: metaDesc suspiciously short: 15 chars — may not have been updated
+[00:12:34.907] [WARN ] the-great-gatsby.json: Quality gate warnings: pageTitle slightly long: 72 chars (target 65)
+[00:12:34.907] [PASS ] the-handmaids-tale.json — Quality gate passed
+[00:12:34.908] [INFO ] Quality gate passed for pages 121-125
+[00:12:34.925] [INFO ]   ↻  the-haunting-of-hill-house — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:13:13.733] [PASS ] the-haunting-of-hill-house.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Yes" · reason: "Jackson's prose performs psychological dissolution; Flanagan's series makes ghosts visible and real."
+[00:13:13.733] [INFO ]   ↻  the-haunting-of-hill-house — titles (anthropic/claude-sonnet-4-5)…
+[00:13:16.729] [WARN ] the-haunting-of-hill-house.json: Titles validation failed — not written: metaDesc too long: 157 chars (max 155) — not written
+[00:13:16.729] [INFO ]   ↻  the-haunting-of-hill-house — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:13:56.142] [PASS ] the-haunting-of-hill-house.json — Pass 2 — 3 CTA blocks added
+[00:13:56.679] [INFO ]   ↻  the-help — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:14:32.669] [PASS ] the-help.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's three equal first-person voices cannot be compressed into film."
+[00:14:32.669] [INFO ]   ↻  the-help — titles (anthropic/claude-sonnet-4-5)…
+[00:14:35.203] [PASS ] the-help.json — Titles complete
+[00:14:35.204] [INFO ]   BEFORE title (52 chars): The Help: Book vs Film — Which Is Better? (Stockett)
+[00:14:35.204] [INFO ]   AFTER  title (56 chars): The Help: Stockett Gives Three Voices. Taylor Gives One.
+[00:14:35.204] [INFO ]   BEFORE meta  (16 chars): Kathryn Stockett
+[00:14:35.204] [INFO ]   AFTER  meta  (127 chars): Aibileen, Minny, and Skeeter share the novel equally. The film belongs to Viola Davis. Read the book first for the full chorus.
+[00:14:35.204] [INFO ]   ↻  the-help — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:15:13.242] [PASS ] the-help.json — Pass 2 — 3 CTA blocks added
+[00:15:13.789] [INFO ]   ↻  the-hours — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:15:48.202] [PASS ] the-hours.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Cunningham's prose echoes Woolf; Glass's score does in music what prose cannot."
+[00:15:48.202] [INFO ]   ↻  the-hours — titles (anthropic/claude-sonnet-4-5)…
+[00:15:51.505] [PASS ] the-hours.json — Titles complete
+[00:15:51.505] [INFO ]   BEFORE title (65 chars): The Hours: Book vs Film — Cunningham's Prose vs Daldry's Ensemble
+[00:15:51.505] [INFO ]   AFTER  title (59 chars): The Hours: Cunningham Echoes Woolf. Glass Answers in Music.
+[00:15:51.505] [INFO ]   BEFORE meta  (18 chars): Michael Cunningham
+[00:15:51.505] [INFO ]   AFTER  meta  (131 chars): Cunningham's prose rhythms do what only reading can. Glass's score does what only music can. Both are essential. Start with either.
+[00:15:51.506] [INFO ]   ↻  the-hours — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:16:27.184] [PASS ] the-hours.json — Pass 2 — 3 CTA blocks added
+[00:16:27.715] [INFO ]   ↻  the-housemaid — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:16:57.980] [PASS ] the-housemaid.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "McFadden's 300-page misdirection lands harder than Feig's abbreviated twist."
+[00:16:57.980] [INFO ]   ↻  the-housemaid — titles (anthropic/claude-sonnet-4-5)…
+[00:17:00.782] [WARN ] the-housemaid.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[00:17:00.783] [INFO ]   BEFORE title (59 chars): The Housemaid: Book vs Movie — Freida McFadden vs Paul Feig
+[00:17:00.783] [INFO ]   AFTER  title (66 chars): The Housemaid: McFadden's Twist Earns Its Landing. Feig's Doesn't.
+[00:17:00.783] [INFO ]   BEFORE meta  (15 chars): Freida McFadden
+[00:17:00.783] [INFO ]   AFTER  meta  (134 chars): Feig made a fun, campy thriller. McFadden engineered 300 pages of misdirection that makes the payoff devastating. Read the book first.
+[00:17:00.783] [INFO ]   ↻  the-housemaid — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:17:32.114] [PASS ] the-housemaid.json — Pass 2 — 3 CTA blocks added
+[00:17:32.628] [INFO ]   ↻  the-lincoln-lawyer — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:18:00.895] [PASS ] the-lincoln-lawyer.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Connelly's procedural detail and interior monologue make Haller's ethical bind genuinely inescapable."
+[00:18:00.896] [INFO ]   ↻  the-lincoln-lawyer — titles (anthropic/claude-sonnet-4-5)…
+[00:18:03.494] [PASS ] the-lincoln-lawyer.json — Titles complete
+[00:18:03.494] [INFO ]   BEFORE title (53 chars): The Lincoln Lawyer: Connelly vs Furman — Book vs Film
+[00:18:03.495] [INFO ]   AFTER  title (63 chars): The Lincoln Lawyer: Connelly Traps You. Furman Just Moves Fast.
+[00:18:03.495] [INFO ]   BEFORE meta  (16 chars): Michael Connelly
+[00:18:03.495] [INFO ]   AFTER  meta  (135 chars): McConaughey's charm can't replicate what Connelly does in Haller's head. The film races past the moral trap the book makes inescapable.
+[00:18:03.495] [INFO ]   ↻  the-lincoln-lawyer — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:18:33.554] [PASS ] the-lincoln-lawyer.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 126 to 130 ──────────────
+[00:18:34.068] [WARN ] the-haunting-of-hill-house.json: Quality gate warnings: Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional | metaDesc suspiciously short: 15 chars — may not have been updated
+[00:18:34.069] [PASS ] the-help.json — Quality gate passed
+[00:18:34.069] [PASS ] the-hours.json — Quality gate passed
+[00:18:34.070] [WARN ] the-housemaid.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[00:18:34.070] [PASS ] the-lincoln-lawyer.json — Quality gate passed
+[00:18:34.070] [INFO ] Quality gate passed for pages 126-130
+[00:18:34.088] [INFO ]   ↻  the-longest-ride — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:19:05.792] [PASS ] the-longest-ride.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Ira's first-person voice accumulates across four hundred pages into Sparks's best character."
+[00:19:05.792] [INFO ]   ↻  the-longest-ride — titles (anthropic/claude-sonnet-4-5)…
+[00:19:09.477] [WARN ] the-longest-ride.json: Titles written with warnings: pageTitle slightly long: 66 chars (target 65)
+[00:19:09.477] [INFO ]   BEFORE title (81 chars): The Longest Ride: Book vs Film — Sparks's Dual Structure Works Better on the Page
+[00:19:09.477] [INFO ]   AFTER  title (66 chars): The Longest Ride: Ira's Voice Is Sparks's Best. The Film Loses It.
+[00:19:09.477] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[00:19:09.477] [INFO ]   AFTER  meta  (147 chars): Sparks spent 400 pages building Ira's first-person voice into something rare for him. Tillman's film can't replicate that accumulation. Read first.
+[00:19:09.477] [INFO ]   ↻  the-longest-ride — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:19:42.668] [PASS ] the-longest-ride.json — Pass 2 — 3 CTA blocks added
+[00:19:43.193] [INFO ]   ↻  the-lovely-bones — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:20:13.067] [PASS ] the-lovely-bones.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Susie's restrained narrative voice accumulates grief; the film's spectacle disperses it."
+[00:20:13.067] [INFO ]   ↻  the-lovely-bones — titles (anthropic/claude-sonnet-4-5)…
+[00:20:15.784] [WARN ] the-lovely-bones.json: Titles written with warnings: pageTitle slightly long: 67 chars (target 65)
+[00:20:15.784] [INFO ]   BEFORE title (74 chars): The Lovely Bones: Book vs Film — Sebold's Restraint vs Jackson's Spectacle
+[00:20:15.785] [INFO ]   AFTER  title (67 chars): The Lovely Bones: Sebold's Grief Accumulates. Jackson's Evaporates.
+[00:20:15.785] [INFO ]   BEFORE meta  (12 chars): Alice Sebold
+[00:20:15.785] [INFO ]   AFTER  meta  (135 chars): Jackson made something beautiful. It still can't do what Sebold does with Susie's voice. The spectacle kills the restraint. Read first.
+[00:20:15.785] [INFO ]   ↻  the-lovely-bones — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:20:47.269] [PASS ] the-lovely-bones.json — Pass 2 — 3 CTA blocks added
+[00:20:47.778] [INFO ]   ↻  the-martian — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:21:20.586] [PASS ] the-martian.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Weir's log entries own the mind; Scott's rescue sequence owns the screen."
+[00:21:20.586] [INFO ]   ↻  the-martian — titles (anthropic/claude-sonnet-4-5)…
+[00:21:23.411] [PASS ] the-martian.json — Titles complete
+[00:21:23.412] [INFO ]   BEFORE title (47 chars): The Martian Book vs Movie: Weir vs Ridley Scott
+[00:21:23.412] [INFO ]   AFTER  title (62 chars): The Martian: Weir's Logs Own Your Mind. Scott Owns the Rescue.
+[00:21:23.412] [INFO ]   BEFORE meta  (9 chars): Andy Weir
+[00:21:23.412] [INFO ]   AFTER  meta  (128 chars): Damon nails Watney's humor, but the book's problem-solving lives inside your head in ways no film can match. Both are essential.
+[00:21:23.412] [INFO ]   ↻  the-martian — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:21:57.123] [PASS ] the-martian.json — Pass 2 — 3 CTA blocks added
+[00:21:57.637] [INFO ]   ↻  the-maze-runner — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:22:34.078] [PASS ] the-maze-runner.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "The novel's first-person interiority makes every revelation land with personal weight."
+[00:22:34.078] [INFO ]   ↻  the-maze-runner — titles (anthropic/claude-sonnet-4-5)…
+[00:22:37.896] [WARN ] the-maze-runner.json: Titles validation failed — not written: pageTitle too long: 81 chars — will not write
+[00:22:37.896] [INFO ]   ↻  the-maze-runner — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:23:10.471] [PASS ] the-maze-runner.json — Pass 2 — 3 CTA blocks added
+[00:23:11.003] [INFO ]   ↻  the-maze-runner-film — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:23:44.357] [PASS ] the-maze-runner-film.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel's slow revelation of the Glade's society has texture the film compresses."
+[00:23:44.358] [INFO ]   ↻  the-maze-runner-film — titles (anthropic/claude-sonnet-4-5)…
+[00:23:47.786] [PASS ] the-maze-runner-film.json — Titles complete
+[00:23:47.786] [INFO ]   BEFORE title (64 chars): The Maze Runner: Book vs Film — Which Is Better? (James Dashner)
+[00:23:47.786] [INFO ]   AFTER  title (61 chars): The Maze Runner: Dashner Builds a World. Ball Just Shows One.
+[00:23:47.786] [INFO ]   BEFORE meta  (13 chars): James Dashner
+[00:23:47.787] [INFO ]   AFTER  meta  (129 chars): The film is tense and lean, but the book's slow accumulation of the Glade's rules has a weight Ball can only suggest. Read first.
+[00:23:47.787] [INFO ]   ↻  the-maze-runner-film — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:24:22.471] [PASS ] the-maze-runner-film.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 131 to 135 ──────────────
+[00:24:22.984] [WARN ] the-longest-ride.json: Quality gate warnings: pageTitle slightly long: 66 chars (target 65)
+[00:24:22.985] [WARN ] the-lovely-bones.json: Quality gate warnings: pageTitle slightly long: 67 chars (target 65)
+[00:24:22.986] [PASS ] the-martian.json — Quality gate passed
+[00:24:22.987] [WARN ] the-maze-runner.json: Quality gate warnings: metaDesc suspiciously short: 13 chars — may not have been updated
+[00:24:22.988] [PASS ] the-maze-runner-film.json — Quality gate passed
+[00:24:22.988] [INFO ] Quality gate passed for pages 131-135
+[00:24:23.005] [INFO ]   ↻  the-notebook — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:24:52.750] [PASS ] the-notebook.json — Pass 1 — winner: "Book" · readFirst: "Either order works" · reason: "Sparks's Noah is a thinker haunted by loss; Gosling's is a doer."
+[00:24:52.750] [INFO ]   ↻  the-notebook — titles (anthropic/claude-sonnet-4-5)…
+[00:24:55.799] [PASS ] the-notebook.json — Titles complete
+[00:24:55.800] [INFO ]   BEFORE title (64 chars): The Notebook: Book vs Movie — Nicholas Sparks vs Nick Cassavetes
+[00:24:55.800] [INFO ]   AFTER  title (56 chars): The Notebook: Sparks's Noah Thinks. Gosling's Just Does.
+[00:24:55.800] [INFO ]   BEFORE meta  (15 chars): Nicholas Sparks
+[00:24:55.800] [INFO ]   AFTER  meta  (141 chars): The film has the chemistry. The book has the weight. Sparks wrote a man haunted by loss. Cassavetes cast a man who builds things. Read first.
+[00:24:55.800] [INFO ]   ↻  the-notebook — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:25:26.848] [PASS ] the-notebook.json — Pass 2 — 3 CTA blocks added
+[00:25:27.365] [INFO ]   ↻  the-odyssey — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:25:59.156] [WARN ] the-odyssey.json: Pass 1 validation: quickAnswer.oneLineReason too long (16 words)
+[00:25:59.157] [INFO ]   ↻  the-odyssey — titles (anthropic/claude-sonnet-4-5)…
+[00:26:01.826] [PASS ] the-odyssey.json — Titles complete
+[00:26:01.826] [INFO ]   BEFORE title (61 chars): The Odyssey Book vs Nolan's 2026 Film: Should You Read First?
+[00:26:01.826] [INFO ]   AFTER  title (54 chars): The Odyssey: Homer's Similes vs Nolan's Fractured Time
+[00:26:01.826] [INFO ]   BEFORE meta  (5 chars): Homer
+[00:26:01.827] [INFO ]   AFTER  meta  (137 chars): Nolan's chronology mirrors Homer's structure in ways no linear film could. But the epic similes? Those live only on the page. Read first.
+[00:26:01.827] [INFO ]   ↻  the-odyssey — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:26:34.731] [PASS ] the-odyssey.json — Pass 2 — 3 CTA blocks added
+[00:26:35.256] [INFO ]   ↻  the-outsider — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:27:06.280] [PASS ] the-outsider.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The genre pivot shocks hardest when built across the novel's procedural logic."
+[00:27:06.280] [INFO ]   ↻  the-outsider — titles (anthropic/claude-sonnet-4-5)…
+[00:27:09.674] [PASS ] the-outsider.json — Titles complete
+[00:27:09.675] [INFO ]   BEFORE title (62 chars): The Outsider: Book vs Series — Which Is Better? (Stephen King)
+[00:27:09.675] [INFO ]   AFTER  title (59 chars): The Outsider: King's Genre Pivot Shocks. HBO Telegraphs It.
+[00:27:09.675] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[00:27:09.675] [INFO ]   AFTER  meta  (146 chars): The novel builds a procedural so convincing that the horror pivot feels earned and terrifying. The series signals it from episode one. Read first.
+[00:27:09.675] [INFO ]   ↻  the-outsider — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:27:41.832] [PASS ] the-outsider.json — Pass 2 — 3 CTA blocks added
+[00:27:42.360] [INFO ]   ↻  the-outsiders — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:28:17.658] [PASS ] the-outsiders.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Novel owns Ponyboy's voice; film owns the ensemble cast that launched careers."
+[00:28:17.659] [INFO ]   ↻  the-outsiders — titles (anthropic/claude-sonnet-4-5)…
+[00:28:20.751] [PASS ] the-outsiders.json — Titles complete
+[00:28:20.751] [INFO ]   BEFORE title (60 chars): The Outsiders: Book vs Film — Which Is Better? (S.E. Hinton)
+[00:28:20.751] [INFO ]   AFTER  title (62 chars): The Outsiders: Hinton Owns Ponyboy. Coppola Owns the Greasers.
+[00:28:20.751] [INFO ]   BEFORE meta  (11 chars): S.E. Hinton
+[00:28:20.751] [INFO ]   AFTER  meta  (129 chars): The novel gives you a fifteen-year-old's voice. The film gives you Dillon, Lowe, Cruise, Swayze. Both matter. Either order works.
+[00:28:20.751] [INFO ]   ↻  the-outsiders — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:28:57.112] [PASS ] the-outsiders.json — Pass 2 — 3 CTA blocks added
+[00:28:57.658] [INFO ]   ↻  the-pelican-brief — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:29:27.880] [PASS ] the-pelican-brief.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Grisham's legal procedural detail and Gray's moral compromises vanish in Pakula's streamlined adaptation."
+[00:29:27.881] [INFO ]   ↻  the-pelican-brief — titles (anthropic/claude-sonnet-4-5)…
+[00:29:31.029] [PASS ] the-pelican-brief.json — Titles complete
+[00:29:31.029] [INFO ]   BEFORE title (75 chars): The Pelican Brief: Book vs Movie — Key Differences & Should You Read First?
+[00:29:31.030] [INFO ]   AFTER  title (59 chars): The Pelican Brief: Grisham's Gray Darby Gets Pakula's Gloss
+[00:29:31.030] [INFO ]   BEFORE meta  (12 chars): John Grisham
+[00:29:31.030] [INFO ]   AFTER  meta  (135 chars): Pakula cast Julia Roberts and erased the moral compromises that made Darby Shaw dangerous. The book's conspiracy has teeth. Read first.
+[00:29:31.030] [INFO ]   ↻  the-pelican-brief — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:30:02.327] [PASS ] the-pelican-brief.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 136 to 140 ──────────────
+[00:30:02.845] [PASS ] the-notebook.json — Quality gate passed
+[00:30:02.846] [WARN ] the-odyssey.json: Quality gate warnings: oneLineReason too long: 16 words — "Homer's epic similes exist only on the page; Nolan's fractured chronology mirrors the poem's structure perfectly." | Possible inconsistency: winner is "Too Close to Call" but readFirst is "Yes" — verify this is intentional
+[00:30:02.847] [PASS ] the-outsider.json — Quality gate passed
+[00:30:02.848] [PASS ] the-outsiders.json — Quality gate passed
+[00:30:02.848] [PASS ] the-pelican-brief.json — Quality gate passed
+[00:30:02.848] [INFO ] Quality gate passed for pages 136-140
+[00:30:02.866] [INFO ]   ↻  the-pianist — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:30:38.147] [PASS ] the-pianist.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Szpilman's voice versus Brody's skeletal frame—testimony versus witness."
+[00:30:38.147] [INFO ]   ↻  the-pianist — titles (anthropic/claude-sonnet-4-5)…
+[00:30:41.593] [PASS ] the-pianist.json — Titles complete
+[00:30:41.594] [INFO ]   BEFORE title (48 chars): The Pianist: Szpilman vs Polanski — Book vs Film
+[00:30:41.594] [INFO ]   AFTER  title (59 chars): The Pianist: Szpilman Testifies. Brody Becomes the Witness.
+[00:30:41.594] [INFO ]   BEFORE meta  (18 chars): Władysław Szpilman
+[00:30:41.594] [INFO ]   AFTER  meta  (133 chars): The memoir gives you survival in Szpilman's own words. Polanski gives you Brody's body wasting away in real time. Both are essential.
+[00:30:41.594] [INFO ]   ↻  the-pianist — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:31:16.359] [PASS ] the-pianist.json — Pass 2 — 3 CTA blocks added
+[00:31:16.872] [INFO ]   ↻  the-picture-of-dorian-gray — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:31:49.701] [PASS ] the-picture-of-dorian-gray.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Wilde's epigrammatic prose and Lord Henry's philosophy are irreplaceable on the page."
+[00:31:49.702] [INFO ]   ↻  the-picture-of-dorian-gray — titles (anthropic/claude-sonnet-4-5)…
+[00:31:52.806] [PASS ] the-picture-of-dorian-gray.json — Titles complete
+[00:31:52.806] [INFO ]   BEFORE title (58 chars): The Picture of Dorian Gray: Wilde vs Parker — Book vs Film
+[00:31:52.806] [INFO ]   AFTER  title (57 chars): Dorian Gray: Lord Henry's Wit Dies in Translation to Film
+[00:31:52.806] [INFO ]   BEFORE meta  (11 chars): Oscar Wilde
+[00:31:52.806] [INFO ]   AFTER  meta  (149 chars): Parker's film looks lush but can't capture Wilde's epigrammatic brilliance. Without the prose, Lord Henry becomes a villain instead of a philosopher.
+[00:31:52.807] [INFO ]   ↻  the-picture-of-dorian-gray — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:32:27.432] [PASS ] the-picture-of-dorian-gray.json — Pass 2 — 3 CTA blocks added
+[00:32:27.946] [INFO ]   ↻  the-pillars-of-the-earth — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:33:03.121] [PASS ] the-pillars-of-the-earth.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The novel teaches you how cathedrals are built; the series only shows you them rising."
+[00:33:03.122] [INFO ]   ↻  the-pillars-of-the-earth — titles (anthropic/claude-sonnet-4-5)…
+[00:33:05.914] [PASS ] the-pillars-of-the-earth.json — Titles complete
+[00:33:05.914] [INFO ]   BEFORE title (73 chars): The Pillars of the Earth: Book vs Series — Which Is Better? (Ken Follett)
+[00:33:05.914] [INFO ]   AFTER  title (61 chars): Pillars of the Earth: Follett Teaches. The Series Just Shows.
+[00:33:05.914] [INFO ]   BEFORE meta  (11 chars): Ken Follett
+[00:33:05.914] [INFO ]   AFTER  meta  (138 chars): The novel makes you understand stone and mortar. The series makes you watch them stack. One gives you medieval craft, the other spectacle.
+[00:33:05.914] [INFO ]   ↻  the-pillars-of-the-earth — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:33:43.084] [PASS ] the-pillars-of-the-earth.json — Pass 2 — 3 CTA blocks added
+[00:33:43.600] [INFO ]   ↻  the-princess-bride — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:34:16.867] [PASS ] the-princess-bride.json — Pass 1 — winner: "Too Close to Call" · readFirst: "Either order works" · reason: "Goldman's meta-fictional frame exists only on the page; Patinkin's Inigo exists only on screen."
+[00:34:16.867] [INFO ]   ↻  the-princess-bride — titles (anthropic/claude-sonnet-4-5)…
+[00:34:19.496] [PASS ] the-princess-bride.json — Titles complete
+[00:34:19.496] [INFO ]   BEFORE title (83 chars): The Princess Bride: Book vs Film — Goldman's Meta-Fiction vs Patinkin's Performance
+[00:34:19.496] [INFO ]   AFTER  title (55 chars): The Princess Bride: Goldman's Frame vs Patinkin's Inigo
+[00:34:19.496] [INFO ]   BEFORE meta  (15 chars): William Goldman
+[00:34:19.496] [INFO ]   AFTER  meta  (139 chars): Goldman wrote both. The book has a meta-fictional frame the film can't touch. The film has Patinkin's Inigo the book can't match. Both win.
+[00:34:19.497] [INFO ]   ↻  the-princess-bride — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:34:52.590] [PASS ] the-princess-bride.json — Pass 2 — 3 CTA blocks added
+[00:34:53.094] [INFO ]   ↻  the-road — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:35:20.941] [PASS ] the-road.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "McCarthy's stripped prose enacts the degradation; the film can only show the story."
+[00:35:20.941] [INFO ]   ↻  the-road — titles (anthropic/claude-sonnet-4-5)…
+[00:35:23.396] [PASS ] the-road.json — Titles complete
+[00:35:23.397] [INFO ]   BEFORE title (58 chars): The Road: Book vs Movie — Cormac McCarthy vs John Hillcoat
+[00:35:23.397] [INFO ]   AFTER  title (61 chars): The Road: McCarthy's Prose Enacts What Hillcoat Can Only Show
+[00:35:23.397] [INFO ]   BEFORE meta  (15 chars): Cormac McCarthy
+[00:35:23.397] [INFO ]   AFTER  meta  (129 chars): Hillcoat made a faithful adaptation. It's still considerably lesser. The prose isn't decoration—it's the whole point. Read first.
+[00:35:23.397] [INFO ]   ↻  the-road — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:35:52.516] [PASS ] the-road.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 141 to 145 ──────────────
+[00:35:53.029] [PASS ] the-pianist.json — Quality gate passed
+[00:35:53.030] [PASS ] the-picture-of-dorian-gray.json — Quality gate passed
+[00:35:53.030] [PASS ] the-pillars-of-the-earth.json — Quality gate passed
+[00:35:53.031] [PASS ] the-princess-bride.json — Quality gate passed
+[00:35:53.032] [PASS ] the-road.json — Quality gate passed
+[00:35:53.032] [INFO ] Quality gate passed for pages 141-145
+[00:35:53.032] [INFO ]   ↻  the-secret-garden — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:36:26.384] [PASS ] the-secret-garden.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Burnett's pacing—slow, repetitive, unglamorous—is the argument about how healing actually works."
+[00:36:26.384] [INFO ]   ↻  the-secret-garden — titles (anthropic/claude-sonnet-4-5)…
+[00:36:28.885] [PASS ] the-secret-garden.json — Titles complete
+[00:36:28.885] [INFO ]   BEFORE title (51 chars): The Secret Garden: Burnett vs Munden — Book vs Film
+[00:36:28.885] [INFO ]   AFTER  title (58 chars): The Secret Garden: Burnett's Slow Healing vs Munden's Rush
+[00:36:28.886] [INFO ]   BEFORE meta  (23 chars): Frances Hodgson Burnett
+[00:36:28.886] [INFO ]   AFTER  meta  (133 chars): Munden made a beautiful film. But recovery doesn't work at film speed. Burnett's repetitive pacing is the point. Read the book first.
+[00:36:28.886] [INFO ]   ↻  the-secret-garden — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:37:03.851] [PASS ] the-secret-garden.json — Pass 2 — 3 CTA blocks added
+[00:37:04.365] [INFO ]   ↻  the-secret-life-of-bees — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:37:37.936] [PASS ] the-secret-life-of-bees.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "Kidd's prose holds Lily's guilt and complicity; the film sands down its edges."
+[00:37:37.936] [INFO ]   ↻  the-secret-life-of-bees — titles (anthropic/claude-sonnet-4-5)…
+[00:37:40.726] [PASS ] the-secret-life-of-bees.json — Titles complete
+[00:37:40.726] [INFO ]   BEFORE title (72 chars): The Secret Life of Bees: Book vs Film — Which Is Better? (Sue Monk Kidd)
+[00:37:40.726] [INFO ]   AFTER  title (61 chars): The Secret Life of Bees: Lily's Guilt Is Real in Kidd's Novel
+[00:37:40.726] [INFO ]   BEFORE meta  (13 chars): Sue Monk Kidd
+[00:37:40.727] [INFO ]   AFTER  meta  (126 chars): The film gives you Queen Latifah and Dakota Fanning. It doesn't give you the weight of what Lily carries. Read the book first.
+[00:37:40.727] [INFO ]   ↻  the-secret-life-of-bees — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:38:15.941] [PASS ] the-secret-life-of-bees.json — Pass 2 — 3 CTA blocks added
+[00:38:16.452] [INFO ]   ↻  the-shining — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:38:53.151] [PASS ] the-shining.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "King's Jack is corrupted by evil; Kubrick's Jack already is evil."
+[00:38:53.151] [INFO ]   ↻  the-shining — titles (anthropic/claude-sonnet-4-5)…
+[00:38:55.778] [PASS ] the-shining.json — Titles complete
+[00:38:55.778] [INFO ]   BEFORE title (52 chars): The Shining Book vs Movie: King vs Kubrick Explained
+[00:38:55.778] [INFO ]   AFTER  title (58 chars): The Shining: Kubrick's Jack Is Already Evil. King's Isn't.
+[00:38:55.778] [INFO ]   BEFORE meta  (12 chars): Stephen King
+[00:38:55.778] [INFO ]   AFTER  meta  (134 chars): King wrote a tragedy about a good man destroyed. Kubrick made a horror film about a man who was always a monster. Read the book first.
+[00:38:55.779] [INFO ]   ↻  the-shining — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:39:32.740] [PASS ] the-shining.json — Pass 2 — 3 CTA blocks added
+[00:39:33.252] [INFO ]   ↻  the-sisterhood-of-the-traveling-pants — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:40:08.832] [WARN ] the-sisterhood-of-the-traveling-pants.json: Pass 1 validation: quickAnswer.oneLineReason too long (17 words)
+[00:40:08.832] [INFO ]   ↻  the-sisterhood-of-the-traveling-pants — titles (anthropic/claude-sonnet-4-5)…
+[00:40:11.549] [WARN ] the-sisterhood-of-the-traveling-pants.json: Titles validation failed — not written: pageTitle too long: 83 chars — will not write
+[00:40:11.549] [INFO ]   ↻  the-sisterhood-of-the-traveling-pants — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:40:48.613] [PASS ] the-sisterhood-of-the-traveling-pants.json — Pass 2 — 3 CTA blocks added
+[00:40:49.117] [INFO ]   ↻  the-three-body-problem — Pass 1 (anthropic/claude-haiku-4-5)…
+[00:41:25.621] [PASS ] the-three-body-problem.json — Pass 1 — winner: "Book" · readFirst: "Yes" · reason: "The Cultural Revolution trauma drives the novel's philosophy; the series reduces it to flashbacks."
+[00:41:25.622] [INFO ]   ↻  the-three-body-problem — titles (anthropic/claude-sonnet-4-5)…
+[00:41:27.861] [PASS ] the-three-body-problem.json — Titles complete
+[00:41:27.862] [INFO ]   BEFORE title (77 chars): The Three-Body Problem: Book vs Netflix Series — Which Is Better? (Liu Cixin)
+[00:41:27.862] [INFO ]   AFTER  title (60 chars): The Three-Body Problem: Netflix Turned Trauma Into Backstory
+[00:41:27.862] [INFO ]   BEFORE meta  (9 chars): Liu Cixin
+[00:41:27.862] [INFO ]   AFTER  meta  (136 chars): Liu's novel is shaped by the Cultural Revolution. The series treats it as exposition. Read the book first or you'll miss the philosophy.
+[00:41:27.862] [INFO ]   ↻  the-three-body-problem — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:42:05.370] [PASS ] the-three-body-problem.json — Pass 2 — 3 CTA blocks added
+
+── Quality gate — pages 146 to 150 ──────────────
