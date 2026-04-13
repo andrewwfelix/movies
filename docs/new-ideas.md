@@ -338,3 +338,45 @@ easier to reason about what gets deployed.
 Requires: updating renderer output path, moving assets, updating Netlify config.
 Priority: low
 Status: pending
+
+## TOMORROW — HIGH PRIORITY: Featured/spotlight section on browse page
+Add a hero spotlight section at the top of index.html featuring 3-5
+hand-picked titles in larger cards before the full listing begins.
+
+Implementation:
+  config/featured.json — ordered list of slugs to feature
+  pipeline-browse.js reads featured.json and renders spotlight cards
+  at top, then full listing below
+
+Spotlight card is larger than row cards — book cover, title, hook,
+verdict badge, CTA button. Like the old index page but integrated
+into the browse page rather than separate.
+
+This gives editorial control over the first impression without
+losing the full browse list.
+Priority: high
+Status: pending — do first tomorrow
+
+## TOMORROW — HIGH PRIORITY: Priority/hype field in JSON schema
+Add priority: 1|2|3 field to review-schema.md and all JSON files.
+
+Priority 1 — high hype, high search volume, flagship titles
+  e.g. Gone Girl, Dune, The Shining, The Handmaid's Tale
+Priority 2 — solid catalog, good search volume
+  e.g. most of the current 162 pages
+Priority 3 — lower volume, niche, or older titles
+
+Controls:
+  - Browse page order (priority 1 at top, then 2, then 3)
+  - Spotlight eligibility (only priority 1 pages featured)
+  - Model assignment (Sonnet for tier 1, Haiku for tier 2-3)
+  - Greenfield generation order (tier 1 first)
+  - Future: different article lengths per tier
+
+Implementation:
+  1. Add priority field to review-schema.md
+  2. Write a script to bulk-set priority based on a curated list
+  3. Update pipeline-browse.js to sort by priority then alpha
+  4. Update config/models.json to support per-priority model assignment
+Priority: high
+Status: pending — do second tomorrow
