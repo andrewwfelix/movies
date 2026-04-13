@@ -1,0 +1,37 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-13T23:37:35.022Z
+============================================================
+[23:37:35.025] [INFO ] pipeline-render.js
+[23:37:35.026] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[23:37:35.026] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[23:37:35.026] [INFO ] Files:   1
+[23:37:35.026] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[23:37:35.027] [PASS ] ghost-world.html — 23735 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+============================================================
+Finished: 2026-04-13T23:37:35.028Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_19-37-35_pipeline-render.log
+============================================================

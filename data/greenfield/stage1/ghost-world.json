@@ -1,0 +1,15 @@
+{
+  "bookTitle": "Ghost World",
+  "author": "Daniel Clowes",
+  "bookYear": "1997",
+  "genre": "Graphic Novel / Coming-of-Age",
+  "mediaType": "film",
+  "mediaLabel": "The Film",
+  "filmYear": "2001",
+  "director": "Terry Zwigoff",
+  "starringLine": "Starring Thora Birch, Scarlett Johansson, Steve Buscemi — Film: 2001",
+  "reviewBody": "Zwigoff's adaptation captures the graphic novel's deadpan alienation so precisely it feels less like translation and more like crystallization.",
+  "ratingValue": "5",
+  "bookCoverImage": "ghost-world.jpg",
+  "slug": "ghost-world"
+}

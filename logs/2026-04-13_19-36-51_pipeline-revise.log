@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T23:36:51.193Z
+============================================================
+[23:36:51.195] [INFO ] Model config loaded from config/models.json
+[23:36:51.196] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[23:36:51.196] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[23:36:51.197] [INFO ] pipeline-revise.js
+[23:36:51.197] [INFO ] Pass:    2
+[23:36:51.197] [INFO ] Files:   1
+[23:36:51.197] [INFO ] Force:   yes
+[23:36:51.197] [INFO ] Dry run: no
+[23:36:51.197] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[23:36:51.198] [INFO ]   ↻  ghost-world — Pass 2 (anthropic/claude-haiku-4-5)…
+[23:37:34.931] [PASS ] ghost-world.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[23:37:34.932] [INFO ] Single file mode — skipping full checkpoint
+[23:37:34.932] [INFO ] quickAnswer.winner:        Film
+[23:37:34.932] [INFO ] quickAnswer.readFirst:     Either order works
+[23:37:34.932] [INFO ] quickAnswer.oneLineReason: Zwigoff's casting and performances deepen what Clowes sketched.
+
+============================================================
+Finished: 2026-04-13T23:37:34.932Z
+Elapsed:  43.7s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_19-36-51_pipeline-revise.log
+============================================================

@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T23:36:47.434Z
+============================================================
+[23:36:47.436] [INFO ] Model config loaded from config/models.json
+[23:36:47.437] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[23:36:47.438] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[23:36:47.438] [INFO ] pipeline-revise.js
+[23:36:47.438] [INFO ] Pass:    titles
+[23:36:47.438] [INFO ] Files:   1
+[23:36:47.438] [INFO ] Force:   yes
+[23:36:47.438] [INFO ] Dry run: no
+[23:36:47.438] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[23:36:47.439] [INFO ]   ↻  ghost-world — titles (anthropic/claude-sonnet-4-5)…
+[23:36:51.128] [PASS ] ghost-world.json — Titles complete
+[23:36:51.129] [INFO ]   BEFORE title (0 chars): null
+[23:36:51.129] [INFO ]   AFTER  title (51 chars): Ghost World: Buscemi and Johansson Make Clowes Real
+[23:36:51.129] [INFO ]   BEFORE meta  (0 chars): null
+[23:36:51.129] [INFO ]   AFTER  meta  (141 chars): Zwigoff cast the film so perfectly that Enid and Seymour feel more alive on screen than on the page. A rare case where actors deepen a comic.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[23:36:51.129] [INFO ] Single file mode — skipping full checkpoint
+[23:36:51.129] [INFO ] quickAnswer.winner:        Film
+[23:36:51.129] [INFO ] quickAnswer.readFirst:     Either order works
+[23:36:51.129] [INFO ] quickAnswer.oneLineReason: Zwigoff's casting and performances deepen what Clowes sketched.
+[23:36:51.130] [INFO ] BEFORE title (51 chars): Ghost World: Buscemi and Johansson Make Clowes Real
+[23:36:51.130] [INFO ] AFTER  title (51 chars): Ghost World: Buscemi and Johansson Make Clowes Real
+[23:36:51.130] [INFO ] BEFORE meta  (141 chars): Zwigoff cast the film so perfectly that Enid and Seymour feel more alive on screen than on the page. A rare case where actors deepen a comic.
+[23:36:51.130] [INFO ] AFTER  meta  (141 chars): Zwigoff cast the film so perfectly that Enid and Seymour feel more alive on screen than on the page. A rare case where actors deepen a comic.
+
+============================================================
+Finished: 2026-04-13T23:36:51.130Z
+Elapsed:  3.7s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_19-36-47_pipeline-revise.log
+============================================================
