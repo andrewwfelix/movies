@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:43:44.305Z
+============================================================
+[01:43:44.308] [INFO ] Model config loaded from config/models.json
+[01:43:44.310] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:43:44.311] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:43:44.311] [INFO ] pipeline-revise.js
+[01:43:44.311] [INFO ] Pass:    titles
+[01:43:44.311] [INFO ] Files:   1
+[01:43:44.311] [INFO ] Force:   yes
+[01:43:44.312] [INFO ] Dry run: no
+[01:43:44.312] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:43:44.313] [INFO ]   ↻  my-sisters-keeper — titles (anthropic/claude-sonnet-4-5)…
+[01:43:47.325] [WARN ] my-sisters-keeper.json: Titles written with warnings: pageTitle slightly long: 67 chars (target 65)
+[01:43:47.325] [INFO ]   BEFORE title (67 chars): My Sister's Keeper: Book vs Movie — Which Is Better? (Jodi Picoult)
+[01:43:47.325] [INFO ]   AFTER  title (67 chars): My Sister's Keeper: The Book's Seven Voices Make the Film Feel Flat
+[01:43:47.326] [INFO ]   BEFORE meta  (12 chars): Jodi Picoult
+[01:43:47.326] [INFO ]   AFTER  meta  (137 chars): Picoult gives every family member a chapter. Cassavetes gives Cameron Diaz a voiceover. The moral weight disappears. Read the book first.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:43:47.327] [INFO ] Single file mode — skipping full checkpoint
+[01:43:47.327] [INFO ] quickAnswer.winner:        Book
+[01:43:47.327] [INFO ] quickAnswer.readFirst:     Yes
+[01:43:47.327] [INFO ] quickAnswer.oneLineReason: Seven narrators create moral complexity the film's single voiceover cannot replicate.
+[01:43:47.328] [INFO ] BEFORE title (67 chars): My Sister's Keeper: The Book's Seven Voices Make the Film Feel Flat
+[01:43:47.328] [INFO ] AFTER  title (67 chars): My Sister's Keeper: The Book's Seven Voices Make the Film Feel Flat
+[01:43:47.328] [INFO ] BEFORE meta  (137 chars): Picoult gives every family member a chapter. Cassavetes gives Cameron Diaz a voiceover. The moral weight disappears. Read the book first.
+[01:43:47.328] [INFO ] AFTER  meta  (137 chars): Picoult gives every family member a chapter. Cassavetes gives Cameron Diaz a voiceover. The moral weight disappears. Read the book first.
+
+============================================================
+Finished: 2026-04-13T01:43:47.328Z
+Elapsed:  3.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-43-44_pipeline-revise.log
+============================================================

@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:28:32.283Z
+============================================================
+[01:28:32.286] [INFO ] Model config loaded from config/models.json
+[01:28:32.289] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:28:32.289] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:28:32.289] [INFO ] pipeline-revise.js
+[01:28:32.289] [INFO ] Pass:    titles
+[01:28:32.289] [INFO ] Files:   1
+[01:28:32.289] [INFO ] Force:   yes
+[01:28:32.289] [INFO ] Dry run: no
+[01:28:32.290] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:28:32.291] [INFO ]   ↻  the-sisterhood-of-the-traveling-pants — titles (anthropic/claude-sonnet-4-5)…
+[01:28:35.638] [PASS ] the-sisterhood-of-the-traveling-pants.json — Titles complete
+[01:28:35.638] [INFO ]   BEFORE title (64 chars): Sisterhood of the Traveling Pants: Four Voices the Film Flattens
+[01:28:35.638] [INFO ]   AFTER  title (63 chars): Sisterhood of the Traveling Pants: Read First or Lose the Girls
+[01:28:35.639] [INFO ]   BEFORE meta  (13 chars): Ann Brashares
+[01:28:35.639] [INFO ]   AFTER  meta  (134 chars): Brashares gives you four interior lives. Kwapis gives you four plots. The difference is everything in a story about becoming yourself.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:28:35.640] [INFO ] Single file mode — skipping full checkpoint
+[01:28:35.640] [INFO ] quickAnswer.winner:        Book
+[01:28:35.640] [INFO ] quickAnswer.readFirst:     Yes
+[01:28:35.640] [INFO ] quickAnswer.oneLineReason: Brashares' rotating first-person chapters inhabit each girl's interior life; the film captures plot but misses psychological depth.
+[01:28:35.640] [INFO ] BEFORE title (63 chars): Sisterhood of the Traveling Pants: Read First or Lose the Girls
+[01:28:35.640] [INFO ] AFTER  title (63 chars): Sisterhood of the Traveling Pants: Read First or Lose the Girls
+[01:28:35.641] [INFO ] BEFORE meta  (134 chars): Brashares gives you four interior lives. Kwapis gives you four plots. The difference is everything in a story about becoming yourself.
+[01:28:35.641] [INFO ] AFTER  meta  (134 chars): Brashares gives you four interior lives. Kwapis gives you four plots. The difference is everything in a story about becoming yourself.
+
+============================================================
+Finished: 2026-04-13T01:28:35.641Z
+Elapsed:  3.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-28-32_pipeline-revise.log
+============================================================

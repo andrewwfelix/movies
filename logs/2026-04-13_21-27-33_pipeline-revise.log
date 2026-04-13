@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:27:33.896Z
+============================================================
+[01:27:33.899] [INFO ] Model config loaded from config/models.json
+[01:27:33.901] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:27:33.902] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:27:33.902] [INFO ] pipeline-revise.js
+[01:27:33.902] [INFO ] Pass:    titles
+[01:27:33.902] [INFO ] Files:   1
+[01:27:33.902] [INFO ] Force:   yes
+[01:27:33.902] [INFO ] Dry run: no
+[01:27:33.902] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:27:33.903] [INFO ]   ↻  my-sisters-keeper — titles (anthropic/claude-sonnet-4-5)…
+[01:27:36.975] [WARN ] my-sisters-keeper.json: Titles validation failed — not written: pageTitle too long: 76 chars — will not write
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:27:36.977] [INFO ] Single file mode — skipping full checkpoint
+[01:27:36.977] [INFO ] quickAnswer.winner:        Book
+[01:27:36.977] [INFO ] quickAnswer.readFirst:     Yes
+[01:27:36.977] [INFO ] quickAnswer.oneLineReason: Seven narrators create moral complexity the film's single voiceover cannot replicate.
+[01:27:36.978] [INFO ] BEFORE title (67 chars): My Sister's Keeper: Book vs Movie — Which Is Better? (Jodi Picoult)
+[01:27:36.978] [INFO ] AFTER  title (67 chars): My Sister's Keeper: Book vs Movie — Which Is Better? (Jodi Picoult)
+[01:27:36.978] [INFO ] BEFORE meta  (12 chars): Jodi Picoult
+[01:27:36.978] [INFO ] AFTER  meta  (12 chars): Jodi Picoult
+
+============================================================
+Finished: 2026-04-13T01:27:36.978Z
+Elapsed:  3.1s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-27-33_pipeline-revise.log
+============================================================

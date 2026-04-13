@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:27:43.689Z
+============================================================
+[01:27:43.691] [INFO ] Model config loaded from config/models.json
+[01:27:43.694] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:27:43.694] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:27:43.694] [INFO ] pipeline-revise.js
+[01:27:43.694] [INFO ] Pass:    titles
+[01:27:43.695] [INFO ] Files:   1
+[01:27:43.695] [INFO ] Force:   yes
+[01:27:43.695] [INFO ] Dry run: no
+[01:27:43.695] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:27:43.696] [INFO ]   ↻  the-glass-castle — titles (anthropic/claude-sonnet-4-5)…
+[01:27:47.444] [PASS ] the-glass-castle.json — Titles complete
+[01:27:47.444] [INFO ]   BEFORE title (57 chars): The Glass Castle: Walls' Honesty Earns What Cretton Can't
+[01:27:47.444] [INFO ]   AFTER  title (55 chars): The Glass Castle: The Book Refuses to Make Rex Charming
+[01:27:47.445] [INFO ]   BEFORE meta  (15 chars): Jeannette Walls
+[01:27:47.445] [INFO ]   AFTER  meta  (125 chars): Cretton's film turns Rex Walls into a lovable drunk. Walls' memoir never lets you forget he's dangerous. Read the book first.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:27:47.446] [INFO ] Single file mode — skipping full checkpoint
+[01:27:47.446] [INFO ] quickAnswer.winner:        Book
+[01:27:47.446] [INFO ] quickAnswer.readFirst:     Yes
+[01:27:47.446] [INFO ] quickAnswer.oneLineReason: Walls refuses to soften Rex's violence; the film sanitizes it into charm.
+[01:27:47.446] [INFO ] BEFORE title (55 chars): The Glass Castle: The Book Refuses to Make Rex Charming
+[01:27:47.446] [INFO ] AFTER  title (55 chars): The Glass Castle: The Book Refuses to Make Rex Charming
+[01:27:47.447] [INFO ] BEFORE meta  (125 chars): Cretton's film turns Rex Walls into a lovable drunk. Walls' memoir never lets you forget he's dangerous. Read the book first.
+[01:27:47.447] [INFO ] AFTER  meta  (125 chars): Cretton's film turns Rex Walls into a lovable drunk. Walls' memoir never lets you forget he's dangerous. Read the book first.
+
+============================================================
+Finished: 2026-04-13T01:27:47.447Z
+Elapsed:  3.8s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-27-43_pipeline-revise.log
+============================================================

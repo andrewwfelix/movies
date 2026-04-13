@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:28:08.132Z
+============================================================
+[01:28:08.134] [INFO ] Model config loaded from config/models.json
+[01:28:08.137] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:28:08.137] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:28:08.137] [INFO ] pipeline-revise.js
+[01:28:08.138] [INFO ] Pass:    titles
+[01:28:08.138] [INFO ] Files:   1
+[01:28:08.138] [INFO ] Force:   yes
+[01:28:08.138] [INFO ] Dry run: no
+[01:28:08.138] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:28:08.139] [INFO ]   ↻  the-haunting-of-hill-house — titles (anthropic/claude-sonnet-4-5)…
+[01:28:10.539] [WARN ] the-haunting-of-hill-house.json: Titles validation failed — not written: metaDesc too long: 157 chars (max 155) — not written
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:28:10.540] [INFO ] Single file mode — skipping full checkpoint
+[01:28:10.540] [INFO ] quickAnswer.winner:        Too Close to Call
+[01:28:10.540] [INFO ] quickAnswer.readFirst:     Yes
+[01:28:10.540] [INFO ] quickAnswer.oneLineReason: Jackson's prose performs psychological dissolution; Flanagan's series makes ghosts visible and real.
+[01:28:10.541] [INFO ] BEFORE title (64 chars): The Haunting of Hill House: Jackson vs Flanagan — Book vs Series
+[01:28:10.541] [INFO ] AFTER  title (64 chars): The Haunting of Hill House: Jackson vs Flanagan — Book vs Series
+[01:28:10.541] [INFO ] BEFORE meta  (15 chars): Shirley Jackson
+[01:28:10.541] [INFO ] AFTER  meta  (15 chars): Shirley Jackson
+
+============================================================
+Finished: 2026-04-13T01:28:10.541Z
+Elapsed:  2.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-28-08_pipeline-revise.log
+============================================================

@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:25:35.062Z
+============================================================
+[01:25:35.065] [INFO ] Model config loaded from config/models.json
+[01:25:35.068] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:25:35.069] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:25:35.069] [INFO ] pipeline-revise.js
+[01:25:35.069] [INFO ] Pass:    titles
+[01:25:35.069] [INFO ] Files:   1
+[01:25:35.069] [INFO ] Force:   yes
+[01:25:35.069] [INFO ] Dry run: no
+[01:25:35.069] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:25:35.071] [INFO ]   ↻  everything-everything — titles (anthropic/claude-sonnet-4-5)…
+[01:25:38.501] [WARN ] everything-everything.json: Titles written with warnings: pageTitle slightly long: 74 chars (target 65)
+[01:25:38.502] [INFO ]   BEFORE title (69 chars): Everything, Everything: Book vs Film — Which Is Better? (Nicola Yoon)
+[01:25:38.502] [INFO ]   AFTER  title (74 chars): Everything, Everything: The Twist Devastates in Yoon's Book. Not the Film.
+[01:25:38.502] [INFO ]   BEFORE meta  (11 chars): Nicola Yoon
+[01:25:38.502] [INFO ]   AFTER  meta  (144 chars): Yoon's multimedia format makes you live inside Maddy's mind before the medical reveal shatters it. The film just shows you the plot. Read first.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:25:38.503] [INFO ] Single file mode — skipping full checkpoint
+[01:25:38.503] [INFO ] quickAnswer.winner:        Book
+[01:25:38.504] [INFO ] quickAnswer.readFirst:     Yes
+[01:25:38.504] [INFO ] quickAnswer.oneLineReason: Yoon's multimedia format and psychological depth make the medical twist devastate on the page.
+[01:25:38.504] [INFO ] BEFORE title (74 chars): Everything, Everything: The Twist Devastates in Yoon's Book. Not the Film.
+[01:25:38.504] [INFO ] AFTER  title (74 chars): Everything, Everything: The Twist Devastates in Yoon's Book. Not the Film.
+[01:25:38.504] [INFO ] BEFORE meta  (144 chars): Yoon's multimedia format makes you live inside Maddy's mind before the medical reveal shatters it. The film just shows you the plot. Read first.
+[01:25:38.504] [INFO ] AFTER  meta  (144 chars): Yoon's multimedia format makes you live inside Maddy's mind before the medical reveal shatters it. The film just shows you the plot. Read first.
+
+============================================================
+Finished: 2026-04-13T01:25:38.505Z
+Elapsed:  3.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-25-35_pipeline-revise.log
+============================================================

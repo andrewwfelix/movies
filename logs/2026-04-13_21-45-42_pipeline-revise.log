@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:45:42.787Z
+============================================================
+[01:45:42.790] [INFO ] Model config loaded from config/models.json
+[01:45:42.792] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:45:42.792] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:45:42.793] [INFO ] pipeline-revise.js
+[01:45:42.793] [INFO ] Pass:    titles
+[01:45:42.793] [INFO ] Files:   1
+[01:45:42.793] [INFO ] Force:   yes
+[01:45:42.793] [INFO ] Dry run: no
+[01:45:42.793] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:45:42.794] [INFO ]   ↻  the-maze-runner — titles (anthropic/claude-sonnet-4-5)…
+[01:45:47.066] [WARN ] the-maze-runner.json: Titles validation failed — not written: pageTitle too long: 81 chars — will not write
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:45:47.068] [INFO ] Single file mode — skipping full checkpoint
+[01:45:47.069] [INFO ] quickAnswer.winner:        Book
+[01:45:47.069] [INFO ] quickAnswer.readFirst:     Either order works
+[01:45:47.069] [INFO ] quickAnswer.oneLineReason: The novel's first-person interiority makes every revelation land with personal weight.
+[01:45:47.069] [INFO ] BEFORE title (58 chars): The Maze Runner: Book vs Movie — James Dashner vs Wes Ball
+[01:45:47.069] [INFO ] AFTER  title (58 chars): The Maze Runner: Book vs Movie — James Dashner vs Wes Ball
+[01:45:47.069] [INFO ] BEFORE meta  (13 chars): James Dashner
+[01:45:47.069] [INFO ] AFTER  meta  (13 chars): James Dashner
+
+============================================================
+Finished: 2026-04-13T01:45:47.070Z
+Elapsed:  4.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-45-42_pipeline-revise.log
+============================================================

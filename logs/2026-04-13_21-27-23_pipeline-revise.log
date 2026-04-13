@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T01:27:23.399Z
+============================================================
+[01:27:23.402] [INFO ] Model config loaded from config/models.json
+[01:27:23.404] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[01:27:23.404] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[01:27:23.404] [INFO ] pipeline-revise.js
+[01:27:23.404] [INFO ] Pass:    titles
+[01:27:23.405] [INFO ] Files:   1
+[01:27:23.405] [INFO ] Force:   yes
+[01:27:23.405] [INFO ] Dry run: no
+[01:27:23.405] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[01:27:23.406] [INFO ]   ↻  i-am-legend — titles (anthropic/claude-sonnet-4-5)…
+[01:27:26.727] [WARN ] i-am-legend.json: Titles validation failed — not written: pageTitle too long: 77 chars — will not write
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[01:27:26.729] [INFO ] Single file mode — skipping full checkpoint
+[01:27:26.729] [INFO ] quickAnswer.winner:        Book
+[01:27:26.729] [INFO ] quickAnswer.readFirst:     Yes
+[01:27:26.729] [INFO ] quickAnswer.oneLineReason: The novella's ending redefines Neville as monster, not hero—the film inverts this entirely.
+[01:27:26.730] [INFO ] BEFORE title (64 chars): I Am Legend: Book vs Film — Matheson's Ending Inverts Everything
+[01:27:26.730] [INFO ] AFTER  title (64 chars): I Am Legend: Book vs Film — Matheson's Ending Inverts Everything
+[01:27:26.730] [INFO ] BEFORE meta  (16 chars): Richard Matheson
+[01:27:26.730] [INFO ] AFTER  meta  (16 chars): Richard Matheson
+
+============================================================
+Finished: 2026-04-13T01:27:26.730Z
+Elapsed:  3.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_21-27-23_pipeline-revise.log
+============================================================
