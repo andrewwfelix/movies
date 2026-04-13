@@ -1,0 +1,74 @@
+{
+  "site": "booksversusmovies.com",
+  "purpose": "LLM comparison for content creation, SEO, and site development tasks",
+  "date": "2026-04-13",
+  "lastUpdated": "2026-04-13",
+  "tasks": [
+    {
+      "taskId": "seo_optimization",
+      "taskName": "SEO & Schema Engineering",
+      "description": "Generating JSON-LD, optimizing meta tags for CTR, and ensuring site-wide technical SEO health.",
+      "priority": "highest",
+      "recommendation": {
+        "primary_llm": "Gemini 3 Flash",
+        "reason": "Native integration with Google search logic and superior at generating valid Schema.org/JSON-LD structures.",
+        "alternative": "DeepSeek R1",
+        "notes": "Use DeepSeek for bulk meta-tag generation to keep API costs near zero."
+      }
+    },
+    {
+      "taskId": "new_content_creation",
+      "taskName": "Nuanced Comparison Content",
+      "description": "Writing the core 'Book vs. Movie' analysis. High focus on 'vibe,' emotional honesty, and spoiler-heavy depth.",
+      "priority": "high",
+      "recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Unmatched at 'human' prose. It avoids the generic AI cheerfulness, allowing for the 'no sugarcoating' tone requested.",
+        "alternative": "Grok 3",
+        "notes": "Use Grok when the adaptation is based on a viral/trending topic for a sharper, more modern edge."
+      }
+    },
+    {
+      "taskId": "json_pipeline_management",
+      "taskName": "Bulk Data Processing & JSON Ingestion",
+      "description": "Transforming raw research into your specific .json format for the site injection pipeline.",
+      "priority": "high",
+      "recommendation": {
+        "primary_llm": "DeepSeek V3",
+        "reason": "Highest 'coding logic per dollar' ratio. It follows strict JSON schemas perfectly without the conversational filler.",
+        "alternative": "GPT-4.5",
+        "notes": "DeepSeek is the workhorse here; it can process 1,000 titles for the cost of 10 in Claude."
+      }
+    },
+    {
+      "taskId": "strategy_realtime",
+      "taskName": "Market Intelligence & Real-Time Strategy",
+      "description": "Finding upcoming 2026/2027 adaptations, casting rumors, and tracking viral 'book-tok' trends.",
+      "priority": "medium",
+      "recommendation": {
+        "primary_llm": "Grok 3",
+        "reason": "Direct access to real-time data flows on X. Best at spotting what's trending before it hits traditional SEO tools.",
+        "alternative": "Perplexity (Sonar)",
+        "notes": "Grok is for 'The Hype'; Perplexity is for 'The Facts' (release dates, crew, budget)."
+      }
+    },
+    {
+      "taskId": "ux_ui_refactoring",
+      "taskName": "HTML/CSS Landing Page Iteration",
+      "description": "Designing 'shelves,' hero sections, and alphabetized browse components in the Astro environment.",
+      "priority": "medium",
+      "recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Best-in-class for front-end code generation and understanding complex CSS/HTML relationships.",
+        "alternative": "Grok 3",
+        "notes": "Grok is surprisingly agile at drafting rapid UI experiments in a conversational 'live' mode."
+      }
+    }
+  ],
+  "general_guidelines": {
+    "tone": "Opinionated, spoiler-heavy, data-backed, 'Human-First'",
+    "site_strength": "AI-Native content injection (JSON to HTML)",
+    "current_focus": "Transitioning from a 'list' to a 'discovery engine' while maintaining high affiliate conversion.",
+    "recommended_workflow": "Grok (Trend Scan) -> DeepSeek (Bulk Ingestion) -> Claude (Voice/Tone Polish) -> Gemini (SEO/Schema Audit)"
+  }
+}

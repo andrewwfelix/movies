@@ -1,0 +1,74 @@
+{
+  "site": "booksversusmovies.com",
+  "purpose": "LLM comparison for content creation, SEO, and site development tasks",
+  "date": "2026-04-13",
+  "lastUpdated": "2026-04-13",
+  "tasks": [
+    {
+      "taskId": "seo_optimization",
+      "taskName": "SEO & Schema Engineering",
+      "description": "Generating JSON-LD, optimizing meta tags for CTR, and ensuring site-wide technical SEO health.",
+      "priority": "highest",
+      "recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Best precision for large HTML files, consistent tone control, and accurate on-page SEO edits (titles, metas, H1s, scannability) without hallucinating facts. Excellent at emotional yet honest CTR-focused titles and meta descriptions.",
+        "alternative": "Grok",
+        "notes": "Use Grok for fast title/meta brainstorming, prompt refinement, and real-time GSC-based strategy. Claude wins for bulk editing of your 175+ pages."
+      }
+    },
+    {
+      "taskId": "new_content_creation",
+      "taskName": "Nuanced Comparison Content",
+      "description": "Writing the core 'Book vs. Movie' analysis. High focus on 'vibe,' emotional honesty, and spoiler-heavy depth.",
+      "priority": "high",
+      "recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Superior at long-form, balanced, honest prose. It naturally delivers the 'no sugarcoating' tone you want while maintaining factual accuracy and strong narrative flow.",
+        "alternative": "Grok",
+        "notes": "Use Grok when you need sharper, more direct opinions or timely angles tied to current trends and your existing GSC data (e.g., Colleen Hoover pages)."
+      }
+    },
+    {
+      "taskId": "json_pipeline_management",
+      "taskName": "Bulk Data Processing & JSON Ingestion",
+      "description": "Transforming raw research into your specific .json format for the site injection pipeline.",
+      "priority": "high",
+      "recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Extremely reliable at following complex schemas and producing clean, consistent JSON output. Handles your structured comparison format very well.",
+        "alternative": "Grok",
+        "notes": "Grok is fast for smaller batches and debugging schema issues in conversation. For true high-volume bulk processing, DeepSeek or Claude would be more cost-efficient."
+      }
+    },
+    {
+      "taskId": "strategy_realtime",
+      "taskName": "Market Intelligence & Real-Time Strategy",
+      "description": "Finding upcoming 2026/2027 adaptations, casting rumors, and tracking viral 'book-tok' trends.",
+      "priority": "medium",
+      "recommendation": {
+        "primary_llm": "Grok",
+        "reason": "Strong real-time awareness and ability to connect trends directly to your current GSC performance (mobile clicks, review snippets, striking-distance queries). Good at practical, actionable strategy tied to your specific site data.",
+        "alternative": "Perplexity",
+        "notes": "Use Grok for holistic strategy that considers your early traffic patterns and content pipeline. Perplexity is better for pure fact-checking of release dates."
+      }
+    },
+    {
+      "taskId": "ux_ui_refactoring",
+      "taskName": "HTML/CSS Landing Page Iteration",
+      "description": "Designing 'shelves,' hero sections, and alphabetized browse components in the Astro environment.",
+      "priority": "medium",
+      "recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Best at clean, production-ready HTML/CSS refactoring while perfectly preserving your existing classes, schema, and simple design style.",
+        "alternative": "Grok",
+        "notes": "Grok is excellent for rapid prototyping and live iteration (as we did with the welcome page and A Beautiful Mind edits). Use Grok when you want quick feedback loops in chat."
+      }
+    }
+  ],
+  "general_guidelines": {
+    "tone": "Honest, spoiler-heavy, no sugarcoating, opinionated but factual",
+    "site_strength": "Deep, high-quality individual comparison pages with strong structured data and clear verdicts",
+    "current_focus": "Improving CTR on existing impressions, making the homepage more welcoming and curated, and scaling efficiently with 175+ pages",
+    "recommended_workflow": "Grok (strategy + quick tests) → Claude 4 Sonnet (heavy writing, SEO editing, HTML refactoring) → DeepSeek (if doing true high-volume bulk JSON work)"
+  }
+}

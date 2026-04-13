@@ -1,0 +1,321 @@
+What’s working
+
+The concept is clear immediately: comparing books and screen adaptations.
+
+The site feels easy to scan because it is organized by genre.
+
+The homepage has strong breadth, with many recognizable titles that give it instant credibility.
+
+The tone is simple and approachable, which fits a recommendation/review style site.
+
+What needs improvement
+
+The homepage is very long and repetitive, so the most important content can get lost.
+
+There is no obvious “why this site is different” beyond the title and short intro.
+
+The page uses many list-style entries, but there is little guidance on where to start.
+
+The site would likely benefit from stronger featured content, search, or sorting.
+
+Some spacing and hierarchy could be tightened so the page feels more polished and less like a catalog.
+
+Go-forward advice
+
+Add a short “Start here” section at the top with 3 to 5 featured comparisons.
+
+Add a one-sentence explanation of your method, such as how you judge whether the book or movie is better.
+
+Create a clear reading path: “Best adaptations,” “Most different adaptations,” “Most overrated movies,” or “Best books to read first.”
+
+Reduce repetition by grouping content more tightly and avoiding multiple genre labels unless they add real value.
+
+Add internal links for each title so users can click into a dedicated page with a full comparison.
+
+Consider adding ratings or a simple verdict badge, such as “Book wins,” “Movie wins,” or “Too close to call.”
+
+Add a search bar or filters for genre, mood, length, and whether the user should read the book first.
+
+Make the homepage highlight the strongest 6 to 10 entries instead of trying to showcase everything equally.
+
+Add a short about page so visitors know who is writing the comparisons and why they should trust them.
+
+Include basic SEO improvements like better page titles, meta descriptions, and descriptive headings.
+
+Highest-priority next steps
+
+Rewrite the top of the homepage so it explains the site in 2 to 4 sentences and points users to featured comparisons.
+
+Turn each book/movie pair into a proper article page.
+
+Add a simple verdict system and keep it consistent across the site.
+
+Improve navigation so the site is useful as a guide, not just a list.
+
+Suggested homepage structure
+
+Hero section with the site promise.
+
+Featured comparisons.
+
+Browse by genre.
+
+Browse by verdict.
+
+About the site.
+
+Latest additions.
+
+One-sentence positioning idea
+
+“Honest comparisons of books and their film or TV adaptations, with clear verdicts on what works best.”
+
+
+If you want, I can also turn this into a more direct “fix list” ordered by impact and effort.
+
+
+Go-forward fix list for booksversusmovies.com
+Rewrite the homepage intro.
+
+Add a short explanation of what the site is and why it exists.
+
+Make the first 2 to 4 lines say exactly what a visitor gets here.
+
+Include a simple promise like: “We compare books and adaptations and tell you which is better.”
+
+Add a “Start here” section near the top.
+
+Feature 3 to 5 of your best comparisons.
+
+Make these the main entry points instead of making people scroll through a huge list.
+
+Use this area to steer visitors toward your strongest content.
+
+Turn the site into article pages, not just a long list.
+
+Each book/movie pair should have its own dedicated page.
+
+Include a summary, comparison points, and a final verdict.
+
+Link from the homepage to those pages.
+
+Add a consistent verdict system.
+
+Use labels like: Book wins, Movie wins, Tie, or Too close to call.
+
+Put the verdict near the top of each article.
+
+Keep the format the same across the whole site.
+
+Improve navigation.
+
+Add a top menu with clear categories.
+
+Include filters like genre, popularity, and latest additions.
+
+Add a search box if possible.
+
+Reduce homepage clutter.
+
+Shorten repeated descriptive text.
+
+Group titles more tightly.
+
+Show fewer items at once so the page feels more curated.
+
+Strengthen content hierarchy.
+
+Use clear headings for sections.
+
+Make featured items visually or structurally different from the rest.
+
+Put the most important content first.
+
+Add an about page.
+
+Explain who runs the site.
+
+Describe your taste or method.
+
+Give visitors a reason to trust your opinions.
+
+Improve SEO basics.
+
+Write better page titles and meta descriptions.
+
+Make headings more descriptive.
+
+Use each page’s topic clearly in the URL and title.
+
+Add internal linking.
+
+Link related books, adaptations, authors, and genres together.
+
+Let visitors move from one comparison to the next.
+
+This will also help search engines understand the site.
+
+Create browsing paths.
+
+Add pages like “Best adaptations,” “Most faithful adaptations,” “Most surprising changes,” and “Best book-to-screen wins.”
+
+These collections will make the site feel more intentional and useful.
+
+They also give repeat visitors a reason to come back.
+
+Add trust and personality.
+
+If the site is opinionated, say so.
+
+If you use a rating method, explain it.
+
+A clear voice will make the site feel more memorable than a generic list.
+
+Best order to tackle this
+First: homepage intro, start here section, and verdict system.
+
+Second: article pages for your strongest comparisons.
+
+Third: navigation, filters, and internal links.
+
+Fourth: about page and SEO cleanup.
+
+Simple rule to follow
+If a visitor lands on the homepage, they should understand the site in 5 seconds and know what to click next.
+
+One-line priority statement
+Make the site feel curated, not just compiled.
+
+
+structure into your SEO work. I’m using the site’s current homepage style and the child-page style that appears on the site as the “before,” and I’m showing how to make them more search-friendly and clearer for visitors .
+
+Landing page
+Before
+The homepage opens with a short slogan and then quickly drops into a long wall of book summaries .
+
+The page does not immediately tell visitors how to use the site, what makes it different, or what to click first .
+
+Because so many titles are listed at once, the page feels more like a catalog than a guided landing page .
+
+After
+Open with a clear value proposition: what the site does, who it is for, and how to use it.
+
+Add a “Start here” area with 3 to 5 featured comparisons.
+
+Add browse paths like “Best adaptations,” “Book vs movie verdicts,” and “Latest comparisons.”
+
+Keep the homepage focused on discovery, not full summaries.
+
+Example landing-page copy
+Headline:
+
+Book vs movie comparisons, with clear verdicts.
+
+Subheadline:
+
+Read the book or watch the adaptation? We compare both and help you decide which is worth your time.
+
+Primary CTA:
+
+Start with featured comparisons
+
+Section headings:
+
+Featured comparisons
+
+Best book-to-screen wins
+
+Most faithful adaptations
+
+Latest comparisons
+
+Example landing-page meta title
+Books Versus Movies | Book-to-Screen Comparisons and Verdicts
+
+Example landing-page meta description
+Compare books and movie adaptations with clear verdicts, featured recommendations, and quick guidance on what to read or watch first.
+
+Child page example: People We Meet on Vacation
+Before
+The page likely does too much explaining before it gets to the actual comparison.
+
+The title and on-page copy are probably not centered on a single search intent, like “People We Meet on Vacation book vs movie.”
+
+The page may not clearly surface the verdict, comparison categories, or a clean summary near the top.
+
+After
+Make the page answer one main question immediately: is the book or adaptation better?
+
+Put the verdict near the top.
+
+Use predictable sections so both readers and search engines can understand the page quickly.
+
+Include one short summary paragraph, then comparison sections like plot, characters, pacing, faithfulness, and recommendation.
+
+Example child-page structure
+H1:
+
+People We Meet on Vacation: Book vs Movie
+
+Intro:
+
+Emily Henry’s People We Meet on Vacation follows Poppy and Alex through years of vacations, old feelings, and one last chance to fix what broke between them. This page compares the book and its adaptation and says which version works better.
+
+Verdict:
+
+Book wins
+
+Sections:
+
+Plot overview
+
+What the book does better
+
+What the movie does better
+
+Faithfulness to the source material
+
+Final recommendation
+
+Example child-page meta title
+People We Meet on Vacation Book vs Movie | Which Is Better?
+
+Example child-page meta description
+Compare People We Meet on Vacation book vs movie with a clear verdict, key differences, and a quick recommendation on which version to choose.
+
+What to improve on both pages
+Put the main keyword in the H1 and meta title.
+
+Keep the intro short and useful.
+
+Add internal links to related comparisons.
+
+Use one consistent verdict format on every child page.
+
+Make the homepage a hub and the child pages the real destinations.
+
+Simple before-and-after pattern
+Before:
+
+Broad title
+
+Long text first
+
+No clear next step
+
+No immediate verdict
+
+After:
+
+Specific title
+
+Short intro
+
+Featured pathways
+
+Clear verdict and structured comparison
+
+Best SEO change
+Build each page around one search phrase, such as “People We Meet on Vacation book vs movie,” instead of broad or generic wording.
+
+I can next turn this into exact rewritten copy for the homepage and the People We Meet on Vacation page, ready to paste into your CMS.

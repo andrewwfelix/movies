@@ -1,0 +1,118 @@
+{
+  "site": "booksversusmovies.com",
+  "purpose": "LLM comparison for content creation, SEO, and site development tasks",
+  "date": "2026-04-13",
+  "lastUpdated": "2026-04-13",
+  "tasks": [
+    {
+      "taskId": "seo_optimization",
+      "taskName": "SEO Tasks (Titles, Metas, On-Page Optimization, Structured Data)",
+      "description": "Rewriting titles, meta descriptions, H1s, introductions, adding emotional language while keeping facts accurate, improving scannability and schema.",
+      "priority": "highest",
+      "my_recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Most precise with HTML/schema, follows strict length and format rules, rarely hallucinates facts.",
+        "alternative": "GPT-4.1",
+        "notes": "Grok is too inconsistent with structured data formatting."
+      }
+    },
+    {
+      "taskId": "new_content_creation",
+      "taskName": "New Comparison Page Creation",
+      "description": "Writing full new book vs movie comparison articles from scratch, including research synthesis, balanced analysis, and structured sections.",
+      "priority": "high",
+      "my_recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Superior long-form reasoning, maintains honest/spoiler-heavy tone naturally, best verdict sections.",
+        "alternative": "GPT-4.1",
+        "notes": "Grok is fine for short or opinion-heavy pieces but lacks depth for 2000+ word comparisons."
+      }
+    },
+    {
+      "taskId": "html_refactoring",
+      "taskName": "HTML Refactoring and Technical Edits",
+      "description": "Large-scale HTML editing, homepage improvements, adding hero sections, cards, internal linking, and preserving existing CSS/schema.",
+      "priority": "high",
+      "my_recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Handles long context windows best, preserves untouched code reliably, precise surgical edits.",
+        "alternative": "Grok",
+        "notes": "Grok is faster for small iterative tweaks but messes up existing structure on large files."
+      }
+    },
+    {
+      "taskId": "strategy_brainstorming",
+      "taskName": "Strategy, Planning, and Prompt Engineering",
+      "description": "Creating todo lists, reviewing GSC data, prioritizing fixes, refining automation prompts, and overall site strategy.",
+      "priority": "medium",
+      "my_recommendation": {
+        "primary_llm": "Grok",
+        "reason": "Best at strategic synthesis, connects GSC data to actionable plans without overcomplicating.",
+        "alternative": "Claude 4 Sonnet",
+        "notes": "Grok wins here — faster, less cautious, more direct."
+      }
+    },
+    {
+      "taskId": "homepage_ux",
+      "taskName": "Homepage and UX Improvements",
+      "description": "Designing landing pages, hero sections, card layouts, navigation, and improving user flow.",
+      "priority": "medium",
+      "my_recommendation": {
+        "primary_llm": "Grok",
+        "reason": "Very fast HTML/CSS prototyping, good at user-first layout suggestions.",
+        "alternative": "Claude 4 Sonnet",
+        "notes": "Claude is more polished but slower; Grok wins for iteration speed."
+      }
+    },
+    {
+      "taskId": "research_timely",
+      "taskName": "Research and Timely Topics",
+      "description": "Finding current trends, upcoming adaptations, or verifying details for new pages.",
+      "priority": "medium",
+      "my_recommendation": {
+        "primary_llm": "Perplexity",
+        "reason": "Best real-time search with citations, ideal for upcoming book-to-movie adaptations and release dates.",
+        "alternative": "Grok",
+        "notes": "Grok has live knowledge but less reliable citations than Perplexity."
+      }
+    }
+  ],
+  "general_guidelines": {
+    "tone": "Honest, spoiler-heavy, no sugarcoating, opinionated but factual",
+    "site_strength": "Deep individual comparison pages with structured data and verdicts",
+    "current_focus": "Improving CTR on existing impressions and making homepage more welcoming",
+    "recommended_workflow": "Claude for heavy editing and writing → Grok for strategy and quick tests → Perplexity for timely research"
+  },
+  "llm_comparison_results": [
+    {
+      "llm_name": "Grok",
+      "date_queried": "2026-04-13",
+      "responses": {
+        "seo_optimization": "Good for brainstorming, weak for final schema.",
+        "new_content_creation": "Entertaining but shallow for long-form.",
+        "html_refactoring": "Fast but error-prone on large files."
+      },
+      "overall_notes": "Best for strategy, UX iteration, and quick drafts. Not for production SEO or structured data."
+    },
+    {
+      "llm_name": "Claude 4 Sonnet",
+      "date_queried": "2026-04-13",
+      "responses": {
+        "seo_optimization": "Excellent — precise, rule-following, no hallucinations.",
+        "new_content_creation": "Best in class for long-form comparisons.",
+        "html_refactoring": "Superior context handling and surgical edits."
+      },
+      "overall_notes": "Workhorse for production content and technical SEO. Use for final deliverables."
+    },
+    {
+      "llm_name": "Perplexity",
+      "date_queried": "2026-04-13",
+      "responses": {
+        "research_timely": "Best for citations and real-time adaptation news.",
+        "seo_optimization": "Not recommended.",
+        "new_content_creation": "Too fragmented for long-form."
+      },
+      "overall_notes": "Use only for research layer, not content generation."
+    }
+  ]
+}

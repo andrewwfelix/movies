@@ -1,0 +1,17 @@
+Few people understand the advantages of multipe-pass AI generated content. 
+
+Create a page for my friend that has two section: 
+1. Top 20 models for writing and what they do best. 
+3. A ui with six elements:
+	1. Prompt
+	2. LLM 1 Writer
+	3. LLM 2 Writer
+	4. LLM Editor
+	5. LLM Reviews of writer 1, writer 2 and final comments. (Coolest Part)
+	6. Final results
+
+Then present the page. Should be able to spin this up and demo super quick. 
+
+Return the outputs of model 1, model 2, then the editorial comments of model 3. 
+
+while in demo mode, keep all responses to under 1 paragraph long, maybe have a prod mode for stage 3

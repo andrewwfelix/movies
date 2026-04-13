@@ -1,0 +1,51 @@
+What Perplexity Got Right (Strong Advice)
+
+Rewrite homepage intro + clear promise — Excellent. Your current homepage needs a strong hero that explains the site in 5 seconds. Visitors searching “book vs movie differences” want to know immediately: “We give honest, spoiler-filled breakdowns and tell you what to experience first.”
+“Start here” / featured section — Very good. Steering people to your best pages (Verity, Reminders of Him, A Beautiful Mind, Fault in Our Stars, etc.) will improve engagement and signals.
+Consistent verdict system — Spot on. Your “Book Wins / Film Wins / Too Close to Call” is already a strength — make it more visible on every page and homepage cards.
+Reduce homepage clutter — Correct. The long scrolling list feels overwhelming. Shorter, curated view + link to full browse page is better.
+Improve navigation & internal linking — Important and accurate. This helps both users and Google understand your topical clusters (Colleen Hoover, literary adaptations, sci-fi, etc.).
+Add an About page — Useful for trust and E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness), especially since your opinions are opinionated/honest.
+Make the site feel curated, not compiled — This is the best one-line summary. Google in 2026 rewards helpful, well-organized experiences over thin directories.
+
+Where It’s Partially Off or Needs Tweaking for Your Site
+
+“Turn the site into article pages, not just a long list” — You’re already doing this well. Most of your value lives in the 175 dedicated comparison pages (like the detailed A Beautiful Mind one). The homepage should be a hub/landing page, not replace the articles. Don’t over-shift to making everything a short summary — keep depth in the individual pages.
+“Add pages like ‘Best adaptations,’ ‘Most faithful adaptations’” — Good idea in theory, but low priority right now. With limited time, focus first on optimizing existing high-impression pages and the homepage. These collection pages can come later as topical authority builders.
+Verdict system and hierarchy — You already have a verdict system. Just make it more prominent and consistent.
+SEO basics — The list mentions titles/metas/headings, which is correct, but your biggest quick win is emotional + intent-focused titles/metas on pages already getting impressions (as we’ve been working on).
+
+Overall: The list is solid foundational advice but slightly generic. It treats your site like it’s still in very early “directory” mode, while you’re actually further along with real content depth and early search visibility.
+My Prioritized Go-Forward Fix List (High / Medium / Low Impact)
+Here’s my refined, site-specific version. I put SEO-heavy items higher because they directly impact your GSC data (CTR on existing impressions, positions around 10–13).
+High Impact (Do First – Quickest Wins for Traffic & UX)
+
+Homepage Hero & Intro Rewrite
+Add a clear, benefit-driven hero (as in the welcome page draft I gave you). Explain what the site is, the promise (“honest differences + spoilers + verdict”), show stats, and have a strong CTA to “Browse All” or featured pages.
+Add a “Start Here / Featured” Section
+Highlight 4–6 of your strongest/timely pages (Verity, Reminders of Him, A Beautiful Mind, Fault in Our Stars, etc.) with verdict badges, short hooks, and links. This reduces clutter and guides visitors to high-quality content.
+Optimize Titles, Metas & On-Page on Existing Pages
+Continue the automation we started: emotional + keyword-rich titles (“…Book vs Movie: Shocking Changes Hollywood Hid”), updated intros, “What the Book Does Better / Movie Does Better” sections, and consistent verdicts near the top. Focus first on pages with impressions but low CTR.
+Make Verdict System Prominent & Consistent
+Ensure every comparison page and homepage cards clearly show “Book Wins”, “Film Wins”, or “Too Close to Call” early.
+
+Medium Impact (Next 1–2 Weeks)
+5. Improve Navigation & Internal Linking
+Add a clean top menu (Home, Browse All, Genres, About). On each article, add a “Related Comparisons” section with 6–8 relevant links.
+
+Reduce Homepage Clutter
+Shorten the main list or move most of it to /index_alt.html. Keep the homepage more curated.
+Create or Strengthen an About Page
+Explain your approach (“honest, spoiler-heavy, no sugarcoating”), method for verdicts, and why readers can trust the opinions.
+
+Lower Impact (Later / Ongoing)
+8. Add Browsing Paths / Collection Pages (e.g., “Best Book-to-Movie Wins”, “Most Surprising Changes”, “Colleen Hoover Adaptations”) — these build topical authority but aren’t urgent yet.
+9. Advanced SEO (schema enhancements, faster mobile, more FAQ optimization, freshness signals via occasional updates).
+Simple Rule to Follow (My Version)
+If a visitor lands on any page, they should immediately understand: “This site gives honest book vs movie breakdowns with spoilers and tells me what to do first.” And they should know exactly what to click next.
+One-Line Priority Statement
+Optimize what you already have (titles, homepage experience, internal links) to turn existing impressions into clicks and better signals — then keep adding curated depth.
+The Perplexity list is a good starting point, but your site is stronger than a pure “list site,” so lean into your detailed articles as the core strength while making the homepage a better gateway.
+Would you like me to:
+
+Turn this into a clean plain-text copy-paste version for your notes?

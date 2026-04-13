@@ -1,0 +1,99 @@
+{
+  "site": "booksversusmovies.com",
+  "purpose": "LLM comparison for content creation, SEO, and site development tasks",
+  "date": "2026-04-13",
+  "lastUpdated": "2026-04-13",
+  "tasks": [
+    {
+      "taskId": "seo_optimization",
+      "taskName": "SEO Tasks (Titles, Metas, On-Page Optimization, Structured Data)",
+      "description": "Rewriting titles, meta descriptions, H1s, introductions, adding emotional language while keeping facts accurate, improving scannability and schema.",
+      "priority": "highest",
+      "grok_recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Best at precise HTML editing, maintaining tone, and following strict instructions without hallucinating facts.",
+        "alternative": "Grok",
+        "notes": "Use Grok for quick title brainstorming and prompt refinement."
+      }
+    },
+    {
+      "taskId": "new_content_creation",
+      "taskName": "New Comparison Page Creation",
+      "description": "Writing full new book vs movie comparison articles from scratch, including research synthesis, balanced analysis, and structured sections.",
+      "priority": "high",
+      "grok_recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Excellent long-form writing with strong reasoning and consistent honest tone.",
+        "alternative": "Grok",
+        "notes": "Grok is useful for timely or creative angles."
+      }
+    },
+    {
+      "taskId": "html_refactoring",
+      "taskName": "HTML Refactoring and Technical Edits",
+      "description": "Large-scale HTML editing, homepage improvements, adding hero sections, cards, internal linking, and preserving existing CSS/schema.",
+      "priority": "high",
+      "grok_recommendation": {
+        "primary_llm": "Claude 4 Sonnet",
+        "reason": "Superior at handling long HTML context and precise structural changes.",
+        "alternative": "Grok",
+        "notes": "Grok is convenient for live iteration in chat."
+      }
+    },
+    {
+      "taskId": "strategy_brainstorming",
+      "taskName": "Strategy, Planning, and Prompt Engineering",
+      "description": "Creating todo lists, reviewing GSC data, prioritizing fixes, refining automation prompts, and overall site strategy.",
+      "priority": "medium",
+      "grok_recommendation": {
+        "primary_llm": "Grok",
+        "reason": "Strong at strategic thinking, tying advice to specific GSC data and site context.",
+        "alternative": "Claude 4 Sonnet",
+        "notes": ""
+      }
+    },
+    {
+      "taskId": "homepage_ux",
+      "taskName": "Homepage and UX Improvements",
+      "description": "Designing landing pages, hero sections, card layouts, navigation, and improving user flow.",
+      "priority": "medium",
+      "grok_recommendation": {
+        "primary_llm": "Grok",
+        "reason": "Fast at drafting and iterating on full HTML pages with user-friendly focus.",
+        "alternative": "Claude 4 Sonnet",
+        "notes": ""
+      }
+    },
+    {
+      "taskId": "research_timely",
+      "taskName": "Research and Timely Topics",
+      "description": "Finding current trends, upcoming adaptations, or verifying details for new pages.",
+      "priority": "medium",
+      "grok_recommendation": {
+        "primary_llm": "Grok",
+        "reason": "Good real-time knowledge and tool access for fresh angles.",
+        "alternative": "Gemini",
+        "notes": ""
+      }
+    }
+  ],
+  "general_guidelines": {
+    "tone": "Honest, spoiler-heavy, no sugarcoating, opinionated but factual",
+    "site_strength": "Deep individual comparison pages with structured data and verdicts",
+    "current_focus": "Improving CTR on existing impressions and making homepage more welcoming",
+    "recommended_workflow": "Claude for heavy editing and writing → Grok for strategy and quick tests"
+  },
+  "llm_comparison_results": [
+    {
+      "llm_name": "Grok",
+      "date_queried": "2026-04-13",
+      "responses": {
+        "seo_optimization": "...paste full response here...",
+        "new_content_creation": "...",
+        "html_refactoring": "..."
+      },
+      "overall_notes": "Strong at strategy and live iteration."
+    }
+    // Add more entries for Claude, GPT-4.1, Gemini, Perplexity, etc.
+  ]
+}
