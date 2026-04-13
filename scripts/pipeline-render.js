@@ -181,6 +181,10 @@ function renderQuickAnswer(r) {
   return `
 <div class="quick-answer">
   <div class="quick-answer-label">Quick Answer</div>
+  <div class="quick-answer-reason-top">
+    <strong>Key Difference</strong>
+    <p>${esc(qa.oneLineReason)}</p>
+  </div>
   <div class="quick-answer-grid">
     <div class="quick-answer-item">
       <strong>Best Version</strong>
@@ -190,12 +194,7 @@ function renderQuickAnswer(r) {
       <strong>Read First?</strong>
       <span>${esc(qa.readFirst)}</span>
     </div>
-    <div class="quick-answer-item">
-      <strong>Key Difference</strong>
-      <span>${esc(qa.oneLineReason)}</span>
-    </div>
-  </div>${cta ? `
-  <a class="quick-answer-cta" href="${esc(cta.href)}" target="_blank" rel="noopener sponsored">${esc(cta.text)}</a>` : ''}
+  </div>
 </div>`;
 }
 
@@ -363,11 +362,11 @@ function renderPage(r) {
     renderHero(r),
 
     `\n<div class="page-wrap">`,
+    renderQuickAnswer(r),
     renderComparisonPanel(r),
     renderMetaStrip(r),
 
     `\n  <div class="body-text">`,
-    renderQuickAnswer(r),
     spoilerWarning,
 
     `\n    <h2>The Story in Brief</h2>`,

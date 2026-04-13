@@ -240,7 +240,7 @@ nav a:hover { color: var(--gold); }
 .verdict-film { background: #1e1c1a; color: var(--gold); border: 1px solid #444; }
 .verdict-tie  { background: #f0ebe0; color: #5a4a20; border: 1px solid #c8b880; }
 
-.body-text { max-width: 720px; }
+.body-text { max-width: 100%; }
 
 .body-text h2 {
   font-family: 'Playfair Display', Georgia, serif;
@@ -529,7 +529,6 @@ footer a { color: var(--gold); text-decoration: none; }
   border-radius: 4px;
   padding: 1.5rem 1.75rem;
   margin-bottom: 2.5rem;
-  max-width: 720px;
 }
 
 .quick-answer-label {
@@ -542,9 +541,38 @@ footer a { color: var(--gold); text-decoration: none; }
 }
 
 .quick-answer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.quick-answer-item {
+  text-align: center;
+}
+
+.quick-answer-reason-top {
+  margin-bottom: 0;
+}
+
+.quick-answer-reason-top strong {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.quick-answer-reason-top p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.4;
+  margin: 0;
 }
 
 .quick-answer-item strong {
@@ -602,7 +630,6 @@ footer a { color: var(--gold); text-decoration: none; }
   border-collapse: collapse;
   margin: 1.75rem 0;
   font-size: 0.88rem;
-  max-width: 720px;
 }
 
 .comparison-table thead {
@@ -653,7 +680,6 @@ footer a { color: var(--gold); text-decoration: none; }
   border-radius: 4px;
   padding: 1.1rem 1.5rem;
   margin: 1.75rem 0;
-  max-width: 720px;
 }
 
 .cta-block-text {
