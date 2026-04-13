@@ -1,0 +1,15 @@
+{
+  "bookTitle": "The Godfather",
+  "author": "Mario Puzo",
+  "bookYear": "1969",
+  "genre": "Crime / Literary Fiction",
+  "mediaType": "film",
+  "mediaLabel": "The Film",
+  "filmYear": "1972",
+  "director": "Francis Ford Coppola",
+  "starringLine": "Starring Marlon Brando, Al Pacino, James Caan — Film: 1972",
+  "reviewBody": "Coppola made something that transcends its source material — the rare adaptation that earns its reputation.",
+  "ratingValue": "5",
+  "bookCoverImage": "the-godfather.jpg",
+  "slug": "the-godfather"
+}

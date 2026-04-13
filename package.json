@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "adv": "^0.1.5",
+    "ajv": "^8.18.0",
     "cheerio": "^1.2.0",
-    "csv-parse": "^6.2.1"
+    "csv-parse": "^6.2.1",
+    "jsonrepair": "^3.13.3"
   }
 }

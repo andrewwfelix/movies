@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T22:04:34.059Z
+============================================================
+[22:04:34.061] [INFO ] Model config loaded from config/models.json
+[22:04:34.064] [INFO ] pipeline-revise.js
+[22:04:34.064] [INFO ] Pass:    pass2
+[22:04:34.064] [INFO ] Files:   1
+[22:04:34.064] [INFO ] Force:   yes
+[22:04:34.064] [INFO ] Dry run: no
+[22:04:34.064] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                pass2
+  Dry run:             no
+────────────────────────────────────────────────
+[22:04:34.066] [INFO ] Single file mode — skipping full checkpoint
+[22:04:34.067] [INFO ] quickAnswer.winner:        Film
+[22:04:34.067] [INFO ] quickAnswer.readFirst:     Either order works
+[22:04:34.067] [INFO ] quickAnswer.oneLineReason: Coppola's vision transcends Puzo's pulp source material entirely.
+
+============================================================
+Finished: 2026-04-13T22:04:34.067Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_18-04-34_pipeline-revise.log
+============================================================

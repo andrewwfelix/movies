@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T21:45:42.366Z
+============================================================
+[21:45:42.368] [INFO ] Model config loaded from config/models.json
+[21:45:42.370] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[21:45:42.371] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[21:45:42.371] [INFO ] pipeline-revise.js
+[21:45:42.371] [INFO ] Pass:    titles
+[21:45:42.371] [INFO ] Files:   1
+[21:45:42.371] [INFO ] Force:   yes
+[21:45:42.371] [INFO ] Dry run: no
+[21:45:42.371] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[21:45:42.372] [INFO ]   ↻  the-godfather — titles (anthropic/claude-sonnet-4-5)…
+[21:45:46.003] [PASS ] the-godfather.json — Titles complete
+[21:45:46.003] [INFO ]   BEFORE title (0 chars): null
+[21:45:46.003] [INFO ]   AFTER  title (57 chars): The Godfather: Coppola Made Art. Puzo Wrote a Bestseller.
+[21:45:46.003] [INFO ]   BEFORE meta  (0 chars): null
+[21:45:46.003] [INFO ]   AFTER  meta  (119 chars): Puzo's novel is pulp elevated by ambition. Coppola's film is a masterpiece that belongs to cinema history. Watch first.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[21:45:46.005] [INFO ] Single file mode — skipping full checkpoint
+[21:45:46.005] [INFO ] quickAnswer.winner:        Film
+[21:45:46.005] [INFO ] quickAnswer.readFirst:     Either order works
+[21:45:46.005] [INFO ] quickAnswer.oneLineReason: Coppola's film transcends Puzo's source material entirely.
+[21:45:46.005] [INFO ] BEFORE title (57 chars): The Godfather: Coppola Made Art. Puzo Wrote a Bestseller.
+[21:45:46.005] [INFO ] AFTER  title (57 chars): The Godfather: Coppola Made Art. Puzo Wrote a Bestseller.
+[21:45:46.005] [INFO ] BEFORE meta  (119 chars): Puzo's novel is pulp elevated by ambition. Coppola's film is a masterpiece that belongs to cinema history. Watch first.
+[21:45:46.005] [INFO ] AFTER  meta  (119 chars): Puzo's novel is pulp elevated by ambition. Coppola's film is a masterpiece that belongs to cinema history. Watch first.
+
+============================================================
+Finished: 2026-04-13T21:45:46.005Z
+Elapsed:  3.6s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_17-45-42_pipeline-revise.log
+============================================================

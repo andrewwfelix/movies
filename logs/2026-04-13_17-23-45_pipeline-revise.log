@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T21:23:45.969Z
+============================================================
+[21:23:45.972] [INFO ] Model config loaded from config/models.json
+[21:23:45.975] [INFO ] pipeline-revise.js
+[21:23:45.975] [INFO ] Pass:    pass2
+[21:23:45.975] [INFO ] Files:   1
+[21:23:45.975] [INFO ] Force:   yes
+[21:23:45.975] [INFO ] Dry run: no
+[21:23:45.975] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                pass2
+  Dry run:             no
+────────────────────────────────────────────────
+[21:23:45.977] [INFO ] Single file mode — skipping full checkpoint
+[21:23:45.977] [INFO ] quickAnswer.winner:        Film
+[21:23:45.977] [INFO ] quickAnswer.readFirst:     Either order works
+[21:23:45.977] [INFO ] quickAnswer.oneLineReason: Coppola's film is the definitive version—but read Puzo first for depth.
+
+============================================================
+Finished: 2026-04-13T21:23:45.978Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_17-23-45_pipeline-revise.log
+============================================================

@@ -1,0 +1,98 @@
+GREENFIELD HAPPY PATH — BooksVersusMovies.com
+=============================================
+How to generate a new review from scratch.
+Replace "the-godfather" and "The Godfather" with your slug and title.
+
+
+STEP 1 — Create input file
+--------------------------
+Create: data/greenfield/inputs/the-godfather.json
+
+{
+  "bookTitle": "The Godfather",
+  "slug": "the-godfather",
+  "affiliateLink": "https://amzn.to/xxxxx",
+  "youtubeId": "sY1S34973zA",
+  "videoAffiliateLink": "https://amzn.to/xxxxx"
+}
+
+Slug rules: lowercase, hyphens only, no spaces. e.g. "the-godfather"
+youtubeId:  just the ID, not the full URL. e.g. "sY1S34973zA"
+
+
+STEP 2 — Stage 1: factual extraction (Haiku)
+--------------------------------------------
+node scripts\pipeline-generate.js --slug the-godfather --stage 1
+
+REVIEW output: data/greenfield/stage1/the-godfather.json
+Check: author, bookYear, filmYear, director are all correct.
+If wrong: edit the stage1 file manually before running stage 2.
+
+
+STEP 3 — Stage 2: full review generation (Sonnet/Haiku)
+--------------------------------------------------------
+node scripts\pipeline-generate.js --slug the-godfather --stage 2
+
+REVIEW output: data/greenfield/stage2/the-godfather.json
+Check: verdict, oneLineReason, differences, characters all look right.
+File is also copied to: pipeline/2-revised/the-godfather.json
+
+
+STEP 4 — Titles pass (Sonnet)
+------------------------------
+node scripts\pipeline-revise.js --slug the-godfather --pass titles --force
+
+Check: pageTitle is sharp and under 65 chars. metaDesc is 130-155 chars.
+
+
+STEP 5 — Pass 2: CTA blocks (Haiku)
+-------------------------------------
+node scripts\pipeline-revise.js --slug the-godfather --pass 2 --force
+
+NOTE: use "--pass 2" not "--pass pass2"
+
+
+STEP 6 — Validate
+------------------
+node scripts\validate-json-schema.js --slug the-godfather --schema revised
+
+Must pass before rendering. Fix any errors and re-run the relevant pass.
+
+
+STEP 7 — Add book cover image
+------------------------------
+Copy the-godfather.jpg to images/
+Recommended size: 400x600px minimum, JPG format.
+Filename must match the slug exactly: the-godfather.jpg
+
+
+STEP 8 — Render
+----------------
+node scripts\pipeline-render.js --slug the-godfather --force
+
+Check: checkpoint must pass all 6 checks including CTA blocks.
+
+
+STEP 9 — Copy to root
+----------------------
+xcopy pipeline\3-rendered\the-godfather.html . /Y
+
+
+STEP 10 — Commit and deploy
+----------------------------
+git add .
+git commit -m "Add The Godfather review"
+git checkout main
+git merge dev
+git push
+git checkout dev
+
+
+TROUBLESHOOTING
+---------------
+Pass 2 not running?        Use --pass 2 not --pass pass2
+CTA blocks still null?     Use --pass 2 not --pass pass2
+Render fails with replace? A field has wrong type — run validate first
+JSON parse error?          jsonrepair will handle most cases, re-run stage 2
+inBook/inFilm boolean?     Stage 2 prompt issue — re-run stage 2 with --force
+Stage 2 skipped?           Add --force flag

@@ -18,7 +18,7 @@
     "notes": "Conversion layer — CTA wording, short outputs. Slightly more creative latitude."
   },
   "greenfield": {
-    "model": "anthropic/claude-sonnet-4-5",
+    "model": "anthropic/claude-haiku-4-5",
     "maxTokens": 9000,
     "temperature": 0.5,
     "notes": "Full review generation — voice matters most here. Use the better model."

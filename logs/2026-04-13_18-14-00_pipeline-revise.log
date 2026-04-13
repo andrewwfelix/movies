@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T22:14:00.655Z
+============================================================
+[22:14:00.658] [INFO ] Model config loaded from config/models.json
+[22:14:00.660] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[22:14:00.661] [INFO ] Loaded pass2-conversion.txt (1941 chars)
+[22:14:00.661] [INFO ] pipeline-revise.js
+[22:14:00.661] [INFO ] Pass:    2
+[22:14:00.661] [INFO ] Files:   1
+[22:14:00.661] [INFO ] Force:   yes
+[22:14:00.661] [INFO ] Dry run: no
+[22:14:00.661] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:14:00.662] [INFO ]   ↻  the-godfather — Pass 2 (anthropic/claude-haiku-4-5)…
+[22:14:37.441] [PASS ] the-godfather.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[22:14:37.442] [INFO ] Single file mode — skipping full checkpoint
+[22:14:37.442] [INFO ] quickAnswer.winner:        Film
+[22:14:37.442] [INFO ] quickAnswer.readFirst:     Either order works
+[22:14:37.443] [INFO ] quickAnswer.oneLineReason: Coppola's vision transcends Puzo's pulp source material entirely.
+
+============================================================
+Finished: 2026-04-13T22:14:37.443Z
+Elapsed:  36.8s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_18-14-00_pipeline-revise.log
+============================================================

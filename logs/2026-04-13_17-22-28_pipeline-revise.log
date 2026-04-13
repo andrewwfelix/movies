@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T21:22:28.729Z
+============================================================
+[21:22:28.732] [INFO ] Model config loaded from config/models.json
+[21:22:28.734] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[21:22:28.734] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[21:22:28.734] [INFO ] pipeline-revise.js
+[21:22:28.734] [INFO ] Pass:    titles
+[21:22:28.734] [INFO ] Files:   1
+[21:22:28.734] [INFO ] Force:   yes
+[21:22:28.735] [INFO ] Dry run: no
+[21:22:28.735] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[21:22:28.735] [INFO ]   ↻  the-godfather — titles (anthropic/claude-sonnet-4-5)…
+[21:22:33.269] [WARN ] the-godfather.json: Titles written with warnings: pageTitle slightly long: 69 chars (target 65)
+[21:22:33.269] [INFO ]   BEFORE title (0 chars): null
+[21:22:33.270] [INFO ]   AFTER  title (69 chars): The Godfather: Coppola Made the Definitive Version. Read Puzo Anyway.
+[21:22:33.270] [INFO ]   BEFORE meta  (0 chars): null
+[21:22:33.270] [INFO ]   AFTER  meta  (127 chars): The rare film that transcends its source. But Puzo's novel gives you the Corleone world Coppola had to cut. Both are essential.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[21:22:33.271] [INFO ] Single file mode — skipping full checkpoint
+[21:22:33.271] [INFO ] quickAnswer.winner:        Film
+[21:22:33.271] [INFO ] quickAnswer.readFirst:     Either order works
+[21:22:33.271] [INFO ] quickAnswer.oneLineReason: Coppola's film is the definitive version—but read Puzo first for depth.
+[21:22:33.271] [INFO ] BEFORE title (69 chars): The Godfather: Coppola Made the Definitive Version. Read Puzo Anyway.
+[21:22:33.271] [INFO ] AFTER  title (69 chars): The Godfather: Coppola Made the Definitive Version. Read Puzo Anyway.
+[21:22:33.272] [INFO ] BEFORE meta  (127 chars): The rare film that transcends its source. But Puzo's novel gives you the Corleone world Coppola had to cut. Both are essential.
+[21:22:33.272] [INFO ] AFTER  meta  (127 chars): The rare film that transcends its source. But Puzo's novel gives you the Corleone world Coppola had to cut. Both are essential.
+
+============================================================
+Finished: 2026-04-13T21:22:33.272Z
+Elapsed:  4.5s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_17-22-28_pipeline-revise.log
+============================================================

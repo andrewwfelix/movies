@@ -1,0 +1,38 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-13T21:46:44.736Z
+============================================================
+[21:46:44.739] [INFO ] pipeline-render.js
+[21:46:44.741] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[21:46:44.741] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[21:46:44.742] [INFO ] Files:   1
+[21:46:44.742] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[21:46:44.743] [PASS ] the-godfather.html — 25203 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✗  All pages have CTA blocks
+       the-godfather
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT FAILED — resolve issues before proceeding
+
+============================================================
+Finished: 2026-04-13T21:46:44.745Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_17-46-44_pipeline-render.log
+============================================================

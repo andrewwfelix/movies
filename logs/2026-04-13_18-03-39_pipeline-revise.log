@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T22:03:39.224Z
+============================================================
+[22:03:39.226] [INFO ] Model config loaded from config/models.json
+[22:03:39.228] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[22:03:39.229] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[22:03:39.229] [INFO ] pipeline-revise.js
+[22:03:39.229] [INFO ] Pass:    titles
+[22:03:39.229] [INFO ] Files:   1
+[22:03:39.229] [INFO ] Force:   yes
+[22:03:39.229] [INFO ] Dry run: no
+[22:03:39.229] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:03:39.230] [INFO ]   ↻  the-godfather — titles (anthropic/claude-sonnet-4-5)…
+[22:03:42.825] [PASS ] the-godfather.json — Titles complete
+[22:03:42.826] [INFO ]   BEFORE title (0 chars): null
+[22:03:42.826] [INFO ]   AFTER  title (48 chars): The Godfather: Coppola Made Art From Puzo's Pulp
+[22:03:42.826] [INFO ]   BEFORE meta  (0 chars): null
+[22:03:42.826] [INFO ]   AFTER  meta  (110 chars): Puzo wrote a bestseller. Coppola made a masterpiece. The novel is crime fiction. The film is American tragedy.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[22:03:42.827] [INFO ] Single file mode — skipping full checkpoint
+[22:03:42.827] [INFO ] quickAnswer.winner:        Film
+[22:03:42.827] [INFO ] quickAnswer.readFirst:     Either order works
+[22:03:42.827] [INFO ] quickAnswer.oneLineReason: Coppola's vision transcends Puzo's pulp source material entirely.
+[22:03:42.827] [INFO ] BEFORE title (48 chars): The Godfather: Coppola Made Art From Puzo's Pulp
+[22:03:42.827] [INFO ] AFTER  title (48 chars): The Godfather: Coppola Made Art From Puzo's Pulp
+[22:03:42.827] [INFO ] BEFORE meta  (110 chars): Puzo wrote a bestseller. Coppola made a masterpiece. The novel is crime fiction. The film is American tragedy.
+[22:03:42.828] [INFO ] AFTER  meta  (110 chars): Puzo wrote a bestseller. Coppola made a masterpiece. The novel is crime fiction. The film is American tragedy.
+
+============================================================
+Finished: 2026-04-13T22:03:42.828Z
+Elapsed:  3.6s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_18-03-39_pipeline-revise.log
+============================================================

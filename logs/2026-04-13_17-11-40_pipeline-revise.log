@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-13T21:11:40.628Z
+============================================================
+[21:11:40.630] [INFO ] Model config loaded from config/models.json
+[21:11:40.633] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[21:11:40.633] [INFO ] Loaded pass1b-titles.txt (5562 chars)
+[21:11:40.633] [INFO ] pipeline-revise.js
+[21:11:40.633] [INFO ] Pass:    titles
+[21:11:40.633] [INFO ] Files:   1
+[21:11:40.633] [INFO ] Force:   yes
+[21:11:40.634] [INFO ] Dry run: no
+[21:11:40.634] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[21:11:40.635] [INFO ]   ↻  the-godfather — titles (anthropic/claude-sonnet-4-5)…
+[21:11:44.829] [PASS ] the-godfather.json — Titles complete
+[21:11:44.829] [INFO ]   BEFORE title (0 chars): null
+[21:11:44.830] [INFO ]   AFTER  title (49 chars): The Godfather: Coppola Made Myth From Puzo's Pulp
+[21:11:44.830] [INFO ]   BEFORE meta  (0 chars): null
+[21:11:44.830] [INFO ]   AFTER  meta  (127 chars): Puzo's novel is sprawling mob fiction. Coppola cut the subplots, tightened the focus, and created cinema's greatest crime saga.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[21:11:44.831] [INFO ] Single file mode — skipping full checkpoint
+[21:11:44.831] [INFO ] quickAnswer.winner:        Film
+[21:11:44.831] [INFO ] quickAnswer.readFirst:     Either order works
+[21:11:44.831] [INFO ] quickAnswer.oneLineReason: Coppola's focus elevates Puzo's sprawl into myth.
+[21:11:44.831] [INFO ] BEFORE title (49 chars): The Godfather: Coppola Made Myth From Puzo's Pulp
+[21:11:44.832] [INFO ] AFTER  title (49 chars): The Godfather: Coppola Made Myth From Puzo's Pulp
+[21:11:44.832] [INFO ] BEFORE meta  (127 chars): Puzo's novel is sprawling mob fiction. Coppola cut the subplots, tightened the focus, and created cinema's greatest crime saga.
+[21:11:44.832] [INFO ] AFTER  meta  (127 chars): Puzo's novel is sprawling mob fiction. Coppola cut the subplots, tightened the focus, and created cinema's greatest crime saga.
+
+============================================================
+Finished: 2026-04-13T21:11:44.832Z
+Elapsed:  4.2s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-13_17-11-40_pipeline-revise.log
+============================================================
