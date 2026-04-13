@@ -321,3 +321,20 @@ In netlify.toml:
 Check GSC first — if not indexed, no redirect needed.
 Priority: low
 Status: pending
+
+## Serve from /reviews/ subdirectory instead of root
+Currently rendered HTML files deploy to the project root. Consider
+restructuring to serve from /reviews/ with Netlify publish directory set
+to reviews/:
+
+  - Set Netlify publish directory to reviews/
+  - Move css/ and images/ inside reviews/
+  - Renderer writes directly to reviews/
+  - index.html and sitemap.xml also go in reviews/
+  - reviews/ becomes fully self-contained
+
+Benefits: cleaner project root, clear separation of source and output,
+easier to reason about what gets deployed.
+Requires: updating renderer output path, moving assets, updating Netlify config.
+Priority: low
+Status: pending

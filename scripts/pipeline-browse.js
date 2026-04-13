@@ -236,7 +236,7 @@ function renderPage(records) {
 
 <div class="browse-hero">
   <h1>Books <em>Versus</em> Movies</h1>
-  <p>Honest comparisons. Clear verdicts. We tell you which version is better and whether to read first.</p>
+  <p>Read it or watch it. We'll tell you which comes first.</p>
   <div class="browse-stats">
     <div class="browse-stat"><strong>${records.length}</strong>comparisons</div>
     <div class="browse-stat"><strong>${verdictCounts.book}</strong>book wins</div>
