@@ -11,7 +11,7 @@
  * Usage:
  *   node pipeline-browse.js
  *   node pipeline-browse.js --out ../index.html
- *   node pipeline-browse.js --sort alpha       (alphabetical, default)
+ *   node pipeline-browse.js --sort year        (film year descending, default)
  *   node pipeline-browse.js --sort genre       (grouped by genre)
  *   node pipeline-browse.js --sort verdict     (Book Wins first)
  *   node pipeline-browse.js --dry              (print without writing)
@@ -29,7 +29,7 @@ const hasFlag = flag => args.includes(flag);
 
 const SRC_DIR  = path.resolve(__dirname, '../pipeline/2-revised');
 const OUT_PATH = path.resolve(__dirname, get('--out', '../index.html'));
-const SORT     = get('--sort', 'alpha');
+const SORT     = get('--sort', 'year');
 const DRY_RUN  = hasFlag('--dry');
 
 const SITE_URL = 'https://booksversusmovies.com';
@@ -72,10 +72,18 @@ function sortRecords(records) {
         const v = (order[a.verdictText] ?? 3) - (order[b.verdictText] ?? 3);
         return v !== 0 ? v : (a.bookTitle || '').localeCompare(b.bookTitle || '');
       });
-    default: // alpha
+    case 'alpha':
       return [...records].sort((a, b) =>
         (a.bookTitle || '').localeCompare(b.bookTitle || '')
       );
+    default: // year descending — most recent first
+      return [...records].sort((a, b) => {
+        const aYear = parseInt(a.filmYear) || 0;
+        const bYear = parseInt(b.filmYear) || 0;
+        return bYear !== aYear
+          ? bYear - aYear
+          : (a.bookTitle || '').localeCompare(b.bookTitle || '');
+      });
   }
 }
 
