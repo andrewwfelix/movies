@@ -160,11 +160,17 @@ function renderHero(r) {
     : r.filmYear === 'TBA' ? '(upcoming)' : '';
   const directorPart = r.director ? ` &mdash; ${esc(r.director)}` : '';
 
+  // Strip the book title prefix from pageTitle for the hook line
+  // "Dracula: Stoker Never Shows the Monster." → "Stoker Never Shows the Monster."
+  const hook = r.pageTitle?.includes(': ')
+    ? r.pageTitle.split(': ').slice(1).join(': ')
+    : r.pageTitle;
+
   return `
 <div class="page-hero">
-  <div class="genre-tag">${esc(r.genre || 'Fiction')}</div>
   <h1>${esc(r.bookTitle)}</h1>
-  <p class="subtitle">Book (${esc(String(r.bookYear))}) vs. ${esc(r.mediaLabel || 'Film')} ${mediaYear}${directorPart}</p>
+  <p class="subtitle">${esc(hook)}</p>
+  <p class="subtitle-meta">Book (${esc(String(r.bookYear))}) vs. ${esc(r.mediaLabel || 'Film')} ${mediaYear}${directorPart}</p>
 </div>`;
 }
 
@@ -234,6 +240,9 @@ function renderMetaStrip(r) {
   const mediaReleased = r.mediaLabel
     ? r.mediaLabel.replace('The ', '') + ' Released'
     : 'Film Released';
+  const genreItem = r.genre
+    ? `<div class="meta-item"><strong>Genre</strong>${esc(r.genre)}</div>`
+    : '';
 
   return `
 <div class="meta-strip">
@@ -241,6 +250,7 @@ function renderMetaStrip(r) {
   <div class="meta-item"><strong>Book Published</strong>${esc(String(r.bookYear || ''))}</div>
   <div class="meta-item"><strong>${esc(mediaReleased)}</strong>${esc(String(r.filmYear || ''))}</div>
   ${directorItem}
+  ${genreItem}
   <span class="verdict-badge ${esc(r.verdictClass)}">${esc(r.verdictText)}</span>
 </div>`;
 }
