@@ -80,7 +80,7 @@ function renderSpotlightCard(r) {
           <img src="images/${esc(r.bookCoverImage)}" alt="${esc(r.bookTitle)} book cover" loading="lazy">
         </div>
         <div class="spotlight-body">
-          <span class="verdict-badge ${esc(r.verdictClass)}">${esc(r.verdictText)}</span>
+          <span class="verdict-badge ${esc(r.verdictClass)}">${esc(r.verdictText === 'Too Close to Call' ? 'Tie' : r.verdictText)}</span>
           <div class="spotlight-title">${esc(r.bookTitle)}</div>
           <div class="spotlight-hook">${esc(hook)}</div>
           <div class="spotlight-meta">${esc(meta)}</div>
@@ -119,7 +119,7 @@ function renderRow(r) {
           <span class="row-dates">${mediaYear}</span>
         </div>
       </div>${trailerThumb}
-      <span class="row-arrow">&#8594;</span>
+
     </a>`;
 }
 
@@ -176,23 +176,26 @@ function renderPage(records) {
     .browse-stat { font-size: 0.78rem; color: #777; letter-spacing: 0.08em; text-align: center; }
     .browse-stat strong { color: var(--gold); font-size: 1.3rem; display: block; margin-bottom: 0.15rem; font-family: 'Playfair Display', serif; }
 
-    .trust-strip { background: #141210; border-bottom: 1px solid #2a2520; padding: 1.25rem 2rem; }
-    .trust-inner { max-width: var(--max-w); margin: 0 auto; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
-    .trust-item { font-size: 0.78rem; color: #888; letter-spacing: 0.06em; display: flex; align-items: center; gap: 0.5rem; }
-    .trust-item::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .trust-strip { background: #141210; border-bottom: 1px solid #2a2520; padding: 1.5rem 2rem; }
+    .trust-inner { max-width: var(--max-w); margin: 0 auto; display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; }
+    .trust-item { font-size: 0.9rem; color: #aaa; letter-spacing: 0.03em; display: flex; align-items: center; gap: 0.6rem; }
+    .trust-item::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
 
     .spotlight-section { background: var(--book-col); border-bottom: 1px solid var(--rule); padding: 2.5rem 2rem; }
     .spotlight-inner { max-width: var(--max-w); margin: 0 auto; }
-    .spotlight-heading { font-family: 'Playfair Display', serif; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
-    .spotlight-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.25rem; }
+    .spotlight-heading { font-family: 'Playfair Display', serif; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; text-align: center; }
+    .spotlight-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.25rem; }
+    @media (max-width: 1100px) { .spotlight-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .spotlight-grid { grid-template-columns: repeat(2, 1fr); } }
     .spotlight-card { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); background: white; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
     .spotlight-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); border-color: var(--gold); }
     .spotlight-cover { background: var(--film-col); padding: 1.25rem; display: flex; justify-content: center; }
     .spotlight-cover img { height: 160px; width: auto; object-fit: cover; box-shadow: 3px 5px 16px rgba(0,0,0,0.4); border-radius: 2px; }
-    .spotlight-body { padding: 1rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
-    .spotlight-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; line-height: 1.3; }
-    .spotlight-hook { font-size: 0.78rem; color: var(--ink-light); font-style: italic; line-height: 1.45; flex: 1; }
-    .spotlight-meta { font-size: 0.72rem; color: #999; margin-top: auto; }
+    .spotlight-body { padding: 1rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; align-items: center; text-align: center; }
+    .spotlight-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; line-height: 1.3; text-align: center; }
+    .spotlight-hook { font-size: 0.78rem; color: var(--ink-light); font-style: italic; line-height: 1.45; flex: 1; text-align: center; }
+    .spotlight-meta { font-size: 0.72rem; color: #999; margin-top: auto; text-align: center; }
+    .spotlight-card .verdict-badge { display: block; text-align: center; margin: 0 auto; width: fit-content; }
 
     .browse-controls { max-width: var(--max-w); margin: 0 auto; padding: 1.5rem 2rem 0; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
     .controls-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-right: 0.25rem; }
@@ -202,11 +205,11 @@ function renderPage(records) {
     .browse-section-label { max-width: var(--max-w); margin: 0 auto; padding: 1.25rem 2rem 0; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #bbb; }
 
     .browse-list { max-width: var(--max-w); margin: 0 auto; padding: 0.75rem 2rem 4rem; }
-    .row { display: flex; align-items: flex-start; gap: 1.25rem; padding: 1.25rem 0.5rem; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); transition: background 0.15s; border-radius: 3px; }
+    .row { display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem 0.5rem; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); transition: background 0.15s; border-radius: 3px; }
     .row:hover { background: #faf7f2; }
     .row:last-child { border-bottom: none; }
     .row-book { flex-shrink: 0; width: 56px; }
-    .row-book img { width: 56px; height: 84px; object-fit: cover; border-radius: 2px; box-shadow: 2px 3px 10px rgba(0,0,0,0.2); display: block; }
+    .row-book img { width: 56px; height: 84px; object-fit: cover; border-radius: 2px; box-shadow: 2px 3px 10px rgba(0,0,0,0.2); display: block; align-self: center; }
     .row-content { flex: 1; min-width: 0; }
     .row-genre { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.2rem; }
     .row-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.15rem; line-height: 1.3; }
@@ -214,12 +217,12 @@ function renderPage(records) {
     .row-blurb { font-size: 0.88rem; color: #4a4540; line-height: 1.55; margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .row-meta { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
     .row-dates { font-size: 0.75rem; color: #999; }
-    .row-trailer { flex-shrink: 0; width: 110px; }
+    .row-trailer { flex-shrink: 0; width: 112px; align-self: center; }
     .trailer-thumb { position: relative; border-radius: 2px; overflow: hidden; }
-    .trailer-thumb img { width: 110px; height: 62px; object-fit: cover; display: block; }
-    .play-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 26px; height: 26px; background: rgba(26,23,20,0.78); border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .play-icon::after { content: ''; border-left: 7px solid var(--gold); border-top: 4px solid transparent; border-bottom: 4px solid transparent; margin-left: 2px; }
-    .row-arrow { flex-shrink: 0; color: var(--gold); font-size: 1rem; padding-top: 0.2rem; opacity: 0.7; }
+    .trailer-thumb img { width: 112px; height: 84px; object-fit: cover; display: block; }
+    .play-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 30px; height: 30px; background: rgba(26,23,20,0.78); border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .play-icon::after { content: ''; border-left: 8px solid var(--gold); border-top: 5px solid transparent; border-bottom: 5px solid transparent; margin-left: 2px; }
+
 
     .no-results { padding: 3rem 0; text-align: center; color: #999; font-style: italic; display: none; }
 
@@ -246,7 +249,7 @@ function renderPage(records) {
 </header>
 
 <div class="browse-hero">
-  <h1>Book or Movie?<br><em>We Actually Pick a Winner.</em></h1>
+  <h1>Book or Movie?<br><em>We Pick a Winner.</em></h1>
   <p class="tagline">Read it or watch it. We'll tell you which comes first — and why the other version falls short.</p>
   <div class="browse-stats">
     <div class="browse-stat"><strong>${counts.total}</strong>comparisons</div>
