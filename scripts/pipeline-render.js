@@ -147,6 +147,7 @@ function renderHeader() {
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
       <a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
       <a href="/about">About</a>
     </nav>
   </div>
@@ -337,7 +338,7 @@ function renderFooter() {
   return `
 <footer>
   <p>&copy; ${YEAR} RavensEdge AI, LLC &nbsp;&mdash;&nbsp; operating BooksVersusMovies.com </p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;color:#444;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
 </footer>
 
 </body>

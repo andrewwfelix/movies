@@ -1,0 +1,51 @@
+give me a git cheat sheet. I need to switch to dev and get lastest from prod
+
+3:38 PM
+cmd
+git checkout dev
+git merge main
+That's it for this case. Here's the broader cheat sheet for your workflow:
+
+Daily workflow:
+
+cmd
+git checkout dev          (switch to dev)
+git merge main            (get latest from prod)
+Save work on dev:
+
+cmd
+git add .
+git commit -m "description"
+Deploy to prod:
+
+cmd
+git checkout main
+git merge dev
+git push
+git checkout dev          (switch back to dev immediately)
+Check where you are:
+
+cmd
+git branch                (shows current branch with *)
+git status                (shows uncommitted changes)
+git log --oneline -5      (last 5 commits)
+Undo last commit (keep changes):
+
+cmd
+git reset --soft HEAD~1
+Discard all uncommitted changes:
+
+cmd
+git checkout -- .
+See what changed:
+
+cmd
+git diff                  (unstaged changes)
+git diff --staged         (staged changes)
+The main rule for your setup: always do work on dev, only touch main to merge and push, then immediately switch back to dev.
+
+give me that as a simple text to dowload
+
+3:38 PM
+
+Created a file, ran a command, read a file
