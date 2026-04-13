@@ -1,0 +1,26 @@
+1. Deploy the quick-answer-above-hero fix (highest ROI)
+text
+In pipeline-render.js:
+Move verdict + oneLineReason block BEFORE book cover/trailer section
+Re-render/deploy all 162 pages
+Expected: +1.5 SEO points immediately
+2. Request indexing for top 20 impression pages
+text
+GSC → URL Inspection → top pages by impressions (Verity, Reminders of Him, etc.)
+Submit updated sitemap
+Expected: 50% of discovered pages indexed within 7 days
+3. Add oneLineReason to browse rows
+text
+Browse page: each row shows verdict + 1-sentence hook
+Expected: Better crawl signals + user engagement
+Progress validation checklist
+text
+[ ] Quick-answer block is first content block on individual pages
+[ ] Homepage has hero + stats + "Browse All" CTA  
+[ ] Titles follow "[Title] Book vs Movie" pattern
+[ ] GSC shows indexing requests submitted
+[ ] Browse page shows verdict hooks
+One-line status
+"Technical foundation now solid (6.5/10). Next: make answers instantly visible + force Google to index."
+
+The biggest win will be that quick-answer positioning change. Deploy that across all pages and you'll see measurable CTR/ranking movement within 2 weeks.

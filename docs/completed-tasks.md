@@ -127,14 +127,50 @@ Format: [YYYY-MM-DD] Description
 
 
 ---
-## Current Step
+## Section 5 — Landing Page + SEO Improvements ✓
 
-DEPLOYED ✓ — April 13 2026
+[2026-04-14] Rebuilt pipeline-browse.js — full landing page with:
+             hero "Book or Movie? We Pick a Winner.", trust strip,
+             spotlight section (6 curated cards with oneLineReason hooks),
+             verdict filters with counts, year-descending sort,
+             matched 84px image heights, removed arrow
+[2026-04-14] Updated DEFAULT_FEATURED to GSC-informed list:
+             verity, reminders-of-him, dune, the-shining, gone-girl, atonement
+[2026-04-14] Moved quick-answer block above comparison panel (SEO fix)
+[2026-04-14] Restructured quick-answer: Key Difference full-width on top,
+             Best Version + Read First below as centered flex pair
+[2026-04-14] Removed CTA button from quick-answer block (redundant/spammy)
+[2026-04-14] Removed max-width constraints from quick-answer, body-text,
+             comparison-table, cta-block — all sections now full width
+[2026-04-14] Hero: removed "Actually" from headline, stripped book title
+             prefix from subtitle hook, genre moved to meta strip
+[2026-04-14] Built get-advice.js — multi-LLM advice tool (Sonnet/Grok/Perplexity)
+             config/advice.json, advice/inputs/, advice/outputs/
+[2026-04-14] Built compare-models.js + evals/ folder for model comparison
+[2026-04-14] Established dev branch workflow — all dev work on dev,
+             merge to main only for deployment
+[2026-04-14] Deployed — 162 pages + new landing page + SEO fixes
+
+---
+## Current State
+
+DEPLOYED ✓ — April 14 2026
 162 pages live at booksversusmovies.com
-Sitemap submitted to Google Search Console
+Landing page redesigned — spotlight, hero, trust strip
+Quick-answer above fold on all review pages
+Dev branch established
 
-Tomorrow — highest priority:
-  1. Featured/spotlight section on browse page (config/featured.json)
-  2. Priority/hype field in JSON schema (controls browse order + model assignment)
-  3. Design greenfield process document (Step 5 prep)
-  4. Build pipeline-generate.js (Step 5)
+## Next Steps — Highest Priority
+
+  1. Add oneLineReason to browse rows (editorial hook per row)
+  2. Build pipeline-generate.js (Step 5 — greenfield new reviews)
+     - Two-stage: Stage 1 factual (Haiku), Stage 2 editorial (Sonnet)
+     - Minimal input: bookTitle, slug, affiliateLink, youtubeId, videoAffiliateLink
+     - First batch: 10 Film Wins candidates (Godfather, Jaws, Blade Runner etc.)
+  3. Priority/hype field in JSON schema (controls browse order + model assignment)
+  4. Genre hub pages (/thriller, /romance, /literary-fiction)
+  5. Author hub pages (Colleen Hoover, Gillian Flynn, Stephen King)
+  6. WebP conversion for book cover images
+  7. GSC — request indexing for top 20 impression pages
+  8. Set up ConvertKit/Mailchimp for email capture
+  9. Add Bookshop.org affiliate links alongside Amazon
