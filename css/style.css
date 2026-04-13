@@ -240,7 +240,7 @@ nav a:hover { color: var(--gold); }
 .verdict-film { background: #1e1c1a; color: var(--gold); border: 1px solid #444; }
 .verdict-tie  { background: #f0ebe0; color: #5a4a20; border: 1px solid #c8b880; }
 
-.body-text { max-width: 100%; }
+.body-text { }
 
 .body-text h2 {
   font-family: 'Playfair Display', Georgia, serif;
@@ -327,13 +327,14 @@ nav a:hover { color: var(--gold); }
 footer {
   background: var(--ink);
   border-top: 3px solid var(--gold);
-  color: #666;
+  color: #aaa;
   text-align: center;
   padding: 2rem;
   font-size: 0.8rem;
   letter-spacing: 0.04em;
 }
 footer a { color: var(--gold); text-decoration: none; }
+footer p + p { color: #777 !important; margin-top: 0.5rem; font-size: 0.75rem; }
 
 .home-hero {
   background: var(--ink);
