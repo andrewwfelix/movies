@@ -22,6 +22,29 @@ const args    = process.argv.slice(2);
 const get     = (flag, fallback) => { const i = args.indexOf(flag); return i !== -1 && args[i+1] ? args[i+1] : fallback; };
 const hasFlag = flag => args.includes(flag);
 
+const ROOT    = path.resolve(__dirname, '..');
+
+// ── Render nav from config/nav.json ──────────────────────────────────────────
+
+function renderNav() {
+  const navPath = path.join(ROOT, 'config', 'nav.json');
+  if (!fs.existsSync(navPath)) {
+    // Fallback if nav.json missing
+    return `<a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
+      <a href="/spotlight-lonesome-dove">Featured</a> &nbsp;&middot;&nbsp;
+      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
+      <a href="/about">About</a>`;
+  }
+  const items = JSON.parse(fs.readFileSync(navPath, 'utf8')).items;
+  return items
+    .map((item, i) => {
+      const mid = i < items.length - 1 ? ` &nbsp;&middot;&nbsp;` : '';
+      return `<a href="${item.href}">${item.label}</a>${mid}`;
+    })
+    .join('\n      ');
+}
+
 const SRC_DIR       = path.resolve(__dirname, '../pipeline/2-revised');
 const OUT_PATH      = path.resolve(__dirname, '../index.html');
 const SORT          = get('--sort', 'year');
@@ -242,11 +265,7 @@ function renderPage(records) {
   <div class="header-inner">
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
-      <a href="/">Home</a> &nbsp;&middot;&nbsp;
-      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
-      <a href="/spotlight-lonesome-dove">Featured</a> &nbsp;&middot;&nbsp;
-      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
-      <a href="/about">About</a>
+      ${renderNav()}
     </nav>
   </div>
 </header>

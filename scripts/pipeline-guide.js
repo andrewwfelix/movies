@@ -46,6 +46,28 @@ const RENDER_ONLY    = hasFlag('--render-only');
 // ── Paths ─────────────────────────────────────────────────────────────────────
 
 const ROOT         = path.resolve(__dirname, '..');
+
+// ── Render nav from config/nav.json ──────────────────────────────────────────
+
+function renderNav() {
+  const navPath = path.join(ROOT, 'config', 'nav.json');
+  if (!fs.existsSync(navPath)) {
+    // Fallback if nav.json missing
+    return `<a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
+      <a href="/spotlight-lonesome-dove">Featured</a> &nbsp;&middot;&nbsp;
+      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
+      <a href="/about">About</a>`;
+  }
+  const items = JSON.parse(fs.readFileSync(navPath, 'utf8')).items;
+  return items
+    .map((item, i) => {
+      const mid = i < items.length - 1 ? ` &nbsp;&middot;&nbsp;` : '';
+      return `<a href="${item.href}">${item.label}</a>${mid}`;
+    })
+    .join('\n      ');
+}
+
 const MODELS_PATH  = path.join(ROOT, 'config', 'models.json');
 const SOURCES_PATH = path.join(ROOT, 'data', 'guides', 'sources.json');
 const PROMPT_PATH  = path.join(ROOT, 'scripts', 'prompts', 'guide-aggregator.txt');
@@ -635,9 +657,7 @@ function renderHTML(data) {
   <div class="header-inner">
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
-      <a href="/">Home</a> &nbsp;&middot;&nbsp;
-      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
-      <a href="/about">About</a>
+      ${renderNav()}
     </nav>
   </div>
 </header>

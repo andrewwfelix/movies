@@ -38,6 +38,28 @@ const hasFlag = flag => args.includes(flag);
 const SINGLE_SLUG = get('--slug', null);
 const FORCE       = hasFlag('--force');
 const ROOT        = path.resolve(__dirname, '..');
+
+// ── Render nav from config/nav.json ──────────────────────────────────────────
+
+function renderNav() {
+  const navPath = path.join(ROOT, 'config', 'nav.json');
+  if (!fs.existsSync(navPath)) {
+    // Fallback if nav.json missing
+    return `<a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
+      <a href="/spotlight-lonesome-dove">Featured</a> &nbsp;&middot;&nbsp;
+      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
+      <a href="/about">About</a>`;
+  }
+  const items = JSON.parse(fs.readFileSync(navPath, 'utf8')).items;
+  return items
+    .map((item, i) => {
+      const mid = i < items.length - 1 ? ` &nbsp;&middot;&nbsp;` : '';
+      return `<a href="${item.href}">${item.label}</a>${mid}`;
+    })
+    .join('\n      ');
+}
+
 const IN_DIR      = path.resolve(__dirname, '../pipeline/2-revised');
 const OUT_DIR     = path.resolve(__dirname, get('--out', '../pipeline/3-rendered'));
 
@@ -147,11 +169,7 @@ function renderHeader() {
   <div class="header-inner">
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
-      <a href="/">Home</a> &nbsp;&middot;&nbsp;
-      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
-      <a href="/spotlight-lonesome-dove">Featured</a> &nbsp;&middot;&nbsp;
-      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
-      <a href="/about">About</a>
+      ${renderNav()}
     </nav>
   </div>
 </header>`;

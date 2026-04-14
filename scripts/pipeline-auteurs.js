@@ -36,6 +36,27 @@ const DRY_RUN     = hasFlag('--dry');
 const MIN_PAGES   = parseInt(get('--min', '2'));
 
 const ROOT         = path.resolve(__dirname, '..');
+
+// ── Render nav from config/nav.json ──────────────────────────────────────────
+
+function renderNav() {
+  const navPath = path.join(ROOT, 'config', 'nav.json');
+  if (!fs.existsSync(navPath)) {
+    return `<a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
+      <a href="/spotlight-lonesome-dove">Featured</a> &nbsp;&middot;&nbsp;
+      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
+      <a href="/about">About</a>`;
+  }
+  const items = JSON.parse(fs.readFileSync(navPath, 'utf8')).items;
+  return items
+    .map((item, i) => {
+      const mid = i < items.length - 1 ? ` &nbsp;&middot;&nbsp;` : '';
+      return `<a href="${item.href}">${item.label}</a>${mid}`;
+    })
+    .join('\n      ');
+}
+
 const SRC_DIR      = path.join(ROOT, 'pipeline', '2-revised');
 const OUT_DIR      = path.join(ROOT, 'pipeline', '3-rendered', 'auteur');
 const AUTEURS_CFG  = path.join(ROOT, 'data', 'auteurs.json');
@@ -247,7 +268,9 @@ function renderAuteurPage(directorData, description) {
 <header>
   <div class="header-inner">
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
-    <nav><a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="/about">About</a></nav>
+    <nav>
+      ${renderNav()}
+    </nav>
   </div>
 </header>
 
@@ -355,7 +378,9 @@ function renderAuteursPage(auteurs, config) {
 <header>
   <div class="header-inner">
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
-    <nav><a href="/">Home</a> &nbsp;&middot;&nbsp; <a href="/about">About</a></nav>
+    <nav>
+      ${renderNav()}
+    </nav>
   </div>
 </header>
 
