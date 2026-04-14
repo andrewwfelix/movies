@@ -4,6 +4,17 @@ Raw capture. Review periodically and promote to ROADMAP-TECHNICAL.md,
 ROADMAP-PRODUCT.md, or business-strategy.md as appropriate.
 
 
+****************************************************
+priority next step !
+****************************************************
+1. Create an upcoming attractions page, sign up for full PDF (date) upcoming attractions. email address: how often would you like to receive upcoming movie updates?
+2. upcoming attractions page should be the top 5, Sign up for information about all 50 upcoming attractionsimplement this email thing with survey monkey or whatever
+update the index page toshow the now link
+set up the tech stuff to implement the mailing list (mail chimp?)
+
+
+
+
 ## LLM Editor side project
 Build a demo page for a friend showing multi-pass AI content generation.
 
