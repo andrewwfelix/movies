@@ -23,6 +23,7 @@
  *   --all     Render all files in pipeline/2-revised/ (default behaviour)
  *   --force   Overwrite existing files in pipeline/3-rendered/
  *   --out     Output directory (default: ../pipeline/3-rendered)
+ * Destination: scripts/pipeline-render.js
  */
 
 const fs               = require('fs');

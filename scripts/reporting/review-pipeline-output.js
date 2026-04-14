@@ -17,6 +17,7 @@
  *   --out          Write output to file in addition to stdout
  *   --issues-only  Show only pages with warnings or failures
  *   --field        Show a specific field for all pages (e.g. oneLineReason, pageTitle)
+ * Destination: scripts/reporting/review-pipeline-output.js
  */
 
 const fs   = require('fs');

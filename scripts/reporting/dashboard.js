@@ -9,6 +9,7 @@
  * - Config:  .config/dashboard.json
  * - Output:  movies/data/dashboard/latest.json
  * - Archive: movies/data/dashboard/history-YYYY-MM-DD.json
+ * Destination: scripts/reporting/dashboard.js
  */
 
 const fs = require('fs');

@@ -1,4 +1,5 @@
 {
+  "_destination": "config/models-prod.json",
   "pass1": {
     "model": "anthropic/claude-haiku-4-5",
     "maxTokens": 9000,
@@ -24,4 +25,3 @@
     "notes": "Full review generation — voice matters most here. Use the better model."
   }
 }
-

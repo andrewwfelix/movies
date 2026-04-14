@@ -1,10 +1,26 @@
 {
+  "_destination": "config/nav.json",
   "items": [
-    { "label": "Home",        "href": "/" },
-    { "label": "Upcoming",    "href": "/upcoming-adaptations" },
-    { "label": "Featured",    "href": "/spotlight-lonesome-dove" },
-    { "label": "The Auteurs", "href": "/auteurs" },
-    { "label": "About",       "href": "/about" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Upcoming",
+      "href": "/upcoming-adaptations"
+    },
+    {
+      "label": "Featured",
+      "href": "/spotlight-lonesome-dove"
+    },
+    {
+      "label": "The Auteurs",
+      "href": "/auteurs"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    }
   ],
   "notes": "Single source of truth for site nav. All pipeline scripts read this file. To add a nav item: edit here, then re-run pipeline-render.js, pipeline-browse.js, pipeline-guide.js, and pipeline-auteurs.js. Run check-nav.js to verify all HTML files are in sync."
 }

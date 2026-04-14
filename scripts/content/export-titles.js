@@ -14,6 +14,7 @@
  *   node export-titles.js --issues-only   (over-limit or generic only)
  *
  * After editing in Excel/Sheets, import back with import-titles.js
+ * Destination: scripts/content/export-titles.js
  */
 
 const fs   = require('fs');

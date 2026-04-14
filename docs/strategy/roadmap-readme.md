@@ -1,3 +1,4 @@
+[//]: # (Destination: docs/strategy/roadmap-readme.md)
 # BooksVersusMovies.com — Feature Roadmap Reference
 =====================================================
 Last updated: April 2026

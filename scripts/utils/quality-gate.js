@@ -22,6 +22,7 @@
  *
  * Called from pipeline-revise.js when --quality-check-interval N is set.
  * Hard-stops the batch if any check fails.
+ * Destination: scripts/utils/quality-gate.js
  */
 
 const fs   = require('fs');

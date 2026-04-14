@@ -13,6 +13,7 @@
  *   node pipeline-browse.js --sort year   (default: film year descending)
  *   node pipeline-browse.js --sort alpha
  *   node pipeline-browse.js --dry
+ * Destination: scripts/pipeline-browse.js
  */
 
 const fs   = require('fs');

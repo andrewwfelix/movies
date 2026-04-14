@@ -1,3 +1,4 @@
+// Destination: scripts/reporting/get-todays-changes.js
 #!/usr/bin/env node
 
 const fs = require('fs');

@@ -15,6 +15,7 @@
  * Config:   advice/config.json          (which models to query)
  * Inputs:   advice/inputs/*.txt         (your questions — all consolidated)
  * Outputs:  advice/outputs/TIMESTAMP-MODEL.txt
+ * Destination: scripts/reporting/get-advice.js
  */
 
 const fs    = require('fs');

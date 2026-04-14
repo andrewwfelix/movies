@@ -23,6 +23,7 @@
  * Options:
  *   --out        Write output to a file in addition to stdout
  *   --clipboard  Also copy output to clipboard (pbcopy / clip / xclip)
+ * Destination: scripts/content/generate-next-steps.js
  */
 
 const fs           = require('fs');

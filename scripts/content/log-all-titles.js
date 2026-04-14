@@ -16,6 +16,7 @@
  *   --dir       Source directory (default: ../pipeline/2-revised)
  *   --out       Write output to file in addition to stdout
  *   --warn-only Show only titles over 65 chars
+ * Destination: scripts/content/log-all-titles.js
  */
 
 const fs   = require('fs');

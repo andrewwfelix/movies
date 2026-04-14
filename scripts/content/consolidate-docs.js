@@ -1,3 +1,4 @@
+// Destination: scripts/content/consolidate-docs.js
 const fs = require('fs');
 const path = require('path');
 

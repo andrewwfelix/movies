@@ -1,5 +1,5 @@
-[
-  {
+{
+  "0": {
     "bookTitle": "The Nightingale",
     "author": "Kristin Hannah",
     "slug": "the-nightingale",
@@ -10,7 +10,7 @@
     "hypeLevel": 3,
     "notes": "This WWII drama has been highly anticipated for years due to the bestselling novel's emotional depth and the star power of the Fanning sisters."
   },
-  {
+  "1": {
     "bookTitle": "Project Hail Mary",
     "author": "Andy Weir",
     "slug": "project-hail-mary",
@@ -21,7 +21,7 @@
     "hypeLevel": 3,
     "notes": "Following the success of 'The Martian,' Weir's latest sci-fi novel gets a big-budget adaptation with Gosling in the lead."
   },
-  {
+  "2": {
     "bookTitle": "The Thursday Murder Club",
     "author": "Richard Osman",
     "slug": "the-thursday-murder-club",
@@ -32,7 +32,7 @@
     "hypeLevel": 2,
     "notes": "This adaptation of the popular cozy mystery novel brings a stellar cast to a story of retirees solving crimes."
   },
-  {
+  "3": {
     "bookTitle": "Red, White & Royal Blue 2",
     "author": "Casey McQuiston",
     "slug": "red-white-royal-blue-2",
@@ -43,7 +43,7 @@
     "hypeLevel": 2,
     "notes": "A sequel to the hit rom-com adaptation, capitalizing on the original film's massive streaming success."
   },
-  {
+  "4": {
     "bookTitle": "The Housemaid",
     "author": "Freida McFadden",
     "slug": "the-housemaid",
@@ -54,7 +54,7 @@
     "hypeLevel": 2,
     "notes": "This psychological thriller novel, a TikTok sensation, is expected to draw significant attention with its twisty plot."
   },
-  {
+  "5": {
     "bookTitle": "Wool",
     "author": "Hugh Howey",
     "slug": "wool",
@@ -64,5 +64,6 @@
     "keyCast": "Rebecca Ferguson, Tim Robbins",
     "hypeLevel": 3,
     "notes": "This dystopian sci-fi series adaptation has generated buzz for its expansive world-building and strong cast."
-  }
-]
+  },
+  "_destination": "data/guides/2026-adaptations.json"
+}

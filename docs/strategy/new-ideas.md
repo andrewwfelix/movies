@@ -1,3 +1,4 @@
+[//]: # (Destination: docs/strategy/new-ideas.md)
 # BooksVersusMovies.com — New Ideas / Inbox
 ==========================================
 Raw capture. Review periodically and promote to ROADMAP-TECHNICAL.md,

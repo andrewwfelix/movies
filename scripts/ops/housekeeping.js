@@ -6,6 +6,7 @@
  *
  * Usage:
  *   node scripts/housekeeping.js
+ * Destination: scripts/ops/housekeeping.js
  */
 
 const fs = require('fs');

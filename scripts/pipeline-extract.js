@@ -17,6 +17,7 @@
  *   --format   csv | json (default: csv)
  *   --issues   Also write a separate issues report
  *   --strict   Exit with code 1 if any blocking issues found (useful for CI)
+ * Destination: scripts/pipeline-extract.js
  */
 
 const fs   = require('fs');

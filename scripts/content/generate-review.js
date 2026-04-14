@@ -31,6 +31,7 @@
  * Prerequisites:
  *   - data/greenfield/inputs/<slug>.json must exist
  *   - images/<slug>.jpg must exist
+ * Destination: scripts/content/generate-review.js
  */
 
 const fs      = require('fs');

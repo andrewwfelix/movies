@@ -1,4 +1,5 @@
 {
+  "_destination": "config/models-test.json",
   "pass1": {
     "model": "openai/gpt-4o-mini",
     "maxTokens": 9000,
@@ -24,5 +25,3 @@
     "notes": "Full review generation — voice matters most here. Use the better model."
   }
 }
-
-

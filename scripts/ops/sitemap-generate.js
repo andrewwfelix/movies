@@ -16,6 +16,7 @@
  *   --out       Output path (default: project root sitemap.xml)
  *   --priority  Default page priority 0.0-1.0 (default: 0.8)
  *   --dry       Print sitemap without writing
+ * Destination: scripts/ops/sitemap-generate.js
  */
 
 const fs   = require('fs');

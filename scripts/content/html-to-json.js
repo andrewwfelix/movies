@@ -22,6 +22,7 @@
  *   --file    Process a single HTML file
  *   --slug    Process a single page by slug (looks in --dir)
  *   --force   Overwrite existing JSON files (default: skip existing)
+ * Destination: scripts/content/html-to-json.js
  */
 
 const fs              = require('fs');

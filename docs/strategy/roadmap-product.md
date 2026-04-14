@@ -1,3 +1,4 @@
+[//]: # (Destination: docs/strategy/roadmap-product.md)
 # BooksVersusMovies.com — Product Roadmap
 ==========================================
 Last updated: April 2026

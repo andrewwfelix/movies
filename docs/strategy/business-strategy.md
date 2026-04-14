@@ -1,3 +1,4 @@
+[//]: # (Destination: docs/strategy/business-strategy.md)
 BooksVersusMovies.com — Business Development Strategy
 ======================================================
 April 2026

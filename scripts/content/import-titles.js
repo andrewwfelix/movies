@@ -23,6 +23,7 @@
  *
  * Only rows where pageTitle or oneLineReason differ from current JSON
  * will be written — unchanged rows are skipped automatically.
+ * Destination: scripts/content/import-titles.js
  */
 
 const fs   = require('fs');

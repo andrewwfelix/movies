@@ -20,6 +20,7 @@
  *   node pipeline-auteurs.js --min 2       (minimum pages to qualify, default 2)
  *
  * After --generate, review config/auteurs.json before running --render.
+ * Destination: scripts/pipeline-auteurs.js
  */
 
 const fs    = require('fs');

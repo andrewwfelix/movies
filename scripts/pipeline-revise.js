@@ -35,6 +35,7 @@
  *   OPENROUTER_API_KEY   Required.
  *
  * Models: configured in config/models.json
+ * Destination: scripts/pipeline-revise.js
  */
 
 const fs               = require('fs');

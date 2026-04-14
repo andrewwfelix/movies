@@ -22,6 +22,7 @@
  *
  * Exits with code 1 if any files fail validation.
  * Exports validateRecord() for use in other pipeline scripts.
+ * Destination: scripts/utils/validate-json-schema.js
  */
 
 const fs   = require('fs');

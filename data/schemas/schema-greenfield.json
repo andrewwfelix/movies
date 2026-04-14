@@ -1,120 +1,329 @@
 {
+  "_destination": "data/schemas/schema-greenfield.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "BooksVersusMovies Review — Greenfield Stage 2",
   "description": "Schema for data/greenfield/stage2/ — after pipeline-generate.js stage 2. quickAnswer required, ctaBlocks/pageTitle/metaDesc still null.",
   "type": "object",
   "required": [
-    "slug", "bookTitle", "author", "bookYear", "genre",
-    "mediaType", "mediaLabel", "filmYear", "verdictText", "verdictClass",
-    "affiliateLink", "storyBrief", "characters", "differences",
-    "readFirst", "verdictBox", "faq", "related", "quickAnswer"
+    "slug",
+    "bookTitle",
+    "author",
+    "bookYear",
+    "genre",
+    "mediaType",
+    "mediaLabel",
+    "filmYear",
+    "verdictText",
+    "verdictClass",
+    "affiliateLink",
+    "storyBrief",
+    "characters",
+    "differences",
+    "readFirst",
+    "verdictBox",
+    "faq",
+    "related",
+    "quickAnswer"
   ],
   "properties": {
-    "slug":            { "type": "string", "pattern": "^[a-z0-9-]+$" },
-    "filename":        { "type": ["string", "null"] },
-    "lastUpdated":     { "type": "string" },
-    "pipelineVersion": { "type": "string" },
-    "generation":      { "type": "string" },
-
-    "pageTitle":  { "type": ["string", "null"], "description": "Null — populated by titles pass" },
-    "metaDesc":   { "type": ["string", "null"], "description": "Null — populated by titles pass" },
-    "ctaBlocks":  { "type": ["array", "null"],  "description": "Null — populated by Pass 2" },
-    "reviewBody": { "type": "string", "minLength": 10 },
-    "ratingValue":{ "type": ["string", "null"] },
-
-    "bookTitle":  { "type": "string", "minLength": 1 },
-    "author":     { "type": "string", "minLength": 1 },
-    "bookYear":   { "type": "string", "minLength": 4 },
-    "genre":      { "type": "string", "minLength": 1 },
-
-    "mediaType":    { "type": "string", "enum": ["film", "series"] },
-    "mediaLabel":   { "type": "string", "minLength": 1 },
-    "filmYear":     { "type": "string" },
-    "director":     { "type": ["string", "null"] },
-    "starringLine": { "type": "string", "minLength": 5 },
-
-    "verdictText":  { "type": "string", "enum": ["Book Wins", "Film Wins", "Too Close to Call", "Movie Wins"] },
-    "verdictClass": { "type": "string", "enum": ["verdict-book", "verdict-film", "verdict-tie"] },
-
-    "affiliateLink":      { "type": "string", "minLength": 1 },
-    "affiliateLinkAlt":   { "type": ["string", "null"] },
-    "videoAffiliateLink": { "type": ["string", "null"] },
-    "youtubeId":          { "type": ["string", "null"] },
-    "trailerUrl":         { "type": ["string", "null"] },
-    "bookCoverImage":     { "type": "string", "minLength": 1 },
-
-    "storyBrief": { "type": "string", "minLength": 50 },
-    "readFirst":  { "type": "string", "minLength": 20 },
-    "verdictBox": { "type": "string", "minLength": 20 },
-
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "filename": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "pipelineVersion": {
+      "type": "string"
+    },
+    "generation": {
+      "type": "string"
+    },
+    "pageTitle": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Null — populated by titles pass"
+    },
+    "metaDesc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Null — populated by titles pass"
+    },
+    "ctaBlocks": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Null — populated by Pass 2"
+    },
+    "reviewBody": {
+      "type": "string",
+      "minLength": 10
+    },
+    "ratingValue": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bookTitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bookYear": {
+      "type": "string",
+      "minLength": 4
+    },
+    "genre": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mediaType": {
+      "type": "string",
+      "enum": [
+        "film",
+        "series"
+      ]
+    },
+    "mediaLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "filmYear": {
+      "type": "string"
+    },
+    "director": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "starringLine": {
+      "type": "string",
+      "minLength": 5
+    },
+    "verdictText": {
+      "type": "string",
+      "enum": [
+        "Book Wins",
+        "Film Wins",
+        "Too Close to Call",
+        "Movie Wins"
+      ]
+    },
+    "verdictClass": {
+      "type": "string",
+      "enum": [
+        "verdict-book",
+        "verdict-film",
+        "verdict-tie"
+      ]
+    },
+    "affiliateLink": {
+      "type": "string",
+      "minLength": 1
+    },
+    "affiliateLinkAlt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "videoAffiliateLink": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "youtubeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trailerUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bookCoverImage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "storyBrief": {
+      "type": "string",
+      "minLength": 50
+    },
+    "readFirst": {
+      "type": "string",
+      "minLength": 20
+    },
+    "verdictBox": {
+      "type": "string",
+      "minLength": 20
+    },
     "quickAnswer": {
       "type": "object",
-      "required": ["winner", "readFirst", "oneLineReason"],
+      "required": [
+        "winner",
+        "readFirst",
+        "oneLineReason"
+      ],
       "properties": {
-        "winner":        { "type": "string", "enum": ["Book", "Film", "Series", "Too Close to Call"] },
-        "readFirst":     { "type": "string", "enum": ["Yes", "No", "Either order works"] },
-        "oneLineReason": { "type": "string", "minLength": 5, "maxLength": 200 }
+        "winner": {
+          "type": "string",
+          "enum": [
+            "Book",
+            "Film",
+            "Series",
+            "Too Close to Call"
+          ]
+        },
+        "readFirst": {
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No",
+            "Either order works"
+          ]
+        },
+        "oneLineReason": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 200
+        }
       },
       "additionalProperties": false
     },
-
     "characters": {
-      "type": "array", "minItems": 3, "maxItems": 8,
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 8,
       "items": {
         "type": "object",
-        "required": ["name", "actor", "inBook", "inFilm"],
+        "required": [
+          "name",
+          "actor",
+          "inBook",
+          "inFilm"
+        ],
         "properties": {
-          "name":   { "type": "string", "minLength": 1 },
-          "actor":  { "type": "string", "minLength": 1 },
-          "inBook": { "type": "string", "minLength": 10 },
-          "inFilm": { "type": "string", "minLength": 10 }
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "inBook": {
+            "type": "string",
+            "minLength": 10
+          },
+          "inFilm": {
+            "type": "string",
+            "minLength": 10
+          }
         },
         "additionalProperties": false
       }
     },
-
     "differences": {
-      "type": "array", "minItems": 4, "maxItems": 6,
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
       "items": {
         "type": "object",
-        "required": ["title", "body"],
+        "required": [
+          "title",
+          "body"
+        ],
         "properties": {
-          "title": { "type": "string", "minLength": 5 },
-          "body":  { "type": "string", "minLength": 50 }
+          "title": {
+            "type": "string",
+            "minLength": 5
+          },
+          "body": {
+            "type": "string",
+            "minLength": 50
+          }
         },
         "additionalProperties": false
       }
     },
-
     "faq": {
-      "type": "array", "minItems": 4, "maxItems": 6,
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
       "items": {
         "type": "object",
-        "required": ["question", "answer"],
+        "required": [
+          "question",
+          "answer"
+        ],
         "properties": {
-          "question": { "type": "string", "minLength": 10 },
-          "answer":   { "type": "string", "minLength": 20 }
+          "question": {
+            "type": "string",
+            "minLength": 10
+          },
+          "answer": {
+            "type": "string",
+            "minLength": 20
+          }
         },
         "additionalProperties": false
       }
     },
-
     "related": {
-      "type": "array", "minItems": 3, "maxItems": 3,
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
       "items": {
         "type": "object",
-        "required": ["slug", "title"],
+        "required": [
+          "slug",
+          "title"
+        ],
         "properties": {
-          "slug":  { "type": "string", "pattern": "^[a-z0-9-]+$" },
-          "title": { "type": "string", "minLength": 1 }
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          }
         },
         "additionalProperties": false
       }
     },
-
-    "relatedSectionTitle": { "type": "string", "minLength": 1 },
-    "hasSpoilerWarning":   { "type": "boolean" },
-    "hasQuickAnswer":      { "type": "boolean" },
-    "hasCharTable":        { "type": "boolean" }
+    "relatedSectionTitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hasSpoilerWarning": {
+      "type": "boolean"
+    },
+    "hasQuickAnswer": {
+      "type": "boolean"
+    },
+    "hasCharTable": {
+      "type": "boolean"
+    }
   }
 }

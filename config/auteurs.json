@@ -1,4 +1,5 @@
 {
+  "_destination": "config/auteurs.json",
   "steven-spielberg": {
     "director": "Steven Spielberg",
     "slug": "steven-spielberg",

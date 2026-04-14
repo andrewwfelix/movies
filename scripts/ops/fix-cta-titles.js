@@ -14,6 +14,7 @@
  *   node fix-cta-titles.js
  *   node fix-cta-titles.js --dry    (preview changes without writing)
  *   node fix-cta-titles.js --max 20 (override max title length, default 20)
+ * Destination: scripts/ops/fix-cta-titles.js
  */
 
 const fs   = require('fs');

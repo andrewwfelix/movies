@@ -1,3 +1,4 @@
+// Destination: scripts/ops/check-fields.js
 const path = require('path');
 const r = require(path.resolve(__dirname, '../pipeline/2-revised/the-godfather.json'));
 

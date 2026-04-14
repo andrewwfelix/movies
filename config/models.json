@@ -1,4 +1,5 @@
 {
+  "_destination": "config/models.json",
   "pass1": {
     "model": "anthropic/claude-haiku-4-5",
     "maxTokens": 9000,
