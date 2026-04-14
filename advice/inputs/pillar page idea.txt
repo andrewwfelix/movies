@@ -1,8 +1,4 @@
-review this pillar page idea. Return ONLY a draft of the lonesome dove html page. 
-
-
-
-. Why “Lonesome Dove” is suddenly showing up strongly
+1. Why “Lonesome Dove” is suddenly showing up strongly
 
 You’re seeing multiple variants:
 
