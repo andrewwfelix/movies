@@ -1,0 +1,93 @@
+# BooksVersusMovies.com — Eye of the Tiger: Competitors & Positioning
+====================================================================
+Last updated: April 2026
+
+This is our "motivation + strategy" document. We don't just want to participate in the book-to-screen comparison space — we want to own it.
+
+Our core advantage:
+- Honest, spoiler-heavy, no-sugarcoating verdicts
+- Clear "Book Wins / Film Wins / Too Close to Call" system
+- Structured "Read First" guidance with affiliate intent
+- Scalable pipeline that lets us move faster and deeper than most competitors
+
+### The Competitive Landscape (April 2026)
+
+#### Tier 1 — Direct Competitors (The ones we can realistically beat or surpass)
+- **BookBub Adaptation Lists**  
+  Strength: Very timely roundups, large email audience  
+  Weakness: Shallow, no real verdicts, no "which should I experience first"  
+  Our edge: Depth + opinion + actionable advice
+
+- **Variety / Hollywood Reporter / Deadline**  
+  Strength: Industry scoops, casting news, release dates  
+  Weakness: Almost zero reader-focused comparison or honest opinion  
+  Our edge: We tell readers what actually matters — the verdict
+
+- **Rotten Tomatoes "Most Anticipated Book Adaptations"**  
+  Strength: Hype + critic aggregation  
+  Weakness: No structured side-by-side breakdowns  
+  Our edge: Personal, consistent verdicts people can trust
+
+- **LitHub occasional adaptation pieces**  
+  Strength: Literary credibility  
+  Weakness: Sporadic, not structured, not scalable  
+  Our edge: Consistent format + volume
+
+#### Tier 2 — Broader Entertainment Sites
+- Collider, ScreenRant, IGN  
+  They treat adaptations as news, rarely do deep comparisons.
+
+- Goodreads user lists ("Best Book to Movie Adaptations")  
+  High traffic but chaotic and low quality.
+
+#### The Gap We Own
+Almost no one combines:
+- Consistent opinionated verdicts
+- Clear "Read First" guidance
+- Scalable depth across 160+ titles (and growing fast)
+- Affiliate conversion focus
+
+We are becoming **the definitive hub** for "Should I read the book before watching?"
+
+### Our Positioning Statement
+"The smartest, most honest resource for readers who watch (and viewers who read).  
+We don’t hedge. We don’t sugarcoat. We tell you which version is actually better — and why."
+
+### Eye of the Tiger Goals (What "Winning" Looks Like)
+
+**Short-term (Next 3–6 months)**
+- Become the #1 result for "[title] book vs movie which is better" on major 2026 titles
+- Publish the most useful "2026 Adaptations Guide" with real verdicts (not just lists)
+- Out-engage BookBub and Variety on timely adaptation content
+- Get mentioned in at least one major outlet (NYT, BookRiot, LitHub) as the comparison site
+
+**Medium-term (6–12 months)**
+- 300+ structured comparisons live
+- "Verdicts" tab becomes a destination page people bookmark
+- Consistent monthly affiliate revenue
+- Recognized as the go-to authority for book-to-screen decisions
+
+**Long-term (Year 2+)**
+- Dominate the niche the way Wirecutter owns product reviews or The Ringer owns sports podcasts
+- Become the site people check first whenever a new adaptation is announced
+
+### How We Win
+1. Speed + Depth — Use our greenfield pipeline to publish high-quality pages faster than anyone else.
+2. Honesty — Double down on our no-BS voice. People are tired of hedged, generic takes.
+3. Utility — Always answer the real question: "What should I experience first?"
+4. Timeliness — Strike while hype is building (not months after release).
+
+### One-Line War Cry
+We don’t compete with listicles.  
+We replace them.
+
+---
+
+Add this file to your project and link to it from README.md if you want.
+
+Would you like me to:
+- Add a short section to your main README.md that references this new document?
+- Expand any part of this (e.g. more specific metrics, quarterly targets, or a simple tracking table)?
+- Or tweak the tone to make it more aggressive/motivational?
+
+Just say the word and I'll deliver the updated version.

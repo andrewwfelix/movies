@@ -1,0 +1,67 @@
+{
+  "name": "Upcoming Adaptations Sources",
+  "lastUpdated": "2026-04-14",
+  "instructions": "Cross-reference at least 3 sources per title. Prefer Deadline and Hollywood Reporter for confirmed dates. Use Publishers Weekly and Goodreads for titles not yet covered by entertainment press.",
+  "sources": [
+    {
+      "name": "Deadline",
+      "url": "https://deadline.com/feature/book-to-movie-adaptations-1236035322/",
+      "type": "primary",
+      "focus": "Confirmed theatrical release dates, studio deals, production news"
+    },
+    {
+      "name": "Hollywood Reporter",
+      "url": "https://www.hollywoodreporter.com/lists/movies-tv-shows-based-books-2026/",
+      "type": "primary",
+      "focus": "Curated list with casting, directors, and streamer acquisitions"
+    },
+    {
+      "name": "Rotten Tomatoes",
+      "url": "https://editorial.rottentomatoes.com/article/the-most-anticipated-book-to-movie-adpatations-of-2025-2026/",
+      "type": "primary",
+      "focus": "Critic and audience anticipation, hype levels, most-watched trailers"
+    },
+    {
+      "name": "BookBub",
+      "url": "https://www.bookbub.com/blog/movie-tv-book-adaptation-2026",
+      "type": "primary",
+      "focus": "Reader-community perspective, mid-tier and romance titles often missed elsewhere"
+    },
+    {
+      "name": "Collider",
+      "url": "https://collider.com/tag/book-adaptation/",
+      "type": "secondary",
+      "focus": "Genre fiction, sci-fi, fantasy, horror adaptations with detailed production coverage"
+    },
+    {
+      "name": "Entertainment Weekly",
+      "url": "https://ew.com/tag/book-adaptation/",
+      "type": "secondary",
+      "focus": "Casting announcements, first looks, streaming debut dates"
+    },
+    {
+      "name": "Vulture",
+      "url": "https://www.vulture.com/article/best-book-adaptations-2026.html",
+      "type": "secondary",
+      "focus": "Prestige TV adaptations, literary fiction, New York Magazine cultural commentary"
+    },
+    {
+      "name": "Publishers Weekly",
+      "url": "https://www.publishersweekly.com/pw/by-topic/industry-news/film-and-tv/index.html",
+      "type": "secondary",
+      "focus": "Trade publication — catches adaptation deals before entertainment press, option announcements"
+    },
+    {
+      "name": "Screen Rant",
+      "url": "https://screenrant.com/tag/book-adaptation/",
+      "type": "secondary",
+      "focus": "Comprehensive coverage including international productions and smaller streamers"
+    },
+    {
+      "name": "Wikipedia 2026 Films",
+      "url": "https://en.wikipedia.org/wiki/List_of_American_films_of_2026",
+      "type": "secondary",
+      "focus": "Most complete and well-maintained list of confirmed releases with dates — use as completeness check"
+    }
+  ]
+}

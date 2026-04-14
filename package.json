@@ -4,6 +4,7 @@
     "ajv": "^8.18.0",
     "cheerio": "^1.2.0",
     "csv-parse": "^6.2.1",
-    "jsonrepair": "^3.13.3"
+    "jsonrepair": "^3.13.3",
+    "pdfkit": "^0.18.0"
   }
 }

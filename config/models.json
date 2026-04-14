@@ -22,6 +22,38 @@
     "maxTokens": 9000,
     "temperature": 0.5,
     "notes": "Full review generation — voice matters most here. Use the better model."
+  },
+  "guide": {
+    "notes": "Three models run in parallel for aggregation. Claude then runs a single editorial pass to improve notes quality before render. If any model fails its results are excluded and the pipeline continues with the others.",
+    "aggregators": [
+      {
+        "id": "grok",
+        "model": "x-ai/grok-3",
+        "maxTokens": 8000,
+        "temperature": 0.3,
+        "notes": "Primary. Best live web search for entertainment news, release dates, casting."
+      },
+      {
+        "id": "perplexity",
+        "model": "perplexity/sonar-pro",
+        "maxTokens": 8000,
+        "temperature": 0.3,
+        "notes": "Real-time web search with citations. Strong at comprehensive research tasks."
+      },
+      {
+        "id": "gemini",
+        "model": "google/gemini-2.5-pro",
+        "maxTokens": 8000,
+        "temperature": 0.3,
+        "notes": "Catches prestige, international, and streaming titles. Strong on Google-indexed sources."
+      },
+      {
+        "id": "editorial",
+        "model": "anthropic/claude-sonnet-4-5",
+        "maxTokens": 12000,
+        "temperature": 0.4,
+        "notes": "Final editorial pass. Reviews and rewrites weak or generic notes fields. Non-fatal — falls back to unedited if it fails."
+      }
+    ]
   }
 }
-

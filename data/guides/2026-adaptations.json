@@ -1,0 +1,68 @@
+[
+  {
+    "bookTitle": "The Nightingale",
+    "author": "Kristin Hannah",
+    "slug": "the-nightingale",
+    "expectedRelease": "January 24, 2026",
+    "adaptationType": "film",
+    "studioOrStreamer": "Sony Pictures",
+    "keyCast": "Dakota Fanning, Elle Fanning",
+    "hypeLevel": 3,
+    "notes": "This WWII drama has been highly anticipated for years due to the bestselling novel's emotional depth and the star power of the Fanning sisters."
+  },
+  {
+    "bookTitle": "Project Hail Mary",
+    "author": "Andy Weir",
+    "slug": "project-hail-mary",
+    "expectedRelease": "March 20, 2026",
+    "adaptationType": "film",
+    "studioOrStreamer": "MGM",
+    "keyCast": "Ryan Gosling",
+    "hypeLevel": 3,
+    "notes": "Following the success of 'The Martian,' Weir's latest sci-fi novel gets a big-budget adaptation with Gosling in the lead."
+  },
+  {
+    "bookTitle": "The Thursday Murder Club",
+    "author": "Richard Osman",
+    "slug": "the-thursday-murder-club",
+    "expectedRelease": "Expected Q2 2026",
+    "adaptationType": "film",
+    "studioOrStreamer": "Netflix",
+    "keyCast": "Helen Mirren, Pierce Brosnan",
+    "hypeLevel": 2,
+    "notes": "This adaptation of the popular cozy mystery novel brings a stellar cast to a story of retirees solving crimes."
+  },
+  {
+    "bookTitle": "Red, White & Royal Blue 2",
+    "author": "Casey McQuiston",
+    "slug": "red-white-royal-blue-2",
+    "expectedRelease": "Expected Q3 2026",
+    "adaptationType": "film",
+    "studioOrStreamer": "Amazon Prime Video",
+    "keyCast": "Taylor Zakhar Perez, Nicholas Galitzine",
+    "hypeLevel": 2,
+    "notes": "A sequel to the hit rom-com adaptation, capitalizing on the original film's massive streaming success."
+  },
+  {
+    "bookTitle": "The Housemaid",
+    "author": "Freida McFadden",
+    "slug": "the-housemaid",
+    "expectedRelease": "Expected Q4 2026",
+    "adaptationType": "film",
+    "studioOrStreamer": "Lionsgate",
+    "keyCast": "",
+    "hypeLevel": 2,
+    "notes": "This psychological thriller novel, a TikTok sensation, is expected to draw significant attention with its twisty plot."
+  },
+  {
+    "bookTitle": "Wool",
+    "author": "Hugh Howey",
+    "slug": "wool",
+    "expectedRelease": "TBA",
+    "adaptationType": "series",
+    "studioOrStreamer": "Apple TV+",
+    "keyCast": "Rebecca Ferguson, Tim Robbins",
+    "hypeLevel": 3,
+    "notes": "This dystopian sci-fi series adaptation has generated buzz for its expansive world-building and strong cast."
+  }
+]
