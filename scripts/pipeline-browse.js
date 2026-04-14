@@ -147,7 +147,7 @@ function renderPage(records) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book vs Movie Comparisons — BooksVersusMovies.com</title>
-  <meta name="description" content="${counts.total} honest book vs film comparisons. We pick a winner every time — no both-sides hedging. Find out which version is worth your time.">
+  <meta name="description" content="${counts.total} honest book vs movie comparisons — spoilers included, clear verdicts, and an honest answer on whether to read first. No hedging.">
   <link rel="canonical" href="${SITE_URL}/">
   <link rel="stylesheet" href="css/style.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
@@ -163,7 +163,7 @@ function renderPage(records) {
     "@type": "WebSite",
     "name": "BooksVersusMovies.com",
     "url": "${SITE_URL}",
-    "description": "Honest book vs film comparisons with clear verdicts.",
+    "description": "Honest book vs movie comparisons with clear verdicts — spoilers included, read-first advice on every page.",
     "potentialAction": { "@type": "SearchAction", "target": "${SITE_URL}/?q={search_term_string}", "query-input": "required name=search_term_string" }
   }
   </script>
@@ -243,8 +243,6 @@ function renderPage(records) {
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
       <a href="/">Home</a> &nbsp;&middot;&nbsp;
-      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
-      <a href="/spotlight-lonesome-dove">Featured</a> &nbsp;&middot;&nbsp;
       <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
       <a href="/about">About</a>
     </nav>
@@ -252,7 +250,7 @@ function renderPage(records) {
 </header>
 
 <div class="browse-hero">
-  <h1>Book or Movie?<br><em>We Pick a Winner.</em></h1>
+  <h1>Book vs Movie<br><em>We Pick a Winner Every Time.</em></h1>
   <p class="tagline">Read it or watch it. We'll tell you which comes first — and why the other version falls short.</p>
   <div class="browse-stats">
     <div class="browse-stat"><strong>${counts.total}</strong>comparisons</div>
