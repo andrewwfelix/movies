@@ -1,0 +1,1011 @@
+# netlify.toml
+# BooksVersusMovies.com — Netlify configuration
+# ================================================
+
+# ── Pretty URLs ───────────────────────────────────────────────
+# Serves /slug instead of /slug.html
+# This should already be on by default but making it explicit
+
+[build]
+  publish = "."
+
+# ── Redirects ─────────────────────────────────────────────────
+# 301 redirects from .html URLs to clean URLs
+# Consolidates SEO authority onto the canonical clean URL
+# Add new entries here as pages are created
+
+[[redirects]]
+  from   = "/reminders-of-him.html"
+  to     = "/reminders-of-him"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/verity.html"
+  to     = "/verity"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-fault-in-our-stars.html"
+  to     = "/the-fault-in-our-stars"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/animal-farm.html"
+  to     = "/animal-farm"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/lonesome-dove.html"
+  to     = "/lonesome-dove"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/a-beautiful-mind.html"
+  to     = "/a-beautiful-mind"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/a-knight-of-the-seven-kingdoms.html"
+  to     = "/a-knight-of-the-seven-kingdoms"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/a-little-life.html"
+  to     = "/a-little-life"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/a-man-called-ove.html"
+  to     = "/a-man-called-ove"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/a-walk-to-remember.html"
+  to     = "/a-walk-to-remember"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/about-a-boy.html"
+  to     = "/about-a-boy"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/all-quiet-on-the-western-front.html"
+  to     = "/all-quiet-on-the-western-front"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/all-the-light-we-cannot-see.html"
+  to     = "/all-the-light-we-cannot-see"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/along-came-a-spider.html"
+  to     = "/along-came-a-spider"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/american-gods.html"
+  to     = "/american-gods"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/american-psycho.html"
+  to     = "/american-psycho"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/annihilation.html"
+  to     = "/annihilation"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/atonement.html"
+  to     = "/atonement"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/band-of-brothers.html"
+  to     = "/band-of-brothers"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/beloved.html"
+  to     = "/beloved"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/big-fish.html"
+  to     = "/big-fish"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/big-little-lies-hbo.html"
+  to     = "/big-little-lies-hbo"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/breakfast-at-tiffanys.html"
+  to     = "/breakfast-at-tiffanys"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/bridgerton.html"
+  to     = "/bridgerton"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/brooklyn.html"
+  to     = "/brooklyn"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/catch-22.html"
+  to     = "/catch-22"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/catch-me-if-you-can.html"
+  to     = "/catch-me-if-you-can"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/cold-mountain.html"
+  to     = "/cold-mountain"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/contact.html"
+  to     = "/contact"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/da-vinci-code.html"
+  to     = "/da-vinci-code"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/daisy-jones-and-the-six.html"
+  to     = "/daisy-jones-and-the-six"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/dark-matter.html"
+  to     = "/dark-matter"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/devil-wears-prada.html"
+  to     = "/devil-wears-prada"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/divergent.html"
+  to     = "/divergent"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/doctor-sleep.html"
+  to     = "/doctor-sleep"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/dracula.html"
+  to     = "/dracula"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/dune.html"
+  to     = "/dune"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/eat-pray-love.html"
+  to     = "/eat-pray-love"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/enders-game.html"
+  to     = "/enders-game"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/enders-game-film.html"
+  to     = "/enders-game-film"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/english-patient.html"
+  to     = "/english-patient"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/everything-everything.html"
+  to     = "/everything-everything"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/fight-club.html"
+  to     = "/fight-club"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/five-feet-apart.html"
+  to     = "/five-feet-apart"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/fourth-wing.html"
+  to     = "/fourth-wing"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/frankenstein.html"
+  to     = "/frankenstein"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/geralds-game.html"
+  to     = "/geralds-game"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/ghost-world.html"
+  to     = "/ghost-world"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/girl-on-the-train.html"
+  to     = "/girl-on-the-train"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/girl-with-the-dragon-tattoo.html"
+  to     = "/girl-with-the-dragon-tattoo"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/gone-girl.html"
+  to     = "/gone-girl"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/good-omens.html"
+  to     = "/good-omens"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/hamnet.html"
+  to     = "/hamnet"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/hannibal-series.html"
+  to     = "/hannibal-series"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/heated-rivalry.html"
+  to     = "/heated-rivalry"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/high-fidelity.html"
+  to     = "/high-fidelity"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/hillbilly-elegy.html"
+  to     = "/hillbilly-elegy"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/hitchhikers-guide.html"
+  to     = "/hitchhikers-guide"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/howls-moving-castle.html"
+  to     = "/howls-moving-castle"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/hunger-games-sunrise.html"
+  to     = "/hunger-games-sunrise"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/i-am-legend.html"
+  to     = "/i-am-legend"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/i-robot.html"
+  to     = "/i-robot"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/interview-with-the-vampire-amcplus.html"
+  to     = "/interview-with-the-vampire-amcplus"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/into-the-wild.html"
+  to     = "/into-the-wild"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/it-ends-with-us.html"
+  to     = "/it-ends-with-us"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/it-muschietti.html"
+  to     = "/it-muschietti"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/jane-eyre.html"
+  to     = "/jane-eyre"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/jurassic-park.html"
+  to     = "/jurassic-park"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/kite-runner.html"
+  to     = "/kite-runner"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/la-confidential.html"
+  to     = "/la-confidential"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/les-miserables.html"
+  to     = "/les-miserables"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/little-women.html"
+  to     = "/little-women"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/looking-for-alaska.html"
+  to     = "/looking-for-alaska"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/lord-of-the-flies.html"
+  to     = "/lord-of-the-flies"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/love-simon.html"
+  to     = "/love-simon"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/margos-got-money-troubles.html"
+  to     = "/margos-got-money-troubles"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/me-before-you.html"
+  to     = "/me-before-you"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/mickey-17.html"
+  to     = "/mickey-17"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/misery.html"
+  to     = "/misery"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/my-brilliant-friend.html"
+  to     = "/my-brilliant-friend"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/my-sisters-keeper.html"
+  to     = "/my-sisters-keeper"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/narnia-magicians-nephew.html"
+  to     = "/narnia-magicians-nephew"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/never-let-me-go.html"
+  to     = "/never-let-me-go"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/normal-people.html"
+  to     = "/normal-people"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/of-mice-and-men.html"
+  to     = "/of-mice-and-men"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/olive-kitteridge.html"
+  to     = "/olive-kitteridge"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/on-the-road.html"
+  to     = "/on-the-road"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/one-day.html"
+  to     = "/one-day"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/one-flew-over-the-cuckoos-nest.html"
+  to     = "/one-flew-over-the-cuckoos-nest"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/outlander.html"
+  to     = "/outlander"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/pachinko.html"
+  to     = "/pachinko"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/people-we-meet-on-vacation.html"
+  to     = "/people-we-meet-on-vacation"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/perks-of-being-a-wallflower.html"
+  to     = "/perks-of-being-a-wallflower"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/pet-sematary-2019.html"
+  to     = "/pet-sematary-2019"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/presumed-innocent.html"
+  to     = "/presumed-innocent"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/pride-and-prejudice.html"
+  to     = "/pride-and-prejudice"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/project-hail-mary.html"
+  to     = "/project-hail-mary"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/ready-player-one.html"
+  to     = "/ready-player-one"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/rebecca.html"
+  to     = "/rebecca"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/remains-of-the-day.html"
+  to     = "/remains-of-the-day"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/remarkably-bright-creatures.html"
+  to     = "/remarkably-bright-creatures"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/room.html"
+  to     = "/room"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/roots-2016.html"
+  to     = "/roots-2016"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/rosemarys-baby.html"
+  to     = "/rosemarys-baby"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/schindlers-list.html"
+  to     = "/schindlers-list"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/seabiscuit.html"
+  to     = "/seabiscuit"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/sense-and-sensibility.html"
+  to     = "/sense-and-sensibility"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/shadow-and-bone.html"
+  to     = "/shadow-and-bone"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/sharp-objects.html"
+  to     = "/sharp-objects"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/shogun-2024.html"
+  to     = "/shogun-2024"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/silence-of-the-lambs.html"
+  to     = "/silence-of-the-lambs"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/sophies-choice.html"
+  to     = "/sophies-choice"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/sphere.html"
+  to     = "/sphere"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/stardust.html"
+  to     = "/stardust"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/station-eleven.html"
+  to     = "/station-eleven"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/talented-mr-ripley.html"
+  to     = "/talented-mr-ripley"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-book-thief.html"
+  to     = "/the-book-thief"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-client.html"
+  to     = "/the-client"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-color-purple.html"
+  to     = "/the-color-purple"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-count-of-monte-cristo.html"
+  to     = "/the-count-of-monte-cristo"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-electric-state.html"
+  to     = "/the-electric-state"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-fault-in-our-stars.html"
+  to     = "/the-fault-in-our-stars"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-firm.html"
+  to     = "/the-firm"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-girl-with-the-dragon-tattoo-fincher.html"
+  to     = "/the-girl-with-the-dragon-tattoo-fincher"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-giver.html"
+  to     = "/the-giver"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-glass-castle.html"
+  to     = "/the-glass-castle"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-godfather.html"
+  to     = "/the-godfather"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-great-gatsby.html"
+  to     = "/the-great-gatsby"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-handmaids-tale.html"
+  to     = "/the-handmaids-tale"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-haunting-of-hill-house.html"
+  to     = "/the-haunting-of-hill-house"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-help.html"
+  to     = "/the-help"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-hours.html"
+  to     = "/the-hours"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-housemaid.html"
+  to     = "/the-housemaid"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-lincoln-lawyer.html"
+  to     = "/the-lincoln-lawyer"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-longest-ride.html"
+  to     = "/the-longest-ride"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-lovely-bones.html"
+  to     = "/the-lovely-bones"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-martian.html"
+  to     = "/the-martian"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-maze-runner-film.html"
+  to     = "/the-maze-runner-film"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-notebook.html"
+  to     = "/the-notebook"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-odyssey.html"
+  to     = "/the-odyssey"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-outsider.html"
+  to     = "/the-outsider"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-outsiders.html"
+  to     = "/the-outsiders"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-pelican-brief.html"
+  to     = "/the-pelican-brief"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-pianist.html"
+  to     = "/the-pianist"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-picture-of-dorian-gray.html"
+  to     = "/the-picture-of-dorian-gray"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-pillars-of-the-earth.html"
+  to     = "/the-pillars-of-the-earth"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-princess-bride.html"
+  to     = "/the-princess-bride"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-road.html"
+  to     = "/the-road"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-secret-garden.html"
+  to     = "/the-secret-garden"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-secret-life-of-bees.html"
+  to     = "/the-secret-life-of-bees"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-shining.html"
+  to     = "/the-shining"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-sisterhood-of-the-traveling-pants.html"
+  to     = "/the-sisterhood-of-the-traveling-pants"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-three-body-problem.html"
+  to     = "/the-three-body-problem"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-thursday-murder-club.html"
+  to     = "/the-thursday-murder-club"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-time-travelers-wife.html"
+  to     = "/the-time-travelers-wife"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-witcher.html"
+  to     = "/the-witcher"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-woman-in-the-window.html"
+  to     = "/the-woman-in-the-window"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/thirteen-reasons-why.html"
+  to     = "/thirteen-reasons-why"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/to-kill-a-mockingbird.html"
+  to     = "/to-kill-a-mockingbird"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/water-for-elephants.html"
+  to     = "/water-for-elephants"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/where-the-crawdads-sing.html"
+  to     = "/where-the-crawdads-sing"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/white-noise.html"
+  to     = "/white-noise"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/wolf-hall.html"
+  to     = "/wolf-hall"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/world-war-z.html"
+  to     = "/world-war-z"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/wuthering-heights.html"
+  to     = "/wuthering-heights"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-maze-runner.html"
+  to     = "/the-maze-runner-film"
+  status = 301
+  force  = true
