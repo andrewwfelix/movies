@@ -1,0 +1,209 @@
+#!/usr/bin/env node
+
+/**
+ * generate-review.js (REFACTORED)
+ * BooksVersusMovies.com — hardened pipeline generator
+ *
+ * ⚠️ ChatGPT Refactor Notes:
+ * This version introduces:
+ *   - Centralized LLM call wrapper with retries + validation loop
+ *   - Schema-aware regeneration (not just fail-fast)
+ *   - Stronger JSON parsing + cleanup
+ *   - Stage isolation (each step becomes deterministic + resumable)
+ *   - Reduced “abort early” fragility
+ *
+ * Philosophy shift:
+ *   OLD → "fail if anything breaks"
+ *   NEW → "repair, retry, then fail"
+ */
+
+const fs = require('fs');
+const path = require('path');
+const https = require('https');
+const { jsonrepair } = require('jsonrepair');
+const { validateRecord } = require('./validate-json-schema');
+
+const ROOT = path.resolve(__dirname, '..');
+const MODELS_PATH = path.join(ROOT, 'config', 'models.json');
+
+const SLUG = process.argv.includes('--slug')
+  ? process.argv[process.argv.indexOf('--slug') + 1]
+  : null;
+
+if (!SLUG) {
+  console.error('✗ Missing --slug');
+  process.exit(1);
+}
+
+// ─────────────────────────────────────────────────────────────
+// 🔥 HARDENED LLM WRAPPER
+// ─────────────────────────────────────────────────────────────
+
+async function callLLM({ model, system, user, maxTokens = 4000 }) {
+  const body = JSON.stringify({
+    model,
+    max_tokens: maxTokens,
+    temperature: 0.3,
+    messages: [
+      { role: 'system', content: system },
+      { role: 'user', content: user }
+    ]
+  });
+
+  return new Promise((resolve, reject) => {
+    const req = https.request({
+      hostname: 'openrouter.ai',
+      path: '/api/v1/chat/completions',
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
+        'Content-Type': 'application/json'
+      }
+    }, res => {
+      let data = '';
+      res.on('data', d => data += d);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          resolve(parsed.choices?.[0]?.message?.content || '');
+        } catch (e) {
+          reject(e);
+        }
+      });
+    });
+
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+// ─────────────────────────────────────────────────────────────
+// 🧠 JSON SAFE CALL (CORE IMPROVEMENT)
+// ─────────────────────────────────────────────────────────────
+
+async function callLLMJSON({
+  model,
+  prompt,
+  input,
+  validate,
+  maxRetries = 3
+}) {
+  let lastError;
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const strictPrompt = `
+${prompt}
+
+CRITICAL:
+- Return ONLY valid JSON
+- No markdown
+- No explanation
+- Must pass schema validation
+`;
+
+      const raw = await callLLM({
+        model,
+        system: strictPrompt,
+        user: input
+      });
+
+      const cleaned = raw
+        .replace(/```json/g, '')
+        .replace(/```/g, '')
+        .trim();
+
+      const parsed = JSON.parse(jsonrepair(cleaned));
+
+      if (validate) {
+        const result = validate(parsed);
+        if (!result.valid) {
+          throw new Error(
+            'Schema failed: ' + result.errors.join(', ')
+          );
+        }
+      }
+
+      return parsed;
+
+    } catch (err) {
+      lastError = err;
+
+      console.log(`  ↺ retry ${attempt}/${maxRetries}...`);
+
+      // 🔥 IMPORTANT: feed failure back into model
+      input += `
+
+Previous output failed:
+${err.message}
+
+Fix and return valid JSON only.
+`;
+    }
+  }
+
+  throw new Error(`LLM JSON failed: ${lastError.message}`);
+}
+
+// ─────────────────────────────────────────────────────────────
+// 📦 LOAD MODELS
+// ─────────────────────────────────────────────────────────────
+
+function loadModels() {
+  const cfg = JSON.parse(fs.readFileSync(MODELS_PATH, 'utf8'));
+  return {
+    stage1: cfg.pass1.model,
+    stage2: cfg.greenfield.model
+  };
+}
+
+// ─────────────────────────────────────────────────────────────
+// 🚀 MAIN PIPELINE
+// ─────────────────────────────────────────────────────────────
+
+async function run() {
+  const models = loadModels();
+
+  const inputPath = path.join(ROOT, 'data', 'greenfield', 'inputs', `${SLUG}.json`);
+  const stage1Path = path.join(ROOT, 'data', 'greenfield', 'stage1', `${SLUG}.json`);
+  const stage2Path = path.join(ROOT, 'data', 'greenfield', 'stage2', `${SLUG}.json`);
+
+  if (!fs.existsSync(inputPath)) {
+    throw new Error(`Missing input: ${inputPath}`);
+  }
+
+  const input = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
+
+  console.log('\n━━ Stage 1: Extraction ━━');
+
+  const stage1 = await callLLMJSON({
+    model: models.stage1,
+    prompt: fs.readFileSync(path.join(ROOT, 'scripts/prompts/greenfield-stage1.txt'), 'utf8'),
+    input: JSON.stringify(input),
+  });
+
+  fs.writeFileSync(stage1Path, JSON.stringify(stage1, null, 2));
+
+  console.log('✓ Stage 1 complete');
+
+  console.log('\n━━ Stage 2: Generation ━━');
+
+  const stage2 = await callLLMJSON({
+    model: models.stage2,
+    prompt: fs.readFileSync(path.join(ROOT, 'scripts/prompts/greenfield-stage2.txt'), 'utf8'),
+    input: JSON.stringify(stage1),
+    validate: (data) => validateRecord(data, 'revised')
+  });
+
+  fs.writeFileSync(stage2Path, JSON.stringify(stage2, null, 2));
+
+  console.log('✓ Stage 2 complete');
+
+  console.log('\n🎉 DONE');
+}
+
+run().catch(err => {
+  console.error('\nFATAL:', err.message);
+  process.exit(1);
+});

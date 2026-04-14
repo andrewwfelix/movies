@@ -1,0 +1,1 @@
+i think this should contain text based kanboard with steps for the week incluing technical roadmap, product roadmap, etc. 
