@@ -449,8 +449,8 @@ function renderHTML(data) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upcoming Book-to-Screen Adaptations — BooksVersusMovies.com</title>
-  <meta name="description" content="Every upcoming book-to-screen adaptation — films, series, release dates, cast, and our honest read-first verdict where we've covered it.">
+  <title>Upcoming Book vs Movie Adaptations 2026 — BooksVersusMovies.com</title>
+  <meta name="description" content="Every upcoming book vs movie adaptation in 2026 — confirmed release dates, cast, and our honest read-first verdict where we've already covered it.">
   <link rel="canonical" href="${SITE_URL}/upcoming-adaptations">
   <link rel="stylesheet" href="css/style.css">
   <style>
@@ -636,7 +636,6 @@ function renderHTML(data) {
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
       <a href="/">Home</a> &nbsp;&middot;&nbsp;
-      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
       <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
       <a href="/about">About</a>
     </nav>
@@ -644,7 +643,7 @@ function renderHTML(data) {
 </header>
 
 <div class="guide-hero">
-  <h1>Upcoming Book-to-Screen Adaptations</h1>
+  <h1>Upcoming Book vs Movie Adaptations</h1>
   <p class="guide-updated">Updated ${UPDATED_LABEL}</p>
   <p class="guide-subtitle">What&rsquo;s coming to screens &mdash; past releases automatically removed.</p>
   <div class="guide-stats">
