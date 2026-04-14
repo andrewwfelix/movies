@@ -27,7 +27,7 @@
 
 const fs               = require('fs');
 const path             = require('path');
-const { createLogger } = require('./logger');
+const { createLogger } = require('./utils/logger');
 
 // ── CLI ───────────────────────────────────────────────────────────────────────
 

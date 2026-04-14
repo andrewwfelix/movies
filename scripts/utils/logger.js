@@ -25,7 +25,7 @@
 const fs   = require('fs');
 const path = require('path');
 
-const LOGS_DIR = path.resolve(__dirname, '../logs');
+const LOGS_DIR = path.resolve(__dirname, '../../logs');
 
 function createLogger(scriptName) {
   // Ensure logs directory exists

@@ -33,7 +33,7 @@
 
 const fs    = require('fs');
 const { jsonrepair } = require('jsonrepair');
-const { validateRecord } = require('./validate-json-schema');
+const { validateRecord } = require('./utils/validate-json-schema');
 const path  = require('path');
 const https = require('https');
 

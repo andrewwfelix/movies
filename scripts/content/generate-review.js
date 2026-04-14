@@ -38,7 +38,7 @@ const path    = require('path');
 const https   = require('https');
 const readline = require('readline');
 const { jsonrepair } = require('jsonrepair');
-const { validateRecord } = require('./validate-json-schema');
+const { validateRecord } = require('../utils/validate-json-schema');
 
 const args    = process.argv.slice(2);
 const get     = (flag, fallback) => { const i = args.indexOf(flag); return i !== -1 && args[i+1] ? args[i+1] : fallback; };
