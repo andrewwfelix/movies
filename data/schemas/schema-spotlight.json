@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BooksVersusMovies Feature Page",
+  "type": "object",
+  "required": [
+    "slug", "featureType", "pageTitle", "metaDesc", "h1",
+    "intro", "quickFacts", "sections", "verdict", "faq",
+    "relatedSlugs", "lastUpdated"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "slug":        { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "featureType": { "type": "string", "enum": ["book", "series", "universe"] },
+    "pageTitle":   { "type": "string", "minLength": 10, "maxLength": 70 },
+    "metaDesc":    { "type": "string", "minLength": 50, "maxLength": 160 },
+    "h1":          { "type": "string", "minLength": 5 },
+    "intro":       { "type": "string", "minLength": 200 },
+    "lastUpdated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+
+    "quickFacts": {
+      "type": "object",
+      "required": ["author", "published", "genre", "setting", "adaptations", "isBasedOnTrueStory"],
+      "additionalProperties": false,
+      "properties": {
+        "author":              { "type": "string" },
+        "published":           { "type": "string" },
+        "genre":               { "type": "string" },
+        "setting":             { "type": "string" },
+        "adaptations":         { "type": "string" },
+        "isBasedOnTrueStory":  { "type": "string" }
+      }
+    },
+
+    "sections": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "heading", "body"],
+        "additionalProperties": false,
+        "properties": {
+          "id":      { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "heading": { "type": "string", "minLength": 3 },
+          "body":    { "type": "string", "minLength": 100 }
+        }
+      }
+    },
+
+    "verdict": {
+      "type": "object",
+      "required": ["readFirst", "oneLineReason", "verdictBody"],
+      "additionalProperties": false,
+      "properties": {
+        "readFirst":     { "type": "string", "enum": ["Yes", "No", "Either"] },
+        "oneLineReason": { "type": "string", "minLength": 20 },
+        "verdictBody":   { "type": "string", "minLength": 100 }
+      }
+    },
+
+    "faq": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["question", "answer"],
+        "additionalProperties": false,
+        "properties": {
+          "question": { "type": "string" },
+          "answer":   { "type": "string", "minLength": 50 }
+        }
+      }
+    },
+
+    "relatedSlugs": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 6,
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    }
+  }
+}
