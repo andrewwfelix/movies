@@ -243,6 +243,7 @@ function renderPage(records) {
     <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
     <nav>
       <a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
       <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
       <a href="/about">About</a>
     </nav>
