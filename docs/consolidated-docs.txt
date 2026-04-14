@@ -18,6 +18,89 @@ Return the outputs of model 1, model 2, then the editorial comments of model 3.
 
 while in demo mode, keep all responses to under 1 paragraph long, maybe have a prod mode for stage 3
 
+===== Other LLM Advice\chatgpt-advice.txt =====
+
+CHATGPT ADVICE FOR BOOKSVERSUSMOVIES.COM
+
+First Impression You have built a strong niche site centered around book
+vs movie comparisons with a podcast-driven content model. This is a
+solid and evergreen concept with high engagement potential.
+
+What You’re Doing Well 1. Clear niche: Book vs movie comparisons are
+inherently engaging and debate-driven. 2. Podcast foundation: Recurring
+structured content builds audience loyalty. 3. Strong concept: The
+format naturally encourages discussion and sharing.
+
+Where You Can Improve
+
+1.  SEO Optimization (Biggest Opportunity)
+
+-   Shift from episode-based titles to search-based titles.
+-   Example: Instead of: “Episode 61 – The Bishop’s Wife” Use: “The
+    Bishop’s Wife: Book vs Movie – Which Is Better?”
+
+2.  Content Atomization Each podcast episode should generate multiple
+    pieces of content:
+
+-   Full comparison article
+-   “Top differences” post
+-   Ending explanation
+-   Short-form clips (TikTok, Reels)
+-   Social media quotes
+
+3.  Monetization Add affiliate links:
+
+-   “Buy the book” (Amazon)
+-   “Watch the movie” (streaming)
+-   “Listen on Audible”
+
+4.  Brand Positioning Move from: “A podcast about books vs movies”
+
+To something stronger like: “The internet’s verdict on book-to-movie
+adaptations”
+
+5.  User Experience Add browsing paths:
+
+-   By genre
+-   By decade
+-   Most controversial matchups
+
+What I Would Do Next
+
+1.  Build SEO Landing Pages
+
+-   “Top 50 Book vs Movie Adaptations”
+-   “[Title] Book vs Movie Comparison”
+-   “[Title] Differences Explained”
+
+2.  Standardize Article Format
+
+-   Overview
+-   Key differences
+-   What the movie changed
+-   What the book did better
+-   Final verdict
+
+3.  Add a Scoring System Example: Story, Characters, Pacing, Overall
+    Score
+
+4.  Lean Into Controversy
+
+-   “Movies Better Than the Book”
+-   “Worst Adaptations Ever”
+-   “Most Faithful Adaptations”
+
+Big Picture Verdict You currently have: - A strong niche - A repeatable
+content engine - Evergreen subject matter
+
+But you are missing: - SEO traffic strategy - Monetization structure -
+Platform-level thinking
+
+Final Thought Right now this is: “A good podcast with a website”
+
+It could become: “The definitive platform for book vs movie comparisons”
+
+
 ===== Other LLM Advice\gemini.txt =====
 
 After reviewing the fresh scrape of BooksVersusMovies.com, it’s clear the site has an incredible amount of "Review Real Estate"—you have dozens of high-quality comparisons already live. However, because the list is so extensive, the user's biggest hurdle right now is information density.
@@ -417,6 +500,35 @@ Top 5 on-page SEO fixes for my site
 How to improve readability and headings for better rankings
 
 Free tools to check my site's technical SEO issues
+
+===== Other LLM Advice\perplexity-set-revised.txt =====
+
+1. Deploy the quick-answer-above-hero fix (highest ROI)
+text
+In pipeline-render.js:
+Move verdict + oneLineReason block BEFORE book cover/trailer section
+Re-render/deploy all 162 pages
+Expected: +1.5 SEO points immediately
+2. Request indexing for top 20 impression pages
+text
+GSC → URL Inspection → top pages by impressions (Verity, Reminders of Him, etc.)
+Submit updated sitemap
+Expected: 50% of discovered pages indexed within 7 days
+3. Add oneLineReason to browse rows
+text
+Browse page: each row shows verdict + 1-sentence hook
+Expected: Better crawl signals + user engagement
+Progress validation checklist
+text
+[ ] Quick-answer block is first content block on individual pages
+[ ] Homepage has hero + stats + "Browse All" CTA  
+[ ] Titles follow "[Title] Book vs Movie" pattern
+[ ] GSC shows indexing requests submitted
+[ ] Browse page shows verdict hooks
+One-line status
+"Technical foundation now solid (6.5/10). Next: make answers instantly visible + force Google to index."
+
+The biggest win will be that quick-answer positioning change. Deploy that across all pages and you'll see measurable CTR/ranking movement within 2 weeks.
 
 ===== Other LLM Advice\perplexity.txt =====
 
@@ -1122,7 +1234,6 @@ I can next turn this into exact rewritten copy for the homepage and the People W
 ===== POLICIES.md =====
 
 # BooksVersusMovies.com — Pipeline Policies
-
 ==========================================
 Last updated: April 2026
 
@@ -1131,261 +1242,139 @@ These are decisions that have been made and should not be changed without
 understanding the consequences. For architectural context see README.md.
 
 
-
 ## LLM Policies
 
 ### Never hardcode model names in scripts
-
 All model assignments live in config/models.json. Scripts read this file at
 startup and log which model is being used. Changing a model requires only
 editing config/models.json — no code changes.
 
 ### LLM never touches HTML
-
 The LLM reads and writes JSON only. The renderer (pipeline-render.js) converts
 JSON to HTML deterministically. This is non-negotiable — it prevents broken
 markup, enables model swapping, and guarantees structural consistency.
 
 ### Immutable fields
-
 The following fields must never be changed by any LLM pass. They are set
 during extraction and are the source of truth:
-slug, filename, pipelineVersion, bookTitle, author, bookYear, filmYear,
-affiliateLink, youtubeId, verdictText, verdictClass, storyBrief, verdictBox,
-relatedSectionTitle
+  slug, filename, pipelineVersion, bookTitle, author, bookYear, filmYear,
+  affiliateLink, youtubeId, verdictText, verdictClass, storyBrief, verdictBox,
+  relatedSectionTitle
 
 ### Temperature guidelines
-
-* 0.3 — structural passes where consistency matters most (Pass 1)
-* 0.4 — conversion passes with some creative latitude (Pass 2, titles)
-* 0.5 — generation passes where voice matters (greenfield)
-* Never above 0.7 — this site requires consistency, not surprise
-
+- 0.3 — structural passes where consistency matters most (Pass 1)
+- 0.4 — conversion passes with some creative latitude (Pass 2, titles)
+- 0.5 — generation passes where voice matters (greenfield)
+- Never above 0.7 — this site requires consistency, not surprise
 
 
 ## Pipeline Policies
 
 ### Pass execution order
-
 Passes must always run in this order: Pass 1 → Titles → Pass 2
 Each pass depends on the output of the previous. Running out of order
 produces incomplete or incorrect JSON.
 
 ### Input directory rules
-
-* Pass 1 always reads from pipeline/1-extracted/ (raw source)
-* Titles and Pass 2 always read from pipeline/2-revised/ (or in-memory
-current when running --pass all in a single invocation)
-* Never run titles or Pass 2 against pipeline/1-extracted/ directly
+- Pass 1 always reads from pipeline/1-extracted/ (raw source)
+- Titles and Pass 2 always read from pipeline/2-revised/ (or in-memory
+  current when running --pass all in a single invocation)
+- Never run titles or Pass 2 against pipeline/1-extracted/ directly
 
 ### Never modify pipeline/1-extracted/
-
 This directory is the permanent raw extraction source. It is never modified
 by any pipeline script. If extraction needs to be re-run, use --force on
 pipeline-extract.js which will overwrite 1-extracted/ from the source HTML.
 
 ### Checkpoint gate
-
 Do not proceed to the next pipeline step if the checkpoint fails.
 A failed checkpoint indicates a content, validation, or structural issue
 that will propagate through the renderer and into the live site.
 
 ### Batch commit before push
-
 Commit locally as often as you like. Push only when a section or deployment
 batch is complete. This minimises Netlify build charges and keeps deploy
 history clean.
 
 
-
 ## API Policies
 
 ### Socket timeout
-
 All HTTP requests to OpenRouter must include a socket timeout (currently 90s).
 Without this, a dropped connection mid-response causes the process to hang
 indefinitely — the promise never rejects so the retry logic never fires.
 
 ### Retry policy
-
-* 3 attempts maximum
-* Exponential backoff: 10s, 20s
-* Do NOT retry: 401, 400, user not found, invalid API key
-* DO retry: ECONNRESET, ETIMEDOUT, 429, 500, 503
+- 3 attempts maximum
+- Exponential backoff: 10s, 20s
+- Do NOT retry: 401, 400, user not found, invalid API key
+- DO retry: ECONNRESET, ETIMEDOUT, 429, 500, 503
 
 ### API key security
-
-* OPENROUTER\_API\_KEY lives in .env only — never committed to git
-* .env is in .gitignore
-* If a key is accidentally committed, rotate it immediately — scrapers
-monitor GitHub in real time and will find it within minutes
-* Verify .env is not tracked: git check-ignore -v .env
-
+- OPENROUTER_API_KEY lives in .env only — never committed to git
+- .env is in .gitignore
+- If a key is accidentally committed, rotate it immediately — scrapers
+  monitor GitHub in real time and will find it within minutes
+- Verify .env is not tracked: git check-ignore -v .env
 
 
 ## Deployment Policies
 
 ### Pre-deployment checklist
-
 1. Run extract-metadata.js — confirm 0 problematic files
 2. Confirm CHECKPOINT PASSED on renderer run
 3. Spot-check 5-10 rendered pages in browser
 4. Confirm affiliate links and YouTube IDs are intact
-5. Copy pipeline/3-rendered/\*.html to project root
-6. Copy pipeline/2-revised/\*.json to data/reviews/
+5. Copy pipeline/3-rendered/*.html to project root
+6. Copy pipeline/2-revised/*.json to data/reviews/
 7. Push to git — unlock Netlify auto-publish or manually publish deploy
 
 ### URL structure
-
 Live pages are served at: https://booksversusmovies.com/slug
 No .html extension (Netlify Pretty URLs). No /reviews/ subdirectory.
 The renderer must output canonical tags in this format:
-
-<link rel="canonical" href="https://booksversusmovies.com/slug">
+  <link rel="canonical" href="https://booksversusmovies.com/slug">
 
 ### CSS and image paths
-
 Rendered HTML must use root-relative paths:
-css/style.css       ✓
-images/slug.jpg     ✓
-../css/style.css    ✗  (wrong — pages deploy to root, not reviews/)
-../images/          ✗  (wrong)
-
+  css/style.css       ✓
+  images/slug.jpg     ✓
+  ../css/style.css    ✗  (wrong — pages deploy to root, not reviews/)
+  ../images/          ✗  (wrong)
 
 
 ## Content Policies
 
 ### Quarantine policy
-
 Pages with structural problems go to reviews-to-review/ and are excluded
 from all pipeline runs. Document the reason in docs/pipeline-notes.md.
 Do not attempt to process quarantined pages until the issue is resolved.
 
 ### Affiliate links
-
 Every page must have a valid affiliateLink field. The renderer uses this
 for the book cover link, buy button, and all three CTA blocks. A missing
 or invalid affiliate link means the page generates no revenue.
 
 ### CTA text rules
-
 after-quick-answer:  "Read the book first →"           (Book Wins)
-"Get the book →"                   (Too Close to Call)
-"Read the source material →"       (Movie Wins)
+                     "Get the book →"                   (Too Close to Call)
+                     "Read the source material →"       (Movie Wins)
 after-read-first:    "Get the book on Amazon →"         (all verdicts)
-after-verdict:       "Start with \[Title] →"             (bookTitle ≤ 20 chars)
-"Start with the book →"            (bookTitle > 20 chars)
+after-verdict:       "Start with [Title] →"             (bookTitle ≤ 20 chars)
+                     "Start with the book →"            (bookTitle > 20 chars)
 
 
+## Claude Output Policy
+When delivering files in Claude responses, always state the exact
+destination path for each file before or after presenting it.
 
+Format:
+  filename.js  →  scripts/
+  prompt.txt   →  scripts/prompts/
+  data.json    →  data/
 
-
-which LLMS to use for what: Draft:
-
-
-
-Your decision to separate content (.json) from display (.html) is a massive strategic win. It makes your site "AI-native," allowing you to swap models or update content programmatically without touching your frontend code.To maximize affiliate revenue, you need a "multi-model" approach. Each task requires a different strength: reasoning, SEO density, or high-conversion "vibe."The "What, Why, and How" Model ListTaskRecommended ModelThe "Why"1. Content Schema DesignGPT-4o / GPT-5Best at structured reasoning. Use it to define your .json schema (e.g., ensuring you have fields for affiliate\_link\_amazon, book\_winner\_logic, and movie\_release\_date).2. High-Intent SEO CopyClaude 3.5 Sonnet / 4Human-like nuance. Claude avoids the "AI-voice" that Google often demotes. It's the best for writing the "Why the Book Won" blurbs that actually feel like they were written by a reader.3. Technical SEO \& SchemaGemini 1.5 ProContext window \& Google Ecosystem. Since you're in the AEC industry, you know technical specs matter. Gemini is excellent at generating JSON-LD (Structured Data) to get you those "Review Snippets" (stars) in Google Search results.4. Sanity Checks \& ScrapingPerplexity (Sonar)Live Web Awareness. As mentioned before, Perplexity is a search engine first. Use it to check if your latest deploy actually fixed the metadata or if your affiliate links are working on the live site.
-
-
-
-Integrating Grok and DeepSeek into your "Content vs. Display" pipeline is a brilliant way to optimize for both real-time relevance and bottom-line profitability. In the 2026 landscape, these two models have carved out aggressive niches that perfectly complement your affiliate goals.Here is your updated "What to Use for What and Why" list, now featuring Grok and DeepSeek.The Specialized AI Roster for BooksVersusMovies.comTaskRecommended ModelThe "Why"1. The "Trending" Content HookGrok 3 (xAI)Speed \& Real-time X Integration. Grok is the "Newsroom" model. Use it to scan for breaking casting news or viral movie trailers on X (Twitter). It can update your JSON with the very latest buzz before competitors even know the news broke.2. Bulk JSON GenerationDeepSeek V3 / R1Extreme Low Cost \& Coding Logic. DeepSeek is your "Factory." Since it is roughly 50x cheaper than GPT-5/Opus, use it to convert your raw research into .json files. It handles the "Coding Logic" of JSON structure perfectly without eating your margins.3. High-Conversion "Vibe"Claude 4 / 4.5The "Literary Critic." Claude has the most sophisticated "human" voice. Use it to write the actual qualitative comparison text within your JSON. It excels at explaining why a character's internal monologue in a book matters.4. Technical SEO \& Rich SnippetsGemini 3 FlashGoogle Ecosystem Native. Use Gemini to generate the Schema.org markup (JSON-LD) for your HTML. Since it's a Google model, it’s best at ensuring your reviews show up with "Star Ratings" and "Price" in Google Search results.5. Sanity Checks \& ScrapingPerplexity (Sonar)The "Auditor." Use Perplexity to visit your live site and verify that your injected JSON is rendering correctly and that your affiliate links aren't broken.
-
-
-
-
-
-Here’s my short take, using the models I’d pick for this workflow:
-
-
-
-Best model by task
-
-Trending content and breaking updates
-
-
-
-Grok
-
-
-
-Best when you care about current chatter, fast-moving topics, and quick angle discovery.
-
-
-
-Bulk JSON generation
-
-
-
-DeepSeek
-
-
-
-Best for cheap, high-volume structured output and repeatable formatting.
-
-
-
-Comparison writing and editorial copy
-
-
-
-Claude
-
-
-
-Best for the clearest, most natural long-form analysis and nuance.
-
-
-
-Technical SEO and schema
-
-
-
-Gemini
-
-
-
-Best for structured, implementation-friendly SEO work and markup consistency.
-
-
-
-QA and verification
-
-
-
-Perplexity
-
-
-
-Best for checking live facts, page behavior, and quick validation.
-
-
-
-My overall ranking for this site
-
-Claude for writing.
-
-
-
-DeepSeek for scale.
-
-
-
-Grok for trends.
-
-
-
-Gemini for technical SEO.
-
-
-
-Perplexity for checks.
-
-
-
-Short policy line
-
-Use Grok to find what’s hot, DeepSeek to structure it, Claude to write it, Gemini to mark it up, and Perplexity to verify it.
-
+This applies to all new files and updated files. Never assume the
+user knows where a file goes based on context alone.
 
 
 ===== README.md =====
@@ -1867,6 +1856,11 @@ Depends on: email capture established
 ===== ROADMAP-TECHNICAL.md =====
 
 # BooksVersusMovies.com — Technical Roadmap
+
+
+
+
+
 ==========================================
 Last updated: April 2026
 
@@ -1874,132 +1868,203 @@ Prioritised engineering backlog. Items marked done are kept for reference.
 For raw ideas not yet evaluated see docs/new-ideas.md.
 
 
+
 ## In Progress
 
 ### Pipeline stabilisation (Step 3-4)
+
 Complete the current pipeline build:
-- [x] Pass 1 — structural overlay (quickAnswer)
-- [x] Titles pass — emotional CTR-optimised titles
-- [x] Pass 2 — conversion layer (ctaBlocks)
-- [x] pipeline-render.js — deterministic HTML renderer
-- [x] pipeline-browse.js — browse page generator
-- [x] sitemap-generate.js — sitemap.xml generator
-- [x] quality-gate.js — batch quality checks
-- [ ] pipeline-generate.js — greenfield new review generator (Step 5)
-- [ ] Full deployment of rendered pages
+
+* \[x] Pass 1 — structural overlay (quickAnswer)
+* \[x] Titles pass — emotional CTR-optimised titles
+* \[x] Pass 2 — conversion layer (ctaBlocks)
+* \[x] pipeline-render.js — deterministic HTML renderer
+* \[x] pipeline-browse.js — browse page generator
+* \[x] sitemap-generate.js — sitemap.xml generator
+* \[x] quality-gate.js — batch quality checks
+* \[ ] pipeline-generate.js — greenfield new review generator (Step 5)
+* \[ ] Full deployment of rendered pages
+
 
 
 ## High Priority
 
 ### Environment-based model config
+
 Add --env flag to pipeline scripts resolving config/models.${env}.json:
-  config/models.json        ← prod (Haiku + Sonnet)
-  config/models.test.json   ← test (DeepSeek, all passes)
-  config/models.dev.json    ← dev (cheapest, single page testing)
+config/models.json        ← prod (Haiku + Sonnet)
+config/models.test.json   ← test (DeepSeek, all passes)
+config/models.dev.json    ← dev (cheapest, single page testing)
 
 Usage:
-  node scripts\pipeline-revise.js --all --pass all --env test
+node scripts\\pipeline-revise.js --all --pass all --env test
 Falls back to config/models.json if env file doesn't exist.
-Effort: ~30 minutes
+Effort: \~30 minutes
 Depends on: nothing
 
 ### Abbreviated payloads for dev/test runs
-Pass 1 and Pass 2 send full JSON (~4000-6000 tokens) but only need
+
+Pass 1 and Pass 2 send full JSON (\~4000-6000 tokens) but only need
 a small subset. In dev/test mode send only required fields:
-  Pass 1 minimal: slug, bookTitle, author, verdictText, verdictClass,
-    verdictBox, readFirst, differences, quickAnswer
-  Pass 2 minimal: slug, bookTitle, verdictText, affiliateLink, ctaBlocks
+Pass 1 minimal: slug, bookTitle, author, verdictText, verdictClass,
+verdictBox, readFirst, differences, quickAnswer
+Pass 2 minimal: slug, bookTitle, verdictText, affiliateLink, ctaBlocks
 Cuts token count 60-70%, eliminates truncation on large pages.
 Implement as part of --env flag work.
-Effort: ~2 hours
+Effort: \~2 hours
 Depends on: environment-based model config
 
 ### Periodic quality checks during batch runs
---quality-check-interval N flag already implemented in pipeline-revise.js.
+
+\--quality-check-interval N flag already implemented in pipeline-revise.js.
 Refine generic phrase detector based on observed failures:
-  Current list: both versions, equally rewarding, neither diminishes,
-  complement each other, worth experiencing, illuminate each other etc.
+Current list: both versions, equally rewarding, neither diminishes,
+complement each other, worth experiencing, illuminate each other etc.
 Add auto-retry on generic oneLineReason — single retry with stricter prompt
 before hard-stopping the batch.
-Effort: ~1 hour
+Effort: \~1 hour
 Depends on: nothing
+
 
 
 ## Medium Priority
 
 ### Per-pass subdirectories
-Lesson learned from IN_DIR bug. Refactor pipeline to use:
-  pipeline/2a-pass1/    ← Pass 1 output
-  pipeline/2b-titles/   ← titles pass output
-  pipeline/2c-pass2/    ← Pass 2 output
-  pipeline/2-revised/   ← final merged output
+
+Lesson learned from IN\_DIR bug. Refactor pipeline to use:
+pipeline/2a-pass1/    ← Pass 1 output
+pipeline/2b-titles/   ← titles pass output
+pipeline/2c-pass2/    ← Pass 2 output
+pipeline/2-revised/   ← final merged output
 Each pass reads from previous folder — nothing ever overwritten.
 Enables independent re-run of any single pass.
-Effort: ~3 hours (refactor + testing)
+Effort: \~3 hours (refactor + testing)
 Depends on: pipeline stabilisation complete
 
 ### pipeline-generate.js (Step 5)
+
 Greenfield new review generator. Takes input data (title, author, director,
 affiliate link, YouTube ID) and generates a complete review JSON using
 claude-sonnet-4-5. Same renderer pipeline as existing pages.
-Effort: ~1 day
+Effort: \~1 day
 Depends on: pipeline-render.js stable
 
 ### pipeline-init.js — project template bootstrapper
+
 Initialises a new affiliate review site from this project structure.
 See docs/pipeline-init.md for full algorithm design.
-Effort: ~half day
+Effort: \~half day
 Depends on: pipeline fully stable and documented
 
 ### GSC API automation
+
 Automate GSC exports and URL indexing requests via Search Console API.
-  scripts/gsc-report.js --weekly
-  scripts/gsc-report.js --post-deploy
-  scripts/gsc-report.js --indexing
+scripts/gsc-report.js --weekly
+scripts/gsc-report.js --post-deploy
+scripts/gsc-report.js --indexing
 Prerequisite: establish manual export protocol first.
-Effort: ~1 day
+Effort: \~1 day
 Depends on: manual GSC protocol established
 
 ### Auto-retry on generic oneLineReason
+
 When Pass 1 produces a generic oneLineReason, automatically retry with
 a more targeted prompt before hard-stopping. Max 1 retry.
-Effort: ~1 hour
+Effort: \~1 hour
 Depends on: quality gate stable
 
 ### Sitemap auto-submission
+
 After deployment, programmatically submit sitemap to GSC via API rather
 than manual UI step.
-Effort: ~30 minutes (once GSC API auth is set up)
+Effort: \~30 minutes (once GSC API auth is set up)
 Depends on: GSC API automation
+
 
 
 ## Low Priority
 
 ### Structured logging — Pino + OpenTelemetry
+
 Transition from custom logger.js to Pino for structured JSON logging.
 Add OpenTelemetry tracing. Worth doing if pipeline runs become frequent
 or team grows beyond solo.
-Effort: ~1 day
+Effort: \~1 day
 Depends on: nothing
 
 ### Vercel migration + movie database
+
 Move from Netlify to Vercel. Build structured Postgres database for books,
 films, directors, actors. Enables richer internal linking, genre pages,
 author pages. Significant scope — post-revenue decision.
-Effort: ~1 week
+Effort: \~1 week
 Depends on: revenue milestone
 
 ### Priority tiers for content generation
+
 Add priority field (1-3) to JSON schema. Controls model assignment,
 article length, and greenfield generation order.
-Effort: ~2 hours
+Effort: \~2 hours
 Depends on: pipeline-generate.js
 
 ### Affiliate link management UI
+
 Local web UI for managing Amazon affiliate links across pages. Similar
 to WordPress affiliate plugins. Reads/writes JSON files directly.
-Effort: ~half day
+Effort: \~half day
 Depends on: nothing
+
+
+
+
+
+
+
+## priority: llm-client.js — shared LLM client module
+
+Extract all API call logic into a single shared module used by every
+pipeline script. Currently every script duplicates the same callModel(),
+parseJSON(), and .env loading code.
+
+File: scripts/llm-client.js
+
+Exports:
+callModel(model, systemPrompt, userContent, maxTokens)
+Raw API call via OpenRouter. No validation. Use for free-text
+responses (titles, advice, auteur descriptions).
+
+callModelSafe(model, prompt, userContent, schema, maxRetries=3)
+API call + jsonrepair + ajv schema validation + auto-retry.
+Feeds specific schema errors back to model on retry.
+Use for all structured JSON generation (Pass 1, Pass 2, greenfield).
+Schema parameter is optional — omit for free-text responses.
+
+parseJSON(text)
+Strips markdown fences + runs jsonrepair. Used internally by
+callModelSafe but also exportable for one-off parsing.
+
+loadEnv()
+Loads .env file into process.env. Currently duplicated in every
+script — centralise here.
+
+Scripts to update once llm-client.js is built:
+pipeline-revise.js      (Pass 1, titles, Pass 2)
+pipeline-generate.js    (Stage 1, Stage 2)
+pipeline-auteurs.js     (director descriptions)
+get-advice.js           (advice tool)
+compare-models.js       (eval tool)
+
+Benefits:
+
+* Single place to update retry logic, timeout, logging
+* Schema validation automatic on every structured call
+* Eliminates \~100 lines of duplicated code across 5 scripts
+* If OpenRouter changes their API, fix in one place
+
+Dependencies: jsonrepair, ajv (both already installed)
+Effort: \~2-3 hours to extract + wire into all scripts
+Priority: high — do before full Film Wins batch
+
 
 
 ===== action-plan.txt =====
@@ -2056,6 +2121,155 @@ BooksVersusMovies.com — Pipeline Action Plan
    6.3 Re-run extractor as a final QA pass to confirm no missing fields
        across the full set
    6.4 Deploy and monitor GSC for CTR changes over 4 weeks
+
+
+===== ai-vulnerability-advice.md =====
+
+BooksVersusMovies.com — Advice
+==============================
+Model:     Perplexity Sonar Pro (perplexity/sonar-pro)
+Generated: 2026-04-13T16:04:59.918Z
+Duration:  14194ms
+
+── Question ──────────────────────────────────────────────────────────
+
+PRIMARY QUESTION
+================
+review https://booksversusmovies.com
+this is my site. I would imagine the business is vulnerable to google AI returning results directly. 
+what approach should I take to mitigate this?
+
+── Response ──────────────────────────────────────────────────────────
+
+Your site is indeed vulnerable to Google AI Overviews, which compress the marketing funnel by providing synthesized answers directly to users[2]. However, there are strategic approaches you can take to mitigate traffic loss and remain competitive in this AI-driven search landscape.
+
+## Key Vulnerabilities for Your Site
+
+AI Overviews significantly reduce click-through rates: users encountering an AI summary click on traditional search results only 8% of the time, compared to 15% without a summary[4]. Additionally, users rarely click links within the summaries themselves (just 1% of visits)[4]. This means your site could lose substantial traffic even if your content is cited.
+
+## Mitigation Strategies
+
+**Build Topical Authority and Depth**
+
+Move beyond surface-level comparisons. AI systems prioritize content that demonstrates consistent expertise and niche authority[1]. For books versus movies content, this means creating in-depth analyses that go beyond generic comparisons—original insights, detailed breakdowns of specific genres, thematic explorations, or first-hand experiences will be more likely to be cited and valued by AI systems[1].
+
+**Optimize for AI Citation Over Traditional Rankings**
+
+Traditional keyword rankings matter less with AI search; search intent and content quality matter more[1]. Rather than targeting top-three positions for broad keywords, focus on highly specific use cases and audiences[2]. For example, instead of "best books vs movies," create targeted content like "Why Literary Adaptations Fail: A Deep Dive Into Specific Franchises" or "How Book-to-Film Adaptations Change Character Development."
+
+**Leverage Citations and Digital Footprint**
+
+AI Overviews can cite content from third-party platforms as well as your own website[3]. Build mentions and citations across relevant platforms (book review sites, movie databases, literary communities, Reddit discussions) to increase your visibility in AI-generated responses[3].
+
+**Create Content for AI's Citation Patterns**
+
+Research shows AI systems cite lower-ranking pages (positions 21+) nearly 90% of the time[2], and they focus on the relevance and quality of specific content "chunks" rather than overall page experience[2]. This means you don't need perfect page speed or extensive content depth on every page—instead, ensure each section of content is highly relevant, well-structured, and answers specific questions clearly[1].
+
+**Develop Conversion-Focused Strategies**
+
+Since AI search visitors are worth 4.4x more than traditional organic visitors based on conversion rate[2], focus on converting the traffic you do receive. Even with reduced clicks, higher-value conversions (newsletter signups, community engagement, premium content access) can offset volume losses.
+
+**Differentiate with Original Content**
+
+AI systems show preference for business/service websites when generating responses about those businesses[2]. If you have unique perspectives, original research, or exclusive content about books and movies, emphasize this. Generic listicles will be compressed into AI summaries; original analysis will drive citations and traffic.
+
+
+BooksVersusMovies.com — Advice
+==============================
+Model:     Perplexity Sonar Pro (perplexity/sonar-pro)
+Generated: 2026-04-13T16:04:59.918Z
+Duration:  14194ms
+
+── Question ──────────────────────────────────────────────────────────
+
+PRIMARY QUESTION
+================
+review https://booksversusmovies.com
+this is my site. I would imagine the business is vulnerable to google AI returning results directly. 
+what approach should I take to mitigate this?
+
+── Response ──────────────────────────────────────────────────────────
+
+Your site is indeed vulnerable to Google AI Overviews, which compress the marketing funnel by providing synthesized answers directly to users[2]. However, there are strategic approaches you can take to mitigate traffic loss and remain competitive in this AI-driven search landscape.
+
+## Key Vulnerabilities for Your Site
+
+AI Overviews significantly reduce click-through rates: users encountering an AI summary click on traditional search results only 8% of the time, compared to 15% without a summary[4]. Additionally, users rarely click links within the summaries themselves (just 1% of visits)[4]. This means your site could lose substantial traffic even if your content is cited.
+
+## Mitigation Strategies
+
+**Build Topical Authority and Depth**
+
+Move beyond surface-level comparisons. AI systems prioritize content that demonstrates consistent expertise and niche authority[1]. For books versus movies content, this means creating in-depth analyses that go beyond generic comparisons—original insights, detailed breakdowns of specific genres, thematic explorations, or first-hand experiences will be more likely to be cited and valued by AI systems[1].
+
+**Optimize for AI Citation Over Traditional Rankings**
+
+Traditional keyword rankings matter less with AI search; search intent and content quality matter more[1]. Rather than targeting top-three positions for broad keywords, focus on highly specific use cases and audiences[2]. For example, instead of "best books vs movies," create targeted content like "Why Literary Adaptations Fail: A Deep Dive Into Specific Franchises" or "How Book-to-Film Adaptations Change Character Development."
+
+**Leverage Citations and Digital Footprint**
+
+AI Overviews can cite content from third-party platforms as well as your own website[3]. Build mentions and citations across relevant platforms (book review sites, movie databases, literary communities, Reddit discussions) to increase your visibility in AI-generated responses[3].
+
+**Create Content for AI's Citation Patterns**
+
+Research shows AI systems cite lower-ranking pages (positions 21+) nearly 90% of the time[2], and they focus on the relevance and quality of specific content "chunks" rather than overall page experience[2]. This means you don't need perfect page speed or extensive content depth on every page—instead, ensure each section of content is highly relevant, well-structured, and answers specific questions clearly[1].
+
+**Develop Conversion-Focused Strategies**
+
+Since AI search visitors are worth 4.4x more than traditional organic visitors based on conversion rate[2], focus on converting the traffic you do receive. Even with reduced clicks, higher-value conversions (newsletter signups, community engagement, premium content access) can offset volume losses.
+
+**Differentiate with Original Content**
+
+AI systems show preference for business/service websites when generating responses about those businesses[2]. If you have unique perspectives, original research, or exclusive content about books and movies, emphasize this. Generic listicles will be compressed into AI summaries; original analysis will drive citations and traffic.
+
+BooksVersusMovies.com — Advice
+==============================
+Model:     Perplexity Sonar Pro (perplexity/sonar-pro)
+Generated: 2026-04-13T16:04:59.918Z
+Duration:  14194ms
+
+── Question ──────────────────────────────────────────────────────────
+
+PRIMARY QUESTION
+================
+review https://booksversusmovies.com
+this is my site. I would imagine the business is vulnerable to google AI returning results directly. 
+what approach should I take to mitigate this?
+
+── Response ──────────────────────────────────────────────────────────
+
+Your site is indeed vulnerable to Google AI Overviews, which compress the marketing funnel by providing synthesized answers directly to users[2]. However, there are strategic approaches you can take to mitigate traffic loss and remain competitive in this AI-driven search landscape.
+
+## Key Vulnerabilities for Your Site
+
+AI Overviews significantly reduce click-through rates: users encountering an AI summary click on traditional search results only 8% of the time, compared to 15% without a summary[4]. Additionally, users rarely click links within the summaries themselves (just 1% of visits)[4]. This means your site could lose substantial traffic even if your content is cited.
+
+## Mitigation Strategies
+
+**Build Topical Authority and Depth**
+
+Move beyond surface-level comparisons. AI systems prioritize content that demonstrates consistent expertise and niche authority[1]. For books versus movies content, this means creating in-depth analyses that go beyond generic comparisons—original insights, detailed breakdowns of specific genres, thematic explorations, or first-hand experiences will be more likely to be cited and valued by AI systems[1].
+
+**Optimize for AI Citation Over Traditional Rankings**
+
+Traditional keyword rankings matter less with AI search; search intent and content quality matter more[1]. Rather than targeting top-three positions for broad keywords, focus on highly specific use cases and audiences[2]. For example, instead of "best books vs movies," create targeted content like "Why Literary Adaptations Fail: A Deep Dive Into Specific Franchises" or "How Book-to-Film Adaptations Change Character Development."
+
+**Leverage Citations and Digital Footprint**
+
+AI Overviews can cite content from third-party platforms as well as your own website[3]. Build mentions and citations across relevant platforms (book review sites, movie databases, literary communities, Reddit discussions) to increase your visibility in AI-generated responses[3].
+
+**Create Content for AI's Citation Patterns**
+
+Research shows AI systems cite lower-ranking pages (positions 21+) nearly 90% of the time[2], and they focus on the relevance and quality of specific content "chunks" rather than overall page experience[2]. This means you don't need perfect page speed or extensive content depth on every page—instead, ensure each section of content is highly relevant, well-structured, and answers specific questions clearly[1].
+
+**Develop Conversion-Focused Strategies**
+
+Since AI search visitors are worth 4.4x more than traditional organic visitors based on conversion rate[2], focus on converting the traffic you do receive. Even with reduced clicks, higher-value conversions (newsletter signups, community engagement, premium content access) can offset volume losses.
+
+**Differentiate with Original Content**
+
+AI systems show preference for business/service websites when generating responses about those businesses[2]. If you have unique perspectives, original research, or exclusive content about books and movies, emphasize this. Generic listicles will be compressed into AI summaries; original analysis will drive citations and traffic.
+
 
 
 ===== business-strategy.md =====
@@ -2511,31 +2725,366 @@ Format: [YYYY-MM-DD] Description
 
 
 ---
-## Current Step
+## Section 5 — Landing Page + SEO Improvements ✓
 
-DEPLOYED ✓ — April 13 2026
+[2026-04-14] Rebuilt pipeline-browse.js — full landing page with:
+             hero "Book or Movie? We Pick a Winner.", trust strip,
+             spotlight section (6 curated cards with oneLineReason hooks),
+             verdict filters with counts, year-descending sort,
+             matched 84px image heights, removed arrow
+[2026-04-14] Updated DEFAULT_FEATURED to GSC-informed list:
+             verity, reminders-of-him, dune, the-shining, gone-girl, atonement
+[2026-04-14] Moved quick-answer block above comparison panel (SEO fix)
+[2026-04-14] Restructured quick-answer: Key Difference full-width on top,
+             Best Version + Read First below as centered flex pair
+[2026-04-14] Removed CTA button from quick-answer block (redundant/spammy)
+[2026-04-14] Removed max-width constraints from quick-answer, body-text,
+             comparison-table, cta-block — all sections now full width
+[2026-04-14] Hero: removed "Actually" from headline, stripped book title
+             prefix from subtitle hook, genre moved to meta strip
+[2026-04-14] Built get-advice.js — multi-LLM advice tool (Sonnet/Grok/Perplexity)
+             config/advice.json, advice/inputs/, advice/outputs/
+[2026-04-14] Built compare-models.js + evals/ folder for model comparison
+[2026-04-14] Established dev branch workflow — all dev work on dev,
+             merge to main only for deployment
+[2026-04-14] Deployed — 162 pages + new landing page + SEO fixes
+
+---
+## Current State
+
+DEPLOYED ✓ — April 14 2026
 162 pages live at booksversusmovies.com
-Sitemap submitted to Google Search Console
+Landing page redesigned — spotlight, hero, trust strip
+Quick-answer above fold on all review pages
+Dev branch established
 
-Tomorrow — highest priority:
-  1. Featured/spotlight section on browse page (config/featured.json)
-  2. Priority/hype field in JSON schema (controls browse order + model assignment)
-  3. Design greenfield process document (Step 5 prep)
-  4. Build pipeline-generate.js (Step 5)
+## Next Steps — Highest Priority
+
+  1. Add oneLineReason to browse rows (editorial hook per row)
+  2. Build pipeline-generate.js (Step 5 — greenfield new reviews)
+     - Two-stage: Stage 1 factual (Haiku), Stage 2 editorial (Sonnet)
+     - Minimal input: bookTitle, slug, affiliateLink, youtubeId, videoAffiliateLink
+     - First batch: 10 Film Wins candidates (Godfather, Jaws, Blade Runner etc.)
+  3. Priority/hype field in JSON schema (controls browse order + model assignment)
+  4. Genre hub pages (/thriller, /romance, /literary-fiction)
+  5. Author hub pages (Colleen Hoover, Gillian Flynn, Stephen King)
+  6. WebP conversion for book cover images
+  7. GSC — request indexing for top 20 impression pages
+  8. Set up ConvertKit/Mailchimp for email capture
+  9. Add Bookshop.org affiliate links alongside Amazon
+
+
+===== git-cheat-sheet.txt =====
+
+give me a git cheat sheet. I need to switch to dev and get lastest from prod
+
+3:38 PM
+cmd
+git checkout dev
+git merge main
+That's it for this case. Here's the broader cheat sheet for your workflow:
+
+Daily workflow:
+
+cmd
+git checkout dev          (switch to dev)
+git merge main            (get latest from prod)
+Save work on dev:
+
+cmd
+git add .
+git commit -m "description"
+Deploy to prod:
+
+cmd
+git checkout main
+git merge dev
+git push
+git checkout dev          (switch back to dev immediately)
+Check where you are:
+
+cmd
+git branch                (shows current branch with *)
+git status                (shows uncommitted changes)
+git log --oneline -5      (last 5 commits)
+Undo last commit (keep changes):
+
+cmd
+git reset --soft HEAD~1
+Discard all uncommitted changes:
+
+cmd
+git checkout -- .
+See what changed:
+
+cmd
+git diff                  (unstaged changes)
+git diff --staged         (staged changes)
+The main rule for your setup: always do work on dev, only touch main to merge and push, then immediately switch back to dev.
+
+give me that as a simple text to dowload
+
+3:38 PM
+
+Created a file, ran a command, read a file
+
+
+===== greenfield-happy-path.txt =====
+
+GREENFIELD HAPPY PATH — BooksVersusMovies.com
+=============================================
+How to generate a new review from scratch.
+Replace "the-godfather" and "The Godfather" with your slug and title.
+
+
+STEP 1 — Create input file
+--------------------------
+Create: data/greenfield/inputs/the-godfather.json
+
+{
+  "bookTitle": "The Godfather",
+  "slug": "the-godfather",
+  "affiliateLink": "https://amzn.to/xxxxx",
+  "youtubeId": "sY1S34973zA",
+  "videoAffiliateLink": "https://amzn.to/xxxxx"
+}
+
+Slug rules: lowercase, hyphens only, no spaces. e.g. "the-godfather"
+youtubeId:  just the ID, not the full URL. e.g. "sY1S34973zA"
+
+
+STEP 2 — Stage 1: factual extraction (Haiku)
+--------------------------------------------
+node scripts\pipeline-generate.js --slug the-godfather --stage 1
+
+REVIEW output: data/greenfield/stage1/the-godfather.json
+Check: author, bookYear, filmYear, director are all correct.
+If wrong: edit the stage1 file manually before running stage 2.
+
+
+STEP 3 — Stage 2: full review generation (Sonnet/Haiku)
+--------------------------------------------------------
+node scripts\pipeline-generate.js --slug the-godfather --stage 2
+
+REVIEW output: data/greenfield/stage2/the-godfather.json
+Check: verdict, oneLineReason, differences, characters all look right.
+File is also copied to: pipeline/2-revised/the-godfather.json
+
+
+STEP 4 — Titles pass (Sonnet)
+------------------------------
+node scripts\pipeline-revise.js --slug the-godfather --pass titles --force
+
+Check: pageTitle is sharp and under 65 chars. metaDesc is 130-155 chars.
+
+
+STEP 5 — Pass 2: CTA blocks (Haiku)
+-------------------------------------
+node scripts\pipeline-revise.js --slug the-godfather --pass 2 --force
+
+NOTE: use "--pass 2" not "--pass pass2"
+
+
+STEP 6 — Validate
+------------------
+node scripts\validate-json-schema.js --slug the-godfather --schema revised
+
+Must pass before rendering. Fix any errors and re-run the relevant pass.
+
+
+STEP 7 — Add book cover image
+------------------------------
+Copy the-godfather.jpg to images/
+Recommended size: 400x600px minimum, JPG format.
+Filename must match the slug exactly: the-godfather.jpg
+
+
+STEP 8 — Render
+----------------
+node scripts\pipeline-render.js --slug the-godfather --force
+
+Check: checkpoint must pass all 6 checks including CTA blocks.
+
+
+STEP 9 — Copy to root
+----------------------
+xcopy pipeline\3-rendered\the-godfather.html . /Y
+
+
+STEP 10 — Commit and deploy
+----------------------------
+git add .
+git commit -m "Add The Godfather review"
+git checkout main
+git merge dev
+git push
+git checkout dev
+
+
+TROUBLESHOOTING
+---------------
+Pass 2 not running?        Use --pass 2 not --pass pass2
+CTA blocks still null?     Use --pass 2 not --pass pass2
+Render fails with replace? A field has wrong type — run validate first
+JSON parse error?          jsonrepair will handle most cases, re-run stage 2
+inBook/inFilm boolean?     Stage 2 prompt issue — re-run stage 2 with --force
+Stage 2 skipped?           Add --force flag
+
+
+===== housekeeping-advice.md =====
+
+File 1: docs/housekeeping-advice.md
+
+Markdown# BooksVersusMovies.com — Housekeeping Advice
+
+===========================================
+
+Date: 2026-04-14
+
+
+
+Before starting greenfield generation (pipeline-generate.js), we should clean up the project so the active workspace is focused and future debugging is easier.
+
+
+
+\### Why do this now?
+
+\- Reduces cognitive load when building the new greenfield pipeline
+
+\- Prevents accidental use of outdated scripts
+
+\- Makes the repository cleaner and more professional
+
+\- Creates a clear separation between "legacy" and "current" code
+
+\- Makes it easier for you (or anyone else) to understand the project later
+
+
+
+\### Recommended Archive Strategy
+
+
+
+Create this structure inside `scripts/`:
+
+scripts/
+
+├── archive/
+
+│   ├── legacy/               ← Very early extraction and test scripts
+
+│   ├── v1-pipeline/          ← First version of the full pipeline (Pass 1/2)
+
+│   └── deprecated/           ← Scripts we know we will never use again
+
+├── prompts/                  ← Keep active
+
+├── pipeline-\*.js             ← Current production scripts (do NOT archive)
+
+├── logger.js
+
+├── quality-gate.js
+
+├── pipeline-render.js
+
+├── pipeline-browse.js
+
+├── sitemap-generate.js
+
+└── ... (new greenfield scripts will go here)
+
+text### Rules for Archiving
+
+\- \*\*Move, never delete\*\* — keep history
+
+\- Add a clear comment at the top of every archived file explaining why it was archived and the date
+
+\- Keep the archive folder committed to git
+
+\- Update `completed-tasks.md` with a housekeeping entry
+
+
+
+\### Specific Recommendations — What to Archive
+
+
+
+\*\*High confidence to archive:\*\*
+
+\- Old versions of `extract-metadata.js`
+
+\- Early `pipeline-extract.js` or `html-to-json.js` versions
+
+\- Very early `pipeline-revise.js` iterations (before quality gate + OpenRouter)
+
+\- Any single-page test scripts
+
+\- `fix-cta-titles.js` (if no longer needed)
+
+\- Any other scripts with "old", "v1", "test", or "legacy" in the name
+
+
+
+\*\*Keep active (do not archive):\*\*
+
+\- Current `pipeline-render.js`
+
+\- Current `pipeline-browse.js`
+
+\- Current `pipeline-revise.js`
+
+\- `quality-gate.js`
+
+\- `logger.js`
+
+\- `sitemap-generate.js`
+
+\- All config files (`models.json`, etc.)
+
+
+
+\### After Housekeeping
+
+Once finished:
+
+1\. Run `node scripts/tree.js` (or just `tree`) to verify the clean structure
+
+2\. Commit with message: "Housekeeping: archive legacy scripts before greenfield pipeline work"
+
+3\. Update `completed-tasks.md` with today's date and a short note
+
+
+
+This cleanup should take 20–40 minutes and will make the next phase much smoother.
+
+
+
+Do this on the `housekeeping` branch, then we can merge to main once you're happy.
+
+How to Use
+
+Create a new branch:Bashgit checkout -b housekeeping
+Save the two files above:
+docs/housekeeping-advice.md
+scripts/housekeeping.js
+
+Make the script executable (optional):Bashchmod +x scripts/housekeeping.js
+Run it:Bashnode scripts/housekeeping.js
+Review the scripts/archive/ folder, then update completed-tasks.md and commit.
+
+Would you like me to adjust anything in either file before you run it? (For example, add more files to the archive list, change folder names, etc.)7.4sFast
+
 
 
 ===== new-ideas.md =====
 
 # BooksVersusMovies.com — New Ideas
-
 ====================================
 Format: ## Title, Priority: high/medium/low, Status: pending/in-progress/done/deferred
 Ideas marked done or deferred are excluded from generate-next-steps.js output.
 
 
-
 ## Affiliate link management interface
-
 Build a simple interface to manage affiliate links — similar to what WordPress
 affiliate plugins provide. Reduce friction when adding or updating Amazon links
 across pages. Could be a simple local web UI that reads/writes the JSON files.
@@ -2543,7 +3092,6 @@ Priority: medium
 Status: pending
 
 ## Template this project for other affiliate niches
-
 The pipeline architecture (extract → revise → render) is generic enough to
 template for other book/product review niches. Could be a meaningful side
 project or productised offering.
@@ -2551,15 +3099,13 @@ Priority: low
 Status: pending
 
 ## Overnight batch processes
-
 Consider scheduled tasks that run automatically:
-a. Update lastUpdated dates on HTML files / JSON records
-b. Broken link checker — scan all internal and affiliate links for 404s
+  a. Update lastUpdated dates on HTML files / JSON records
+  b. Broken link checker — scan all internal and affiliate links for 404s
 Priority: medium
 Status: pending
 
 ## Fix-all / sync script
-
 A script that detects when new movies have been added or existing pages
 updated and runs the appropriate pipeline passes automatically. Something
 like: compare pipeline/2-revised/ timestamps against reviews/ and flag
@@ -2568,7 +3114,6 @@ Priority: medium
 Status: pending
 
 ## Log all pipeline output to logs directory
-
 Ensure every pipeline script writes to logs/ consistently. Currently
 pipeline-revise does this via logger.js but worth auditing all scripts
 including future ones follow the same convention.
@@ -2576,7 +3121,6 @@ Priority: low
 Status: pending
 
 ## Retry logic for API calls
-
 Add 2-3 automatic retries with exponential backoff to OpenRouter API calls
 in pipeline-revise.js. Handles brief internet disconnections and latency
 spikes gracefully without failing a full batch run.
@@ -2587,7 +3131,6 @@ Priority: high
 Status: done
 
 ## Structured logging — Pino + OpenTelemetry
-
 Evaluate transition from current custom logger.js to Pino for structured
 JSON logging, with OpenTelemetry for tracing and Datadog or Loki for
 aggregation. Worth doing if/when pipeline runs become frequent or team
@@ -2596,7 +3139,6 @@ Priority: low
 Status: pending
 
 ## Evaluate Vercel migration
-
 Consider moving from Netlify to Vercel. Vercel's edge functions and
 database integrations (Postgres via Vercel Storage) could support a
 proper movie database — structured data for books, films, directors,
@@ -2606,7 +3148,6 @@ Priority: low
 Status: pending
 
 ## Movie database architecture
-
 Related to Vercel migration — think about building and maintaining a
 structured movie/book database. Benefits: richer internal linking,
 genre pages, author pages, director pages, better search. Significant
@@ -2615,7 +3156,6 @@ Priority: low
 Status: pending
 
 ## Daily GSC review task
-
 Add a daily or weekly routine: review newly indexed pages in GSC,
 request indexing for recently deployed pages, monitor for any
 unexpected de-indexing. Could be partially automated with GSC API.
@@ -2623,13 +3163,11 @@ Priority: medium
 Status: pending
 
 ## Handle series and multi-book scenarios
-
 Several pages cover scenarios that aren't clean one-to-one comparisons:
-
-* Dune: three books in series, two films + more planned
-* Lord of the Rings: trilogy
-* Heated Rivalry: multiple books in series
-* Hannibal: series of books vs series
+  - Dune: three books in series, two films + more planned
+  - Lord of the Rings: trilogy
+  - Heated Rivalry: multiple books in series
+  - Hannibal: series of books vs series
 Need a content strategy and possibly a schema extension to handle
 these well. Currently treated as single comparisons which undersells
 the complexity.
@@ -2637,15 +3175,14 @@ Priority: medium
 Status: pending
 
 ## Environment-based model config
-
 Maintain separate model config files for different environments:
-config/models.json       ← prod (Haiku + Sonnet, current)
-config/models.test.json  ← test/logic check (DeepSeek, all passes)
-config/models.dev.json   ← dev (smallest/cheapest, single page testing)
+  config/models.json       ← prod (Haiku + Sonnet, current)
+  config/models.test.json  ← test/logic check (DeepSeek, all passes)
+  config/models.dev.json   ← dev (smallest/cheapest, single page testing)
 
 Add --env flag to pipeline scripts:
-node scripts\\pipeline-revise.js --slug atonement --pass all --env test
-node scripts\\pipeline-revise.js --all --pass all --env prod
+  node scripts\pipeline-revise.js --slug atonement --pass all --env test
+  node scripts\pipeline-revise.js --all --pass all --env prod
 
 Script resolves config/models.${env}.json and falls back to
 config/models.json if the env-specific file doesn't exist.
@@ -2653,13 +3190,12 @@ Clean 30-minute addition once the pipeline is stable.
 Priority: medium
 Status: pending
 
-## Per-pass subdirectories for pipeline/2-\*
-
-Lesson learned from IN\_DIR bug — each pass should write to its own folder:
-pipeline/2a-pass1/    ← Pass 1 output
-pipeline/2b-titles/   ← titles pass output
-pipeline/2c-pass2/    ← Pass 2 output
-pipeline/2-revised/   ← final merged output (all passes applied)
+## Per-pass subdirectories for pipeline/2-*
+Lesson learned from IN_DIR bug — each pass should write to its own folder:
+  pipeline/2a-pass1/    ← Pass 1 output
+  pipeline/2b-titles/   ← titles pass output
+  pipeline/2c-pass2/    ← Pass 2 output
+  pipeline/2-revised/   ← final merged output (all passes applied)
 
 Each pass reads from the previous folder, nothing ever gets overwritten.
 Enables independent re-runs of any single pass without affecting others.
@@ -2669,13 +3205,12 @@ Priority: medium
 Status: pending
 
 ## Abbreviated payloads for dev/test pipeline runs
-
-Pass 1 and Pass 2 send the full JSON (\~4000-6000 tokens) but only need
+Pass 1 and Pass 2 send the full JSON (~4000-6000 tokens) but only need
 a small subset of fields to do their job. In dev/test mode, send only
 the fields each pass actually needs:
 
 Pass 1 minimal: slug, bookTitle, author, verdictText, verdictClass,
-verdictBox, readFirst, differences, quickAnswer
+  verdictBox, readFirst, differences, quickAnswer
 Pass 2 minimal: slug, bookTitle, verdictText, affiliateLink, ctaBlocks
 
 Cuts token count by 60-70%, eliminates truncation errors on large pages,
@@ -2685,15 +3220,13 @@ Priority: high
 Status: pending
 
 ## Priority tiers for content generation
-
 Not all pages are equal — some titles have high search volume and strong
 affiliate potential, others are lower priority. Consider a priority field
 in the JSON schema (1-3) that controls:
-
-* Which model to use (Sonnet for tier 1, Haiku for tier 2-3)
-* Whether to use full or abbreviated article length
-* Which pages get greenfield regeneration first
-* Which pages get titles re-run with Sonnet vs cheaper model
+  - Which model to use (Sonnet for tier 1, Haiku for tier 2-3)
+  - Whether to use full or abbreviated article length
+  - Which pages get greenfield regeneration first
+  - Which pages get titles re-run with Sonnet vs cheaper model
 
 This is a cost optimisation for scale — not needed now but worth building
 in as the site grows beyond 163 pages.
@@ -2701,27 +3234,24 @@ Priority: low
 Status: pending
 
 ## Model quality comparison process
-
 Before committing to expensive production models, establish a formal process
 for evaluating whether cheaper models produce "good enough" output:
 
 1. Run a sample of 10-20 pages through each model tier (dev/test/prod)
 2. Use review-pipeline-output.js to export a comparison table
 3. Evaluate on specific criteria:
-
-   * oneLineReason specificity (is it grounded in the content?)
-   * Title emotional resonance (would you click it?)
-   * Meta description quality (does it extend the title?)
-   * ctaBlocks correctness (right text for verdict type?)
+   - oneLineReason specificity (is it grounded in the content?)
+   - Title emotional resonance (would you click it?)
+   - Meta description quality (does it extend the title?)
+   - ctaBlocks correctness (right text for verdict type?)
 4. Score each model tier 1-5 on each criterion
 5. Calculate cost per page for each tier
 6. Make an explicit ROI decision: is the quality delta worth the cost delta?
 
 This process should be run:
-
-* When considering a new model (e.g. DeepSeek vs Haiku vs Sonnet)
-* When a cheaper model releases that might match current quality
-* When scaling to significantly more pages where cost matters more
+- When considering a new model (e.g. DeepSeek vs Haiku vs Sonnet)
+- When a cheaper model releases that might match current quality
+- When scaling to significantly more pages where cost matters more
 
 The goal is not to always use the cheapest model but to make the
 cost/quality tradeoff explicit and data-driven rather than assumed.
@@ -2729,39 +3259,36 @@ Priority: medium
 Status: pending
 
 ## Periodic quality sanity checks during batch runs
-
 During batch pipeline runs, execute a quality check every N pages and
 hard-stop if the check fails. This catches prompt drift, model degradation,
 or API issues early rather than discovering problems after 163 pages.
 
 Implementation:
-
-* Add --quality-check-interval N flag to pipeline-revise.js (default: off)
-* Every N pages, run a lightweight quality check on the last N processed files
-* Hard-stop (process.exit(1)) if check fails, log which page triggered it
+  - Add --quality-check-interval N flag to pipeline-revise.js (default: off)
+  - Every N pages, run a lightweight quality check on the last N processed files
+  - Hard-stop (process.exit(1)) if check fails, log which page triggered it
 
 Quality checks to run every N pages:
-
-1. quickAnswer.winner is a valid value (Book/Film/Series/Too Close to Call)
-2. quickAnswer.oneLineReason is under 15 words and non-generic
-(flag if it contains "both versions" or "offers more depth")
-3. pageTitle is under 65 chars and doesn't match the generic pattern
-4. metaDesc is under 155 chars
-5. ctaBlocks has exactly 3 items with valid locations
-6. No immutable fields changed from 1-extracted source
+  1. quickAnswer.winner is a valid value (Book/Film/Series/Too Close to Call)
+  2. quickAnswer.oneLineReason is under 15 words and non-generic
+     (flag if it contains "both versions" or "offers more depth")
+  3. pageTitle is under 65 chars and doesn't match the generic pattern
+  4. metaDesc is under 155 chars
+  5. ctaBlocks has exactly 3 items with valid locations
+  6. No immutable fields changed from 1-extracted source
 
 Generic oneLineReason detector — flag if contains any of:
-"both versions", "offers more depth", "has its strengths",
-"each version", "depending on", "both have"
+  "both versions", "offers more depth", "has its strengths",
+  "each version", "depending on", "both have"
 
 Usage:
-node scripts\\pipeline-revise.js --all --pass all --quality-check-interval 5
+  node scripts\pipeline-revise.js --all --pass all --quality-check-interval 5
 
 If check fails at page 25:
-QUALITY CHECK FAILED at iteration 5 (pages 21-25)
-Triggered by: the-firm.json
-Issue: oneLineReason too generic: "Both versions have their strengths."
-Stopping batch. Fix prompt or re-run from --slug the-firm.
+  QUALITY CHECK FAILED at iteration 5 (pages 21-25)
+  Triggered by: the-firm.json
+  Issue: oneLineReason too generic: "Both versions have their strengths."
+  Stopping batch. Fix prompt or re-run from --slug the-firm.
 
 This prevents wasting API spend on a degraded run and catches prompt
 issues before they affect the full batch.
@@ -2769,7 +3296,6 @@ Priority: high
 Status: pending
 
 ## GSC export protocol — define and standardise
-
 Establish exactly what to export from Google Search Console, with what
 filters, at what interval, and in what format. Without this, data is
 inconsistent and hard to compare over time.
@@ -2777,37 +3303,37 @@ inconsistent and hard to compare over time.
 Proposed protocol:
 
 WEEKLY export (every Monday):
-Report: Performance > Search results
-Date range: Last 7 days
-Dimensions: Query + Page
-Filters: none (full site)
-Format: CSV
-Filename: data/reports/gsc/YYYY-MM-DD-weekly-performance.csv
+  Report: Performance > Search results
+  Date range: Last 7 days
+  Dimensions: Query + Page
+  Filters: none (full site)
+  Format: CSV
+  Filename: data/reports/gsc/YYYY-MM-DD-weekly-performance.csv
 
 MONTHLY export (1st of each month):
-Report: Performance > Search results
-Date range: Last 28 days (not calendar month — more consistent)
-Dimensions: Query + Page
-Filters: none
-Format: CSV
-Filename: data/reports/gsc/YYYY-MM-DD-monthly-performance.csv
+  Report: Performance > Search results
+  Date range: Last 28 days (not calendar month — more consistent)
+  Dimensions: Query + Page
+  Filters: none
+  Format: CSV
+  Filename: data/reports/gsc/YYYY-MM-DD-monthly-performance.csv
 
 POST-DEPLOYMENT export (within 48 hours of any deployment):
-Report: Performance > Search results
-Date range: Last 7 days
-Dimensions: Page
-Filters: none
-Format: CSV
-Filename: data/reports/gsc/YYYY-MM-DD-post-deploy.csv
-Purpose: baseline to compare against next week's export
+  Report: Performance > Search results
+  Date range: Last 7 days
+  Dimensions: Page
+  Filters: none
+  Format: CSV
+  Filename: data/reports/gsc/YYYY-MM-DD-post-deploy.csv
+  Purpose: baseline to compare against next week's export
 
 INDEXING STATUS export (monthly):
-Report: Indexing > Pages
-Export each status group separately:
-- Indexed
-- Crawled not indexed
-- Discovered not indexed
-Filename: data/reports/gsc/YYYY-MM-DD-indexing-status.csv
+  Report: Indexing > Pages
+  Export each status group separately:
+    - Indexed
+    - Crawled not indexed
+    - Discovered not indexed
+  Filename: data/reports/gsc/YYYY-MM-DD-indexing-status.csv
 
 Also consider: automate via GSC API once manual protocol is established
 and patterns are understood. Low priority until manual process is stable.
@@ -2815,7 +3341,6 @@ Priority: medium
 Status: pending
 
 ## GSC API automation
-
 Automate GSC exports using the Search Console API once the manual export
 protocol is established and stable.
 
@@ -2823,15 +3348,14 @@ Auth: service account (preferred over OAuth2 for automated scripts)
 Package: googleapis (npm) or raw HTTP to searchconsole.googleapis.com
 
 Planned scripts:
-scripts/gsc-report.js --weekly       ← last 7 days performance
-scripts/gsc-report.js --post-deploy  ← baseline after deployment
-scripts/gsc-report.js --indexing     ← full indexing status
+  scripts/gsc-report.js --weekly       ← last 7 days performance
+  scripts/gsc-report.js --post-deploy  ← baseline after deployment
+  scripts/gsc-report.js --indexing     ← full indexing status
 
 Also worth exploring:
-
-* URL inspection API to programmatically request indexing after deploy
-* Sitemap submission API to auto-submit after render run
-* Alerting if indexed page count drops unexpectedly
+  - URL inspection API to programmatically request indexing after deploy
+  - Sitemap submission API to auto-submit after render run
+  - Alerting if indexed page count drops unexpectedly
 
 Prerequisite: establish manual protocol first (see GSC export protocol idea)
 and confirm what data is actually useful before automating.
@@ -2839,23 +3363,21 @@ Priority: low
 Status: pending
 
 ## pipeline-browse.js — auto-generate browse/index page
-
 Generate index.html from pipeline/2-revised/ JSON files using a template
 approach — same pattern as pipeline-render.js.
 
 Row template is parameterised from JSON fields:
-bookCoverImage, bookTitle, author, genre, starringLine, storyBrief
-(first paragraph only for blurb), verdictClass, verdictText,
-mediaLabel, filmYear, youtubeId, slug
+  bookCoverImage, bookTitle, author, genre, starringLine, storyBrief
+  (first paragraph only for blurb), verdictClass, verdictText,
+  mediaLabel, filmYear, youtubeId, slug
 
 Features to consider:
-
-* Sort options: alphabetical (default), by genre, by verdict, by date added
-* Filter by genre (client-side JS filter on existing rows)
-* Filter by verdict (Book Wins / Film Wins / Too Close to Call)
-* Featured flag in JSON to pin certain pages to top of browse
-* Quick-answer oneLineReason visible in row without clicking through
-* Canonical tag on index.html pointing to https://booksversusmovies.com/
+  - Sort options: alphabetical (default), by genre, by verdict, by date added
+  - Filter by genre (client-side JS filter on existing rows)
+  - Filter by verdict (Book Wins / Film Wins / Too Close to Call)
+  - Featured flag in JSON to pin certain pages to top of browse
+  - Quick-answer oneLineReason visible in row without clicking through
+  - Canonical tag on index.html pointing to https://booksversusmovies.com/
 
 Script: scripts/pipeline-browse.js
 Output: index.html at project root
@@ -2866,32 +3388,30 @@ Priority: high — needed before deployment
 Status: pending
 
 ## Redirect the-maze-runner to the-maze-runner-film
-
 the-maze-runner.html was a duplicate of the-maze-runner-film.html.
 The duplicate was quarantined April 2026. If /the-maze-runner is indexed
 in GSC, add a Netlify redirect before deployment to avoid a 404:
 
 In netlify.toml:
-\[\[redirects]]
-from = "/the-maze-runner"
-to   = "/the-maze-runner-film"
-status = 301
+  [[redirects]]
+  from = "/the-maze-runner"
+  to   = "/the-maze-runner-film"
+  status = 301
 
 Check GSC first — if not indexed, no redirect needed.
 Priority: low
 Status: pending
 
 ## Serve from /reviews/ subdirectory instead of root
-
 Currently rendered HTML files deploy to the project root. Consider
 restructuring to serve from /reviews/ with Netlify publish directory set
 to reviews/:
 
-* Set Netlify publish directory to reviews/
-* Move css/ and images/ inside reviews/
-* Renderer writes directly to reviews/
-* index.html and sitemap.xml also go in reviews/
-* reviews/ becomes fully self-contained
+  - Set Netlify publish directory to reviews/
+  - Move css/ and images/ inside reviews/
+  - Renderer writes directly to reviews/
+  - index.html and sitemap.xml also go in reviews/
+  - reviews/ becomes fully self-contained
 
 Benefits: cleaner project root, clear separation of source and output,
 easier to reason about what gets deployed.
@@ -2900,14 +3420,13 @@ Priority: low
 Status: pending
 
 ## TOMORROW — HIGH PRIORITY: Featured/spotlight section on browse page
-
 Add a hero spotlight section at the top of index.html featuring 3-5
 hand-picked titles in larger cards before the full listing begins.
 
 Implementation:
-config/featured.json — ordered list of slugs to feature
-pipeline-browse.js reads featured.json and renders spotlight cards
-at top, then full listing below
+  config/featured.json — ordered list of slugs to feature
+  pipeline-browse.js reads featured.json and renders spotlight cards
+  at top, then full listing below
 
 Spotlight card is larger than row cards — book cover, title, hook,
 verdict badge, CTA button. Like the old index page but integrated
@@ -2919,100 +3438,72 @@ Priority: high
 Status: pending — do first tomorrow
 
 ## TOMORROW — HIGH PRIORITY: Priority/hype field in JSON schema
-
 Add priority: 1|2|3 field to review-schema.md and all JSON files.
 
 Priority 1 — high hype, high search volume, flagship titles
-e.g. Gone Girl, Dune, The Shining, The Handmaid's Tale
+  e.g. Gone Girl, Dune, The Shining, The Handmaid's Tale
 Priority 2 — solid catalog, good search volume
-e.g. most of the current 162 pages
+  e.g. most of the current 162 pages
 Priority 3 — lower volume, niche, or older titles
 
 Controls:
-
-* Browse page order (priority 1 at top, then 2, then 3)
-* Spotlight eligibility (only priority 1 pages featured)
-* Model assignment (Sonnet for tier 1, Haiku for tier 2-3)
-* Greenfield generation order (tier 1 first)
-* Future: different article lengths per tier
+  - Browse page order (priority 1 at top, then 2, then 3)
+  - Spotlight eligibility (only priority 1 pages featured)
+  - Model assignment (Sonnet for tier 1, Haiku for tier 2-3)
+  - Greenfield generation order (tier 1 first)
+  - Future: different article lengths per tier
 
 Implementation:
-
-1. Add priority field to review-schema.md
-2. Write a script to bulk-set priority based on a curated list
-3. Update pipeline-browse.js to sort by priority then alpha
-4. Update config/models.json to support per-priority model assignment
+  1. Add priority field to review-schema.md
+  2. Write a script to bulk-set priority based on a curated list
+  3. Update pipeline-browse.js to sort by priority then alpha
+  4. Update config/models.json to support per-priority model assignment
 Priority: high
 Status: pending — do second tomorrow
 
+## llm-client.js — shared LLM client module
+Extract all API call logic into a single shared module used by every
+pipeline script. Currently every script duplicates the same callModel(),
+parseJSON(), and .env loading code.
 
+File: scripts/llm-client.js
 
+Exports:
+  callModel(model, systemPrompt, userContent, maxTokens)
+    Raw API call via OpenRouter. No validation. Use for free-text
+    responses (titles, advice, auteur descriptions).
 
+  callModelSafe(model, prompt, userContent, schema, maxRetries=3)
+    API call + jsonrepair + ajv schema validation + auto-retry.
+    Feeds specific schema errors back to model on retry.
+    Use for all structured JSON generation (Pass 1, Pass 2, greenfield).
+    Schema parameter is optional — omit for free-text responses.
 
-\###############################
+  parseJSON(text)
+    Strips markdown fences + runs jsonrepair. Used internally by
+    callModelSafe but also exportable for one-off parsing.
 
+  loadEnv()
+    Loads .env file into process.env. Currently duplicated in every
+    script — centralise here.
 
-
-Yes I think that two-stage pass makes sense
-
-
-
-11:27 PM
-
-Good instincts on both counts.
-
-
-
-Prime Video link — why it's high priority: A reader who just decided the film is better than the book is in the perfect mindset to stream it immediately. That's a warm lead with purchase intent. Amazon's streaming affiliate rates are separate from book rates and can be significant. Every "Movie Wins" and "Too Close to Call" page should have a "Watch on Prime →" CTA alongside "Buy the Book →". It's a second revenue stream on the same page.
-
-
-
-Two-stage greenfield — why it's the right approach:
-
-
-
-Stage 1 — Factual extraction (cheap model, fast):
-
-
-
-Input: bookTitle, slug, filmYear (optional)
-
-Output: author, bookYear, filmYear, director, starring, genre, 
-
-&#x20;       mediaType, mediaLabel, starringLine, reviewBody (one sentence)
-
-You verify this is accurate before spending Sonnet tokens on the editorial content.
-
-
-
-Stage 2 — Editorial generation (Sonnet, the real work):
-
-
-
-Input: full Stage 1 output + affiliateLink + youtubeId + videoAffiliateLink
-
-Output: storyBrief, characters, differences, readFirst, verdictBox, 
-
-&#x20;       verdictText, verdictClass, faq, related, relatedSectionTitle
+Scripts to update once llm-client.js is built:
+  pipeline-revise.js      (Pass 1, titles, Pass 2)
+  pipeline-generate.js    (Stage 1, Stage 2)
+  pipeline-auteurs.js     (director descriptions)
+  get-advice.js           (advice tool)
+  compare-models.js       (eval tool)
 
 Benefits:
+  - Single place to update retry logic, timeout, logging
+  - Schema validation automatic on every structured call
+  - Eliminates ~100 lines of duplicated code across 5 scripts
+  - If OpenRouter changes their API, fix in one place
 
-
-
-Stage 1 catches hallucinated facts (wrong director, wrong year) before they contaminate the editorial
-
-Stage 1 is Haiku-cheap — maybe $0.001 per page
-
-Stage 2 only runs on verified data
-
-You can review Stage 1 output in a CSV before triggering Stage 2
-
-Add to new-ideas.md for tomorrow, and let's call it a night — good session.
-
-
-
-
-
+Dependencies: jsonrepair, ajv (both already installed)
+Effort: ~2-3 hours to extract + wire into all scripts
+Priority: high — do before full Film Wins batch
+Status: pending
 
 
 ===== pipeline-notes.md =====

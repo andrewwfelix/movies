@@ -31,146 +31,163 @@ Format: [YYYY-MM-DD] Description
 ## Section 3 — Revision Pipeline ✓
 
 [2026-04-11] Adopted pipeline-* naming convention for all production scripts
-[2026-04-11] Created config/models.json — LLM model assignments factored out of scripts
+[2026-04-11] Created config/models.json — LLM model assignments factored out
 [2026-04-11] Created scripts/prompts/pass1-structural.txt
-[2026-04-11] Created scripts/pipeline-revise.js — OpenRouter, models.json, validation,
-             checkpoint, logging, retry logic, socket timeout, smart skip,
-             per-pass progress logging, quality gate integration
-[2026-04-11] Created README.md — project conventions, API resilience best practices
+[2026-04-11] Created scripts/pipeline-revise.js — OpenRouter, models.json,
+             validation, checkpoint, logging, retry logic, socket timeout,
+             smart skip, per-pass progress logging, quality gate integration
+[2026-04-11] Created README.md — project conventions, API resilience
 [2026-04-11] Created POLICIES.md — hard rules for pipeline and deployment
-[2026-04-11] Single-page evaluation loop — tested atonement, big-fish, normal-people ✓
+[2026-04-11] Single-page evaluation loop — tested atonement, big-fish ✓
 [2026-04-11] Step 3.4 complete — Pass 1 full batch, 163 pages ✓
 
-[2026-04-12] Created scripts/prompts/pass1b-titles.txt — emotional resonance,
-             provocative tone guidance, TITLE_ANCHOR, gold standard examples,
-             iterated through 4 prompt versions
-[2026-04-12] Added titles pass to pipeline-revise.js — Sonnet model, small payload,
-             before/after logging, titles-review-YYYY-MM-DD.txt written to logs/
+[2026-04-12] Created scripts/prompts/pass1b-titles.txt
+[2026-04-12] Added titles pass to pipeline-revise.js
 [2026-04-12] Ran titles pass — 163 pages via claude-sonnet-4-5
-[2026-04-12] Created scripts/log-all-titles.js — sanity check utility
+[2026-04-12] Created scripts/log-all-titles.js
 [2026-04-12] Created scripts/prompts/pass2-conversion.txt
 [2026-04-12] Ran Pass 2 — 163 pages, ctaBlocks populated
-[2026-04-12] Created scripts/fix-cta-titles.js — fixes long after-verdict CTA text
-[2026-04-12] Step 3.5 complete — all three passes across 163 pages ✓
+[2026-04-12] Created scripts/fix-cta-titles.js
 [2026-04-12] Section 3 complete ✓
 
 
 ## Post-Revision Run 1 — April 12 2026
 
-[2026-04-12] Discovered IN_DIR bug — titles/Pass 2 reading from 1-extracted
-             instead of 2-revised, causing quickAnswer to be overwritten as null
-[2026-04-12] Fixed IN_DIR — Pass 1 reads 1-extracted, titles/Pass 2 read 2-revised
-[2026-04-12] Fixed const ordering (EXTRACTED_DIR defined before IN_DIR)
-[2026-04-12] Added 90-second socket timeout to prevent indefinite hangs
+[2026-04-12] Fixed IN_DIR bug — titles/Pass 2 now read from 2-revised
+[2026-04-12] Added 90-second socket timeout
 [2026-04-12] Added per-pass progress logging (↻ prefix)
-[2026-04-12] Updated metaDesc validation limit from 160 to 155 chars
-[2026-04-12] Built quality-gate.js — generic phrase detector, hard failure vs warning,
-             --fail-fast, --warn-only, --last N, --strict flags
+[2026-04-12] Updated metaDesc validation limit to 155 chars
+[2026-04-12] Built quality-gate.js — generic phrase detector, hard failure
+             vs warning, --fail-fast, --warn-only, --last N, --strict flags
 [2026-04-12] Integrated quality gate into pipeline-revise.js via
              --quality-check-interval N flag
 [2026-04-12] Added tie verdict guidance to pass1-structural.txt
 [2026-04-12] Ran full production batch — Pass 1 + titles + Pass 2, 162 pages
-             Quality gate fired at pages 10, 125, 150 — all resolved
 [2026-04-12] Ran fix-cta-titles.js — 28 long CTA titles fixed
 
 
 ## Section 4 — Renderer ✓
 
 [2026-04-13] Built scripts/pipeline-render.js — deterministic HTML renderer
-             canonical tags, root-relative paths, quick-answer, CTA blocks,
-             FAQ schema, Review schema, character table, differences, related cards
-[2026-04-13] Fixed checkpoint to read HTML from disk rather than memory
-[2026-04-13] Redesigned hero section:
+             canonical tags, root-relative paths, quick-answer above fold,
+             CTA blocks, FAQ schema, Review schema, character table,
+             differences, related cards
+[2026-04-13] Hero redesign:
              - pageTitle hook as subtitle (title prefix stripped)
              - subtitle-meta for factual book/year/director line
              - genre moved from hero to meta strip
-             - h1 font size reduced, subtitle size increased to 1.5rem Playfair
+             - h1 font size reduced, subtitle 1.5rem Playfair italic
              - hero padding reduced
+[2026-04-13] Moved quick-answer block ABOVE comparison panel (SEO fix)
+[2026-04-13] Restructured quick-answer: Key Difference full-width on top,
+             Best Version + Read First below as centered flex pair
+[2026-04-13] Removed CTA button from quick-answer block
+[2026-04-13] Removed max-width from quick-answer, body-text,
+             comparison-table, cta-block
 [2026-04-13] Ran pipeline-render.js --all — 162 pages, checkpoint passed ✓
-[2026-04-13] Built scripts/pipeline-browse.js — index.html generator with
-             client-side verdict filter, stats, extensionless links, tagline
-             "Read it or watch it. We'll tell you which comes first."
-[2026-04-13] Built scripts/sitemap-generate.js — sitemap.xml generator
-[2026-04-13] Built scripts/review-pipeline-output.js — tabular QA summary
-[2026-04-13] Built scripts/export-titles.js — export slug/title/meta/reason to CSV
-[2026-04-13] Built scripts/import-titles.js — import revised titles from CSV to JSON
-[2026-04-13] Reviewed all 163 titles via CSV — trimmed 8 long titles manually
-[2026-04-13] Fixed my-sisters-keeper, the-maze-runner (encoding + generic title)
-[2026-04-13] Quarantined the-maze-runner.html (duplicate of the-maze-runner-film)
+[2026-04-13] Built scripts/pipeline-browse.js — landing page generator:
+             hero, trust strip, spotlight (6 curated cards), verdict filters,
+             year-descending sort, matched image heights
+[2026-04-13] Built scripts/sitemap-generate.js
+[2026-04-13] Built scripts/review-pipeline-output.js
+[2026-04-13] Built scripts/export-titles.js
+[2026-04-13] Built scripts/import-titles.js
+[2026-04-13] Reviewed all 163 titles via CSV — trimmed 8 long titles
+[2026-04-13] Fixed my-sisters-keeper, the-maze-runner (encoding + generic)
+[2026-04-13] Quarantined the-maze-runner.html (duplicate of film version)
 [2026-04-13] Section 4 complete ✓
 
 
-## Documentation Created
+## Section 5 — Landing Page + SEO + Tooling ✓
+
+[2026-04-13] Landing page redesign deployed:
+             - "Book or Movie? We Pick a Winner." hero
+             - Trust strip (4 credibility signals)
+             - Spotlight section — 6 curated cards with oneLineReason hooks
+             - DEFAULT_FEATURED: verity, reminders-of-him, dune,
+               the-shining, gone-girl, atonement
+             - Verdict filters with counts
+             - Year-descending sort (most recent first)
+[2026-04-13] Built get-advice.js — multi-LLM advice tool
+             config/advice.json (Sonnet, Grok, Perplexity)
+             advice/inputs/, advice/outputs/
+[2026-04-13] Built evals/compare-models.js + evals/models.json
+[2026-04-13] Built scripts/pipeline-auteurs.js — The Auteurs page
+             Auto-generates director profiles via Sonnet from site data
+             Single page: table + critical bios
+             data/auteurs.json for editorial review
+[2026-04-13] Added The Auteurs to nav across all pages
+[2026-04-13] Established dev/main branch workflow
+[2026-04-13] Added RavensEdge AI LLC footer across all pages
+[2026-04-13] Created docs/ROADMAP-TECHNICAL.md
+[2026-04-13] Created docs/ROADMAP-PRODUCT.md
+[2026-04-13] Updated docs/business-strategy.md with business action roadmap
+[2026-04-13] Created docs/SEO-STRATEGY.md
+[2026-04-13] Deployed — 162 pages + landing page + Auteurs + SEO fixes
+
+
+## Section 6 — Greenfield Pipeline ✓
+
+[2026-04-14] Built scripts/prompts/greenfield-stage1.txt — factual extraction
+[2026-04-14] Built scripts/prompts/greenfield-stage2.txt — editorial generation
+[2026-04-14] Built scripts/pipeline-generate.js — two-stage greenfield generator
+             Stage 1: Haiku extracts metadata
+             Stage 2: Sonnet/Haiku generates full review JSON
+             jsonrepair for robust JSON parsing
+             Content validation before write
+[2026-04-14] Built scripts/validate-json-schema.js — ajv-based validator
+             Supports --schema extracted | greenfield | revised
+[2026-04-14] Created data/schemas/schema-extracted.json
+[2026-04-14] Created data/schemas/schema-greenfield.json
+[2026-04-14] Created data/schemas/schema-revised.json
+[2026-04-14] Installed jsonrepair, ajv npm packages
+[2026-04-14] Built scripts/generate-review.js — end-to-end orchestrator
+             Steps 1-10: validate → image check → stage1 → review pause
+             → stage2 → titles → pass2 → schema validate → render → copy
+[2026-04-14] Created docs/greenfield-happy-path.txt
+[2026-04-14] Tested full greenfield pipeline on The Godfather ✓
+[2026-04-14] Tested generate-review.js end-to-end on Ghost World ✓
+             Both pages live at booksversusmovies.com
+[2026-04-14] Section 6 complete ✓
+
+
+## Documentation
 
 [2026-04-11] docs/action-plan.txt
 [2026-04-11] docs/pipeline-notes.md
 [2026-04-11] docs/project-objectives.md
-[2026-04-11] docs/business-strategy.md — updated April 13 with business action roadmap
+[2026-04-11] docs/business-strategy.md — updated with business action roadmap
 [2026-04-11] docs/review-schema.md
-[2026-04-11] docs/completed-tasks.md
 [2026-04-13] docs/SEO-STRATEGY.md
-[2026-04-13] docs/POLICIES.md
-[2026-04-13] docs/pipeline-init.md — algorithm design for project template bootstrapper
+[2026-04-13] docs/POLICIES.md — updated with output directory policy
+[2026-04-13] docs/pipeline-init.md
 [2026-04-13] docs/ROADMAP-TECHNICAL.md
 [2026-04-13] docs/ROADMAP-PRODUCT.md
-[2026-04-13] README.md — conventions, API resilience, environment config
+[2026-04-14] docs/greenfield-happy-path.txt
+[2026-04-14] README.md
 
-
-## Version Control
-
-[2026-04-11] Committed full project restructure
-[2026-04-11] Committed README, models config, pipeline-revise with OpenRouter
-[2026-04-12] Committed titles pass, log-all-titles, models update
-[2026-04-12] Committed Pass 2, fix-cta-titles, retry logic, smart skip
-[2026-04-13] Committed quality gate, export/import titles, roadmaps, browse generator
-[2026-04-13] Committed final deploy — hero redesign, nav cleanup, sitemap
-
-
----
-## Section 5 — Landing Page + SEO Improvements ✓
-
-[2026-04-14] Rebuilt pipeline-browse.js — full landing page with:
-             hero "Book or Movie? We Pick a Winner.", trust strip,
-             spotlight section (6 curated cards with oneLineReason hooks),
-             verdict filters with counts, year-descending sort,
-             matched 84px image heights, removed arrow
-[2026-04-14] Updated DEFAULT_FEATURED to GSC-informed list:
-             verity, reminders-of-him, dune, the-shining, gone-girl, atonement
-[2026-04-14] Moved quick-answer block above comparison panel (SEO fix)
-[2026-04-14] Restructured quick-answer: Key Difference full-width on top,
-             Best Version + Read First below as centered flex pair
-[2026-04-14] Removed CTA button from quick-answer block (redundant/spammy)
-[2026-04-14] Removed max-width constraints from quick-answer, body-text,
-             comparison-table, cta-block — all sections now full width
-[2026-04-14] Hero: removed "Actually" from headline, stripped book title
-             prefix from subtitle hook, genre moved to meta strip
-[2026-04-14] Built get-advice.js — multi-LLM advice tool (Sonnet/Grok/Perplexity)
-             config/advice.json, advice/inputs/, advice/outputs/
-[2026-04-14] Built compare-models.js + evals/ folder for model comparison
-[2026-04-14] Established dev branch workflow — all dev work on dev,
-             merge to main only for deployment
-[2026-04-14] Deployed — 162 pages + new landing page + SEO fixes
 
 ---
 ## Current State
 
 DEPLOYED ✓ — April 14 2026
-162 pages live at booksversusmovies.com
-Landing page redesigned — spotlight, hero, trust strip
-Quick-answer above fold on all review pages
-Dev branch established
+164 pages live (162 revised + The Godfather + Ghost World)
+Full greenfield pipeline operational
+generate-review.js — single command end-to-end generation
+
 
 ## Next Steps — Highest Priority
 
-  1. Add oneLineReason to browse rows (editorial hook per row)
-  2. Build pipeline-generate.js (Step 5 — greenfield new reviews)
-     - Two-stage: Stage 1 factual (Haiku), Stage 2 editorial (Sonnet)
-     - Minimal input: bookTitle, slug, affiliateLink, youtubeId, videoAffiliateLink
-     - First batch: 10 Film Wins candidates (Godfather, Jaws, Blade Runner etc.)
-  3. Priority/hype field in JSON schema (controls browse order + model assignment)
-  4. Genre hub pages (/thriller, /romance, /literary-fiction)
-  5. Author hub pages (Colleen Hoover, Gillian Flynn, Stephen King)
-  6. WebP conversion for book cover images
-  7. GSC — request indexing for top 20 impression pages
-  8. Set up ConvertKit/Mailchimp for email capture
-  9. Add Bookshop.org affiliate links alongside Amazon
+  1. Build llm-client.js — shared LLM client before Film Wins batch
+     (see new-ideas.md for full spec)
+  2. Film Wins batch — 10 new greenfield pages:
+     Godfather (done), Jaws, Blade Runner, Shawshank Redemption,
+     Arrival, Children of Men, Stand By Me, The Departed,
+     No Country for Old Men, Apocalypse Now
+  3. Add oneLineReason to browse rows
+  4. Request indexing for top 20 GSC impression pages
+  5. Email capture — ConvertKit setup + opt-in form
+  6. Genre hub pages (/thriller, /romance, /literary-fiction)
+  7. Author hub pages (Colleen Hoover, Gillian Flynn, Stephen King)
+  8. WebP conversion for book cover images
+  9. Priority/hype field in JSON schema
