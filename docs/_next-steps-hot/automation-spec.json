@@ -1,0 +1,124 @@
+{
+  "automation_spec": {
+    "overview": {
+      "definition": "An automation spec is a structured rule system that defines how content is classified, structured, and organized when building and scaling a website.",
+      "purpose": "To formalize decision-making so content creation becomes consistent, repeatable, and eventually automatable.",
+      "scope": "It governs how queries, topics, and entities map to pages, hubs, and site structure."
+    },
+
+    "does": {
+      "decision_rules": [
+        "Defines how content is classified into hub, pillar, or section types",
+        "Defines how queries map to page types",
+        "Defines how topics are grouped into clusters"
+      ],
+      "structure_rules": [
+        "Defines required sections inside each page type",
+        "Ensures consistency across generated or created pages"
+      ],
+      "routing_rules": [
+        "Defines where content lives in the site hierarchy",
+        "Maps entities to canonical URLs"
+      ],
+      "linking_rules": [
+        "Defines internal linking between hubs and pillar pages",
+        "Ensures hubs link down and pillars link up",
+        "Prevents orphan pages"
+      ],
+      "deduplication_rules": [
+        "Prevents multiple pages targeting the same intent",
+        "Ensures one entity equals one canonical page"
+      ]
+    },
+
+    "does_not_do": {
+      "runtime_behavior": [
+        "Does not automatically build or deploy a website",
+        "Does not modify a site without an execution system",
+        "Does not function as runtime application code"
+      ],
+      "note": "Becomes active only when implemented in a content generation or routing pipeline"
+    },
+
+    "system_layers": {
+      "data_layer": {
+        "description": "Raw inputs used for decision making",
+        "inputs": [
+          "Google Search Console queries",
+          "clicks",
+          "impressions",
+          "topic lists"
+        ]
+      },
+
+      "spec_layer": {
+        "description": "Rule system that interprets and structures data",
+        "example": "book vs movie queries → pillar page"
+      },
+
+      "execution_layer": {
+        "description": "System or human process that applies rules",
+        "function": "Generates or organizes content based on spec rules"
+      },
+
+      "website_layer": {
+        "description": "Final rendered pages seen by users"
+      }
+    },
+
+    "rule_types": {
+      "classification": {
+        "description": "Determines page type",
+        "example": "IF query contains 'book vs movie' THEN type = PILLAR"
+      },
+
+      "structure": {
+        "description": "Defines page layout requirements",
+        "example": [
+          "synopsis section",
+          "differences section",
+          "FAQ section",
+          "timeline section"
+        ]
+      },
+
+      "routing": {
+        "description": "Assigns content to URLs or hubs",
+        "example": "Lonesome Dove → single canonical page"
+      },
+
+      "linking": {
+        "description": "Controls internal linking structure",
+        "rules": [
+          "hubs link to pillars",
+          "pillars link to hubs",
+          "no duplicate intent pages"
+        ]
+      },
+
+      "deduplication": {
+        "description": "Prevents overlapping content",
+        "rule": "one entity = one pillar page"
+      }
+    },
+
+    "key_principles": {
+      "seo_strategy": [
+        "Structure matters more than volume at early stage",
+        "Consolidation improves ranking signals",
+        "Fragmentation reduces authority"
+      ],
+      "site_model": [
+        "Hub = broad intent cluster",
+        "Pillar = entity-level authority page",
+        "Section = sub-intent within a pillar page"
+      ]
+    },
+
+    "conceptual_shift": {
+      "before": "Manual page-by-page decision making",
+      "after": "Rule-based system determining structure automatically",
+      "future": "Fully automated content generation pipeline"
+    }
+  }
+}

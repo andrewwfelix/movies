@@ -1,0 +1,5 @@
+figure out a clean roadmap for moving to the hub model,
+I want to thing something like Kanban cards. 
+I want to move quick, but hub pages, quick, and figure out some of the automation and high-level rearchitectture later
+just realizing value quicklu
+I don't want the architecture to get too complicated too quickly, but I want to make sure i'm not writing throwarway code. 
