@@ -37,6 +37,7 @@ const hasFlag = flag => args.includes(flag);
 
 const SINGLE_SLUG = get('--slug', null);
 const FORCE       = hasFlag('--force');
+const ROOT        = path.resolve(__dirname, '..');
 const IN_DIR      = path.resolve(__dirname, '../pipeline/2-revised');
 const OUT_DIR     = path.resolve(__dirname, get('--out', '../pipeline/3-rendered'));
 
@@ -546,6 +547,29 @@ function run() {
 
   if (results.filter(r => r.success && !r.skipped).length > 0) {
     runCheckpoint(results.filter(r => !r.skipped), log);
+  }
+
+  // ── Auto-copy to project root ─────────────────────────────────────────────
+  const rendered = results.filter(r => r.success && !r.skipped);
+  if (rendered.length > 0) {
+    log.section('Copying to project root');
+    let copied = 0;
+    let copyFailed = 0;
+
+    for (const result of rendered) {
+      const src  = path.join(OUT_DIR, `${result.slug}.html`);
+      const dest = path.join(ROOT, `${result.slug}.html`);
+      try {
+        fs.copyFileSync(src, dest);
+        copied++;
+      } catch (e) {
+        log.error(`${result.slug}.html`, `Copy failed: ${e.message}`);
+        copyFailed++;
+      }
+    }
+
+    log.info(`Copied ${copied} file${copied !== 1 ? 's' : ''} to project root`);
+    if (copyFailed > 0) log.warn(`${copyFailed} file${copyFailed !== 1 ? 's' : ''} failed to copy`);
   }
 
   log.close();
