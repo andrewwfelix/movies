@@ -752,7 +752,12 @@ function dryRun(models) {
   console.log(`${'─'.repeat(52)}`);
 
   if (existingJSON && RENDER_ONLY) {
-    const data = JSON.parse(fs.readFileSync(OUTPUT_JSON, 'utf8'));
+    const rawDry = JSON.parse(fs.readFileSync(OUTPUT_JSON, 'utf8'));
+    const data = Array.isArray(rawDry)
+      ? rawDry
+      : Object.entries(rawDry)
+          .filter(([k, v]) => !isNaN(k) && typeof v === 'object' && v !== null)
+          .map(([, v]) => v);
     const q    = groupByQuarter(data);
     console.log(`  Existing JSON: ${data.length} adaptations`);
     ['Q1','Q2','Q3','Q4','TBA'].forEach(k => {
@@ -921,7 +926,12 @@ async function run() {
       console.error(`  ✗ No existing JSON at ${OUTPUT_JSON} — run without --render-only first.`);
       process.exit(1);
     }
-    guideData = JSON.parse(fs.readFileSync(OUTPUT_JSON, 'utf8'));
+    const raw = JSON.parse(fs.readFileSync(OUTPUT_JSON, 'utf8'));
+    guideData = Array.isArray(raw)
+      ? raw
+      : Object.entries(raw)
+          .filter(([k, v]) => !isNaN(k) && typeof v === 'object' && v !== null)
+          .map(([, v]) => v);
     console.log(`  → Loaded existing JSON: ${guideData.length} adaptations`);
   }
 
