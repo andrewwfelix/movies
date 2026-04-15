@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-15T22:40:13.839Z
+============================================================
+[22:40:13.842] [INFO ] pipeline-render.js
+[22:40:13.843] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[22:40:13.844] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[22:40:13.844] [INFO ] Files:   1
+[22:40:13.844] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[22:40:13.845] [PASS ] shawshank-redemption.html — 21490 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+── Copying to project root ──────────────────────
+[22:40:13.847] [INFO ] Copied 1 file to project root
+
+============================================================
+Finished: 2026-04-15T22:40:13.847Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-40-13_pipeline-render.log
+============================================================

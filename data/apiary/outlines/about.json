@@ -1,0 +1,64 @@
+{
+  "slug": "about",
+  "pageTitle": "About The Apiary Guide - Your Trusted Beekeeping Resource",
+  "metaDesc": "Learn about The Apiary Guide's mission to help beekeepers thrive. Honest reviews, expert guidance, and transparent affiliate partnerships since 2024.",
+  "h1": "About The Apiary Guide",
+  "intro": "Introduce The Apiary Guide as a resource built by beekeepers, for beekeepers. Explain that we exist to cut through marketing noise and provide honest, experience-based guidance on equipment, techniques, and hive management. Establish that we're here to help both beginners start confidently and experienced keepers optimize their apiaries.",
+  "sections": [
+    {
+      "id": "our-mission",
+      "heading": "Our Mission: Help Every Beekeeper Thrive",
+      "summary": "Articulate the core mission: to provide clear, actionable beekeeping information without the fluff. Emphasize that we test products, research techniques, and share what actually works in real-world conditions. Position the site as a trusted companion throughout a beekeeper's journey, from first hive to established apiary.",
+      "hasAffiliate": false,
+      "affiliateNote": ""
+    },
+    {
+      "id": "who-we-are",
+      "heading": "Who We Are",
+      "summary": "Introduce the team behind The Apiary Guide (keep it authentic but not overly personal). Mention collective beekeeping experience, geographic diversity if relevant, and commitment to ongoing learning. Explain that we're practitioners first, writers second—we keep bees and test the gear we recommend.",
+      "hasAffiliate": false,
+      "affiliateNote": ""
+    },
+    {
+      "id": "how-we-review",
+      "heading": "How We Review Products & Create Content",
+      "summary": "Describe the editorial process: hands-on testing when possible, research from trusted sources, consultation with experienced beekeepers, and consideration of different climates and beekeeping styles. Explain that we prioritize durability, value, and real-world performance over marketing claims. Make it clear we only recommend products we'd use ourselves.",
+      "hasAffiliate": false,
+      "affiliateNote": ""
+    },
+    {
+      "id": "affiliate-disclosure",
+      "heading": "Affiliate Disclosure & How We Make Money",
+      "summary": "Provide transparent disclosure that The Apiary Guide earns commissions through affiliate links when readers purchase recommended products. Emphasize that this never influences our recommendations—we only link to products we genuinely believe in. Explain that affiliate income helps keep the site free and allows us to continue creating helpful content. Note that readers never pay more when using our links.",
+      "hasAffiliate": false,
+      "affiliateNote": ""
+    },
+    {
+      "id": "our-values",
+      "heading": "Our Values & Commitments",
+      "summary": "Outline core values: honesty over hype, bee health first, sustainable practices, supporting new beekeepers, and continuous learning. Commit to updating content as techniques evolve and correcting mistakes when we make them. Position the site as a living resource that grows with the beekeeping community.",
+      "hasAffiliate": false,
+      "affiliateNote": ""
+    },
+    {
+      "id": "get-in-touch",
+      "heading": "Get in Touch",
+      "summary": "Invite readers to reach out with questions, suggestions, or corrections. Provide contact information or a contact form link. Encourage community engagement and make it clear that reader feedback helps improve the site. Mention that while we can't provide personalized beekeeping advice, we welcome topic suggestions and product recommendations to review.",
+      "hasAffiliate": false,
+      "affiliateNote": ""
+    }
+  ],
+  "faqQuestions": [
+    "Who runs The Apiary Guide?",
+    "Do you actually keep bees?",
+    "How do affiliate links work on this site?",
+    "Do affiliate partnerships affect your recommendations?",
+    "How can I contact The Apiary Guide?",
+    "Do you offer personalized beekeeping advice?"
+  ],
+  "internalLinks": [
+    "contact",
+    "best-beekeeping-starter-kits",
+    "beekeeping-for-beginners"
+  ]
+}

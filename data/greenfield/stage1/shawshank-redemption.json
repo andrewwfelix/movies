@@ -1,0 +1,15 @@
+{
+  "bookTitle": "Rita Hayworth and Shawshank Redemption",
+  "author": "Stephen King",
+  "bookYear": "1982",
+  "genre": "Literary Fiction / Drama",
+  "mediaType": "film",
+  "mediaLabel": "The Film",
+  "filmYear": "1994",
+  "director": "Frank Darabont",
+  "starringLine": "Starring Tim Robbins and Morgan Freeman — Film: 1994",
+  "reviewBody": "King's novella is a masterclass in hope and redemption; Darabont's film is a masterpiece that proves restraint and humanity beat spectacle every time.",
+  "ratingValue": "5",
+  "bookCoverImage": "shawshank-redemption.jpg",
+  "slug": "shawshank-redemption"
+}

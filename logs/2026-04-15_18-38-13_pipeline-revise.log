@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T22:38:13.127Z
+============================================================
+[22:38:13.131] [INFO ] Model config loaded from config/models.json
+[22:38:13.131] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[22:38:13.132] [INFO ] Loaded pass2-conversion.txt (2042 chars)
+[22:38:13.132] [INFO ] pipeline-revise.js
+[22:38:13.132] [INFO ] Pass:    2
+[22:38:13.133] [INFO ] Files:   1
+[22:38:13.133] [INFO ] Force:   yes
+[22:38:13.133] [INFO ] Dry run: no
+[22:38:13.133] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:38:13.133] [INFO ]   ↻  norwegian-wood — Pass 2 (anthropic/claude-haiku-4-5)…
+[22:38:52.278] [PASS ] norwegian-wood.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[22:38:52.279] [INFO ] Single file mode — skipping full checkpoint
+[22:38:52.279] [INFO ] quickAnswer.winner:        Too Close to Call
+[22:38:52.279] [INFO ] quickAnswer.readFirst:     Either order works
+[22:38:52.279] [INFO ] quickAnswer.oneLineReason: Book's depth versus film's visual poetry—different mediums, equal power.
+
+============================================================
+Finished: 2026-04-15T22:38:52.279Z
+Elapsed:  39.1s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-38-13_pipeline-revise.log
+============================================================

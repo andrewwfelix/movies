@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-15T22:37:30.876Z
+============================================================
+[22:37:30.879] [INFO ] pipeline-render.js
+[22:37:30.881] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[22:37:30.881] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[22:37:30.881] [INFO ] Files:   1
+[22:37:30.881] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[22:37:30.883] [PASS ] blade-runner.html — 22857 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+── Copying to project root ──────────────────────
+[22:37:30.885] [INFO ] Copied 1 file to project root
+
+============================================================
+Finished: 2026-04-15T22:37:30.885Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-37-30_pipeline-render.log
+============================================================

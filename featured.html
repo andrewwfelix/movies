@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured — Deep Dives | BooksVersusMovies</title>
+  <meta name="description" content="Our most in-depth book vs. movie comparisons. Long-form spotlights on the adaptations worth understanding fully — novels, films, sequels, and everything in between.">
+  <link rel="canonical" href="https://booksversusmovies.com/featured">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .featured-hero {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 3rem 1.5rem 2.5rem;
+    }
+    .featured-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .featured-type-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      background: #333;
+      color: #aaa;
+      margin-bottom: 1rem;
+    }
+    .featured-hero h1 {
+      font-size: 2.2rem;
+      margin: 0 0 0.75rem;
+      color: #fff;
+      max-width: 700px;
+    }
+    .featured-hero p {
+      font-size: 1rem;
+      color: #aaa;
+      max-width: 600px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .featured-body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    /* ── Hero spotlight card ─────────────────────────── */
+    .spotlight-hero-card {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 3rem;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s;
+    }
+    .spotlight-hero-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .spotlight-hero-card-text {
+      padding: 2.5rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .spotlight-hero-card-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+      background: #f0f0f0;
+      color: #888;
+      margin-bottom: 1rem;
+      width: fit-content;
+    }
+    .spotlight-hero-card h2 {
+      font-size: 1.6rem;
+      margin: 0 0 0.75rem;
+      color: #1a1a1a;
+      line-height: 1.25;
+    }
+    .spotlight-hero-card-hook {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.65;
+      margin: 0 0 1.5rem;
+    }
+    .spotlight-cta {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #1a1a1a;
+      text-decoration: none;
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1px;
+    }
+    .spotlight-hero-card-image {
+      background: #1a1a1a;
+      overflow: hidden;
+    }
+    .spotlight-hero-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      opacity: 0.85;
+    }
+
+    /* ── Section heading ─────────────────────────────── */
+    .featured-section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin: 0 0 1.25rem;
+    }
+
+    /* ── Spotlight grid ──────────────────────────────── */
+    .spotlight-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .spotlight-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+    .spotlight-card:hover {
+      box-shadow: 0 3px 14px rgba(0,0,0,0.09);
+    }
+    .spotlight-card-image {
+      height: 160px;
+      background: #1a1a1a;
+      overflow: hidden;
+    }
+    .spotlight-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      opacity: 0.8;
+    }
+    .spotlight-card-image-fallback {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .spotlight-card-body {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .spotlight-card-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+    }
+    .spotlight-card h3 {
+      font-size: 1.05rem;
+      margin: 0 0 0.5rem;
+      color: #1a1a1a;
+      line-height: 1.3;
+    }
+    .spotlight-card-hook {
+      font-size: 0.82rem;
+      color: #666;
+      line-height: 1.55;
+      margin: 0 0 1rem;
+      flex: 1;
+    }
+    .spotlight-card-link {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #1a1a1a;
+    }
+
+    /* ── What is a spotlight callout ────────────────── */
+    .featured-explainer {
+      background: #f9f9f9;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .featured-explainer p {
+      font-size: 0.88rem;
+      color: #555;
+      line-height: 1.65;
+      margin: 0;
+    }
+    .featured-explainer strong {
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 768px) {
+      .spotlight-hero-card { grid-template-columns: 1fr; }
+      .spotlight-hero-card-image { height: 200px; }
+      .featured-hero h1 { font-size: 1.6rem; }
+      .spotlight-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0DY0XDWVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P0DY0XDWVV');
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-logo" href="/">Books<span>Versus</span>Movies</a>
+    <nav>
+      <a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/upcoming-adaptations">Upcoming</a> &nbsp;&middot;&nbsp;
+      <a href="/featured">Featured</a> &nbsp;&middot;&nbsp;
+      <a href="/auteurs">The Auteurs</a> &nbsp;&middot;&nbsp;
+      <a href="/about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="featured-hero">
+  <div class="featured-hero-inner">
+    <span class="featured-type-badge">Featured</span>
+    <h1>The Deep Dives</h1>
+    <p>Long-form spotlights on the adaptations worth understanding fully — the books, the films, the sequels, and everything in between.</p>
+  </div>
+</div>
+
+<div class="featured-body">
+
+  <!-- Hero spotlight -->
+  <a class="spotlight-hero-card" href="/spotlight-lonesome-dove">
+    <div class="spotlight-hero-card-text">
+      <span class="spotlight-hero-card-badge">Universe Spotlight</span>
+      <h2>Lonesome Dove: The Novel That Rewrote the Western</h2>
+      <p class="spotlight-hero-card-hook">Larry McMurtry's 850-page Pulitzer Prize winner and the 1989 miniseries that became a cultural phenomenon. We map the full universe — novels, sequels, prequels, and the adaptations worth watching.</p>
+      <span class="spotlight-cta">Read the spotlight &rarr;</span>
+    </div>
+    <div class="spotlight-hero-card-image">
+      <img src="images/lonesome-dove.jpg" alt="Lonesome Dove" loading="lazy"
+           onerror="this.style.display='none'">
+    </div>
+  </a>
+
+  <!-- Grid of remaining spotlights -->
+  <p class="featured-section-label">All Spotlights</p>
+
+  <div class="spotlight-grid">
+
+    <a class="spotlight-card" href="/spotlight-dune">
+      <div class="spotlight-card-image">
+        <img src="images/dune.jpg" alt="Dune" loading="lazy"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Film Spotlight</div>
+        <h3>Dune: Frank Herbert's Vision vs. Villeneuve's Films</h3>
+        <p class="spotlight-card-hook">The most ambitious sci-fi novel of the 20th century and the two-part adaptation that finally got it right. How much did it change, and does it matter?</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-fight-club">
+      <div class="spotlight-card-image">
+        <img src="images/fight-club.jpg" alt="Fight Club" loading="lazy"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Film Spotlight</div>
+        <h3>Fight Club: Palahniuk's Novel vs. Fincher's Film</h3>
+        <p class="spotlight-card-hook">A rare case where the film may surpass its source. Fincher took Palahniuk's provocation and turned it into something even more unsettling.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-gone-girl">
+      <div class="spotlight-card-image">
+        <img src="images/gone-girl.jpg" alt="Gone Girl" loading="lazy"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Film Spotlight</div>
+        <h3>Gone Girl: Flynn's Thriller vs. Fincher's Film</h3>
+        <p class="spotlight-card-hook">Gillian Flynn wrote the screenplay herself. The result is a masterclass in what adaptation can do — and what it has to sacrifice to do it.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-the-shining">
+      <div class="spotlight-card-image">
+        <img src="images/the-shining.jpg" alt="The Shining" loading="lazy"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Film Spotlight</div>
+        <h3>The Shining: King's Novel vs. Kubrick's Film</h3>
+        <p class="spotlight-card-hook">Stephen King famously hated it. Stanley Kubrick made one of the greatest horror films ever made. Both are right, and both are wrong.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="featured-explainer">
+    <p><strong>What is a spotlight?</strong> Our spotlight pages go beyond a standard book vs. movie comparison. They cover the full picture — the source novel in depth, the adaptation choices, sequels and related works, historical context, and a definitive verdict on what to read, watch, and in what order. They take longer to read and longer to write. We only make them for adaptations that reward that level of attention.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>&copy; 2026 BooksVersusMovies.com &nbsp;&mdash;&nbsp;
+      <a href="/">Home</a> &nbsp;&middot;&nbsp;
+      <a href="/about">About</a>
+    </p>
+    <p style="margin-top:0.5rem;font-size:0.75rem;color:#888;">
+      As an Amazon Associate I earn from qualifying purchases. &nbsp;&middot;&nbsp; RavensEdge AI LLC
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

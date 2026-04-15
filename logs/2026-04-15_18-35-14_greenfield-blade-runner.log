@@ -1,0 +1,145 @@
+============================================================
+Greenfield Pipeline: blade-runner
+Started: 2026-04-15T22:35:14.904Z
+============================================================
+
+
+── Step 1: Generate (Stage 1 + Stage 2) ─────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-generate.js" --slug blade-runner
+pipeline-generate.js
+Inputs:  1
+Stage 1: anthropic/claude-haiku-4-5
+Stage 2: anthropic/claude-haiku-4-5
+Stage:   all
+Force:   no
+── Do Androids Dream of Electric Sheep? (blade-runner) ──
+  ↻  Stage 1 (anthropic/claude-haiku-4-5)... ✓
+     author: Philip K. Dick | year: 1968 | film: 1982 | director: Ridley Scott
+  ↻  Stage 2 (anthropic/claude-haiku-4-5)... ↺ retry 1... ✓
+  ⚠  Schema warnings on final output:
+     - faq.3: must have required property 'answer'
+     - faq.3: must NOT have additional properties
+     verdict: Film Wins
+     → Copied to pipeline/2-revised/blade-runner.json
+── Summary ──────────────────────────────────────────
+  Succeeded: 1
+  Failed:    0
+Next steps:
+  1. Review stage 2 output in data/greenfield/stage2/
+  2. Add book cover images to images/
+  3. Run titles pass:  node scripts\pipeline-revise.js --pass titles
+  4. Run Pass 2:       node scripts\pipeline-revise.js --pass pass2
+  5. Render:           node scripts\pipeline-render.js
+  ✓ Generate complete
+
+── Step 2: Titles pass ──────────────────────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-revise.js" --pass titles --slug blade-runner --force
+Model config loaded from config/models.json
+Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+Loaded pass1b-titles.txt (2740 chars)
+pipeline-revise.js
+Pass:    titles
+Files:   1
+Force:   yes
+Dry run: no
+Delay:   500ms between calls
+── Processing ───────────────────────────────────
+  ↻  blade-runner — titles (anthropic/claude-sonnet-4-5)…
+  ⚠  blade-runner.json: Titles validation failed — not written: pageTitle too long: 88 chars — will not write
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+Single file mode — skipping full checkpoint
+quickAnswer.winner:        Film
+quickAnswer.readFirst:     Either order works
+quickAnswer.oneLineReason: Scott's vision deepens Dick's philosophy with visual poetry.
+BEFORE title (0 chars): null
+AFTER  title (undefined chars): null
+BEFORE meta  (0 chars): null
+AFTER  meta  (undefined chars): null
+✓ Log written → C:\Users\andre\projects\movies\logs\2026-04-15_18-36-52_pipeline-revise.log
+  ⚠ No title written by pass — using fallback
+    Fallback: Do Androids Dream of Electric Sheep? Book vs Movie (50 chars)
+  ✓ Titles complete
+
+── Step 3: Conversion pass (CTA blocks) ─────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-revise.js" --pass 2 --slug blade-runner --force
+Model config loaded from config/models.json
+Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+Loaded pass2-conversion.txt (2042 chars)
+pipeline-revise.js
+Pass:    2
+Files:   1
+Force:   yes
+Dry run: no
+Delay:   500ms between calls
+── Processing ───────────────────────────────────
+  ↻  blade-runner — Pass 2 (anthropic/claude-haiku-4-5)…
+  ✓  blade-runner.json — Pass 2 — 3 CTA blocks added
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+Single file mode — skipping full checkpoint
+quickAnswer.winner:        Film
+quickAnswer.readFirst:     Either order works
+quickAnswer.oneLineReason: Scott's vision deepens Dick's philosophy with visual poetry.
+✓ Log written → C:\Users\andre\projects\movies\logs\2026-04-15_18-36-55_pipeline-revise.log
+  ✓ Conversion complete
+
+── Step 4: Render ───────────────────────────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-render.js" --slug blade-runner --force
+pipeline-render.js
+Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+Files:   1
+Force:   yes
+── Rendering ────────────────────────────────────
+  ✓  blade-runner.html — 22857 chars
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+── Copying to project root ──────────────────────
+Copied 1 file to project root
+✓ Log written → C:\Users\andre\projects\movies\logs\2026-04-15_18-37-30_pipeline-render.log
+  ✓ Render complete
+
+── Complete ─────────────────────────────────────
+  ✓ blade-runner — all steps passed
+
+Next steps:
+  1. Check images/blade-runner.jpg exists
+  2. Open blade-runner.html in browser to review
+  3. git add . && git commit -m "feat: blade-runner review"
+  4. node scripts/ops/sitemap-generate.js
+
+============================================================
+Finished: 2026-04-15T22:37:30.907Z
+Log: C:\Users\andre\projects\movies\logs\2026-04-15_18-35-14_greenfield-blade-runner.log
+============================================================

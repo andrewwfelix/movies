@@ -1,0 +1,15 @@
+{
+  "bookTitle": "Story of Your Life",
+  "author": "Ted Chiang",
+  "bookYear": "1998",
+  "genre": "Science Fiction",
+  "mediaType": "film",
+  "mediaLabel": "The Film",
+  "filmYear": "2016",
+  "director": "Denis Villeneuve",
+  "starringLine": "Starring Amy Adams, Jeremy Renner — Film: 2016",
+  "reviewBody": "Villeneuve transforms Chiang's cerebral novella into a visual and emotional masterpiece that honors the science while breaking your heart.",
+  "ratingValue": "5",
+  "bookCoverImage": "arrival.jpg",
+  "slug": "arrival"
+}

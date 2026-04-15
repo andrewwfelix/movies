@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T22:36:52.474Z
+============================================================
+[22:36:52.476] [INFO ] Model config loaded from config/models.json
+[22:36:52.477] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[22:36:52.478] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[22:36:52.478] [INFO ] pipeline-revise.js
+[22:36:52.478] [INFO ] Pass:    titles
+[22:36:52.478] [INFO ] Files:   1
+[22:36:52.478] [INFO ] Force:   yes
+[22:36:52.478] [INFO ] Dry run: no
+[22:36:52.478] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:36:52.479] [INFO ]   ↻  blade-runner — titles (anthropic/claude-sonnet-4-5)…
+[22:36:55.525] [WARN ] blade-runner.json: Titles validation failed — not written: pageTitle too long: 88 chars — will not write
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[22:36:55.527] [INFO ] Single file mode — skipping full checkpoint
+[22:36:55.527] [INFO ] quickAnswer.winner:        Film
+[22:36:55.527] [INFO ] quickAnswer.readFirst:     Either order works
+[22:36:55.527] [INFO ] quickAnswer.oneLineReason: Scott's vision deepens Dick's philosophy with visual poetry.
+[22:36:55.527] [INFO ] BEFORE title (0 chars): null
+[22:36:55.527] [INFO ] AFTER  title (undefined chars): null
+[22:36:55.527] [INFO ] BEFORE meta  (0 chars): null
+[22:36:55.527] [INFO ] AFTER  meta  (undefined chars): null
+
+============================================================
+Finished: 2026-04-15T22:36:55.527Z
+Elapsed:  3.1s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-36-52_pipeline-revise.log
+============================================================

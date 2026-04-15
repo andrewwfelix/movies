@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T22:34:37.752Z
+============================================================
+[22:34:37.755] [INFO ] Model config loaded from config/models.json
+[22:34:37.756] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[22:34:37.757] [INFO ] Loaded pass2-conversion.txt (2042 chars)
+[22:34:37.757] [INFO ] pipeline-revise.js
+[22:34:37.757] [INFO ] Pass:    2
+[22:34:37.757] [INFO ] Files:   1
+[22:34:37.757] [INFO ] Force:   yes
+[22:34:37.757] [INFO ] Dry run: no
+[22:34:37.757] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:34:37.758] [INFO ]   ↻  arrival — Pass 2 (anthropic/claude-haiku-4-5)…
+[22:35:14.809] [PASS ] arrival.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[22:35:14.810] [INFO ] Single file mode — skipping full checkpoint
+[22:35:14.810] [INFO ] quickAnswer.winner:        Too Close to Call
+[22:35:14.810] [INFO ] quickAnswer.readFirst:     Either order works
+[22:35:14.810] [INFO ] quickAnswer.oneLineReason: Novella is pure intellect; film adds heart without betraying it.
+
+============================================================
+Finished: 2026-04-15T22:35:14.810Z
+Elapsed:  37.1s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-34-37_pipeline-revise.log
+============================================================

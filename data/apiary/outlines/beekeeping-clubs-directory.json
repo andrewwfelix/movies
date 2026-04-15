@@ -1,0 +1,78 @@
+{
+  "slug": "beekeeping-clubs-directory",
+  "pageTitle": "Beekeeping Clubs & Associations Directory (By State)",
+  "metaDesc": "Find local beekeeping clubs, state associations, and national organizations near you. Join a community of beekeepers for mentorship and support.",
+  "h1": "Find Your Local Beekeeping Club or Association",
+  "intro": "Connecting with experienced beekeepers is the fastest way to succeed with your hives. This directory lists active beekeeping clubs, state associations, and national organizations across the United States. Whether you're looking for hands-on mentorship, monthly meetings, or swarm call lists, your local club is an invaluable resource.",
+  "sections": [
+    {
+      "id": "why-join-beekeeping-club",
+      "heading": "Why Every Beekeeper Should Join a Local Club",
+      "summary": "Explain the tangible benefits of club membership: access to experienced mentors, group equipment purchases, swarm retrieval networks, and hands-on hive inspections. Emphasize that clubs help beginners avoid costly mistakes and provide ongoing support that books and videos cannot replace.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "national-beekeeping-organizations",
+      "heading": "National Beekeeping Organizations",
+      "summary": "List major national organizations like the American Beekeeping Federation, Apiary Inspectors of America, and American Honey Producers Association. Include brief descriptions of each organization's focus, membership benefits, and links to their websites. Note which offer insurance programs or legislative advocacy.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "state-by-state-directory",
+      "heading": "Beekeeping Clubs by State",
+      "summary": "Comprehensive alphabetical directory organized by state, then by city or region within each state. Each listing should include club name, meeting location/frequency, contact information or website, and any special programs (beginner classes, equipment libraries, queen rearing groups). This is the core value section and should be formatted for easy scanning.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "what-to-expect-first-meeting",
+      "heading": "What to Expect at Your First Club Meeting",
+      "summary": "Walk through a typical club meeting structure: social time, business updates, educational presentations, and Q&A sessions. Address common newcomer concerns about feeling intimidated or not knowing enough. Emphasize that clubs welcome absolute beginners and that asking questions is encouraged.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "online-beekeeping-communities",
+      "heading": "Online Beekeeping Communities and Forums",
+      "summary": "List reputable online forums, Facebook groups, and Reddit communities where beekeepers share advice and troubleshoot problems. Note that online communities complement but don't replace local clubs for hands-on learning. Include guidelines for evaluating advice quality in online spaces.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "starting-your-own-club",
+      "heading": "How to Start a Beekeeping Club in Your Area",
+      "summary": "Practical guide for areas without existing clubs: finding founding members, securing meeting locations, structuring dues and leadership, and promoting the new club. Include tips on partnering with extension offices and libraries for credibility and meeting space.",
+      "hasAffiliate": true,
+      "affiliateNote": "Link to beekeeping starter kit or educational books that new club organizers can use as teaching resources for their members"
+    },
+    {
+      "id": "club-benefits-comparison",
+      "heading": "Club Membership vs. Going Solo: The Real Cost Difference",
+      "summary": "Compare the financial and learning curve costs of beekeeping alone versus with club support. Quantify savings from group equipment purchases, shared extractors, and avoiding beginner mistakes. Show that annual dues ($20-50 typically) pay for themselves many times over.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "submit-your-club",
+      "heading": "Submit Your Club to This Directory",
+      "summary": "Clear call-to-action inviting club officers to submit their organization for inclusion. Explain submission criteria (active membership, regular meetings, verifiable contact info). Include embedded form or email contact method. Emphasize that listing is free and helps local beekeepers find community.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    }
+  ],
+  "faqQuestions": [
+    "Do I need to be an experienced beekeeper to join a club?",
+    "How much do beekeeping club memberships cost?",
+    "What's the difference between a local club and a state association?",
+    "Can I visit a club meeting before joining?",
+    "Do beekeeping clubs offer mentorship programs?",
+    "Are there beekeeping clubs for urban beekeepers?"
+  ],
+  "internalLinks": [
+    "beekeeping-for-beginners",
+    "beekeeping-equipment-checklist",
+    "find-beekeeping-mentor"
+  ]
+}

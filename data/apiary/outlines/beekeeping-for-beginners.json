@@ -1,0 +1,99 @@
+{
+  "slug": "beekeeping-for-beginners",
+  "pageTitle": "Beekeeping for Beginners: What to Know Before You Start",
+  "metaDesc": "Thinking about beekeeping? Learn about costs, time commitment, zoning laws, and neighbor considerations before you buy your first hive.",
+  "h1": "Beekeeping for Beginners: The Essential Pre-Start Checklist",
+  "intro": "Starting beekeeping isn't just about buying a hive and bees. Before you invest time and money, you need to understand the legal requirements, financial commitment, and lifestyle changes that come with keeping bees. This guide walks you through every decision you need to make before your first colony arrives—from checking local ordinances to talking with your neighbors.",
+  "sections": [
+    {
+      "id": "is-beekeeping-right-for-you",
+      "heading": "Is Beekeeping Right for You? The Honest Reality Check",
+      "summary": "Cover the physical demands (lifting 40-60 lb supers, working in heat), allergy considerations, and personality traits that help (patience, observation skills, comfort with stings). Address common romanticized expectations vs. reality. Include a self-assessment checklist.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "time-commitment-breakdown",
+      "heading": "The Real Time Commitment: Weekly, Monthly, and Seasonal",
+      "summary": "Break down actual hours required by season—spring inspections (weekly, 1-2 hours), summer management (bi-weekly), fall prep, winter monitoring. Include first-year vs. established beekeeper time differences. Emphasize that bees can't be ignored for weeks at a time during active season.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "startup-costs-and-ongoing-expenses",
+      "heading": "Startup Costs and Ongoing Expenses: The Complete Budget",
+      "summary": "Provide realistic cost ranges for initial setup ($300-800), including hive equipment, protective gear, tools, and bees. Break down ongoing annual costs (treatments, feed, replacements). Compare buying package bees vs. nucs vs. catching swarms. Include a downloadable budget worksheet concept.",
+      "hasAffiliate": true,
+      "affiliateNote": "Link to beginner beekeeping starter kit and protective gear bundle. Mention specific jacket/veil recommendations."
+    },
+    {
+      "id": "zoning-laws-and-legal-requirements",
+      "heading": "Zoning Laws and Legal Requirements: Know Before You Buy",
+      "summary": "Explain how to research local ordinances (city, county, HOA). Cover common restrictions (setbacks, hive limits, registration requirements). Discuss urban vs. suburban vs. rural differences. Provide specific steps to check legality and what to do if beekeeping is restricted. Mention liability insurance considerations.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "space-and-location-requirements",
+      "heading": "Space and Location Requirements: Where to Put Your Hive",
+      "summary": "Detail minimum space needs (hives can fit in small yards, but flight path matters). Cover ideal placement criteria: sun exposure, wind protection, water access, flight path away from human traffic. Explain why hive stands matter and how to position hives relative to property lines. Include urban balcony/rooftop considerations.",
+      "hasAffiliate": true,
+      "affiliateNote": "Link to hive stands and entrance reducers for space-limited setups."
+    },
+    {
+      "id": "talking-to-neighbors",
+      "heading": "How to Talk to Your Neighbors About Beekeeping",
+      "summary": "Provide a diplomatic approach to informing neighbors before starting. Address common concerns (stings, swarms, property line issues) with factual responses. Offer strategies like providing honey, explaining bee behavior, and maintaining tall flight paths. Include what to do if neighbors object and how to be a responsible bee-keeper in shared spaces.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "physical-setup-requirements",
+      "heading": "Physical Setup: What You Need in Place Before Bees Arrive",
+      "summary": "List infrastructure needed before ordering bees: level hive stand, water source within 200 feet, landing board setup, entrance reducer installed. Discuss assembly timing (build equipment 2-4 weeks early). Cover storage needs for extra equipment and where to keep extraction gear if planning to harvest.",
+      "hasAffiliate": true,
+      "affiliateNote": "Link to complete hive kits (assembled vs. unassembled) and basic tool sets for beginners."
+    },
+    {
+      "id": "education-and-mentorship",
+      "heading": "Getting Educated: Classes, Clubs, and Finding a Mentor",
+      "summary": "Emphasize the value of hands-on learning before buying bees. Recommend local beekeeping associations, beginner courses (in-person and online), and how to find a mentor. Explain what to look for in a club and how to shadow an experienced beekeeper during inspections. Mention timing—take classes in winter/early spring before bee season.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "seasonal-timing",
+      "heading": "When to Start: Timing Your First Hive Purchase",
+      "summary": "Explain why spring (April-May in most regions) is ideal for beginners. Discuss the risks of starting too late in summer or attempting fall starts. Cover the planning timeline: research in fall/winter, order bees in January-February, install in spring. Address whether to start with one or two hives and why two is often recommended.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "common-beginner-mistakes",
+      "heading": "Common Beginner Mistakes to Avoid",
+      "summary": "List frequent errors: opening hives too often, not checking legality first, buying cheap equipment that needs immediate replacement, starting without a mentor, panic-buying bees without preparation, ignoring varroa mites. Provide the correct approach for each mistake.",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    },
+    {
+      "id": "next-steps-checklist",
+      "heading": "Your Pre-Start Checklist: Are You Ready?",
+      "summary": "Provide a final go/no-go checklist covering all previous sections. Include action items with checkboxes: legal research completed, neighbors informed, budget allocated, equipment ordered, education plan in place, installation date set. Link to next logical content (complete beginner guide, equipment guide).",
+      "hasAffiliate": false,
+      "affiliateNote": null
+    }
+  ],
+  "faqQuestions": [
+    "Can I keep bees in my backyard if I live in the city?",
+    "How much does it cost to start beekeeping as a beginner?",
+    "Do I need to tell my neighbors I'm getting bees?",
+    "How much time does beekeeping take per week?",
+    "Can I start beekeeping if I'm allergic to bee stings?",
+    "Should I start with one hive or two as a beginner?"
+  ],
+  "internalLinks": [
+    "complete-beekeeping-guide",
+    "best-beehive-kits-for-beginners",
+    "beekeeping-protective-gear-guide"
+  ]
+}

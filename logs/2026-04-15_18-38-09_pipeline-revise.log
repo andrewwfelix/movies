@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T22:38:09.270Z
+============================================================
+[22:38:09.273] [INFO ] Model config loaded from config/models.json
+[22:38:09.273] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[22:38:09.274] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[22:38:09.274] [INFO ] pipeline-revise.js
+[22:38:09.274] [INFO ] Pass:    titles
+[22:38:09.275] [INFO ] Files:   1
+[22:38:09.275] [INFO ] Force:   yes
+[22:38:09.275] [INFO ] Dry run: no
+[22:38:09.275] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:38:09.275] [INFO ]   ↻  norwegian-wood — titles (anthropic/claude-sonnet-4-5)…
+[22:38:13.066] [PASS ] norwegian-wood.json — Titles complete
+[22:38:13.066] [INFO ]   BEFORE title (0 chars): null
+[22:38:13.066] [INFO ]   AFTER  title (64 chars): Norwegian Wood Book vs Movie: Murakami's Grief vs Hung's Visuals
+[22:38:13.066] [INFO ]   BEFORE meta  (0 chars): null
+[22:38:13.066] [INFO ]   AFTER  meta  (139 chars): Norwegian Wood book vs movie: Murakami's introspection meets Hung's lush cinematography. Either order works—the film honors mood over plot.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[22:38:13.067] [INFO ] Single file mode — skipping full checkpoint
+[22:38:13.067] [INFO ] quickAnswer.winner:        Too Close to Call
+[22:38:13.067] [INFO ] quickAnswer.readFirst:     Either order works
+[22:38:13.067] [INFO ] quickAnswer.oneLineReason: Book's depth versus film's visual poetry—different mediums, equal power.
+[22:38:13.067] [INFO ] BEFORE title (64 chars): Norwegian Wood Book vs Movie: Murakami's Grief vs Hung's Visuals
+[22:38:13.067] [INFO ] AFTER  title (64 chars): Norwegian Wood Book vs Movie: Murakami's Grief vs Hung's Visuals
+[22:38:13.068] [INFO ] BEFORE meta  (139 chars): Norwegian Wood book vs movie: Murakami's introspection meets Hung's lush cinematography. Either order works—the film honors mood over plot.
+[22:38:13.068] [INFO ] AFTER  meta  (139 chars): Norwegian Wood book vs movie: Murakami's introspection meets Hung's lush cinematography. Either order works—the film honors mood over plot.
+
+============================================================
+Finished: 2026-04-15T22:38:13.068Z
+Elapsed:  3.8s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-38-09_pipeline-revise.log
+============================================================

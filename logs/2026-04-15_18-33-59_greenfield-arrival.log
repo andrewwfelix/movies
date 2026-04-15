@@ -1,0 +1,142 @@
+============================================================
+Greenfield Pipeline: arrival
+Started: 2026-04-15T22:33:59.265Z
+============================================================
+
+
+── Step 1: Generate (Stage 1 + Stage 2) ─────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-generate.js" --slug arrival
+pipeline-generate.js
+Inputs:  1
+Stage 1: anthropic/claude-haiku-4-5
+Stage 2: anthropic/claude-haiku-4-5
+Stage:   all
+Force:   no
+── Story of Your Life (arrival) ──
+  ↻  Stage 1 (anthropic/claude-haiku-4-5)... ✓
+     author: Ted Chiang | year: 1998 | film: 2016 | director: Denis Villeneuve
+  ↻  Stage 2 (anthropic/claude-haiku-4-5)... ✓
+     verdict: Too Close to Call
+     → Copied to pipeline/2-revised/arrival.json
+── Summary ──────────────────────────────────────────
+  Succeeded: 1
+  Failed:    0
+Next steps:
+  1. Review stage 2 output in data/greenfield/stage2/
+  2. Add book cover images to images/
+  3. Run titles pass:  node scripts\pipeline-revise.js --pass titles
+  4. Run Pass 2:       node scripts\pipeline-revise.js --pass pass2
+  5. Render:           node scripts\pipeline-render.js
+  ✓ Generate complete
+
+── Step 2: Titles pass ──────────────────────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-revise.js" --pass titles --slug arrival --force
+Model config loaded from config/models.json
+Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+Loaded pass1b-titles.txt (2740 chars)
+pipeline-revise.js
+Pass:    titles
+Files:   1
+Force:   yes
+Dry run: no
+Delay:   500ms between calls
+── Processing ───────────────────────────────────
+  ↻  arrival — titles (anthropic/claude-sonnet-4-5)…
+  ⚠  arrival.json: Titles validation failed — not written: metaDesc too long: 156 chars (max 155) — not written
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+Single file mode — skipping full checkpoint
+quickAnswer.winner:        Too Close to Call
+quickAnswer.readFirst:     Either order works
+quickAnswer.oneLineReason: Novella is pure intellect; film adds heart without betraying it.
+BEFORE title (0 chars): null
+AFTER  title (undefined chars): null
+BEFORE meta  (0 chars): null
+AFTER  meta  (undefined chars): null
+✓ Log written → C:\Users\andre\projects\movies\logs\2026-04-15_18-34-35_pipeline-revise.log
+  ⚠ No title written by pass — using fallback
+    Fallback: Story of Your Life Book vs Movie (32 chars)
+  ✓ Titles complete
+
+── Step 3: Conversion pass (CTA blocks) ─────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-revise.js" --pass 2 --slug arrival --force
+Model config loaded from config/models.json
+Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+Loaded pass2-conversion.txt (2042 chars)
+pipeline-revise.js
+Pass:    2
+Files:   1
+Force:   yes
+Dry run: no
+Delay:   500ms between calls
+── Processing ───────────────────────────────────
+  ↻  arrival — Pass 2 (anthropic/claude-haiku-4-5)…
+  ✓  arrival.json — Pass 2 — 3 CTA blocks added
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+Single file mode — skipping full checkpoint
+quickAnswer.winner:        Too Close to Call
+quickAnswer.readFirst:     Either order works
+quickAnswer.oneLineReason: Novella is pure intellect; film adds heart without betraying it.
+✓ Log written → C:\Users\andre\projects\movies\logs\2026-04-15_18-34-37_pipeline-revise.log
+  ✓ Conversion complete
+
+── Step 4: Render ───────────────────────────────
+
+$ node "C:\Users\andre\projects\movies\scripts\pipeline-render.js" --slug arrival --force
+pipeline-render.js
+Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+Files:   1
+Force:   yes
+── Rendering ────────────────────────────────────
+  ✓  arrival.html — 24310 chars
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+── Copying to project root ──────────────────────
+Copied 1 file to project root
+✓ Log written → C:\Users\andre\projects\movies\logs\2026-04-15_18-35-14_pipeline-render.log
+  ✓ Render complete
+
+── Complete ─────────────────────────────────────
+  ✓ arrival — all steps passed
+
+Next steps:
+  1. Check images/arrival.jpg exists
+  2. Open arrival.html in browser to review
+  3. git add . && git commit -m "feat: arrival review"
+  4. node scripts/ops/sitemap-generate.js
+
+============================================================
+Finished: 2026-04-15T22:35:14.903Z
+Log: C:\Users\andre\projects\movies\logs\2026-04-15_18-33-59_greenfield-arrival.log
+============================================================

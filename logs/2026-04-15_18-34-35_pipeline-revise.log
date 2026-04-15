@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T22:34:35.392Z
+============================================================
+[22:34:35.395] [INFO ] Model config loaded from config/models.json
+[22:34:35.396] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[22:34:35.397] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[22:34:35.398] [INFO ] pipeline-revise.js
+[22:34:35.398] [INFO ] Pass:    titles
+[22:34:35.398] [INFO ] Files:   1
+[22:34:35.398] [INFO ] Force:   yes
+[22:34:35.398] [INFO ] Dry run: no
+[22:34:35.398] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:34:35.399] [INFO ]   ↻  arrival — titles (anthropic/claude-sonnet-4-5)…
+[22:34:37.694] [WARN ] arrival.json: Titles validation failed — not written: metaDesc too long: 156 chars (max 155) — not written
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[22:34:37.696] [INFO ] Single file mode — skipping full checkpoint
+[22:34:37.696] [INFO ] quickAnswer.winner:        Too Close to Call
+[22:34:37.696] [INFO ] quickAnswer.readFirst:     Either order works
+[22:34:37.696] [INFO ] quickAnswer.oneLineReason: Novella is pure intellect; film adds heart without betraying it.
+[22:34:37.696] [INFO ] BEFORE title (0 chars): null
+[22:34:37.696] [INFO ] AFTER  title (undefined chars): null
+[22:34:37.696] [INFO ] BEFORE meta  (0 chars): null
+[22:34:37.696] [INFO ] AFTER  meta  (undefined chars): null
+
+============================================================
+Finished: 2026-04-15T22:34:37.696Z
+Elapsed:  2.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-34-35_pipeline-revise.log
+============================================================

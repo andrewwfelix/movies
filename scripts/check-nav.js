@@ -26,7 +26,7 @@ const hasFlag = flag => args.includes(flag);
 const ROOT_ONLY = hasFlag('--root');
 const FIX_MODE  = hasFlag('--fix');
 
-const ROOT       = path.resolve(__dirname, '../..');
+const ROOT = path.resolve(__dirname, '..');
 const NAV_PATH   = path.join(ROOT, 'config', 'nav.json');
 const RENDERED   = path.join(ROOT, 'pipeline', '3-rendered');
 

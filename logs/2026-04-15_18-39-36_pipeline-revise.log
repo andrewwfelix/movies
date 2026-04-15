@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T22:39:36.876Z
+============================================================
+[22:39:36.879] [INFO ] Model config loaded from config/models.json
+[22:39:36.880] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[22:39:36.880] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[22:39:36.881] [INFO ] pipeline-revise.js
+[22:39:36.881] [INFO ] Pass:    titles
+[22:39:36.881] [INFO ] Files:   1
+[22:39:36.881] [INFO ] Force:   yes
+[22:39:36.881] [INFO ] Dry run: no
+[22:39:36.881] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[22:39:36.882] [INFO ]   ↻  shawshank-redemption — titles (anthropic/claude-sonnet-4-5)…
+[22:39:40.268] [PASS ] shawshank-redemption.json — Titles complete
+[22:39:40.268] [INFO ]   BEFORE title (0 chars): null
+[22:39:40.268] [INFO ]   AFTER  title (58 chars): Shawshank Redemption Book vs Movie: Darabont Perfects King
+[22:39:40.268] [INFO ]   BEFORE meta  (0 chars): null
+[22:39:40.268] [INFO ]   AFTER  meta  (141 chars): Shawshank Redemption book vs movie: King's novella is great, but Darabont's film is a masterpiece. Either order works—the film loses nothing.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[22:39:40.269] [INFO ] Single file mode — skipping full checkpoint
+[22:39:40.269] [INFO ] quickAnswer.winner:        Film
+[22:39:40.269] [INFO ] quickAnswer.readFirst:     Either order works
+[22:39:40.269] [INFO ] quickAnswer.oneLineReason: Film distills King's hope into pure cinema without losing soul.
+[22:39:40.269] [INFO ] BEFORE title (58 chars): Shawshank Redemption Book vs Movie: Darabont Perfects King
+[22:39:40.269] [INFO ] AFTER  title (58 chars): Shawshank Redemption Book vs Movie: Darabont Perfects King
+[22:39:40.269] [INFO ] BEFORE meta  (141 chars): Shawshank Redemption book vs movie: King's novella is great, but Darabont's film is a masterpiece. Either order works—the film loses nothing.
+[22:39:40.269] [INFO ] AFTER  meta  (141 chars): Shawshank Redemption book vs movie: King's novella is great, but Darabont's film is a masterpiece. Either order works—the film loses nothing.
+
+============================================================
+Finished: 2026-04-15T22:39:40.269Z
+Elapsed:  3.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_18-39-36_pipeline-revise.log
+============================================================
