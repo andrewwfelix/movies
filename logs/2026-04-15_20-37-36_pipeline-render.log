@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-15T00:37:36.863Z
+============================================================
+[00:37:36.867] [INFO ] pipeline-render.js
+[00:37:36.868] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[00:37:36.868] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[00:37:36.868] [INFO ] Files:   1
+[00:37:36.868] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[00:37:36.870] [PASS ] lady-chatterleys-lover.html — 25906 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+── Copying to project root ──────────────────────
+[00:37:36.872] [INFO ] Copied 1 file to project root
+
+============================================================
+Finished: 2026-04-15T00:37:36.872Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-37-36_pipeline-render.log
+============================================================

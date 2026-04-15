@@ -1,0 +1,15 @@
+{
+  "bookTitle": "Jaws",
+  "author": "Peter Benchley",
+  "bookYear": "1974",
+  "genre": "Thriller / Adventure",
+  "mediaType": "film",
+  "mediaLabel": "The Film",
+  "filmYear": "1975",
+  "director": "Steven Spielberg",
+  "starringLine": "Starring Roy Scheider, Robert Shaw, Richard Dreyfuss — Film: 1975",
+  "reviewBody": "Benchley's pulp thriller became the template for the modern blockbuster — Spielberg took a B-movie premise and made it mythic.",
+  "ratingValue": "5",
+  "bookCoverImage": "jaws.jpg",
+  "slug": "jaws"
+}

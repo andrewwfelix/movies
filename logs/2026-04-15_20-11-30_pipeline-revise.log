@@ -1,0 +1,32 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:11:30.888Z
+============================================================
+[00:11:30.890] [INFO ] Model config loaded from config/models.json
+[00:11:30.892] [INFO ] pipeline-revise.js
+[00:11:30.892] [INFO ] Pass:    conversion
+[00:11:30.893] [INFO ] Files:   1
+[00:11:30.893] [INFO ] Force:   yes
+[00:11:30.893] [INFO ] Dry run: no
+[00:11:30.893] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                conversion
+  Dry run:             no
+────────────────────────────────────────────────
+[00:11:30.895] [INFO ] Single file mode — skipping full checkpoint
+[00:11:30.895] [INFO ] quickAnswer.winner:        Film
+[00:11:30.895] [INFO ] quickAnswer.readFirst:     Either order works
+[00:11:30.895] [INFO ] quickAnswer.oneLineReason: Spielberg's restraint and pacing surpass Benchley's pulpy sprawl.
+
+============================================================
+Finished: 2026-04-15T00:11:30.895Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-11-30_pipeline-revise.log
+============================================================

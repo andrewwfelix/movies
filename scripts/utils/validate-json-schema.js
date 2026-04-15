@@ -22,7 +22,6 @@
  *
  * Exits with code 1 if any files fail validation.
  * Exports validateRecord() for use in other pipeline scripts.
- * Destination: scripts/utils/validate-json-schema.js
  */
 
 const fs   = require('fs');
@@ -39,7 +38,7 @@ const SCHEMA_ARG  = get('--schema', 'revised');
 const ISSUES_ONLY = hasFlag('--issues-only');
 const FAIL_FAST   = hasFlag('--fail-fast');
 
-const ROOT        = path.resolve(__dirname, '..');
+const ROOT        = path.resolve(__dirname, '../..');
 const SCHEMAS_DIR = path.join(ROOT, 'data', 'schemas');
 const SRC_DIR     = path.resolve(ROOT, DIR_ARG);
 

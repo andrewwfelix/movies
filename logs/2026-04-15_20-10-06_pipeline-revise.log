@@ -1,0 +1,30 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:10:06.380Z
+============================================================
+[00:10:06.382] [INFO ] Model config loaded from config/models.json
+[00:10:06.385] [INFO ] pipeline-revise.js
+[00:10:06.385] [INFO ] Pass:    conversion
+[00:10:06.385] [INFO ] Files:   1
+[00:10:06.385] [INFO ] Force:   no
+[00:10:06.385] [INFO ] Dry run: no
+[00:10:06.385] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:10:06.386] [SKIP ] jaws.json (already exists in 2-revised)
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           0
+  Skipped:             1
+  Failed:              0
+  Pass:                conversion
+  Dry run:             no
+────────────────────────────────────────────────
+[00:10:06.387] [INFO ] Single file mode — skipping full checkpoint
+
+============================================================
+Finished: 2026-04-15T00:10:06.387Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-10-06_pipeline-revise.log
+============================================================

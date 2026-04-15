@@ -1,0 +1,27 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:13:13.795Z
+============================================================
+[00:13:13.798] [INFO ] Model config loaded from config/models.json
+[00:13:13.800] [INFO ] pipeline-revise.js
+[00:13:13.800] [INFO ] Pass:    conversion
+[00:13:13.800] [INFO ] Files:   1
+[00:13:13.800] [INFO ] Force:   yes
+[00:13:13.800] [INFO ] Dry run: yes
+
+── Processing ───────────────────────────────────
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                conversion
+  Dry run:             yes
+────────────────────────────────────────────────
+
+============================================================
+Finished: 2026-04-15T00:13:13.802Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-13-13_pipeline-revise.log
+============================================================

@@ -41,8 +41,8 @@
 const fs               = require('fs');
 const path             = require('path');
 const https            = require('https');
-const { createLogger } = require('./logger');
-const { checkRecord }  = require('./quality-gate');
+const { createLogger } = require('./utils/logger');
+const { checkRecord }  = require('./utils/quality-gate');
 
 // ── CLI ───────────────────────────────────────────────────────────────────────
 

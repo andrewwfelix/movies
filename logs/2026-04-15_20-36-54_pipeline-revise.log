@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:36:54.555Z
+============================================================
+[00:36:54.557] [INFO ] Model config loaded from config/models.json
+[00:36:54.558] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[00:36:54.559] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[00:36:54.559] [INFO ] pipeline-revise.js
+[00:36:54.559] [INFO ] Pass:    titles
+[00:36:54.559] [INFO ] Files:   1
+[00:36:54.559] [INFO ] Force:   yes
+[00:36:54.559] [INFO ] Dry run: no
+[00:36:54.559] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:36:54.560] [INFO ]   ↻  lady-chatterleys-lover — titles (anthropic/claude-sonnet-4-5)…
+[00:36:57.331] [WARN ] lady-chatterleys-lover.json: Titles validation failed — not written: pageTitle too long: 78 chars — will not write
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[00:36:57.333] [INFO ] Single file mode — skipping full checkpoint
+[00:36:57.333] [INFO ] quickAnswer.winner:        Film
+[00:36:57.333] [INFO ] quickAnswer.readFirst:     Either order works
+[00:36:57.333] [INFO ] quickAnswer.oneLineReason: Film deepens Lawrence's sexual politics beyond the novel's reach.
+[00:36:57.333] [INFO ] BEFORE title (0 chars): null
+[00:36:57.333] [INFO ] AFTER  title (undefined chars): null
+[00:36:57.333] [INFO ] BEFORE meta  (0 chars): null
+[00:36:57.333] [INFO ] AFTER  meta  (undefined chars): null
+
+============================================================
+Finished: 2026-04-15T00:36:57.333Z
+Elapsed:  2.8s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-36-54_pipeline-revise.log
+============================================================

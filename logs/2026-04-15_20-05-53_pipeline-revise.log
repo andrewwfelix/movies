@@ -1,0 +1,41 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:05:53.886Z
+============================================================
+[00:05:53.889] [INFO ] Model config loaded from config/models.json
+[00:05:53.891] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[00:05:53.891] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[00:05:53.892] [INFO ] pipeline-revise.js
+[00:05:53.892] [INFO ] Pass:    titles
+[00:05:53.892] [INFO ] Files:   1
+[00:05:53.892] [INFO ] Force:   no
+[00:05:53.892] [INFO ] Dry run: no
+[00:05:53.892] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:05:53.893] [INFO ] lady-chatterleys-lover.json — re-processing (missing required fields for pass: titles)
+[00:05:53.894] [INFO ]   ↻  lady-chatterleys-lover — titles (anthropic/claude-sonnet-4-5)…
+[00:05:57.351] [WARN ] lady-chatterleys-lover.json: Titles validation failed — not written: pageTitle too long: 84 chars — will not write | metaDesc too long: 162 chars (max 155) — not written
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[00:05:57.353] [INFO ] Single file mode — skipping full checkpoint
+[00:05:57.353] [INFO ] quickAnswer.winner:        Too Close to Call
+[00:05:57.353] [INFO ] quickAnswer.readFirst:     Either order works
+[00:05:57.353] [INFO ] quickAnswer.oneLineReason: Film captures sensuality; book captures philosophy. Both essential.
+[00:05:57.353] [INFO ] BEFORE title (0 chars): null
+[00:05:57.354] [INFO ] AFTER  title (undefined chars): null
+[00:05:57.354] [INFO ] BEFORE meta  (0 chars): null
+[00:05:57.354] [INFO ] AFTER  meta  (undefined chars): null
+
+============================================================
+Finished: 2026-04-15T00:05:57.354Z
+Elapsed:  3.5s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-05-53_pipeline-revise.log
+============================================================

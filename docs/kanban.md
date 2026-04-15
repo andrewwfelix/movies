@@ -1,4 +1,5 @@
 [//]: # (Destination: docs/strategy/kanban.md)
+
 # BooksVersusMovies.com — Kanban
 ==========================================
 Last updated: April 14 2026
@@ -6,32 +7,41 @@ Last updated: April 14 2026
 
 ## In Progress
 
-- Film Wins batch — 10 new greenfield pages (Jaws, Blade Runner, Shawshank, Arrival, etc.)
+- No Country for Old Men — greenfield running
+
+
+## To Do — Tomorrow (April 15)
+
+- [ ] Review jaws.html, lady-chatterleys-lover.html, no-country-for-old-men.html in browser
+- [ ] Check images exist for all three new pages
+- [ ] GSC indexing requests — Priority 1 list (10 per day, docs/indexing-requests.txt)
+- [ ] Film Wins batch continued — Blade Runner, Shawshank, Arrival
+- [ ] Add video affiliate links to kanban + input JSON convention
 
 
 ## To Do — High Priority
 
-- [ ] llm-client.js — shared LLM client before Film Wins batch
-- [ ] Run spotlight: node scripts\pipeline-spotlight.js --slug lonesome-dove
-- [ ] Add oneLineReason to browse rows
-- [ ] Request indexing — Priority 1 pages (see docs/indexing-requests.txt)
+- [ ] llm-client.js — shared LLM client module (before next big batch)
+- [ ] Logger config file — option to log errors only (config/logger.json)
+- [ ] pipeline-greenfield.js — fix double output lines (spawnSync printing twice)
 - [ ] Email capture — ConvertKit setup + opt-in form
-- [ ] fix-nav.js — add to deploy pipeline so it runs automatically after render
+- [ ] /book-vs-movie hub page
+- [ ] Anchor text on internal links — add "book vs movie" to related card links
 - [ ] Update deploy-files.bat — paths changed after scripts reorganization
+- [ ] add-destination.js — update SCAN array when new subfolders created
 
 
 ## To Do — Medium Priority
 
-- [ ] /book-vs-movie hub page (suggestion 4 from SEO list)
-- [ ] Anchor text on internal links — add "book vs movie" to related card links
 - [ ] Genre hub pages (/thriller, /romance, /literary-fiction)
 - [ ] Author hub pages (Colleen Hoover, Gillian Flynn, Stephen King)
-- [ ] WebP conversion for book cover images
-- [ ] Social meta tags (Open Graph / Twitter Card) on all pages
-- [ ] Add "Ones to Watch" section to Auteurs page (emerging directors)
 - [ ] 4 more spotlight pages (Gone Girl, Dune, Stephen King universe, Colleen Hoover)
 - [ ] Featured hub page at /featured listing all spotlights
+- [ ] "Ones to Watch" section on Auteurs page (emerging directors/showrunners)
+- [ ] WebP conversion for book cover images
+- [ ] Social meta tags (Open Graph / Twitter Card) on all pages
 - [ ] Reader verdict poll below verdict box
+- [ ] Video affiliate links — add to input JSON and render pipeline
 
 
 ## To Do — Vercel Migration (do together, in order)
@@ -42,7 +52,16 @@ Last updated: April 14 2026
 - [ ] Email notification for missing book images (nodemailer)
 - [ ] Scaffold Docusaurus at docs.booksversusmovies.com
 - [ ] Port docs/ folder into Docusaurus sidebar structure
-- [ ] Set up Postgres database (Neon or PlanetScale) for structured data layer
+- [ ] Set up Postgres database (Neon or PlanetScale)
+
+
+## To Do — Pipeline Robustness
+
+- [ ] Title retry — pass shorter instruction to LLM before falling back
+- [ ] pipeline-greenfield.js — fix double console output
+- [ ] pipeline-greenfield.js — unified log not capturing all output yet
+- [ ] Add --pass conversion alias to pipeline-revise.js
+- [ ] quality-gate.js — review after Film Wins batch
 
 
 ## To Do — Low Priority / Later
@@ -50,29 +69,33 @@ Last updated: April 14 2026
 - [ ] Priority/hype field in JSON schema
 - [ ] Spoiler-free mode toggle
 - [ ] "What to read next" quiz
-- [ ] Reading progress tracker (localStorage)
+- [ ] Reading progress tracker
 - [ ] Goodreads rating integration
-- [ ] Director filmography pages (/director/joe-wright)
-- [ ] Print-friendly CSS for review pages
-- [ ] Structured logging — Pino + OpenTelemetry
+- [ ] Director filmography pages
+- [ ] Print-friendly CSS
 
 
 ## Done — April 14 2026
 
-- [x] pipeline-guide.js — upcoming adaptations guide (3-model parallel aggregation)
-- [x] upcoming-adaptations.html — live at booksversusmovies.com/upcoming-adaptations
+- [x] pipeline-guide.js — upcoming adaptations guide (3-model parallel)
+- [x] upcoming-adaptations.html live
 - [x] pipeline-spotlight.js — spotlight page generator
-- [x] schema-spotlight.json — generic feature page schema
-- [x] config/nav.json — single source of truth for site nav
-- [x] check-nav.js — nav consistency auditor
-- [x] fix-nav.js — fixes nav in static HTML files
-- [x] pipeline-render.js — auto-copies rendered HTML to project root
-- [x] fix-titles-book-vs-movie.js — added Book vs Movie to all 162 title tags
-- [x] pass1b-titles.txt — updated to enforce Book vs Movie pattern
-- [x] pipeline-browse.js h1 — "Book vs Movie" + updated meta
-- [x] netlify.toml — 301 redirects for all .html URLs to clean URLs
+- [x] schema-spotlight.json
+- [x] config/nav.json — single source of truth for nav
+- [x] check-nav.js + fix-nav.js
+- [x] pipeline-render.js — auto-copies to project root
+- [x] fix-titles-book-vs-movie.js — Book vs Movie in all 162 title tags
+- [x] pass1b-titles.txt — enforces Book vs Movie pattern
+- [x] Homepage h1 + meta updated
+- [x] netlify.toml — 301 redirects for all .html URLs
 - [x] Scripts reorganized — utils/, ops/, content/, reporting/
-- [x] logger.js — fixed log path after scripts reorganization
-- [x] docs/ reorganized — pipeline/, strategy/, research/, archive/
-- [x] Section 6 complete — greenfield pipeline, generate-review.js
-- [x] 164 pages live (162 revised + The Godfather + Ghost World)
+- [x] logger.js, validate-json-schema.js, pipeline-revise.js paths fixed
+- [x] deploy.js + add-destination.js
+- [x] pipeline-clear.js
+- [x] pipeline-greenfield.js — full orchestrator with logging
+- [x] archive-logs.js
+- [x] tree.js --save flag
+- [x] docs/ restructured — reference/, strategy/, research/, archive/
+- [x] Jaws greenfield page generated
+- [x] Lady Chatterley's Lover greenfield page generated
+- [x] spotlight-lonesome-dove.html live

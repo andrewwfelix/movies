@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:42:17.758Z
+============================================================
+[00:42:17.761] [INFO ] Model config loaded from config/models.json
+[00:42:17.761] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[00:42:17.762] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[00:42:17.763] [INFO ] pipeline-revise.js
+[00:42:17.763] [INFO ] Pass:    titles
+[00:42:17.763] [INFO ] Files:   1
+[00:42:17.763] [INFO ] Force:   yes
+[00:42:17.763] [INFO ] Dry run: no
+[00:42:17.763] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:42:17.763] [INFO ]   ↻  no-country-for-old-men — titles (anthropic/claude-sonnet-4-5)…
+[00:42:21.271] [PASS ] no-country-for-old-men.json — Titles complete
+[00:42:21.271] [INFO ]   BEFORE title (0 chars): null
+[00:42:21.271] [INFO ]   AFTER  title (62 chars): No Country for Old Men Book vs Movie: McCarthy Meets the Coens
+[00:42:21.271] [INFO ]   BEFORE meta  (0 chars): null
+[00:42:21.271] [INFO ]   AFTER  meta  (141 chars): No Country for Old Men book vs movie: The Coens' restraint matches McCarthy's brutality perfectly. Either order works — both are devastating.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[00:42:21.272] [INFO ] Single file mode — skipping full checkpoint
+[00:42:21.272] [INFO ] quickAnswer.winner:        Too Close to Call
+[00:42:21.272] [INFO ] quickAnswer.readFirst:     Either order works
+[00:42:21.272] [INFO ] quickAnswer.oneLineReason: Film and book are equally devastating, different mediums, same vision.
+[00:42:21.272] [INFO ] BEFORE title (62 chars): No Country for Old Men Book vs Movie: McCarthy Meets the Coens
+[00:42:21.272] [INFO ] AFTER  title (62 chars): No Country for Old Men Book vs Movie: McCarthy Meets the Coens
+[00:42:21.272] [INFO ] BEFORE meta  (141 chars): No Country for Old Men book vs movie: The Coens' restraint matches McCarthy's brutality perfectly. Either order works — both are devastating.
+[00:42:21.272] [INFO ] AFTER  meta  (141 chars): No Country for Old Men book vs movie: The Coens' restraint matches McCarthy's brutality perfectly. Either order works — both are devastating.
+
+============================================================
+Finished: 2026-04-15T00:42:21.272Z
+Elapsed:  3.5s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-42-17_pipeline-revise.log
+============================================================

@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-15T00:43:11.669Z
+============================================================
+[00:43:11.672] [INFO ] pipeline-render.js
+[00:43:11.673] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[00:43:11.673] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[00:43:11.673] [INFO ] Files:   1
+[00:43:11.673] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[00:43:11.675] [PASS ] no-country-for-old-men.html — 26594 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+── Copying to project root ──────────────────────
+[00:43:11.677] [INFO ] Copied 1 file to project root
+
+============================================================
+Finished: 2026-04-15T00:43:11.677Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-43-11_pipeline-render.log
+============================================================

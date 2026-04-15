@@ -12,6 +12,7 @@
  * Options:
  *   --dir     Root directory to scan (default: ../ relative to scripts/)
  *   --depth   Maximum depth to display (default: 4)
+ * Destination: scripts/utils/tree.js
  */
 
 const fs   = require('fs');

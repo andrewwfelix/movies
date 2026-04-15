@@ -30,6 +30,7 @@
  *   data/greenfield/stage2/*.json   full review JSON (feeds into pipeline passes)
  *   pipeline/2-revised/*.json       copied here when stage 2 complete
  * Destination: scripts/pipeline-generate.js
+ * Destination: scripts/pipeline-generate.js
  */
 
 const fs    = require('fs');

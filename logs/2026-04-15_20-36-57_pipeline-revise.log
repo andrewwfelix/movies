@@ -1,0 +1,36 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:36:57.389Z
+============================================================
+[00:36:57.391] [INFO ] Model config loaded from config/models.json
+[00:36:57.392] [INFO ] Pass 2 model:  anthropic/claude-haiku-4-5 (temp: 0.4)
+[00:36:57.393] [INFO ] Loaded pass2-conversion.txt (2042 chars)
+[00:36:57.393] [INFO ] pipeline-revise.js
+[00:36:57.393] [INFO ] Pass:    2
+[00:36:57.393] [INFO ] Files:   1
+[00:36:57.393] [INFO ] Force:   yes
+[00:36:57.393] [INFO ] Dry run: no
+[00:36:57.393] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:36:57.394] [INFO ]   ↻  lady-chatterleys-lover — Pass 2 (anthropic/claude-haiku-4-5)…
+[00:37:36.813] [PASS ] lady-chatterleys-lover.json — Pass 2 — 3 CTA blocks added
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                2
+  Dry run:             no
+────────────────────────────────────────────────
+[00:37:36.814] [INFO ] Single file mode — skipping full checkpoint
+[00:37:36.814] [INFO ] quickAnswer.winner:        Film
+[00:37:36.814] [INFO ] quickAnswer.readFirst:     Either order works
+[00:37:36.814] [INFO ] quickAnswer.oneLineReason: Film deepens Lawrence's sexual politics beyond the novel's reach.
+
+============================================================
+Finished: 2026-04-15T00:37:36.814Z
+Elapsed:  39.4s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-36-57_pipeline-revise.log
+============================================================

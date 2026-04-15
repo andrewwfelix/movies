@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:31:01.543Z
+============================================================
+[00:31:01.545] [INFO ] Model config loaded from config/models.json
+[00:31:01.546] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[00:31:01.547] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[00:31:01.547] [INFO ] pipeline-revise.js
+[00:31:01.547] [INFO ] Pass:    titles
+[00:31:01.547] [INFO ] Files:   1
+[00:31:01.547] [INFO ] Force:   yes
+[00:31:01.547] [INFO ] Dry run: no
+[00:31:01.547] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:31:01.548] [INFO ]   ↻  lady-chatterleys-lover — titles (anthropic/claude-sonnet-4-5)…
+[00:31:04.836] [WARN ] lady-chatterleys-lover.json: Titles validation failed — not written: metaDesc too long: 170 chars (max 155) — not written
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[00:31:04.837] [INFO ] Single file mode — skipping full checkpoint
+[00:31:04.837] [INFO ] quickAnswer.winner:        Film
+[00:31:04.837] [INFO ] quickAnswer.readFirst:     Either order works
+[00:31:04.837] [INFO ] quickAnswer.oneLineReason: Film deepens Lawrence's politics without losing his sensuality.
+[00:31:04.837] [INFO ] BEFORE title (0 chars): null
+[00:31:04.837] [INFO ] AFTER  title (undefined chars): null
+[00:31:04.837] [INFO ] BEFORE meta  (0 chars): null
+[00:31:04.837] [INFO ] AFTER  meta  (undefined chars): null
+
+============================================================
+Finished: 2026-04-15T00:31:04.837Z
+Elapsed:  3.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-31-01_pipeline-revise.log
+============================================================

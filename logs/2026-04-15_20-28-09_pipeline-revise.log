@@ -1,0 +1,44 @@
+============================================================
+Script:  pipeline-revise
+Started: 2026-04-15T00:28:09.944Z
+============================================================
+[00:28:09.947] [INFO ] Model config loaded from config/models.json
+[00:28:09.948] [INFO ] Titles model:  anthropic/claude-sonnet-4-5 (temp: 0.4)
+[00:28:09.950] [INFO ] Loaded pass1b-titles.txt (2740 chars)
+[00:28:09.950] [INFO ] pipeline-revise.js
+[00:28:09.950] [INFO ] Pass:    titles
+[00:28:09.950] [INFO ] Files:   1
+[00:28:09.950] [INFO ] Force:   yes
+[00:28:09.950] [INFO ] Dry run: no
+[00:28:09.950] [INFO ] Delay:   500ms between calls
+
+── Processing ───────────────────────────────────
+[00:28:09.951] [INFO ]   ↻  jaws — titles (anthropic/claude-sonnet-4-5)…
+[00:28:13.432] [PASS ] jaws.json — Titles complete
+[00:28:13.432] [INFO ]   BEFORE title (0 chars): null
+[00:28:13.432] [INFO ]   AFTER  title (63 chars): Jaws Book vs Movie: Spielberg's Restraint Beats Benchley's Pulp
+[00:28:13.432] [INFO ]   BEFORE meta  (0 chars): null
+[00:28:13.432] [INFO ]   AFTER  meta  (139 chars): Jaws book vs movie: Spielberg made Benchley's B-movie premise mythic. Either order works — the film transcends the novel's pulp completely.
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Succeeded:           1
+  Skipped:             0
+  Failed:              0
+  Pass:                titles
+  Dry run:             no
+────────────────────────────────────────────────
+[00:28:13.433] [INFO ] Single file mode — skipping full checkpoint
+[00:28:13.433] [INFO ] quickAnswer.winner:        Film
+[00:28:13.433] [INFO ] quickAnswer.readFirst:     Either order works
+[00:28:13.433] [INFO ] quickAnswer.oneLineReason: Spielberg's restraint transcends Benchley's overwritten pulp.
+[00:28:13.433] [INFO ] BEFORE title (63 chars): Jaws Book vs Movie: Spielberg's Restraint Beats Benchley's Pulp
+[00:28:13.433] [INFO ] AFTER  title (63 chars): Jaws Book vs Movie: Spielberg's Restraint Beats Benchley's Pulp
+[00:28:13.433] [INFO ] BEFORE meta  (139 chars): Jaws book vs movie: Spielberg made Benchley's B-movie premise mythic. Either order works — the film transcends the novel's pulp completely.
+[00:28:13.433] [INFO ] AFTER  meta  (139 chars): Jaws book vs movie: Spielberg made Benchley's B-movie premise mythic. Either order works — the film transcends the novel's pulp completely.
+
+============================================================
+Finished: 2026-04-15T00:28:13.433Z
+Elapsed:  3.5s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-28-09_pipeline-revise.log
+============================================================

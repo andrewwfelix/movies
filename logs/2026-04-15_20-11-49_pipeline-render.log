@@ -1,0 +1,41 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-15T00:11:49.289Z
+============================================================
+[00:11:49.292] [INFO ] pipeline-render.js
+[00:11:49.294] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[00:11:49.294] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[00:11:49.294] [INFO ] Files:   1
+[00:11:49.294] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[00:11:49.296] [PASS ] jaws.html — 21873 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✗  All pages have CTA blocks
+       jaws
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT FAILED — resolve issues before proceeding
+
+── Copying to project root ──────────────────────
+[00:11:49.299] [INFO ] Copied 1 file to project root
+
+============================================================
+Finished: 2026-04-15T00:11:49.299Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-15_20-11-49_pipeline-render.log
+============================================================
