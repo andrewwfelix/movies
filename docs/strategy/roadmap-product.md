@@ -1,135 +1,153 @@
 [//]: # (Destination: docs/strategy/roadmap-product.md)
+[//]: # (Format: BooksVersusMovies standard markdown v1)
+[//]: # (Rules: H1 title, H2 sections, H3 subsections, dates YYYY-MM-DD, status: not-started|in-progress|done|blocked, priority: high|medium|low, effort in plain text, no escaped chars)
+
 # BooksVersusMovies.com — Product Roadmap
-==========================================
-Last updated: April 2026
+Last updated: 2026-04-17
 
-Prioritised feature backlog for the site itself — user-facing improvements
-to content, discovery, conversion, and engagement.
-For raw ideas see docs/new-ideas.md.
-For business actions see docs/business-strategy.md.
+User-facing feature backlog — content, discovery, conversion, engagement.
+For raw ideas see docs/strategy/new-ideas.md.
+For business actions see docs/strategy/business-strategy.md.
 
+---
 
-## High Priority — Pre-deployment
+## High Priority
 
-### Fix internal links to extensionless URLs
-All internal links on the site must use /slug not /slug.html format.
-Affects: browse page row links, related cards, header nav links.
-pipeline-render.js and pipeline-browse.js already output correct format.
-Action: verify all links in rendered output before deployment.
+### /how-we-judge page
+Status: not-started
+Priority: high
+Effort: half day
 
-### Browse page filters
-Client-side verdict filter already built into pipeline-browse.js:
-  All / Book Wins / Film Wins / Too Close to Call
-Verify it works correctly in browser before deployment.
+Short editorial standards page explaining how verdicts are reached. Links to pillar pages. Builds trust signal and ranks for "how are book vs movie adaptations judged" queries.
 
-### Canonical tags on all pages
-Already implemented in pipeline-render.js.
-Verify all rendered pages have correct canonical before deployment.
+### Recently added section on browse page
+Status: not-started
+Priority: high
+Effort: 2 hours
 
+Surfaces newly published pages (Film Wins batch, new greenfields) at top of browse/index page. Signals freshness to Google and gives returning visitors something new.
 
-## High Priority — Post-deployment
+### Beehiiv newsletter — DNS + welcome email
+Status: in-progress
+Priority: high
+Effort: 1 hour
 
-### Read Before You Watch — email capture
-Weekly email recommending one book/film pair. Clear verdict, one-line
-reason, affiliate link. Builds audience independent of Google.
+- [ ] Set up custom domain DNS for Beehiiv publication
+- [ ] Write and configure welcome email for new subscribers
+- Reference: https://www.beehiiv.com/support/article/14492990172823-how-to-use-a-custom-domain-for-your-publication
 
-Implementation:
-- Mailchimp or ConvertKit (both free up to 500-1000 subscribers)
-- Opt-in form placed: after verdict box on review pages, bottom of
-  browse page, dismissible top banner
-- pipeline-email.js script generates weekly email copy from JSON
-- Add featuredEmail: "YYYY-MM-DD" field to JSON schema
-
-Email format:
-  Subject: Read [Title] before you watch it
-  Body: verdict, oneLineReason, 2-3 sentences from verdictBox,
-        readFirst recommendation, affiliate link, link to full review
-
-Every field already exists in the JSON — zero new content needed.
-This is potentially the highest-converting traffic source.
-Effort: ~2-3 hours for form + Mailchimp integration
+### Email capture — ConvertKit opt-in form
+Status: not-started
+Priority: high
+Effort: 2-3 hours
 Depends on: deployment complete
 
+Weekly email recommending one book/film pair. Every field already exists in the JSON — zero new content needed.
+
 ### Author hub pages
-Auto-generated pages for authors with multiple comparisons on the site.
+Status: not-started
+Priority: high
+Effort: half day
+
+Auto-generated pages for authors with multiple comparisons.
 e.g. /author/stephen-king — all King adaptations ranked.
 Drives internal linking, ranks for "[author] adaptations" queries.
-Effort: ~half day (new pipeline script)
-Depends on: pipeline-generate.js or standalone script
 
 ### Genre hub pages
-Auto-generated pages for each genre.
-e.g. /genre/literary-fiction, /genre/thriller, /genre/romance
-Aggregate pages rank for broader queries, accumulate internal link equity.
-Effort: ~half day
+Status: not-started
+Priority: high
+Effort: half day
 Depends on: author hub pages pattern established
 
+e.g. /genre/literary-fiction, /genre/thriller, /genre/romance
+
+---
 
 ## Medium Priority
 
 ### Spoiler-free mode
-Toggle that hides the verdict badge and verdict box until reader clicks
-"Show verdict". Useful for readers who want to form their own opinion first.
-Simple CSS/JS toggle — no backend needed.
-Effort: ~1 hour
+Status: not-started
+Priority: medium
+Effort: 1 hour
+
+Toggle that hides verdict badge and verdict box until reader clicks "Show verdict". CSS/JS only, no backend.
 
 ### Reader verdict poll
-"Do you agree with our verdict?" — thumbs up/down below the verdict box.
-Shows community consensus. Builds engagement and return visits.
-Requires: simple backend or third-party poll service (Typeform, etc.)
-Effort: ~half day
+Status: not-started
+Priority: medium
+Effort: half day
 
-### "What to read next" quiz
-5-question taste quiz recommending 3 comparisons.
-High engagement, shareable, drives discovery of less-visited pages.
-Effort: ~half day (pure JS, no backend)
-Depends on: nothing
+"Do you agree with our verdict?" — thumbs up/down below verdict box. Requires simple backend or third-party poll service.
 
-### Upcoming adaptations page
-/coming-soon — books being adapted with release dates.
-Add upcomingAdaptation field to JSON schema for TBA pages.
-Drives repeat visits as release dates approach.
-Effort: ~2 hours
+### What to read next quiz
+Status: not-started
+Priority: medium
+Effort: half day
+
+5-question taste quiz recommending 3 comparisons. High engagement, shareable, pure JS.
 
 ### Social meta tags
-Add Open Graph and Twitter Card tags to every rendered page:
-  og:title, og:description, og:image (book cover), og:type: article
-Improves appearance when pages are shared on social media.
-Already easy to add to pipeline-render.js renderHead() function.
-Effort: ~30 minutes
+Status: not-started
+Priority: medium
+Effort: 30 minutes
 
-### Print-friendly version
-CSS @media print styles that hide nav, CTAs, trailer thumbnails.
-Clean printable version of each review.
-Effort: ~1 hour (CSS only)
+Add og:title, og:description, og:image, og:type to every rendered page. Easy addition to pipeline-render.js renderHead().
 
+### Print-friendly CSS
+Status: not-started
+Priority: medium
+Effort: 1 hour
+
+@media print styles that hide nav, CTAs, trailer thumbnails.
+
+---
 
 ## Low Priority
 
 ### Director filmography pages
-/director/joe-wright — all Wright adaptations on the site.
-Same pattern as author hub pages.
+Status: not-started
+Priority: low
 Depends on: author hub pages
 
+/director/joe-wright — all Wright adaptations on the site.
+
 ### "vs" comparison pages
-/gone-girl-vs-girl-on-the-train — which thriller book/film is better?
-Cross-links two existing pages, ranks for comparison queries.
-Effort: ~1 day (new content type, new schema fields)
+Status: not-started
+Priority: low
+Effort: 1 day
+
+/gone-girl-vs-girl-on-the-train — which thriller book/film is better? New content type, new schema fields.
 
 ### Reading progress tracker
+Status: not-started
+Priority: low
+Effort: 2 hours
+
 "You've read 12 of 163 books on this site" — localStorage tracker.
-Gamification, encourages return visits.
-Effort: ~2 hours (pure JS)
 
 ### Goodreads integration
-Show average Goodreads rating alongside site verdict.
-Adds third-party credibility signal.
-Requires: Goodreads API (or scraping — fragile)
-Effort: ~half day
+Status: not-started
+Priority: low
+Effort: half day
+
+Show average Goodreads rating alongside site verdict. Requires Goodreads API.
 
 ### Price tracking
-Notify subscribers when a book drops below a target price on Amazon.
-Requires: Amazon PA API, email infrastructure.
-High effort, medium reward.
-Effort: ~2 days
+Status: not-started
+Priority: low
+Effort: 2 days
 Depends on: email capture established
+
+Notify subscribers when a book drops below a target price on Amazon.
+
+---
+
+## Done
+
+- [2026-04-13] Browse page filters — All / Book Wins / Film Wins / Too Close to Call
+- [2026-04-13] Canonical tags on all pages
+- [2026-04-14] Upcoming adaptations page — /upcoming-adaptations
+- [2026-04-14] Spotlight pages — 6 live including Reminders of Him
+- [2026-04-17] Pillar pages — 10 live, indexed
+- [2026-04-17] Featured hub page — /featured
+- [2026-04-17] Dashboard — /dashboard with GSC analytics

@@ -1,211 +1,162 @@
 [//]: # (Destination: docs/strategy/roadmap-technical.md)
+[//]: # (Format: BooksVersusMovies standard markdown v1)
+[//]: # (Rules: H1 title, H2 sections, H3 subsections, dates YYYY-MM-DD, status: not-started|in-progress|done|blocked, priority: high|medium|low, effort in plain text, no escaped chars)
+
 # BooksVersusMovies.com — Technical Roadmap
+Last updated: 2026-04-17
 
+Engineering backlog. Done items kept for reference.
+For raw ideas see docs/strategy/new-ideas.md.
 
-
-
-
-==========================================
-Last updated: April 2026
-
-Prioritised engineering backlog. Items marked done are kept for reference.
-For raw ideas not yet evaluated see docs/new-ideas.md.
-
-
+---
 
 ## In Progress
 
-### Pipeline stabilisation (Step 3-4)
+### llm-client.js — shared LLM client module
+Status: not-started
+Priority: high
+Effort: 2-3 hours
 
-Complete the current pipeline build:
+Extract all API call logic into a single shared module. Currently every script duplicates callModel(), parseJSON(), and .env loading.
 
-* \[x] Pass 1 — structural overlay (quickAnswer)
-* \[x] Titles pass — emotional CTR-optimised titles
-* \[x] Pass 2 — conversion layer (ctaBlocks)
-* \[x] pipeline-render.js — deterministic HTML renderer
-* \[x] pipeline-browse.js — browse page generator
-* \[x] sitemap-generate.js — sitemap.xml generator
-* \[x] quality-gate.js — batch quality checks
-* \[ ] pipeline-generate.js — greenfield new review generator (Step 5)
-* \[ ] Full deployment of rendered pages
+Exports:
+- `callModel(model, systemPrompt, userContent, maxTokens)` — raw API call, no validation
+- `callModelSafe(model, prompt, userContent, schema, maxRetries=3)` — API + jsonrepair + ajv + retry
+- `parseJSON(text)` — strips markdown fences + runs jsonrepair
+- `loadEnv()` — loads .env into process.env
 
+Scripts to update: pipeline-revise.js, pipeline-generate.js, pipeline-auteurs.js, get-advice.js, compare-models.js
 
+Dependencies: jsonrepair, ajv (both installed)
+
+---
 
 ## High Priority
 
 ### Environment-based model config
+Status: not-started
+Priority: high
+Effort: 30 minutes
 
-Add --env flag to pipeline scripts resolving config/models.${env}.json:
-config/models.json        ← prod (Haiku + Sonnet)
-config/models.test.json   ← test (DeepSeek, all passes)
-config/models.dev.json    ← dev (cheapest, single page testing)
+Add --env flag resolving config/models.${env}.json:
+- config/models.json — prod (Haiku + Sonnet)
+- config/models.test.json — test (DeepSeek, all passes)
+- config/models.dev.json — dev (cheapest, single page)
 
-Usage:
-node scripts\\pipeline-revise.js --all --pass all --env test
-Falls back to config/models.json if env file doesn't exist.
-Effort: \~30 minutes
-Depends on: nothing
+Falls back to config/models.json if env file missing.
 
 ### Abbreviated payloads for dev/test runs
-
-Pass 1 and Pass 2 send full JSON (\~4000-6000 tokens) but only need
-a small subset. In dev/test mode send only required fields:
-Pass 1 minimal: slug, bookTitle, author, verdictText, verdictClass,
-verdictBox, readFirst, differences, quickAnswer
-Pass 2 minimal: slug, bookTitle, verdictText, affiliateLink, ctaBlocks
-Cuts token count 60-70%, eliminates truncation on large pages.
-Implement as part of --env flag work.
-Effort: \~2 hours
+Status: not-started
+Priority: high
+Effort: 2 hours
 Depends on: environment-based model config
 
-### Periodic quality checks during batch runs
+Send only required fields in dev/test mode. Cuts token count 60-70%, eliminates truncation on large pages.
 
-\--quality-check-interval N flag already implemented in pipeline-revise.js.
-Refine generic phrase detector based on observed failures:
-Current list: both versions, equally rewarding, neither diminishes,
-complement each other, worth experiencing, illuminate each other etc.
-Add auto-retry on generic oneLineReason — single retry with stricter prompt
-before hard-stopping the batch.
-Effort: \~1 hour
-Depends on: nothing
+### Pillar pages — internal links to review pages
+Status: not-started
+Priority: high
+Effort: 1 hour
 
+Pillar page prose mentions titles (Gone Girl, Atonement, etc.) but doesn't link to review pages. Add hyperlinks in pipeline-pillar-render.js by matching slugs from data/reviews/.
 
+---
 
 ## Medium Priority
 
 ### Per-pass subdirectories
+Status: not-started
+Priority: medium
+Effort: 3 hours
+Depends on: pipeline stable
 
-Lesson learned from IN\_DIR bug. Refactor pipeline to use:
-pipeline/2a-pass1/    ← Pass 1 output
-pipeline/2b-titles/   ← titles pass output
-pipeline/2c-pass2/    ← Pass 2 output
-pipeline/2-revised/   ← final merged output
+Refactor pipeline to use:
+- pipeline/2a-pass1/
+- pipeline/2b-titles/
+- pipeline/2c-pass2/
+- pipeline/2-revised/ (final merged)
+
 Each pass reads from previous folder — nothing ever overwritten.
-Enables independent re-run of any single pass.
-Effort: \~3 hours (refactor + testing)
-Depends on: pipeline stabilisation complete
-
-### pipeline-generate.js (Step 5)
-
-Greenfield new review generator. Takes input data (title, author, director,
-affiliate link, YouTube ID) and generates a complete review JSON using
-claude-sonnet-4-5. Same renderer pipeline as existing pages.
-Effort: \~1 day
-Depends on: pipeline-render.js stable
-
-### pipeline-init.js — project template bootstrapper
-
-Initialises a new affiliate review site from this project structure.
-See docs/pipeline-init.md for full algorithm design.
-Effort: \~half day
-Depends on: pipeline fully stable and documented
 
 ### GSC API automation
-
-Automate GSC exports and URL indexing requests via Search Console API.
-scripts/gsc-report.js --weekly
-scripts/gsc-report.js --post-deploy
-scripts/gsc-report.js --indexing
-Prerequisite: establish manual export protocol first.
-Effort: \~1 day
+Status: not-started
+Priority: medium
+Effort: 1 day
 Depends on: manual GSC protocol established
 
-### Auto-retry on generic oneLineReason
-
-When Pass 1 produces a generic oneLineReason, automatically retry with
-a more targeted prompt before hard-stopping. Max 1 retry.
-Effort: \~1 hour
-Depends on: quality gate stable
+Automate GSC exports and URL indexing requests via Search Console API.
+- scripts/gsc-report.js --weekly
+- scripts/gsc-report.js --post-deploy
+- scripts/gsc-report.js --indexing
 
 ### Sitemap auto-submission
-
-After deployment, programmatically submit sitemap to GSC via API rather
-than manual UI step.
-Effort: \~30 minutes (once GSC API auth is set up)
+Status: not-started
+Priority: medium
+Effort: 30 minutes
 Depends on: GSC API automation
 
+Programmatically submit sitemap to GSC after deployment.
 
+### Auto-retry on generic oneLineReason
+Status: not-started
+Priority: medium
+Effort: 1 hour
+Depends on: quality gate stable
+
+Single retry with stricter prompt before hard-stopping batch.
+
+### pipeline-init.js — project template bootstrapper
+Status: not-started
+Priority: medium
+Effort: half day
+Depends on: pipeline fully stable and documented
+
+Initialises a new affiliate review site from this project structure.
+
+---
 
 ## Low Priority
 
 ### Structured logging — Pino + OpenTelemetry
+Status: not-started
+Priority: low
+Effort: 1 day
 
-Transition from custom logger.js to Pino for structured JSON logging.
-Add OpenTelemetry tracing. Worth doing if pipeline runs become frequent
-or team grows beyond solo.
-Effort: \~1 day
-Depends on: nothing
-
-### Vercel migration + movie database
-
-Move from Netlify to Vercel. Build structured Postgres database for books,
-films, directors, actors. Enables richer internal linking, genre pages,
-author pages. Significant scope — post-revenue decision.
-Effort: \~1 week
-Depends on: revenue milestone
+Transition from custom logger.js to Pino. Worth doing if pipeline runs become frequent or team grows.
 
 ### Priority tiers for content generation
-
-Add priority field (1-3) to JSON schema. Controls model assignment,
-article length, and greenfield generation order.
-Effort: \~2 hours
+Status: not-started
+Priority: low
+Effort: 2 hours
 Depends on: pipeline-generate.js
 
+Add priority field (1-3) to JSON schema. Controls model assignment, article length, greenfield generation order.
+
 ### Affiliate link management UI
+Status: not-started
+Priority: low
+Effort: half day
 
-Local web UI for managing Amazon affiliate links across pages. Similar
-to WordPress affiliate plugins. Reads/writes JSON files directly.
-Effort: \~half day
-Depends on: nothing
+Local web UI for managing Amazon affiliate links. Reads/writes JSON files directly.
 
+### Vercel migration + Postgres database
+Status: not-started
+Priority: low
+Effort: 1 week
+Depends on: revenue milestone
 
+Move from Netlify to Vercel. Build structured Postgres database for books, films, directors, actors.
 
+---
 
+## Done
 
-
-
-## priority: llm-client.js — shared LLM client module
-
-Extract all API call logic into a single shared module used by every
-pipeline script. Currently every script duplicates the same callModel(),
-parseJSON(), and .env loading code.
-
-File: scripts/llm-client.js
-
-Exports:
-callModel(model, systemPrompt, userContent, maxTokens)
-Raw API call via OpenRouter. No validation. Use for free-text
-responses (titles, advice, auteur descriptions).
-
-callModelSafe(model, prompt, userContent, schema, maxRetries=3)
-API call + jsonrepair + ajv schema validation + auto-retry.
-Feeds specific schema errors back to model on retry.
-Use for all structured JSON generation (Pass 1, Pass 2, greenfield).
-Schema parameter is optional — omit for free-text responses.
-
-parseJSON(text)
-Strips markdown fences + runs jsonrepair. Used internally by
-callModelSafe but also exportable for one-off parsing.
-
-loadEnv()
-Loads .env file into process.env. Currently duplicated in every
-script — centralise here.
-
-Scripts to update once llm-client.js is built:
-pipeline-revise.js      (Pass 1, titles, Pass 2)
-pipeline-generate.js    (Stage 1, Stage 2)
-pipeline-auteurs.js     (director descriptions)
-get-advice.js           (advice tool)
-compare-models.js       (eval tool)
-
-Benefits:
-
-* Single place to update retry logic, timeout, logging
-* Schema validation automatic on every structured call
-* Eliminates \~100 lines of duplicated code across 5 scripts
-* If OpenRouter changes their API, fix in one place
-
-Dependencies: jsonrepair, ajv (both already installed)
-Effort: \~2-3 hours to extract + wire into all scripts
-Priority: high — do before full Film Wins batch
-
+- [2026-04-11] Pass 1 — structural overlay (quickAnswer)
+- [2026-04-12] Titles pass — CTR-optimised titles
+- [2026-04-12] Pass 2 — conversion layer (ctaBlocks)
+- [2026-04-13] pipeline-render.js — deterministic HTML renderer
+- [2026-04-13] pipeline-browse.js — browse page generator
+- [2026-04-13] sitemap-generate.js — sitemap.xml generator
+- [2026-04-13] quality-gate.js — batch quality checks
+- [2026-04-14] pipeline-generate.js — greenfield new review generator
+- [2026-04-14] Full deployment of rendered pages

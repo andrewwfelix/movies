@@ -1,0 +1,183 @@
+[//]: # (Destination: docs/brainstorming/vercel/vercel-dashboard-ideas.txt)
+
+Objective: Make the BooksVersusMovies dashboard a robust operational command center
+and leverage Vercel + Supabase to turn the site into a scalable content platform.
+The dashboard should evolve from manually-updated JSON files into a live system
+fed by a database, serverless functions, and automated pipelines.
+
+This is an epic. Do not start until current Netlify work is stable and revenue
+is consistent. Design every decision with TheApiaryGuide multi-site reuse in mind.
+
+============================================================
+
+1. Persistence Layer — Supabase
+
+1.1  Reviews table mirroring canonical JSON schema — enables complex querying
+     (e.g. all reviews where Film Wins + genre is Sci-Fi)
+1.2  Tasks table replacing kanban.md and project-status.json — UI-editable
+     from dashboard, no more manual markdown editing
+1.3  Analytics history table — store daily GSC snapshots beyond 14-day window,
+     build custom long-range performance charts in dashboard
+1.4  Affiliate links table — centralized link management, status tracking
+1.5  Subscribers sync table — Beehiiv subscriber state in DB, queryable
+1.6  Topical clusters table — powers automatic internal linking when new
+     reviews are added
+1.7  History / audit log table — every AI generation and human edit versioned,
+     enables rollback if a prompt change causes CTR drop
+1.8  Team table — triggers onboarding automation for new hires
+1.9  Redirects table — handles old .html URLs post-migration, auto-generated
+     from review slugs, replaces netlify.toml redirect rules
+1.10 Prompt templates table — version AI chains with A/B win rate tracking,
+     swap via feature flag without redeploys (post-scale)
+1.11 Site configs table — per-site affiliate networks (Amazon US vs UK vs
+     Bookshop.org), AI model weights, synced to Vercel Edge Config
+
+
+2. Vercel Functions
+
+2.1  Serverless pipeline orchestration — /api/generate endpoint replaces
+     local pipeline-generate.js
+2.1.1  Post book title to /api/generate
+2.1.2  Function triggers multi-model AI chain (Perplexity → Gemini → Claude)
+2.1.3  Editorial-approved review saved directly to Supabase reviews table
+2.2  Supabase Realtime — push pipeline completion events to dashboard UI,
+     no refresh needed
+2.3  Vercel Edge Config — zero-latency site-wide feature flags
+     (toggle newsletter popup, change Featured comparison, kill switch)
+2.4  Vercel Cron — affiliate link health checker, pings all links on schedule,
+     updates status column in Supabase
+2.5  Vercel Cron — nightly pipeline-guide.js run for upcoming adaptations
+2.6  Vercel Function — auto-create Beehiiv draft when review marked Published
+2.7  /api/index function — on publish, pings GSC for instant indexing
+2.8  /api/distribute — on publish, posts to Reddit via API and pings GSC
+     (no auto X/social — leave that manual to avoid backfire risk)
+
+
+3. Growth and Monetization Automations
+
+3.1  Beehiiv API integration — review Published status → auto newsletter draft
+     created in Beehiiv, ready to edit and send
+3.2  Automated email sequence — Fight Club and evergreen emails triggered by
+     subscriber signup date, not manual scheduling
+3.3  Affiliate link health monitoring — scheduled ping of all affiliate links,
+     dead links flagged in dashboard before they cost revenue
+3.4  Programmatic SEO pages — genre hubs, author hubs, Film Wins aggregate
+     pages generated automatically from DB queries
+3.5  Auto internal linking — when new review added, system identifies relevant
+     pillar pages and updates links via DB trigger
+
+
+4. Dashboard Evolution
+
+4.1  Tab 1 Analytics — live GSC data via API, no manual CSV export
+4.2  Tab 2 Project — tasks editable from dashboard UI (post-Vercel)
+4.3  Tab 3 Decisions — decisions writable from dashboard (post-Vercel)
+4.4  Tab 4 Roadmap — milestone status auto-updated from task completion
+4.5  Tab 5 Daily — checklist write-back to DB (post-Vercel)
+4.6  Tab 6 Content — review queue, generation status, publish workflow
+4.7  Tab 7 Growth — subscriber count, affiliate clicks, revenue milestones
+4.8  Tab 8 Experiments — live A/B results from Edge Config, promote winner button
+4.9  Tab 9 SEO Audit — broken internals, thin content flagged from DB queries
+
+
+5. Team and Operational Scale
+
+5.1  Supabase Auth RBAC — Content Researcher gets dashboard access without
+     GitHub or Vercel credentials
+5.2  RLS policy table — granular permissions via site_id, researchers can
+     insert reviews but not publish
+5.3  Automated onboarding — new team member in team table triggers Vercel
+     Function to email onboarding.md pack
+5.4  GDPR/CCPA export function — subscriber data dump on demand,
+     future-proofs for EU traffic growth
+
+
+6. Pipeline Abstraction (Multi-Site)
+
+6.1  Vercel Functions architecture designed from day one to serve multiple sites
+6.2  /api/generate, /api/render, /api/publish work for BooksVersusMovies
+     and TheApiaryGuide from the same codebase
+6.3  Supabase schema with site_id column — one DB, multiple sites
+6.4  Dashboard parameterized by site — one UI, multiple deployments
+6.5  Cross-site reporting — Film Wins revenue and traffic across all properties
+6.6  Per-site affiliate network config in site configs table (1.11)
+
+
+7. Content Pipeline Upgrades
+
+7.1  Stale content detector cron — flags reviews 90+ days old with impression
+     drops, queues for AI refresh via multi-model chain
+7.2  CTR optimization loop — identifies top 20 high-impression/low-CTR pages,
+     runs Sonnet title rewrite pass automatically
+7.3  Core web vitals monitoring per page — log LCP/CLS via Edge Middleware,
+     alert if new content tanks speed (post-scale only)
+
+
+============================================================
+
+Claude's Assessment — What to Skip for Now
+
+- Realtime dashboard (no contributors yet, not needed)
+- Audit logs and rollbacks (enterprise thinking, not early-stage)
+- Tasks table in DB (markdown works fine, migrate later)
+- Core web vitals per page (static site, no signal to act on yet)
+- A/B meta title testing via Edge Config (CTR script handles this more simply)
+- Auto social posting to X (automated social backfires easily, stay manual)
+
+
+============================================================
+
+What to Build First — Fun and High Momentum
+
+The Vercel epic has a lot of infrastructure work that is necessary but not
+exciting. The trick is to sequence the fun, visible wins first so momentum
+stays high while the plumbing gets built underneath.
+
+
+Sprint 1 — The Fun Stuff (high visibility, do these first)
+
+  /api/generate endpoint
+  The most satisfying build in the whole epic. Post a book title, watch the
+  AI chain run, a review appears in the dashboard. It feels like magic. Build
+  a simple UI in Tab 6 Content with a text input and a progress indicator.
+  Even before Supabase is wired up, write to a JSON file. The experience of
+  generating a review from the dashboard rather than the command line changes
+  how the whole project feels.
+
+  Live analytics via GSC API
+  Wire up the GSC API so Tab 1 updates automatically. No more manual CSV
+  exports. The moment the dashboard shows live data it stops feeling like a
+  dev project and starts feeling like a product. One afternoon of work,
+  visible every single day.
+
+  Beehiiv auto-draft
+  When you mark a review Published, a newsletter draft appears in Beehiiv
+  ready to edit. Closes the loop between content and distribution. Feels like
+  a real publishing workflow. Satisfying and immediately useful.
+
+
+Sprint 2 — The Foundation (necessary, less glamorous)
+
+  Supabase schema — reviews, analytics_history, redirects tables
+  Migrate existing 191 reviews into DB
+  Vercel static site + ISR setup
+  Redirects table replacing netlify.toml
+
+
+Sprint 3 — The Compounders (where traffic actually grows)
+
+  Programmatic SEO pages from DB queries
+  Auto internal linking via DB trigger
+  CTR optimization loop
+  Stale content detector cron
+
+
+Sprint 4 — The Platform (multi-site, team, scale)
+
+  site_id in all tables
+  TheApiaryGuide as second site
+  RBAC for Content Researcher
+  Cross-site dashboard reporting
+
+
+============================================================
