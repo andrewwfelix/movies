@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Dashboard — BooksVersusMovies.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #f9f5eb;
+      --surface:  #ffffff;
+      --surface2: #f0ebe0;
+      --border:   #e0d8c8;
+      --gold:     #c8973a;
+      --gold-dim: #a07828;
+      --text:     #1a1714;
+      --muted:    #6b6456;
+      --green:    #3b6d11;
+      --green-bg: #eaf3de;
+      --amber:    #ba7517;
+      --amber-bg: #faeeda;
+      --font-head: 'Playfair Display', Georgia, serif;
+      --font-body: 'Source Serif 4', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      background: var(--surface);
+    }
+    .header-logo { font-family: var(--font-head); font-size: 1.2rem; color: var(--text); text-decoration: none; }
+    .header-logo span { color: var(--gold); }
+    .header-meta { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.04em; }
+    .header-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--green); margin-right: 6px; vertical-align: middle; animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+    .dash { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .metric { background: var(--surface); padding: 1.25rem 1rem; }
+    .metric-label { font-family: var(--font-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.5rem; }
+    .metric-value { font-family: var(--font-head); font-size: 2rem; font-weight: 700; color: var(--text); line-height: 1; }
+    .metric-sub { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); margin-top: 4px; }
+    .metric-up { color: var(--green); }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-dim);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+
+    .chart-container { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; margin-bottom: 2rem; }
+    .chart-wrap { position: relative; height: 200px; }
+
+    .data-table { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .data-table table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .data-table th { font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); padding: 0.6rem 1rem; text-align: left; background: var(--surface2); border-bottom: 1px solid var(--border); font-weight: 400; }
+    .data-table th.right, .data-table td.right { text-align: right; }
+    .data-table td { padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: middle; }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: var(--surface2); }
+
+    .page-title { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px; display: block; }
+    .ctr-pill { display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; padding: 2px 6px; border-radius: 2px; }
+    .ctr-high { background: var(--green-bg); color: var(--green); }
+    .ctr-mid  { background: var(--amber-bg); color: var(--amber); }
+    .ctr-low  { color: var(--muted); }
+    .pos-num  { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+    .pos-good { color: var(--green); font-weight: 500; }
+    .pos-mid  { color: var(--amber); }
+
+    .insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
+    .insight-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.25rem; }
+    .insight-tag { font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+    .insight-title { font-family: var(--font-head); font-size: 1.1rem; color: var(--text); margin-bottom: 0.2rem; }
+    .insight-stat { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); }
+    .insight-big { font-family: var(--font-head); font-size: 2rem; font-weight: 700; margin-top: 0.25rem; }
+
+    .dash-footer { border-top: 1px solid var(--border); padding: 1rem 2rem; font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); text-align: center; letter-spacing: 0.04em; background: var(--surface); }
+
+    @media (max-width: 900px) {
+      .metrics { grid-template-columns: repeat(3, 1fr); }
+      .two-col { grid-template-columns: 1fr; }
+      .insight-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      .dash { padding: 1rem; }
+      .header { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <a class="header-logo" href="/">Books<span>Versus</span>Movies</a>
+  <div class="header-meta">
+    <span class="header-dot"></span>
+    <span id="last-updated">Loading...</span>
+  </div>
+</header>
+
+<div class="dash">
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Total clicks</div>
+      <div class="metric-value" id="m-clicks">—</div>
+      <div class="metric-sub">14-day total</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Impressions</div>
+      <div class="metric-value" id="m-imps">—</div>
+      <div class="metric-sub">14-day total</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Avg CTR</div>
+      <div class="metric-value" id="m-ctr">—</div>
+      <div class="metric-sub">click-through rate</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Avg position</div>
+      <div class="metric-value" id="m-pos">—</div>
+      <div class="metric-sub">search ranking</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Pages live</div>
+      <div class="metric-value" id="m-pages">—</div>
+      <div class="metric-sub">indexed by Google</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Countries</div>
+      <div class="metric-value" id="m-countries">—</div>
+      <div class="metric-sub">reached this period</div>
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <div class="section-label">Daily impressions</div>
+    <div class="chart-wrap">
+      <canvas id="impressionsChart" role="img" aria-label="Line chart of daily impressions over 14 days">Daily impressions rising from 0 to 286 over 14 days.</canvas>
+    </div>
+  </div>
+
+  <div class="section-label">Insights</div>
+  <div class="insight-grid" id="insights"></div>
+
+  <div class="two-col">
+    <div>
+      <div class="section-label">Top pages by impressions</div>
+      <div class="data-table" id="pages-table"></div>
+    </div>
+    <div>
+      <div class="section-label">Top queries</div>
+      <div class="data-table" id="queries-table"></div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <div class="section-label">Traffic by device</div>
+      <div class="data-table" id="devices-section"></div>
+    </div>
+    <div>
+      <div class="section-label">Top countries</div>
+      <div class="data-table" id="countries-section"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="dash-footer" id="dash-footer">Loading...</div>
+
+<script>
+function slugFromUrl(url) {
+  return url.replace('https://booksversusmovies.com/', '').replace('.html', '') || '/';
+}
+function ctrClass(ctr) {
+  const n = parseFloat(ctr);
+  if (n >= 4) return 'ctr-high';
+  if (n >= 1) return 'ctr-mid';
+  return 'ctr-low';
+}
+function posClass(pos) {
+  if (pos <= 10) return 'pos-good';
+  if (pos <= 15) return 'pos-mid';
+  return '';
+}
+
+async function loadData() {
+  const res  = await fetch('latest.json');
+  const json = await res.json();
+  const d = json.data;
+  const m = json.metadata;
+
+  document.getElementById('last-updated').textContent = 'Updated ' + m.lastUpdated + ' · ' + m.lastUpdateTime;
+  document.getElementById('m-clicks').textContent     = d.summary.totalClicks.toLocaleString();
+  document.getElementById('m-imps').textContent       = d.summary.totalImpressions.toLocaleString();
+  document.getElementById('m-ctr').textContent        = d.summary.avgCTR;
+  document.getElementById('m-pos').textContent        = d.summary.avgPosition.toFixed(1);
+  document.getElementById('m-pages').textContent      = d.summary.pagesIndexed;
+  document.getElementById('m-countries').textContent  = d.summary.countriesReached;
+
+  const labels = d.chart.map(r => r.date.slice(5));
+  const imps   = d.chart.map(r => r.impressions);
+  const clicks = d.chart.map(r => r.clicks);
+
+  new Chart(document.getElementById('impressionsChart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        { label: 'Impressions', data: imps, borderColor: '#c8973a', backgroundColor: 'rgba(200,151,58,0.1)', borderWidth: 2, fill: true, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#c8973a', yAxisID: 'y' },
+        { label: 'Clicks', data: clicks, borderColor: '#3b6d11', backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [4,3], fill: false, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#3b6d11', yAxisID: 'y1' }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: false } },
+      scales: {
+        x:  { ticks: { color: '#6b6456', font: { size: 10, family: 'JetBrains Mono' }, maxRotation: 0, autoSkip: true, maxTicksLimit: 8 }, grid: { color: 'rgba(0,0,0,0.06)' } },
+        y:  { ticks: { color: '#6b6456', font: { size: 10, family: 'JetBrains Mono' } }, grid: { color: 'rgba(0,0,0,0.06)' }, beginAtZero: true, position: 'left' },
+        y1: { ticks: { color: '#3b6d11', font: { size: 10, family: 'JetBrains Mono' } }, grid: { display: false }, beginAtZero: true, position: 'right' }
+      }
+    }
+  });
+
+  const topCtr     = [...d.pages].sort((a,b) => parseFloat(b.ctr) - parseFloat(a.ctr))[0];
+  const topImp     = [...d.pages].sort((a,b) => b.impressions - a.impressions)[0];
+  const opportunity = [...d.pages].sort((a,b) => b.impressions - a.impressions).find(p => parseFloat(p.ctr) < 1 && p.impressions > 50);
+  const lastDay    = d.chart[d.chart.length - 1];
+
+  document.getElementById('insights').innerHTML = `
+    <div class="insight-card">
+      <div class="insight-tag" style="color:var(--green)">Today's best performer</div>
+      <div class="insight-title">${slugFromUrl(topCtr.url)}</div>
+      <div class="insight-stat">Highest CTR page</div>
+      <div class="insight-big" style="color:var(--green)">${topCtr.ctr}</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-tag" style="color:var(--amber)">Biggest opportunity</div>
+      <div class="insight-title">${slugFromUrl((opportunity||topImp).url)}</div>
+      <div class="insight-stat">${(opportunity||topImp).impressions} impressions · ${(opportunity||topImp).ctr} CTR</div>
+      <div class="insight-big" style="color:var(--amber)">pos. ${(opportunity||topImp).position.toFixed(1)}</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-tag" style="color:var(--gold-dim)">Latest day</div>
+      <div class="insight-title">${lastDay.date}</div>
+      <div class="insight-stat">${lastDay.impressions} impressions · ${lastDay.clicks} clicks</div>
+      <div class="insight-big" style="color:var(--gold)">${lastDay.ctr || '0%'}</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-tag" style="color:var(--gold-dim)">Most impressions</div>
+      <div class="insight-title">${slugFromUrl(topImp.url)}</div>
+      <div class="insight-stat">position ${topImp.position.toFixed(1)}</div>
+      <div class="insight-big" style="color:var(--gold)">${topImp.impressions.toLocaleString()}</div>
+    </div>`;
+
+  const topPages = [...d.pages].sort((a,b) => b.impressions - a.impressions).slice(0, 12);
+  document.getElementById('pages-table').innerHTML = `<table>
+    <thead><tr><th>Page</th><th class="right">Imps</th><th class="right">CTR</th><th class="right">Pos</th></tr></thead>
+    <tbody>${topPages.map(p => `<tr>
+      <td><span class="page-title">${slugFromUrl(p.url)}</span></td>
+      <td class="right" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted)">${p.impressions}</td>
+      <td class="right"><span class="ctr-pill ${ctrClass(p.ctr)}">${p.ctr}</span></td>
+      <td class="right"><span class="pos-num ${posClass(p.position)}">${p.position.toFixed(1)}</span></td>
+    </tr>`).join('')}</tbody></table>`;
+
+  document.getElementById('queries-table').innerHTML = `<table>
+    <thead><tr><th>Query</th><th class="right">Imps</th><th class="right">CTR</th></tr></thead>
+    <tbody>${d.queries.slice(0,12).map(q => `<tr>
+      <td style="font-size:0.75rem;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${q.query}</td>
+      <td class="right" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted)">${q.impressions}</td>
+      <td class="right"><span class="ctr-pill ${ctrClass(q.ctr)}">${q.ctr}</span></td>
+    </tr>`).join('')}</tbody></table>`;
+
+  document.getElementById('devices-section').innerHTML = `<table>
+    <thead><tr><th>Device</th><th class="right">Clicks</th><th class="right">Imps</th><th class="right">CTR</th></tr></thead>
+    <tbody>${d.devices.map(dev => `<tr>
+      <td style="font-size:0.82rem">${dev.device}</td>
+      <td class="right" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted)">${dev.clicks}</td>
+      <td class="right" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted)">${dev.impressions}</td>
+      <td class="right"><span class="ctr-pill ${ctrClass(dev.ctr)}">${dev.ctr}</span></td>
+    </tr>`).join('')}</tbody></table>`;
+
+  document.getElementById('countries-section').innerHTML = `<table>
+    <thead><tr><th>Country</th><th class="right">Imps</th><th class="right">Clicks</th></tr></thead>
+    <tbody>${d.countries.slice(0,10).map(c => `<tr>
+      <td style="font-size:0.82rem">${c.country}</td>
+      <td class="right" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted)">${c.impressions}</td>
+      <td class="right" style="font-family:var(--font-mono);font-size:0.72rem;color:${c.clicks > 0 ? 'var(--green)' : 'var(--muted)'}">${c.clicks}</td>
+    </tr>`).join('')}</tbody></table>`;
+
+  document.getElementById('dash-footer').textContent =
+    'Data from Google Search Console · ' + m.startDate + ' – ' + m.endDate + ' · ' + d.summary.pagesIndexed + ' pages indexed';
+}
+
+loadData().catch(err => {
+  document.getElementById('last-updated').textContent = 'Error loading data — check console';
+  console.error(err);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://booksversusmovies.com/schemas/dashboard.schema.json",
+  "title": "BooksVersusMovies Dashboard Data",
+  "description": "Schema for data/dashboard/latest.json — populated by scripts/reporting/dashboard.js from GSC exports",
+  "type": "object",
+  "required": ["metadata", "data"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["lastUpdated", "lastUpdateTime", "source"],
+      "properties": {
+        "lastUpdated":    { "type": "string", "description": "ISO date YYYY-MM-DD" },
+        "lastUpdateTime": { "type": "string", "description": "Human-readable time" },
+        "source":         { "type": "string" },
+        "dateRangeDays":  { "type": "integer", "description": "Number of days covered" },
+        "startDate":      { "type": "string" },
+        "endDate":        { "type": "string" }
+      }
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+
+        "summary": {
+          "description": "Totals across the date range",
+          "type": "object",
+          "properties": {
+            "totalClicks":      { "type": "integer" },
+            "totalImpressions": { "type": "integer" },
+            "avgCTR":           { "type": "string", "description": "e.g. '1.10%'" },
+            "avgPosition":      { "type": "number" },
+            "pagesIndexed":     { "type": "integer" },
+            "countriesReached": { "type": "integer" }
+          }
+        },
+
+        "chart": {
+          "description": "Daily performance — from Chart.csv",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "clicks", "impressions"],
+            "properties": {
+              "date":        { "type": "string", "description": "YYYY-MM-DD" },
+              "clicks":      { "type": "integer" },
+              "impressions": { "type": "integer" },
+              "ctr":         { "type": "string", "description": "e.g. '1.40%' or empty string" },
+              "position":    { "type": ["number", "null"] }
+            }
+          }
+        },
+
+        "pages": {
+          "description": "Top pages — from Pages.csv",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["url", "clicks", "impressions"],
+            "properties": {
+              "url":         { "type": "string" },
+              "clicks":      { "type": "integer" },
+              "impressions": { "type": "integer" },
+              "ctr":         { "type": "string" },
+              "position":    { "type": "number" }
+            }
+          }
+        },
+
+        "queries": {
+          "description": "Top search queries — from Queries.csv",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["query", "clicks", "impressions"],
+            "properties": {
+              "query":       { "type": "string" },
+              "clicks":      { "type": "integer" },
+              "impressions": { "type": "integer" },
+              "ctr":         { "type": "string" },
+              "position":    { "type": "number" }
+            }
+          }
+        },
+
+        "devices": {
+          "description": "Traffic by device — from Devices.csv",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["device", "clicks", "impressions"],
+            "properties": {
+              "device":      { "type": "string", "enum": ["Mobile", "Desktop", "Tablet"] },
+              "clicks":      { "type": "integer" },
+              "impressions": { "type": "integer" },
+              "ctr":         { "type": "string" },
+              "position":    { "type": "number" }
+            }
+          }
+        },
+
+        "countries": {
+          "description": "Traffic by country — from Countries.csv",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["country", "clicks", "impressions"],
+            "properties": {
+              "country":     { "type": "string" },
+              "clicks":      { "type": "integer" },
+              "impressions": { "type": "integer" },
+              "ctr":         { "type": "string" },
+              "position":    { "type": "number" }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

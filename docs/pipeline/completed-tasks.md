@@ -183,26 +183,67 @@ Format: [YYYY-MM-DD] Description
 [2026-04-14] Section 11 complete ✓
 
 
+## April 15 2026
+
+[2026-04-15] 5 spotlight pages live — lonesome-dove, fight-club, gone-girl,
+             dune, the-shining
+[2026-04-15] Spotlight buy buttons — terracotta → Book Wins green style
+[2026-04-15] pipeline-spotlight.js — affiliate link auto-lookup from review JSON
+[2026-04-15] pipeline-spotlight.js — script version metadata in HTML output
+[2026-04-15] pipeline-post.js — post-processing wrapper
+[2026-04-15] pipeline-greenfield.js — full orchestrator with auto-fix for long titles
+[2026-04-15] pipeline-clear.js — clears pipeline outputs for a slug
+[2026-04-15] archive-logs.js
+[2026-04-15] sitemap-generate.js path fixed for ops/ subdirectory
+[2026-04-15] Jaws, Lady Chatterley's Lover, No Country for Old Men greenfield pages
+
+
+## April 17 2026
+
+[2026-04-17] SEO titles, meta, oneLineReasons updated — Sonnet review pass (171 pages)
+[2026-04-17] seo-metadata-export.js + seo-metadata-import.js built (scripts/utils/)
+[2026-04-17] tree-code.js + tree-text.js built (scripts/utils/)
+[2026-04-17] consolidate-docs.js — flexible folder consolidation (scripts/content/)
+[2026-04-17] consistency-audit.js — 8-check site audit script (scripts/utils/)
+[2026-04-17] fix-related-cards.js — fixed 55 broken related card slugs (scripts/utils/)
+[2026-04-17] featured.html hub page live — Reminders of Him as hero, 6 spotlights
+[2026-04-17] spotlight-reminders-of-him.html — New Release Spotlight live
+[2026-04-17] pipeline-pillar.js + pipeline-pillar-render.js built
+[2026-04-17] config/pillars.json — 10 pillars configured
+[2026-04-17] 10 pillar pages live and indexed in GSC
+[2026-04-17] pipeline-guide.js — fixed _destination JSON bug in --render-only mode
+[2026-04-17] check-nav.js ROOT path fixed
+[2026-04-17] sitemap-generate.js — auto-discovers pillar pages + all static pages
+             Total URLs now: 191 (171 reviews + 10 pillars + 10 static)
+[2026-04-17] Nav fixed across all pages — Featured → /featured
+[2026-04-17] Beehiiv newsletter embed integrated into all review pages via pipeline-render.js
+[2026-04-17] Fight Club newsletter email written and staged in Beehiiv
+[2026-04-17] Beehiiv form tested — subscriber confirmed in dashboard
+[2026-04-17] Newsletter send held pending DNS/custom domain setup
+[2026-04-17] docs/team/ created — onboarding.md, tasks.md, affiliate-links.md,
+             onboarding-prep.md, job-rec-content-researcher.md
+[2026-04-17] Greenfield JSONs ready: Blade Runner, Shawshank Redemption, Arrival
+
+
 ## Current State
 
-DEPLOYED ✓ — April 14 2026
-166 pages live (162 revised + The Godfather + Ghost World + spotlight-lonesome-dove
-               + upcoming-adaptations)
-Full greenfield pipeline operational
-Full spotlight pipeline operational
-Nav consistent across all pages via config/nav.json
-All 162 title tags contain "Book vs Movie"
-Scripts organized into utils/, ops/, content/, reporting/
-deploy.js automates file deployment from Downloads
+DEPLOYED ✓ — April 17 2026
+191 URLs in sitemap:
+  - 171 review pages
+  - 10 pillar pages
+  - 10 static pages (spotlights, featured, upcoming, auteurs, about)
+Newsletter: Beehiiv embed live on all pages, first subscriber confirmed
+Team docs: onboarding pack ready in docs/team/
+GSC: 10 pillar pages indexed, impressions growing (286/day as of April 15)
 
 
 ## Next Steps — Highest Priority
 
-  1. Run add-destination.js --write to stamp all existing scripts
-  2. llm-client.js — shared LLM client before Film Wins batch
-  3. Film Wins batch — 10 new greenfield pages
-  4. Request indexing — Priority 1 pages (docs/indexing-requests.txt)
-  5. Email capture — ConvertKit setup + opt-in form
-  6. /book-vs-movie hub page
-  7. Genre hub pages (/thriller, /romance, /literary-fiction)
-  8. Vercel migration (see docs/strategy/kanban.md)
+  1. Add hyperlinks from pillar pages to individual review pages
+  2. Beehiiv DNS / custom domain setup
+  3. Beehiiv welcome email for new subscribers
+  4. Fill affiliate links for Blade Runner, Shawshank, Arrival greenfields
+  5. llm-client.js — shared LLM client before next big batch
+  6. Email capture — ConvertKit setup + opt-in form
+  7. /how-we-judge page
+  8. Recently added section on browse/index page
