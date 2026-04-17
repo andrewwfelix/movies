@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-17T17:36:56.242Z
+============================================================
+[17:36:56.245] [INFO ] pipeline-render.js
+[17:36:56.247] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[17:36:56.248] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[17:36:56.248] [INFO ] Files:   1
+[17:36:56.248] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[17:36:56.250] [PASS ] reminders-of-him.html — 21254 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No ../css/ paths
+  ✓  No ../images/ paths
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+── Copying to project root ──────────────────────
+[17:36:56.252] [INFO ] Copied 1 file to project root
+
+============================================================
+Finished: 2026-04-17T17:36:56.253Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-17_13-36-56_pipeline-render.log
+============================================================
