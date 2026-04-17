@@ -1,0 +1,71 @@
+BooksVersusMovies.com — Project Plan Outline
+
+also add a glossy pitch deck to sell the site
+
+1. Executive Summary
+
+What the site is and what success looks like
+Current state snapshot (pages, traffic, revenue)
+30 / 90 / 180 day goals
+
+2. Business Objectives Review
+
+Primary: affiliate revenue milestones ($50, $200, $500/mo)
+Secondary: domain authority, email list, brand recognition
+How each objective is measured
+
+3. Analytics Review (monthly)
+
+GSC: impressions, clicks, CTR, position trends
+Top 10 pages by impressions vs top 10 by clicks — gap analysis
+Pages in positions 8-15 (quick win targets)
+Cannibalization check — pillar vs review pages competing
+New vs returning visitors
+Affiliate click-through and conversion rate
+
+4. Content Strategy
+
+Review page pipeline — current batch, next batch, backlog
+Pillar page performance and expansion plan
+Spotlight page cadence — criteria for new spotlights
+Content gaps identified from GSC query data
+
+5. Technical Roadmap
+
+Current pipeline health
+Vercel migration timeline
+Email capture implementation
+Dashboard and overlord scripts
+
+6. Team and Operations
+
+Helper onboarding status
+Task delegation progress
+Tooling and workflow improvements
+
+7. SEO Strategy
+
+Hub and pillar architecture status
+Internal linking health (consistency audit)
+Indexing status and GSC submission cadence
+Title and meta optimization cycles
+
+8. Revenue Tracking
+
+Amazon Associates dashboard review
+Affiliate link coverage across all pages
+Prime Video and Bookshop.org expansion
+
+9. Quarterly Priorities
+
+Q2 2026 focus areas
+Q3 2026 planned milestones
+Decisions deferred and why
+
+10. End of Session Protocol
+
+Advice script inputs sent this session
+Open questions for next session
+Kanban updated Y/N
+Deploy status
+
