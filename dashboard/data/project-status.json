@@ -1,0 +1,1889 @@
+{
+  "meta": {
+    "source": "docs/kanban.md",
+    "lastUpdated": "2026-04-17",
+    "generatedAt": "2026-04-17"
+  },
+  "summary": {
+    "total": 116,
+    "todo": 69,
+    "inProgress": 2,
+    "done": 45,
+    "today": 3,
+    "highPriority": 27
+  },
+  "sections": [
+    {
+      "heading": "In Progress",
+      "key": "in progress",
+      "priority": "in-progress",
+      "category": "in-progress",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Pillar pages — 10 live, monitoring GSC for cannibalization",
+          "status": "in-progress",
+          "priority": "in-progress",
+          "category": "in-progress",
+          "date": null
+        },
+        {
+          "text": "docs branch — standardizing doc formats, building docs-to-json parser",
+          "status": "in-progress",
+          "priority": "in-progress",
+          "category": "in-progress",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Today",
+      "key": "today",
+      "priority": "today",
+      "category": "today",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "GSC indexing — 10 pillar page URLs",
+          "status": "not-started",
+          "priority": "today",
+          "category": "today",
+          "date": null
+        },
+        {
+          "text": "Fill affiliate links for Blade Runner, Shawshank, Arrival greenfield JSONs",
+          "status": "not-started",
+          "priority": "today",
+          "category": "today",
+          "date": null
+        },
+        {
+          "text": "docs-to-json.js — kanban parser, project-status.json schema",
+          "status": "not-started",
+          "priority": "today",
+          "category": "today",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "High Priority",
+      "key": "high priority",
+      "priority": "high",
+      "category": "tech",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Add hyperlinks from pillar pages to individual review pages",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "/how-we-judge page — short editorial standards page, links to pillar pages",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Recently added section on browse/index page — surfaces new Film Wins batch",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "llm-client.js — shared LLM client module (before next big batch)",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Beehiiv DNS / custom domain setup",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Beehiiv welcome email for new subscribers",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Email capture — ConvertKit setup + opt-in form",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Anchor text on internal links — add \"book vs movie\" to related card links",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Cross-link spotlight pages to each other (relatedSpotlights field)",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "/book-vs-movie hub page",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Logger config file — option to log errors only (config/logger.json)",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "pipeline-greenfield.js — fix double output lines (spawnSync printing twice)",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Update deploy-files.bat — paths changed after scripts reorganization",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "add-destination.js — update SCAN array when new subfolders created",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Spotlight pages — migrate buy button CSS to style.css (Vercel migration)",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Medium Priority",
+      "key": "medium priority",
+      "priority": "medium",
+      "category": "tech",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Genre hub pages (/thriller, /romance, /literary-fiction)",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Author hub pages (Colleen Hoover, Gillian Flynn, Stephen King)",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Ones to Watch section on Auteurs page (emerging directors/showrunners)",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "WebP conversion for book cover images",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Social meta tags (Open Graph / Twitter Card) on all pages",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Reader verdict poll below verdict box",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Video affiliate links — add to input JSON and render pipeline",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Multi-LLM code review — review pipeline scripts with Grok/Gemini/Sonnet",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Vercel Migration (do together, in order)",
+      "key": "vercel migration (do together, in order)",
+      "priority": "other",
+      "category": "other",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Migrate from Netlify to Vercel",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Move reviews HTML out of project root into /reviews subfolder",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Set up Vercel cron job for pipeline-guide.js (nightly)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Email notification for missing book images (nodemailer)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Scaffold Docusaurus at docs.booksversusmovies.com",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Port docs/ folder into Docusaurus sidebar structure",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Set up Postgres database (Neon or PlanetScale)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Abstract pipeline for multi-site reuse (TheApiaryGuide)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Pipeline Robustness",
+      "key": "pipeline robustness",
+      "priority": "medium",
+      "category": "tech",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Title retry — pass shorter instruction to LLM before falling back",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "pipeline-greenfield.js — fix double console output",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "pipeline-greenfield.js — unified log not capturing all output yet",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Add --pass conversion alias to pipeline-revise.js",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "quality-gate.js — review after Film Wins batch",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Script version metadata in all pipeline HTML outputs",
+          "status": "not-started",
+          "priority": "medium",
+          "category": "tech",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Dashboard",
+      "key": "dashboard",
+      "priority": "high",
+      "category": "tech",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "docs/data/ folder — machine-readable JSON layer",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "project-status.json schema — derived from kanban.md",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "docs-to-json.js — parses kanban.md into structured JSON",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Dashboard Tab 2: Project Status — reads project-status.json",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Dashboard — wire up GSC API on Vercel migration",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Dashboard — password protection (Netlify Basic Auth or Vercel middleware)",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Dashboard — CSV import script to auto-update latest.json from GSC exports",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Business / Operations",
+      "key": "business / operations",
+      "priority": "high",
+      "category": "biz",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Transfer site accounts to RavensEdge AI LLC — Amazon Associates, GSC, GA, Netlify, Beehiiv, domain registrar",
+          "status": "not-started",
+          "priority": "high",
+          "category": "biz",
+          "date": null
+        },
+        {
+          "text": "About page rewrite — real person, real story, why this site exists",
+          "status": "not-started",
+          "priority": "high",
+          "category": "biz",
+          "date": null
+        },
+        {
+          "text": "Voice pass on top 10 traffic pages — sharpen opinions, remove safe hedging",
+          "status": "not-started",
+          "priority": "high",
+          "category": "biz",
+          "date": null
+        },
+        {
+          "text": "Hire Content Researcher (Person 1) — post job rec, review applications",
+          "status": "not-started",
+          "priority": "high",
+          "category": "biz",
+          "date": null
+        },
+        {
+          "text": "Project plan doc — objectives vs analytics, quarterly roadmap",
+          "status": "not-started",
+          "priority": "high",
+          "category": "biz",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "TheApiaryGuide.com (Future Project)",
+      "key": "theapiaryguide.com (future project)",
+      "priority": "other",
+      "category": "other",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Set up SiteGround hosting + WordPress",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Install AAWP + Rank Math + chosen theme",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Map first 12 articles",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Build clubs/associations directory page (link bait)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "History of Beekeeping long-form evergreen page",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Best Beginner Starter Kit roundup (highest buyer intent)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Abstract BooksVersusMovies pipeline for reuse across sites",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Explore WordPress REST API for automated draft publishing from pipeline",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "ConvertKit email capture from day one",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Low Priority / Later",
+      "key": "low priority / later",
+      "priority": "low",
+      "category": "tech",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Priority/hype field in JSON schema",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Spoiler-free mode toggle",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "What to read next quiz",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Reading progress tracker",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Goodreads rating integration",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Director filmography pages",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Print-friendly CSS",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Author profile pages (Stephen King, Colleen Hoover, Gillian Flynn)",
+          "status": "not-started",
+          "priority": "low",
+          "category": "tech",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Done — 2026-04-17",
+      "key": "done",
+      "priority": "done",
+      "category": "done",
+      "isDone": true,
+      "date": "2026-04-17",
+      "items": [
+        {
+          "text": "Reminders of Him spotlight page live",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "Reminders of Him as hero card in featured.html",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "10 pillar pages live and indexed",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "pipeline-pillar.js + pipeline-pillar-render.js built",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "config/pillars.json — 10 pillars configured",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "sitemap-generate.js — auto-discovers pillar pages + all static pages (191 URLs)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "SEO titles, meta, oneLineReasons updated — Sonnet review pass (171 pages)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "seo-metadata-export.js + seo-metadata-import.js built (scripts/utils/)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "tree-code.js + tree-text.js built (scripts/utils/)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "consolidate-docs.js — flexible folder consolidation (scripts/content/)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "consistency-audit.js — 8-check site audit script (scripts/utils/)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "fix-related-cards.js — fixed 55 broken related card slugs (scripts/utils/)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "featured.html hub page live — 6 spotlights",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "pipeline-guide.js — fixed _destination JSON bug in --render-only mode",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "check-nav.js ROOT path fixed",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "Nav updated across all pages — Featured → /featured",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "Beehiiv newsletter embed integrated into all review pages",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "Fight Club newsletter email written and staged in Beehiiv",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "Beehiiv form tested — first subscriber confirmed",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "docs/team/ created — onboarding pack, job rec",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "Dashboard live at /dashboard — GSC analytics, light color scheme",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "dashboard/latest.json + dashboard.schema.json",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "Greenfield JSONs ready: Blade Runner, Shawshank Redemption, Arrival",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        }
+      ]
+    },
+    {
+      "heading": "Done — 2026-04-15",
+      "key": "done",
+      "priority": "done",
+      "category": "done",
+      "isDone": true,
+      "date": "2026-04-15",
+      "items": [
+        {
+          "text": "5 spotlight pages live — lonesome-dove, fight-club, gone-girl, dune, the-shining",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "Spotlight buy buttons — terracotta → Book Wins green style",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "pipeline-spotlight.js — affiliate link auto-lookup from review JSON",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "pipeline-post.js — post-processing wrapper",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "pipeline-greenfield.js — full orchestrator with auto-fix for long titles",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "pipeline-clear.js — clears pipeline outputs for a slug",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "archive-logs.js",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "sitemap-generate.js path fixed for ops/ subdirectory",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        },
+        {
+          "text": "Jaws, Lady Chatterley's Lover, No Country for Old Men greenfield pages",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-15"
+        }
+      ]
+    },
+    {
+      "heading": "Done — 2026-04-14",
+      "key": "done",
+      "priority": "done",
+      "category": "done",
+      "isDone": true,
+      "date": "2026-04-14",
+      "items": [
+        {
+          "text": "pipeline-guide.js — upcoming adaptations guide (3-model parallel)",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "upcoming-adaptations.html live",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "pipeline-spotlight.js — spotlight page generator",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "config/nav.json — single source of truth for nav",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "check-nav.js + fix-nav.js",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "pipeline-render.js — auto-copies to project root",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "fix-titles-book-vs-movie.js — Book vs Movie in all 162 title tags",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "Homepage h1 + meta updated",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "netlify.toml — 301 redirects for all .html URLs",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "Scripts reorganized — utils/, ops/, content/, reporting/",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "deploy.js + add-destination.js",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "tree.js --save flag",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        },
+        {
+          "text": "docs/ restructured — reference/, strategy/, research/, archive/",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-14"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "text": "Pillar pages — 10 live, monitoring GSC for cannibalization",
+      "status": "in-progress",
+      "priority": "in-progress",
+      "category": "in-progress",
+      "date": null,
+      "section": "In Progress"
+    },
+    {
+      "text": "docs branch — standardizing doc formats, building docs-to-json parser",
+      "status": "in-progress",
+      "priority": "in-progress",
+      "category": "in-progress",
+      "date": null,
+      "section": "In Progress"
+    },
+    {
+      "text": "GSC indexing — 10 pillar page URLs",
+      "status": "not-started",
+      "priority": "today",
+      "category": "today",
+      "date": null,
+      "section": "Today"
+    },
+    {
+      "text": "Fill affiliate links for Blade Runner, Shawshank, Arrival greenfield JSONs",
+      "status": "not-started",
+      "priority": "today",
+      "category": "today",
+      "date": null,
+      "section": "Today"
+    },
+    {
+      "text": "docs-to-json.js — kanban parser, project-status.json schema",
+      "status": "not-started",
+      "priority": "today",
+      "category": "today",
+      "date": null,
+      "section": "Today"
+    },
+    {
+      "text": "Add hyperlinks from pillar pages to individual review pages",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "/how-we-judge page — short editorial standards page, links to pillar pages",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Recently added section on browse/index page — surfaces new Film Wins batch",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "llm-client.js — shared LLM client module (before next big batch)",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Beehiiv DNS / custom domain setup",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Beehiiv welcome email for new subscribers",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Email capture — ConvertKit setup + opt-in form",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Anchor text on internal links — add \"book vs movie\" to related card links",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Cross-link spotlight pages to each other (relatedSpotlights field)",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "/book-vs-movie hub page",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Logger config file — option to log errors only (config/logger.json)",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "pipeline-greenfield.js — fix double output lines (spawnSync printing twice)",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Update deploy-files.bat — paths changed after scripts reorganization",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "add-destination.js — update SCAN array when new subfolders created",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Spotlight pages — migrate buy button CSS to style.css (Vercel migration)",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "High Priority"
+    },
+    {
+      "text": "Genre hub pages (/thriller, /romance, /literary-fiction)",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "Author hub pages (Colleen Hoover, Gillian Flynn, Stephen King)",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "Ones to Watch section on Auteurs page (emerging directors/showrunners)",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "WebP conversion for book cover images",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "Social meta tags (Open Graph / Twitter Card) on all pages",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "Reader verdict poll below verdict box",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "Video affiliate links — add to input JSON and render pipeline",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "Multi-LLM code review — review pipeline scripts with Grok/Gemini/Sonnet",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Medium Priority"
+    },
+    {
+      "text": "Migrate from Netlify to Vercel",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Move reviews HTML out of project root into /reviews subfolder",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Set up Vercel cron job for pipeline-guide.js (nightly)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Email notification for missing book images (nodemailer)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Scaffold Docusaurus at docs.booksversusmovies.com",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Port docs/ folder into Docusaurus sidebar structure",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Set up Postgres database (Neon or PlanetScale)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Abstract pipeline for multi-site reuse (TheApiaryGuide)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Migration (do together, in order)"
+    },
+    {
+      "text": "Title retry — pass shorter instruction to LLM before falling back",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Pipeline Robustness"
+    },
+    {
+      "text": "pipeline-greenfield.js — fix double console output",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Pipeline Robustness"
+    },
+    {
+      "text": "pipeline-greenfield.js — unified log not capturing all output yet",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Pipeline Robustness"
+    },
+    {
+      "text": "Add --pass conversion alias to pipeline-revise.js",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Pipeline Robustness"
+    },
+    {
+      "text": "quality-gate.js — review after Film Wins batch",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Pipeline Robustness"
+    },
+    {
+      "text": "Script version metadata in all pipeline HTML outputs",
+      "status": "not-started",
+      "priority": "medium",
+      "category": "tech",
+      "date": null,
+      "section": "Pipeline Robustness"
+    },
+    {
+      "text": "docs/data/ folder — machine-readable JSON layer",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "project-status.json schema — derived from kanban.md",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "docs-to-json.js — parses kanban.md into structured JSON",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "Dashboard Tab 2: Project Status — reads project-status.json",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "Dashboard — wire up GSC API on Vercel migration",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "Dashboard — password protection (Netlify Basic Auth or Vercel middleware)",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "Dashboard — CSV import script to auto-update latest.json from GSC exports",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "Transfer site accounts to RavensEdge AI LLC — Amazon Associates, GSC, GA, Netlify, Beehiiv, domain registrar",
+      "status": "not-started",
+      "priority": "high",
+      "category": "biz",
+      "date": null,
+      "section": "Business / Operations"
+    },
+    {
+      "text": "About page rewrite — real person, real story, why this site exists",
+      "status": "not-started",
+      "priority": "high",
+      "category": "biz",
+      "date": null,
+      "section": "Business / Operations"
+    },
+    {
+      "text": "Voice pass on top 10 traffic pages — sharpen opinions, remove safe hedging",
+      "status": "not-started",
+      "priority": "high",
+      "category": "biz",
+      "date": null,
+      "section": "Business / Operations"
+    },
+    {
+      "text": "Hire Content Researcher (Person 1) — post job rec, review applications",
+      "status": "not-started",
+      "priority": "high",
+      "category": "biz",
+      "date": null,
+      "section": "Business / Operations"
+    },
+    {
+      "text": "Project plan doc — objectives vs analytics, quarterly roadmap",
+      "status": "not-started",
+      "priority": "high",
+      "category": "biz",
+      "date": null,
+      "section": "Business / Operations"
+    },
+    {
+      "text": "Set up SiteGround hosting + WordPress",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "Install AAWP + Rank Math + chosen theme",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "Map first 12 articles",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "Build clubs/associations directory page (link bait)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "History of Beekeeping long-form evergreen page",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "Best Beginner Starter Kit roundup (highest buyer intent)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "Abstract BooksVersusMovies pipeline for reuse across sites",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "Explore WordPress REST API for automated draft publishing from pipeline",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "ConvertKit email capture from day one",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "TheApiaryGuide.com (Future Project)"
+    },
+    {
+      "text": "Priority/hype field in JSON schema",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "Spoiler-free mode toggle",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "What to read next quiz",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "Reading progress tracker",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "Goodreads rating integration",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "Director filmography pages",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "Print-friendly CSS",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "Author profile pages (Stephen King, Colleen Hoover, Gillian Flynn)",
+      "status": "not-started",
+      "priority": "low",
+      "category": "tech",
+      "date": null,
+      "section": "Low Priority / Later"
+    },
+    {
+      "text": "Reminders of Him spotlight page live",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "Reminders of Him as hero card in featured.html",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "10 pillar pages live and indexed",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "pipeline-pillar.js + pipeline-pillar-render.js built",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "config/pillars.json — 10 pillars configured",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "sitemap-generate.js — auto-discovers pillar pages + all static pages (191 URLs)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "SEO titles, meta, oneLineReasons updated — Sonnet review pass (171 pages)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "seo-metadata-export.js + seo-metadata-import.js built (scripts/utils/)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "tree-code.js + tree-text.js built (scripts/utils/)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "consolidate-docs.js — flexible folder consolidation (scripts/content/)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "consistency-audit.js — 8-check site audit script (scripts/utils/)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "fix-related-cards.js — fixed 55 broken related card slugs (scripts/utils/)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "featured.html hub page live — 6 spotlights",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "pipeline-guide.js — fixed _destination JSON bug in --render-only mode",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "check-nav.js ROOT path fixed",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "Nav updated across all pages — Featured → /featured",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "Beehiiv newsletter embed integrated into all review pages",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "Fight Club newsletter email written and staged in Beehiiv",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "Beehiiv form tested — first subscriber confirmed",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "docs/team/ created — onboarding pack, job rec",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "Dashboard live at /dashboard — GSC analytics, light color scheme",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "dashboard/latest.json + dashboard.schema.json",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "Greenfield JSONs ready: Blade Runner, Shawshank Redemption, Arrival",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "5 spotlight pages live — lonesome-dove, fight-club, gone-girl, dune, the-shining",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "Spotlight buy buttons — terracotta → Book Wins green style",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "pipeline-spotlight.js — affiliate link auto-lookup from review JSON",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "pipeline-post.js — post-processing wrapper",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "pipeline-greenfield.js — full orchestrator with auto-fix for long titles",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "pipeline-clear.js — clears pipeline outputs for a slug",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "archive-logs.js",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "sitemap-generate.js path fixed for ops/ subdirectory",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "Jaws, Lady Chatterley's Lover, No Country for Old Men greenfield pages",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-15",
+      "section": "Done — 2026-04-15"
+    },
+    {
+      "text": "pipeline-guide.js — upcoming adaptations guide (3-model parallel)",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "upcoming-adaptations.html live",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "pipeline-spotlight.js — spotlight page generator",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "config/nav.json — single source of truth for nav",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "check-nav.js + fix-nav.js",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "pipeline-render.js — auto-copies to project root",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "fix-titles-book-vs-movie.js — Book vs Movie in all 162 title tags",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "Homepage h1 + meta updated",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "netlify.toml — 301 redirects for all .html URLs",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "Scripts reorganized — utils/, ops/, content/, reporting/",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "deploy.js + add-destination.js",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "tree.js --save flag",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "docs/ restructured — reference/, strategy/, research/, archive/",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-14",
+      "section": "Done — 2026-04-14"
+    }
+  ]
+}
