@@ -1,0 +1,500 @@
+{
+  "site": {
+    "name": "BooksVersusMovies.com",
+    "domain": "https://booksversusmovies.com",
+    "tone": "clear, opinionated, no hedging — writes like a knowledgeable critic with genuine taste"
+  },
+  "models": {
+    "outline": "anthropic/claude-haiku-4-5",
+    "prose":   "anthropic/claude-haiku-4-5"
+  },
+  "pillars": [
+    {
+      "id": "should-you-read-first",
+      "slug": "should-you-read-the-book-first",
+      "h1": "Should You Read the Book First?",
+      "title_tag": "Should You Read the Book First? A Guide for Every Adaptation",
+      "meta_description": "A practical guide to deciding whether to read the book before the movie — with honest rules, genre exceptions, and a quick verdict for every situation.",
+      "sections": [
+        {
+          "id": "the-honest-answer",
+          "h2": "The Honest Answer: It Depends on the Adaptation",
+          "key_points": [
+            "There is no universal rule — the right answer changes by title",
+            "The quality gap between book and film is what matters most",
+            "Some films are genuinely better; most books are richer"
+          ]
+        },
+        {
+          "id": "read-first-cases",
+          "h2": "When You Should Always Read First",
+          "key_points": [
+            "When the book's prose or voice is the whole point",
+            "When the film compresses a long or complex novel",
+            "When internal monologue is central to the story"
+          ]
+        },
+        {
+          "id": "watch-first-cases",
+          "h2": "When It's Fine to Watch First",
+          "key_points": [
+            "When the film is widely considered equal or better",
+            "When the book is very long and you're unsure of commitment",
+            "When the adaptation is faithful and complete"
+          ]
+        },
+        {
+          "id": "genre-rules",
+          "h2": "Quick Rules by Genre",
+          "key_points": [
+            "Literary fiction: almost always read first",
+            "Thriller and crime: watch first is often fine",
+            "Sci-fi: depends heavily on the specific title",
+            "Romance: either order works"
+          ]
+        },
+        {
+          "id": "our-verdicts",
+          "h2": "How We Decide on This Site",
+          "key_points": [
+            "Every review includes a Read First verdict",
+            "We explain the reasoning, not just the conclusion",
+            "Browse all 170+ comparisons to find your next title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "book-vs-movie-guide",
+      "slug": "book-vs-movie-adaptations",
+      "h1": "Book vs Movie Adaptations: The Ultimate Guide",
+      "title_tag": "Book vs Movie Adaptations: The Complete Guide",
+      "meta_description": "Everything you need to know about book-to-movie adaptations — how they work, why they change, and how to judge whether a film does justice to its source.",
+      "sections": [
+        {
+          "id": "why-they-change",
+          "h2": "Why Adaptations Always Change the Book",
+          "key_points": [
+            "Time constraints force compression",
+            "Internal monologue cannot be filmed directly",
+            "Different mediums require different storytelling tools"
+          ]
+        },
+        {
+          "id": "how-to-judge",
+          "h2": "How to Judge an Adaptation",
+          "key_points": [
+            "Faithfulness is not the only measure — spirit matters more than plot",
+            "A film can be great and unfaithful simultaneously",
+            "Ask: does the film capture what made the book worth reading?"
+          ]
+        },
+        {
+          "id": "faithful-vs-creative",
+          "h2": "Faithful vs Creative Adaptations",
+          "key_points": [
+            "Faithful adaptations preserve plot and character closely",
+            "Creative adaptations reimagine the source material",
+            "Neither approach is inherently better"
+          ]
+        },
+        {
+          "id": "browse",
+          "h2": "Find Your Next Book vs Movie Comparison",
+          "key_points": [
+            "170+ comparisons with honest verdicts",
+            "Covers literary fiction, thriller, sci-fi, romance, and more",
+            "Every page includes a Read First recommendation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "film-wins",
+      "slug": "movies-better-than-the-book",
+      "h1": "Movies That Are Better Than the Book",
+      "title_tag": "Movies Better Than the Book: Our Film Wins List",
+      "meta_description": "The films that genuinely surpass their source novels — and honest explanations of why the movie won. A curated list with full verdicts.",
+      "sections": [
+        {
+          "id": "when-films-win",
+          "h2": "When a Film Beats Its Source Novel",
+          "key_points": [
+            "It happens less often than people think",
+            "Usually when a director finds something the author missed",
+            "Visual storytelling can do things prose cannot"
+          ]
+        },
+        {
+          "id": "the-list",
+          "h2": "Films That Won: The Clearest Cases",
+          "key_points": [
+            "Blade Runner — Scott's visual philosophy deepens Dick's novel",
+            "The Godfather — Coppola found the tragedy Puzo only hinted at",
+            "Fight Club — Fincher's unreliable narration surpasses Palahniuk's"
+          ]
+        },
+        {
+          "id": "why-rare",
+          "h2": "Why Film Wins Are Rare",
+          "key_points": [
+            "Novels have more space to develop character and theme",
+            "Books don't have production constraints or studio notes",
+            "Prose can access interiority in ways cameras cannot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biggest-changes",
+      "slug": "biggest-changes-from-book-to-movie",
+      "h1": "Biggest Changes from Book to Movie: Where They Always Diverge",
+      "title_tag": "Biggest Changes from Book to Movie — What Always Gets Cut",
+      "meta_description": "The changes that happen in almost every book-to-movie adaptation — and what gets lost when a novel becomes a film. With real examples from our reviews.",
+      "sections": [
+        {
+          "id": "what-always-gets-cut",
+          "h2": "What Almost Always Gets Cut",
+          "key_points": [
+            "Subplots and secondary characters are the first casualties",
+            "Internal monologue — a character's thoughts — can't be filmed directly",
+            "Time is compressed; years become montages"
+          ]
+        },
+        {
+          "id": "plot-changes",
+          "h2": "Plot Changes: Why the Story Shifts",
+          "key_points": [
+            "Films need a cleaner three-act structure than novels",
+            "Ambiguous endings get resolved for mainstream audiences",
+            "Multiple storylines get collapsed into one"
+          ]
+        },
+        {
+          "id": "character-changes",
+          "h2": "Character Changes: Who Gets Simplified",
+          "key_points": [
+            "Morally complex characters get flattened into heroes or villains",
+            "Supporting characters get merged or cut entirely",
+            "Protagonists lose their flaws to become more likeable"
+          ]
+        },
+        {
+          "id": "tone-changes",
+          "h2": "Tone and Theme: What Gets Lost in Translation",
+          "key_points": [
+            "Dark or ambiguous themes get softened for wider audiences",
+            "The author's voice — their prose style — disappears entirely",
+            "Satire and irony are the hardest elements to transfer to screen"
+          ]
+        },
+        {
+          "id": "examples",
+          "h2": "Real Examples from Our Reviews",
+          "key_points": [
+            "Gone Girl: the novel's dual unreliable narration becomes a single perspective",
+            "The Shining: Kubrick replaced King's tragedy with his own horror vision",
+            "No Country for Old Men: the philosophical monologues are largely cut"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "best-adaptations",
+      "slug": "best-book-to-movie-adaptations",
+      "h1": "Best Book-to-Movie Adaptations: A Curated List",
+      "title_tag": "Best Book-to-Movie Adaptations — Curated With Verdicts",
+      "meta_description": "The book-to-movie adaptations that genuinely work — ranked and explained. Literary fiction, thriller, sci-fi, and more, with links to our full comparisons.",
+      "sections": [
+        {
+          "id": "what-makes-great",
+          "h2": "What Makes an Adaptation Great",
+          "key_points": [
+            "It captures the spirit of the source, not just the plot",
+            "It uses the film medium's strengths rather than fighting them",
+            "It gives you a reason to experience both versions"
+          ]
+        },
+        {
+          "id": "literary-fiction",
+          "h2": "Literary Fiction: The Hardest to Adapt",
+          "key_points": [
+            "Atonement — Wright's film matches McEwan's structural ambition",
+            "Never Let Me Go — Romanek preserves the novel's quiet devastation",
+            "The Remains of the Day — Ivory captures Ishiguro's repression perfectly"
+          ]
+        },
+        {
+          "id": "thriller-crime",
+          "h2": "Thriller and Crime: Where Films Often Match the Book",
+          "key_points": [
+            "Gone Girl — Flynn wrote the screenplay herself and it shows",
+            "No Country for Old Men — the Coens found the film inside McCarthy's novel",
+            "Silence of the Lambs — Demme improved on Harris in key ways"
+          ]
+        },
+        {
+          "id": "sci-fi",
+          "h2": "Science Fiction: The Visually Transformative Adaptations",
+          "key_points": [
+            "Arrival — Villeneuve added emotional depth without betraying Chiang",
+            "Dune — Villeneuve finally did justice to Herbert's world",
+            "Blade Runner — Scott turned Dick's novel into visual philosophy"
+          ]
+        },
+        {
+          "id": "browse-all",
+          "h2": "Browse All Our Verdicts",
+          "key_points": [
+            "170+ comparisons covering every major genre",
+            "Every page has a clear verdict and read-first recommendation",
+            "Filter by Book Wins, Film Wins, or Too Close to Call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "best-by-genre",
+      "slug": "best-book-to-movie-adaptations-by-genre",
+      "h1": "Best Book-to-Movie Adaptations by Genre",
+      "title_tag": "Best Book-to-Movie Adaptations by Genre — Find Your Next Read",
+      "meta_description": "The strongest book-to-movie adaptations organised by genre — literary fiction, thriller, sci-fi, horror, romance, and more. With honest verdicts on each.",
+      "sections": [
+        {
+          "id": "literary-fiction",
+          "h2": "Literary Fiction",
+          "key_points": [
+            "The hardest genre to adapt — prose voice is often the whole point",
+            "Best examples: Atonement, Never Let Me Go, The Remains of the Day",
+            "Read first in almost every case"
+          ]
+        },
+        {
+          "id": "thriller",
+          "h2": "Thriller and Crime",
+          "key_points": [
+            "Plot-driven genre translates well to screen",
+            "Best examples: Gone Girl, No Country for Old Men, Silence of the Lambs",
+            "Watch first is often a reasonable choice"
+          ]
+        },
+        {
+          "id": "sci-fi",
+          "h2": "Science Fiction",
+          "key_points": [
+            "Visually spectacular but often loses philosophical depth",
+            "Best examples: Arrival, Dune, Blade Runner",
+            "Depends heavily on the specific title"
+          ]
+        },
+        {
+          "id": "horror",
+          "h2": "Horror",
+          "key_points": [
+            "Films excel at visceral scares; books excel at psychological dread",
+            "Best examples: The Shining, Misery, Silence of the Lambs",
+            "Read first for psychological horror; watch first for visceral scares"
+          ]
+        },
+        {
+          "id": "romance",
+          "h2": "Romance and Drama",
+          "key_points": [
+            "Emotional beats translate well to screen",
+            "Best examples: Atonement, The Fault in Our Stars, Reminders of Him",
+            "Either order generally works"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faithful-vs-creative",
+      "slug": "faithful-vs-creative-movie-adaptations",
+      "h1": "Faithful vs Creative Movie Adaptations: Which Approach Wins?",
+      "title_tag": "Faithful vs Creative Movie Adaptations — Which Is Better?",
+      "meta_description": "A breakdown of faithful versus creative movie adaptations — what each approach gets right, when changes work, and when they betray the source material.",
+      "sections": [
+        {
+          "id": "what-faithful-means",
+          "h2": "What Faithful Really Means",
+          "key_points": [
+            "Faithful means capturing the spirit, not just copying the plot",
+            "Even very faithful adaptations make significant changes",
+            "Faithfulness is not a synonym for quality"
+          ]
+        },
+        {
+          "id": "when-faithful-works",
+          "h2": "When Faithful Adaptations Work Best",
+          "key_points": [
+            "When the source material has a strong, specific structure",
+            "When the author's voice translates to screen naturally",
+            "When the audience already loves the book"
+          ]
+        },
+        {
+          "id": "when-creative-works",
+          "h2": "When Creative Adaptations Work Best",
+          "key_points": [
+            "When a director has a genuine vision beyond the source material",
+            "When the book has elements that don't work on screen",
+            "Kubrick's The Shining is the classic example — unfaithful and brilliant"
+          ]
+        },
+        {
+          "id": "when-changes-backfire",
+          "h2": "When Changes Backfire",
+          "key_points": [
+            "When changes remove the thing that made the book worth adapting",
+            "When a studio softens a dark or challenging story for commercial reasons",
+            "When the adaptation misunderstands what the book was actually about"
+          ]
+        },
+        {
+          "id": "our-approach",
+          "h2": "How We Judge on This Site",
+          "key_points": [
+            "We judge adaptations on their own terms, not just faithfulness",
+            "A great unfaithful film still wins over a mediocre faithful one",
+            "Read our full verdicts for 170+ comparisons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "books-better",
+      "slug": "why-books-are-usually-better-than-the-movie",
+      "h1": "Why Books Are Usually Better Than the Movie",
+      "title_tag": "Why Books Are Usually Better Than the Movie — The Honest Answer",
+      "meta_description": "The real reasons books tend to beat their film adaptations — and the exceptions where the movie genuinely wins. An honest breakdown with examples.",
+      "sections": [
+        {
+          "id": "the-honest-answer",
+          "h2": "The Honest Answer: Most Books Are Richer",
+          "key_points": [
+            "Books have more space — time, pages, depth",
+            "Prose can access a character's inner life in ways cameras cannot",
+            "Authors have no studio notes, budget constraints, or runtime limits"
+          ]
+        },
+        {
+          "id": "what-books-do-better",
+          "h2": "What Books Do Better Than Film",
+          "key_points": [
+            "Internal monologue and psychological depth",
+            "Slow accumulative character development over hundreds of pages",
+            "Ambiguity — books can withhold and suggest in ways film struggles to match"
+          ]
+        },
+        {
+          "id": "what-films-do-better",
+          "h2": "What Films Do Better Than Books",
+          "key_points": [
+            "Visual spectacle and sensory immersion",
+            "Performance — great actors add dimensions authors can't write",
+            "Music and sound design create emotional states prose can only describe"
+          ]
+        },
+        {
+          "id": "the-exceptions",
+          "h2": "The Real Exceptions: When the Film Wins",
+          "key_points": [
+            "Blade Runner, The Godfather, and Fight Club are genuine film wins",
+            "These are rare and worth celebrating when they happen",
+            "See our full Film Wins list for every case we've found"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "start-with-movie",
+      "slug": "how-to-get-into-reading-start-with-the-movie",
+      "h1": "How to Get Into Reading: Start With the Movie",
+      "title_tag": "How to Get Into Reading — Start With a Movie You Loved",
+      "meta_description": "The easiest way to start reading more books: find a film you loved and read what it was based on. A practical guide with recommendations for every taste.",
+      "sections": [
+        {
+          "id": "why-this-works",
+          "h2": "Why Starting With the Film Works",
+          "key_points": [
+            "You already know you like the story — the book can only add depth",
+            "Familiar characters make the prose easier to engage with",
+            "You have a built-in reason to finish: curiosity about what changed"
+          ]
+        },
+        {
+          "id": "best-entry-points",
+          "h2": "The Best Films to Start With by Taste",
+          "key_points": [
+            "Thriller fans: Gone Girl, Girl on the Train, Silence of the Lambs",
+            "Drama fans: Atonement, The Fault in Our Stars, Never Let Me Go",
+            "Sci-fi fans: Arrival, Dune, The Martian"
+          ]
+        },
+        {
+          "id": "what-to-expect",
+          "h2": "What to Expect From the Book",
+          "key_points": [
+            "More detail, more depth, more time with the characters",
+            "Scenes and subplots the film cut entirely",
+            "A different ending in many cases — sometimes darker, sometimes better"
+          ]
+        },
+        {
+          "id": "browse",
+          "h2": "Find Your Starting Point",
+          "key_points": [
+            "Browse 170+ comparisons on this site",
+            "Every page tells you whether the book or film is better",
+            "Filter by genre to find something that matches your taste"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stephen-king",
+      "slug": "stephen-king-book-vs-movie",
+      "h1": "Stephen King Book vs Movie: Every Major Adaptation Ranked",
+      "title_tag": "Stephen King Book vs Movie — Every Adaptation Ranked",
+      "meta_description": "Stephen King has been adapted more than any living author. Here's our honest verdict on every major King adaptation — which films work and which ones don't.",
+      "sections": [
+        {
+          "id": "why-king-is-different",
+          "h2": "Why King Adaptations Are Different",
+          "key_points": [
+            "King writes character-driven horror — the scares come from people, not monsters",
+            "His books are long and detailed; films must compress ruthlessly",
+            "He has strong opinions about his own adaptations — and isn't always right"
+          ]
+        },
+        {
+          "id": "the-wins",
+          "h2": "The King Adaptations That Work",
+          "key_points": [
+            "The Shawshank Redemption — Darabont found the heart of King's novella",
+            "Misery — Reiner's film is a masterclass in adaptation",
+            "Stand By Me — Darabont captures King's voice perfectly"
+          ]
+        },
+        {
+          "id": "the-losses",
+          "h2": "The King Adaptations That Don't",
+          "key_points": [
+            "The Shining — brilliant film, but King was right that it misses his point",
+            "The Dark Tower — tried to compress an eight-book series into one film",
+            "Most TV miniseries — competent but rarely essential"
+          ]
+        },
+        {
+          "id": "read-or-watch",
+          "h2": "Should You Read King Before Watching?",
+          "key_points": [
+            "For horror: read first — King's psychological dread doesn't fully transfer to screen",
+            "For drama (Shawshank, Stand By Me): either order works",
+            "For The Shining: read first to understand what Kubrick changed and why it matters"
+          ]
+        }
+      ]
+    }
+  ]
+}
