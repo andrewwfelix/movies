@@ -1,0 +1,181 @@
+Here’s a simple but complete algorithm for your content pipeline—structured as a repeatable workflow you can translate into code (Python, Node, etc.). It assumes you’re using the JSON brief schema we discussed earlier.
+
+1. Input: pillar‑and‑cluster brief
+Assume the pipeline starts with a JSON brief (like the schema above) that describes:
+
+target URL / slug
+
+H1, H2, H3 outline
+
+intent, audience, tone
+
+cluster pages to link to
+
+2. Algorithm: high‑level content‑pipeline logic
+You can break this into a sequence of stateful steps (each step edits or builds output):
+
+text
+1. Validate and normalize the brief
+2. Expand outline into a content plan
+3. Call LLM to generate a draft
+4. Apply quality‑control checks
+5. Transform draft into publishable artifacts
+6. Store and route (DB / CMS / queue)
+Below is that as a more concrete “algorithm” you can port to code.
+
+3. Step‑by‑step algorithm (pseudocode‑style)
+python
+def run_content_pipeline(brief: dict) -> dict:
+    # 1. Validate the brief against schema
+    normalized_brief = validate_and_normalize(brief)
+    if not normalized_brief.is_valid:
+        raise ValidationError(normalized_brief.errors)
+
+    # 2. Expand outline into a richer plan
+    plan = {
+        "page_slug": normalized_brief.page.slug,
+        "h1": normalized_brief.page.h1,
+        "sections": []
+    }
+
+    for section in normalized_brief.brief.sections:
+        section_plan = {
+            "section_id": section.section_id,
+            "h2": section.h2,
+            "goal": section.goal,
+            "key_points": section.key_points,
+            "h3s": [
+                {"h3": h3.h3, "goal": h3.goal}
+                for h3 in section.h3s or []
+            ],
+            "word_count_hint": 300 + 50 * len(section.key_points),  # flex target
+        }
+        plan.sections.append(section_plan)
+
+    # 3. Assemble LLM prompt from the plan
+    prompt = build_prompt_from_plan(
+        brief=normalized_brief,
+        plan=plan
+    )
+
+    # 4. Query LLM to generate raw HTML or markdown
+    raw_draft = call_llm(
+        prompt=prompt,
+        model="gpt‑4‑turbo"  # or your chosen model
+    )
+
+    # 5. Post‑process: clean, structure, add links
+    processed_draft = post_process(
+        raw_draft,
+        brief=normalized_brief,
+        clusters=normalized_brief.clusters
+    )
+    #  e.g., normalize headings, inject internal links, add CTAs, headings IDs
+
+    # 6. Run QA checks (min length, link balance, intent match, etc.)
+    qa_report = run_qa_checks(
+        processed_draft,
+        brief=normalized_brief
+    )
+
+    # 7. Evaluate if we accept, revise, or reject
+    if qa_report.score >= normalized_brief.qa.min_score:
+        status = "accepted"
+        action = "publish_directly"
+    else:
+        status = "needs_revision"
+        action = "enqueue_for_review"
+
+    # 8. Build output artifact (JSON with HTML + metadata)
+    output = {
+        "type": "pillarLayout",
+        "project": normalized_brief.project,
+        "page": normalized_brief.page,
+        "draft_html": processed_draft.html,
+        "word_count": processed_draft.word_count,
+        "internal_links": processed_draft.internal_links,
+        "qa_report": qa_report,
+        "status": status,
+        "action": action,
+        "timestamp": now_iso()
+    }
+
+    # 9. Store and route (to DB, CMS, Slack, or queue)
+    store_output(output)
+    route_to_downstream(output)
+
+    return output
+4. Core helper steps explained
+Here’s what each helper function logically does:
+
+validate_and_normalize(brief)
+
+Validate against JSON Schema (H1 exist, intent enum, slug regex, etc.).
+
+Fill in defaults (e.g., safe word‑count hints, default tone).
+
+build_prompt_from_plan(brief, plan)
+
+Construct a structured prompt such as:
+
+“Write a pillar page titled ‘X’ targeted at [audience], in a [tone] voice.”
+
+“Structure the page with these sections: H1, H2s, and H3s as outlined.”
+
+“Follow these rules: max 2–3 short paragraphs per H2, avoid lists over 5 items, include internal links to clusters.”
+
+call_llm(prompt)
+
+Use an LLM API (e.g., OpenAI, Anthropic, or open‑source via Ollama) to get a raw HTML‑like or Markdown draft.
+
+post_process(raw_draft, brief, clusters)
+
+Parse the raw text into a DOM‑like structure.
+
+Enforce heading hierarchy (only one H1, H2s under it, etc.).
+
+Add internal links:
+
+To each cluster page mentioned in brief.clusters.
+
+To 2–5 verdict pages per cluster where relevant.
+
+Add canonical, meta, and possibly FAQ‑style sentences.
+
+run_qa_checks(draft, brief)
+
+Measure:
+
+overall length, readability score
+
+number of internal links (minimum per section)
+
+presence of H1, H2s, H3s
+
+whether the tone and intent match the brief
+
+Return a score (0–100) and a list of issues.
+
+store_output(output)
+
+Save to a database or CMS entry (e.g., “pillar_pages” collection).
+
+Also save history and provenance (who triggered it, what brief was used).
+
+route_to_downstream(output)
+
+If status === "accepted", auto‑publish or queue for approval.
+
+If status === "needs_revision", send it to a review tool, Slack, or Notion.
+
+5. Optional: add a “feedback loop”
+You can evolve this into a learning pipeline by:
+
+Recording human edits to drafts.
+
+Using those edits as fine‑tuning or prompt‑engineering feedback.
+
+Periodically re‑evaluating your qa_min_score and prompt rules.
+
+That gives you a self‑improving content pipeline tailored to your site, voice, and SEO needs.
+

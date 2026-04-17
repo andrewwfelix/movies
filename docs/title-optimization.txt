@@ -1,0 +1,37 @@
+Title & Metadata Optimization Workflow - BooksVersusMovies.com
+
+1. Export current metadata
+   Run: node scripts/utils/export-seo-metadata.js
+   Output: data/reports/seo-metadata-for-review.csv
+
+2. Review and improve titles with LLM
+   Upload the exported CSV to Claude Sonnet (recommended) or your preferred model
+   Use the prompt saved at: scripts/prompts/review-titles.txt
+   Ask the LLM to score each entry, rewrite titles, meta descriptions, and oneLineReason
+   Save the LLM output exactly as: data/reports/seo-metadata-reviewed.csv
+
+3. Import the improved titles and metas
+   Run: node scripts/utils/import-titles.js --csv data/reports/seo-metadata-reviewed.csv
+   First test safely with dry run:
+   node scripts/utils/import-titles.js --csv data/reports/seo-metadata-reviewed.csv --dry
+
+4. Re-render all HTML pages
+   Run: node scripts/pipeline/pipeline-render.js --all --force
+   (adjust command if your render script uses different flags)
+
+5. Verify changes
+   Spot-check several important pages (especially high-impression ones like:
+   verity.html, reminders-of-him.html, animal-farm.html, devil-wears-prada.html)
+   Confirm <title> and <meta name="description"> tags are updated correctly
+
+6. Deploy the site
+   Push changes and deploy
+
+7. Monitor performance
+   Wait 7–14 days, then check Google Search Console for improvements in CTR and impressions
+
+Notes:
+- Always run the import in --dry mode first to review changes before committing
+- Keep the original exported CSV as a backup
+- This is an ad-hoc process (run when you want to do a bulk title/meta cleanup)
+- The prompt for step 2 is located at: scripts/prompts/review-titles.txt

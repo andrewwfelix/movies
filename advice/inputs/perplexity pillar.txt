@@ -1,0 +1,58 @@
+You’re raising a really good instinct, and your concern about “cannibalizing” content is understandable—but in this case, what you’re actually doing is organizing and amplifying, not cannibalizing.
+
+What “cannibalization” usually means
+In SEO, “cannibalization” typically happens when:
+
+Two or more pages target almost the exact same search intent (e.g., two very similar pages both trying to rank for “best book vs movie adaptations”).
+
+The pages don’t clearly distinguish themselves, so they compete against each other and neither wins strongly.
+
+That’s not what a hub/pillar/cluster structure is built to do.
+
+Why your hub won’t cannibalize (if done right)
+In the plan above, you’re doing three different things with different roles:
+
+Pillar page = broad hub, high‑level guide
+
+Example: “Book vs Movie Adaptations Guide”
+
+Goal: answer “what is this topic?” and send people deeper.
+
+It’s not competing with your specific titles; it’s framing them.
+
+Cluster pages = thematic “topic‑level” pages
+
+Example: “Best book‑to‑movie adaptations,” “Should you read the book first?”
+
+They target different questions than your title‑specific pages (e.g., project-hail-mary), so they attract different search traffic.
+
+Title‑specific comparison pages = your deep, verdict‑driven content
+
+Example: booksversusmovies.com/project-hail-mary
+
+These still exist and rank for “Project Hail Mary book vs movie,” while the hub pages rank for broader questions like “should I read the book first?”
+
+So instead of cannibalizing, you’re:
+
+Giving search engines a clear hierarchy: “Here’s the big topic; here are the subtopics; here are the concrete examples.”
+
+Giving visitors more ways to find you (broad search → hub → specific page).
+
+When you would be cannibalizing
+You’d risk cannibalization only if you:
+
+Created two almost‑identical “best adaptation” lists with the same heading and thin differences.
+
+Or made your title‑specific pages and a cluster page both try to rank for exactly the same phrase without a clear distinction.
+
+But as long as each page has a distinct purpose and intent, you’re not cannibalizing—you’re cross‑linking and reinforcing.
+
+How to keep it safe
+Give each page a unique primary intent (and unique H1/headline).
+
+Use the pillar to link to clusters and title pages, not to re‑write them.
+
+Occasionally audit: if two pages feel too similar, merge them or clearly differentiate them.
+
+So your gut is spot‑on to be cautious, but in this setup you’re building a unified ecosystem—each page helps the others rank and keeps readers on the site longer, instead of fighting over the same search slots.
+

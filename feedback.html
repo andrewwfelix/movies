@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Audit | BooksVersusMovies</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Base page layout */
+        body {
+            background-color: var(--cream);
+            color: var(--ink);
+            margin: 0;
+            padding: 0;
+        }
+
+        .feedback-container {
+            max-width: 800px;
+            margin: 5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .feedback-intro {
+            margin-bottom: 3.5rem;
+            border-left: 3px solid var(--gold);
+            padding-left: 2rem;
+        }
+
+        .feedback-intro h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.1;
+        }
+
+        .feedback-intro p {
+            font-family: 'Source Serif 4', serif;
+            font-size: 1.2rem;
+            color: var(--ink-light);
+            margin: 0;
+            max-width: 600px;
+        }
+
+        /* The "Feedback Wrapper" - Styled to look like a premium workstation */
+        .feedback-wrapper {
+            background-color: var(--cream);
+            border: 1px solid var(--rule);
+            border-top: 4px solid var(--gold); /* Your signature accent */
+            border-radius: 4px;
+            padding: 2rem;
+            min-height: 800px;
+            box-shadow: 0 10px 40px rgba(26, 23, 20, 0.04);
+            transition: all 0.3s ease;
+        }
+
+        footer {
+            margin-top: 6rem;
+            text-align: center;
+            font-family: 'Source Serif 4', serif;
+            font-size: 0.9rem;
+            color: var(--rule);
+            padding-bottom: 3rem;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 600px) {
+            .feedback-container { margin: 2rem auto; }
+            .feedback-intro h1 { font-size: 2rem; }
+            .feedback-wrapper { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="feedback-container">
+        <header class="feedback-intro">
+            <h1>Product Audit</h1>
+            <p>Your insight helps us refine the objective framework for comparing literary works and their adaptations.</p>
+        </header>
+
+        <section class="feedback-wrapper">
+            <div data-tally-src="https://tally.so/embed/KYBVPz?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"></div>
+        </section>
+
+        <footer>
+            &copy; 2026 BooksVersusMovies &mdash; A Structured Framework for Completionists.
+        </footer>
+    </main>
+
+    <script async src="https://tally.so/widgets/embed.js"></script>
+
+    <script>
+        /* Redundancy Check: If the script loads but the div is empty, 
+           this manually triggers the embed load. 
+        */
+        window.onload = function() {
+            if (typeof Tally !== 'undefined') {
+                Tally.loadEmbeds();
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,1 +1,24 @@
-review all contents of these files and provide your top 5 points of advice
+Revised SEO Optimization Prompt
+ACT AS A SENIOR SEO ARCHITECT AND CONTENT STRATEGIST WITH 20+ YEARS OF EXPERIENCE IN SEARCH ALGORITHMS. Your task is to audit and revise the provided CSV data to meet EXACT TECHNICAL SPECIFICATIONS for 2026 search engine standards. Failure to adhere to these limits will result in content truncation and loss of Search Engine Result Page (SERP) visibility.
+
+🛑 ABSOLUTE CHARACTER LIMITS (HARD STOPS)
+You must treat these limits as PHYSICAL BARRIERS. Do not exceed them by even a single character:
+
+PAGE TITLE (pageTitle): * MAXIMUM: 60 CHARACTERS. * OPTIMAL RANGE: 50–55 CHARACTERS.
+REASONING: Google truncates titles at ~600 pixels. To ensure your "Book vs Movie" branding and the "Hook" are visible, you must be concise.
+META DESCRIPTION (metaDesc):
+MAXIMUM: 155 CHARACTERS.
+OPTIMAL RANGE: 120–150 CHARACTERS.
+REASONING: Mobile search results are more restrictive. Key information MUST appear in the first 120 characters.
+URL SLUG (slug):
+MAXIMUM: 75 CHARACTERS.
+REASONING: Short, keyword-dense slugs perform better for crawl depth and user sharing.
+🛠 REVISION INSTRUCTIONS
+IDENTIFY: Scan the pageTitle and metaDesc columns for any entry exceeding the limits above.
+REWRITE: Edit the text to be punchy and keyword-rich while staying within the SAFE ZONE.
+PRESERVE TONE: Maintain the analytical "Book vs Movie" comparison style. Ensure the "Winner" or the "Comparison Hook" remains clear.
+FORMAT: Output the revised data in a clean CSV format using UTF-8 with BOM to ensure special characters (like en-dashes and accents in author names) render perfectly in Excel and web crawlers.
+
+THIS IS CRITICAL FOR THE SITE’S INDEXATION INTEGRITY. DO NOT HALLUCINATE OR REMOVE ROWS. ONLY REVISE THE TEXT FOR LENGTH COMPLIANCE.
+
+Your response should only be in the form of the updated and improved CSV

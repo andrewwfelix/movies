@@ -20,7 +20,7 @@
       "notes": "Perplexity's model — good for current information and research"
     }
   ],
-  "systemPrompt": "You are a knowledgeable advisor. Answer the question clearly, directly, and concisely. If there are multiple questions, address each one. Be opinionated where appropriate — hedge only when genuine uncertainty exists.",
-  "maxTokens": 12000,
+  "systemPrompt": "Please Review",
+  "maxTokens": 50000,
   "temperature": 0.5
 }

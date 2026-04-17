@@ -1,0 +1,92 @@
+{
+  "project": {
+    "site_name": "Books Versus Movies",
+    "site_url": "https://booksversusmovies.com",
+    "primary_topic": "Book vs movie adaptations",
+    "secondary_topics": [
+      "faithful adaptations",
+      "movie changes from the book",
+      "whether to read the book first"
+    ]
+  },
+  "page": {
+    "slug": "book-vs-movie-adaptations",
+    "h1": "Book vs Movie Adaptations: The Ultimate Guide",
+    "title_tag": "Book vs Movie Adaptations: The Ultimate Guide",
+    "meta_description": "A practical guide to book vs movie adaptations, including how to judge faithfulness, changes, and which format to choose first.",
+    "search_intent": "informational",
+    "audience": "Readers and viewers deciding how to engage with an adaptation",
+    "tone": "clear, opinionated, helpful"
+  },
+  "brief": {
+    "promise": "Help readers understand how to judge book vs movie adaptations and point them to deeper comparison pages.",
+    "summary": "This pillar page explains the adaptation debate, defines evaluation criteria, and links to supporting cluster pages and title-specific verdicts.",
+    "sections": [
+      {
+        "section_id": "what-it-is",
+        "h2": "What Book vs Movie Adaptation Means",
+        "goal": "Define the topic and frame the site's perspective.",
+        "key_points": [
+          "Explain why adaptations vary",
+          "Set reader expectations",
+          "Introduce the site's verdict-first approach"
+        ],
+        "h3s": [
+          {
+            "h3": "Why adaptations change between formats",
+            "goal": "Explain the practical reasons books become different movies."
+          }
+        ]
+      },
+      {
+        "section_id": "how-to-judge",
+        "h2": "How We Judge Adaptations",
+        "goal": "Define the evaluation criteria used across the site.",
+        "key_points": [
+          "Faithfulness matters, but it is not the only factor",
+          "Pacing and emotional impact matter too",
+          "Different genres deserve different standards"
+        ]
+      },
+      {
+        "section_id": "next-pages",
+        "h2": "Where to Go Next",
+        "goal": "Route readers into cluster pages and verdict pages.",
+        "key_points": [
+          "Link to the main cluster topics",
+          "Show examples",
+          "Encourage deeper exploration"
+        ]
+      }
+    ]
+  },
+  "clusters": [
+    {
+      "slug": "best-book-to-movie-adaptations",
+      "h1": "Best Book-to-Movie Adaptations: A Curated Guide",
+      "intent": "Find the strongest adaptation examples",
+      "relationship_to_pillar": "Supports the pillar with a high-level list of great adaptation examples.",
+      "internal_links": [
+        "/book-vs-movie-adaptations",
+        "/project-hail-mary.html"
+      ]
+    }
+  ],
+  "qa": {
+    "min_score": 85,
+    "checks": [
+      "single_h1",
+      "unique_intent",
+      "no_cannibalization",
+      "clear_internal_links",
+      "seo_title_length",
+      "meta_description_length",
+      "reader_value",
+      "outline_completeness"
+    ]
+  },
+  "publish": {
+    "target": "cms",
+    "status": "draft"
+  }
+}

@@ -1,0 +1,198 @@
+You’re already thinking like a pipeline architect—using a pillars.json config to map “which model for which job” is a very clean, scalable pattern. Here’s how you can cleanly break it up, especially if you want Sonnet for outlines and Haiko (or another model) for detailed paragraphs.
+
+1. High‑level split: “heavy” vs “light” tasks
+Light model (e.g., Sonnet)
+
+Prompt budget: structuring, outlining, decision‑making, short‑form QA.
+
+Right‑fit jobs:
+
+expanding a pillar topic into a JSON‑ready outline
+
+adding H2/H3 skeletons
+
+listing “key points” per section
+
+Heavier model (e.g., Haiko / Opus / GPT‑4‑class)
+
+Prompt budget: fluency, depth, voice consistency.
+
+Right‑fit jobs:
+
+turning an outline + key points into full prose paragraphs
+
+maintaining tone and “opinionated verdict” style
+
+lightly editing existing text and strengthening links CTAs
+
+This keeps you from burning the big model on “what should the outline be?” and saves it for “make this actually read well.”
+
+2. How to model your config
+You can keep pillars.json as the master plan, but then add per‑task rules. For example:
+
+json
+{
+  "pillars": [
+    {
+      "id": "adaptations-guide",
+      "slug": "book-vs-movie-adaptations",
+      "h1": "Book vs Movie Adaptations: The Ultimate Guide",
+      "title_tag": "Book vs Movie Adaptations: The Ultimate Guide",
+      "meta_description": "...",
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 800,
+          "instructions": "Produce a JSON‑compatible outline with H2/H3 sections and key points."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 2000,
+          "instructions": "Turn each section into opinionated, readable paragraphs, 300–500 words per section."
+        },
+        {
+          "role": "linking",
+          "model": "sonnet",
+          "max_tokens": 500,
+          "instructions": "Add internal links to cluster pages and verdicts within the prose."
+        }
+      ]
+    }
+  ],
+  "clusters": [
+    {
+      "id": "best-adaptations",
+      "slug": "best-book-to-movie-adaptations",
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 600,
+          "instructions": "Sketch a list‑style outline with categories and examples."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 1200,
+          "instructions": "Write concise, punchy blurbs for each list item."
+        }
+      ]
+    }
+  ]
+}
+This way, your Node code can:
+
+js
+for (const pillar of config.pillars) {
+  for (const step of pillar.steps) {
+    const context = loadPillarContext(pillar.id); // previously generated JSON or outline
+    const prompt = buildPrompt(step, context);
+    const model = step.model;
+
+    const rawOutput = await callModel(model, prompt, step.max_tokens);
+    const normalizedOutput = normalizeOutput(step.role, rawOutput);
+
+    saveIntermediate(step.role, pillar.id, normalizedOutput); // e.g., outline.json, paragraphs.json
+  }
+}
+3. Concrete role / model mapping
+outline → Sonnet‑class light model
+
+Task:
+
+Take a short topic + tone + target word count hints.
+
+Output a structured JSON outline: H2/H3s + key points.
+
+Why Sonnet is perfect:
+
+Very good at “thinking step‑by‑step” without needing huge context windows.
+
+paragraphs → Haiko / big model
+
+Task:
+
+Convert each section’s “key points” into smooth, opinionated paragraphs.
+
+Maintain your site’s voice and drop natural internal links (e.g., “as explained in our faithful vs creative hub”).
+
+Why the big model:
+
+Consistency across long‑form text, tone, and linking strategy.
+
+linking (optional) → Sonnet‑class
+
+Task:
+
+“Sprinkle” internal links into existing paragraphs.
+
+Do not rewrite; just insert href‑style anchor text where it fits naturally.
+
+Why light model: this is a “stitching” layer, not a deep rewrite.
+
+You can also add:
+
+qa or tone‑check step → big model
+
+“Does this section match our tone and length target?”
+
+“Suggest up to 3 edits that improve clarity.”
+
+4. Folder structure: keep it pipeline‑friendly
+You can mirror the split in your directories:
+
+text
+data/pillars/
+  outline/               # .json outlines (Sonnet output)
+    pillar-adaptations-guide.json
+    pillar-best-adaptations.json
+
+  paragraphs/            # .json with prose per section (Haiko output)
+    pillar-adaptations-guide.json
+    pillar-best-adaptations.json
+
+  merged/                # final “ready‑to‑render” pillar.json (after stitching)
+    pillar-adaptations-guide.json
+Node pipeline stages:
+
+Stage 1 (outline)
+
+Read config/pillars.json
+
+For each pillar, call Sonnet → write outline/pillar-<slug>.json.
+
+Stage 2 (paragraphs)
+
+Read the outline JSON.
+
+Call Haiko per section → write paragraphs/pillar-<slug>.json.
+
+Stage 3 (merge + linking)
+
+Merge outline + paragraphs + cluster links.
+
+Optionally call Sonnet again to “drop in links from clusters” → save merged/pillar-<slug>.json.
+
+Stage 4 (render)
+
+Your later job reads merged/pillar-<slug>.json and turns it into HTML.
+
+5. Thoughts on language vs tools
+If you’re already using JSON schemas, add one per role (e.g., outline.schema.json, paragraphs.schema.json) so each step is self‑contained and testable.
+
+You can even have a “light” vs “heavy” gateway in code:
+
+js
+function pickModelForRole(role) {
+  if (role === "outline" || role === "linking") return "sonnet";
+  if (role === "paragraphs" || role === "tone‑check") return "haiko";
+}
+If you like, the next step can be:
+
+I’ll draft a realistic config/pillars.json file for your top 3 pillars, with full steps arrays already filled out for Sonnet and Haiko roles,
+or
+
+I’ll give you a Node function skeleton that executes one of these roles based on a step object.
+

@@ -1,0 +1,184 @@
+{
+  "site": {
+    "name": "Books Versus Movies",
+    "domain": "https://booksversusmovies.com",
+    "primary_topic": "Book vs movie adaptations",
+    "tone": "clear, opinionated, helpful"
+  },
+
+  "pillars": [
+    {
+      "id": "adaptations-guide",
+      "slug": "book-vs-movie-adaptations",
+      "h1": "Book vs Movie Adaptations: The Ultimate Guide",
+      "title_tag": "Book vs Movie Adaptations: The Ultimate Guide",
+      "meta_description": "A practical guide to book vs movie adaptations, including how to judge faithfulness, changes, and which format to choose first.",
+      "search_intent": "informational",
+      "audience": "Readers and viewers deciding how to engage with an adaptation",
+
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 800,
+          "instructions": "Produce a structured JSON‑compatible outline with H2 and H3 sections. Only include section id, H2/H3 text, and short key points. Do not write full paragraphs."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 2000,
+          "instructions": "Turn each section in the outline into 1–2 fluent, opinionated paragraphs. Keep tone clear and helpful. Use 300–500 words per section. Add 1–2 natural internal links to cluster pages per section."
+        },
+        {
+          "role": "linking",
+          "model": "sonnet",
+          "max_tokens": 500,
+          "instructions": "Review the paragraphs. Add or fix 1–2 extra internal links per section pointing to cluster pages and verdict pages. Do not rewrite sentences; only insert or adjust links."
+        }
+      ]
+    },
+
+    {
+      "id": "best-adaptations",
+      "slug": "best-book-to-movie-adaptations",
+      "h1": "Best Book‑to‑Movie Adaptations: A Curated List",
+      "title_tag": "Best Book‑to‑Movie Adaptations: Curated by Verdict",
+      "meta_description": "A hand‑picked list of the best book‑to‑movie adaptations, with brief explanations and links to our full book vs movie verdicts.",
+      "search_intent": "informational",
+      "audience": "Movie lovers and book fans deciding which adaptations to try first",
+
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 700,
+          "instructions": "Create a list‑style outline with sections such as 'Why Some Adaptations Stand Out' and 'Genre‑by‑Genre Picks'. For each list item, add a short key point explaining why it's strong. Do not write full paragraphs."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 1500,
+          "instructions": "Turn each list item and section into concise, punchy blurbs (50–100 words each). Keep the tone light and verdict‑driven. Link each title to its verdict page."
+        },
+        {
+          "role": "linking",
+          "model": "sonnet",
+          "max_tokens": 400,
+          "instructions": "Ensure each example in the list links to its verdict page. Add 1–2 links to related cluster pages (e.g., faithful vs creative, changes from book to movie)."
+        }
+      ]
+    },
+
+    {
+      "id": "should-you-read-first",
+      "slug": "should-you-read-the-book-first",
+      "h1": "Should You Read the Book First? The Book vs Movie Guide",
+      "title_tag": "Should You Read the Book First? A Decision Guide",
+      "meta_description": "A decision‑oriented guide explaining when to read the book first, when to watch the movie first, and when to do both.",
+      "search_intent": "informational",
+      "audience": "Readers and viewers who are unsure how to start an adaptation",
+
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 700,
+          "instructions": "Build an outline with H2s like 'Reasons to Read First', 'Reasons to Watch First', and 'A Quick Decision Checklist'. Add 3–5 short key points per section. Do not write full paragraphs."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 1800,
+          "instructions": "Turn each section into clear, actionable paragraphs. Use a friendly, opinionated tone. Add 1–2 internal links per section to cluster pages (e.g., faithful vs creative, biggest changes)."
+        }
+      ]
+    },
+
+    {
+      "id": "faithful-vs-creative",
+      "slug": "faithful-vs-creative-movie-adaptations",
+      "h1": "Faithful vs Creative Movie Adaptations: Which Approach Wins?",
+      "title_tag": "Faithful vs Creative Movie Adaptations: A Guide",
+      "meta_description": "A breakdown of faithful versus creative movie adaptations, with real‑world examples and guidance on how to judge changes.",
+      "search_intent": "informational",
+      "audience": "Readers interested in how adaptations differ and why changes happen",
+
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 750,
+          "instructions": "Outline H2 sections such as 'What Faithful Means', 'Strengths of Faithful Adaptations', 'Strengths of Creative Adaptations', and 'When Changes Backfire'. For each, add 3–5 key points."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 1800,
+          "instructions": "Turn each section into 2–3 opinionated paragraphs. Use 2–3 short examples per section, linking to real verdict pages. Maintain a balanced but clear perspective (no fence‑sitting)."
+        }
+      ]
+    }
+  ],
+
+  "clusters": [
+    {
+      "id": "biggest-changes",
+      "slug": "biggest-changes-from-book-to-movie",
+      "h1": "Biggest Changes from Book to Movie: Where They Diverge",
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 600,
+          "instructions": "Outline sections such as 'Plot Changes', 'Character Changes', and 'Tone and Setting Shifts'. Add 3–4 key points per section. Do not write full paragraphs."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 1200,
+          "instructions": "Turn each section into 1–2 short, spoiler‑mild paragraphs. Use 2–3 concrete examples per section and link to verdict pages."
+        }
+      ]
+    },
+
+    {
+      "id": "by-genre",
+      "slug": "best-book-to-movie-adaptations-by-genre",
+      "h1": "Best Book‑to‑Movie Adaptations by Genre",
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 600,
+          "instructions": "Outline genre‑based sections (e.g., Sci‑Fi, Thriller, Fantasy, Romance, Horror). For each genre, list 2–3 strong examples with short key points. No full paragraphs."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 1000,
+          "instructions": "Turn each example into a short, 40–70‑word blurb explaining why it stands out. Link each example to its verdict page."
+        }
+      ]
+    },
+
+    {
+      "id": "movie-better-than-book",
+      "slug": "why-some-movies-are-better-than-the-book",
+      "h1": "Why Some Movies Are Better Than the Book",
+      "steps": [
+        {
+          "role": "outline",
+          "model": "sonnet",
+          "max_tokens": 500,
+          "instructions": "Outline sections like 'When the Movie Fixes the Book', 'When the Movie Elevates the Story', and 'Reader vs Viewer Types'. Add 3–4 key points per section."
+        },
+        {
+          "role": "paragraphs",
+          "model": "haiko",
+          "max_tokens": 1200,
+          "instructions": "Write 2–3 short paragraphs per section, with 2–3 specific examples and links to verdict pages. Keep the tone opinionated but fair."
+        }
+      ]
+    }
+  ]
+}
