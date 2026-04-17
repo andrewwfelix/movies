@@ -37,22 +37,23 @@ function renderNav() {
 
 function renderFooter() {
   return `
-<footer>
-  <p>&copy; ${new Date().getFullYear()} RavensEdge AI, LLC &nbsp;&mdash;&nbsp; operating BooksVersusMovies.com </p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program...</p>
-</footer>
-
 <!-- Newsletter Signup -->
-<div class="verdict-footer">
+<div style="background:#f9f5eb;padding:2rem 1.5rem;text-align:center;border-top:1px solid #e0d8c8;">
+  <p style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;margin:0 0 1rem;color:#1a1714;">Get our weekly read-first verdict</p>
   <iframe 
-    src="https://subscribe-forms.beehiiv.com/598ec107-d370-471f-bd96-e9991de1011f?slim=true"
+    src="https://subscribe-forms.beehiiv.com/598ec107-d370-471f-bd96-e9991de1011f"
     class="beehiiv-embed"
     frameborder="0"
     scrolling="no"
     loading="lazy"
-    style="width: 100%; max-width: 560px; height: 339px; margin: 0; background-color: transparent;">
+    style="width:100%;max-width:560px;height:339px;background:transparent;display:block;margin:0 auto;">
   </iframe>
 </div>
+
+<footer>
+  <p>&copy; ${new Date().getFullYear()} RavensEdge AI, LLC &nbsp;&mdash;&nbsp; operating BooksVersusMovies.com</p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+</footer>
 
 </body>
 </html>`;
