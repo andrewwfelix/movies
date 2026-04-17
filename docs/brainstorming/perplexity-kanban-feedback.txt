@@ -1,0 +1,176 @@
+Your Kanban is extremely well-structured and shows you're already executing at a high level. Here's my prioritization guidance and next 7-day plan based on impact vs effort.
+
+Immediate Next Steps (Today - 24 hours)
+1. Finish "To Do — Today" (30 mins)
+
+text
+✓ Add Reminders of Him to featured.html grid
+✓ GSC indexing — 10 pillar page URLs (use sitemap + manual submit)
+2. Deploy the #1 high-impact SEO win (1 hour)
+
+text
+/how-we-judge page — short editorial standards page
+Why first: Builds trust, explains your verdicts, ranks for "how do you judge book vs movie"
+
+Format: 800 words max, link to all 10 pillars from this page
+
+H1: "How We Judge Book vs Movie Adaptations"
+
+Next 3 Days — SEO + Traffic Focus
+text
+Day 2: Email capture + anchor text (2 hours total)
+text
+✓ Email capture — ConvertKit setup + opt-in form (put on every pillar page)
+✓ Anchor text on internal links — add "book vs movie" to related card links
+text
+Day 3: Cross-linking + hub page (2 hours)
+text
+✓ Cross-link spotlight pages to each other 
+✓ /book-vs-movie hub page (make this your true pillar hub with jump links to all 10 pillars)
+Next 7 Days — Technical Foundation
+text
+Day 4: Pipeline robustness (1.5 hours)
+text
+✓ llm-client.js — shared LLM client module
+✓ Logger config file — option to log errors only
+✓ pipeline-greenfield.js — fix double output lines
+text
+Day 5-6: Vercel migration prep (3 hours total)
+text
+✓ pipeline-greenfield.js — fix double output lines (if not done)
+✓ Update deploy-files.bat — paths changed
+✓ Spotlight pages — migrate buy button CSS to style.css
+✓ add-destination.js — update SCAN array
+text
+Day 7: Content momentum
+text
+✓ Recently added section on browse/index page
+✓ Voice pass on top 10 traffic pages (sharpen opinions)
+Why This Order? (Impact Analysis)
+text
+HIGH IMPACT (Do first 3 days):
+1. /how-we-judge → Domain authority + E-E-A-T signal
+2. Email capture → Owned traffic channel  
+3. Cross-linking → Pillar-cluster SEO signal
+4. Anchor text → Keyword reinforcement
+
+MEDIUM IMPACT (Days 4-7):
+Technical debt blocking bigger batches
+
+LOW IMPACT (Delay):
+Vercel migration (stable on Netlify now)
+TheApiaryGuide (future project)
+Key Observation: You're Pipeline-Ready
+Your done list shows sophisticated automation already working. Don't rebuild what works. Focus technical work on:
+
+Making the existing pipeline more robust
+
+Adding email capture to capture traffic you're already generating
+
+Cross-linking your 10 live pillars into a true hub
+
+Single Most Important Next Step
+Build /how-we-judge today. This page:
+
+Explains your methodology (builds trust)
+
+Links to all 10 pillars (SEO cluster signal)
+
+Can rank for "how to compare book vs movie"
+
+Positions you as the authority vs listicle competitors
+
+Quick structure:
+
+text
+H1: How We Judge Book vs Movie Adaptations
+H2: Our 5 Criteria
+H2: Why We Always Pick a Winner
+H2: Explore Our Verdicts
+  → links to all 10 pillars
+7-Day Success Metric
+By April 24:
+
+/how-we-judge live + indexed
+
+Email capture on 10 pillar pages
+
+Cross-links between all pillars
+
+GSC monitoring shows pillar pages gaining impressions
+
+This gets you 3x the SEO signal with minimal effort while your pipeline stays humming.
+
+Want me to draft the /how-we-judge page outline + JSON config for your pipeline?
+
+should tis be a standalone page like a pillar? or integrate with the nav menus?
+/how-we-judge should be a standalone pillar page** (like your other 10), NOT in the main nav menu.**
+
+Why standalone pillar (not nav)?
+1. Strategic positioning:
+
+text
+Main nav = "Where users go to browse content"
+Pillars = "Where Google sends search traffic"  
+Users click nav for specific titles (/project-hail-mary, /dune)
+
+Google sends traffic to pillar URLs (/should-you-read-the-book-first, /best-book-to-movie-adaptations)
+
+2. Your current nav pattern works:
+
+text
+Home → /  
+Featured → /featured.html  
+Browse → /index.html (your grid/catalog)  
+/how-we-judge doesn't belong in this flow—it's not a content destination, it's an authority signal.
+
+3. Pillar pages don't need nav real estate:
+Your 10 existing pillars (should-you-read-the-book-first, best-book-to-movie-adaptations, etc.) live outside main nav and that's perfect. They earn traffic through:
+
+Internal links from verdict pages
+
+Direct Google search
+
+Cross-linking between pillars
+
+Perfect placement pattern:
+text
+1. Standalone URL: /how-we-judge (pillar page #11)
+2. Link FROM this page → all 10 other pillars  
+3. Link TO this page FROM:
+   - Every verdict page (top "How we judge" link)
+   - Homepage (under "Our Process")
+   - Every pillar page (in a standard "Methodology" footer block)
+Implementation (15 minutes):
+1. Add to config/pillars.json:
+
+json
+{
+  "id": "how-we-judge",
+  "slug": "how-we-judge", 
+  "h1": "How We Judge Book vs Movie Adaptations",
+  "steps": [ "outline", "paragraphs" ]
+}
+2. Quick page structure:
+
+text
+H1: How We Judge Book vs Movie Adaptations
+H2: Our 5 Criteria (Faithfulness, Pacing, Characters, Emotion, Rewatchability)
+H2: Why We Always Pick a Winner
+H2: Explore Our Full Analysis
+  → links to your 10 pillars + featured spotlights
+3. Link it strategically (no nav needed):
+
+text
+Homepage: "See our judgment criteria → /how-we-judge"
+Every verdict: "Judged by our 5 criteria → /how-we-judge" 
+Every pillar: "How we make these calls → /how-we-judge"
+Your nav stays clean:
+text
+Home | Featured | Browse | [search]
+→ Users find specific content
+→ Google finds your authority hub at /how-we-judge
+
+This follows the exact pattern of your successful pillar pages. Run it through your pipeline today—it'll be live and indexing by tonight.
+
+Next step: Want the full JSON config for /how-we-judge to drop into your pillars.json?

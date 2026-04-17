@@ -1,0 +1,123 @@
+erfect choice! "Books win 80%. We track movie exceptions" is clear, memorable, and instantly differentiates you.
+
+48-HOUR EMAIL LAUNCH PLAN (Stance A Locked)
+text
+TO DO — TODAY (90 mins total)
+
+- 1. ConvertKit - 2 Forms Only (25 mins)
+Form 1: Footer Bar
+"Books win 80% of the time. 
+Get our weekly movie exception →"
+[Email field] [Exceptions]
+
+Form 2: Verdict Inline  
+"Books won this round. 
+Next movie exception Friday →"  
+[Email field] [Get Exceptions]
+
+Tag both: "exceptions-follower"
+
+- 2. Welcome Email - Opinion Hook (20 mins)
+SUBJECT: "Most adaptations get this wrong"
+
+BODY:
+"Books win 80% of the time. Movies occasionally crack the code.
+
+Fight Club was the exception. 
+Here's the ONE change that made it better → [spotlight link]
+
+Next exception drops Friday.
+What genre should we judge next?"
+
+- 3. Footer Bar Live (20 mins)
+pipeline-render.js → add to every page:
+<div class="exceptions-bar">
+"Books win 80%. Weekly movie exceptions →" 
+[ConvertKit Form 1 embed]
+</div>
+
+CSS: position: fixed; bottom: 0; z-index: 100;
+
+- 4. GA4 Events (15 mins)
+form_view, form_click, form_submit
+
+- 5. Weekly Template (10 mins)
+Friday 9AM:
+"Week of [date] Movie Exception: [title]"
+1 insight + 1 link + 1 question
+
+TOMORROW (45 mins total)
+
+- 1. Inline Verdict Forms (20 mins)
+After every verdict box → Form 2 embed
+
+- 2. Deploy to Top 5 Spotlights (15 mins)
+
+- 3. Test Full Flow (10 mins)
+Signup → welcome → weekly preview
+
+DAYS 3-7 - Compound (5 mins/day)
+Daily: clicks + signups
+Day 7: 10-30 subscribers = WIN
+EXACT COPY - COPY/PASTE READY
+text
+FOOTER BAR HTML:
+<div class="exceptions-footer">
+  <p>Books win 80% of the time. Get our weekly movie exception →</p>
+  <!-- ConvertKit Form 1 embed code here -->
+</div>
+
+VERDICT INLINE HTML: 
+<div class="verdict-inline-cta">
+  <p>Books won this round. Next movie exception Friday →</p>
+  <!-- ConvertKit Form 2 embed code here -->
+</div>
+
+WELCOME EMAIL (ConvertKit):
+Subject: "Most adaptations get this wrong"
+
+Hi [Name],
+
+Books win 80% of the time. Movies occasionally crack the code.
+
+Fight Club was the exception. 
+Here's the ONE change that made it better → 
+https://booksversusmovies.com/fight-club
+
+Next exception drops Friday.
+
+What genre should we judge next?
+[Reply here]
+
+[Your Name]
+Books Versus Movies
+CSS FOR FOOTER BAR
+css
+.exceptions-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  background: #1a1a1a;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  z-index: 1000;
+  font-size: 14px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .exceptions-footer { 
+    font-size: 12px;
+    padding: 12px 15px; 
+  }
+}
+SUCCESS = Week 1
+text
+10-30 subscribers
+40%+ welcome open rate
+No bounce rate increase
+Next 30 mins: ConvertKit → Form 1 + Form 2 → footer bar live on 1 pillar page → test.
+
+Your stance + their feedback = perfect execution. Live by EOD, compounding by Monday.

@@ -1,0 +1,210 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-17T16:41:01.287Z
+============================================================
+[16:41:01.290] [INFO ] pipeline-render.js
+[16:41:01.292] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[16:41:01.292] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[16:41:01.293] [INFO ] Files:   171
+[16:41:01.293] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[16:41:01.295] [PASS ] a-beautiful-mind.html — 25634 chars
+[16:41:01.296] [PASS ] a-knight-of-the-seven-kingdoms.html — 22917 chars
+[16:41:01.298] [PASS ] a-little-life.html — 25542 chars
+[16:41:01.298] [PASS ] a-man-called-ove.html — 25040 chars
+[16:41:01.300] [PASS ] a-walk-to-remember.html — 22662 chars
+[16:41:01.301] [PASS ] about-a-boy.html — 22883 chars
+[16:41:01.302] [PASS ] all-quiet-on-the-western-front.html — 25415 chars
+[16:41:01.302] [PASS ] all-the-light-we-cannot-see.html — 24370 chars
+[16:41:01.304] [PASS ] along-came-a-spider.html — 21741 chars
+[16:41:01.305] [PASS ] american-gods.html — 22937 chars
+[16:41:01.305] [PASS ] american-psycho.html — 21807 chars
+[16:41:01.306] [PASS ] animal-farm.html — 22693 chars
+[16:41:01.307] [PASS ] annihilation.html — 25105 chars
+[16:41:01.308] [PASS ] arrival.html — 24791 chars
+[16:41:01.309] [PASS ] atonement.html — 24817 chars
+[16:41:01.310] [PASS ] band-of-brothers.html — 24401 chars
+[16:41:01.310] [PASS ] beloved.html — 22181 chars
+[16:41:01.311] [PASS ] big-fish.html — 24007 chars
+[16:41:01.312] [PASS ] big-little-lies-hbo.html — 25463 chars
+[16:41:01.313] [PASS ] blade-runner.html — 23338 chars
+[16:41:01.314] [PASS ] breakfast-at-tiffanys.html — 23577 chars
+[16:41:01.315] [PASS ] bridgerton.html — 25298 chars
+[16:41:01.315] [PASS ] brooklyn.html — 21586 chars
+[16:41:01.316] [PASS ] catch-22.html — 22922 chars
+[16:41:01.317] [PASS ] catch-me-if-you-can.html — 23185 chars
+[16:41:01.318] [PASS ] cold-mountain.html — 21978 chars
+[16:41:01.318] [PASS ] contact.html — 24664 chars
+[16:41:01.319] [PASS ] da-vinci-code.html — 22458 chars
+[16:41:01.321] [PASS ] daisy-jones-and-the-six.html — 24163 chars
+[16:41:01.321] [PASS ] dark-matter.html — 24156 chars
+[16:41:01.322] [PASS ] devil-wears-prada.html — 23192 chars
+[16:41:01.323] [PASS ] divergent.html — 23713 chars
+[16:41:01.323] [PASS ] doctor-sleep.html — 25115 chars
+[16:41:01.324] [PASS ] dracula.html — 24188 chars
+[16:41:01.325] [PASS ] dune.html — 23530 chars
+[16:41:01.325] [PASS ] eat-pray-love.html — 21530 chars
+[16:41:01.326] [PASS ] enders-game.html — 23869 chars
+[16:41:01.327] [PASS ] enders-game-film.html — 24780 chars
+[16:41:01.327] [PASS ] english-patient.html — 24190 chars
+[16:41:01.328] [PASS ] everything-everything.html — 22949 chars
+[16:41:01.329] [PASS ] fight-club.html — 22767 chars
+[16:41:01.329] [PASS ] five-feet-apart.html — 23573 chars
+[16:41:01.330] [PASS ] fourth-wing.html — 22504 chars
+[16:41:01.331] [PASS ] frankenstein.html — 24768 chars
+[16:41:01.332] [PASS ] geralds-game.html — 23547 chars
+[16:41:01.332] [PASS ] ghost-world.html — 24377 chars
+[16:41:01.333] [PASS ] girl-on-the-train.html — 23953 chars
+[16:41:01.334] [PASS ] girl-with-the-dragon-tattoo.html — 24034 chars
+[16:41:01.336] [PASS ] gone-girl.html — 23806 chars
+[16:41:01.337] [PASS ] good-omens.html — 24939 chars
+[16:41:01.338] [PASS ] hamnet.html — 22925 chars
+[16:41:01.338] [PASS ] hannibal-series.html — 26806 chars
+[16:41:01.339] [PASS ] heated-rivalry.html — 19423 chars
+[16:41:01.340] [PASS ] high-fidelity.html — 24356 chars
+[16:41:01.341] [PASS ] hillbilly-elegy.html — 25756 chars
+[16:41:01.341] [PASS ] hitchhikers-guide.html — 24947 chars
+[16:41:01.342] [PASS ] howls-moving-castle.html — 23013 chars
+[16:41:01.343] [PASS ] hunger-games-sunrise.html — 23086 chars
+[16:41:01.343] [PASS ] i-am-legend.html — 24171 chars
+[16:41:01.344] [PASS ] i-robot.html — 24542 chars
+[16:41:01.345] [PASS ] interview-with-the-vampire-amcplus.html — 24996 chars
+[16:41:01.346] [PASS ] into-the-wild.html — 26048 chars
+[16:41:01.347] [PASS ] it-ends-with-us.html — 21774 chars
+[16:41:01.348] [PASS ] it-muschietti.html — 25722 chars
+[16:41:01.348] [PASS ] jane-eyre.html — 23409 chars
+[16:41:01.349] [PASS ] jaws.html — 23267 chars
+[16:41:01.350] [PASS ] jurassic-park.html — 21671 chars
+[16:41:01.351] [PASS ] kite-runner.html — 26100 chars
+[16:41:01.352] [PASS ] la-confidential.html — 23911 chars
+[16:41:01.352] [PASS ] lady-chatterleys-lover.html — 26387 chars
+[16:41:01.354] [PASS ] les-miserables.html — 26844 chars
+[16:41:01.355] [PASS ] little-women.html — 24101 chars
+[16:41:01.355] [PASS ] lonesome-dove.html — 23436 chars
+[16:41:01.356] [PASS ] looking-for-alaska.html — 24257 chars
+[16:41:01.357] [PASS ] lord-of-the-flies.html — 24748 chars
+[16:41:01.358] [PASS ] love-simon.html — 24236 chars
+[16:41:01.359] [PASS ] margos-got-money-troubles.html — 22631 chars
+[16:41:01.360] [PASS ] me-before-you.html — 23058 chars
+[16:41:01.361] [PASS ] mickey-17.html — 23413 chars
+[16:41:01.361] [PASS ] misery.html — 23149 chars
+[16:41:01.362] [PASS ] my-brilliant-friend.html — 24255 chars
+[16:41:01.363] [PASS ] my-sisters-keeper.html — 24732 chars
+[16:41:01.363] [PASS ] narnia-magicians-nephew.html — 23959 chars
+[16:41:01.364] [PASS ] never-let-me-go.html — 22523 chars
+[16:41:01.365] [PASS ] no-country-for-old-men.html — 27075 chars
+[16:41:01.365] [PASS ] normal-people.html — 23793 chars
+[16:41:01.366] [PASS ] norwegian-wood.html — 26307 chars
+[16:41:01.367] [PASS ] of-mice-and-men.html — 24604 chars
+[16:41:01.368] [PASS ] olive-kitteridge.html — 22947 chars
+[16:41:01.368] [PASS ] on-the-road.html — 22780 chars
+[16:41:01.369] [PASS ] one-day.html — 21935 chars
+[16:41:01.370] [PASS ] one-flew-over-the-cuckoos-nest.html — 23737 chars
+[16:41:01.371] [PASS ] outlander.html — 23487 chars
+[16:41:01.372] [PASS ] pachinko.html — 23890 chars
+[16:41:01.372] [PASS ] people-we-meet-on-vacation.html — 22669 chars
+[16:41:01.373] [PASS ] perks-of-being-a-wallflower.html — 22923 chars
+[16:41:01.374] [PASS ] pet-sematary-2019.html — 25274 chars
+[16:41:01.374] [PASS ] presumed-innocent.html — 23880 chars
+[16:41:01.375] [PASS ] pride-and-prejudice.html — 23167 chars
+[16:41:01.376] [PASS ] project-hail-mary.html — 23169 chars
+[16:41:01.377] [PASS ] ready-player-one.html — 23812 chars
+[16:41:01.378] [PASS ] rebecca.html — 21221 chars
+[16:41:01.378] [PASS ] remains-of-the-day.html — 22849 chars
+[16:41:01.379] [PASS ] remarkably-bright-creatures.html — 23574 chars
+[16:41:01.380] [PASS ] reminders-of-him.html — 22194 chars
+[16:41:01.381] [PASS ] room.html — 23225 chars
+[16:41:01.381] [PASS ] roots-2016.html — 23522 chars
+[16:41:01.382] [PASS ] rosemarys-baby.html — 27270 chars
+[16:41:01.383] [PASS ] schindlers-list.html — 21380 chars
+[16:41:01.383] [PASS ] seabiscuit.html — 25294 chars
+[16:41:01.385] [PASS ] sense-and-sensibility.html — 23562 chars
+[16:41:01.386] [PASS ] shadow-and-bone.html — 23930 chars
+[16:41:01.386] [PASS ] sharp-objects.html — 23342 chars
+[16:41:01.387] [PASS ] shawshank-redemption.html — 21971 chars
+[16:41:01.389] [PASS ] shogun-2024.html — 23742 chars
+[16:41:01.389] [PASS ] silence-of-the-lambs.html — 23750 chars
+[16:41:01.390] [PASS ] sophies-choice.html — 22421 chars
+[16:41:01.391] [PASS ] sphere.html — 24791 chars
+[16:41:01.391] [PASS ] stardust.html — 23741 chars
+[16:41:01.392] [PASS ] station-eleven.html — 26291 chars
+[16:41:01.393] [PASS ] talented-mr-ripley.html — 23659 chars
+[16:41:01.393] [PASS ] the-book-thief.html — 23899 chars
+[16:41:01.394] [PASS ] the-client.html — 25093 chars
+[16:41:01.395] [PASS ] the-color-purple.html — 22210 chars
+[16:41:01.396] [PASS ] the-count-of-monte-cristo.html — 26440 chars
+[16:41:01.396] [PASS ] the-electric-state.html — 22025 chars
+[16:41:01.397] [PASS ] the-fault-in-our-stars.html — 24924 chars
+[16:41:01.398] [PASS ] the-firm.html — 20999 chars
+[16:41:01.399] [PASS ] the-girl-with-the-dragon-tattoo-fincher.html — 22145 chars
+[16:41:01.400] [PASS ] the-giver.html — 23377 chars
+[16:41:01.400] [PASS ] the-glass-castle.html — 24773 chars
+[16:41:01.401] [PASS ] the-godfather.html — 25235 chars
+[16:41:01.402] [PASS ] the-great-gatsby.html — 21967 chars
+[16:41:01.403] [PASS ] the-handmaids-tale.html — 25071 chars
+[16:41:01.404] [PASS ] the-haunting-of-hill-house.html — 27031 chars
+[16:41:01.405] [PASS ] the-help.html — 27772 chars
+[16:41:01.405] [PASS ] the-hours.html — 25076 chars
+[16:41:01.406] [PASS ] the-housemaid.html — 22887 chars
+[16:41:01.407] [PASS ] the-lincoln-lawyer.html — 21999 chars
+[16:41:01.407] [PASS ] the-longest-ride.html — 23623 chars
+[16:41:01.408] [PASS ] the-lovely-bones.html — 22004 chars
+[16:41:01.409] [PASS ] the-martian.html — 24379 chars
+[16:41:01.410] [PASS ] the-maze-runner-film.html — 24276 chars
+[16:41:01.410] [PASS ] the-notebook.html — 21881 chars
+[16:41:01.411] [PASS ] the-odyssey.html — 23120 chars
+[16:41:01.413] [PASS ] the-outsider.html — 23412 chars
+[16:41:01.414] [PASS ] the-outsiders.html — 24511 chars
+[16:41:01.414] [PASS ] the-pelican-brief.html — 23666 chars
+[16:41:01.415] [PASS ] the-pianist.html — 24880 chars
+[16:41:01.416] [PASS ] the-picture-of-dorian-gray.html — 24380 chars
+[16:41:01.416] [PASS ] the-pillars-of-the-earth.html — 25639 chars
+[16:41:01.417] [PASS ] the-princess-bride.html — 24347 chars
+[16:41:01.418] [PASS ] the-road.html — 21263 chars
+[16:41:01.418] [PASS ] the-secret-garden.html — 24892 chars
+[16:41:01.419] [PASS ] the-secret-life-of-bees.html — 24150 chars
+[16:41:01.420] [PASS ] the-shining.html — 24304 chars
+[16:41:01.420] [PASS ] the-sisterhood-of-the-traveling-pants.html — 26114 chars
+[16:41:01.421] [PASS ] the-three-body-problem.html — 24571 chars
+[16:41:01.422] [PASS ] the-thursday-murder-club.html — 25046 chars
+[16:41:01.423] [PASS ] the-time-travelers-wife.html — 24234 chars
+[16:41:01.423] [PASS ] the-witcher.html — 27771 chars
+[16:41:01.424] [PASS ] the-woman-in-the-window.html — 23182 chars
+[16:41:01.425] [PASS ] thirteen-reasons-why.html — 23080 chars
+[16:41:01.426] [PASS ] to-kill-a-mockingbird.html — 22829 chars
+[16:41:01.426] [PASS ] verity.html — 23138 chars
+[16:41:01.427] [PASS ] water-for-elephants.html — 25225 chars
+[16:41:01.428] [PASS ] where-the-crawdads-sing.html — 23365 chars
+[16:41:01.429] [PASS ] white-noise.html — 24633 chars
+[16:41:01.429] [PASS ] wolf-hall.html — 24007 chars
+[16:41:01.430] [PASS ] world-war-z.html — 24749 chars
+[16:41:01.431] [PASS ] wuthering-heights.html — 25568 chars
+
+── Summary ─────────────────────────────────────
+  Total:               171
+  Rendered:            171
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist in 3-rendered/
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No pages reference ../css/ (wrong path)
+  ✓  No pages reference ../images/ (wrong path)
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+── Copying to project root ──────────────────────
+[16:41:01.549] [INFO ] Copied 171 files to project root
+
+============================================================
+Finished: 2026-04-17T16:41:01.549Z
+Elapsed:  0.3s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-17_12-41-01_pipeline-render.log
+============================================================

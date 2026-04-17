@@ -1,0 +1,85 @@
+BooksVersusMovies.com Email Implementation Plan (April 17-24, 2026)
+===============================================================
+
+- 1. TODAY - Account Setup + Core Forms (2.5 hours total)
+
+-- 1.1 ConvertKit Account Setup (30 mins)
+--- 1.1.1 Sign up at convertkit.com (free tier)
+--- 1.1.2 Verify domain booksversusmovies.com 
+--- 1.1.3 Create these 3 forms:
+    --- Footer Bar: "Weekly Book vs Movie verdicts →" [email field] [Get Verdicts]
+    --- Verdict Inline: "Get this + 1 new verdict weekly ↓" [email field] [Subscribe]  
+    --- Pillar Exit Popup: "Don't miss our next Book vs Movie showdown?" [Get Weekly Verdicts]
+--- 1.1.4 Tag subscribers: "footer-bar", "verdict-inline", "pillar-exit"
+--- 1.1.5 Copy embed codes for each form
+
+-- 1.2 GA4 Events Setup (20 mins)
+--- 1.2.1 In GA4 → Events → Create these custom events:
+    --- form_view (impressions)
+    --- form_click (button interactions)  
+    --- form_submit (conversions)
+--- 1.2.2 Test: Load pillar page → trigger each event manually
+
+-- 1.3 PDF Content Upgrades (40 mins - Canva)
+--- 1.3.1 Decision Matrix PDF (1 page):
+    --- "Should You Read First?" flowchart
+    --- Book vs Movie pros/cons table
+    --- 5 quick questions to decide
+--- 1.3.2 Adaptation Checklist PDF (1 page):
+    --- "50 Must-Watch Book vs Movie Adaptations"  
+    --- Columns: Title | Verdict | Genre | Why Watch
+--- 1.3.3 Export both as PDF → upload to ConvertKit
+
+-- 1.4 Welcome Series Automation (30 mins)
+--- 1.4.1 Create 3-email sequence:
+    --- Day 1: "Welcome! Here's this week's verdict → [Recent spotlight]"
+    --- Day 3: "Should you read first? Our most popular guide → [pillar link]"
+    --- Day 7: "Your Adaptation Checklist is ready → [PDF download]"
+--- 1.4.2 Test full flow end-to-end
+
+-- 1.5 Weekly Cadence (20 mins)
+--- 1.5.1 Create "Friday Verdict Digest" template:
+    --- 1 new verdict spotlight
+    --- 1 pillar deep-dive link
+    --- 1 upcoming adaptation alert
+    --- Quick poll: "Book or Movie wins this week?"
+--- 1.5.2 Schedule first send: Friday April 24, 9AM
+
+- 2. TOMORROW - Site Integration (90 mins)
+
+-- 2.1 Footer Bar Implementation (20 mins)
+--- 2.1.1 Add to style.css:
+    --- position: fixed; bottom: 0; width: 100%; z-index: 1000
+--- 2.1.2 Add to pipeline-render.js → every page gets footer form
+--- 2.1.3 Test: mobile + desktop visibility
+
+-- 2.2 Inline Verdict Forms (20 mins)
+--- 2.2.1 Modify verdict JSON schema → add "email_after_verdict" field
+--- 2.2.2 pipeline-render.js → inject inline form after verdict box
+--- 2.2.3 Test on 3 verdict pages
+
+-- 2.3 Exit-Intent Popups (20 mins)
+--- 2.3.1 Add popup.js (simple mouseleave trigger)
+--- 2.3.2 Target only pillar pages (10 URLs)
+--- 2.3.3 3-second delay + 75% scroll trigger
+
+-- 2.4 Full Deployment (30 mins)
+--- 2.4.1 Deploy to all 10 pillar pages
+--- 2.4.2 Deploy to top 5 spotlights
+--- 2.4.3 Deploy to top 10 verdict pages (by traffic)
+--- 2.4.4 Commit + production deploy
+
+- 3. Days 3-7 - Monitor & Compound (10 mins/day)
+
+-- 3.1 Daily Metrics Check (5 mins)
+--- 3.1.1 GA4 → form_view, form_click, form_submit counts
+--- 3.1.2 ConvertKit → new subscribers + tags
+--- 3.1.3 Bounce rate change on pillar pages (<5% increase = good)
+
+-- 3.2 Friday Week 1 Review (15 mins - April 24)
+--- 3.2.1 Total clicks: Target 100-200
+--- 3.2.2 Total signups: Target 2-8 (1-4% conversion)
+--- 3.2.3 Best performing placement? Double down
+--- 3.2.4 Send first weekly digest → track opens/clicks
+
+- 4. Success Metrics (Week 1 Goals)
