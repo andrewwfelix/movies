@@ -1,0 +1,107 @@
+
+docs/
+├── archive/  [1 .json]
+├── brainstorming/
+│   ├── kanban-ideas/
+│   ├── newsletter-ideas/
+│   │   ├── chat-email-feedback.txt  (4kb)
+│   │   ├── gemini-email-feedback.txt  (4kb)
+│   │   ├── grok-email-feedback.txt  (4kb)
+│   │   ├── perplexity pillar deeper outlihne.txt  (7kb)
+│   │   ├── perplexity pillar outline.txt  (6kb)
+│   │   ├── perplexity pillar.txt  (3kb)
+│   │   ├── perplexity revised plan.txt  (3kb)
+│   │   ├── perplexity-feedback-on-feedback-chat.txt  (3kb)
+│   │   ├── perplexity-feedback-on-feedback.txt  (3kb)
+│   │   ├── perplexity-kanban-feedback.txt  (6kb)
+│   │   ├── perplexity-subscriber-email-plan.txt  (3kb)
+│   │   └── perplexity-subscriber-email.txt  (6kb)
+│   ├── pillar-ideas/
+│   │   └── perplexity-pillar-feedback.txt  (13kb)
+│   └── uncategorized-ideas/
+│       ├── New Text Document (2).txt  (4kb)
+│       ├── New Text Document (3).txt  (3kb)
+│       ├── New Text Document.txt  (3kb)
+│       ├── chat.md  (2kb)
+│       ├── consolidated-brainstorming.txt  (57kb)
+│       ├── gpt-content thoughts.txt  (4kb)
+│       ├── gpt-spoke design.txt  (5kb)
+│       ├── gpt-spoke-deepter-outline.txt  (5kb)
+│       ├── gpt-spoke-full-outline.txt  (5kb)
+│       ├── perpelxytiy 3.txt  (3kb)
+│       ├── perplexity-2.txt  (3kb)
+│       └── perplexity.txt  (4kb)
+├── pillars/
+│   ├── pillar-algorythm.txt  (6kb)
+│   ├── pillar-aogorythm-new.txt  (2kb)
+│   ├── pillar-first-10.txt  (2kb)
+│   ├── pillar-instance.json  (3kb)
+│   ├── pillar-pseudo-code.txt  (7kb)
+│   ├── pillar-schema.json  (4kb)
+│   ├── pillars-config-ideas.txt  (6kb)
+│   ├── pillars.config.txt  (8kb)
+│   └── title-optimization.txt  (2kb)
+├── pipeline/
+│   └── completed-tasks.md  (13kb)
+├── reference/
+│   ├── POLICIES.md  (6kb)
+│   ├── README.md  (13kb)
+│   ├── action-plan.txt  (3kb)
+│   ├── completed-tasks.md  (9kb)
+│   ├── git-cheat-sheet.txt  (1kb)
+│   ├── greenfield-happy-path.txt  (3kb)
+│   ├── pipeline-notes.md  (4kb)
+│   ├── project-objectives.md  (4kb)
+│   ├── project-structure.txt  (7kb)
+│   └── review-schema.md  (10kb)
+├── research/
+│   ├── llm-advice/
+│   │   ├── site-advice/
+│   │   │   ├── chatgpt-advice.txt  (2kb)
+│   │   │   ├── gemini.txt  (3kb)
+│   │   │   ├── grok-advice.txt  (7kb)
+│   │   │   ├── grok-seo.txt  (6kb)
+│   │   │   ├── grok-splash-page.txt  (4kb)
+│   │   │   ├── perplexity-seo.txt  (2kb)
+│   │   │   ├── perplexity-set-revised.txt  (1kb)
+│   │   │   └── perplexity.txt  (9kb)
+│   │   ├── what-to-use-for-what-deepseek.json  (6kb)
+│   │   ├── what-to-use-for-what-gemini.json  (4kb)
+│   │   ├── what-to-use-for-what-grok.json  (4kb)
+│   │   └── what-to-use-for-what-perplexity.json  (4kb)
+│   ├── ai-vulnerability-advice.md  (12kb)
+│   └── competitors.txt  (4kb)
+├── strategy/
+│   ├── features/
+│   │   ├── automation-spec.md  (3kb)
+│   │   ├── dashboard.md  (5kb)
+│   │   ├── email-capture-upcoming-guide.md  (5kb)
+│   │   ├── hubs-and-pillars.md  (12kb)
+│   │   └── overlord.md  (295b)
+│   ├── business-strategy.md  (14kb)
+│   ├── new-ideas.md  (6kb)
+│   ├── roadmap-product.md  (5kb)
+│   ├── roadmap-readme.md  (8kb)
+│   └── roadmap-technical.md  (7kb)
+├── surveys/
+│   ├── BooksVersusMovies — Strategic Product Development Survey_Submissions_2026-04-16.csv  (1009b)
+│   ├── inline-survey-idea.txt  (4kb)
+│   ├── survey-feedback-thoughts.txt  (2kb)
+│   └── tally-survey-embed-code.txt  (2kb)
+├── team/
+│   ├── affiliate-links.md  (3kb)
+│   ├── job-rec-content-researcher.md  (4kb)
+│   ├── onboarding-prep.md  (3kb)
+│   ├── onboarding.md  (3kb)
+│   └── tasks.md  (4kb)
+├── README.md  (12kb)
+├── consolidated-docs.txt  (750kb)
+├── indexing-priority.txt  (7kb)
+├── kanban.md  (7kb)
+├── narrator-idea.txt  (9kb)
+├── project-plan.txt  (2kb)
+└── sonnet-titles-encoding-fixed.csv  (59kb)
+
+Root:      C:\Users\andre\projects\movies\docs
+Max depth: 4
+Filter:    --dir docs
