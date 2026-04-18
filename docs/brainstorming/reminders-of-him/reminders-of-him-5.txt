@@ -1,0 +1,181 @@
+1) The key problem in your current prompt
+
+Right now your prompt treats all Spotlight pages as:
+
+“deep analytical criticism with structured sections”
+
+But your traffic signal says:
+
+Some works are emotional adaptation events, not literary analyses
+
+That difference matters a lot.
+
+Because Reminders of Him isn’t winning because of:
+
+historical context
+adaptation mechanics
+structural analysis
+
+It’s winning because of:
+
+emotional tension + moral stakes + “what got lost in adaptation”
+
+Your current prompt only partially prioritizes that.
+
+2) The fix: add “intent framing” inside the prompt (CRITICAL)
+
+You already planned a featureType in the script — good.
+
+Now you need to make the model obey it at the narrative level, not just structure.
+
+Add this block near the top of your prompt:
+
+🔧 ADD THIS SECTION
+IMPORTANT INTENT SHIFT:
+
+You must adapt tone, emphasis, and evaluation based on featureType:
+
+- "book" → literary analysis, character psychology, narrative structure, adaptation tradeoffs
+- "series" → continuity, evolution across installments, comparative adaptation quality
+- "universe" → world-building scope, multiple adaptations, timeline clarity, cultural footprint
+
+BUT:
+
+If the work is emotionally driven (romance, tragedy, moral conflict, character loss),
+you must prioritize emotional interpretation over structural analysis.
+
+In those cases:
+- focus on what the story *makes the reader feel*
+- emphasize what adaptations cannot replicate emotionally
+- treat changes as emotional losses or distortions, not just differences
+
+This is the missing link between:
+
+“structured content generator”
+and
+“Reminders-of-Him-style performance machine”
+
+3) Your biggest hidden advantage (you’re not using yet)
+
+You already have:
+
+featureType
+structured sections
+verdict system
+FAQ targeting
+
+But you are NOT explicitly telling the model:
+
+“what kind of search intent this page is satisfying”
+
+That’s why output will still skew “balanced critic voice.”
+
+4) Add a second improvement: “Search Intent Mode”
+
+Add this right under featureType guidance:
+
+SEARCH INTENT MODE:
+
+Infer the dominant user intent for this slug and adapt accordingly:
+
+- EMOTIONAL INTENT (e.g. romance, tragedy, BookTok adaptations)
+  → users want emotional validation and comparison ("did the movie hit the same?")
+  → writing should be opinionated, emotionally precise, slightly judgmental of adaptation losses
+
+- ANALYTICAL INTENT (e.g. Dune, Fight Club, Kubrick films)
+  → users want interpretation and critique of adaptation choices
+  → writing should be structured, philosophical, auteur-focused
+
+- EXPLORATORY INTENT (e.g. Lonesome Dove universe, franchises)
+  → users want orientation and reading/viewing order
+  → writing should emphasize structure, timeline, and navigation
+
+This is what aligns your system with actual SERP behavior.
+
+5) Fix your “never generic” rule (important nuance)
+
+You already say:
+
+never generic ("a beloved classic", etc.)
+
+Good.
+
+But you should add:
+
+Do NOT over-index on neutrality or balance language.
+Avoid phrases like:
+- "both have merit"
+- "it depends on preference"
+- "fans may disagree"
+
+Instead, take a position and defend it with evidence from the text/adaptation.
+6) Why this matters for your Reminders-of-Him signal
+
+What’s happening right now is:
+
+You accidentally built a system that can produce:
+
+prestige criticism (Dune, Fight Club → good fit)
+universe mapping (Lonesome Dove → good fit)
+BUT ALSO emotional adaptation resonance (Reminders of Him → viral fit)
+
+However:
+
+only one of those is being structurally optimized for engagement
+
+That’s the emotional one.
+
+7) Minimal but powerful structural tweak (optional but high ROI)
+
+Add this to your schema guidance:
+
+If featureType == "book" AND genre includes romance, tragedy, or contemporary fiction:
+prioritize emotional impact in:
+- intro (at least 1 paragraph must focus on emotional experience)
+- verdictBody (must explicitly describe emotional effect of adaptation)
+- sections (at least one section must be "what the adaptation loses emotionally")
+8) What you now have (after this change)
+
+Your system becomes:
+
+Before:
+
+structured adaptation encyclopedia
+
+After:
+
+intent-aware adaptation criticism engine
+
+Which means:
+
+Dune → intellectual authority traffic
+Lonesome Dove → evergreen depth traffic
+Reminders of Him → emotional CTR + social amplification traffic
+
+And importantly:
+
+all three now emerge naturally from the same pipeline
+
+9) One honest meta-observation
+
+You’re very close to a system where:
+
+the prompt is no longer “writing content”
+
+It is:
+
+routing cultural interpretation by intent type
+
+That’s why your instinct about Reminders of Him is important — it’s not a “top page,” it’s a different mode of content entirely.
+
+If you want next step, I’d recommend we design:
+
+“Emotion-weight scoring for slugs”
+
+So your pipeline automatically classifies:
+
+emotional volatility
+adaptation controversy
+BookTok potential
+
+That’s what lets you scale Reminders-of-Him behavior intentionally instead of accidentally.

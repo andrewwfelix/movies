@@ -30,7 +30,7 @@
     "temperature": 0.3
   },
   "spotlight": {
-    "model": "anthropic/claude-haiku-4-5",
+    "model": "anthropic/claude-sonnet-4-5",
     "maxTokens": 10000,
     "temperature": 0.5,
     "notes": "Spotlight page generation — single call, high quality prose. Temperature 0.5 for voice. Higher token limit for full sections + FAQ."

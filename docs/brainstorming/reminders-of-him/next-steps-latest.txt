@@ -1,0 +1,81 @@
+🧭 Next Steps (Correct Order of Execution)
+1. 🔗 Rebuild the relationship graph (always first)
+
+This is your source of truth refresh step.
+
+node scripts/utils/build-related-graph.js
+Why this matters
+Re-syncs all relationships from data/reviews/*.json
+Eliminates drift from old edits
+Ensures downstream render is correct
+2. 🧱 Re-render ALL spotlight pages
+
+This is now your “repair step replacement”
+
+node scripts/utils/render-spotlights.js
+What it does
+ignores existing HTML content
+rebuilds .related-grid entirely from graph
+writes clean spotlight pages
+Key principle
+
+No patching. Only full regeneration.
+
+3. 🧪 Validate output (sanity check only)
+
+Run:
+
+node scripts/utils/validate-spotlight-links.js --debug
+What you’re checking
+all links resolve to valid slugs in data/reviews
+no broken related cards
+no missing graph entries
+4. 🧹 One-time cleanup (important)
+
+Remove old conflicting systems so they stop interfering mentally and operationally:
+
+scripts/utils/fix-related-cards.js
+scripts/utils/fix-related-cards-spotlight.js
+Why
+
+These are now architecturally obsolete and will:
+
+reintroduce heuristic replacements
+conflict with graph-based rendering
+confuse future debugging
+5. 📌 Lock the architecture rule (critical)
+
+Add this somewhere permanent (README or header comment):
+
+Related cards are NEVER manually edited in HTML.
+
+They are generated via:
+data/reviews → related-graph → render-spotlights
+6. (Optional but recommended) tighten render safety
+
+Later improvement to add inside render script:
+
+warn if slug missing in graph
+fail fast if graph is empty
+ensure no empty .related-grid
+🧠 Final mental model (what you now have)
+Before (broken loop)
+HTML → parse → detect issues → patch → drift → patch again
+Now (correct system)
+JSON → graph → render → HTML (final output)
+⚡ Your operating workflow from now on
+
+Whenever you update content:
+
+1. edit data/reviews/*.json
+2. build-related-graph.js
+3. render-spotlights.js
+4. validate-spotlight-links.js
+
+That’s it.
+
+If you want next upgrade after this, the real jump is:
+
+auto-generating related cards from embeddings instead of manual arrays
+
+That removes step 1 entirely and turns the system into a recommendation engine instead of a maintenance system.

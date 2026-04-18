@@ -1,0 +1,92 @@
+-- =============================================
+-- BooksVersusMovies Supabase Schema - Phase 1
+-- Last updated: 2026-04-18
+-- =============================================
+
+-- 1. Analytics History
+CREATE TABLE analytics_history (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  site_id         int NOT NULL DEFAULT 1,
+  date            date NOT NULL,
+  clicks          int DEFAULT 0,
+  impressions     int DEFAULT 0,
+  ctr             numeric(6,4),           -- e.g. 9.8765%
+  position        numeric(6,2),           -- e.g. 8.45
+  created_at      timestamptz DEFAULT now(),
+  
+  UNIQUE(site_id, date)
+);
+
+-- 2. Tasks (replaces project-status.json + kanban.md)
+CREATE TABLE tasks (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  site_id         int NOT NULL DEFAULT 1,
+  text            text NOT NULL,
+  status          text DEFAULT 'not-started' CHECK (status IN ('not-started', 'in-progress', 'done', 'blocked')),
+  priority        text DEFAULT 'medium' CHECK (priority IN ('low', 'medium', 'high')),
+  category        text DEFAULT 'general',
+  section         text,                    -- e.g. "Pipeline", "Dashboard", "Growth"
+  due_date        date,
+  created_at      timestamptz DEFAULT now(),
+  updated_at      timestamptz DEFAULT now()
+);
+
+-- 3. Decisions (lightweight decision log)
+CREATE TABLE decisions (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  site_id         int NOT NULL DEFAULT 1,
+  title           text NOT NULL,
+  category        text,
+  decision_date   date,
+  decision        text NOT NULL,
+  alternatives    text,
+  rationale       text,
+  status          text DEFAULT 'implemented' CHECK (status IN ('proposed', 'decided', 'implemented', 'reverted')),
+  created_at      timestamptz DEFAULT now(),
+  updated_at      timestamptz DEFAULT now()
+);
+
+-- 4. Notes
+CREATE TABLE notes (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  site_id         int NOT NULL DEFAULT 1,
+  slug            text NOT NULL,
+  title           text NOT NULL,
+  category        text,
+  priority        text DEFAULT 'medium',
+  status          text DEFAULT 'not-started',
+  tags            text[],
+  dependencies    text[],                   -- other note slugs this depends on
+  body            text,
+  date            date,
+  created_at      timestamptz DEFAULT now(),
+  updated_at      timestamptz DEFAULT now()
+);
+
+-- 5. Brainstorming
+CREATE TABLE brainstorming (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  site_id         int NOT NULL DEFAULT 1,
+  slug            text NOT NULL,
+  title           text NOT NULL,
+  topic           text,
+  category        text,
+  llm             text,                     -- which model was used
+  sentiment       text,
+  signal          text,                     -- strong / weak / neutral
+  actionable      boolean DEFAULT false,
+  promoted        boolean DEFAULT false,
+  tags            text[],
+  summary         text,
+  comment         text,                     -- your notes on the idea
+  date            date,
+  created_at      timestamptz DEFAULT now(),
+  updated_at      timestamptz DEFAULT now()
+);
+
+-- Indexes for performance
+CREATE INDEX idx_analytics_site_date ON analytics_history(site_id, date);
+CREATE INDEX idx_tasks_site_status ON tasks(site_id, status);
+CREATE INDEX idx_decisions_site ON decisions(site_id);
+CREATE INDEX idx_notes_site_slug ON notes(site_id, slug);
+CREATE INDEX idx_brainstorming_site ON brainstorming(site_id);

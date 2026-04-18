@@ -1,0 +1,89 @@
+features based on our understanding of the emptional appeal of reminders of him. give me the movies and nod commands
+
+Good—this is the right way to use what you just learned. You’re basically saying: “pick pages that behave like Reminders of Him emotionally, then upgrade them into Spotlight tier.”
+
+So I’m selecting for:
+
+strong emotional carry (grief, identity, moral tension, longing)
+character-first narrative (not plot-first spectacle)
+clear book vs adaptation emotional gap
+high reader attachment / search intent overlap
+🔥 Next 5 Spotlight Pages (emotion-first selection)
+
+These are the closest matches to the “Reminders of Him emotional gravity model”:
+
+1. it-ends-with-us
+High emotional polarity (love, abuse, moral conflict)
+BookTok-driven attachment behavior
+Strong “book > adaptation emotional fidelity gap”
+2. normal-people
+Extremely internal emotional storytelling
+Adaptation is subtle but still compresses inner life
+High relational ambiguity = strong Spotlight fuel
+3. a-little-life
+Peak emotional devastation narrative
+Extremely character-driven suffering arc
+Adaptation potential mismatch is huge
+4. the-fault-in-our-stars
+Classic grief romance structure
+High emotional expectation vs adaptation limitation
+Very searchable “book vs movie emotional comparison”
+5. where-the-crawdads-sing
+Isolation, memory, trauma framing
+Strong atmospheric emotional tone
+Adaptation changes affect mood and pacing significantly
+🧠 Why these 5 (important pattern)
+
+They all share the same “Reminders of Him signature”:
+
+Emotion > plot
+Internal life > external action
+Reader attachment is the product, not the story
+Adaptation compresses emotional nuance
+Audience is searching for validation of feeling, not trivia
+
+That’s your Spotlight goldmine cluster
+
+🧾 NODE COMMANDS (run these next)
+
+Run these one-by-one first (DO NOT batch yet):
+
+node scripts/pipeline-spotlight.js --slug it-ends-with-us
+node scripts/pipeline-spotlight.js --slug normal-people
+node scripts/pipeline-spotlight.js --slug a-little-life
+node scripts/pipeline-spotlight.js --slug the-fault-in-our-stars
+node scripts/pipeline-spotlight.js --slug where-the-crawdads-sing
+⚠️ Recommended execution order (important)
+
+Do them in this order:
+
+it-ends-with-us (your Reminders-of-Him adjacent test case)
+normal-people (validates subtle emotional compression model)
+the-fault-in-our-stars (high traffic benchmark)
+where-the-crawdads-sing (atmosphere/emotion hybrid)
+a-little-life (stress test / highest emotional intensity)
+🔥 What you should watch for after running
+
+When you open the outputs, you’re validating 3 things:
+
+1. Emotional delta is explicit
+
+Does it clearly say:
+
+“what the film cannot replicate emotionally”
+
+2. Verdict is decisive
+
+No hedging like “both have value”
+
+3. Adaptation is framed as emotional translation loss
+
+Not structural comparison
+
+If you want next step after this batch, I’d strongly recommend:
+
+👉 
+building a “Spotlight Promotion Trigger” script
+that automatically upgrades any page that hits emotional-score thresholds
+
+That’s what turns this from manual system → editorial engine.

@@ -4,7 +4,16 @@
  * pipeline-browse.js
  * BooksVersusMovies.com — landing page + browse generator
  *
- * Generates index.html with strong visual hook and early book covers.
+ * Generates index.html with a strong visual hook, early book covers,
+ * stats, verdict badges, filters, and full browse list.
+ *
+ * Usage (run from project root):
+ *   node scripts/pipeline-browse.js
+ *   node scripts/pipeline-browse.js --featured dune,gone-girl,atonement,the-shining,fight-club
+ *   node scripts/pipeline-browse.js --sort alpha
+ *   node scripts/pipeline-browse.js --dry
+ *
+ * Destination: scripts/pipeline-browse.js
  */
 
 const fs   = require('fs');
@@ -41,7 +50,12 @@ const DRY_RUN      = hasFlag('--dry');
 const FEATURED_ARG = get('--featured', null);
 
 const DEFAULT_FEATURED = [
-  'verity', 'reminders-of-him', 'dune', 'the-shining', 'gone-girl', 'atonement',
+  'reminders-of-him',   // #1 GA4 score — emotional anchor
+  'it-ends-with-us',    // emotional cluster, Hoover audience
+  'verity',             // emotional thriller, strong views
+  'gone-girl',          // bridges emotional + prestige
+  'lonesome-dove',      // #2 GA4 score, high engagement
+  'dune',               // prestige anchor
 ];
 
 const SITE_URL = 'https://booksversusmovies.com';
@@ -73,7 +87,6 @@ function sortRecords(records) {
 function renderSpotlightCard(r) {
   const hook = r.quickAnswer?.oneLineReason
     || (r.pageTitle?.includes(': ') ? r.pageTitle.split(': ').slice(1).join(': ') : r.pageTitle);
-
   const meta = [r.author, r.filmYear && r.filmYear !== 'TBA' ? r.filmYear : null]
     .filter(Boolean).join(' · ');
 
@@ -144,16 +157,12 @@ function renderPage(records) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book vs Movie Comparisons — BooksVersusMovies.com</title>
-  <meta name="description" content="${counts.total} honest book vs movie comparisons — clear verdicts, spoilers included, read-first advice on every page.">
+  <meta name="description" content="${counts.total} honest book vs movie comparisons — clear verdicts, spoilers included, read-first advice on every page. No hedging.">
   <link rel="canonical" href="${SITE_URL}/">
   <link rel="stylesheet" href="css/style.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${GA_ID}');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"BooksVersusMovies.com","url":"${SITE_URL}","description":"Honest book vs movie comparisons with clear verdicts.","potentialAction":{"@type":"SearchAction","target":"${SITE_URL}/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
 
@@ -167,8 +176,8 @@ function renderPage(records) {
 </header>
 
 <section class="browse-hero">
-  <h1>Book vs Movie. One winner. No mercy.</h1>
-  <p class="tagline">We pick a side — and explain exactly why one version wins.</p>
+  <h1>Book vs Movie</h1>
+  <p class="tagline">We pick a winner every time — and explain why the other falls short.</p>
   <a href="#comparisons" class="cta-button">Browse All Comparisons</a>
 </section>
 
@@ -225,20 +234,19 @@ ${rowsHtml}
 
 <footer>
   <p>&copy; ${YEAR} RavensEdge AI, LLC &nbsp;&mdash;&nbsp; operating BooksVersusMovies.com</p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program...</p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
 </footer>
 
 <script>
   const btns      = document.querySelectorAll('.filter-btn');
   const rows      = document.querySelectorAll('.row');
   const noResults = document.getElementById('no-results');
-
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       btns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
-      let visible = 0;
+      let visible  = 0;
       rows.forEach(row => {
         const show = filter === 'all' || row.dataset.verdict === filter;
         row.style.display = show ? '' : 'none';
@@ -255,13 +263,13 @@ ${rowsHtml}
 
 function run() {
   if (!fs.existsSync(SRC_DIR)) {
-    console.error(`✗ Source directory not found: ${SRC_DIR}`);
+    console.error(`\u2717 Source directory not found: ${SRC_DIR}`);
     process.exit(1);
   }
 
   const records = loadRecords();
   if (records.length === 0) {
-    console.error('✗ No records found');
+    console.error('\u2717 No records found');
     process.exit(1);
   }
 
@@ -282,7 +290,7 @@ function run() {
   }
 
   fs.writeFileSync(OUT_PATH, html, 'utf8');
-  console.log(`\n✓ index.html written (${html.length} chars)`);
+  console.log(`\n\u2713 index.html written (${html.length} chars)`);
   console.log(`  ${records.length} rows + ${featuredFound.length} spotlight cards`);
   console.log(`\nNext: node scripts/sitemap-generate.js`);
 }

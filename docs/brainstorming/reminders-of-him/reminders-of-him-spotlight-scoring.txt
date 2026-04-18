@@ -1,0 +1,182 @@
+PART 1 — NEXT 20 SPOTLIGHT UPGRADES (ranked)
+
+These are selected based on:
+
+search demand stability
+adaptation prominence
+emotional / narrative depth
+linkability (people reference them)
+fit for “Spotlight-style deep dive”
+🔥 Tier 1 — MUST BE SPOTLIGHT (next batch)
+
+These are your highest ROI upgrades:
+
+the-road
+no-country-for-old-men
+station-eleven
+the-martian
+pride-and-prejudice
+the-handmaids-tale
+the-godfather
+schindlers-list
+the-pianist
+gone-girl (already done, but reinforces template tier)
+fight-club (same)
+dune (same)
+
+👉 These are “pillar authority pages” in disguise.
+
+🧠 Tier 2 — HIGH-VALUE SPOTLIGHT CANDIDATES
+a-beautiful-mind
+into-the-wild
+the-kite-runner
+life-of-pi (you should add if missing later)
+the-girl-with-the-dragon-tattoo
+little-women
+the-book-thief
+remains-of-the-day
+⚖️ Tier 3 — LATER (don’t spotlight yet)
+
+These are fine as standard pages:
+
+divergent
+ready player one
+the maze runner
+love simon
+bridgerton
+five feet apart
+
+They don’t yet justify deep editorial treatment unless traffic spikes.
+
+🧠 PART 2 — SPOTLIGHT SCORING SYSTEM (your engine)
+
+This is the system that decides what becomes Spotlight automatically.
+
+🧮 Spotlight Score (0–100)
+
+You compute this per slug.
+
+1. Emotional Weight (0–25)
+
+How much emotional transformation exists between book & film
+
+High examples:
+
+Reminders of Him → 24
+The Road → 23
+Atonement → 22
+
+Low examples:
+
+Ready Player One → 10
+Divergent → 12
+2. Adaptation Prestige (0–25)
+
+Quality + cultural impact of adaptation
+
+High:
+
+The Godfather → 25
+Schindler’s List → 25
+Dune (Villeneuve) → 23
+3. Search Demand Stability (0–20)
+
+Evergreen search behavior:
+
+“book vs movie”
+“is it faithful”
+“should I read first”
+
+High:
+
+Harry Potter-type franchises (if you had them)
+Dune → 20
+Gone Girl → 19
+4. Narrative Depth (0–15)
+
+How much material exists to analyze
+
+High:
+
+Lonesome Dove → 15
+Station Eleven → 14
+The Handmaid’s Tale → 14
+5. Differentiation Potential (0–15)
+
+Can you say something new and sharp?
+
+High:
+
+The Road → 15
+No Country for Old Men → 14
+Fight Club → 13
+🧠 FINAL FORMULA
+Spotlight Score =
+Emotional (25)
++ Prestige (25)
++ Search Demand (20)
++ Depth (15)
++ Differentiation (15)
+🎯 THRESHOLDS
+Score	Action
+80–100	MUST be Spotlight
+65–79	Promote to Spotlight queue
+50–64	Optional (only if traffic grows)
+<50	Keep standard review
+🔥 WHAT THIS GIVES YOU (IMPORTANT)
+
+You now have:
+
+1. Editorial hierarchy
+
+Not all pages are equal anymore
+
+2. A scalable upgrade pipeline
+
+You don’t “guess” Spotlight pages anymore
+
+3. A reason Reminders of Him dominates
+
+It likely scores:
+
+very high emotional weight
+strong search intent
+strong differentiation
+🧭 STRATEGIC INSIGHT (what’s actually happening)
+
+Your site is naturally splitting into:
+
+Layer A — Emotional SEO Engine
+
+(Reminders of Him, It Ends With Us, etc.)
+
+Layer B — Prestige Cinema Engine
+
+(Fight Club, No Country, Dune)
+
+Layer C — Literary Canon Engine
+
+(Handmaid’s Tale, The Road, etc.)
+
+That’s your real cluster strategy:
+
+not “movies vs books”
+but 3 content intelligences inside one system
+
+If you want next step
+
+I can build you either:
+
+Option A
+
+👉 Auto-scoring script (reads your JSON and assigns Spotlight candidates)
+
+Option B
+
+👉 Homepage ranking system that dynamically surfaces Spotlight vs standard pages
+
+Option C (best ROI)
+
+👉 Internal linking graph that pushes authority into Spotlight pages automatically
+
+Just tell me which direction you want.

@@ -3,75 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Featured — Deep Dives | BooksVersusMovies</title>
-  <meta name="description" content="Our most in-depth book vs. movie comparisons. Long-form spotlights on the adaptations worth understanding fully — novels, films, sequels, and everything in between.">
+  <title>Featured Spotlights — Deep Dives | BooksVersusMovies</title>
+  <meta name="description" content="Long-form spotlights on the adaptations worth understanding fully — emotional, prestige, and universe deep dives.">
   <link rel="canonical" href="https://booksversusmovies.com/featured">
   <link rel="stylesheet" href="css/style.css">
   <style>
     .featured-hero {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 3rem 1.5rem 2.5rem;
+      background: var(--ink);
+      color: var(--cream);
+      padding: 2.5rem 1.5rem 2rem;
+      border-bottom: 3px solid var(--gold);
     }
-    .featured-hero-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    .featured-hero-inner { max-width: 1100px; margin: 0 auto; }
     .featured-type-badge {
       display: inline-block;
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       padding: 0.2rem 0.6rem;
       border-radius: 2px;
       background: #333;
-      color: #aaa;
-      margin-bottom: 1rem;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
     }
     .featured-hero h1 {
-      font-size: 2.2rem;
-      margin: 0 0 0.75rem;
-      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin: 0 0 0.5rem;
+      color: var(--cream);
       max-width: 700px;
     }
     .featured-hero p {
-      font-size: 1rem;
-      color: #aaa;
-      max-width: 600px;
+      font-size: 0.95rem;
+      color: #b0a898;
+      max-width: 580px;
       margin: 0;
       line-height: 1.6;
     }
-    .featured-body {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem;
-    }
+    .featured-body { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+
+    /* Hero card */
     .spotlight-hero-card {
       display: grid;
-      grid-template-columns: 1fr 340px;
+      grid-template-columns: 1fr 300px;
       gap: 0;
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
       overflow: hidden;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       text-decoration: none;
       color: inherit;
-      transition: box-shadow 0.15s;
+      transition: box-shadow 0.2s;
     }
-    .spotlight-hero-card:hover {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
+    .spotlight-hero-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.1); }
     .spotlight-hero-card-text {
-      padding: 2.5rem;
-      background: #fff;
+      padding: 2.25rem;
+      background: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     .spotlight-hero-card-badge {
       display: inline-block;
-      font-size: 0.68rem;
+      font-size: 0.65rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -79,34 +74,34 @@
       border-radius: 2px;
       background: #2a5a2a;
       color: #a0d0a0;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
       width: fit-content;
     }
     .spotlight-hero-card h2 {
-      font-size: 1.6rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
       margin: 0 0 0.75rem;
-      color: #1a1a1a;
+      color: var(--ink);
       line-height: 1.25;
     }
     .spotlight-hero-card-hook {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       color: #555;
       line-height: 1.65;
-      margin: 0 0 1.5rem;
+      margin: 0 0 1.25rem;
     }
     .spotlight-cta {
       display: inline-block;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: #1a1a1a;
-      text-decoration: none;
-      border-bottom: 2px solid #1a1a1a;
+      color: var(--ink);
+      border-bottom: 2px solid var(--gold);
       padding-bottom: 1px;
     }
     .spotlight-hero-card-image {
-      background: #1a1a1a;
+      background: var(--ink);
       overflow: hidden;
     }
     .spotlight-hero-card-image img {
@@ -117,36 +112,45 @@
       display: block;
       opacity: 0.85;
     }
+
+    /* Section labels */
     .featured-section-label {
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #999;
+      letter-spacing: 0.12em;
+      color: var(--gold);
       margin: 0 0 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--rule);
     }
+
+    /* Spotlight grid */
     .spotlight-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
     }
     .spotlight-card {
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
       overflow: hidden;
       text-decoration: none;
       color: inherit;
-      transition: box-shadow 0.15s;
+      transition: all 0.2s;
       display: flex;
       flex-direction: column;
+      background: white;
     }
     .spotlight-card:hover {
-      box-shadow: 0 3px 14px rgba(0,0,0,0.09);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      border-color: var(--gold);
+      transform: translateY(-3px);
     }
     .spotlight-card-image {
-      height: 160px;
-      background: #1a1a1a;
+      height: 140px;
+      background: var(--ink);
       overflow: hidden;
     }
     .spotlight-card-image img {
@@ -158,68 +162,66 @@
       opacity: 0.8;
     }
     .spotlight-card-body {
-      padding: 1.25rem;
+      padding: 1.1rem;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
     .spotlight-card-badge {
-      font-size: 0.65rem;
+      font-size: 0.62rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #aaa;
-      margin-bottom: 0.5rem;
+      color: #999;
+      margin-bottom: 0.4rem;
     }
     .spotlight-card h3 {
-      font-size: 1.05rem;
-      margin: 0 0 0.5rem;
-      color: #1a1a1a;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      margin: 0 0 0.4rem;
+      color: var(--ink);
       line-height: 1.3;
     }
     .spotlight-card-hook {
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       color: #666;
-      line-height: 1.55;
-      margin: 0 0 1rem;
+      line-height: 1.5;
+      margin: 0 0 0.75rem;
       flex: 1;
     }
     .spotlight-card-link {
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #1a1a1a;
+      color: var(--ink);
     }
+
     .featured-explainer {
-      background: #f9f9f9;
-      border: 1px solid #e8e8e8;
+      background: var(--book-col);
+      border: 1px solid var(--rule);
       border-radius: 4px;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2rem;
+      padding: 1.25rem 1.75rem;
+      margin-top: 1rem;
     }
     .featured-explainer p {
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: #555;
       line-height: 1.65;
       margin: 0;
     }
-    .featured-explainer strong { color: #1a1a1a; }
-    @media (max-width: 768px) {
+    .featured-explainer strong { color: var(--ink); }
+
+    @media (max-width: 900px) { .spotlight-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) {
       .spotlight-hero-card { grid-template-columns: 1fr; }
-      .spotlight-hero-card-image { height: 200px; }
+      .spotlight-hero-card-image { height: 180px; }
       .featured-hero h1 { font-size: 1.6rem; }
       .spotlight-grid { grid-template-columns: 1fr; }
     }
   </style>
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0DY0XDWVV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-P0DY0XDWVV');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P0DY0XDWVV');</script>
 </head>
 <body>
 
@@ -238,94 +240,153 @@
 
 <div class="featured-hero">
   <div class="featured-hero-inner">
-    <span class="featured-type-badge">Featured</span>
+    <span class="featured-type-badge">Spotlight Series</span>
     <h1>The Deep Dives</h1>
-    <p>Long-form spotlights on the adaptations worth understanding fully — the books, the films, the sequels, and everything in between.</p>
+    <p>Long-form spotlights on the adaptations worth understanding fully — the emotional machinery, the adaptation choices, and the definitive verdict.</p>
   </div>
 </div>
 
 <div class="featured-body">
 
-  <!-- Hero spotlight — Reminders of Him (new release, highest CTR) -->
+  <!-- Hero spotlight — Reminders of Him (#1 by GA4 score) -->
   <a class="spotlight-hero-card" href="/spotlight-reminders-of-him">
     <div class="spotlight-hero-card-text">
-      <span class="spotlight-hero-card-badge">New Release Spotlight</span>
+      <span class="spotlight-hero-card-badge">Most Read Spotlight</span>
       <h2>Reminders of Him: What the Film Can't Replicate</h2>
-      <p class="spotlight-hero-card-hook">Colleen Hoover's most emotionally precise novel vs Vanessa Caswill's 2026 film. Maika Monroe is perfectly cast — but Kenna's letters and the dual perspective can't survive adaptation.</p>
+      <p class="spotlight-hero-card-hook">Colleen Hoover's most emotionally precise novel vs. the 2025 film. Kenna's guilt-as-identity loop is the engine of the book — and it's exactly what adaptation can't survive.</p>
       <span class="spotlight-cta">Read the spotlight &rarr;</span>
     </div>
     <div class="spotlight-hero-card-image">
-      <img src="images/reminders-of-him.jpg" alt="Reminders of Him" loading="lazy"
-           onerror="this.style.display='none'">
+      <img src="images/reminders-of-him.jpg" alt="Reminders of Him" loading="lazy" onerror="this.style.display='none'">
     </div>
   </a>
 
-  <!-- Grid of remaining spotlights -->
-  <p class="featured-section-label">All Spotlights</p>
+  <!-- Emotional spotlights -->
+  <p class="featured-section-label">Emotional Spotlights</p>
+  <div class="spotlight-grid">
 
+    <a class="spotlight-card" href="/spotlight-it-ends-with-us">
+      <div class="spotlight-card-image">
+        <img src="images/it-ends-with-us.jpg" alt="It Ends With Us" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Emotional Spotlight</div>
+        <h3>It Ends With Us: Hoover's Most Difficult Story</h3>
+        <p class="spotlight-card-hook">The book that made millions cry and the film that sparked controversy before it opened. What gets lost when denial becomes spectacle.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-normal-people">
+      <div class="spotlight-card-image">
+        <img src="images/normal-people.jpg" alt="Normal People" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Emotional Spotlight</div>
+        <h3>Normal People: Rooney's Internal World on Screen</h3>
+        <p class="spotlight-card-hook">Sally Rooney's prose lives inside her characters' heads. The Hulu series is visually intimate but emotionally thinner — here's exactly where it loses the thread.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-where-the-crawdads-sing">
+      <div class="spotlight-card-image">
+        <img src="images/where-the-crawdads-sing.jpg" alt="Where the Crawdads Sing" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Emotional Spotlight</div>
+        <h3>Where the Crawdads Sing: Atmosphere vs. Adaptation</h3>
+        <p class="spotlight-card-hook">Delia Owens built a world of isolation and survival. The film preserves the plot but loses the loneliness that makes it ache.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-a-little-life">
+      <div class="spotlight-card-image">
+        <img src="images/a-little-life.jpg" alt="A Little Life" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Emotional Spotlight</div>
+        <h3>A Little Life: The Unadaptable Novel</h3>
+        <p class="spotlight-card-hook">Hanya Yanagihara's 700-page trauma epic has never been filmed — and probably shouldn't be. Here's why the stage adaptation changes everything.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-the-fault-in-our-stars">
+      <div class="spotlight-card-image">
+        <img src="images/the-fault-in-our-stars.jpg" alt="The Fault in Our Stars" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Emotional Spotlight</div>
+        <h3>The Fault in Our Stars: Green's Voice vs. the Camera</h3>
+        <p class="spotlight-card-hook">John Green's wit and grief are inseparable in the novel. The film captures one and loses the other — and you feel the difference immediately.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Prestige and universe spotlights -->
+  <p class="featured-section-label">Prestige &amp; Universe Spotlights</p>
   <div class="spotlight-grid">
 
     <a class="spotlight-card" href="/spotlight-lonesome-dove">
       <div class="spotlight-card-image">
-        <img src="images/lonesome-dove.jpg" alt="Lonesome Dove" loading="lazy"
-             onerror="this.style.display='none'">
+        <img src="images/lonesome-dove.jpg" alt="Lonesome Dove" loading="lazy" onerror="this.style.display='none'">
       </div>
       <div class="spotlight-card-body">
         <div class="spotlight-card-badge">Universe Spotlight</div>
         <h3>Lonesome Dove: The Novel That Rewrote the Western</h3>
-        <p class="spotlight-card-hook">Larry McMurtry's 850-page Pulitzer Prize winner and the 1989 miniseries that became a cultural phenomenon. We map the full universe.</p>
-        <span class="spotlight-card-link">Read &rarr;</span>
-      </div>
-    </a>
-
-    <a class="spotlight-card" href="/spotlight-dune">
-      <div class="spotlight-card-image">
-        <img src="images/dune.jpg" alt="Dune" loading="lazy"
-             onerror="this.style.display='none'">
-      </div>
-      <div class="spotlight-card-body">
-        <div class="spotlight-card-badge">Film Spotlight</div>
-        <h3>Dune: Frank Herbert's Vision vs. Villeneuve's Films</h3>
-        <p class="spotlight-card-hook">The most ambitious sci-fi novel of the 20th century and the two-part adaptation that finally got it right. How much did it change, and does it matter?</p>
-        <span class="spotlight-card-link">Read &rarr;</span>
-      </div>
-    </a>
-
-    <a class="spotlight-card" href="/spotlight-fight-club">
-      <div class="spotlight-card-image">
-        <img src="images/fight-club.jpg" alt="Fight Club" loading="lazy"
-             onerror="this.style.display='none'">
-      </div>
-      <div class="spotlight-card-body">
-        <div class="spotlight-card-badge">Film Spotlight</div>
-        <h3>Fight Club: Palahniuk's Novel vs. Fincher's Film</h3>
-        <p class="spotlight-card-hook">A rare case where the film may surpass its source. Fincher took Palahniuk's provocation and turned it into something even more unsettling.</p>
+        <p class="spotlight-card-hook">McMurtry's 850-page Pulitzer winner and the 1989 miniseries that became a cultural phenomenon. We map the full universe.</p>
         <span class="spotlight-card-link">Read &rarr;</span>
       </div>
     </a>
 
     <a class="spotlight-card" href="/spotlight-gone-girl">
       <div class="spotlight-card-image">
-        <img src="images/gone-girl.jpg" alt="Gone Girl" loading="lazy"
-             onerror="this.style.display='none'">
+        <img src="images/gone-girl.jpg" alt="Gone Girl" loading="lazy" onerror="this.style.display='none'">
       </div>
       <div class="spotlight-card-body">
-        <div class="spotlight-card-badge">Film Spotlight</div>
-        <h3>Gone Girl: Flynn's Thriller vs. Fincher's Film</h3>
-        <p class="spotlight-card-hook">Gillian Flynn wrote the screenplay herself. The result is a masterclass in what adaptation can do — and what it has to sacrifice to do it.</p>
+        <div class="spotlight-card-badge">Prestige Spotlight</div>
+        <h3>Gone Girl: Flynn Adapts Her Own Thriller</h3>
+        <p class="spotlight-card-hook">Gillian Flynn wrote the screenplay herself. A masterclass in what adaptation can do — and what it has to sacrifice.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-dune">
+      <div class="spotlight-card-image">
+        <img src="images/dune.jpg" alt="Dune" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Prestige Spotlight</div>
+        <h3>Dune: Herbert's Vision vs. Villeneuve's Films</h3>
+        <p class="spotlight-card-hook">The most ambitious sci-fi novel of the 20th century and the two-part adaptation that finally got it right — at a cost.</p>
+        <span class="spotlight-card-link">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a class="spotlight-card" href="/spotlight-fight-club">
+      <div class="spotlight-card-image">
+        <img src="images/fight-club.jpg" alt="Fight Club" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="spotlight-card-body">
+        <div class="spotlight-card-badge">Prestige Spotlight</div>
+        <h3>Fight Club: A Rare Case Where Film Wins</h3>
+        <p class="spotlight-card-hook">Fincher took Palahniuk's provocation and turned it into something even more unsettling. The book is the rough draft.</p>
         <span class="spotlight-card-link">Read &rarr;</span>
       </div>
     </a>
 
     <a class="spotlight-card" href="/spotlight-the-shining">
       <div class="spotlight-card-image">
-        <img src="images/the-shining.jpg" alt="The Shining" loading="lazy"
-             onerror="this.style.display='none'">
+        <img src="images/the-shining.jpg" alt="The Shining" loading="lazy" onerror="this.style.display='none'">
       </div>
       <div class="spotlight-card-body">
-        <div class="spotlight-card-badge">Film Spotlight</div>
-        <h3>The Shining: King's Novel vs. Kubrick's Film</h3>
-        <p class="spotlight-card-hook">Stephen King famously hated it. Stanley Kubrick made one of the greatest horror films ever made. Both are right, and both are wrong.</p>
+        <div class="spotlight-card-badge">Prestige Spotlight</div>
+        <h3>The Shining: King vs. Kubrick</h3>
+        <p class="spotlight-card-hook">King famously hated it. Kubrick made one of the greatest horror films ever made. Both are right — for completely different reasons.</p>
         <span class="spotlight-card-link">Read &rarr;</span>
       </div>
     </a>
@@ -333,7 +394,7 @@
   </div>
 
   <div class="featured-explainer">
-    <p><strong>What is a spotlight?</strong> Our spotlight pages go beyond a standard book vs. movie comparison. They cover the full picture — the source novel in depth, the adaptation choices, sequels and related works, historical context, and a definitive verdict on what to read, watch, and in what order. They take longer to read and longer to write. We only make them for adaptations that reward that level of attention.</p>
+    <p><strong>What is a spotlight?</strong> Our spotlight pages go beyond a standard comparison. They cover the emotional machinery of the source novel, the adaptation choices that change or preserve it, and a definitive verdict on what to read, watch, and in what order. We only make them for adaptations that reward that level of attention.</p>
   </div>
 
 </div>

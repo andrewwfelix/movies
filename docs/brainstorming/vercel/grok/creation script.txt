@@ -1,0 +1,64 @@
+-- =============================================
+-- BooksVersusMovies Supabase Phase 1 Setup
+-- Run this in Supabase SQL Editor
+-- =============================================
+
+-- Drop tables if they exist (for re-running during development)
+DROP TABLE IF EXISTS brainstorming CASCADE;
+DROP TABLE IF EXISTS notes CASCADE;
+DROP TABLE IF EXISTS decisions CASCADE;
+DROP TABLE IF EXISTS tasks CASCADE;
+DROP TABLE IF EXISTS analytics_history CASCADE;
+
+-- Create tables (as defined above)
+CREATE TABLE analytics_history (...);   -- paste full definition
+CREATE TABLE tasks (...);
+CREATE TABLE decisions (...);
+CREATE TABLE notes (...);
+CREATE TABLE brainstorming (...);
+
+-- Create indexes
+CREATE INDEX idx_analytics_site_date ON analytics_history(site_id, date);
+CREATE INDEX idx_tasks_site_status ON tasks(site_id, status);
+CREATE INDEX idx_decisions_site ON decisions(site_id);
+CREATE INDEX idx_notes_site_slug ON notes(site_id, slug);
+CREATE INDEX idx_brainstorming_site ON brainstorming(site_id);
+
+-- Enable RLS
+ALTER TABLE analytics_history ENABLE ROW LEVEL SECURITY;
+ALTER TABLE tasks ENABLE ROW LEVEL SECURITY;
+ALTER TABLE decisions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE notes ENABLE ROW LEVEL SECURITY;
+ALTER TABLE brainstorming ENABLE ROW LEVEL SECURITY;
+
+-- Read-only policies for dashboard
+CREATE POLICY "anon_read_analytics" ON analytics_history FOR SELECT TO anon USING (true);
+CREATE POLICY "anon_read_tasks"     ON tasks FOR SELECT TO anon USING (true);
+CREATE POLICY "anon_read_decisions" ON decisions FOR SELECT TO anon USING (true);
+CREATE POLICY "anon_read_notes"     ON notes FOR SELECT TO anon USING (true);
+CREATE POLICY "anon_read_brainstorm" ON brainstorming FOR SELECT TO anon USING (true);
+
+-- Optional: Add update triggers for updated_at
+CREATE OR REPLACE FUNCTION update_updated_at_column()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_at = now();
+    RETURN NEW;
+END;
+$$ language 'plpgsql';
+
+CREATE TRIGGER update_tasks_updated_at 
+    BEFORE UPDATE ON tasks 
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+CREATE TRIGGER update_decisions_updated_at 
+    BEFORE UPDATE ON decisions 
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+CREATE TRIGGER update_notes_updated_at 
+    BEFORE UPDATE ON notes 
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+CREATE TRIGGER update_brainstorming_updated_at 
+    BEFORE UPDATE ON brainstorming 
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();

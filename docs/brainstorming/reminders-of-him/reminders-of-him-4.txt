@@ -1,0 +1,210 @@
+Good — this script is actually already strong enough to support the strategy shift we just talked about. You don’t need to rebuild it; you need to adjust how you feed it slugs and prompts so it aligns with your new “emotional hierarchy” model.
+
+I’ll break this into what matters operationally.
+
+1) What your script already gets right (important)
+
+Your pipeline already supports:
+
+✔ Strong “Spotlight” concept separation
+
+You’re not doing generic reviews — you’re doing:
+
+deep literary context
+adaptation analysis
+verdict layer
+FAQ targeting real queries
+
+That already matches your “authority journalism” direction.
+
+✔ Good structure for scaling clusters
+
+Because each spotlight is:
+
+standalone
+internally rich
+schema validated
+consistently templated
+
+This is exactly what you want for SEO clustering.
+
+✔ Flexible “featureType”
+
+This is actually the key lever you haven’t fully exploited yet.
+
+Right now you render different types of intellectual content, but you’re not using it strategically.
+
+2) The real change you should make (this is the insight)
+
+Right now your system treats all slugs equally:
+
+node pipeline-spotlight.js --slug X
+
+But your SEO reality (Reminders of Him performance) says:
+
+Not all spotlights are the same “type of intent”
+
+So you should explicitly classify slugs BEFORE generation.
+
+3) Add a “Spotlight Type System” (THIS is the upgrade)
+
+You need to assign each slug one of these types:
+
+🔴 TYPE A — Emotional Impact Spotlights (highest priority)
+
+These are your Reminders of Him winners
+
+Examples:
+
+reminders-of-him
+it-ends-with-us
+me-before-you
+normal-people
+people-we-meet-on-vacation
+fault-in-our-stars
+Prompt behavior:
+emotional framing
+moral tension
+“what it does to you”
+adaptation loss emphasis
+
+👉 This is your MONEY TRAFFIC LAYER
+
+🟠 TYPE B — Prestige Adaptation Spotlights
+
+Examples:
+
+dune
+fight-club
+gone-girl
+the-shining
+blade-runner
+Prompt behavior:
+auteur analysis
+adaptation philosophy
+fidelity vs transformation debates
+
+👉 This is your AUTHORITY LAYER
+
+🟡 TYPE C — Universe / Scope Spotlights
+
+Examples:
+
+lonesome-dove
+lord-of-the-rings (future)
+game-of-thrones (future)
+Prompt behavior:
+ecosystem mapping
+sequels + adaptations
+timeline structure
+
+👉 This is your DEPTH / TIME ON SITE LAYER
+
+4) What you should change in your script (minimal but powerful)
+Add a type flag:
+node scripts/pipeline-spotlight.js --slug lonesome-dove --type universe
+
+or
+
+--type emotional
+--type prestige
+Then inject it into userContent:
+
+Replace:
+
+const userContent = `Generate a complete feature page for slug: "${SLUG}"\nToday's date: ${TODAY}`;
+
+WITH:
+
+const TYPE = get('--type', 'prestige');
+
+const userContent = `
+Generate a complete spotlight page.
+
+Slug: "${SLUG}"
+Type: "${TYPE}"
+Today's date: ${TODAY}
+
+This type defines the framing:
+
+- emotional → reader impact, moral tension, emotional fidelity loss, BookTok-style resonance
+- prestige → auteur intent, adaptation philosophy, structural differences, critical analysis
+- universe → world-building scope, adaptations across formats, franchise cohesion
+
+You MUST adapt tone, sections, and verdict style to the type.
+`;
+5) Why this matters for your “Reminders of Him” observation
+
+Right now you discovered:
+
+Emotional pages outperform structural pages
+
+But your system is currently:
+
+structurally uniform spotlight generator
+
+That mismatch is why you’re not fully scaling the insight.
+
+Once you add TYPE:
+
+you stop treating all slugs equally
+you let SEO intent shape content depth and framing
+6) Your homepage strategy ties directly into this
+
+Your feature section:
+
+Right now:
+
+mixed prestige (Dune, Fight Club)
+emotional (Reminders of Him)
+
+After this change:
+
+You should reorder by TYPE, not popularity
+Emotional Spotlights (A)
+Prestige Spotlights (B)
+Universe Spotlights (C)
+
+Because:
+
+emotional = CTR
+prestige = authority
+universe = dwell time
+
+7) One more important upgrade (low effort, high impact)
+
+Add this to JSON output:
+
+data.clusterType = TYPE;
+
+Then you can later:
+
+build dynamic homepage grouping
+generate cluster pages automatically
+analyze which cluster drives traffic
+8) The real strategic conclusion
+
+You are no longer building:
+
+a collection of spotlight pages
+
+You are building:
+
+a multi-intent adaptation intelligence system
+
+And your script is already 80% there.
+
+The missing 20% is just:
+
+explicit intent labeling (emotional / prestige / universe)
+
+If you want next step
+
+I can help you design:
+
+the exact prompt templates per TYPE (this is where quality jumps a lot)
+homepage auto-ranking logic based on clusterType + CTR
+or 
+a “Reminders-of-Him-style generator preset” that reliably reproduces your best performing tone
+
+Just tell me 👍

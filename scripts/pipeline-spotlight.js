@@ -213,7 +213,13 @@ const esc = s => (s || '').toString()
 function renderParagraphs(text) {
   return (text || '').split('\n\n')
     .filter(p => p.trim())
-    .map(p => `<p>${esc(p.trim())}</p>`)
+    .map(p => {
+      // Convert markdown bold/italic to HTML (safety net)
+      let html = esc(p.trim());
+      html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+      return `<p>${html}</p>`;
+    })
     .join('\n');
 }
 
@@ -250,18 +256,32 @@ function renderFAQ(faq) {
 }
 
 function renderRelated(slugs) {
-  const reviewsDir = path.join(ROOT, 'data', 'reviews');
+  // Check both data/reviews and pipeline/2-revised for title lookup
+  // Check if a spotlight page exists for this slug — link there if so
   return slugs.map(slug => {
     let title = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    const jsonPath = path.join(reviewsDir, `${slug}.json`);
-    if (fs.existsSync(jsonPath)) {
-      try {
-        const r = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-        title = r.bookTitle || title;
-      } catch {}
+
+    // Try to get real book title from either source
+    const reviewPaths = [
+      path.join(REVISED_DIR, `${slug}.json`),
+      path.join(REVIEWS_DIR, `${slug}.json`),
+    ];
+    for (const p of reviewPaths) {
+      if (fs.existsSync(p)) {
+        try {
+          const r = JSON.parse(fs.readFileSync(p, 'utf8'));
+          title = r.bookTitle || title;
+          break;
+        } catch {}
+      }
     }
+
+    // Link to spotlight if one exists, otherwise standard review
+    const spotlightPath = path.join(ROOT, `spotlight-${slug}.html`);
+    const href = fs.existsSync(spotlightPath) ? `/spotlight-${slug}` : `/${slug}`;
+
     return `
-      <a class="related-card" href="/${esc(slug)}">
+      <a class="related-card" href="${esc(href)}">
         <div class="related-cover">
           <img src="images/${esc(slug)}.jpg" alt="${esc(title)} book cover" loading="lazy"
                onerror="this.parentElement.style.display='none'">
@@ -599,7 +619,19 @@ async function run() {
   }
 
   const prompt      = fs.readFileSync(PROMPT_PATH, 'utf8').trim();
-  const userContent = `Generate a complete feature page for slug: "${SLUG}"\nToday's date: ${TODAY}`;
+
+  // Build valid slug list so model doesn't hallucinate relatedSlugs
+  const validSlugs = fs.readdirSync(REVISED_DIR)
+    .filter(f => f.endsWith('.json'))
+    .map(f => f.replace('.json', ''))
+    .sort()
+    .join('\n');
+
+  const userContent = `Generate a complete feature page for slug: "${SLUG}"
+Today's date: ${TODAY}
+
+VALID relatedSlugs — you MUST only use slugs from this exact list:
+${validSlugs}`;
 
   process.stdout.write(`  ↻  Generating via ${m.model}...`);
 
@@ -639,6 +671,10 @@ async function run() {
     const cut = data.pageTitle.lastIndexOf(' ', 67);
     data.pageTitle = (cut > 20 ? data.pageTitle.slice(0, cut) : data.pageTitle.slice(0, 67)) + '…';
     console.log(`  ⚠  pageTitle truncated to ${data.pageTitle.length} chars`);
+  }
+  if (data.relatedSlugs && data.relatedSlugs.length > 6) {
+    data.relatedSlugs = data.relatedSlugs.slice(0, 6);
+    console.log(`  ⚠  relatedSlugs truncated to 6`);
   }
 
   // ── Validate ───────────────────────────────────────────────────────────────

@@ -1,0 +1,194 @@
+🧠 What we changed (and why)
+
+We just did a structural correction of your content system, not a “bug fix.”
+
+The core problem wasn’t broken scripts — it was multiple competing sources of truth:
+
+JSON review data (data/reviews/*.json)
+HTML spotlight pages (hand-written / partially generated)
+Repair scripts that tried to “patch” HTML after the fact
+
+That architecture inevitably produces drift, silent failures, and inconsistent recommendations.
+
+🎯 The key insight
+
+HTML should never be repaired. It should be re-rendered from canonical data.
+
+So we moved you from:
+
+❌ Old model (fragile)
+HTML → parse → detect issues → patch → hope nothing broke
+JSON (separate system) → unrelated logic
+repair scripts → heuristic fixes (“a-beautiful-mind” fallback issue)
+✅ New model (deterministic)
+JSON (source of truth)
+   ↓
+graph builder (deterministic relationships)
+   ↓
+renderer (rebuild HTML from scratch)
+   ↓
+spotlight pages (pure output)
+
+This eliminates:
+
+silent parsing failures
+broken slug detection mismatches
+duplicate repair logic
+inconsistent related-card generation
+“fallback spam” replacements
+📦 What we changed (file-by-file)
+1. scripts/utils/build-related-graph.js (NEW)
+Why it exists
+
+This replaces all heuristic matching in repair scripts.
+
+What it does
+Reads all data/reviews/*.json
+Extracts related[] fields
+Normalizes them into a clean adjacency graph
+Why this matters
+
+Instead of guessing “best replacement,” we now have:
+
+a deterministic graph of valid relationships
+
+This is the foundation of everything.
+
+2. scripts/utils/render-spotlights.js (NEW — core system)
+Why it exists
+
+This replaces ALL:
+
+fix-related-cards-spotlight.js
+fix-related-cards.js
+any HTML patching logic
+What it does
+Loads the graph
+Finds each spotlight page slug
+Rebuilds the entire .related-grid
+Writes clean HTML back
+Why this matters
+
+We stopped “repairing HTML” and started:
+
+regenerating UI from data
+
+This eliminates drift permanently.
+
+3. scripts/utils/validate-spotlights.js (OPTIONAL / future tool)
+Why it exists
+
+Debugging + sanity checks only.
+
+What it would do
+Compare spotlight HTML → graph
+Report mismatches
+Never writes files
+Why this matters
+
+You now separate:
+
+rendering (authoritative)
+validation (diagnostic only)
+
+This is critical for stability.
+
+4. DEPRECATED (implicitly replaced)
+❌ fix-related-cards.js
+❌ fix-related-cards-spotlight.js
+Why they are now obsolete
+
+They were based on:
+
+heuristic scoring (genreScore)
+fallback replacement logic
+cross-domain guessing (“a-beautiful-mind” bug you saw)
+mixed source assumptions
+Why that failed
+
+Because they assumed:
+
+“we can infer correct relationships after the fact”
+
+But your system already has the relationships — just not centralized.
+
+So we removed inference entirely.
+
+5. DATA MODEL (unchanged, but now authoritative)
+data/reviews/*.json
+
+Now becomes:
+
+the ONLY source of truth
+includes:
+slug
+bookTitle
+related[]
+Why this is critical
+
+Everything now depends on:
+
+“If it's not in JSON, it doesn't exist.”
+
+🔥 What specifically broke before (important insight)
+
+Your logs showed:
+
+Broken: 0
+Fixed: 0
+Spotlights found: 11
+
+That wasn’t a bug — it was a symptom of:
+
+1. HTML extraction mismatch
+
+Your script likely failed to correctly parse:
+
+href="/slug"
+or .related-card structure
+2. Comparison mismatch
+
+Different slug formats:
+
+slug
+/slug
+slug.html
+3. Hidden architectural issue
+
+Even if parsing worked, it was still validating the wrong thing:
+
+HTML was treated as a data source (it is not)
+
+🧩 Final state of the system
+Before
+
+You had:
+
+3 overlapping systems
+2 repair layers
+1 unstable UI layer
+heuristic fixes
+Now
+
+You have:
+
+1 data layer (JSON)
+1 graph layer (deterministic relationships)
+1 renderer (HTML output)
+optional validator
+🚀 What this unlocks next
+
+Now that this is stable, you can safely move to:
+
+1. Fully auto-generated related cards
+
+(no manual maintenance)
+
+2. Genre-aware recommendation weighting
+3. Semantic similarity engine (optional upgrade)
+“emotionally similar stories”
+“tone matching”
+“theme clustering”
+
+If you want next step, I can help you upgrade this into a 
+recommendation engine instead of a fixed graph system — but what you’ve built now is already the correct foundation.

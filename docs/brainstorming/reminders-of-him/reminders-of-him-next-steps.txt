@@ -1,0 +1,150 @@
+🎯 Goal
+
+Get to this state:
+
+Every spotlight page is 100% generated from related-graph.json
+No manual HTML edits needed for related cards ever again
+
+1. 🔁 Run the graph builder (source of truth refresh)
+
+First step every time:
+
+node scripts/utils/build-related-graph.js
+Why
+
+This ensures your relationship graph reflects the latest:
+
+data/reviews/*.json
+no drift
+no stale links
+2. 🧱 Fully re-render spotlight pages
+
+Now run:
+
+node scripts/utils/render-spotlights.js
+What this should do
+
+For each:
+
+spotlight-dune.html
+spotlight-gone-girl.html
+etc.
+
+It will:
+
+✔ Extract slug
+✔ Look up related graph
+✔ Replace .related-grid entirely
+✔ Write file back cleanly
+
+3. 🔍 Verify output (important sanity check)
+
+Run a quick validation pass:
+
+node scripts/utils/validate-spotlights.js
+
+If you don’t have this yet, it should check:
+
+all related slugs exist in JSON
+no empty grids
+no orphan cards
+no duplicates
+4. 🧹 One-time cleanup (VERY important)
+
+You should now:
+
+Delete or retire:
+scripts/utils/fix-related-cards.js
+scripts/utils/fix-related-cards-spotlight.js
+Why
+
+If they still exist, you will eventually:
+
+accidentally run them
+reintroduce heuristic replacement bugs
+get “a-beautiful-mind fallback pollution” again
+5. 🧠 Lock the system (critical architectural step)
+
+Add this rule somewhere obvious (README or top of scripts):
+
+RULE OF TRUTH
+Related cards are NEVER edited in HTML.
+
+They are generated from:
+data/reviews/*.json → related-graph.json → render-spotlights.js
+6. 🧪 Add a safety guard (recommended next improvement)
+
+In render-spotlights.js, add:
+
+Fail fast if graph missing:
+if (!graph[slug]) {
+  console.warn(`⚠ No graph entry for ${slug}`);
+}
+Why
+
+Prevents silent empty related sections.
+
+7. (Optional but powerful) Force full rebuild mode
+
+Add flag:
+
+node scripts/utils/render-spotlights.js --force
+
+Where:
+
+--force = always rewrite files
+default = only rewrite if diff detected
+
+This prevents unnecessary writes later.
+
+🧩 What “success” looks like
+
+After this run:
+
+Every spotlight page will have:
+consistent related cards
+correct slugs
+no broken links
+no heuristic replacements
+no drift from JSON
+⚠️ What caused your earlier confusion
+
+You saw:
+
+graph script = correct results
+spotlight script = 0 broken
+
+Because earlier system tried to:
+
+“infer correctness from HTML structure”
+
+Instead of:
+
+“render from known-good graph”
+
+That’s why it looked like nothing was broken.
+
+🚀 Recommended final pipeline (clean version)
+
+Once stable, your full system becomes:
+
+1. Update data/reviews/*.json
+2. node build-related-graph.js
+3. node render-spotlights.js
+4. deploy
+
+No repair scripts. No patching. No drift.
+
+If you want next upgrade
+
+I can help you evolve this into:
+
+🔥 “Auto Related Engine v2”
+no manual related arrays needed
+embeddings-based similarity
+emotionally similar movies/books
+dynamic sidebar generation
+
+That would eliminate step 1 entirely.
+
+But for now — run the 3-step pipeline above and you’re back to a stable system.

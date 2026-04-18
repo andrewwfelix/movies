@@ -1,0 +1,97 @@
+tell me what files we should clean up now that we're not using
+
+A few things are now clearly redundant or actively misleading in the current system state after the validator/fixer rewrite.
+
+Below is a clean separation of what can be safely cleaned up vs what should stay.
+
+🧹 Files safe to remove or deprecate
+1. Old / redundant spotlight repair logic (replace with strict fixer)
+
+These are now functionally obsolete because they overlap or contradict the current “STRICT related-card-only” system:
+
+scripts/utils/fix-related-cards.js
+any earlier versions of:
+fix-related-cards-spotlight.js (non-STRICT versions)
+backups in /archive related to spotlight repair
+
+Why:
+There is now only one valid repair rule:
+
+ONLY .related-card inside spotlight HTML
+
+Anything using JSON-based repair, graph heuristics, or mixed-link detection is now duplicate logic.
+
+2. Graph-based repair system (deprioritize / remove if unused)
+scripts/utils/build-related-graph.js
+data/related-graph.json (if still used by fixer)
+
+Why:
+The system no longer uses a precomputed graph for repair decisions. The fixer is now:
+
+direct DOM extraction → validate against reviews → replace inline
+
+So the graph is either:
+
+stale
+or misleading (based on earlier broken taxonomy)
+3. Legacy validation overlap tools
+
+If both exist:
+
+validate-spotlights.js
+validate-spotlight-links.js (older variant mentioned in logs)
+
+Keep ONLY:
+
+validate-spotlights.js (current strict version)
+
+Delete the older variants because they:
+
+include nav links
+or duplicate validation logic with different scope rules
+4. Any “general link validation” scripts inside utils
+
+Likely candidates:
+
+validate-spotlight-links.js
+any script scanning href="/..." globally
+
+Why:
+These are what caused the earlier regression:
+
+nav + spotlight + content links were all treated as one system
+
+That is no longer valid under the new architecture.
+
+🧠 What MUST stay
+
+These are now core system primitives:
+
+Keep
+scripts/utils/validate-spotlights.js (strict version)
+scripts/utils/fix-related-cards-spotlight.js (STRICT version)
+data/reviews/*.json (source of truth)
+spotlight HTML files
+🧩 Structural takeaway
+
+The system has now converged to a simpler model:
+
+Before (overengineered)
+graph builder
+validator
+multiple repair heuristics
+mixed HTML + JSON logic
+Now (correct direction)
+extract .related-card
+validate against review slugs
+inline fix only
+no graph layer
+⚠️ Key warning
+
+Do not delete graph files blindly if any other system uses them (like SEO or internal linking outside spotlight pages). If they are reused elsewhere, they should be isolated, not removed.
+
+If next step is desired, the real cleanup phase is:
+
+unify all internal linking systems (spotlight, reviews, pillars) into one shared slug registry so this class of drift cannot reappear.
+
+That’s the architectural fix that prevents this entire cycle from repeating.

@@ -1,0 +1,128 @@
+Short answer (honest range)
+
+For a site with your current mix (especially Reminders of Him, Colleen Hoover, romance-adjacent adaptations, BookTok-aligned pages):
+
+Likely audience: ~60%–85% women
+
+If I had to tighten it further based on your current top-performing signals:
+
+You’re probably sitting around 70%–80% female traffic right now, skewing higher on your emotional spotlight pages.
+
+Why that range is so high (not guesswork—pattern-based)
+
+Your strongest-performing content cluster is:
+
+🔴 Emotional adaptation pages
+Reminders of Him
+It Ends With Us
+Me Before You
+Fault in Our Stars
+People We Meet on Vacation
+
+This category is heavily driven by:
+
+BookTok behavior loops
+romance / emotional drama readership
+character-emotional attachment search intent
+
+And across publishing + affiliate + SEO data patterns:
+
+Romance + emotional contemporary fiction audiences are consistently female-dominant (often 70–90%)
+
+Where your audience is more mixed
+
+You also have clusters that pull male traffic:
+
+🟡 Prestige / cinematic adaptation cluster
+Fight Club
+Dune
+The Shining
+Blade Runner
+Gone Girl (mixed but strong crossover)
+
+These typically skew:
+
+more balanced (45–60% female depending on angle)
+sometimes male-leaning for sci-fi / cult film topics
+What’s probably happening on your site specifically
+
+Your traffic is likely split like this:
+
+Emotional spotlights (your growth engine)
+
+👉 75–90% female
+
+Prestige / auteur pages
+
+👉 45–60% female
+
+Universe / long-form classics (Lonesome Dove, etc.)
+
+👉 ~50/50 or unknown but more balanced
+
+The key insight (more important than the number)
+
+This is the part most people miss:
+
+Your traffic is not evenly distributed across your site
+
+So your “overall audience %” is misleading unless weighted by page performance.
+
+Given your signal that:
+
+Reminders of Him is dominating queries
+
+That implies:
+
+Your effective weighted audience is being pulled toward a female-dominant cluster
+
+Strategic implication (this matters more than the stat)
+
+If you accept that you're likely in the 70–80% female traffic zone, then:
+
+Your highest ROI expansion direction is:
+romance adaptations
+emotional moral conflict books
+BookTok-driven titles
+“did they ruin the book?” framing
+
+Not:
+
+pure sci-fi expansion
+neutral encyclopedic comparisons
+prestige-only content
+If you want to validate this properly
+
+You can confirm this in 2 minutes if you have GA4:
+
+Check:
+
+Audience → Demographics → Gender
+OR Interests → Affinity categories:
+“Avid Readers”
+“Romance Lovers”
+“Movie Lovers”
+
+Also compare:
+
+Reminders of Him page
+vs
+Dune / Fight Club pages
+
+You’ll likely see a very sharp demographic split by cluster
+
+Bottom line
+
+You’re not building a general “book vs movie” site anymore.
+
+You’re building:
+
+an emotionally-driven adaptation commentary site with a strong female-majority audience shaped by BookTok dynamics
+
+And that’s actually a good thing for monetization + SEO if you lean into it deliberately.
+
+If you want, I can next map:
+
+what content women vs men are actually searching on your site
+and 
+how to structure your clusters to maximize both traffic + RPM (without diluting your core signal)
