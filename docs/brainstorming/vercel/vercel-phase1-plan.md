@@ -320,3 +320,62 @@ Weekly Monday:  /api/docs-sync — markdown → Supabase sync
 - ISR / static site regeneration (Phase 2)
 - Multi-site site_id usage (Phase 2)
 - Netlify retirement (Phase 2)
+
+---
+
+## 8. Grok Review Notes (2026-04-18)
+
+Grok reviewed Phase 1 plan and schema. Overall verdict: ready to execute with small tweaks.
+
+### What Grok confirmed as correct
+- Risk isolation is excellent — live site stays untouched during entire Phase 1
+- Schema design is clean and well-scoped for Phase 1
+- site_id from day one is the right call for future multi-site
+- Vercel Crons for GSC refresh and docs-sync are the right automation pattern
+- Migration scripts section is correctly placed before API build
+
+### Grok's suggested improvements (incorporated)
+- Add CHECK constraints on status and priority fields in tasks and decisions tables
+- Add DESC to analytics_history date index for faster latest-first queries
+- Add updated_at trigger function — was in plan but not in original SQL
+- Consider API key validation in Vercel functions as additional security layer beyond RLS
+- Bump Vercel function memory to 1024 MB if timeouts appear on GSC fetches
+- Add graceful degradation in dashboard — fall back to cached JSON if /api/gsc fails
+
+### Grok's sprint order recommendation
+Sprint 1 (Momentum): Live GSC API + dashboard Tab 1 + Beehiiv auto-draft
+Sprint 2 (Foundation): Supabase schema + tasks/decisions/notes + migration scripts
+Sprint 3 (Content flow): Simple /api/generate (draft only) + docs-sync cron
+Sprint 4 (Scale prep): Redirects table, redirects cleanup, programmatic pages if traffic warrants
+
+### What to delay (Grok confirmed)
+- Full AI pipeline rewrite — wait until Phase 1 stable
+- Realtime subscriptions — no team, not needed yet
+- RBAC / team table — premature
+- Programmatic SEO hubs, auto internal linking — Phase 3+
+- Audit logs / version history — nice-to-have, not now
+
+### Phase 1.5 — Site config table (post Phase 1)
+Grok suggested adding a site_config table to Supabase so nav items, default featured slugs,
+hero tagline etc. can be edited from the dashboard without code changes. Table design:
+
+```sql
+CREATE TABLE site_config (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  site_id     int NOT NULL DEFAULT 1,
+  key         text NOT NULL,
+  value       jsonb NOT NULL,
+  description text,
+  updated_at  timestamptz DEFAULT now(),
+  updated_by  text,
+  UNIQUE(site_id, key)
+);
+```
+
+Example rows: nav_items, default_featured, hero_tagline, spotlight_heading.
+API routes: GET /api/config and PATCH /api/config/:key.
+Deferred until Phase 1 is stable and running.
+
+### SQL file
+Final canonical schema: scripts/supabase/setup-phase1.sql
+Run this in Supabase SQL Editor to create all Phase 1 tables.
