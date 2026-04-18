@@ -199,3 +199,30 @@ Stack: WordPress, SiteGround (~$2.99/mo), AAWP (~$49/yr), Rank Math, Astra or Ka
 - [x] deploy.js + add-destination.js
 - [x] tree.js --save flag
 - [x] docs/ restructured — reference/, strategy/, research/, archive/
+
+---
+
+## Internationalization Epic
+
+Notes: docs/brainstorming/internationalization-notes.txt
+
+Dependency chain: LLC setup → OneLink → Vercel migration → pipeline-translate.js → Spanish launch
+
+### Workstream 1 — Affiliate / OneLink (after LLC setup)
+
+- [ ] Register international Amazon Associates accounts under RavensEdge AI LLC — CA, UK, AU, DE, FR, IT, ES
+- [ ] Link international store IDs via OneLink in US Associates Central
+- [ ] Add OneTag JavaScript to renderFooter() in pipeline-render.js
+- [ ] Re-render all pages to deploy OneTag across site
+- [ ] Verify OneLink redirects working for international visitors
+- [ ] Evaluate Geniuslink vs OneLink for commission preservation (post-Vercel)
+
+### Workstream 2 — Content Translation (after Vercel)
+
+- [ ] Build pipeline-translate.js — Sonnet multi-pass translation of prose fields
+- [ ] Add --lang flag to pipeline-render.js — outputs to es/, fr/, de/ subfolders
+- [ ] Add hreflang tags to rendered pages for all language variants
+- [ ] Spanish launch — translate all 191 pages (~$7 API cost)
+- [ ] Human QA pass on Spanish CTAs, nav, form labels, affiliate disclosures
+- [ ] Evaluate French and German based on traffic signal at launch
+- [ ] Spanish newsletter — separate Beehiiv publication (after English newsletter has subscribers)
