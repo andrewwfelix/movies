@@ -175,3 +175,31 @@ Promoted: false
 Tags: dashboard, json, llm-context, project-management
 Summary: Dashboard should be a full project command center reading from structured JSON files — Analytics, Project, Decisions, Roadmap, Daily, Notes, Brainstorming.
 Comment: Built and live at /dashboard. The JSON layer makes the dashboard useful as LLM context input, not just a visual. Right architecture for a solo operator.
+
+---
+
+### [ai-daily-analytics-review] AI daily review of full analytics data dump
+Date: 2026-04-17
+LLM: mixed
+Category: tech
+Sentiment: agree
+Signal: high
+Actionable: true
+Promoted: false
+Tags: analytics, ai, automation, gsc, ga4, vercel, cron
+Summary: Once GSC and GA4 integrations are built, run a daily AI pass over the full data dump and surface actionable insights automatically to the dashboard.
+Comment: Right end state. Manual GSC review every Monday is fine now but doesn't scale. Once /api/gsc and /api/analytics are live, a daily Vercel Cron calls Claude Sonnet with the full data dump and writes structured insights JSON to dashboard-data/. Dashboard surfaces it as an Insights tab. High value, zero extra data collection work once integrations exist.
+
+---
+
+### [ga4-engagement-observations] GA4 — Early engagement patterns
+Date: 2026-04-17
+LLM: claude
+Category: seo
+Sentiment: neutral
+Signal: high
+Actionable: true
+Promoted: false
+Tags: ga4, analytics, engagement, homepage, auteurs
+Summary: Homepage bounces fast (24s avg), browse page has strong session depth (7.53 pages/session), Auteurs page underperforms (18s avg), spotlight and review pages hold attention well at 1-2m+.
+Comment: Homepage needs a stronger hook above the fold — 24s average means people are not finding a clear next step. Auteurs page needs investigation — 18s suggests people are not finding what they expected. Verity, Reminders of Him, and Lonesome Dove spotlight are the engagement leaders. Upcoming Adaptations at 2m 25s is punching above its weight. This pattern should feed the daily AI review once GA4 integration is built.
