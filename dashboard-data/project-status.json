@@ -2,15 +2,15 @@
   "meta": {
     "source": "docs/kanban.md",
     "lastUpdated": "2026-04-17",
-    "generatedAt": "2026-04-17"
+    "generatedAt": "2026-04-18"
   },
   "summary": {
-    "total": 116,
-    "todo": 69,
+    "total": 137,
+    "todo": 86,
     "inProgress": 2,
-    "done": 45,
+    "done": 49,
     "today": 3,
-    "highPriority": 27
+    "highPriority": 24
   },
   "sections": [
     {
@@ -250,72 +250,6 @@
       ]
     },
     {
-      "heading": "Vercel Migration (do together, in order)",
-      "key": "vercel migration (do together, in order)",
-      "priority": "other",
-      "category": "other",
-      "isDone": false,
-      "date": null,
-      "items": [
-        {
-          "text": "Migrate from Netlify to Vercel",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        },
-        {
-          "text": "Move reviews HTML out of project root into /reviews subfolder",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        },
-        {
-          "text": "Set up Vercel cron job for pipeline-guide.js (nightly)",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        },
-        {
-          "text": "Email notification for missing book images (nodemailer)",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        },
-        {
-          "text": "Scaffold Docusaurus at docs.booksversusmovies.com",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        },
-        {
-          "text": "Port docs/ folder into Docusaurus sidebar structure",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        },
-        {
-          "text": "Set up Postgres database (Neon or PlanetScale)",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        },
-        {
-          "text": "Abstract pipeline for multi-site reuse (TheApiaryGuide)",
-          "status": "not-started",
-          "priority": "other",
-          "category": "other",
-          "date": null
-        }
-      ]
-    },
-    {
       "heading": "Pipeline Robustness",
       "key": "pipeline robustness",
       "priority": "medium",
@@ -376,34 +310,6 @@
       "date": null,
       "items": [
         {
-          "text": "docs/data/ folder — machine-readable JSON layer",
-          "status": "not-started",
-          "priority": "high",
-          "category": "tech",
-          "date": null
-        },
-        {
-          "text": "project-status.json schema — derived from kanban.md",
-          "status": "not-started",
-          "priority": "high",
-          "category": "tech",
-          "date": null
-        },
-        {
-          "text": "docs-to-json.js — parses kanban.md into structured JSON",
-          "status": "not-started",
-          "priority": "high",
-          "category": "tech",
-          "date": null
-        },
-        {
-          "text": "Dashboard Tab 2: Project Status — reads project-status.json",
-          "status": "not-started",
-          "priority": "high",
-          "category": "tech",
-          "date": null
-        },
-        {
           "text": "Dashboard — wire up GSC API on Vercel migration",
           "status": "not-started",
           "priority": "high",
@@ -419,6 +325,13 @@
         },
         {
           "text": "Dashboard — CSV import script to auto-update latest.json from GSC exports",
+          "status": "not-started",
+          "priority": "high",
+          "category": "tech",
+          "date": null
+        },
+        {
+          "text": "Dashboard Tab 6 Content — review queue and generation status",
           "status": "not-started",
           "priority": "high",
           "category": "tech",
@@ -467,6 +380,121 @@
           "status": "not-started",
           "priority": "high",
           "category": "biz",
+          "date": null
+        }
+      ]
+    },
+    {
+      "heading": "Vercel Epic (do not start until Netlify stable + revenue consistent)",
+      "key": "vercel epic (do not start until netlify stable + revenue consistent)",
+      "priority": "other",
+      "category": "other",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Sprint 1 — /api/generate endpoint with dashboard UI (Tab 6 Content)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 1 — Live GSC API wired to Tab 1 Analytics (no more CSV exports)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 1 — Beehiiv auto-draft on review Published",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 2 — Supabase schema: reviews, analytics_history, redirects tables",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 2 — Migrate 191 reviews into Supabase",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 2 — Vercel static site + ISR setup",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 2 — Redirects table replacing netlify.toml",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 3 — Programmatic SEO pages from DB queries",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 3 — Auto internal linking via DB trigger",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 3 — CTR optimization loop",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 3 — Stale content detector cron",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 4 — site_id in all tables (multi-site architecture)",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 4 — TheApiaryGuide as second site",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 4 — RBAC for Content Researcher via Supabase Auth",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
+          "date": null
+        },
+        {
+          "text": "Sprint 4 — Cross-site dashboard reporting",
+          "status": "not-started",
+          "priority": "other",
+          "category": "other",
           "date": null
         }
       ]
@@ -759,14 +787,21 @@
           "date": "2026-04-17"
         },
         {
-          "text": "Dashboard live at /dashboard — GSC analytics, light color scheme",
+          "text": "Dashboard live at /dashboard — 5 tabs, light color scheme",
           "status": "done",
           "priority": "done",
           "category": "done",
           "date": "2026-04-17"
         },
         {
-          "text": "dashboard/latest.json + dashboard.schema.json",
+          "text": "dashboard/data/ folder — latest.json, project-status.json, decisions.json",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "docs-to-json.js — parses kanban.md and decisions.md into JSON",
           "status": "done",
           "priority": "done",
           "category": "done",
@@ -774,6 +809,27 @@
         },
         {
           "text": "Greenfield JSONs ready: Blade Runner, Shawshank Redemption, Arrival",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "docs branch — 6 core docs standardized to v1 format",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "decisions.md created — 18 architectural decisions",
+          "status": "done",
+          "priority": "done",
+          "category": "done",
+          "date": "2026-04-17"
+        },
+        {
+          "text": "docs-archive.bat + docs-cleanup.bat created",
           "status": "done",
           "priority": "done",
           "category": "done",
@@ -952,6 +1008,107 @@
           "priority": "done",
           "category": "done",
           "date": "2026-04-14"
+        }
+      ]
+    },
+    {
+      "heading": "Internationalization Epic",
+      "key": "internationalization epic",
+      "priority": "future",
+      "category": "i18n",
+      "isDone": false,
+      "date": null,
+      "items": [
+        {
+          "text": "Register international Amazon Associates accounts under RavensEdge AI LLC — CA, UK, AU, DE, FR, IT, ES",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Link international store IDs via OneLink in US Associates Central",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Add OneTag JavaScript to renderFooter() in pipeline-render.js",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Re-render all pages to deploy OneTag across site",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Verify OneLink redirects working for international visitors",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Evaluate Geniuslink vs OneLink for commission preservation (post-Vercel)",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Build pipeline-translate.js — Sonnet multi-pass translation of prose fields",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Add --lang flag to pipeline-render.js — outputs to es/, fr/, de/ subfolders",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Add hreflang tags to rendered pages for all language variants",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Spanish launch — translate all 191 pages (~$7 API cost)",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Human QA pass on Spanish CTAs, nav, form labels, affiliate disclosures",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Evaluate French and German based on traffic signal at launch",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
+        },
+        {
+          "text": "Spanish newsletter — separate Beehiiv publication (after English newsletter has subscribers)",
+          "status": "not-started",
+          "priority": "future",
+          "category": "i18n",
+          "date": null
         }
       ]
     }
@@ -1182,70 +1339,6 @@
       "section": "Medium Priority"
     },
     {
-      "text": "Migrate from Netlify to Vercel",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
-      "text": "Move reviews HTML out of project root into /reviews subfolder",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
-      "text": "Set up Vercel cron job for pipeline-guide.js (nightly)",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
-      "text": "Email notification for missing book images (nodemailer)",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
-      "text": "Scaffold Docusaurus at docs.booksversusmovies.com",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
-      "text": "Port docs/ folder into Docusaurus sidebar structure",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
-      "text": "Set up Postgres database (Neon or PlanetScale)",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
-      "text": "Abstract pipeline for multi-site reuse (TheApiaryGuide)",
-      "status": "not-started",
-      "priority": "other",
-      "category": "other",
-      "date": null,
-      "section": "Vercel Migration (do together, in order)"
-    },
-    {
       "text": "Title retry — pass shorter instruction to LLM before falling back",
       "status": "not-started",
       "priority": "medium",
@@ -1294,38 +1387,6 @@
       "section": "Pipeline Robustness"
     },
     {
-      "text": "docs/data/ folder — machine-readable JSON layer",
-      "status": "not-started",
-      "priority": "high",
-      "category": "tech",
-      "date": null,
-      "section": "Dashboard"
-    },
-    {
-      "text": "project-status.json schema — derived from kanban.md",
-      "status": "not-started",
-      "priority": "high",
-      "category": "tech",
-      "date": null,
-      "section": "Dashboard"
-    },
-    {
-      "text": "docs-to-json.js — parses kanban.md into structured JSON",
-      "status": "not-started",
-      "priority": "high",
-      "category": "tech",
-      "date": null,
-      "section": "Dashboard"
-    },
-    {
-      "text": "Dashboard Tab 2: Project Status — reads project-status.json",
-      "status": "not-started",
-      "priority": "high",
-      "category": "tech",
-      "date": null,
-      "section": "Dashboard"
-    },
-    {
       "text": "Dashboard — wire up GSC API on Vercel migration",
       "status": "not-started",
       "priority": "high",
@@ -1343,6 +1404,14 @@
     },
     {
       "text": "Dashboard — CSV import script to auto-update latest.json from GSC exports",
+      "status": "not-started",
+      "priority": "high",
+      "category": "tech",
+      "date": null,
+      "section": "Dashboard"
+    },
+    {
+      "text": "Dashboard Tab 6 Content — review queue and generation status",
       "status": "not-started",
       "priority": "high",
       "category": "tech",
@@ -1388,6 +1457,126 @@
       "category": "biz",
       "date": null,
       "section": "Business / Operations"
+    },
+    {
+      "text": "Sprint 1 — /api/generate endpoint with dashboard UI (Tab 6 Content)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 1 — Live GSC API wired to Tab 1 Analytics (no more CSV exports)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 1 — Beehiiv auto-draft on review Published",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 2 — Supabase schema: reviews, analytics_history, redirects tables",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 2 — Migrate 191 reviews into Supabase",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 2 — Vercel static site + ISR setup",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 2 — Redirects table replacing netlify.toml",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 3 — Programmatic SEO pages from DB queries",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 3 — Auto internal linking via DB trigger",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 3 — CTR optimization loop",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 3 — Stale content detector cron",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 4 — site_id in all tables (multi-site architecture)",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 4 — TheApiaryGuide as second site",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 4 — RBAC for Content Researcher via Supabase Auth",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
+    },
+    {
+      "text": "Sprint 4 — Cross-site dashboard reporting",
+      "status": "not-started",
+      "priority": "other",
+      "category": "other",
+      "date": null,
+      "section": "Vercel Epic (do not start until Netlify stable + revenue consistent)"
     },
     {
       "text": "Set up SiteGround hosting + WordPress",
@@ -1686,7 +1875,7 @@
       "section": "Done — 2026-04-17"
     },
     {
-      "text": "Dashboard live at /dashboard — GSC analytics, light color scheme",
+      "text": "Dashboard live at /dashboard — 5 tabs, light color scheme",
       "status": "done",
       "priority": "done",
       "category": "done",
@@ -1694,7 +1883,15 @@
       "section": "Done — 2026-04-17"
     },
     {
-      "text": "dashboard/latest.json + dashboard.schema.json",
+      "text": "dashboard/data/ folder — latest.json, project-status.json, decisions.json",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "docs-to-json.js — parses kanban.md and decisions.md into JSON",
       "status": "done",
       "priority": "done",
       "category": "done",
@@ -1703,6 +1900,30 @@
     },
     {
       "text": "Greenfield JSONs ready: Blade Runner, Shawshank Redemption, Arrival",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "docs branch — 6 core docs standardized to v1 format",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "decisions.md created — 18 architectural decisions",
+      "status": "done",
+      "priority": "done",
+      "category": "done",
+      "date": "2026-04-17",
+      "section": "Done — 2026-04-17"
+    },
+    {
+      "text": "docs-archive.bat + docs-cleanup.bat created",
       "status": "done",
       "priority": "done",
       "category": "done",
@@ -1884,6 +2105,110 @@
       "category": "done",
       "date": "2026-04-14",
       "section": "Done — 2026-04-14"
+    },
+    {
+      "text": "Register international Amazon Associates accounts under RavensEdge AI LLC — CA, UK, AU, DE, FR, IT, ES",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Link international store IDs via OneLink in US Associates Central",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Add OneTag JavaScript to renderFooter() in pipeline-render.js",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Re-render all pages to deploy OneTag across site",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Verify OneLink redirects working for international visitors",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Evaluate Geniuslink vs OneLink for commission preservation (post-Vercel)",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Build pipeline-translate.js — Sonnet multi-pass translation of prose fields",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Add --lang flag to pipeline-render.js — outputs to es/, fr/, de/ subfolders",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Add hreflang tags to rendered pages for all language variants",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Spanish launch — translate all 191 pages (~$7 API cost)",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Human QA pass on Spanish CTAs, nav, form labels, affiliate disclosures",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Evaluate French and German based on traffic signal at launch",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
+    },
+    {
+      "text": "Spanish newsletter — separate Beehiiv publication (after English newsletter has subscribers)",
+      "status": "not-started",
+      "priority": "future",
+      "category": "i18n",
+      "date": null,
+      "section": "Internationalization Epic"
     }
   ]
 }

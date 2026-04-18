@@ -70,7 +70,7 @@
 
 <div class="dash">
   <p class="page-title">Site Stats</p>
-  <p class="page-sub">Google Search Console · Last 14 days · booksversusmovies.com</p>
+  <p class="page-sub" id="page-sub">Google Search Console · booksversusmovies.com</p>
 
   <div class="metrics">
     <div class="metric"><div class="metric-label">Impressions</div><div class="metric-value" id="m-imps">—</div><div class="metric-sub">14-day total</div></div>
@@ -104,11 +104,12 @@ function ctrClass(c) { const n=parseFloat(c); return n>=4?'ctr-high':n>=1?'ctr-m
 function posClass(p) { return p<=10?'pos-good':p<=15?'pos-mid':''; }
 
 async function load() {
-  const res  = await fetch('../dashboard-data/latest.json');
+  const res  = await fetch('../dashboard-data/gsc-24-hour.json');
   const json = await res.json();
   const d = json.data, m = json.metadata;
 
   document.getElementById('last-updated').textContent = 'Updated ' + m.lastUpdated;
+  document.getElementById('page-sub').textContent = `Google Search Console · ${m.startDate} – ${m.endDate} · booksversusmovies.com`;
   document.getElementById('m-imps').textContent    = d.summary.totalImpressions.toLocaleString();
   document.getElementById('m-clicks').textContent  = d.summary.totalClicks.toLocaleString();
   document.getElementById('m-ctr').textContent     = d.summary.avgCTR;

@@ -1,216 +1,317 @@
 {
   "meta": {
-    "source": "docs/brainstorming/",
-    "lastUpdated": "2026-04-17",
-    "description": "Structured log of LLM feedback and brainstorming sessions. One entry per topic per model. Feed to LLMs as project context or display on dashboard."
+    "source": "docs/brainstorming/brainstorming.md",
+    "generatedAt": "2026-04-18"
   },
-  "schema": {
-    "id": "unique slug",
-    "date": "YYYY-MM-DD",
-    "topic": "short topic label",
-    "category": "seo | tech | content | biz | product | i18n | pipeline",
-    "llm": "chatgpt | gemini | grok | perplexity | claude | deepseek | mixed",
-    "sentiment": "agree | disagree | mixed | neutral",
-    "signal": "high | medium | low",
-    "summary": "one sentence distillation of the feedback",
-    "comment": "claude's take — what to act on, what to ignore, and why",
-    "tags": ["array", "of", "keywords"],
-    "actionable": true,
-    "promoted": false
+  "summary": {
+    "total": 14,
+    "actionable": 8,
+    "promoted": 3,
+    "byLlm": {
+      "chatgpt": 4,
+      "perplexity": 6,
+      "mixed": 3,
+      "claude": 1
+    },
+    "byCategory": {
+      "seo": 6,
+      "tech": 3,
+      "pipeline": 1,
+      "biz": 1,
+      "i18n": 2,
+      "product": 1
+    },
+    "bySentiment": {
+      "agree": 10,
+      "mixed": 1,
+      "disagree": 2,
+      "neutral": 1
+    }
   },
   "entries": [
     {
       "id": "chatgpt-seo-internal-linking",
+      "title": "SEO — Internal linking as highest ROI lever",
       "date": "2026-04-17",
-      "topic": "SEO — internal linking as highest ROI lever",
+      "topic": "SEO — Internal linking as highest ROI lever",
       "category": "seo",
       "llm": "chatgpt",
       "sentiment": "agree",
       "signal": "high",
-      "summary": "Internal linking graph is the single highest ROI SEO action — each page should link to 3 similar tone, 1 genre cluster, 1 controversial verdict page.",
-      "comment": "Correct and already partially done — 55 broken related cards fixed, but pillar-to-review links still missing. This is the top actionable item from this session.",
-      "tags": ["seo", "internal-linking", "pillar", "review-pages"],
       "actionable": true,
-      "promoted": true
+      "promoted": true,
+      "tags": [
+        "seo",
+        "internal-linking",
+        "pillar",
+        "review-pages"
+      ],
+      "summary": "Internal linking graph is the single highest ROI SEO action — each page should link to 3 similar tone, 1 genre cluster, 1 controversial verdict page.",
+      "comment": "Correct and already partially done — 55 broken related cards fixed, but pillar-to-review links still missing. This is the top actionable item from this session."
     },
     {
       "id": "chatgpt-seo-cluster-pages",
+      "title": "SEO — Cluster/hub pages as authority aggregators",
       "date": "2026-04-17",
-      "topic": "SEO — cluster/hub pages as authority aggregators",
+      "topic": "SEO — Cluster/hub pages as authority aggregators",
       "category": "seo",
       "llm": "chatgpt",
       "sentiment": "agree",
       "signal": "high",
-      "summary": "Genre cluster pages like /horror-book-vs-movies and /classic-literature-adaptations become authority hubs that rank for broader queries.",
-      "comment": "Done — 10 pillar pages live. ChatGPT didn't know this was already built. Confirms the pillar strategy was correct.",
-      "tags": ["seo", "pillars", "hubs", "genre"],
       "actionable": false,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "seo",
+        "pillars",
+        "hubs",
+        "genre"
+      ],
+      "summary": "Genre cluster pages like /horror-book-vs-movies become authority hubs that rank for broader queries.",
+      "comment": "Done — 10 pillar pages live. ChatGPT didn't know this was already built. Confirms the pillar strategy was correct."
     },
     {
       "id": "chatgpt-seo-title-ctr",
+      "title": "SEO — Title CTR hooks",
       "date": "2026-04-17",
-      "topic": "SEO — title CTR hooks",
+      "topic": "SEO — Title CTR hooks",
       "category": "seo",
       "llm": "chatgpt",
       "sentiment": "agree",
       "signal": "high",
-      "summary": "Rewriting titles from generic Book vs Film format to opinionated hooks drives significant CTR lift and ranking improvement.",
-      "comment": "Done — Sonnet title pass across 171 pages completed this session. Will take 3-7 days to show in GSC data.",
-      "tags": ["seo", "ctr", "titles", "meta"],
       "actionable": false,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "seo",
+        "ctr",
+        "titles",
+        "meta"
+      ],
+      "summary": "Rewriting titles from generic Book vs Film format to opinionated hooks drives significant CTR lift and ranking improvement.",
+      "comment": "Done — Sonnet title pass across 171 pages completed this session. Will take 3-7 days to show in GSC data."
     },
     {
       "id": "chatgpt-seo-schema",
+      "title": "SEO — Schema consistency",
       "date": "2026-04-17",
-      "topic": "SEO — schema consistency",
+      "topic": "SEO — Schema consistency",
       "category": "seo",
       "llm": "chatgpt",
       "sentiment": "agree",
       "signal": "medium",
-      "summary": "Review schema and FAQ schema should be consistent across all pages with consistent author/org identity.",
-      "comment": "Already in place via pipeline-render.js. No action needed.",
-      "tags": ["seo", "schema", "structured-data", "faq"],
       "actionable": false,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "seo",
+        "schema",
+        "structured-data",
+        "faq"
+      ],
+      "summary": "Review schema and FAQ schema should be consistent across all pages with consistent author/org identity.",
+      "comment": "Already in place via pipeline-render.js. No action needed."
     },
     {
       "id": "perplexity-vercel-supabase",
+      "title": "Vercel + Supabase architecture",
       "date": "2026-04-17",
       "topic": "Vercel + Supabase architecture",
       "category": "tech",
       "llm": "perplexity",
       "sentiment": "mixed",
       "signal": "high",
-      "summary": "Full platform architecture: Supabase for persistence, Vercel Functions for pipeline orchestration, Realtime for dashboard updates, Edge Config for feature flags.",
-      "comment": "Direction is right but over-engineered for current stage. Realtime dashboard, audit logs, RBAC, and tasks table are premature. Core value is reviews table, analytics_history, and /api/generate. See vercel-dashboard-ideas.txt for full assessment.",
-      "tags": ["vercel", "supabase", "architecture", "platform"],
       "actionable": true,
-      "promoted": true
+      "promoted": true,
+      "tags": [
+        "vercel",
+        "supabase",
+        "architecture",
+        "platform"
+      ],
+      "summary": "Full platform architecture — Supabase for persistence, Vercel Functions for pipeline orchestration, Realtime for dashboard updates, Edge Config for feature flags.",
+      "comment": "Direction is right but over-engineered for current stage. Realtime dashboard, audit logs, RBAC, and tasks table are premature. Core value is reviews table, analytics_history, and /api/generate. See vercel-dashboard-ideas.txt for full assessment."
     },
     {
       "id": "perplexity-vercel-rls",
+      "title": "Supabase Row-Level Security for team permissions",
       "date": "2026-04-17",
       "topic": "Supabase Row-Level Security for team permissions",
       "category": "tech",
       "llm": "perplexity",
       "sentiment": "agree",
       "signal": "medium",
-      "summary": "RLS policy table with site_id enables granular permissions — researchers can insert reviews but not publish.",
-      "comment": "Correct and worth building when Content Researcher is hired. Low effort, high value for team scaling. Not needed now.",
-      "tags": ["supabase", "rls", "permissions", "team"],
       "actionable": true,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "supabase",
+        "rls",
+        "permissions",
+        "team"
+      ],
+      "summary": "RLS policy table with site_id enables granular permissions — researchers can insert reviews but not publish.",
+      "comment": "Correct and worth building when Content Researcher is hired. Low effort, high value for team scaling. Not needed now."
     },
     {
       "id": "perplexity-vercel-stale-content",
+      "title": "Stale content detector cron",
       "date": "2026-04-17",
       "topic": "Stale content detector cron",
       "category": "pipeline",
       "llm": "perplexity",
       "sentiment": "agree",
       "signal": "medium",
-      "summary": "Vercel Cron flags reviews older than 90 days with impression drops and queues them for AI refresh.",
-      "comment": "Genuinely useful and fits the pipeline naturally. Add to Sprint 3 of Vercel epic. Not needed until site has consistent traffic data.",
-      "tags": ["vercel", "cron", "content-freshness", "pipeline"],
       "actionable": true,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "vercel",
+        "cron",
+        "content-freshness",
+        "pipeline"
+      ],
+      "summary": "Vercel Cron flags reviews older than 90 days with impression drops and queues them for AI refresh.",
+      "comment": "Genuinely useful and fits the pipeline naturally. Add to Sprint 3 of Vercel epic. Not needed until site has consistent traffic data."
     },
     {
       "id": "perplexity-vercel-auto-social",
+      "title": "Auto-posting to X and Reddit on publish",
       "date": "2026-04-17",
       "topic": "Auto-posting to X and Reddit on publish",
       "category": "biz",
       "llm": "perplexity",
       "sentiment": "disagree",
       "signal": "low",
-      "summary": "On publish, automatically post to X and Reddit via API to drive traffic and build backlinks.",
-      "comment": "Disagree — automated social posting backfires easily and looks spammy. Reddit in particular penalizes obvious automation. Stay manual for social. GSC ping on publish is worth doing, social is not.",
-      "tags": ["social", "reddit", "automation", "backlinks"],
       "actionable": false,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "social",
+        "reddit",
+        "automation",
+        "backlinks"
+      ],
+      "summary": "On publish, automatically post to X and Reddit via API to drive traffic and build backlinks.",
+      "comment": "Disagree — automated social posting backfires easily and looks spammy. Reddit penalizes obvious automation. Stay manual for social. GSC ping on publish is worth doing, social posting is not."
     },
     {
       "id": "perplexity-vercel-ab-testing",
+      "title": "A/B meta title testing via Vercel Edge Config",
       "date": "2026-04-17",
       "topic": "A/B meta title testing via Vercel Edge Config",
       "category": "seo",
       "llm": "perplexity",
       "sentiment": "disagree",
       "signal": "low",
-      "summary": "Use Edge Config feature flags to A/B test meta titles and descriptions, auto-promoting winners based on GSC + vitals data.",
-      "comment": "Over-engineered. A Sonnet title rewrite pass on high-impression/low-CTR pages achieves the same result in one afternoon with no infrastructure. Build the CTR optimization script instead.",
-      "tags": ["seo", "ab-testing", "edge-config", "ctr"],
       "actionable": false,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "seo",
+        "ab-testing",
+        "edge-config",
+        "ctr"
+      ],
+      "summary": "Use Edge Config feature flags to A/B test meta titles and descriptions, auto-promoting winners based on GSC and vitals data.",
+      "comment": "Over-engineered. A Sonnet title rewrite pass on high-impression/low-CTR pages achieves the same result in one afternoon with no infrastructure. Build the CTR optimization script instead."
     },
     {
       "id": "perplexity-i18n-onelink",
+      "title": "Amazon OneLink for international affiliate revenue",
       "date": "2026-04-17",
       "topic": "Amazon OneLink for international affiliate revenue",
       "category": "i18n",
       "llm": "perplexity",
       "sentiment": "agree",
       "signal": "high",
-      "summary": "Set up Amazon OneLink to capture revenue from UK, Canada, Australia and other international markets currently earning zero commission.",
-      "comment": "Correct and urgent. GSC shows real traffic from UK, Canada, Australia earning nothing. OneLink setup is 30-60 minutes of work gated only on LLC transfer. Highest ROI per hour on the site right now.",
-      "tags": ["onelink", "affiliate", "international", "revenue"],
       "actionable": true,
-      "promoted": true
+      "promoted": true,
+      "tags": [
+        "onelink",
+        "affiliate",
+        "international",
+        "revenue"
+      ],
+      "summary": "Set up Amazon OneLink to capture revenue from UK, Canada, Australia and other international markets currently earning zero commission.",
+      "comment": "Correct and urgent. GSC shows real traffic from UK, Canada, Australia earning nothing. OneLink setup is 30-60 minutes of work gated only on LLC transfer. Highest ROI per hour on the site right now."
     },
     {
       "id": "mixed-i18n-translation",
+      "title": "Site content translation — Spanish first",
       "date": "2026-04-17",
       "topic": "Site content translation — Spanish first",
       "category": "i18n",
       "llm": "mixed",
       "sentiment": "agree",
       "signal": "medium",
-      "summary": "Multi-pass AI translation of review content to Spanish, French, German via pipeline-translate.js. ~$7 API cost per language for full site.",
-      "comment": "Right direction, wrong timing. Do English-only until revenue is consistent. Spanish is the right first language given Brazil signal. Translation only makes sense after Vercel migration enables subdirectory routing. AI translation is fine for body content — hold human review for CTAs, newsletter, and business-facing strings only.",
-      "tags": ["translation", "spanish", "pipeline", "i18n"],
       "actionable": true,
-      "promoted": false
+      "promoted": false,
+      "tags": [
+        "translation",
+        "spanish",
+        "pipeline",
+        "i18n"
+      ],
+      "summary": "Multi-pass AI translation of review content to Spanish, French, German via pipeline-translate.js at ~$7 API cost per language for full site.",
+      "comment": "Right direction, wrong timing. Do English-only until revenue is consistent. Spanish is the right first language given Brazil signal. Translation only makes sense after Vercel migration enables subdirectory routing. AI translation is fine for body content — hold human review for CTAs, newsletter, and business-facing strings only."
     },
     {
       "id": "mixed-dashboard-tabs",
+      "title": "Dashboard as operational command center",
       "date": "2026-04-17",
-      "topic": "Dashboard as operational command center — 5 tabs",
+      "topic": "Dashboard as operational command center",
       "category": "product",
       "llm": "mixed",
       "sentiment": "agree",
       "signal": "high",
-      "summary": "Dashboard should be a full project command center: Analytics, Project, Decisions, Roadmap, Daily — all reading from structured JSON files.",
-      "comment": "Built and live at /dashboard. The JSON layer (project-status.json, decisions.json, notes.json) makes the dashboard useful as LLM context input, not just a visual. This is the right architecture for a solo operator.",
-      "tags": ["dashboard", "json", "llm-context", "project-management"],
       "actionable": false,
-      "promoted": false
-    }
-  ],
-  "summary": {
-    "total": 12,
-    "actionable": 6,
-    "promoted": 3,
-    "byLlm": {
-      "chatgpt": 4,
-      "perplexity": 5,
-      "mixed": 3
+      "promoted": false,
+      "tags": [
+        "dashboard",
+        "json",
+        "llm-context",
+        "project-management"
+      ],
+      "summary": "Dashboard should be a full project command center reading from structured JSON files — Analytics, Project, Decisions, Roadmap, Daily, Notes, Brainstorming.",
+      "comment": "Built and live at /dashboard. The JSON layer makes the dashboard useful as LLM context input, not just a visual. Right architecture for a solo operator."
     },
-    "byCategory": {
-      "seo": 4,
-      "tech": 2,
-      "pipeline": 1,
-      "biz": 1,
-      "i18n": 2,
-      "product": 1,
-      "content": 0
+    {
+      "id": "ai-daily-analytics-review",
+      "title": "AI daily review of full analytics data dump",
+      "date": "2026-04-17",
+      "topic": "AI daily review of full analytics data dump",
+      "category": "tech",
+      "llm": "mixed",
+      "sentiment": "agree",
+      "signal": "high",
+      "actionable": true,
+      "promoted": false,
+      "tags": [
+        "analytics",
+        "ai",
+        "automation",
+        "gsc",
+        "ga4",
+        "vercel",
+        "cron"
+      ],
+      "summary": "Once GSC and GA4 integrations are built, run a daily AI pass over the full data dump and surface actionable insights automatically to the dashboard.",
+      "comment": "Right end state. Manual GSC review every Monday is fine now but doesn't scale. Once /api/gsc and /api/analytics are live, a daily Vercel Cron calls Claude Sonnet with the full data dump and writes structured insights JSON to dashboard-data/. Dashboard surfaces it as an Insights tab. High value, zero extra data collection work once integrations exist."
     },
-    "bySentiment": {
-      "agree": 8,
-      "disagree": 2,
-      "mixed": 2,
-      "neutral": 0
+    {
+      "id": "ga4-engagement-observations",
+      "title": "GA4 — Early engagement patterns",
+      "date": "2026-04-17",
+      "topic": "GA4 — Early engagement patterns",
+      "category": "seo",
+      "llm": "claude",
+      "sentiment": "neutral",
+      "signal": "high",
+      "actionable": true,
+      "promoted": false,
+      "tags": [
+        "ga4",
+        "analytics",
+        "engagement",
+        "homepage",
+        "auteurs"
+      ],
+      "summary": "Homepage bounces fast (24s avg), browse page has strong session depth (7.53 pages/session), Auteurs page underperforms (18s avg), spotlight and review pages hold attention well at 1-2m+.",
+      "comment": "Homepage needs a stronger hook above the fold — 24s average means people are not finding a clear next step. Auteurs page needs investigation — 18s suggests people are not finding what they expected. Verity, Reminders of Him, and Lonesome Dove spotlight are the engagement leaders. Upcoming Adaptations at 2m 25s is punching above its weight. This pattern should feed the daily AI review once GA4 integration is built."
     }
-  }
+  ]
 }

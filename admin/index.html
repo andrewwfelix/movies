@@ -318,7 +318,7 @@ function catClass(cat) {
 
 // ── Load Analytics ────────────────────────────────────────────────────────────
 async function loadAnalytics() {
-  const res  = await fetch('../dashboard-data/latest.json');
+  const res  = await fetch('../dashboard-data/gsc-24-hour.json');
   const json = await res.json();
   const d = json.data, m = json.metadata;
 
