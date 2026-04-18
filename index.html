@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book vs Movie Comparisons — BooksVersusMovies.com</title>
-  <meta name="description" content="171 honest book vs movie comparisons — spoilers included, clear verdicts, and an honest answer on whether to read first. No hedging.">
+  <meta name="description" content="171 honest book vs movie comparisons — clear verdicts, spoilers included, read-first advice on every page.">
   <link rel="canonical" href="https://booksversusmovies.com/">
   <link rel="stylesheet" href="css/style.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0DY0XDWVV"></script>
@@ -14,84 +14,6 @@
     gtag('js', new Date());
     gtag('config', 'G-P0DY0XDWVV');
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "BooksVersusMovies.com",
-    "url": "https://booksversusmovies.com",
-    "description": "Honest book vs movie comparisons with clear verdicts — spoilers included, read-first advice on every page.",
-    "potentialAction": { "@type": "SearchAction", "target": "https://booksversusmovies.com/?q={search_term_string}", "query-input": "required name=search_term_string" }
-  }
-  </script>
-  <style>
-    .browse-hero { background: var(--ink); color: var(--cream); padding: 4rem 2rem 3.5rem; text-align: center; border-bottom: 3px solid var(--gold); }
-    .browse-hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 700; line-height: 1.1; margin-bottom: 0.75rem; }
-    .browse-hero h1 em { font-style: italic; color: var(--gold); }
-    .browse-hero .tagline { font-size: 1.1rem; color: #a09888; max-width: 520px; margin: 0 auto 2rem; line-height: 1.55; }
-    .browse-stats { display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 0; }
-    .browse-stat { font-size: 0.78rem; color: #777; letter-spacing: 0.08em; text-align: center; }
-    .browse-stat strong { color: var(--gold); font-size: 1.3rem; display: block; margin-bottom: 0.15rem; font-family: 'Playfair Display', serif; }
-
-    .trust-strip { background: #141210; border-bottom: 1px solid #2a2520; padding: 1.5rem 2rem; }
-    .trust-inner { max-width: var(--max-w); margin: 0 auto; display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; }
-    .trust-item { font-size: 0.9rem; color: #aaa; letter-spacing: 0.03em; display: flex; align-items: center; gap: 0.6rem; }
-    .trust-item::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
-
-    .spotlight-section { background: var(--book-col); border-bottom: 1px solid var(--rule); padding: 2.5rem 2rem; }
-    .spotlight-inner { max-width: var(--max-w); margin: 0 auto; }
-    .spotlight-heading { font-family: 'Playfair Display', serif; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; text-align: center; }
-    .spotlight-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.25rem; }
-    @media (max-width: 1100px) { .spotlight-grid { grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 600px) { .spotlight-grid { grid-template-columns: repeat(2, 1fr); } }
-    .spotlight-card { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); background: white; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
-    .spotlight-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); border-color: var(--gold); }
-    .spotlight-cover { background: var(--film-col); padding: 1.25rem; display: flex; justify-content: center; }
-    .spotlight-cover img { height: 160px; width: auto; object-fit: cover; box-shadow: 3px 5px 16px rgba(0,0,0,0.4); border-radius: 2px; }
-    .spotlight-body { padding: 1rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; align-items: center; text-align: center; }
-    .spotlight-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; line-height: 1.3; text-align: center; }
-    .spotlight-hook { font-size: 0.78rem; color: var(--ink-light); font-style: italic; line-height: 1.45; flex: 1; text-align: center; }
-    .spotlight-meta { font-size: 0.72rem; color: #999; margin-top: auto; text-align: center; }
-    .spotlight-card .verdict-badge { display: block; text-align: center; margin: 0 auto; width: fit-content; }
-
-    .browse-controls { max-width: var(--max-w); margin: 0 auto; padding: 1.5rem 2rem 0; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
-    .controls-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin-right: 0.25rem; }
-    .filter-btn { padding: 0.4em 1.1em; font-size: 0.78rem; letter-spacing: 0.05em; border: 1px solid var(--rule); border-radius: 2px; background: white; color: var(--ink-light); cursor: pointer; transition: all 0.2s; font-family: 'Source Serif 4', serif; }
-    .filter-btn:hover, .filter-btn.active { background: var(--ink); color: var(--cream); border-color: var(--ink); }
-    .filter-count { font-size: 0.7em; opacity: 0.65; margin-left: 0.2em; }
-    .browse-section-label { max-width: var(--max-w); margin: 0 auto; padding: 1.25rem 2rem 0; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #bbb; }
-
-    .browse-list { max-width: var(--max-w); margin: 0 auto; padding: 0.75rem 2rem 4rem; }
-    .row { display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem 0.5rem; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); transition: background 0.15s; border-radius: 3px; }
-    .row:hover { background: #faf7f2; }
-    .row:last-child { border-bottom: none; }
-    .row-book { flex-shrink: 0; width: 56px; }
-    .row-book img { width: 56px; height: 84px; object-fit: cover; border-radius: 2px; box-shadow: 2px 3px 10px rgba(0,0,0,0.2); display: block; align-self: center; }
-    .row-content { flex: 1; min-width: 0; }
-    .row-genre { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.2rem; }
-    .row-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.15rem; line-height: 1.3; }
-    .row-byline { font-size: 0.82rem; color: var(--ink-light); font-style: italic; margin-bottom: 0.4rem; }
-    .row-blurb { font-size: 0.88rem; color: #4a4540; line-height: 1.55; margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .row-meta { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
-    .row-dates { font-size: 0.75rem; color: #999; }
-    .row-trailer { flex-shrink: 0; width: 112px; align-self: center; }
-    .trailer-thumb { position: relative; border-radius: 2px; overflow: hidden; }
-    .trailer-thumb img { width: 112px; height: 84px; object-fit: cover; display: block; }
-    .play-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 30px; height: 30px; background: rgba(26,23,20,0.78); border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .play-icon::after { content: ''; border-left: 8px solid var(--gold); border-top: 5px solid transparent; border-bottom: 5px solid transparent; margin-left: 2px; }
-
-
-    .no-results { padding: 3rem 0; text-align: center; color: #999; font-style: italic; display: none; }
-
-    @media (max-width: 700px) {
-      .row-trailer { display: none; }
-      .spotlight-grid { grid-template-columns: repeat(2, 1fr); }
-      .trust-inner { gap: 1rem; }
-    }
-    @media (max-width: 400px) {
-      .spotlight-grid { grid-template-columns: 1fr 1fr; }
-    }
-  </style>
 </head>
 <body>
 
@@ -108,36 +30,49 @@
   </div>
 </header>
 
-<div class="browse-hero">
-  <h1>Book vs Movie<br><em>We Pick a Winner Every Time.</em></h1>
-  <p class="tagline">Read it or watch it. We'll tell you which comes first — and why the other version falls short.</p>
-  <div class="browse-stats">
-    <div class="browse-stat"><strong>171</strong>comparisons</div>
-    <div class="browse-stat"><strong>120</strong>book wins</div>
-    <div class="browse-stat"><strong>7</strong>film wins</div>
-    <div class="browse-stat"><strong>44</strong>too close to call</div>
-  </div>
-</div>
+<section class="browse-hero">
+  <h1>Book vs Movie. One winner. No mercy.</h1>
+  <p class="tagline">We pick a side — and explain exactly why one version wins.</p>
+  <a href="#comparisons" class="cta-button">Browse All Comparisons</a>
+</section>
 
-<div class="trust-strip">
-  <div class="trust-inner">
-    <span class="trust-item">No hedging — we pick a side</span>
-    <span class="trust-item">Specific arguments, not summaries</span>
-    <span class="trust-item">Independent verdicts</span>
-    <span class="trust-item">Read first advice on every page</span>
+<section class="stats-strip">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">171</span>
+      <span class="stat-label">Comparisons</span>
+    </div>
+    <div class="stat-item">
+      <a href="#comparisons" onclick="document.querySelectorAll('.filter-btn')[1].click();return false;" style="color:inherit;text-decoration:none">
+        <span class="stat-number">120</span>
+        <span class="stat-label">Book Wins</span>
+      </a>
+    </div>
+    <div class="stat-item">
+      <a href="#comparisons" onclick="document.querySelectorAll('.filter-btn')[2].click();return false;" style="color:inherit;text-decoration:none">
+        <span class="stat-number">7</span>
+        <span class="stat-label">Film Wins</span>
+      </a>
+    </div>
+    <div class="stat-item">
+      <a href="#comparisons" onclick="document.querySelectorAll('.filter-btn')[3].click();return false;" style="color:inherit;text-decoration:none">
+        <span class="stat-number">44</span>
+        <span class="stat-label">Too Close to Call</span>
+      </a>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="spotlight-section">
+<section id="comparisons" class="spotlight-section">
   <div class="spotlight-inner">
-    <div class="spotlight-heading">Essential comparisons</div>
+    <div class="spotlight-heading">Essential Comparisons</div>
     <div class="spotlight-grid">
       <a class="spotlight-card" href="/verity">
         <div class="spotlight-cover">
           <img src="images/verity.jpg" alt="Verity book cover" loading="lazy">
+          <span class="cover-verdict verdict-book">Book Wins</span>
         </div>
         <div class="spotlight-body">
-          <span class="verdict-badge verdict-book">Book Wins</span>
           <div class="spotlight-title">Verity</div>
           <div class="spotlight-hook">The manuscript's graphic passages create visceral dread the film's restraint cannot replicate.</div>
           <div class="spotlight-meta">Colleen Hoover · 2026</div>
@@ -146,9 +81,9 @@
       <a class="spotlight-card" href="/reminders-of-him">
         <div class="spotlight-cover">
           <img src="images/reminders-of-him.jpg" alt="Reminders of Him book cover" loading="lazy">
+          <span class="cover-verdict verdict-book">Book Wins</span>
         </div>
         <div class="spotlight-body">
-          <span class="verdict-badge verdict-book">Book Wins</span>
           <div class="spotlight-title">Reminders of Him</div>
           <div class="spotlight-hook">Hoover's dual perspective and Kenna's letters carry emotional weight the film cannot replicate.</div>
           <div class="spotlight-meta">Colleen Hoover · 2026</div>
@@ -157,9 +92,9 @@
       <a class="spotlight-card" href="/dune">
         <div class="spotlight-cover">
           <img src="images/dune.jpg" alt="Dune book cover" loading="lazy">
+          <span class="cover-verdict verdict-book">Book Wins</span>
         </div>
         <div class="spotlight-body">
-          <span class="verdict-badge verdict-book">Book Wins</span>
           <div class="spotlight-title">Dune</div>
           <div class="spotlight-hook">Herbert makes Paul's complicity explicit; the films leave it ambiguous.</div>
           <div class="spotlight-meta">Frank Herbert · 2021</div>
@@ -168,9 +103,9 @@
       <a class="spotlight-card" href="/the-shining">
         <div class="spotlight-cover">
           <img src="images/the-shining.jpg" alt="The Shining book cover" loading="lazy">
+          <span class="cover-verdict verdict-book">Book Wins</span>
         </div>
         <div class="spotlight-body">
-          <span class="verdict-badge verdict-book">Book Wins</span>
           <div class="spotlight-title">The Shining</div>
           <div class="spotlight-hook">King's Jack is corrupted by evil; Kubrick's Jack already is evil.</div>
           <div class="spotlight-meta">Stephen King · 1980</div>
@@ -179,9 +114,9 @@
       <a class="spotlight-card" href="/gone-girl">
         <div class="spotlight-cover">
           <img src="images/gone-girl-2.jpg" alt="Gone Girl book cover" loading="lazy">
+          <span class="cover-verdict verdict-tie">Tie</span>
         </div>
         <div class="spotlight-body">
-          <span class="verdict-badge verdict-tie">Tie</span>
           <div class="spotlight-title">Gone Girl</div>
           <div class="spotlight-hook">Pike's face owns the screen; Flynn's Amazing Amy owns the page.</div>
           <div class="spotlight-meta">Gillian Flynn · 2014</div>
@@ -190,9 +125,9 @@
       <a class="spotlight-card" href="/atonement">
         <div class="spotlight-cover">
           <img src="images/atonement.jpg" alt="Atonement book cover" loading="lazy">
+          <span class="cover-verdict verdict-book">Book Wins</span>
         </div>
         <div class="spotlight-body">
-          <span class="verdict-badge verdict-book">Book Wins</span>
           <div class="spotlight-title">Atonement</div>
           <div class="spotlight-hook">The metafictional ending only works on the page.</div>
           <div class="spotlight-meta">Ian McEwan · 2007</div>
@@ -200,14 +135,14 @@
       </a>
     </div>
   </div>
-</div>
+</section>
 
 <div class="browse-controls">
-  <span class="controls-label">Filter</span>
-  <button class="filter-btn active" data-filter="all" aria-label="Show all comparisons">All <span class="filter-count">171</span></button>
-  <button class="filter-btn" data-filter="verdict-book" aria-label="Show book wins">Book Wins <span class="filter-count">120</span></button>
-  <button class="filter-btn" data-filter="verdict-film" aria-label="Show film wins">Film Wins <span class="filter-count">7</span></button>
-  <button class="filter-btn" data-filter="verdict-tie" aria-label="Show too close to call">Too Close to Call <span class="filter-count">44</span></button>
+  <span class="controls-label">Filter by verdict</span>
+  <button class="filter-btn active" data-filter="all">All <span class="filter-count">171</span></button>
+  <button class="filter-btn" data-filter="verdict-book">Book Wins <span class="filter-count">120</span></button>
+  <button class="filter-btn" data-filter="verdict-film">Film Wins <span class="filter-count">7</span></button>
+  <button class="filter-btn" data-filter="verdict-tie">Too Close to Call <span class="filter-count">44</span></button>
 </div>
 
 <div class="browse-section-label">All 171 comparisons</div>
@@ -234,7 +169,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/hunger-games-sunrise" data-verdict="verdict-tie">
       <div class="row-book">
@@ -257,7 +191,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/margos-got-money-troubles" data-verdict="verdict-book">
       <div class="row-book">
@@ -280,7 +213,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/people-we-meet-on-vacation" data-verdict="verdict-book">
       <div class="row-book">
@@ -303,7 +235,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/project-hail-mary" data-verdict="verdict-book">
       <div class="row-book">
@@ -326,7 +257,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/remarkably-bright-creatures" data-verdict="verdict-book">
       <div class="row-book">
@@ -349,7 +279,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/reminders-of-him" data-verdict="verdict-book">
       <div class="row-book">
@@ -372,7 +301,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/devil-wears-prada" data-verdict="verdict-book">
       <div class="row-book">
@@ -395,7 +323,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/narnia-magicians-nephew" data-verdict="verdict-book">
       <div class="row-book">
@@ -418,7 +345,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-odyssey" data-verdict="verdict-tie">
       <div class="row-book">
@@ -441,7 +367,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-thursday-murder-club" data-verdict="verdict-book">
       <div class="row-book">
@@ -464,7 +389,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/verity" data-verdict="verdict-book">
       <div class="row-book">
@@ -487,7 +411,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/wuthering-heights" data-verdict="verdict-book">
       <div class="row-book">
@@ -510,7 +433,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/a-knight-of-the-seven-kingdoms" data-verdict="verdict-tie">
       <div class="row-book">
@@ -533,7 +455,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/animal-farm" data-verdict="verdict-book">
       <div class="row-book">
@@ -556,7 +477,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/frankenstein" data-verdict="verdict-book">
       <div class="row-book">
@@ -579,7 +499,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/heated-rivalry" data-verdict="verdict-tie">
       <div class="row-book">
@@ -602,7 +521,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/mickey-17" data-verdict="verdict-book">
       <div class="row-book">
@@ -625,7 +543,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-count-of-monte-cristo" data-verdict="verdict-book">
       <div class="row-book">
@@ -648,7 +565,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-electric-state" data-verdict="verdict-book">
       <div class="row-book">
@@ -671,7 +587,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-housemaid" data-verdict="verdict-book">
       <div class="row-book">
@@ -694,7 +609,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/dark-matter" data-verdict="verdict-tie">
       <div class="row-book">
@@ -717,7 +631,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/it-ends-with-us" data-verdict="verdict-book">
       <div class="row-book">
@@ -740,7 +653,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/presumed-innocent" data-verdict="verdict-book">
       <div class="row-book">
@@ -763,7 +675,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/shogun-2024" data-verdict="verdict-book">
       <div class="row-book">
@@ -786,7 +697,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-three-body-problem" data-verdict="verdict-book">
       <div class="row-book">
@@ -809,7 +719,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/all-the-light-we-cannot-see" data-verdict="verdict-book">
       <div class="row-book">
@@ -832,7 +741,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/daisy-jones-and-the-six" data-verdict="verdict-book">
       <div class="row-book">
@@ -855,7 +763,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/a-little-life" data-verdict="verdict-book">
       <div class="row-book">
@@ -878,7 +785,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/all-quiet-on-the-western-front" data-verdict="verdict-tie">
       <div class="row-book">
@@ -901,7 +807,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/interview-with-the-vampire-amcplus" data-verdict="verdict-book">
       <div class="row-book">
@@ -924,7 +829,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/lady-chatterleys-lover" data-verdict="verdict-film">
       <div class="row-book">
@@ -947,7 +851,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/pachinko" data-verdict="verdict-book">
       <div class="row-book">
@@ -970,7 +873,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/where-the-crawdads-sing" data-verdict="verdict-book">
       <div class="row-book">
@@ -993,7 +895,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/white-noise" data-verdict="verdict-book">
       <div class="row-book">
@@ -1016,7 +917,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/dune" data-verdict="verdict-book">
       <div class="row-book">
@@ -1039,7 +939,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/shadow-and-bone" data-verdict="verdict-book">
       <div class="row-book">
@@ -1062,7 +961,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/station-eleven" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1085,7 +983,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-woman-in-the-window" data-verdict="verdict-book">
       <div class="row-book">
@@ -1108,7 +1005,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/hillbilly-elegy" data-verdict="verdict-book">
       <div class="row-book">
@@ -1131,7 +1027,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/normal-people" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1154,7 +1049,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/bridgerton" data-verdict="verdict-book">
       <div class="row-book">
@@ -1177,7 +1071,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-outsider" data-verdict="verdict-book">
       <div class="row-book">
@@ -1200,7 +1093,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-secret-garden" data-verdict="verdict-book">
       <div class="row-book">
@@ -1223,7 +1115,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/doctor-sleep" data-verdict="verdict-book">
       <div class="row-book">
@@ -1246,7 +1137,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/five-feet-apart" data-verdict="verdict-book">
       <div class="row-book">
@@ -1269,7 +1159,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/good-omens" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1292,7 +1181,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/little-women" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1315,7 +1203,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/looking-for-alaska" data-verdict="verdict-book">
       <div class="row-book">
@@ -1338,7 +1225,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/pet-sematary-2019" data-verdict="verdict-book">
       <div class="row-book">
@@ -1361,7 +1247,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-witcher" data-verdict="verdict-book">
       <div class="row-book">
@@ -1384,7 +1269,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/annihilation" data-verdict="verdict-book">
       <div class="row-book">
@@ -1407,7 +1291,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/my-brilliant-friend" data-verdict="verdict-book">
       <div class="row-book">
@@ -1430,7 +1313,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/ready-player-one" data-verdict="verdict-book">
       <div class="row-book">
@@ -1453,7 +1335,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/sharp-objects" data-verdict="verdict-book">
       <div class="row-book">
@@ -1476,7 +1357,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/love-simon" data-verdict="verdict-book">
       <div class="row-book">
@@ -1499,7 +1379,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-haunting-of-hill-house" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1522,7 +1401,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/american-gods" data-verdict="verdict-book">
       <div class="row-book">
@@ -1545,7 +1423,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/big-little-lies-hbo" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1568,7 +1445,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/everything-everything" data-verdict="verdict-book">
       <div class="row-book">
@@ -1591,7 +1467,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/geralds-game" data-verdict="verdict-book">
       <div class="row-book">
@@ -1614,7 +1489,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/it-muschietti" data-verdict="verdict-book">
       <div class="row-book">
@@ -1637,7 +1511,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-glass-castle" data-verdict="verdict-book">
       <div class="row-book">
@@ -1660,7 +1533,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/thirteen-reasons-why" data-verdict="verdict-book">
       <div class="row-book">
@@ -1683,7 +1555,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/me-before-you" data-verdict="verdict-book">
       <div class="row-book">
@@ -1706,7 +1577,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/roots-2016" data-verdict="verdict-book">
       <div class="row-book">
@@ -1729,7 +1599,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/arrival" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1752,7 +1621,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/girl-on-the-train" data-verdict="verdict-book">
       <div class="row-book">
@@ -1775,7 +1643,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/a-man-called-ove" data-verdict="verdict-book">
       <div class="row-book">
@@ -1798,7 +1665,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/brooklyn" data-verdict="verdict-book">
       <div class="row-book">
@@ -1821,7 +1687,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/room" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1844,7 +1709,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-longest-ride" data-verdict="verdict-book">
       <div class="row-book">
@@ -1867,7 +1731,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-martian" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1890,7 +1753,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/wolf-hall" data-verdict="verdict-book">
       <div class="row-book">
@@ -1913,7 +1775,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/divergent" data-verdict="verdict-book">
       <div class="row-book">
@@ -1936,7 +1797,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/gone-girl" data-verdict="verdict-tie">
       <div class="row-book">
@@ -1959,7 +1819,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/olive-kitteridge" data-verdict="verdict-book">
       <div class="row-book">
@@ -1982,7 +1841,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/outlander" data-verdict="verdict-book">
       <div class="row-book">
@@ -2005,7 +1863,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-fault-in-our-stars" data-verdict="verdict-book">
       <div class="row-book">
@@ -2028,7 +1885,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-giver" data-verdict="verdict-book">
       <div class="row-book">
@@ -2051,7 +1907,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-maze-runner-film" data-verdict="verdict-book">
       <div class="row-book">
@@ -2074,7 +1929,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/enders-game-film" data-verdict="verdict-book">
       <div class="row-book">
@@ -2097,7 +1951,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/enders-game" data-verdict="verdict-book">
       <div class="row-book">
@@ -2120,7 +1973,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/hannibal-series" data-verdict="verdict-book">
       <div class="row-book">
@@ -2143,7 +1995,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-book-thief" data-verdict="verdict-book">
       <div class="row-book">
@@ -2166,7 +2017,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-great-gatsby" data-verdict="verdict-book">
       <div class="row-book">
@@ -2189,7 +2039,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/world-war-z" data-verdict="verdict-book">
       <div class="row-book">
@@ -2212,7 +2061,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/les-miserables" data-verdict="verdict-book">
       <div class="row-book">
@@ -2235,7 +2083,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/on-the-road" data-verdict="verdict-book">
       <div class="row-book">
@@ -2258,7 +2105,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/perks-of-being-a-wallflower" data-verdict="verdict-tie">
       <div class="row-book">
@@ -2281,7 +2127,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/jane-eyre" data-verdict="verdict-book">
       <div class="row-book">
@@ -2304,7 +2149,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/one-day" data-verdict="verdict-book">
       <div class="row-book">
@@ -2327,7 +2171,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/girl-with-the-dragon-tattoo" data-verdict="verdict-book">
       <div class="row-book">
@@ -2350,7 +2193,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-girl-with-the-dragon-tattoo-fincher" data-verdict="verdict-tie">
       <div class="row-book">
@@ -2373,7 +2215,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-help" data-verdict="verdict-book">
       <div class="row-book">
@@ -2396,7 +2237,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-lincoln-lawyer" data-verdict="verdict-book">
       <div class="row-book">
@@ -2419,7 +2259,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/water-for-elephants" data-verdict="verdict-book">
       <div class="row-book">
@@ -2442,7 +2281,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/eat-pray-love" data-verdict="verdict-book">
       <div class="row-book">
@@ -2465,7 +2303,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/never-let-me-go" data-verdict="verdict-book">
       <div class="row-book">
@@ -2488,7 +2325,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/norwegian-wood" data-verdict="verdict-tie">
       <div class="row-book">
@@ -2511,7 +2347,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-pillars-of-the-earth" data-verdict="verdict-book">
       <div class="row-book">
@@ -2534,7 +2369,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/my-sisters-keeper" data-verdict="verdict-book">
       <div class="row-book">
@@ -2557,7 +2391,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-lovely-bones" data-verdict="verdict-book">
       <div class="row-book">
@@ -2580,7 +2413,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-picture-of-dorian-gray" data-verdict="verdict-book">
       <div class="row-book">
@@ -2603,7 +2435,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-road" data-verdict="verdict-book">
       <div class="row-book">
@@ -2626,7 +2457,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-time-travelers-wife" data-verdict="verdict-book">
       <div class="row-book">
@@ -2649,7 +2479,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-secret-life-of-bees" data-verdict="verdict-book">
       <div class="row-book">
@@ -2672,7 +2501,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/atonement" data-verdict="verdict-book">
       <div class="row-book">
@@ -2695,7 +2523,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/i-am-legend" data-verdict="verdict-book">
       <div class="row-book">
@@ -2718,7 +2545,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/into-the-wild" data-verdict="verdict-book">
       <div class="row-book">
@@ -2741,7 +2567,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/no-country-for-old-men" data-verdict="verdict-tie">
       <div class="row-book">
@@ -2764,7 +2589,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/stardust" data-verdict="verdict-tie">
       <div class="row-book">
@@ -2787,7 +2611,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/kite-runner" data-verdict="verdict-book">
       <div class="row-book">
@@ -2810,7 +2633,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/da-vinci-code" data-verdict="verdict-book">
       <div class="row-book">
@@ -2833,7 +2655,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/pride-and-prejudice" data-verdict="verdict-book">
       <div class="row-book">
@@ -2856,7 +2677,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/hitchhikers-guide" data-verdict="verdict-book">
       <div class="row-book">
@@ -2879,7 +2699,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-sisterhood-of-the-traveling-pants" data-verdict="verdict-book">
       <div class="row-book">
@@ -2902,7 +2721,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/howls-moving-castle" data-verdict="verdict-tie">
       <div class="row-book">
@@ -2925,7 +2743,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/i-robot" data-verdict="verdict-book">
       <div class="row-book">
@@ -2948,7 +2765,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-notebook" data-verdict="verdict-book">
       <div class="row-book">
@@ -2971,7 +2787,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/big-fish" data-verdict="verdict-tie">
       <div class="row-book">
@@ -2994,7 +2809,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/cold-mountain" data-verdict="verdict-book">
       <div class="row-book">
@@ -3017,7 +2831,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/seabiscuit" data-verdict="verdict-book">
       <div class="row-book">
@@ -3040,7 +2853,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/a-walk-to-remember" data-verdict="verdict-book">
       <div class="row-book">
@@ -3063,7 +2875,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/about-a-boy" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3086,7 +2897,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/catch-me-if-you-can" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3109,7 +2919,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-hours" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3132,7 +2941,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-pianist" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3155,7 +2963,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/a-beautiful-mind" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3178,7 +2985,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/along-came-a-spider" data-verdict="verdict-book">
       <div class="row-book">
@@ -3201,7 +3007,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/band-of-brothers" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3224,7 +3029,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/ghost-world" data-verdict="verdict-film">
       <div class="row-book">
@@ -3247,7 +3051,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/american-psycho" data-verdict="verdict-book">
       <div class="row-book">
@@ -3270,7 +3073,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/high-fidelity" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3293,7 +3095,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/fight-club" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3316,7 +3117,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/talented-mr-ripley" data-verdict="verdict-book">
       <div class="row-book">
@@ -3339,7 +3139,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/beloved" data-verdict="verdict-book">
       <div class="row-book">
@@ -3362,7 +3161,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/sphere" data-verdict="verdict-book">
       <div class="row-book">
@@ -3385,7 +3183,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/contact" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3408,7 +3205,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/la-confidential" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3431,7 +3227,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/english-patient" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3454,7 +3249,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/sense-and-sensibility" data-verdict="verdict-book">
       <div class="row-book">
@@ -3477,7 +3271,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/shawshank-redemption" data-verdict="verdict-film">
       <div class="row-book">
@@ -3500,7 +3293,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-client" data-verdict="verdict-book">
       <div class="row-book">
@@ -3523,7 +3315,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/jurassic-park" data-verdict="verdict-book">
       <div class="row-book">
@@ -3546,7 +3337,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/schindlers-list" data-verdict="verdict-film">
       <div class="row-book">
@@ -3569,7 +3359,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-firm" data-verdict="verdict-book">
       <div class="row-book">
@@ -3592,7 +3381,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-pelican-brief" data-verdict="verdict-book">
       <div class="row-book">
@@ -3615,7 +3403,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/remains-of-the-day" data-verdict="verdict-book">
       <div class="row-book">
@@ -3638,7 +3425,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/dracula" data-verdict="verdict-book">
       <div class="row-book">
@@ -3661,7 +3447,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/of-mice-and-men" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3684,7 +3469,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/silence-of-the-lambs" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3707,7 +3491,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/misery" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3730,7 +3513,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-handmaids-tale" data-verdict="verdict-book">
       <div class="row-book">
@@ -3753,7 +3535,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/lonesome-dove" data-verdict="verdict-book">
       <div class="row-book">
@@ -3776,7 +3557,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-princess-bride" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3799,7 +3579,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-color-purple" data-verdict="verdict-book">
       <div class="row-book">
@@ -3822,7 +3601,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-outsiders" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3845,7 +3623,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/blade-runner" data-verdict="verdict-film">
       <div class="row-book">
@@ -3868,7 +3645,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/sophies-choice" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3891,7 +3667,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-shining" data-verdict="verdict-book">
       <div class="row-book">
@@ -3914,7 +3689,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/jaws" data-verdict="verdict-film">
       <div class="row-book">
@@ -3937,7 +3711,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/one-flew-over-the-cuckoos-nest" data-verdict="verdict-tie">
       <div class="row-book">
@@ -3960,7 +3733,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/the-godfather" data-verdict="verdict-film">
       <div class="row-book">
@@ -3983,7 +3755,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/catch-22" data-verdict="verdict-book">
       <div class="row-book">
@@ -4006,7 +3777,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/rosemarys-baby" data-verdict="verdict-tie">
       <div class="row-book">
@@ -4029,7 +3799,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/lord-of-the-flies" data-verdict="verdict-book">
       <div class="row-book">
@@ -4052,7 +3821,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/to-kill-a-mockingbird" data-verdict="verdict-tie">
       <div class="row-book">
@@ -4075,7 +3843,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/breakfast-at-tiffanys" data-verdict="verdict-tie">
       <div class="row-book">
@@ -4098,7 +3865,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/rebecca" data-verdict="verdict-book">
       <div class="row-book">
@@ -4121,7 +3887,6 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
     <a class="row" href="/fourth-wing" data-verdict="verdict-book">
       <div class="row-book">
@@ -4144,19 +3909,18 @@
             <div class="play-icon"></div>
           </div>
         </div>
-
     </a>
   <p class="no-results" id="no-results">No comparisons match this filter.</p>
 </div>
 
 <footer>
-  <p>&copy; 2026 RavensEdge AI, LLC &nbsp;&mdash;&nbsp; operating BooksVersusMovies.com </p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+  <p>&copy; 2026 RavensEdge AI, LLC &nbsp;&mdash;&nbsp; operating BooksVersusMovies.com</p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;">RavensEdge AI, LLC is a participant in the Amazon Services LLC Associates Program...</p>
 </footer>
 
 <script>
-  const btns = document.querySelectorAll('.filter-btn');
-  const rows = document.querySelectorAll('.row');
+  const btns      = document.querySelectorAll('.filter-btn');
+  const rows      = document.querySelectorAll('.row');
   const noResults = document.getElementById('no-results');
 
   btns.forEach(btn => {
