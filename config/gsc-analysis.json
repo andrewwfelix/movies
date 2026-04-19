@@ -1,0 +1,19 @@
+{
+  "sites": [
+    "sc-domain:booksversusmovies.com"
+  ],
+  "daysBack": 28,
+  "dimensions": ["query", "page"],
+  "rowLimit": 100,
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "temperature": 0.3,
+    "apiKeyEnv": "OPENROUTER_API_KEY"
+  },
+  "output": {
+    "dir": "data/reports",
+    "prefix": "gsc-insights"
+  }
+}
+
