@@ -2,12 +2,15 @@
   "sites": [
     "sc-domain:booksversusmovies.com"
   ],
-  "daysBack": 28,
+  "periods": [
+    { "name": "3months", "daysBack": 90 },
+    { "name": "24hours", "daysBack": 1 }
+  ],
   "dimensions": ["query", "page"],
-  "rowLimit": 100,
+  "rowLimit": 150,
   "llm": {
-    "provider": "openai",
-    "model": "gpt-4o-mini",
+    "provider": "openrouter",
+    "model": "anthropic/claude-haiku-4-5",
     "temperature": 0.3,
     "apiKeyEnv": "OPENROUTER_API_KEY"
   },
@@ -16,4 +19,3 @@
     "prefix": "gsc-insights"
   }
 }
-

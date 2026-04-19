@@ -4,17 +4,21 @@ const path = require('path');
 require('dotenv').config();
 
 const CONFIG_PATH = path.join(process.cwd(), 'config/gsc-analysis.json');
+const PROMPT_PATH = path.join(process.cwd(), 'scripts/prompts/gsc-prompt.txt');
 
 async function loadConfig() {
-  if (!fs.existsSync(CONFIG_PATH)) {
-    throw new Error(`Config file not found: ${CONFIG_PATH}`);
-  }
+  if (!fs.existsSync(CONFIG_PATH)) throw new Error(`Config not found: ${CONFIG_PATH}`);
   const raw = fs.readFileSync(CONFIG_PATH, 'utf8');
   return JSON.parse(raw);
 }
 
-async function fetchGscData(siteUrl, config) {
-  console.log(`📡 Fetching GSC data for ${siteUrl}...`);
+async function loadPrompt() {
+  if (!fs.existsSync(PROMPT_PATH)) throw new Error(`Prompt not found: ${PROMPT_PATH}`);
+  return fs.readFileSync(PROMPT_PATH, 'utf8');
+}
+
+async function fetchGscData(siteUrl, daysBack) {
+  console.log(`📡 Fetching GSC data for ${daysBack} days...`);
 
   const creds = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
   const privateKey = creds.private_key.replace(/\\n/g, '\n');
@@ -29,14 +33,14 @@ async function fetchGscData(siteUrl, config) {
   const accessToken = tokens.access_token;
 
   const endDate = new Date().toISOString().split('T')[0];
-  const startDate = new Date(Date.now() - config.daysBack * 86400000)
+  const startDate = new Date(Date.now() - daysBack * 86400000)
     .toISOString().split('T')[0];
 
   const requestBody = JSON.stringify({
     startDate,
     endDate,
-    dimensions: config.dimensions,
-    rowLimit: config.rowLimit,
+    dimensions: ["query", "page"],
+    rowLimit: 150,
     startRow: 0
   });
 
@@ -56,13 +60,9 @@ async function fetchGscData(siteUrl, config) {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        if (res.statusCode !== 200) {
-          return reject(new Error(`GSC HTTP ${res.statusCode}: ${data.substring(0, 300)}`));
-        }
+        if (res.statusCode !== 200) return reject(new Error(`GSC HTTP ${res.statusCode}`));
         const json = JSON.parse(data);
-        if (json.error) {
-          return reject(new Error(`GSC API Error: ${JSON.stringify(json.error)}`));
-        }
+        if (json.error) return reject(new Error(`GSC Error: ${JSON.stringify(json.error)}`));
         resolve(json.rows || []);
       });
     });
@@ -73,45 +73,26 @@ async function fetchGscData(siteUrl, config) {
   });
 }
 
-async function getLlmInsights(rawData, config) {
+async function getLlmInsights(allData, config) {
   const apiKey = process.env[config.llm.apiKeyEnv];
-  if (!apiKey) {
-    throw new Error(`Missing ${config.llm.apiKeyEnv} in .env file`);
-  }
+  if (!apiKey) throw new Error(`Missing ${config.llm.apiKeyEnv} in .env`);
 
-  console.log(`🧠 Generating insights with ${config.llm.model} via OpenRouter...`);
+  console.log(`🧠 Sending data to ${config.llm.model} for analysis...`);
 
-  const prompt = `You are an expert SEO analyst for booksversusmovies.com.
+  let promptTemplate = await loadPrompt();
 
-Analyze the following Google Search Console data from the last ${config.daysBack} days.
+  // Insert both datasets into the prompt
+  const dataString = allData.map(d => 
+    `${d.name} (${d.daysBack} days):\n${JSON.stringify(d.rows.slice(0, 100), null, 2)}`
+  ).join('\n\n---\n\n');
 
-Raw data (top rows):
-${JSON.stringify(rawData.slice(0, 100), null, 2)}
-
-Return ONLY valid JSON with this exact structure (no extra text):
-{
-  "summary": "One paragraph overview of the performance",
-  "keyMetrics": {
-    "totalImpressions": number,
-    "totalClicks": number,
-    "avgCTR": number,
-    "avgPosition": number
-  },
-  "topQueries": [
-    { "query": string, "impressions": number, "clicks": number, "ctr": number, "position": number }
-  ],
-  "topPages": [
-    { "page": string, "impressions": number, "clicks": number, "ctr": number, "position": number }
-  ],
-  "opportunities": [string],
-  "risks": [string],
-  "recommendations": [string]
-}`;
+  promptTemplate = promptTemplate
+    .replace('{{periodsData}}', dataString);
 
   const body = JSON.stringify({
     model: config.llm.model,
     temperature: config.llm.temperature,
-    messages: [{ role: "user", content: prompt }],
+    messages: [{ role: "user", content: promptTemplate }],
     response_format: { type: "json_object" }
   });
 
@@ -122,7 +103,7 @@ Return ONLY valid JSON with this exact structure (no extra text):
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
-        'HTTP-Referer': 'https://booksversusmovies.com',   // Optional but recommended
+        'HTTP-Referer': 'https://booksversusmovies.com',
         'X-Title': 'GSC Morning Analysis',
         'Content-Type': 'application/json'
       }
@@ -130,18 +111,10 @@ Return ONLY valid JSON with this exact structure (no extra text):
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        if (res.statusCode !== 200) {
-          return reject(new Error(`OpenRouter HTTP ${res.statusCode}: ${data}`));
-        }
+        if (res.statusCode !== 200) return reject(new Error(`OpenRouter HTTP ${res.statusCode}`));
         const json = JSON.parse(data);
-        if (json.error) {
-          return reject(new Error(`OpenRouter Error: ${json.error.message}`));
-        }
-        try {
-          resolve(JSON.parse(json.choices[0].message.content));
-        } catch (e) {
-          reject(new Error("Failed to parse LLM JSON response"));
-        }
+        if (json.error) return reject(new Error(`OpenRouter Error: ${json.error.message}`));
+        resolve(JSON.parse(json.choices[0].message.content));
       });
     });
 
@@ -152,57 +125,67 @@ Return ONLY valid JSON with this exact structure (no extra text):
 }
 
 async function runMorningAnalysis() {
-  console.log('🌅 Starting Morning GSC Analysis...\n');
+  console.log('🌅 Starting Morning GSC Analysis (3 months + 24 hours)...\n');
 
   const config = await loadConfig();
+  const allData = [];
 
-  // Fetch GSC data
-  let allRows = [];
-  for (const site of config.sites) {
-    const rows = await fetchGscData(site, config);
-    allRows = allRows.concat(rows);
-    console.log(`   → Got ${rows.length} rows from ${site}`);
+  for (const period of config.periods) {
+    const rows = await fetchGscData(config.sites[0], period.daysBack);
+    allData.push({
+      name: period.name,
+      daysBack: period.daysBack,
+      rows
+    });
+    console.log(`   → ${period.name} (${period.daysBack} days): ${rows.length} rows`);
   }
 
-  if (allRows.length === 0) {
-    console.log("⚠️ No data found in GSC for the selected period.");
+  if (allData.every(d => d.rows.length === 0)) {
+    console.log("⚠️ No data found in GSC.");
     return;
   }
 
-  // Get insights from LLM (OpenRouter)
-  const insights = await getLlmInsights(allRows, config);
+  const insights = await getLlmInsights(allData, config);
 
-  // Build final report
+  // Build report
   const report = {
     generatedAt: new Date().toISOString(),
     site: config.sites[0],
     config: {
-      daysBack: config.daysBack,
+      periods: config.periods,
       model: config.llm.model,
-      dimensions: config.dimensions,
       provider: "openrouter"
     },
-    rawDataCount: allRows.length,
-    rawData: allRows,
+    rawDataCount: allData.reduce((sum, d) => sum + d.rows.length, 0),
     insights
   };
 
-  // Save JSON report
+  // Save
   const dateStr = new Date().toISOString().split('T')[0];
   const filename = `${config.output.prefix}-${dateStr}.json`;
   const dir = path.join(process.cwd(), config.output.dir);
-
   fs.mkdirSync(dir, { recursive: true });
   const filePath = path.join(dir, filename);
 
   fs.writeFileSync(filePath, JSON.stringify(report, null, 2));
 
-  console.log(`\n✅ Morning analysis complete!`);
-  console.log(`   Report saved: ${filePath}`);
-  console.log(`   Generated with: ${config.llm.model} (via OpenRouter)`);
+  console.log(`\n✅ Analysis complete! Report saved: ${filePath}`);
+
+  // Quick terminal summary
+  console.log(`\n📊 QUICK SUMMARY:`);
+  console.log(`   ${insights.summary || 'No summary provided.'}`);
+
+  console.log(`\n💡 Top Recommendations:`);
+  if (insights.recommendations && insights.recommendations.length > 0) {
+    insights.recommendations.forEach((rec, i) => {
+      const action = typeof rec === 'string' ? rec : (rec.action || JSON.stringify(rec));
+      const priority = rec.priority || 'Medium';
+      console.log(`   ${i + 1}. ${action} (${priority})`);
+    });
+  }
 }
 
 runMorningAnalysis().catch(err => {
-  console.error('\n💥 Error during analysis:');
+  console.error('\n💥 Error:');
   console.error(err.message);
 });
