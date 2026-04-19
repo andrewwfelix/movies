@@ -38,3 +38,5 @@ desktop.ini
 # Uncomment if you prefer not to commit metadata CSVs
 # data/extracted_metadata.csv
 # data/metadata-issues.csv
+config/ravensedge-bvm.json 
+config/google-credentials.json 
