@@ -73,8 +73,8 @@
   <p class="page-sub" id="page-sub">Google Search Console · booksversusmovies.com</p>
 
   <div class="metrics">
-    <div class="metric"><div class="metric-label">Impressions</div><div class="metric-value" id="m-imps">—</div><div class="metric-sub">14-day total</div></div>
-    <div class="metric"><div class="metric-label">Clicks</div><div class="metric-value" id="m-clicks">—</div><div class="metric-sub">14-day total</div></div>
+    <div class="metric"><div class="metric-label">Impressions</div><div class="metric-value" id="m-imps">—</div><div class="metric-sub">24-hour total</div></div>
+    <div class="metric"><div class="metric-label">Clicks</div><div class="metric-value" id="m-clicks">—</div><div class="metric-sub">24-hour total</div></div>
     <div class="metric"><div class="metric-label">Avg CTR</div><div class="metric-value" id="m-ctr">—</div><div class="metric-sub">click-through rate</div></div>
     <div class="metric"><div class="metric-label">Avg position</div><div class="metric-value" id="m-pos">—</div><div class="metric-sub">search ranking</div></div>
   </div>
@@ -82,7 +82,7 @@
   <div class="chart-container">
     <div class="section-label">Daily impressions</div>
     <div class="chart-wrap">
-      <canvas id="impressionsChart" role="img" aria-label="Daily impressions over 14 days">Daily impressions rising from 0 to 286.</canvas>
+      <canvas id="impressionsChart" role="img" aria-label="Daily impressions — 3 month trend">Daily impressions — 3 month trend</canvas>
     </div>
   </div>
 
@@ -104,43 +104,55 @@ function ctrClass(c) { const n=parseFloat(c); return n>=4?'ctr-high':n>=1?'ctr-m
 function posClass(p) { return p<=10?'pos-good':p<=15?'pos-mid':''; }
 
 async function load() {
-  const res  = await fetch('../dashboard-data/gsc-24-hour.json');
-  const json = await res.json();
-  const d = json.data, m = json.metadata;
+  // 24-hour: freshest stats (clicks, CTR, position, insights, tables)
+  // 3-month: historical daily chart
+  const [res24, res3m] = await Promise.all([
+    fetch('../dashboard-data/gsc-24-hour.json'),
+    fetch('../dashboard-data/gsc-03-month.json'),
+  ]);
+  const json24 = await res24.json();
+  const json3m = await res3m.json();
+  const d24 = json24.data, m24 = json24.metadata;
+  const d3m = json3m.data;
 
-  document.getElementById('last-updated').textContent = 'Updated ' + m.lastUpdated;
-  document.getElementById('page-sub').textContent = `Google Search Console · ${m.startDate} – ${m.endDate} · booksversusmovies.com`;
-  document.getElementById('m-imps').textContent    = d.summary.totalImpressions.toLocaleString();
-  document.getElementById('m-clicks').textContent  = d.summary.totalClicks.toLocaleString();
-  document.getElementById('m-ctr').textContent     = d.summary.avgCTR;
-  document.getElementById('m-pos').textContent     = d.summary.avgPosition.toFixed(1);
+  document.getElementById('last-updated').textContent = 'Updated ' + m24.lastUpdated;
+  document.getElementById('page-sub').textContent = `Google Search Console · ${m24.startDate} (24hr) · ${json3m.metadata.startDate} – ${json3m.metadata.endDate} (trend) · booksversusmovies.com`;
 
+  // Stats from 24-hour (freshest signal)
+  document.getElementById('m-imps').textContent    = d24.summary.totalImpressions.toLocaleString();
+  document.getElementById('m-clicks').textContent  = d24.summary.totalClicks.toLocaleString();
+  document.getElementById('m-ctr').textContent     = d24.summary.avgCTR;
+  document.getElementById('m-pos').textContent     = d24.summary.avgPosition.toFixed(1);
+
+  // Chart from 3-month (daily trend history)
   new Chart(document.getElementById('impressionsChart'), {
     type: 'line',
     data: {
-      labels: d.chart.map(r => r.date.slice(5)),
+      labels: d3m.chart.map(r => r.date.slice(5)),
       datasets: [
-        { data: d.chart.map(r => r.impressions), borderColor: '#c8973a', backgroundColor: 'rgba(200,151,58,0.1)', borderWidth: 2, fill: true, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#c8973a' },
-        { data: d.chart.map(r => r.clicks), borderColor: '#3b6d11', backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [4,3], fill: false, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#3b6d11' }
+        { data: d3m.chart.map(r => r.impressions), borderColor: '#c8973a', backgroundColor: 'rgba(200,151,58,0.1)', borderWidth: 2, fill: true, tension: 0.3, pointRadius: 2, pointBackgroundColor: '#c8973a' },
+        { data: d3m.chart.map(r => r.clicks), borderColor: '#3b6d11', backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [4,3], fill: false, tension: 0.3, pointRadius: 2, pointBackgroundColor: '#3b6d11' }
       ]
     },
     options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
       scales: {
-        x: { ticks: { color: '#6b6456', font: { size: 10, family: 'JetBrains Mono' }, maxRotation: 0, autoSkip: true, maxTicksLimit: 8 }, grid: { color: 'rgba(0,0,0,0.06)' } },
+        x: { ticks: { color: '#6b6456', font: { size: 10, family: 'JetBrains Mono' }, maxRotation: 0, autoSkip: true, maxTicksLimit: 12 }, grid: { color: 'rgba(0,0,0,0.06)' } },
         y: { ticks: { color: '#6b6456', font: { size: 10, family: 'JetBrains Mono' } }, grid: { color: 'rgba(0,0,0,0.06)' }, beginAtZero: true }
       }
     }
   });
 
+  // Insights + tables from 24-hour (most relevant pages/queries)
+  const d = d24;
   const topCtr = [...d.pages].sort((a,b) => parseFloat(b.ctr)-parseFloat(a.ctr))[0];
   const topImp = [...d.pages].sort((a,b) => b.impressions-a.impressions)[0];
   const opp    = [...d.pages].sort((a,b) => b.impressions-a.impressions).find(p => parseFloat(p.ctr)<1 && p.impressions>50);
-  const last   = d.chart[d.chart.length-1];
+  const last   = d3m.chart[d3m.chart.length-1];
 
   document.getElementById('insights').innerHTML = `
     <div class="insight-card"><div class="insight-tag" style="color:var(--green)">Best CTR page</div><div class="insight-title">${slugFromUrl(topCtr.url)}</div><div class="insight-stat">Highest click-through rate</div><div class="insight-big" style="color:var(--green)">${topCtr.ctr}</div></div>
     <div class="insight-card"><div class="insight-tag" style="color:var(--amber)">Biggest opportunity</div><div class="insight-title">${slugFromUrl((opp||topImp).url)}</div><div class="insight-stat">${(opp||topImp).impressions} impressions · ${(opp||topImp).ctr} CTR</div><div class="insight-big" style="color:var(--amber)">pos. ${(opp||topImp).position.toFixed(1)}</div></div>
-    <div class="insight-card"><div class="insight-tag" style="color:var(--gold-dim)">Latest day</div><div class="insight-title">${last.date}</div><div class="insight-stat">${last.impressions} impressions · ${last.clicks} clicks</div><div class="insight-big" style="color:var(--gold)">${last.ctr||'0%'}</div></div>
+    <div class="insight-card"><div class="insight-tag" style="color:var(--gold-dim)">Latest day (3mo)</div><div class="insight-title">${last.date}</div><div class="insight-stat">${last.impressions} impressions · ${last.clicks} clicks</div><div class="insight-big" style="color:var(--gold)">${last.ctr||'0%'}</div></div>
     <div class="insight-card"><div class="insight-tag" style="color:var(--gold-dim)">Most impressions</div><div class="insight-title">${slugFromUrl(topImp.url)}</div><div class="insight-stat">position ${topImp.position.toFixed(1)}</div><div class="insight-big" style="color:var(--gold)">${topImp.impressions.toLocaleString()}</div></div>`;
 
   const topPages = [...d.pages].sort((a,b) => b.impressions-a.impressions).slice(0,10);
@@ -148,7 +160,7 @@ async function load() {
 
   document.getElementById('queries-table').innerHTML = `<table><thead><tr><th>Query</th><th class="right">Imps</th><th class="right">CTR</th></tr></thead><tbody>${d.queries.slice(0,10).map(q=>`<tr><td style="font-size:0.75rem;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${q.query}</td><td class="right" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--muted)">${q.impressions}</td><td class="right"><span class="ctr-pill ${ctrClass(q.ctr)}">${q.ctr}</span></td></tr>`).join('')}</tbody></table>`;
 
-  document.getElementById('dash-footer').textContent = 'Data from Google Search Console · ' + m.startDate + ' – ' + m.endDate + ' · ' + d.summary.pagesIndexed + ' pages indexed';
+  document.getElementById('dash-footer').textContent = 'Data from Google Search Console · 24hr: ' + m24.startDate + ' · Trend: ' + json3m.metadata.startDate + ' – ' + json3m.metadata.endDate;
 }
 
 load().catch(e => { document.getElementById('last-updated').textContent = 'Error loading data'; console.error(e); });

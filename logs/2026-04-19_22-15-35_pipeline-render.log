@@ -1,0 +1,25 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-19T02:15:35.594Z
+============================================================
+[02:15:35.610] [INFO ] pipeline-render.js
+[02:15:35.612] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[02:15:35.612] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[02:15:35.612] [INFO ] Files:   1
+[02:15:35.612] [INFO ] Force:   no
+
+── Rendering ────────────────────────────────────
+[02:15:35.613] [SKIP ] enders-game.html (already exists)
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            0
+  Skipped:             1
+  Failed:              0
+────────────────────────────────────────────────
+
+============================================================
+Finished: 2026-04-19T02:15:35.614Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-19_22-15-35_pipeline-render.log
+============================================================

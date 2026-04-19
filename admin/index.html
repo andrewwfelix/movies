@@ -318,9 +318,14 @@ function catClass(cat) {
 
 // ── Load Analytics ────────────────────────────────────────────────────────────
 async function loadAnalytics() {
-  const res  = await fetch('../dashboard-data/gsc-24-hour.json');
-  const json = await res.json();
+  const [res24, res3m] = await Promise.all([
+    fetch('../dashboard-data/gsc-24-hour.json'),
+    fetch('../dashboard-data/gsc-03-month.json'),
+  ]);
+  const json = await res24.json();
+  const json3m = await res3m.json();
   const d = json.data, m = json.metadata;
+  const d3m = json3m.data;
 
   document.getElementById('last-updated').textContent = 'Updated ' + m.lastUpdated + ' · ' + m.lastUpdateTime;
   document.getElementById('m-clicks').textContent    = d.summary.totalClicks.toLocaleString();
@@ -333,10 +338,10 @@ async function loadAnalytics() {
   new Chart(document.getElementById('impressionsChart'), {
     type: 'line',
     data: {
-      labels: d.chart.map(r => r.date.slice(5)),
+      labels: d3m.chart.map(r => r.date.slice(5)),
       datasets: [
-        { label: 'Impressions', data: d.chart.map(r => r.impressions), borderColor: '#c8973a', backgroundColor: 'rgba(200,151,58,0.1)', borderWidth: 2, fill: true, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#c8973a', yAxisID: 'y' },
-        { label: 'Clicks', data: d.chart.map(r => r.clicks), borderColor: '#3b6d11', backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [4,3], fill: false, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#3b6d11', yAxisID: 'y1' }
+        { label: 'Impressions', data: d3m.chart.map(r => r.impressions), borderColor: '#c8973a', backgroundColor: 'rgba(200,151,58,0.1)', borderWidth: 2, fill: true, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#c8973a', yAxisID: 'y' },
+        { label: 'Clicks', data: d3m.chart.map(r => r.clicks), borderColor: '#3b6d11', backgroundColor: 'transparent', borderWidth: 1.5, borderDash: [4,3], fill: false, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#3b6d11', yAxisID: 'y1' }
       ]
     },
     options: { responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false }, plugins: { legend: { display: false } },
@@ -351,7 +356,7 @@ async function loadAnalytics() {
   const topCtr      = [...d.pages].sort((a,b) => parseFloat(b.ctr) - parseFloat(a.ctr))[0];
   const topImp      = [...d.pages].sort((a,b) => b.impressions - a.impressions)[0];
   const opportunity = [...d.pages].sort((a,b) => b.impressions - a.impressions).find(p => parseFloat(p.ctr) < 1 && p.impressions > 50);
-  const lastDay     = d.chart[d.chart.length - 1];
+  const lastDay     = d3m.chart[d3m.chart.length - 1];
 
   document.getElementById('insights').innerHTML = `
     <div class="insight-card"><div class="insight-tag" style="color:var(--green)">Today's best</div><div class="insight-title">${slugFromUrl(topCtr.url)}</div><div class="insight-stat">Highest CTR page</div><div class="insight-big" style="color:var(--green)">${topCtr.ctr}</div></div>
@@ -373,9 +378,20 @@ async function loadAnalytics() {
 
 // ── Load Project ──────────────────────────────────────────────────────────────
 async function loadProject() {
-  const res  = await fetch('../dashboard-data/project-status.json');
-  const json = await res.json();
-  const s    = json.summary;
+  let json;
+  try {
+    const res = await fetch('../dashboard-data/project-status.json');
+    if (!res.ok) throw new Error('not found');
+    json = await res.json();
+  } catch {
+    document.getElementById('kanban-summary').innerHTML = '<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--muted);grid-column:1/-1">project-status.json not found — run node admin/docs-to-json.js to generate it.</div>';
+    document.getElementById('inprogress-list').innerHTML = '';
+    document.getElementById('today-list').innerHTML = '';
+    document.getElementById('high-list').innerHTML = '';
+    document.getElementById('done-list').innerHTML = '';
+    return;
+  }
+  const s = json.summary;
 
   document.getElementById('kanban-summary').innerHTML = `
     <div class="kanban-stat"><div class="kanban-stat-num" style="color:var(--amber)">${s.today}</div><div class="kanban-stat-label">Today</div></div>
@@ -410,8 +426,16 @@ async function loadProject() {
 
 // ── Load Decisions ────────────────────────────────────────────────────────────
 async function loadDecisions() {
-  const res  = await fetch('../dashboard-data/decisions.json');
-  const json = await res.json();
+  let json;
+  try {
+    const res = await fetch('../dashboard-data/decisions.json');
+    if (!res.ok) throw new Error('not found');
+    json = await res.json();
+  } catch {
+    document.getElementById('decision-filters').innerHTML = '';
+    document.getElementById('decision-grid').innerHTML = '<div style="padding:1.5rem;font-family:var(--font-mono);font-size:0.72rem;color:var(--muted)">decisions.json not found — run node admin/docs-to-json.js to generate it.</div>';
+    return;
+  }
 
   let activeFilter = 'all';
   const categories = ['all', ...json.summary.categories];

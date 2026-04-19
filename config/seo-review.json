@@ -1,0 +1,38 @@
+{
+  "models": {
+    "sonnet": {
+      "model": "anthropic/claude-sonnet-4-5",
+      "label": "Claude Sonnet 4.5",
+      "enabled": true,
+      "temperature": 0.2,
+      "maxTokens": 15000
+    },
+    "gemini": {
+      "model": "google/gemini-2.5-pro",
+      "label": "Gemini 2.5 Pro",
+      "enabled": true,
+      "temperature": 0.2,
+      "maxTokens": 15000
+    },
+    "grok": {
+      "model": "x-ai/grok-3",
+      "label": "Grok-3",
+      "enabled": true,
+      "temperature": 0.2,
+      "maxTokens": 15000
+    }
+  },
+  "scoring": {
+    "titleMaxChars": 60,
+    "metaMaxChars": 150,
+    "highPriorityThreshold": 5,
+    "mediumPriorityThreshold": 7
+  },
+  "paths": {
+    "sourceDir": "pipeline/2-revised",
+    "outputDir": "data/reports",
+    "reviewOutput": "seo-llm-review.csv",
+    "exportOutput": "seo-export.csv"
+  },
+  "notes": "Three models review all pages in a single CSV call each. ~$1.16 total for 171 pages. Disable a model by setting enabled: false."
+}

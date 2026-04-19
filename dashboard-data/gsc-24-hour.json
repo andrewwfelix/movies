@@ -1,689 +1,647 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-18",
-    "lastUpdateTime": "08:22 AM",
+    "lastUpdated": "2026-04-19",
+    "lastUpdateTime": "07:54 AM",
     "source": "Google Search Console Export — 24 Hour",
     "dateRangeDays": 2,
-    "startDate": "2026-04-17",
-    "endDate": "2026-04-18"
+    "startDate": "2026-04-18",
+    "endDate": "2026-04-19"
   },
   "data": {
     "chart": [
       {
-        "date": "2026-04-17",
-        "clicks": 16,
-        "impressions": 351,
-        "ctr": "4.56%",
-        "position": 14.5
+        "date": "2026-04-18",
+        "clicks": 11,
+        "impressions": 598,
+        "ctr": "1.84%",
+        "position": 11.7
       },
       {
-        "date": "2026-04-18",
-        "clicks": 1,
-        "impressions": 41,
-        "ctr": "2.44%",
-        "position": 18.6
+        "date": "2026-04-19",
+        "clicks": 2,
+        "impressions": 34,
+        "ctr": "5.88%",
+        "position": 13.4
       }
     ],
     "pages": [
       {
         "url": "https://booksversusmovies.com/reminders-of-him",
-        "clicks": 12,
-        "impressions": 123,
-        "ctr": "9.76%",
-        "position": 8.11
+        "clicks": 13,
+        "impressions": 147,
+        "ctr": "8.84%",
+        "position": 8.29
       },
       {
-        "url": "https://booksversusmovies.com/it-muschietti.html",
-        "clicks": 2,
-        "impressions": 3,
-        "ctr": "66.67%",
-        "position": 18
-      },
-      {
-        "url": "https://booksversusmovies.com/margos-got-money-troubles.html",
-        "clicks": 1,
-        "impressions": 13,
-        "ctr": "7.69%",
-        "position": 13.23
-      },
-      {
-        "url": "https://booksversusmovies.com/remarkably-bright-creatures",
-        "clicks": 1,
-        "impressions": 10,
-        "ctr": "10%",
-        "position": 7.2
-      },
-      {
-        "url": "https://booksversusmovies.com/no-country-for-old-men.html",
-        "clicks": 1,
-        "impressions": 4,
-        "ctr": "25%",
-        "position": 36.5
+        "url": "https://booksversusmovies.com/enders-game",
+        "clicks": 0,
+        "impressions": 281,
+        "ctr": "0%",
+        "position": 9.32
       },
       {
         "url": "https://booksversusmovies.com/",
         "clicks": 0,
-        "impressions": 40,
+        "impressions": 52,
         "ctr": "0%",
-        "position": 13.72
-      },
-      {
-        "url": "https://booksversusmovies.com/reminders-of-him.html",
-        "clicks": 0,
-        "impressions": 15,
-        "ctr": "0%",
-        "position": 7.8
-      },
-      {
-        "url": "https://booksversusmovies.com/project-hail-mary.html",
-        "clicks": 0,
-        "impressions": 13,
-        "ctr": "0%",
-        "position": 28.54
-      },
-      {
-        "url": "https://booksversusmovies.com/the-firm",
-        "clicks": 0,
-        "impressions": 12,
-        "ctr": "0%",
-        "position": 9.42
-      },
-      {
-        "url": "https://booksversusmovies.com/devil-wears-prada.html",
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": "0%",
-        "position": 8.82
+        "position": 15.17
       },
       {
         "url": "https://booksversusmovies.com/gone-girl",
         "clicks": 0,
-        "impressions": 10,
+        "impressions": 16,
         "ctr": "0%",
-        "position": 4.5
+        "position": 9.81
+      },
+      {
+        "url": "https://booksversusmovies.com/atonement",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": "0%",
+        "position": 10.27
+      },
+      {
+        "url": "https://booksversusmovies.com/lonesome-dove.html",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": "0%",
+        "position": 28.62
+      },
+      {
+        "url": "https://booksversusmovies.com/the-firm",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": "0%",
+        "position": 6.71
       },
       {
         "url": "https://booksversusmovies.com/devil-wears-prada",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 7,
+        "ctr": "0%",
+        "position": 10.14
+      },
+      {
+        "url": "https://booksversusmovies.com/a-beautiful-mind",
+        "clicks": 0,
+        "impressions": 6,
         "ctr": "0%",
         "position": 7.5
       },
       {
-        "url": "https://booksversusmovies.com/one-day.html",
+        "url": "https://booksversusmovies.com/animal-farm",
         "clicks": 0,
         "impressions": 6,
         "ctr": "0%",
-        "position": 8.83
-      },
-      {
-        "url": "https://booksversusmovies.com/the-odyssey.html",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": "0%",
-        "position": 9
-      },
-      {
-        "url": "https://booksversusmovies.com/animal-farm.html",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": "0%",
-        "position": 9.17
+        "position": 12.33
       },
       {
         "url": "https://booksversusmovies.com/people-we-meet-on-vacation",
         "clicks": 0,
         "impressions": 6,
         "ctr": "0%",
-        "position": 21.83
+        "position": 15.33
       },
       {
-        "url": "https://booksversusmovies.com/ready-player-one",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": "0%",
-        "position": 21.83
-      },
-      {
-        "url": "https://booksversusmovies.com/a-beautiful-mind",
+        "url": "https://booksversusmovies.com/silence-of-the-lambs",
         "clicks": 0,
         "impressions": 5,
         "ctr": "0%",
-        "position": 6.6
+        "position": 9.2
+      },
+      {
+        "url": "https://booksversusmovies.com/the-odyssey.html",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": "0%",
+        "position": 6.75
+      },
+      {
+        "url": "https://booksversusmovies.com/fight-club",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": "0%",
+        "position": 8.25
       },
       {
         "url": "https://booksversusmovies.com/the-secret-life-of-bees",
         "clicks": 0,
-        "impressions": 5,
-        "ctr": "0%",
-        "position": 7.4
-      },
-      {
-        "url": "https://booksversusmovies.com/never-let-me-go.html",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": "0%",
-        "position": 8.6
-      },
-      {
-        "url": "https://booksversusmovies.com/american-gods.html",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": "0%",
-        "position": 19.6
-      },
-      {
-        "url": "https://booksversusmovies.com/lonesome-dove.html",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": "0%",
-        "position": 35.2
-      },
-      {
-        "url": "https://booksversusmovies.com/about-a-boy",
-        "clicks": 0,
         "impressions": 4,
         "ctr": "0%",
-        "position": 2.5
+        "position": 26.75
       },
       {
-        "url": "https://booksversusmovies.com/la-confidential",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 7.5
-      },
-      {
-        "url": "https://booksversusmovies.com/the-longest-ride",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 8
-      },
-      {
-        "url": "https://booksversusmovies.com/pride-and-prejudice",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 20.75
-      },
-      {
-        "url": "https://booksversusmovies.com/gone-girl.html",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 23.5
-      },
-      {
-        "url": "https://booksversusmovies.com/lonesome-dove",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 34.75
-      },
-      {
-        "url": "https://booksversusmovies.com/spotlight-lonesome-dove",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 37.5
-      },
-      {
-        "url": "https://booksversusmovies.com/girl-on-the-train",
+        "url": "https://booksversusmovies.com/where-the-crawdads-sing.html",
         "clicks": 0,
         "impressions": 3,
         "ctr": "0%",
         "position": 4.67
       },
       {
-        "url": "https://booksversusmovies.com/remains-of-the-day.html",
+        "url": "https://booksversusmovies.com/one-day",
         "clicks": 0,
         "impressions": 3,
         "ctr": "0%",
-        "position": 6
+        "position": 5.33
       },
       {
-        "url": "https://booksversusmovies.com/english-patient",
+        "url": "https://booksversusmovies.com/la-confidential",
         "clicks": 0,
         "impressions": 3,
         "ctr": "0%",
-        "position": 6.67
+        "position": 7.67
       },
       {
-        "url": "https://booksversusmovies.com/catch-22",
+        "url": "https://booksversusmovies.com/american-psycho",
         "clicks": 0,
         "impressions": 3,
         "ctr": "0%",
-        "position": 8
+        "position": 8.33
       },
       {
-        "url": "https://booksversusmovies.com/the-handmaids-tale",
+        "url": "https://booksversusmovies.com/reminders-of-him.html",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 8.33
+      },
+      {
+        "url": "https://booksversusmovies.com/big-fish",
         "clicks": 0,
         "impressions": 3,
         "ctr": "0%",
         "position": 9
       },
       {
-        "url": "https://booksversusmovies.com/animal-farm",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 11.67
-      },
-      {
-        "url": "https://booksversusmovies.com/shawshank-redemption",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 21
-      },
-      {
-        "url": "https://booksversusmovies.com/remarkably-bright-creatures.html",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 21.67
-      },
-      {
-        "url": "https://booksversusmovies.com/wild.html",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 23.67
-      },
-      {
-        "url": "https://booksversusmovies.com/spotlight-fight-club",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 85.33
-      },
-      {
-        "url": "https://booksversusmovies.com/atonement.html",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 1
-      },
-      {
-        "url": "https://booksversusmovies.com/should-you-read-the-book-first",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 1.5
-      },
-      {
-        "url": "https://booksversusmovies.com/hunger-games-sunrise.html",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 2
-      },
-      {
-        "url": "https://booksversusmovies.com/into-the-wild",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 5.5
-      },
-      {
-        "url": "https://booksversusmovies.com/room",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 6.5
-      },
-      {
-        "url": "https://booksversusmovies.com/one-flew-over-the-cuckoos-nest",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 9.5
-      },
-      {
-        "url": "https://booksversusmovies.com/dark-matter.html",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 11
-      },
-      {
         "url": "https://booksversusmovies.com/margos-got-money-troubles",
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 3,
         "ctr": "0%",
-        "position": 12
+        "position": 9
       },
       {
-        "url": "https://booksversusmovies.com/pachinko.html",
+        "url": "https://booksversusmovies.com/the-longest-ride",
         "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 17.5
-      },
-      {
-        "url": "https://booksversusmovies.com/enders-game",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 18.5
-      },
-      {
-        "url": "https://booksversusmovies.com/the-great-gatsby",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 23.5
-      },
-      {
-        "url": "https://booksversusmovies.com/big-fish",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 39
-      },
-      {
-        "url": "https://booksversusmovies.com/frankenstein",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 46
-      },
-      {
-        "url": "https://booksversusmovies.com/fight-club",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 2
-      },
-      {
-        "url": "https://booksversusmovies.com/the-housemaid.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 3
-      },
-      {
-        "url": "https://booksversusmovies.com/a-man-called-ove",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 5
-      },
-      {
-        "url": "https://booksversusmovies.com/it-ends-with-us.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 5
-      },
-      {
-        "url": "https://booksversusmovies.com/bridgerton.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 6
-      },
-      {
-        "url": "https://booksversusmovies.com/the-shining",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 7
-      },
-      {
-        "url": "https://booksversusmovies.com/verity.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 8
-      },
-      {
-        "url": "https://booksversusmovies.com/all-the-light-we-cannot-see",
-        "clicks": 0,
-        "impressions": 1,
+        "impressions": 3,
         "ctr": "0%",
         "position": 9
       },
       {
         "url": "https://booksversusmovies.com/all-the-light-we-cannot-see.html",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 3,
         "ctr": "0%",
-        "position": 11
+        "position": 11.67
       },
       {
-        "url": "https://booksversusmovies.com/silence-of-the-lambs.html",
+        "url": "https://booksversusmovies.com/one-flew-over-the-cuckoos-nest",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 3,
         "ctr": "0%",
-        "position": 11
+        "position": 12.33
       },
       {
-        "url": "https://booksversusmovies.com/the-fault-in-our-stars",
+        "url": "https://booksversusmovies.com/the-thursday-murder-club.html",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 3,
         "ctr": "0%",
-        "position": 11
-      },
-      {
-        "url": "https://booksversusmovies.com/dune",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 12
-      },
-      {
-        "url": "https://booksversusmovies.com/american-psycho",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 19
-      },
-      {
-        "url": "https://booksversusmovies.com/annihilation.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 23
-      },
-      {
-        "url": "https://booksversusmovies.com/a-knight-of-the-seven-kingdoms.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 26
-      },
-      {
-        "url": "https://booksversusmovies.com/misery",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 27
-      },
-      {
-        "url": "https://booksversusmovies.com/dune.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 28
-      },
-      {
-        "url": "https://booksversusmovies.com/the-shining.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 28
-      },
-      {
-        "url": "https://booksversusmovies.com/wuthering-heights",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 34
-      },
-      {
-        "url": "https://booksversusmovies.com/frankenstein.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 38
+        "position": 13.67
       },
       {
         "url": "https://booksversusmovies.com/bridgerton",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 3,
         "ctr": "0%",
-        "position": 39
+        "position": 15.67
       },
       {
-        "url": "https://booksversusmovies.com/spotlight-the-shining",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 41
-      },
-      {
-        "url": "https://booksversusmovies.com/verity",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 50
-      },
-      {
-        "url": "https://booksversusmovies.com/pride-and-prejudice.html",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 88
-      }
-    ],
-    "queries": [
-      {
-        "query": "reminders of him book vs movie",
-        "clicks": 1,
-        "impressions": 11,
-        "ctr": "9.09%",
-        "position": 7.36
-      },
-      {
-        "query": "reminders of him differences between book and movie",
-        "clicks": 1,
-        "impressions": 10,
-        "ctr": "10%",
-        "position": 7.8
-      },
-      {
-        "query": "differences between reminders of him book and movie",
-        "clicks": 1,
-        "impressions": 5,
-        "ctr": "20%",
-        "position": 11
-      },
-      {
-        "query": "reminders of him movie and book differences",
-        "clicks": 1,
-        "impressions": 1,
-        "ctr": "100%",
-        "position": 7
-      },
-      {
-        "query": "differences in reminders of him book and movie",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": "0%",
-        "position": 7.2
-      },
-      {
-        "query": "difference between reminders of him book and movie",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": "0%",
-        "position": 10.2
-      },
-      {
-        "query": "reminders of him movie vs book differences",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 8
-      },
-      {
-        "query": "reminders of him movie compared to book",
+        "url": "https://booksversusmovies.com/a-walk-to-remember",
         "clicks": 0,
         "impressions": 3,
         "ctr": "0%",
-        "position": 10.33
+        "position": 19.67
       },
       {
-        "query": "reminders of him book and movie differences",
+        "url": "https://booksversusmovies.com/remarkably-bright-creatures",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 26.67
+      },
+      {
+        "url": "https://booksversusmovies.com/shawshank-redemption",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 33.67
+      },
+      {
+        "url": "https://booksversusmovies.com/the-fault-in-our-stars",
         "clicks": 0,
         "impressions": 2,
         "ctr": "0%",
-        "position": 8
+        "position": 6.5
       },
       {
-        "query": "reminders of him differences",
+        "url": "https://booksversusmovies.com/room",
         "clicks": 0,
         "impressions": 2,
         "ctr": "0%",
-        "position": 9.5
+        "position": 9
       },
       {
-        "query": "the firm book vs movie",
+        "url": "https://booksversusmovies.com/catch-22",
         "clicks": 0,
         "impressions": 2,
         "ctr": "0%",
-        "position": 9.5
+        "position": 11
       },
       {
-        "query": "project hail mary movie or book first",
+        "url": "https://booksversusmovies.com/no-country-for-old-men",
         "clicks": 0,
         "impressions": 2,
         "ctr": "0%",
-        "position": 20.5
+        "position": 27.5
       },
       {
-        "query": "ready player one book awards",
+        "url": "https://booksversusmovies.com/girl-on-the-train",
         "clicks": 0,
         "impressions": 2,
         "ctr": "0%",
-        "position": 31
+        "position": 28.5
       },
       {
-        "query": "bolivar lonesome dove",
+        "url": "https://booksversusmovies.com/the-help",
         "clicks": 0,
         "impressions": 2,
         "ctr": "0%",
-        "position": 32.5
+        "position": 29
       },
       {
-        "query": "project hail mary book or movie",
+        "url": "https://booksversusmovies.com/pachinko",
         "clicks": 0,
         "impressions": 2,
         "ctr": "0%",
-        "position": 36.5
+        "position": 29.5
       },
       {
-        "query": "what is lonesome dove about",
+        "url": "https://booksversusmovies.com/all-quiet-on-the-western-front.html",
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 1,
         "ctr": "0%",
-        "position": 48
+        "position": 2
       },
       {
-        "query": "reminders of him book differences",
+        "url": "https://booksversusmovies.com/project-hail-mary",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 2
+      },
+      {
+        "url": "https://booksversusmovies.com/remains-of-the-day.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 2
+      },
+      {
+        "url": "https://booksversusmovies.com/about-a-boy",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 3
       },
       {
-        "query": "lonesome dove book vs miniseries",
+        "url": "https://booksversusmovies.com/verity.html",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 5
+      },
+      {
+        "url": "https://booksversusmovies.com/annihilation",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 6
+      },
+      {
+        "url": "https://booksversusmovies.com/fourth-wing.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "url": "https://booksversusmovies.com/pride-and-prejudice.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "url": "https://booksversusmovies.com/wuthering-heights.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "url": "https://booksversusmovies.com/a-knight-of-the-seven-kingdoms",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 9
+      },
+      {
+        "url": "https://booksversusmovies.com/english-patient",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 9
+      },
+      {
+        "url": "https://booksversusmovies.com/hunger-games-sunrise",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 9
+      },
+      {
+        "url": "https://booksversusmovies.com/hunger-games-sunrise.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 9
+      },
+      {
+        "url": "https://booksversusmovies.com/remarkably-bright-creatures.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 9
+      },
+      {
+        "url": "https://booksversusmovies.com/a-man-called-ove",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "url": "https://booksversusmovies.com/american-gods.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "url": "https://booksversusmovies.com/one-day.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "url": "https://booksversusmovies.com/pachinko.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "url": "https://booksversusmovies.com/a-little-life.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "url": "https://booksversusmovies.com/dark-matter",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "url": "https://booksversusmovies.com/it-muschietti.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "url": "https://booksversusmovies.com/never-let-me-go.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "url": "https://booksversusmovies.com/a-little-life",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 12
+      },
+      {
+        "url": "https://booksversusmovies.com/hamnet",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 12
+      },
+      {
+        "url": "https://booksversusmovies.com/into-the-wild",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 13
+      },
+      {
+        "url": "https://booksversusmovies.com/the-three-body-problem.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 29
+      },
+      {
+        "url": "https://booksversusmovies.com/it-ends-with-us.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 36
+      },
+      {
+        "url": "https://booksversusmovies.com/pride-and-prejudice",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 37
+      },
+      {
+        "url": "https://booksversusmovies.com/silence-of-the-lambs.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 39
+      },
+      {
+        "url": "https://booksversusmovies.com/misery.html",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 43
+      },
+      {
+        "url": "https://booksversusmovies.com/spotlight-lonesome-dove",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 46
+      },
+      {
+        "url": "https://booksversusmovies.com/spotlight-fight-club",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 48
+      },
+      {
+        "url": "https://booksversusmovies.com/misery",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 50
+      }
+    ],
+    "queries": [
+      {
+        "query": "reminders of him book vs movie",
+        "clicks": 3,
+        "impressions": 14,
+        "ctr": "21.43%",
+        "position": 7.5
+      },
+      {
+        "query": "reminders of him movie vs book differences",
+        "clicks": 1,
+        "impressions": 10,
+        "ctr": "10%",
+        "position": 8.6
+      },
+      {
+        "query": "reminders of him book vs movie differences",
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": "50%",
+        "position": 8.5
+      },
+      {
+        "query": "reminders of him differences between book and movie",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": "0%",
+        "position": 9.2
+      },
+      {
+        "query": "reminders of him movie differences",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": "0%",
+        "position": 5
+      },
+      {
+        "query": "reminders of him movie vs book",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": "0%",
+        "position": 9.25
+      },
+      {
+        "query": "la confidential book vs movie",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 7.67
+      },
+      {
+        "query": "how is reminders of him movie different from book",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 8.67
+      },
+      {
+        "query": "differences in reminders of him book and movie",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 7
+      },
+      {
+        "query": "difference between reminders of him book and movie",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "query": "people we meet on vacation alex nilsen high school english teacher wikipedia",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "query": "reminders of him book and movie differences",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8.5
+      },
+      {
+        "query": "reminders of him differences",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 9
+      },
+      {
+        "query": "differences between reminders of him book and movie",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "query": "atonement movie vs book",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 12
+      },
+      {
+        "query": "differences between reminders of him movie and book",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 12
+      },
+      {
+        "query": "a long walk to remember",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 26.5
+      },
+      {
+        "query": "yes",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 2
       },
       {
         "query": "queen latifah praised debut novel",
@@ -693,25 +651,25 @@
         "position": 6
       },
       {
-        "query": "reminders of him movie differences",
+        "query": "lonesome dove",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 7
       },
       {
-        "query": "reminders of him book vs movie differences",
+        "query": "reminders of him movie and book differences",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
-        "position": 8
+        "position": 7
       },
       {
         "query": "queen latifah debut novel praise",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
-        "position": 9
+        "position": 8
       },
       {
         "query": "differences between book and movie reminders of him",
@@ -721,731 +679,654 @@
         "position": 9
       },
       {
-        "query": "reminders of him movie vs book",
+        "query": "reminders of him book differences",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 9
-      },
-      {
-        "query": "animal farm movie vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 12
-      },
-      {
-        "query": "never let me go book vs movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 12
-      },
-      {
-        "query": "never let me go movie vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 12
-      },
-      {
-        "query": "the devil wears prada book vs movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 12
-      },
-      {
-        "query": "is the animal farm movie like the book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 18
-      },
-      {
-        "query": "american psycho book vs movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 19
-      },
-      {
-        "query": "american gods book series",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 21
-      },
-      {
-        "query": "american gods book vs show",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 21
-      },
-      {
-        "query": "project hail mary book or movie first",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 21
-      },
-      {
-        "query": "annihilation book vs movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 23
-      },
-      {
-        "query": "pachinko show vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 25
-      },
-      {
-        "query": "american gods books in order",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 26
       },
       {
         "query": "gone girl book vs movie",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
-        "position": 26
+        "position": 10
       },
       {
-        "query": "difference between misery book and movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 27
-      },
-      {
-        "query": "enders game book vs movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 27
-      },
-      {
-        "query": "project hail mary book better than movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 27
-      },
-      {
-        "query": "dune movies vs books",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 28
-      },
-      {
-        "query": "gone girl movie vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 28
-      },
-      {
-        "query": "project hail mary book vs film",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 28
-      },
-      {
-        "query": "stephen king shawshank book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 28
-      },
-      {
-        "query": "the shining movie vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 28
-      },
-      {
-        "query": "is project hail mary book better than movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 30
-      },
-      {
-        "query": "project hail mary film vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 32
-      },
-      {
-        "query": "wuthering heights book vs movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 34
-      },
-      {
-        "query": "it movie vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 36
-      },
-      {
-        "query": "poppy wright",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 38
-      },
-      {
-        "query": "the great gatsby movie book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 38
-      },
-      {
-        "query": "poppy and alex",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 40
-      },
-      {
-        "query": "the lonesome dove series",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 42
-      },
-      {
-        "query": "frankenstein movie vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 44
-      },
-      {
-        "query": "remarkably bright creatures tv show",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 46
-      },
-      {
-        "query": "larry mcmurtry books made into movies",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 47
-      },
-      {
-        "query": "frankenstein movie and book differences",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 48
-      },
-      {
-        "query": "wild 2014 book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 53
-      },
-      {
-        "query": "margo's got money troubles wikipedia",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 54
-      },
-      {
-        "query": "fight club book vs movie",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 62
-      },
-      {
-        "query": "fight club movie vs book",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 65
-      },
-      {
-        "query": "lonesome dove movie series in order",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 65
-      },
-      {
-        "query": "big fish daffodils",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 68
-      },
-      {
-        "query": "pride and prejudice yearning",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 71
-      },
-      {
-        "query": "pride and prejudice movie darcy",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 88
-      }
-    ],
-    "devices": [
-      {
-        "device": "Mobile",
-        "clicks": 13,
-        "impressions": 167,
-        "ctr": "7.78%",
-        "position": 8.91
-      },
-      {
-        "device": "Desktop",
-        "clicks": 4,
-        "impressions": 224,
-        "ctr": "1.79%",
-        "position": 17.38
-      },
-      {
-        "device": "Tablet",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 3
-      }
-    ],
-    "countries": [
-      {
-        "country": "United States",
-        "clicks": 11,
-        "impressions": 247,
-        "ctr": "4.45%",
-        "position": 13.51
-      },
-      {
-        "country": "Germany",
-        "clicks": 2,
-        "impressions": 2,
-        "ctr": "100%",
-        "position": 9
-      },
-      {
-        "country": "Canada",
-        "clicks": 1,
-        "impressions": 24,
-        "ctr": "4.17%",
-        "position": 7.67
-      },
-      {
-        "country": "Australia",
-        "clicks": 1,
-        "impressions": 12,
-        "ctr": "8.33%",
-        "position": 10.67
-      },
-      {
-        "country": "United Kingdom",
-        "clicks": 1,
-        "impressions": 6,
-        "ctr": "16.67%",
-        "position": 9.5
-      },
-      {
-        "country": "Belgium",
-        "clicks": 1,
-        "impressions": 2,
-        "ctr": "50%",
-        "position": 3.5
-      },
-      {
-        "country": "Brazil",
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": "0%",
-        "position": 10.1
-      },
-      {
-        "country": "India",
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": "0%",
-        "position": 36.67
-      },
-      {
-        "country": "Ireland",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": "0%",
-        "position": 8.2
-      },
-      {
-        "country": "South Africa",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 5.75
-      },
-      {
-        "country": "Indonesia",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 10.5
-      },
-      {
-        "country": "Argentina",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 27.25
-      },
-      {
-        "country": "Vietnam",
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": "0%",
-        "position": 31.25
-      },
-      {
-        "country": "New Zealand",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 10.33
-      },
-      {
-        "country": "Israel",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 13.33
-      },
-      {
-        "country": "Mexico",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": "0%",
-        "position": 17.33
-      },
-      {
-        "country": "Algeria",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 6.5
-      },
-      {
-        "country": "Kuwait",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 6.5
-      },
-      {
-        "country": "Dominican Republic",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 7
-      },
-      {
-        "country": "United Arab Emirates",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 7.5
-      },
-      {
-        "country": "Philippines",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 16
-      },
-      {
-        "country": "Portugal",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 17.5
-      },
-      {
-        "country": "Iraq",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 20.5
-      },
-      {
-        "country": "Colombia",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 29.5
-      },
-      {
-        "country": "Jamaica",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 31
-      },
-      {
-        "country": "Pakistan",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 33
-      },
-      {
-        "country": "Morocco",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 33.5
-      },
-      {
-        "country": "Peru",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": "0%",
-        "position": 43.5
-      },
-      {
-        "country": "Slovakia",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 1
-      },
-      {
-        "country": "Slovenia",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 1
-      },
-      {
-        "country": "Malawi",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 2
-      },
-      {
-        "country": "Italy",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 3
-      },
-      {
-        "country": "France",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 5
-      },
-      {
-        "country": "Romania",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 5
-      },
-      {
-        "country": "Japan",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 6
-      },
-      {
-        "country": "South Korea",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 6
-      },
-      {
-        "country": "Iran",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 7
-      },
-      {
-        "country": "Lithuania",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 7
-      },
-      {
-        "country": "Nicaragua",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 7
-      },
-      {
-        "country": "Switzerland",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 8
-      },
-      {
-        "country": "Saudi Arabia",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 9
-      },
-      {
-        "country": "Bahamas",
+        "query": "is reminders of him a true story",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 10
       },
       {
-        "country": "Ecuador",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 10
-      },
-      {
-        "country": "Croatia",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 10
-      },
-      {
-        "country": "Malaysia",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 10
-      },
-      {
-        "country": "Netherlands",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 10
-      },
-      {
-        "country": "Sweden",
+        "query": "all the light we cannot see book vs show",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 11
       },
       {
-        "country": "Ukraine",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": "0%",
-        "position": 11
-      },
-      {
-        "country": "Côte d’Ivoire",
+        "query": "all the light we cannot see book vs series",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 12
       },
       {
-        "country": "Hong Kong",
+        "query": "all the light we cannot see differences between book and movie",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 12
       },
       {
-        "country": "Moldova",
+        "query": "atonement book vs movie",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 12
       },
       {
-        "country": "Norway",
+        "query": "bolivar lonesome dove",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
-        "position": 12
+        "position": 15
       },
       {
-        "country": "Paraguay",
+        "query": "amazing amy movie",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
-        "position": 20
+        "position": 18
       },
       {
-        "country": "Honduras",
+        "query": "pachinko book vs show",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
-        "position": 36
+        "position": 18
       },
       {
-        "country": "Azerbaijan",
+        "query": "knightley pride and prejudice",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 37
       },
       {
-        "country": "Ethiopia",
+        "query": "silence of the lambs movie vs book",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 39
       },
       {
-        "country": "Egypt",
+        "query": "was the shawshank redemption a book",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 41
+      },
+      {
+        "query": "megan hipwell",
         "clicks": 0,
         "impressions": 1,
         "ctr": "0%",
         "position": 45
+      },
+      {
+        "query": "prequel to lonesome dove",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 46
+      },
+      {
+        "query": "fight club differences between book and movie",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 48
+      },
+      {
+        "query": "did stephen king write shawshank redemption",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 51
+      },
+      {
+        "query": "genre of the help",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 51
+      },
+      {
+        "query": "is lonesome dove a movie or series",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 53
+      },
+      {
+        "query": "poppy wright",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 54
+      },
+      {
+        "query": "is lonesome dove a series",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 64
+      },
+      {
+        "query": "is remarkably bright creatures based on a true story",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 64
+      },
+      {
+        "query": "lonesome dove plot",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 65
+      },
+      {
+        "query": "june boatwright",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 81
+      }
+    ],
+    "devices": [
+      {
+        "device": "Mobile",
+        "clicks": 12,
+        "impressions": 167,
+        "ctr": "7.19%",
+        "position": 8.49
+      },
+      {
+        "device": "Desktop",
+        "clicks": 1,
+        "impressions": 464,
+        "ctr": "0.22%",
+        "position": 11.86
+      },
+      {
+        "device": "Tablet",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 12
+      }
+    ],
+    "countries": [
+      {
+        "country": "United States",
+        "clicks": 7,
+        "impressions": 421,
+        "ctr": "1.66%",
+        "position": 10.42
+      },
+      {
+        "country": "United Kingdom",
+        "clicks": 1,
+        "impressions": 23,
+        "ctr": "4.35%",
+        "position": 11.52
+      },
+      {
+        "country": "South Africa",
+        "clicks": 1,
+        "impressions": 7,
+        "ctr": "14.29%",
+        "position": 11.57
+      },
+      {
+        "country": "Mexico",
+        "clicks": 1,
+        "impressions": 7,
+        "ctr": "14.29%",
+        "position": 14.14
+      },
+      {
+        "country": "Philippines",
+        "clicks": 1,
+        "impressions": 3,
+        "ctr": "33.33%",
+        "position": 9.67
+      },
+      {
+        "country": "Israel",
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": "50%",
+        "position": 10
+      },
+      {
+        "country": "Slovenia",
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": "100%",
+        "position": 6
+      },
+      {
+        "country": "Canada",
+        "clicks": 0,
+        "impressions": 31,
+        "ctr": "0%",
+        "position": 7.39
+      },
+      {
+        "country": "Brazil",
+        "clicks": 0,
+        "impressions": 20,
+        "ctr": "0%",
+        "position": 13.4
+      },
+      {
+        "country": "Pakistan",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": "0%",
+        "position": 11.88
+      },
+      {
+        "country": "Iraq",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": "0%",
+        "position": 17.57
+      },
+      {
+        "country": "Saudi Arabia",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": "0%",
+        "position": 10.4
+      },
+      {
+        "country": "Australia",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "country": "Uzbekistan",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "country": "India",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": "0%",
+        "position": 15.5
+      },
+      {
+        "country": "China",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "country": "Netherlands",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "country": "Ireland",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 8.33
+      },
+      {
+        "country": "New Zealand",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 9.67
+      },
+      {
+        "country": "Ukraine",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 11.67
+      },
+      {
+        "country": "Chile",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 16
+      },
+      {
+        "country": "Jordan",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 19.67
+      },
+      {
+        "country": "Palestine",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 22.67
+      },
+      {
+        "country": "Egypt",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 23
+      },
+      {
+        "country": "Indonesia",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": "0%",
+        "position": 35
+      },
+      {
+        "country": "Venezuela",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 4
+      },
+      {
+        "country": "Estonia",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 6.5
+      },
+      {
+        "country": "Puerto Rico",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 7
+      },
+      {
+        "country": "Singapore",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 7.5
+      },
+      {
+        "country": "Argentina",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "country": "Colombia",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "country": "Romania",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "country": "Peru",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8.5
+      },
+      {
+        "country": "Turkey",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 8.5
+      },
+      {
+        "country": "Morocco",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 9.5
+      },
+      {
+        "country": "Ecuador",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 10.5
+      },
+      {
+        "country": "Sweden",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 10.5
+      },
+      {
+        "country": "Finland",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 12
+      },
+      {
+        "country": "Bangladesh",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 17.5
+      },
+      {
+        "country": "Vietnam",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 18.5
+      },
+      {
+        "country": "Malaysia",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": "0%",
+        "position": 26.5
+      },
+      {
+        "country": "Kazakhstan",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 3
+      },
+      {
+        "country": "Oman",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 3
+      },
+      {
+        "country": "Germany",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 6
+      },
+      {
+        "country": "Czechia",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 7
+      },
+      {
+        "country": "Dominican Republic",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 7
+      },
+      {
+        "country": "Uruguay",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 7
+      },
+      {
+        "country": "Hong Kong",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "country": "Jamaica",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 8
+      },
+      {
+        "country": "Portugal",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 9
+      },
+      {
+        "country": "Albania",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "country": "Ethiopia",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "country": "Lebanon",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "country": "Qatar",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 10
+      },
+      {
+        "country": "Hungary",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "country": "Italy",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "country": "Paraguay",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "country": "Trinidad & Tobago",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 11
+      },
+      {
+        "country": "South Korea",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 12
+      },
+      {
+        "country": "Costa Rica",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 18
+      },
+      {
+        "country": "Russia",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 19
+      },
+      {
+        "country": "Tunisia",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 32
+      },
+      {
+        "country": "Kenya",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 40
+      },
+      {
+        "country": "United Arab Emirates",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": "0%",
+        "position": 41
       }
     ],
     "summary": {
-      "totalClicks": 17,
-      "totalImpressions": 392,
-      "avgCTR": "4.34%",
-      "avgPosition": 16.6,
+      "totalClicks": 13,
+      "totalImpressions": 632,
+      "avgCTR": "2.06%",
+      "avgPosition": 12.6,
       "pagesIndexed": 191,
-      "countriesReached": 57
+      "countriesReached": 64
     }
   }
 }
