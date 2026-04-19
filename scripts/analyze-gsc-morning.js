@@ -73,7 +73,50 @@ async function fetchGscData(siteUrl, daysBack) {
   });
 }
 
-async function getLlmInsights(allData, config) {
+async function fetchSitemapData(siteUrl, accessToken) {
+  console.log('📄 Fetching sitemap index data...');
+  return new Promise((resolve) => {
+    const options = {
+      hostname: 'www.googleapis.com',
+      path: `/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/sitemaps`,
+      method: 'GET',
+      headers: { 'Authorization': `Bearer ${accessToken}` }
+    };
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        try {
+          const json = JSON.parse(data);
+          const sitemaps = json.sitemap || [];
+          const summary = sitemaps.map(s => ({
+            path: s.path,
+            lastSubmitted: s.lastSubmitted,
+            isPending: s.isPending,
+            submitted: s.contents ? s.contents.reduce((sum, c) => sum + parseInt(c.submitted || 0, 10), 0) : 0,
+            indexed:   s.contents ? s.contents.reduce((sum, c) => sum + parseInt(c.indexed   || 0, 10), 0) : 0,
+            contents:  s.contents || [],
+          }));
+          summary.forEach(s => {
+            const indexedNote = s.indexed === 0 && s.submitted > 0
+              ? '(GSC domain property — indexed count unreliable, check GSC Coverage report)'
+              : '';
+            console.log(`   → ${s.path}: ${s.submitted} submitted, ${s.indexed} indexed ${indexedNote}`);
+          });
+          resolve(summary);
+        } catch(e) {
+          console.log('   → Sitemap fetch failed:', e.message);
+          resolve([]);
+        }
+      });
+    });
+    req.on('error', () => resolve([]));
+    req.end();
+  });
+}
+
+
+async function getLlmInsights(allData, config, sitemapData) {
   const apiKey = process.env[config.llm.apiKeyEnv];
   if (!apiKey) throw new Error(`Missing ${config.llm.apiKeyEnv} in .env`);
 
@@ -86,12 +129,18 @@ async function getLlmInsights(allData, config) {
     `${d.name} (${d.daysBack} days):\n${JSON.stringify(d.rows.slice(0, 100), null, 2)}`
   ).join('\n\n---\n\n');
 
+  const sitemapSummary = sitemapData.length
+    ? sitemapData.map(s => `${s.path}: ${s.indexed}/${s.submitted} pages indexed`).join('\n')
+    : 'Sitemap data unavailable';
   promptTemplate = promptTemplate
-    .replace('{{periodsData}}', dataString);
+    .replace('{{periodsData}}', dataString)
+    .replace('{{rawData}}', dataString)
+    .replace('{{sitemapData}}', sitemapSummary);
 
   const body = JSON.stringify({
     model: config.llm.model,
     temperature: config.llm.temperature,
+    max_tokens: config.llm.maxTokens || 4000,
     messages: [{ role: "user", content: promptTemplate }],
     response_format: { type: "json_object" }
   });
@@ -114,7 +163,15 @@ async function getLlmInsights(allData, config) {
         if (res.statusCode !== 200) return reject(new Error(`OpenRouter HTTP ${res.statusCode}`));
         const json = JSON.parse(data);
         if (json.error) return reject(new Error(`OpenRouter Error: ${json.error.message}`));
-        resolve(JSON.parse(json.choices[0].message.content));
+        let rawContent = json.choices[0].message.content.trim();
+        rawContent = rawContent.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
+        try {
+          resolve(JSON.parse(rawContent));
+        } catch(parseErr) {
+          console.error('Failed to parse LLM response as JSON.');
+          console.log('Raw response:', rawContent.slice(0, 300));
+          reject(new Error('LLM output was not valid JSON.'));
+        }
       });
     });
 
@@ -129,6 +186,16 @@ async function runMorningAnalysis() {
 
   const config = await loadConfig();
   const allData = [];
+
+  // Fetch auth token once, reuse for sitemap + GSC calls
+  const creds0 = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
+  const auth0 = new (require('googleapis').google.auth.JWT)({
+    email: creds0.client_email,
+    key: creds0.private_key.replace(/\\n/g, '\n'),
+    scopes: ['https://www.googleapis.com/auth/webmasters.readonly']
+  });
+  const tokens0 = await auth0.authorize();
+  const sitemapData = await fetchSitemapData(config.sites[0], tokens0.access_token);
 
   for (const period of config.periods) {
     const rows = await fetchGscData(config.sites[0], period.daysBack);
@@ -145,7 +212,7 @@ async function runMorningAnalysis() {
     return;
   }
 
-  const insights = await getLlmInsights(allData, config);
+  const insights = await getLlmInsights(allData, config, sitemapData);
 
   // Build report
   const report = {
@@ -157,6 +224,7 @@ async function runMorningAnalysis() {
       provider: "openrouter"
     },
     rawDataCount: allData.reduce((sum, d) => sum + d.rows.length, 0),
+    indexCoverage: sitemapData,
     insights
   };
 

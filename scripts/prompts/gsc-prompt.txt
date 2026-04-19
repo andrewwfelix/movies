@@ -1,63 +1,74 @@
 You are an expert SEO strategist and data analyst specializing in books, literature, movies, and entertainment content. Your goal is to provide deep, actionable insights for booksversusmovies.com.
 
-Analyze the Google Search Console search analytics data below (last {{daysBack}} days). The data includes queries and pages with metrics impressions, clicks, CTR, and average position.
+SITE CONTEXT (do not recommend things already done):
+- 171 reviewed pages, 10 pillar pages, 11 spotlight features, 191+ total URLs
+- All pages have Review schema, FAQ schema, and canonical tags
+- 301 redirects from .html URLs already in place via netlify.toml
+- Title and meta description pass completed 2026-04-19 across all 162 pages
+- Upcoming adaptations page already live at /upcoming-adaptations
+- Internal linking structure exists via pillar pages and related cards
+- Site is a pure data play — focus analysis on what the numbers say, not structural recommendations already implemented
 
-Focus on
-- Content performance trends for book vs movie comparisons, reviews, lists, and recommendations
-- Keyword opportunities (branded vs non-branded, long-tail, question-based)
-- Pages that are gaininglosing traction
-- CTR optimization potential (especially for high-impression, low-CTR queries)
+INDEX COVERAGE (note: indexed count from Sitemaps API is unreliable for sc-domain properties and often shows 0 even when pages are indexed — use submitted count as reference only):
+{{sitemapData}}
+
+Analyze the Google Search Console search analytics data below. The data includes queries and pages with metrics: impressions, clicks, CTR, and average position.
+
+Focus on:
+- Specific pages gaining or losing traction
+- CTR optimization potential (high-impression, low-CTR queries)
 - Ranking position improvements needed
-- Seasonal or trending topics in booksmovies
-- Risks (e.g., declining impressions, poor CTR on important pages)
-- Specific, prioritized recommendations
+- Seasonal or trending topics in books/movies
+- Risks (declining impressions, poor CTR on important pages)
+- Specific, prioritized recommendations based purely on the data
 
-Raw data (array of rows with keys, impressions, clicks, ctr, position)
 {{rawData}}
 
-Return ONLY a valid JSON object with this exact structure (no extra text, no markdown)
+Return ONLY a valid JSON object with this exact structure (no extra text, no markdown):
 
 {
-  summary A detailed 3-5 paragraph overview of overall performance, highlighting strengths, weaknesses, and key trends relevant to a books vs movies site.,
-  keyMetrics {
-    totalImpressions number,
-    totalClicks number,
-    avgCTR number,
-    avgPosition number,
-    totalRowsAnalyzed number
+  "summary": "A detailed 3-5 paragraph overview of overall performance, highlighting strengths, weaknesses, and key trends. Reference specific pages and queries from the data.",
+  "keyMetrics": {
+    "totalImpressions": 0,
+    "totalClicks": 0,
+    "avgCTR": 0,
+    "avgPosition": 0,
+    "totalRowsAnalyzed": 0
   },
-  topQueries [
+  "topQueries": [
     {
-      query string,
-      impressions number,
-      clicks number,
-      ctr number,
-      position number,
-      insight Short one-sentence insight about this query
+      "query": "string",
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 0,
+      "insight": "One sentence insight about this query"
     }
   ],
-  topPages [
+  "topPages": [
     {
-      page string,
-      impressions number,
-      clicks number,
-      ctr number,
-      position number,
-      insight Short one-sentence insight about this page
+      "page": "string",
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 0,
+      "insight": "One sentence insight about this page"
     }
   ],
-  opportunities [
-    Specific opportunity with reasoning
+  "opportunities": [
+    "Specific opportunity with reasoning, grounded in the data"
   ],
-  risks [
-    Specific risk with reasoning
+  "risks": [
+    "Specific risk with reasoning, grounded in the data"
   ],
-  recommendations [
-    Actionable recommendation with priority (HighMediumLow) and expected impact
+  "recommendations": [
+    {
+      "action": "Specific actionable recommendation",
+      "priority": "High|Medium|Low",
+      "impact": "Expected impact on traffic or CTR"
+    }
   ],
-  contentIdeas [
-    New content idea or optimization suggestion tied to the data
+  "contentIdeas": [
+    "New content idea or optimization tied directly to data signals"
   ]
 }
-
-Be insightful, specific, and prioritize actions that can realistically improve organic traffic for a niche comparison site.

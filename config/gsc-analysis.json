@@ -3,16 +3,30 @@
     "sc-domain:booksversusmovies.com"
   ],
   "periods": [
-    { "name": "3months", "daysBack": 90 },
-    { "name": "24hours", "daysBack": 1 }
+    {
+      "name": "28days",
+      "daysBack": 28
+    },
+    {
+      "name": "7days",
+      "daysBack": 7
+    },
+    {
+      "name": "24hours",
+      "daysBack": 1
+    }
   ],
-  "dimensions": ["query", "page"],
+  "dimensions": [
+    "query",
+    "page"
+  ],
   "rowLimit": 150,
   "llm": {
     "provider": "openrouter",
-    "model": "anthropic/claude-haiku-4-5",
+    "model": "anthropic/claude-sonnet-4-5",
     "temperature": 0.3,
-    "apiKeyEnv": "OPENROUTER_API_KEY"
+    "apiKeyEnv": "OPENROUTER_API_KEY",
+    "maxTokens": 4000
   },
   "output": {
     "dir": "data/reports",
