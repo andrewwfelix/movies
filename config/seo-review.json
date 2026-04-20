@@ -5,21 +5,21 @@
       "label": "Claude Sonnet 4.5",
       "enabled": true,
       "temperature": 0.2,
-      "maxTokens": 15000
+      "maxTokens": 8000
     },
     "gemini": {
       "model": "google/gemini-2.5-pro",
       "label": "Gemini 2.5 Pro",
       "enabled": true,
       "temperature": 0.2,
-      "maxTokens": 15000
+      "maxTokens": 12000
     },
     "grok": {
       "model": "x-ai/grok-3",
       "label": "Grok-3",
       "enabled": true,
       "temperature": 0.2,
-      "maxTokens": 15000
+      "maxTokens": 10000
     }
   },
   "scoring": {
@@ -28,11 +28,189 @@
     "highPriorityThreshold": 5,
     "mediumPriorityThreshold": 7
   },
+  "adjudicator": {
+    "model": "anthropic/claude-sonnet-4-5",
+    "label": "Claude Sonnet 4.5",
+    "temperature": 0.3,
+    "maxTokens": 400
+  },
   "paths": {
     "sourceDir": "pipeline/2-revised",
     "outputDir": "data/reports",
     "reviewOutput": "seo-llm-review.csv",
     "exportOutput": "seo-export.csv"
   },
-  "notes": "Three models review all pages in a single CSV call each. ~$1.16 total for 171 pages. Disable a model by setting enabled: false."
+  "fullpage": {
+    "_notes": "Six focused calls per page for v3.1 field generation. Each call has an explicit model so individual calls can be swapped independently without touching the script.",
+    "_devNotes": "Set env DEV_MODE=true or use --dev flag to use haiku models for cheap testing before production run.",
+    "fieldsRequiringReview": [
+      "snippetParagraph",
+      "atAGlanceTable",
+      "keyDifferencesList",
+      "optimizedH2s"
+    ],
+    "fieldsNoReview": [
+      "primaryKeyword",
+      "secondaryKeywords",
+      "targetQueries",
+      "winnerStatement",
+      "hook",
+      "entities",
+      "og",
+      "images",
+      "canonicalUrl"
+    ],
+    "calls": {
+      "1_identity": {
+        "fields": [
+          "primaryKeyword",
+          "secondaryKeywords",
+          "targetQueries",
+          "winnerStatement",
+          "hook",
+          "entities"
+        ],
+        "requiresReview": false,
+        "prod": {
+          "model": "anthropic/claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "temperature": 0.2,
+          "maxTokens": 800,
+          "maxTokensMultiplier": 5
+        },
+        "dev": {
+          "model": "anthropic/claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "temperature": 0.2,
+          "maxTokens": 800,
+          "maxTokensMultiplier": 5
+        }
+      },
+      "2_snippet": {
+        "fields": [
+          "snippetParagraph"
+        ],
+        "requiresReview": true,
+        "reviewModels": [
+          "gemini",
+          "grok"
+        ],
+        "prod": {
+          "model": "anthropic/claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "temperature": 0.2,
+          "maxTokens": 400,
+          "maxTokensMultiplier": 5
+        },
+        "dev": {
+          "model": "anthropic/claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "temperature": 0.2,
+          "maxTokens": 400,
+          "maxTokensMultiplier": 5
+        }
+      },
+      "3_table": {
+        "fields": [
+          "atAGlanceTable"
+        ],
+        "requiresReview": true,
+        "reviewModels": [
+          "gemini",
+          "grok"
+        ],
+        "prod": {
+          "model": "anthropic/claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "temperature": 0.2,
+          "maxTokens": 800,
+          "maxTokensMultiplier": 5
+        },
+        "dev": {
+          "model": "anthropic/claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "temperature": 0.2,
+          "maxTokens": 800,
+          "maxTokensMultiplier": 5
+        }
+      },
+      "4_differences": {
+        "fields": [
+          "keyDifferencesList"
+        ],
+        "requiresReview": true,
+        "reviewModels": [
+          "gemini",
+          "grok"
+        ],
+        "prod": {
+          "model": "anthropic/claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "temperature": 0.2,
+          "maxTokens": 700,
+          "maxTokensMultiplier": 5
+        },
+        "dev": {
+          "model": "anthropic/claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "temperature": 0.2,
+          "maxTokens": 700,
+          "maxTokensMultiplier": 5
+        }
+      },
+      "5_h2s": {
+        "fields": [
+          "optimizedH2s"
+        ],
+        "requiresReview": true,
+        "reviewModels": [
+          "gemini",
+          "grok"
+        ],
+        "prod": {
+          "model": "anthropic/claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "temperature": 0.2,
+          "maxTokens": 500,
+          "maxTokensMultiplier": 5
+        },
+        "dev": {
+          "model": "anthropic/claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "temperature": 0.2,
+          "maxTokens": 500,
+          "maxTokensMultiplier": 5
+        }
+      },
+      "6_social": {
+        "fields": [
+          "og",
+          "images"
+        ],
+        "requiresReview": false,
+        "prod": {
+          "model": "anthropic/claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "temperature": 0.2,
+          "maxTokens": 600,
+          "maxTokensMultiplier": 5
+        },
+        "dev": {
+          "model": "anthropic/claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "temperature": 0.2,
+          "maxTokens": 600,
+          "maxTokensMultiplier": 5
+        }
+      }
+    },
+    "adjudicator": {
+      "model": "anthropic/claude-sonnet-4-5",
+      "label": "Claude Sonnet 4.5",
+      "temperature": 0.1,
+      "maxTokens": 2000,
+      "_notes": "Reads all review model outputs for requiresReview fields, writes final accepted version"
+    }
+  },
+  "_notes": "Three models review title/meta independently. Fullpage pipeline uses per-call model config. Add model to config not to script."
 }
