@@ -202,7 +202,10 @@ function renderCharTable(r) {
 
 function renderDifferences(r) {
   if (!r.differences || r.differences.length === 0) return '';
-  const diffs = r.differences.map(d => `<div class="difference"><h3>${esc(d.title)}</h3>${paras(d.body)}</div>`).join('\n');
+  const diffs = r.differences.map(d => {
+    const anchor = d.title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    return `<div class="difference" id="diff-${anchor}"><h3>${esc(d.title)}</h3>${paras(d.body)}</div>`;
+  }).join('\n');
   return `<h2>Key Differences</h2>${diffs}`;
 }
 
@@ -226,6 +229,24 @@ function renderRelated(r) {
   </div>`;
 }
 
+function renderRightRail(r) {
+  const jumpLinks = (r.differences || []).slice(0, 6).map(d =>
+    `<a class="rail-jump" href="#diff-${esc(d.title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''))}">${esc(d.title)}</a>`
+  ).join('\n      ');
+
+  return `
+<aside class="right-rail">
+  <div class="rail-verdict ${esc(r.verdictClass)}">
+    <div class="rail-verdict-label">Verdict</div>
+    <div class="rail-verdict-winner">${esc(r.verdictText)}</div>
+    <p class="rail-verdict-reason">${esc(r.quickAnswer?.oneLineReason || '')}</p>
+  </div>
+  <a class="rail-buy-btn" href="${esc(r.affiliateLink)}" target="_blank" rel="noopener sponsored">Buy the Book &rarr;</a>
+  <p class="affiliate-disclosure">As an Amazon Associate I earn from qualifying purchases.</p>
+  ${jumpLinks ? `<nav class="rail-jumps"><div class="rail-jumps-label">Jump to</div>${jumpLinks}</nav>` : ''}
+</aside>`;
+}
+
 // ── Full Page ─────────────────────────────────────────────────────────────────
 
 function renderPage(r) {
@@ -238,6 +259,7 @@ function renderPage(r) {
     renderHead(r),
     renderHeader(),
     renderHero(r),
+    `\n<div class="page-layout">`,
     `\n<div class="page-wrap">`,
     renderQuickAnswer(r),
     renderComparisonPanel(r),
@@ -252,10 +274,11 @@ function renderPage(r) {
     `    ${paras(r.readFirst)}`,
     renderCta(ctaAfterReadFirst),
     `\n    <div class="verdict-box"><div class="verdict-title">Verdict</div><p>${esc(r.verdictBox)}</p></div>`,
-    renderCta(ctaAfterVerdict),
     renderFaq(r),
     `\n  </div>`,
     renderRelated(r),
+    `\n</div>`,
+    renderRightRail(r),
     `\n</div>`,
     renderFooter()
   ].join('\n');

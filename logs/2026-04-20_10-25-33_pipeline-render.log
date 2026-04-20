@@ -1,0 +1,40 @@
+============================================================
+Script:  pipeline-render
+Started: 2026-04-20T14:25:33.425Z
+============================================================
+[14:25:33.432] [INFO ] pipeline-render.js
+[14:25:33.434] [INFO ] Source:  C:\Users\andre\projects\movies\pipeline\2-revised
+[14:25:33.434] [INFO ] Output:  C:\Users\andre\projects\movies\pipeline\3-rendered
+[14:25:33.434] [INFO ] Files:   1
+[14:25:33.434] [INFO ] Force:   yes
+
+── Rendering ────────────────────────────────────
+[14:25:33.437] [PASS ] gone-girl.html — 24515 chars
+
+── Summary ─────────────────────────────────────
+  Total:               1
+  Rendered:            1
+  Skipped:             0
+  Failed:              0
+────────────────────────────────────────────────
+
+── Checkpoint ──────────────────────────────────
+  ✓  All pages rendered successfully
+  ✓  All rendered files exist
+  ✓  All pages have canonical tag
+  ✓  All pages have quick-answer block
+  ✓  All pages have CTA blocks
+  ✓  No ../css/ paths
+  ✓  No ../images/ paths
+
+────────────────────────────────────────────────
+  CHECKPOINT PASSED — ready for next pipeline step
+
+── Copying to project root ──────────────────────
+[14:25:33.440] [INFO ] Copied 1 file to project root
+
+============================================================
+Finished: 2026-04-20T14:25:33.440Z
+Elapsed:  0.0s
+Log:      C:\Users\andre\projects\movies\logs\2026-04-20_10-25-33_pipeline-render.log
+============================================================

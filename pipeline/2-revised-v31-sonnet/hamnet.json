@@ -64,27 +64,27 @@
   ],
   "differences": [
     {
-      "question": null,
+      "question": "Does the Hamnet film capture Agnes's inner consciousness like the book does?",
       "title": "Agnes's Interiority Is the Novel's Entire Architecture",
       "body": "O'Farrell's greatest achievement is giving us complete access to Agnes's consciousness — her strange gifts of intuition, her ability to read people and animals, her fury at a husband who is always elsewhere. The prose moves between past and present with the logic of grief rather than chronology, circling obsessively around certain moments the way memory actually works.\n\nThe film necessarily makes Agnes more externally legible. Buckley is extraordinary, finding physical equivalents for the novel's interiority — the way Agnes touches things, watches people, moves through space. But film cannot replicate the experience of being inside a consciousness for 300 pages. The novel's Agnes is strange because of how she thinks; the film's Agnes is strange because of how she behaves, which is a different and lesser thing."
     },
     {
-      "question": null,
+      "question": "How does the 2026 Hamnet movie handle the plague chapter compared to the novel?",
       "title": "The Plague Chapter Becomes Distributed Rather Than Concentrated",
       "body": "The novel contains a five-page tour de force that follows the plague from a flea on a piece of Venetian silk across Europe, through trade routes and market stalls, to arrive at a glassmaker's workshop in Stratford where a child picks up the contaminated fabric. It's one of the most controlled and devastating passages in contemporary fiction, arriving as a single unbroken blow.\n\nZhao distributes this material across the film's structure rather than presenting it as one setpiece. We see the silk purchased in Venice, glimpse it in transit, watch it arrive in Stratford. The approach works — the film's plague sequence is visually striking and thematically coherent — but it lands differently. The novel's version is more devastating because it arrives all at once, an inexorable chain of causation that no one could have prevented."
     },
     {
-      "question": null,
+      "question": "Does Paul Mescal's casting change Shakespeare's role in Hamnet?",
       "title": "Shakespeare's Deliberate Absence Cannot Survive Paul Mescal's Face",
       "body": "O'Farrell's structural choice to never name her playwright character is a formal argument: this is Agnes's story, and the most famous writer in English history is a peripheral figure in his own family. He's in London. He's always in London. He comes home occasionally, gets his wife pregnant, leaves again. The novel makes him genuinely marginal.\n\nThe film honours this intention — Mescal has relatively little screen time, and the script never names him — but his presence inevitably draws attention in ways the novel's unnamed husband does not. Mescal's face is too famous, too magnetic. He cannot be as absent on film as the character is on the page, even when Zhao deliberately keeps him in shadow or off-center in the frame."
     },
     {
-      "question": null,
+      "question": "Does the Hamnet movie keep the book's non-linear timeline?",
       "title": "Non-Linear Time Becomes More Conventional Structure",
       "body": "The novel moves fluidly between Agnes's girlhood, her courtship, her marriage, and the days surrounding Hamnet's death. The structure mirrors how grief actually works — returning obsessively to certain moments, finding unexpected connections between past and present, refusing chronological order because chronology is a lie we tell ourselves about how time works.\n\nZhao's film uses flashbacks but handles the non-linearity with more restraint. The timeline is clearer, the connections more explicitly drawn. This makes the film easier to follow but also more conventional in its emotional accumulation. The novel's structure is itself an argument about grief; the film's structure is more traditional storytelling, even when the filmmaking is excellent."
     },
     {
-      "question": null,
+      "question": "How does the ending of Hamnet differ between the book and the 2026 film?",
       "title": "The Ending's Restraint Translates, But Differently",
       "body": "O'Farrell's final movement — Agnes traveling to London, watching the first performance of Hamlet, understanding what her husband has done with their son's name — is handled with extraordinary restraint. The novel never explains or underlines. Agnes watches the play. She understands. That's all.\n\nThe film's version is similarly restrained, with Buckley's face doing all the work as she sits in the Globe and hears \"Hamnet\" become \"Hamlet.\" Both versions earn their ending, but the novel's is quieter and more devastating because we've spent 300 pages inside Agnes's head. The film's ending is powerful, but it's the ending of a different kind of story — one that's been showing us Agnes from the outside all along.\n\nYes, absolutely. Hamnet is O'Farrell at her peak, and it requires no prior knowledge of Shakespeare or his plays. It's simply one of the best novels of the past decade — a book about marriage, parenthood, and grief that happens to be set in the 16th century. It reads quickly despite its emotional density, and the prose is so controlled that you don't realize how devastated you are until the final pages.\n\nThe film is made with real intelligence and care, and Buckley's performance is extraordinary. But the novel is doing something only a novel can do — giving you complete access to a consciousness, moving through time the way memory moves, building grief through accumulation rather than event. Read it first. Then watch Zhao and Buckley show you what survived the translation and what had to be left behind."
     }
@@ -154,19 +154,19 @@
   "primaryKeyword": "hamnet book vs movie",
   "secondaryKeywords": [
     "hamnet maggie o'farrell vs film",
-    "hamnet 2026 movie vs book",
+    "hamnet 2026 movie adaptation",
     "should i read hamnet before watching",
     "hamnet book better than movie",
-    "chloé zhao hamnet adaptation"
+    "chloé zhao hamnet film review"
   ],
   "targetQueries": [
     "is the hamnet book better than the movie",
-    "should i read hamnet before the movie",
+    "should i read hamnet or watch the movie",
     "what does the hamnet movie leave out",
-    "why is hamnet book better than chloé zhao film",
-    "does the hamnet movie capture agnes"
+    "why is hamnet better as a book",
+    "does the hamnet film capture agnes"
   ],
-  "winnerStatement": "Maggie O'Farrell's Hamnet is better than the 2026 Chloé Zhao film.",
+  "winnerStatement": "Maggie O'Farrell's Hamnet book is better than the 2026 Chloé Zhao film.",
   "hook": "Zhao shows grief's face. O'Farrell makes you live inside it for 300 pages.",
   "entities": [
     "Maggie O'Farrell",
@@ -174,50 +174,79 @@
     "Hamnet",
     "Agnes Hathaway",
     "William Shakespeare",
-    "Hamnet Sadler",
-    "Judith Shakespeare"
+    "Hamnet Sadler"
   ],
-  "snippetParagraph": "The main difference between the Hamnet book and the 2026 film is that O'Farrell's novel exists almost entirely inside Agnes's consciousness across 300 pages of interiority, while Zhao's adaptation necessarily externalizes this inner architecture into visual drama. The book wins because only prose can sustain the radical intimacy required for O'Farrell's project—watching Agnes think, grieve, and perceive is fundamentally different from watching her act. Read the book first: it's one of the decade's finest novels and requires no Shakespeare knowledge whatsoever.",
+  "snippetParagraph": "The main difference between the Hamnet book and the 2026 film is that O'Farrell's novel exists almost entirely inside Agnes's consciousness across 300 pages of interiority, while Zhao's adaptation necessarily externalizes this inner architecture into visual drama. The book wins because prose alone can sustain the radical intimacy required to inhabit a mother's grief at this depth—no amount of close-ups on faces can replicate sentences that move like thought itself. Read the book first: it's O'Farrell at her peak and requires zero Shakespeare knowledge to devastate you completely.",
   "atAGlanceTable": [
     {
-      "feature": "Agnes's consciousness as narrative vehicle",
-      "book": "300 pages inside her mind",
-      "film": "External observation through performance"
+      "feature": "Narrative consciousness anchor",
+      "book": "Agnes's interior world for 300 pages",
+      "film": "External observation across ensemble cast"
     },
     {
-      "feature": "Plague death sequence structure",
+      "feature": "Plague sequence structure",
       "book": "Single sustained 60-page chapter",
-      "film": "Distributed across multiple scenes"
+      "film": "Distributed across multiple timeline fragments"
     },
     {
-      "feature": "The playwright's narrative presence",
-      "book": "Deliberately unnamed, perpetually absent",
-      "film": "Paul Mescal's face makes him central"
+      "feature": "Playwright's narrative presence",
+      "book": "Deliberately unnamed, perpetually absent figure",
+      "film": "Paul Mescal's face makes centrality unavoidable"
     },
     {
-      "feature": "Temporal structure",
-      "book": "Radically non-linear, consciousness-driven",
-      "film": "More conventional chronological framework"
+      "feature": "Temporal architecture",
+      "book": "Radically non-linear, consciousness-driven jumps",
+      "film": "Dual timeline with clearer chronological markers"
     },
     {
       "feature": "Ending's emotional register",
-      "book": "Prose restraint, withheld catharsis",
-      "film": "Visual restraint, different emotional grammar"
+      "book": "Restrained prose withholds catharsis",
+      "film": "Visual restraint achieves different quietness"
     }
   ],
-  "keyDifferencesList": null,
-  "optimizedH2s": null,
-  "og": null,
+  "keyDifferencesList": [
+    {
+      "label": "Agnes's consciousness",
+      "text": "The novel sustains 300 pages inside Agnes's intuitive, sensory interiority while the film must externalize through performance and image."
+    },
+    {
+      "label": "The plague sequence",
+      "text": "O'Farrell's five-page tracking shot of plague transmission from Venetian flea to English child becomes distributed across the film's runtime."
+    },
+    {
+      "label": "Shakespeare's anonymity",
+      "text": "The book's structural refusal to name the playwright erases his fame, but casting Paul Mescal makes that erasure cinematically impossible."
+    },
+    {
+      "label": "Temporal structure",
+      "text": "The novel's grief-logic non-linearity — jumping between courtship, marriage, and death — gives way to more conventional film chronology."
+    }
+  ],
+  "optimizedH2s": {
+    "storyBrief": "What is Hamnet about?",
+    "keyDifferences": "How is the Hamnet movie different from the book?",
+    "readFirst": "Should you read Hamnet before watching the movie?",
+    "verdict": "Is the Hamnet book or movie better?"
+  },
+  "og": {
+    "title": "Hamnet Book vs Movie: O'Farrell's Intimacy Beats Zhao",
+    "description": "O'Farrell makes you live inside grief for 300 pages. Zhao can only show its face. The novel's intimacy wins—read the book first.",
+    "image": "https://booksversusmovies.com/images/hamnet-og.jpg",
+    "imageAlt": "Split image showing Maggie O'Farrell's Hamnet book cover beside a still from Chloé Zhao's 2026 film adaptation"
+  },
   "twitter": {
     "card": "summary_large_image",
     "site": "@booksversusmovies"
   },
-  "images": null,
+  "images": {
+    "bookCoverAlt": "Hamnet by Maggie O'Farrell book cover showing historical fiction novel about Shakespeare's son and grief",
+    "trailerThumbAlt": "Chloé Zhao's 2026 Hamnet film trailer thumbnail featuring period drama cinematography"
+  },
   "canonicalUrl": "https://booksversusmovies.com/hamnet",
   "hasAtAGlanceTable": true,
   "hasSnippetParagraph": true,
-  "hasKeyDifferencesList": false,
-  "hasOpenGraph": false,
-  "hasOptimizedH2s": false,
+  "hasKeyDifferencesList": true,
+  "hasOpenGraph": true,
+  "hasOptimizedH2s": true,
   "_schemaVersion": "3.1"
 }

@@ -302,7 +302,7 @@ Generate question-format H2 overrides for People Also Ask targeting.
 
 STRICT RULES:
 - Every H2 must be a genuine search query someone would type
-- Must include the book/film title in the question
+- EVERY question MUST include the exact book or film title by name — not pronouns, not "the book", not "the movie"
 - Must end with a question mark
 - keyDifferences and readFirst are required. storyBrief and verdict are optional.
 
