@@ -915,6 +915,11 @@ footer p + p { color: #777 !important; margin-top: 0.5rem; font-size: 0.75rem; }
   font-style: italic;
 }
 
+.faq-q {
+  font-weight: 600;
+  color: var(--ink);
+}
+
 
 /* ── QUICK ANSWER ── */
 /* Sits immediately below the meta strip, above the story brief.        */
