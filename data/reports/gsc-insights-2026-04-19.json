@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-19T16:46:49.195Z",
+  "generatedAt": "2026-04-19T22:42:37.995Z",
   "site": "sc-domain:booksversusmovies.com",
   "config": {
     "periods": [
@@ -16,7 +16,7 @@
         "daysBack": 1
       }
     ],
-    "model": "anthropic/claude-sonnet-4-5",
+    "model": "x-ai/grok-3",
     "provider": "openrouter"
   },
   "rawDataCount": 300,
@@ -37,150 +37,104 @@
     }
   ],
   "insights": {
-    "summary": "The site is experiencing concentrated traffic around a single breakout topic: 'Reminders of Him' by Colleen Hoover. This page accounts for 12 of the 13 total clicks in the 28-day period, with strong CTR (20-25%) on core queries despite positions ranging from 7-11. The .html and non-.html versions are both receiving traffic, suggesting the 301 redirects may not be fully consolidated in Google's index yet. Beyond this single winner, the site has significant visibility (hundreds of impressions) but zero clicks across major titles like 'Frankenstein' (30 impressions), 'Devil Wears Prada' (21 impressions), 'Into the Wild' (15 impressions), 'Animal Farm' (11 impressions), and 'All the Light We Cannot See' (21 impressions). These pages rank in positions 10-50+ but fail to convert impressions to clicks, indicating either poor title/meta appeal or being outcompeted by stronger SERP features.",
+    "summary": "The search analytics data for booksversusmovies.com over the past 28 days reveals a mixed performance with significant opportunities for growth. The strongest traction is seen with 'Reminders of Him,' where multiple related queries (e.g., 'reminders of him book vs movie') and associated pages (both /reminders-of-him and /reminders-of-him.html) collectively garnered 93 impressions and 10 clicks, indicating a niche but engaged audience interest. However, overall impressions across the dataset are low, with many pages and queries showing zero clicks despite appearing in search results, such as 'Frankenstein' (30 impressions across variations, 0 clicks) and 'Into the Wild' (15 impressions, 0 clicks). Average positions for many queries are outside the top 10, suggesting limited visibility for high-intent searches.\n\nA key trend is the consistent interest in book-to-movie comparison queries, which dominate the dataset (e.g., 'differences between reminders of him book and movie,' 'into the wild book vs movie'). This aligns with the site’s core focus but highlights a weakness in converting impressions to clicks, as seen with low CTRs like 2.86% for 'reminders of him book vs movie' on /reminders-of-him.html despite 35 impressions. Seasonal or trending topics are less evident, though queries like 'sunrise on the reaping' (Hunger Games) and 'fourth wing prime video' suggest emerging interest in upcoming adaptations. The 7-day data mirrors the 28-day trends, with 'Reminders of Him' continuing to drive the bulk of clicks (10 out of 14 total), indicating sustained but narrow interest.\n\nWeaknesses include poor performance across a broad range of pages, with many high-impression queries (e.g., 'devil wears prada book vs movie' with 11 impressions, 0 clicks) failing to convert due to suboptimal positions or uncompelling snippets. The data also shows duplicate URL issues (e.g., /reminders-of-him and /reminders-of-him.html splitting impressions), which may dilute authority despite existing 301 redirects. Overall, while specific pages show promise, the site struggles with broad visibility and click conversion, necessitating targeted optimizations to capitalize on existing interest and expand reach for other high-potential titles.",
     "keyMetrics": {
-      "totalImpressions": 389,
-      "totalClicks": 13,
-      "avgCTR": 0.033,
-      "avgPosition": 28.4,
-      "totalRowsAnalyzed": 197
+      "totalImpressions": 284,
+      "totalClicks": 14,
+      "avgCTR": 0.0493,
+      "avgPosition": 25.6,
+      "totalRowsAnalyzed": 149
     },
     "topQueries": [
       {
         "query": "reminders of him book vs movie",
         "impressions": 43,
         "clicks": 3,
-        "ctr": 0.07,
-        "position": 9.3,
-        "insight": "Highest volume query with decent CTR but split across both URL versions, diluting authority"
+        "ctr": 0.0698,
+        "position": 9.32,
+        "insight": "Strong interest in this specific comparison, but low CTR suggests snippet optimization is needed."
       },
       {
         "query": "reminders of him differences between book and movie",
         "impressions": 21,
         "clicks": 3,
-        "ctr": 0.14,
-        "position": 8.5,
-        "insight": "Strong CTR performance suggests content matches user intent well despite mid-page ranking"
+        "ctr": 0.1429,
+        "position": 8.38,
+        "insight": "High-intent query with decent CTR, indicating a core audience for detailed comparisons."
       },
       {
-        "query": "all the light we cannot see book vs show",
-        "impressions": 12,
+        "query": "frankenstein book vs movie",
+        "impressions": 15,
         "clicks": 0,
         "ctr": 0,
-        "position": 10.6,
-        "insight": "Top 11 position with zero clicks indicates title/description not compelling enough to stand out"
-      },
-      {
-        "query": "devil wears prada book vs movie",
-        "impressions": 11,
-        "clicks": 0,
-        "ctr": 0,
-        "position": 11.5,
-        "insight": "Page 1 position with no engagement suggests SERP is dominated by video or featured snippets"
-      },
-      {
-        "query": "into the wild book vs movie",
-        "impressions": 9,
-        "clicks": 0,
-        "ctr": 0,
-        "position": 10.2,
-        "insight": "Consistent top 11 ranking but zero clicks across 28 days signals urgent CTR optimization need"
+        "position": 47.8,
+        "insight": "Significant impressions but poor position and no clicks highlight visibility challenges."
       }
     ],
     "topPages": [
       {
         "page": "https://booksversusmovies.com/reminders-of-him",
-        "impressions": 47,
+        "impressions": 48,
         "clicks": 7,
-        "ctr": 0.15,
-        "position": 8.9,
-        "insight": "Site's only traffic driver with strong 15% CTR, but URL canonicalization issue with .html version"
+        "ctr": 0.1458,
+        "position": 8.5,
+        "insight": "Leading page for clicks and impressions, showing strong niche interest."
       },
       {
         "page": "https://booksversusmovies.com/reminders-of-him.html",
-        "impressions": 86,
-        "clicks": 6,
-        "ctr": 0.07,
-        "position": 9.7,
-        "insight": "Receiving more impressions than canonical version, suggesting 301 redirect not fully processed"
+        "impressions": 45,
+        "clicks": 3,
+        "ctr": 0.0667,
+        "position": 9.8,
+        "insight": "Duplicate URL splits traffic, reducing overall effectiveness despite decent impressions."
       },
       {
         "page": "https://booksversusmovies.com/frankenstein.html",
-        "impressions": 30,
+        "impressions": 15,
         "clicks": 0,
         "ctr": 0,
-        "position": 50.3,
-        "insight": "High impressions but terrible position (page 5) and zero clicks indicate content quality or authority gap"
-      },
-      {
-        "page": "https://booksversusmovies.com/devil-wears-prada.html",
-        "impressions": 21,
-        "clicks": 0,
-        "ctr": 0,
-        "position": 11.2,
-        "insight": "Bottom of page 1 with perfect CTR optimization opportunity—small ranking boost could unlock traffic"
-      },
-      {
-        "page": "https://booksversusmovies.com/all-the-light-we-cannot-see.html",
-        "impressions": 21,
-        "clicks": 0,
-        "ctr": 0,
-        "position": 10.3,
-        "insight": "Top 11 position for Netflix adaptation queries but failing to capture any clicks from 21 impressions"
+        "position": 57.27,
+        "insight": "High impressions but no clicks due to poor average position."
       }
     ],
     "opportunities": [
-      "Reminders of Him is proving the site's content model works—15% CTR at position 8-9 shows users want this comparison content when they find it. The movie hasn't released yet (in production), suggesting this is pre-release research traffic that will spike significantly upon release announcement and premiere.",
-      "Five pages rank positions 10-13 with significant impressions but 0% CTR: Devil Wears Prada (11.2), All the Light (10.3), Into the Wild (10.2), American Gods book vs series (12), Animal Farm movie vs book (12). These are 1-3 position improvements away from page 1 visibility and likely traffic.",
-      "Lonesome Dove queries show high intent ('book vs miniseries' at position 5-9) with 1 click from 6 impressions—this classic Western comparison has evergreen potential and already ranks well, needs content depth expansion.",
-      "Project Hail Mary queries (5 impressions, 0 clicks, position 27-32) indicate early interest in the upcoming Ryan Gosling adaptation—creating comprehensive comparison content now positions for traffic surge when marketing begins.",
-      "Kogonada query (Pachinko director) got 1 click from 1 impression at position 2, showing the site can rank for director/creator-specific queries that indicate high-intent film/TV enthusiasts."
+      "Optimize meta descriptions and titles for 'Reminders of Him' queries to improve CTR, as the page shows high impressions (93 combined) but low conversion rates (e.g., 2.86% on /reminders-of-him.html).",
+      "Target book-to-movie comparison queries for titles like 'Into the Wild' and 'Devil Wears Prada,' which have impressions (15 and 11 respectively) but zero clicks, by improving content depth and snippet appeal.",
+      "Leverage emerging interest in upcoming adaptations like 'Sunrise on the Reaping' (Hunger Games) and 'Fourth Wing' by expanding related content, as these queries show early search volume.",
+      "Improve rankings for high-impression, low-position pages like 'Frankenstein' (avg. position 47.8-57.27) through targeted backlinks and content updates to address specific user intent."
     ],
     "risks": [
-      "92% of site traffic depends on a single page (Reminders of Him) about a movie still in production—if the adaptation gets cancelled or delayed, traffic could collapse. No diversification across multiple performing pages.",
-      "URL canonicalization failure: .html versions receiving 86 impressions vs 47 for clean URLs on the same content means Google hasn't consolidated link equity and ranking signals. This splits authority and likely suppresses rankings for both versions.",
-      "Zero clicks from 200+ impressions across major titles (Frankenstein, Gone Girl, Dune, Animal Farm) indicates systematic CTR problem—either titles/descriptions are generic, or the site lacks the authority signals (reviews, author mentions, rich snippets) to compete in crowded SERPs.",
-      "Average position of 28.4 across all queries means most content lives on page 3-4 where CTR approaches zero. Without ranking improvements, impression growth won't translate to traffic growth.",
-      "No 24-hour data and minimal 7-day variance from 28-day suggests traffic is extremely low volume and volatile—site hasn't achieved consistent daily traffic baseline yet."
+      "Continued low CTR on high-impression queries like 'reminders of him book vs movie' (2.86% on /reminders-of-him.html with 35 impressions) risks losing engaged users to competitors with better snippets.",
+      "Duplicate URLs (e.g., /reminders-of-him and /reminders-of-him.html) splitting impressions and clicks may confuse search engines and dilute page authority, despite existing redirects.",
+      "Poor average positions for many pages (e.g., 'Frankenstein' at 57.27, 'Animal Farm' at 32.75) risk declining impressions over time if rankings do not improve, especially for competitive book-movie niches."
     ],
     "recommendations": [
       {
-        "action": "Immediately investigate why 301 redirects aren't consolidating—check netlify.toml syntax, verify redirects in browser network tab, and use Google Search Console URL Inspection tool to request re-indexing of clean URLs while marking .html versions as duplicates",
+        "action": "Revise meta descriptions for 'Reminders of Him' pages to include specific keywords like 'differences' and 'comparison,' directly addressing top queries to boost CTR from current 2.86%-6.98%.",
         "priority": "High",
-        "impact": "Could consolidate split ranking signals and improve positions 1-3 spots for Reminders of Him queries, potentially doubling current traffic"
+        "impact": "Expected 20-30% CTR increase on high-impression queries, driving 5-10 additional clicks monthly."
       },
       {
-        "action": "Rewrite title tags for Devil Wears Prada, All the Light We Cannot See, Into the Wild, and American Gods pages to include emotional hooks or unique angles (e.g., 'Devil Wears Prada: 7 Major Differences That Made the Movie Better' vs generic 'Book vs Movie')",
+        "action": "Consolidate duplicate URLs by ensuring all traffic redirects to /reminders-of-him, updating internal links and sitemap to prevent impression splitting.",
         "priority": "High",
-        "impact": "Pages at position 10-12 with 0% CTR could achieve 3-8% CTR with compelling titles, adding 5-10 clicks/month immediately"
+        "impact": "Improved page authority and potential 10-15% impression growth for the primary URL."
       },
       {
-        "action": "Create 'Upcoming Book-to-Screen Adaptations 2025-2026' content targeting Project Hail Mary, Fourth Wing, Verity, and other in-production titles—capture pre-release research traffic before competition intensifies",
-        "priority": "High",
-        "impact": "Early-mover advantage on 10-15 upcoming adaptations could generate 50-100 impressions each as marketing campaigns launch"
-      },
-      {
-        "action": "Add comparison tables, character-by-character breakdowns, and scene-specific differences to Frankenstein, Animal Farm, and Dune pages to increase content depth from ~800 words to 2000+ words with structured data",
+        "action": "Update content for underperforming pages like 'Frankenstein' and 'Into the Wild' with detailed comparison tables and FAQs to match user intent, aiming to improve avg. position from 47.8-57.27 to top 20.",
         "priority": "Medium",
-        "impact": "Could improve positions from page 3-5 (30-50) to page 2 (11-20), increasing impressions 3-5x even before CTR optimization"
+        "impact": "Potential 15-25% impression growth and first clicks on currently zero-click pages."
       },
       {
-        "action": "Build internal linking from Reminders of Him (the traffic driver) to 5-7 other Colleen Hoover or contemporary romance adaptation pages with contextual anchor text to pass authority to underperforming pages",
+        "action": "Create or enhance content around trending adaptations like 'Sunrise on the Reaping' and 'Fourth Wing,' linking to /upcoming-adaptations for cross-promotion.",
         "priority": "Medium",
-        "impact": "Could lift related pages 2-5 positions by leveraging the one page with actual ranking power and user engagement"
-      },
-      {
-        "action": "Create director/creator spotlight pages (like the Kogonada query success) for Denis Villeneuve (Dune), Greta Gerwig, Christopher Nolan linking to their adaptation comparison pages—targets high-intent film enthusiast queries",
-        "priority": "Low",
-        "impact": "Niche traffic (10-20 clicks/month per director) but high engagement and natural backlink potential from film communities"
+        "impact": "Capture early traffic, potentially adding 50-100 monthly impressions as interest grows."
       }
     ],
     "contentIdeas": [
-      "Colleen Hoover Adaptations Hub: It Ends With Us performed well (position 29 for 'book vs movie'), Reminders of Him is the traffic winner, and Verity is in production—create pillar page comparing all her adaptations to capture author-specific search volume",
-      "Netflix Book Adaptations 2025: All the Light We Cannot See ranks page 1 but gets no clicks—create comprehensive Netflix-specific comparison page covering 15-20 titles to target 'netflix book adaptations' queries",
-      "Classic Literature Modernization Analysis: Frankenstein, Pride and Prejudice, Great Gatsby, Animal Farm all show impressions—create thematic content about how modern adaptations update classics for contemporary audiences",
-      "Stephen King Adaptation Quality Rankings: Site has Misery data—expand to compare 10-15 King adaptations with ratings/rankings to target 'best stephen king adaptations' queries that drive high traffic",
-      "Book-to-Screen Casting Controversies: Leverage queries about character differences (Amazing Amy, Anton Chigurh, Augustus McCrae) to create content about controversial or praised casting choices across adaptations"
+      "Develop a detailed comparison post for 'Reminders of Him' focusing on specific differences and character arcs, directly targeting high-intent queries like 'differences between reminders of him book and movie.'",
+      "Create a roundup post titled 'Top 10 Book-to-Movie Differences in 2023/2024' featuring titles with impressions but low clicks (e.g., 'Devil Wears Prada,' 'Into the Wild') to attract broader comparison searches.",
+      "Expand coverage of upcoming adaptations like 'Sunrise on the Reaping' with speculative analysis of book-to-movie changes, leveraging the existing /upcoming-adaptations page for internal linking.",
+      "Add a dedicated section or post on 'Frankenstein' adaptations across decades, addressing poor current rankings (avg. position 47.8-57.27) with rich historical and comparative content to improve visibility."
     ]
   }
 }

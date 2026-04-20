@@ -1,0 +1,63 @@
+Opening — set the frame (2 minutes)
+Start with the outcome, not the technology. Something like:
+"I've been building something over the last few months that I think changes how you can launch a content business. I want to walk you through what it does and whether your domain fits. By the end of this conversation you'll know exactly what it would take to go from your domain to a site that's generating traffic and revenue — and how long it realistically takes."
+Don't mention AI pipelines, JSON schemas, or Node.js yet. Lead with the result.
+
+The problem (3 minutes)
+Most content sites fail for one of three reasons. They either run out of content to publish, they publish inconsistently and lose momentum, or they publish consistently but with no SEO strategy and get no traffic.
+The traditional solution is hire writers, hire an SEO agency, and spend 12-18 months building up. That costs $5,000-$20,000 before you see meaningful revenue. And even then most of it is guesswork.
+"What I've built is a different approach entirely. Instead of hiring writers and hoping, I've built a system that generates publication-ready content at scale, optimizes it for search from day one, and monitors performance automatically. And I've proven it works — on a live site I launched three months ago."
+
+The proof point — BooksVersusMovies (5 minutes)
+This is your credibility moment. Show her the site.
+
+171 comparison pages, all live
+New domain, zero authority, zero backlinks
+First-page Google rankings within days of launch on specific queries
+8.84% click-through rate on the top page — industry average is 2-3%
+Automated morning analysis that tells me every day what to fix
+
+"I didn't write 171 pages. The system did. I directed it, reviewed it, and deployed it. The difference is I spent my time on strategy and quality control, not on writing."
+
+How it works — without the tech (5 minutes)
+Keep this simple. Use an analogy:
+"Think of it like a publishing operation that's been turned into software. A traditional magazine has writers, editors, a layout team, and a distribution system. I've built the equivalent for a content website — except the writers are AI, the editor is me, and the distribution system is Google search.
+Every piece of content starts as a structured brief — we define what the page needs to cover, what verdict it needs to reach, and what questions it needs to answer. The system generates the content, I review it, and it goes live in a format that Google is specifically designed to reward.
+The pages are built to appear in featured snippets, People Also Ask boxes, and AI search results — not just regular rankings. That's a technical advantage most sites never have."
+
+What it means for her domain (5 minutes)
+This is where you get specific. By the time of this meeting you'll have Vercel live, the monitoring dashboard running, and nightly processes in place. You can show her:
+
+The dashboard with real live data from BooksVersusMovies
+The automated morning analysis report
+The SEO review pipeline that scored and improved 162 pages
+The pipeline timeline — how long it takes from brief to live page
+
+Frame it as:
+"For your domain, here's what I'd propose. We spend a week defining the content taxonomy — the complete list of topics your site would cover. Then we run the generation pipeline and have a full site of 50-100 pages ready to review in two to three weeks. We deploy, connect GSC and GA4, and start monitoring from day one.
+You don't write anything. You review, you direct, and you make decisions. I run the system."
+
+The business model conversation (5 minutes)
+Since the model is undecided, open it up rather than prescribe it:
+"The business model depends on the niche. For most content sites there are three options — affiliate commissions when readers buy something you recommend, display advertising once you hit traffic thresholds, or using the site as a lead generation tool for a service business.
+Before we commit to one, I'd want to understand what your domain is about and what your readers would naturally do next. The content strategy is different depending on which model you're optimizing for. Affiliate content wants specific buying-intent queries. Ad revenue wants volume. Lead gen wants high-value niche authority."
+
+The partnership structure (3 minutes)
+Be clear about what you each bring:
+"Here's how I see this working. You bring the domain, the niche knowledge, and the editorial direction — you know your audience better than I do. I bring the technical infrastructure, the AI pipeline, the SEO system, and the ongoing optimization. We split the upside.
+In 14 days I'll have a backend infrastructure in place that gives us live analytics, automated monitoring, and a publishing pipeline that can scale to any site. The BooksVersusMovies infrastructure becomes the foundation for your site too."
+
+Close — what happens next (2 minutes)
+Don't leave the meeting without a concrete next step:
+"What I'd like to do before our next conversation is look at your domain and niche, identify the 20 highest-opportunity content topics, and come back with a specific proposal — content taxonomy, page count, timeline, and how we structure the partnership. Give me a week with the domain name and I'll have something concrete to show you."
+
+What you'll have ready by then that you don't have today:
+
+Vercel backend live with /api/gsc pulling real data
+Dashboard showing live GSC and GA4 with automated daily analysis
+Nightly monitoring pipeline running automatically
+SEO review pipeline proven across 162 pages
+Schema v3.1 with full structural optimization baked in
+Documented lessons learned and greenfield guide
+
+That's a compelling demo. A live dashboard showing a real site with real traffic, connected to a pipeline that optimizes itself overnight — that's not a pitch, that's proof.

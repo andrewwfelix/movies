@@ -1,0 +1,219 @@
+{
+  "_schemaVersion": "3.1",
+  "_destination": "pipeline/2-revised/[slug].json",
+  "_description": "BooksVersusMovies.com canonical review schema v3.1 — includes snippet optimization, structured extraction, social meta, and entity reinforcement fields",
+  "_changelog": {
+    "v3.1": "Added primaryKeyword, secondaryKeywords, winnerStatement, entities, hook, targetQueries, og, images, canonicalUrl, atAGlanceTable, keyDifferencesList, optimizedH2s, snippetParagraph",
+    "v3.0": "Added snippetParagraph, atAGlanceTable, keyDifferencesList, optimizedH2s, differences[].question",
+    "v2.0": "Added quickAnswer, ctaBlocks, relatedSectionTitle, hasSpoilerWarning flags",
+    "v1.0": "Initial schema"
+  },
+
+  "_rules": {
+    "pageTitle": "Max 60 chars. Must include book title + 'Book vs Movie'. Specific hook or verdict required. No ellipsis.",
+    "metaDesc": "Max 150 chars. Must answer: what changed or which is better. One specific claim. No passive tone.",
+    "snippetParagraph": "Max 100 words. Format: main difference → verdict → read first. Google extraction target.",
+    "atAGlanceTable": "4-5 rows max. Parallel structure required — both book and film values must be non-null. Punchy, not prose.",
+    "keyDifferencesList": "3-5 items. Label is bold, text is one sentence. Google index layer — not duplication of differences[].",
+    "optimizedH2s": "Question format. Match real search queries. Must include the book title in the question.",
+    "reviewBody": "VALIDATION: must not contain content from a different slug. Cross-page contamination check required.",
+    "winnerStatement": "One declarative sentence. Book/Film + is better than + adaptation. Used for snippet and AI summaries.",
+    "entities": "Real people and works mentioned on the page. Appear early in content for Knowledge Graph alignment.",
+    "differences[].question": "Required on all difference objects. Question format matching PAA queries."
+  },
+
+  "slug": "reminders-of-him",
+  "filename": "reminders-of-him.html",
+  "lastUpdated": "2026-04-19",
+  "pipelineVersion": "1",
+  "generation": "v3",
+
+  "pageTitle": "Reminders of Him Book vs Movie (2026): Key Differences",
+  "metaDesc": "Reminders of Him book vs movie: what changed in the 2026 adaptation? Compare key differences, the letters, and which version is better.",
+
+  "primaryKeyword": "reminders of him book vs movie",
+  "secondaryKeywords": [
+    "reminders of him differences",
+    "reminders of him movie vs book",
+    "reminders of him ending explained",
+    "is reminders of him movie faithful to book"
+  ],
+  "targetQueries": [
+    "reminders of him book vs movie",
+    "reminders of him differences",
+    "reminders of him movie vs book",
+    "should i read reminders of him before the movie"
+  ],
+
+  "winnerStatement": "The Reminders of Him book is better than the 2026 movie adaptation.",
+
+  "hook": "The Reminders of Him movie removes the one thing that makes the book work: the letters.",
+
+  "entities": [
+    "Colleen Hoover",
+    "Reminders of Him",
+    "Vanessa Caswill",
+    "Maika Monroe",
+    "Carrie Coon"
+  ],
+
+  "snippetParagraph": "The main difference between the Reminders of Him book and the 2026 movie is narrative structure. Colleen Hoover's novel alternates between Kenna and Ledger, with Kenna's full letters to Scotty providing the book's emotional core. Vanessa Caswill's film condenses this into a single perspective and reduces the letters to brief voiceovers. The book is the better version. Read it first.",
+
+  "atAGlanceTable": [
+    { "feature": "Point of view",  "book": "Dual — Kenna and Ledger",   "film": "Single — Kenna only" },
+    { "feature": "The letters",    "book": "Full emotional core",        "film": "Reduced to voiceovers" },
+    { "feature": "Kenna's tone",   "book": "Openly volatile",            "film": "Guarded, contained" },
+    { "feature": "Grace",          "book": "Plot obstacle",              "film": "Dimensional (Carrie Coon)" },
+    { "feature": "Interiority",    "book": "High — prose and letters",   "film": "Moderate — visual only" }
+  ],
+
+  "keyDifferencesList": [
+    { "label": "Perspective",  "text": "The novel alternates between Kenna and Ledger. The film focuses on Kenna only." },
+    { "label": "The letters",  "text": "Full letter text anchors the book's grief. The film reduces these to brief voiceovers." },
+    { "label": "Kenna's tone", "text": "Maika Monroe plays Kenna as guarded and contained. Hoover's Kenna is more openly volatile." },
+    { "label": "Grace",        "text": "A plot obstacle in the book. Carrie Coon makes her dimensional on screen." }
+  ],
+
+  "optimizedH2s": {
+    "storyBrief":     "What is Reminders of Him about?",
+    "keyDifferences": "How is the Reminders of Him movie different from the book?",
+    "readFirst":      "Should you read Reminders of Him before watching the movie?",
+    "verdict":        "Is the Reminders of Him book or movie better?"
+  },
+
+  "og": {
+    "title":       "Reminders of Him Book vs Movie: Letters Can't Transfer",
+    "description": "The film loses dual POV and Kenna's letters — the two things that make Hoover's grief story work. Book wins.",
+    "image":       "https://booksversusmovies.com/images/reminders-of-him-og.jpg",
+    "imageAlt":    "Reminders of Him book cover and 2026 movie poster side by side"
+  },
+
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+
+  "images": {
+    "bookCoverAlt":    "Cover of Reminders of Him by Colleen Hoover",
+    "trailerThumbAlt": "Watch the Reminders of Him 2026 movie trailer"
+  },
+
+  "canonicalUrl": "https://booksversusmovies.com/reminders-of-him",
+
+  "reviewBody": "Hoover's novel is a grief story told with unusual structural precision — the dual perspective and Kenna's letters are not decorative, they are the mechanism. The film is sincere and well-cast but loses the interiority that makes the book's emotional argument work. Read the book first.",
+
+  "ratingValue": "5",
+  "bookTitle": "Reminders of Him",
+  "author": "Colleen Hoover",
+  "bookYear": "2022",
+  "genre": "Contemporary Romance",
+  "mediaType": "film",
+  "mediaLabel": "The Movie",
+  "filmYear": "2026",
+  "director": "Vanessa Caswill",
+  "starringLine": "Starring Maika Monroe, Carrie Coon — Film: 2026",
+  "verdictText": "Book Wins",
+  "verdictClass": "verdict-book",
+
+  "affiliateLink": "https://amzn.to/xxxxx",
+  "affiliateLinkAlt": "https://amzn.to/xxxxx",
+  "videoAffiliateLink": null,
+  "youtubeId": "xxxxx",
+  "trailerUrl": "https://www.youtube.com/watch?v=xxxxx",
+  "bookCoverImage": "reminders-of-him.jpg",
+
+  "storyBrief": "Full story brief paragraph goes here...",
+
+  "quickAnswer": {
+    "winner": "Book",
+    "readFirst": "Yes",
+    "oneLineReason": "Hoover's dual perspective and Kenna's letters are what make this story work. The film can't replicate either."
+  },
+
+  "characters": [
+    {
+      "name": "Kenna Rowan",
+      "actor": "Maika Monroe",
+      "inBook": "Openly volatile, grief expressed through letters and raw interior monologue.",
+      "inFilm": "Monroe plays her as guarded and contained — quieter but no less damaged."
+    },
+    {
+      "name": "Ledger Ward",
+      "actor": "TBC",
+      "inBook": "Co-narrator whose perspective gives the novel structural balance and emotional counterweight.",
+      "inFilm": "Supporting role — loses his narrative voice entirely."
+    },
+    {
+      "name": "Grace",
+      "actor": "Carrie Coon",
+      "inBook": "Primarily a plot obstacle standing between Kenna and Diem.",
+      "inFilm": "Carrie Coon makes her dimensional and sympathetic — a genuine upgrade on the page."
+    }
+  ],
+
+  "differences": [
+    {
+      "title": "The Loss of Dual Perspective",
+      "question": "Does the Reminders of Him movie keep both Kenna and Ledger's point of view?",
+      "body": "Full long-form difference prose goes here..."
+    },
+    {
+      "title": "Kenna's Letters to Scotty",
+      "question": "Do Kenna's letters appear in the Reminders of Him movie?",
+      "body": "Full long-form difference prose goes here..."
+    },
+    {
+      "title": "Kenna's Emotional Register",
+      "question": "Is Maika Monroe's Kenna different from the book version?",
+      "body": "Full long-form difference prose goes here..."
+    }
+  ],
+
+  "readFirst": "Full read-first prose goes here...",
+
+  "verdictBox": "Full verdict prose goes here...",
+
+  "faq": [
+    {
+      "question": "Is Reminders of Him based on a true story?",
+      "answer": "No. Colleen Hoover has stated the novel is entirely fictional, though she drew on universal themes of grief, guilt, and second chances."
+    },
+    {
+      "question": "How faithful is the 2026 film to the book?",
+      "answer": "Very faithful in plot and structure. The primary loss is the novel's dual perspective and the full text of Kenna's letters to Scotty."
+    },
+    {
+      "question": "Should I read Reminders of Him before watching the movie?",
+      "answer": "Yes. The novel's dual perspective and Kenna's letters are what give the story its emotional precision. Read first — the film works better as a companion piece."
+    },
+    {
+      "question": "Does the film change the ending?",
+      "answer": "No. The film preserves the novel's ending, including Kenna's reunion with Diem and her tentative future with Ledger."
+    }
+  ],
+
+  "ctaBlocks": [
+    { "location": "after-quick-answer", "text": "Read the book first →",        "href": "https://amzn.to/xxxxx" },
+    { "location": "after-read-first",   "text": "Get the book on Amazon →",     "href": "https://amzn.to/xxxxx" },
+    { "location": "after-verdict",      "text": "Start with the book →",        "href": "https://amzn.to/xxxxx" }
+  ],
+
+  "relatedSectionTitle": "More Romance Adaptations",
+  "related": [
+    { "slug": "it-ends-with-us", "title": "It Ends With Us" },
+    { "slug": "normal-people",   "title": "Normal People" },
+    { "slug": "verity",          "title": "Verity" }
+  ],
+
+  "hasSpoilerWarning":      true,
+  "hasQuickAnswer":         true,
+  "hasCharTable":           true,
+  "hasAtAGlanceTable":      true,
+  "hasSnippetParagraph":    true,
+  "hasKeyDifferencesList":  true,
+  "hasOpenGraph":           true,
+  "hasOptimizedH2s":        true,
+
+  "_warnings": [],
+  "_warningCount": 0
+}

@@ -1,0 +1,193 @@
+{
+  "generatedAt": "2026-04-19T22:36:21.803Z",
+  "site": "sc-domain:booksversusmovies.com",
+  "config": {
+    "periods": [
+      {
+        "name": "28days",
+        "daysBack": 28
+      },
+      {
+        "name": "7days",
+        "daysBack": 7
+      },
+      {
+        "name": "24hours",
+        "daysBack": 1
+      }
+    ],
+    "model": "anthropic/claude-sonnet-4-5",
+    "provider": "openrouter"
+  },
+  "rawDataCount": 300,
+  "indexCoverage": [
+    {
+      "path": "https://booksversusmovies.com/sitemap.xml",
+      "lastSubmitted": "2026-04-17T13:10:10.684Z",
+      "isPending": false,
+      "submitted": 173,
+      "indexed": 0,
+      "contents": [
+        {
+          "type": "web",
+          "submitted": "173",
+          "indexed": "0"
+        }
+      ]
+    }
+  ],
+  "insights": {
+    "summary": "The site is experiencing concentrated traffic around a single breakout title: 'Reminders of Him' by Colleen Hoover. This page accounts for 12 of the 13 total clicks in the 28-day period, with strong CTR performance (20-25%) on several query variations. The page ranks between positions 7-11 for its core queries, indicating solid but improvable visibility. However, there's a critical technical issue: both the canonical URL (/reminders-of-him) and the legacy .html version are receiving impressions and clicks separately, fragmenting performance and potentially confusing Google about which version to prioritize. Beyond this single winner, the site shows extremely low engagement across its 171+ reviewed pages—most titles are generating impressions but zero clicks, with positions ranging from 10-80. Classic comparison queries like 'book vs movie' for major titles (Dune, Gone Girl, Frankenstein, Animal Farm, Into the Wild) are generating 1-15 impressions each but failing to convert, suggesting either poor positioning (20-50+) or weak title tag appeal. The 7-day data mirrors the 28-day pattern almost exactly, indicating consistent but stagnant performance with no momentum shifts. Notably, high-authority pages like Lonesome Dove, Pachinko, and One Flew Over the Cuckoo's Nest each captured single perfect-CTR clicks, suggesting strong relevance when they do appear, but insufficient impression volume to build traffic.",
+    "keyMetrics": {
+      "totalImpressions": 447,
+      "totalClicks": 13,
+      "avgCTR": 0.029,
+      "avgPosition": 28.4,
+      "totalRowsAnalyzed": 197
+    },
+    "topQueries": [
+      {
+        "query": "reminders of him book vs movie",
+        "impressions": 43,
+        "clicks": 3,
+        "ctr": 0.07,
+        "position": 9.3,
+        "insight": "Highest volume query with decent CTR but split between two URLs (.html and canonical), diluting authority and preventing page 1 breakthrough."
+      },
+      {
+        "query": "reminders of him differences between book and movie",
+        "impressions": 21,
+        "clicks": 3,
+        "ctr": 0.14,
+        "position": 8.5,
+        "insight": "Strong CTR indicates compelling snippet/title, but also suffering from URL cannibalization between versions."
+      },
+      {
+        "query": "all the light we cannot see book vs show",
+        "impressions": 12,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 10.6,
+        "insight": "Page 1 positioning with Netflix series relevance but zero clicks suggests title/meta description needs optimization for appeal."
+      },
+      {
+        "query": "devil wears prada book vs movie",
+        "impressions": 11,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 11.5,
+        "insight": "Classic comparison query for iconic adaptation hovering just outside page 1—small ranking improvement could unlock traffic."
+      },
+      {
+        "query": "into the wild book vs movie",
+        "impressions": 9,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 10.2,
+        "insight": "Page 1 position with zero clicks indicates weak snippet appeal or strong SERP competition from featured snippets/videos."
+      }
+    ],
+    "topPages": [
+      {
+        "page": "https://booksversusmovies.com/reminders-of-him",
+        "impressions": 54,
+        "clicks": 7,
+        "ctr": 0.13,
+        "position": 8.9,
+        "insight": "Site's only meaningful traffic driver, but competing with its own .html version for the same queries."
+      },
+      {
+        "page": "https://booksversusmovies.com/reminders-of-him.html",
+        "impressions": 102,
+        "clicks": 6,
+        "ctr": 0.06,
+        "position": 9.7,
+        "insight": "Legacy URL receiving more impressions than canonical version—301 redirect exists but Google still indexing/serving both URLs."
+      },
+      {
+        "page": "https://booksversusmovies.com/lonesome-dove.html",
+        "impressions": 24,
+        "clicks": 1,
+        "ctr": 0.04,
+        "position": 43.8,
+        "insight": "Classic Western adaptation with niche but engaged audience—poor positioning (40s-70s) preventing discovery."
+      },
+      {
+        "page": "https://booksversusmovies.com/all-the-light-we-cannot-see.html",
+        "impressions": 19,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 10.3,
+        "insight": "Netflix series adaptation with page 1 rankings but failing to capture clicks—likely losing to video results or Wikipedia."
+      },
+      {
+        "page": "https://booksversusmovies.com/frankenstein.html",
+        "impressions": 15,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 48.5,
+        "insight": "Guillermo del Toro adaptation generating search interest but page buried on page 5—needs topical authority building."
+      }
+    ],
+    "opportunities": [
+      "Reminders of Him is the clear winner—push for positions 5-7 by building internal links from pillar pages, adding more FAQ schema targeting long-tail variations, and potentially creating a dedicated spotlight feature to consolidate authority.",
+      "Into the Wild, Devil Wears Prada, and All the Light We Cannot See are all ranking positions 10-12 with zero clicks—rewrite title tags to emphasize unique angles (e.g., 'Sean Penn's 7 Major Changes' or '12 Book Scenes Cut from Meryl Streep's Film') to improve CTR without ranking changes.",
+      "Lonesome Dove queries show 100% CTR when clicked (1/1) despite position 7—indicates strong brand recognition and niche authority; target related queries like 'lonesome dove book vs miniseries' (position 5-9) with dedicated content expansion.",
+      "Project Hail Mary queries ('is book better than movie', 'film like the book') appearing at positions 27-32 with Ryan Gosling film in production—create anticipation content or comparison preview to capture early search interest before release.",
+      "Pachinko page captured click for 'kogonada' (director) at position 2—indicates strong E-E-A-T signals; expand director/creator coverage across other pages to capture similar branded queries."
+    ],
+    "risks": [
+      "URL cannibalization crisis: Reminders of Him has both canonical and .html versions receiving impressions/clicks separately (54 vs 102 impressions), fragmenting link equity and preventing either from reaching page 1 positions 1-5. This pattern may exist across other pages.",
+      "Site-wide engagement failure: 171 reviewed pages generating only 13 clicks in 28 days indicates 99%+ of content is invisible or unappealing. Average position of 28.4 means most pages are buried on pages 3-4 where CTR approaches zero.",
+      "Zero momentum: 7-day data is nearly identical to 28-day data with no new pages breaking through, suggesting stagnant crawl budget, lack of fresh content signals, or insufficient topical authority to compete in crowded 'book vs movie' SERP landscape.",
+      "High-value queries with zero clicks: Dune (5 impressions, position 24-35), Gone Girl (7 impressions, position 29-44), Frankenstein (30 impressions, position 42-68) all generating search visibility but failing to convert—indicates either poor positioning or weak competitive differentiation.",
+      "Seasonal vulnerability: No trending or upcoming adaptation queries breaking through except scattered Project Hail Mary and Fourth Wing mentions—site not capturing timely search interest around new releases or streaming debuts."
+    ],
+    "recommendations": [
+      {
+        "action": "Audit all .html URLs in Google Search Console to identify which are still being indexed despite 301 redirects; submit removal requests via URL Removal Tool for .html versions and force recrawl of canonical versions via Inspect URL tool.",
+        "priority": "High",
+        "impact": "Could consolidate Reminders of Him authority and push from position 8-10 to positions 5-7, potentially doubling clicks from 12 to 25+ per month."
+      },
+      {
+        "action": "Rewrite title tags for pages ranking positions 9-15 with zero clicks (Into the Wild, Devil Wears Prada, All the Light We Cannot See, Animal Farm) to include numbers, emotional hooks, or controversy angles (e.g., 'Into the Wild Movie: 9 Shocking Changes from Krakauer's Book').",
+        "priority": "High",
+        "impact": "Could improve CTR from 0% to 3-5% without ranking changes, adding 5-10 clicks per month across these pages."
+      },
+      {
+        "action": "Create internal linking campaign from high-authority pillar pages to Reminders of Him, Lonesome Dove, and Pachinko pages using exact-match anchor text for target queries ('reminders of him book vs movie', 'lonesome dove miniseries vs book').",
+        "priority": "High",
+        "impact": "Could improve target page positions by 2-3 spots within 4-6 weeks, moving Reminders of Him to page 1 top 5."
+      },
+      {
+        "action": "Expand FAQ schema on pages ranking 10-15 to target question-based queries appearing in data ('is project hail mary book better than movie', 'is gone girl based off a book', 'is lonesome dove a true story')—add 3-5 new FAQ items per page.",
+        "priority": "Medium",
+        "impact": "Could capture featured snippet positions for question queries, adding 3-8 clicks per month from zero-click queries."
+      },
+      {
+        "action": "Build topical authority clusters around high-impression, low-position pages (Frankenstein, Dune, Gone Girl) by creating supporting content: author deep-dives, director analysis, adaptation timeline pages that internally link to main comparison pages.",
+        "priority": "Medium",
+        "impact": "Could improve cluster page positions from 30-50 to 15-25 over 8-12 weeks, unlocking 10-20 clicks per month from currently invisible pages."
+      },
+      {
+        "action": "Create 'Upcoming Adaptations 2025' content targeting pre-release search interest for Project Hail Mary, Fourth Wing, Verity, and other in-production adaptations—publish quarterly updates to capture early search volume.",
+        "priority": "Medium",
+        "impact": "Could add 15-30 clicks per month from anticipation queries before films release, building early authority for post-release comparison traffic."
+      },
+      {
+        "action": "Analyze SERP features (videos, featured snippets, People Also Ask) for zero-click queries like 'into the wild book vs movie' and 'all the light we cannot see book vs show'—restructure content to target snippet optimization with comparison tables, bullet lists, and direct answers in first 100 words.",
+        "priority": "Low",
+        "impact": "Could convert 2-3 zero-click impressions into featured snippet captures, adding 5-10 clicks per month from enhanced SERP visibility."
+      }
+    ],
+    "contentIdeas": [
+      "Create 'Colleen Hoover Adaptations' pillar page linking to Reminders of Him, It Ends With Us, and Verity—capitalize on author's massive fanbase and cross-link related comparison pages to build topical cluster.",
+      "Develop 'Classic Literature Adaptations' series targeting queries like 'frankenstein movie vs book', 'animal farm differences', 'pride and prejudice movie vs book'—these show consistent impressions but need authority building through interconnected content.",
+      "Build 'Streaming Service Adaptation Guides' (Netflix, Apple TV+, Prime Video) targeting queries like 'apple tv pachinko', 'all the light we cannot see netflix'—capture platform-specific search intent.",
+      "Create 'Director Spotlight' pages for auteurs with book adaptation track records (Kogonada/Pachinko, Chloe Zhao/Hamnet, Joe Wright/Atonement)—capture branded director queries showing in data.",
+      "Develop 'Western Adaptations' mini-cluster around Lonesome Dove, No Country for Old Men, and related titles—niche but engaged audience with high CTR when content surfaces.",
+      "Build 'Sci-Fi Adaptation Deep Dives' for Dune, Annihilation, Project Hail Mary, Dark Matter—genre has consistent search volume but site currently underperforming in rankings (positions 20-35).",
+      "Create 'Book vs Movie: What Critics Got Wrong' controversy content for high-impression, zero-click pages—emotional angle could improve CTR and generate social shares/backlinks."
+    ]
+  }
+}

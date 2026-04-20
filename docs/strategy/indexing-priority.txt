@@ -5,30 +5,11 @@ Note: GSC allows ~10 requests per day. Work through Priority 1 first.
 Use clean URLs (no .html) — redirects are now in place.
 
 
-PRIORITY 1 — Getting clicks / high impressions already
--------------------------------------------------------
-https://booksversusmovies.com/into-the-wild
-https://booksversusmovies.com/the-fault-in-our-stars
-https://booksversusmovies.com/gone-girl
-https://booksversusmovies.com/the-great-gatsby
-https://booksversusmovies.com/pride-and-prejudice
-https://booksversusmovies.com/fight-club
-https://booksversusmovies.com/the-handmaids-tale
-https://booksversusmovies.com/the-help
-https://booksversusmovies.com/normal-people
-https://booksversusmovies.com/one-flew-over-the-cuckoos-nest
 
 
 PRIORITY 2 — High search volume evergreen titles
 -------------------------------------------------
-https://booksversusmovies.com/jurassic-park
-https://booksversusmovies.com/dracula
-https://booksversusmovies.com/lord-of-the-flies
-https://booksversusmovies.com/schindlers-list
-https://booksversusmovies.com/little-women
-https://booksversusmovies.com/jane-eyre
-https://booksversusmovies.com/sense-and-sensibility
-https://booksversusmovies.com/to-kill-a-mockingbird
+
 https://booksversusmovies.com/the-road
 https://booksversusmovies.com/the-shining
 https://booksversusmovies.com/silence-of-the-lambs
