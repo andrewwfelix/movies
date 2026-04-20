@@ -63,22 +63,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The novel's digressive structure becomes the film's visual meditation",
       "body": "Murakami's Norwegian Wood is built on tangents—long passages about the history of jazz, detailed descriptions of meals, philosophical musings on the nature of loneliness. These digressions are not obstacles to plot; they are the plot. They accumulate into a portrait of a mind that cannot stop thinking, analyzing, and retreating into memory. The novel's power comes from its refusal to move forward, from its insistence that the small, seemingly insignificant details of daily life contain profound truths.\n\nHung's film abandons this narrative strategy entirely, replacing Murakami's verbal digression with visual digression. Where the novel lingers on Okada's thoughts, the film lingers on images—a hand touching a wall, rain on a window, the texture of fabric. Hung is not being unfaithful to the source material; he is translating its essence into cinematic language. The film's digressions are visual and sonic rather than intellectual, but they serve the same function: they slow down time, they force the viewer to sit with discomfort, they suggest that meaning lies in the accumulation of small moments rather than in plot resolution."
     },
     {
+      "question": null,
       "title": "The book's interior monologue is replaced by the film's use of silence and sound design",
       "body": "One of the novel's defining features is Okada's constant internal commentary—his thoughts are often contradictory, self-aware, and deeply neurotic. We hear him analyzing his own paralysis, questioning his own motivations, spiraling into philosophical tangents. This interior monologue is the novel's primary vehicle for meaning; without it, we would have almost no access to Okada's emotional life. Murakami uses Okada's voice to create intimacy and complicity with the reader—we are inside his head, trapped with him in his own consciousness.\n\nHung's film has almost no dialogue and no voice-over narration. Instead, it relies on sound design—the ambient noise of Tokyo, the sound of rain, the silence between characters—to create emotional resonance. The film trusts the viewer to read Okada's emotional state from his face, his posture, his movement through space. This is a fundamentally different approach to storytelling, one that requires the viewer to do more interpretive work. Where the novel tells us what Okada is thinking, the film shows us what he is feeling, and asks us to fill in the gaps ourselves."
     },
     {
+      "question": null,
       "title": "The film compresses the novel's multiple timelines into a more linear narrative",
       "body": "Murakami's novel moves fluidly between Okada's present-day life and his memories of his university years, with the past gradually bleeding into the present until the distinction between the two becomes almost meaningless. The novel's structure mirrors its thematic preoccupation with memory—the past is not something that happened; it is something that continues to happen, that shapes every moment of the present. The novel's temporal complexity is inseparable from its meaning; it is a formal expression of how trauma and grief distort our experience of time.\n\nHung's film, while still moving between past and present, does so more clearly and linearly. The flashbacks are marked as flashbacks; the present is marked as present. The film is more conventional in its temporal structure, which makes it more accessible but also somewhat diminishes the novel's central insight about the way memory colonizes the present. By making the temporal structure clearer, Hung sacrifices some of the novel's formal innovation, but he gains clarity and emotional directness."
     },
     {
+      "question": null,
       "title": "The novel's ambiguous ending becomes the film's moment of visual resolution",
       "body": "The novel ends with Okada on a train, having just hung up the phone with Naoko, not knowing whether she is alive or dead, not knowing what he will do next. The ending is radically open—it refuses to resolve the central tensions of the narrative, instead leaving the reader suspended in uncertainty. This ambiguity is not a flaw; it is the point. The novel suggests that some questions cannot be answered, that some losses cannot be recovered, and that we must learn to live with that uncertainty.\n\nHung's film, while maintaining some of this ambiguity, provides more visual and emotional closure. The final images are more clearly composed, more aesthetically resolved. The film does not answer the questions the novel leaves open, but it frames them differently—it suggests that beauty and meaning can be found in the act of looking back, even if we cannot change what we see. The film's ending is less about uncertainty and more about acceptance, a subtle but significant shift in tone."
     },
     {
+      "question": null,
       "title": "The book's exploration of suicide is replaced by the film's focus on melancholy",
       "body": "Murakami's novel is fundamentally about suicide—not just Kizuki's suicide, but the broader question of why people choose death, why some people seem to be drawn toward oblivion. The novel does not shy away from this darkness; it explores it with unflinching honesty. Okada himself is not suicidal, but he is drawn to people who are, and the novel suggests that there is something in him that understands the appeal of non-existence. This is not sentimentalized; it is rendered as a genuine psychological and philosophical problem.\n\nHung's film is less interested in the question of suicide and more interested in the aesthetics of melancholy. Where the novel asks why people die, the film asks what it feels like to be sad. This is not a criticism—melancholy is a legitimate subject for cinema, and Hung captures it beautifully. But the shift represents a significant change in the work's thematic center. The film is more concerned with mood and atmosphere than with the novel's darker philosophical questions. It is a film about sadness rather than a film about death."
     }
@@ -143,5 +148,28 @@
   ],
   "hasSpoilerWarning": false,
   "hasQuickAnswer": true,
-  "hasCharTable": true
+  "hasCharTable": true,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/norwegian-wood",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

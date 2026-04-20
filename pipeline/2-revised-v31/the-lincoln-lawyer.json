@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Mickey Haller's moral complexity is simplified for the screen",
       "body": "The novel is built around a genuine ethical dilemma: a defence attorney bound by privilege and professional ethics who knows his client is guilty of something terrible and cannot act on that knowledge without destroying his career and possibly his freedom. Connelly works through the legal constraints carefully — this isn't a thriller that treats attorney-client privilege as an obstacle to be sidestepped, but as a real and painful bind.\n\nThe film simplifies this considerably, pushing Haller toward hero status faster than the book earns it. McConaughey's performance is excellent, but the screenplay doesn't give him the interior space to convey the cost-benefit calculations and professional pride that make the novel's Haller so compelling."
     },
     {
+      "question": null,
       "title": "The procedural detail that gives the novel its authority is largely absent",
       "body": "Connelly spent time researching LA's criminal defence bar, and it shows: the novel is full of specific, credible detail about how defence attorneys actually work — the fee structures, the relationships with bail bondsmen and investigators like Raul Levin, the courthouse rhythms, the negotiating dynamics with prosecutors. This procedural texture gives the story its authenticity and makes the legal trap Haller finds himself in feel genuinely inescapable.\n\nThe film moves too quickly to carry much of this, and loses some of the novel's authority as a result. Scenes that should feel like careful legal manoeuvring become standard thriller beats, and the sense of Haller as a skilled professional navigating a broken system is replaced by a more conventional hero's journey."
     },
     {
+      "question": null,
       "title": "The revelation of Roulet's guilt unfolds differently",
       "body": "In the novel, Haller's realisation that Roulet is connected to the Menendez case builds gradually through procedural investigation — matching details, reviewing old case files, recognising patterns. The dread accumulates across chapters, and by the time Haller understands what he's dealing with, the reader has been brought along step by step.\n\nThe film compresses this discovery into a shorter timeframe, which makes for efficient storytelling but sacrifices the slow-building horror of the book. The moment of recognition lands, but without the same weight."
     },
     {
+      "question": null,
       "title": "The supporting cast is well-chosen but underserved by the pace",
       "body": "Marisa Tomei as Maggie McPherson and Ryan Phillippe as Louis Roulet are both well-cast. Phillippe in particular lands the character's specific blend of entitlement and menace — he is believable as someone Haller might underestimate. William H. Macy as Frank Levin, Haller's investigator, brings gravitas to a role that matters more in the book than the film has time to show.\n\nThe film handles the supporting relationships capably but at a pace that doesn't allow the slow accumulation of trust, betrayal, and moral compromise the novel achieves across several hundred pages. Levin's death, which should be devastating, feels more like a plot point than a personal loss."
     },
     {
+      "question": null,
       "title": "The ending is more conventionally satisfying on screen",
       "body": "The novel's conclusion is morally ambiguous — Haller wins, but at a cost, and the system he works within remains as compromised as ever. The film's ending is more conventionally triumphant, with Haller emerging as a clearer hero. It works for the film's tone, but it's not quite the same story Connelly told.\n\nYes — the novel's moral architecture is the experience, and it requires more time than a two-hour film can give it. Connelly's procedural patience is what makes Haller's dilemma feel real rather than contrived, and the book's interior monologue is where the character lives. Read first and the film becomes a well-cast, entertaining companion that captures the surface pleasures of the source.\n\nIf you watch first, you'll get a solid legal thriller with a charismatic lead performance. But you'll miss the specific legal reasoning, the courthouse texture, and the moral weight that make the book more than just a clever plot. The book is the more complete version of the story Connelly is telling."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-lincoln-lawyer",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

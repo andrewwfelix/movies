@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Scout's Double Narration Is Lost",
       "body": "The novel is narrated by an adult Scout looking back on her childhood, which gives the prose a double register — the child's bewilderment and the adult's understanding, sometimes in the same sentence. This double consciousness is the novel's structural genius.\n\nThe film opens with Scout's adult voice-over but quickly abandons it for the child's immediate perspective. Mary Badham is magnificent — natural, fierce, bewildered — but the adult reflection that gives the novel its moral depth is largely absent. You lose the sense of memory being examined and reinterpreted."
     },
     {
+      "question": null,
       "title": "Gregory Peck Becomes Atticus",
       "body": "Peck's Atticus is one of cinema's great performances — moral authority made physical, decency made visible. Harper Lee said he was her father. She gave Peck her father's pocket watch after filming wrapped.\n\nThe performance may be more iconic than the novel's Atticus, whose virtue is somewhat more ambiguous in the text. Lee's Atticus is a good man in a racist society, complicit in some ways even as he defends Tom Robinson. Peck's noble bearing and quiet strength make him almost saintly. This is one of the rare cases where the casting defines the character beyond the author's intentions, for better and worse."
     },
     {
+      "question": null,
       "title": "The Boo Radley Mystery Is Compressed",
       "body": "The novel gives significant space to the children's fascination with Boo Radley — the gifts he leaves in the tree, their attempts to make him come out, the fire at Miss Maudie's house when Boo drapes a blanket over Scout's shoulders without her noticing. Boo exists for Scout as a figure of terror and eventual grace.\n\nThe film preserves this thread but compresses it. Robert Duvall's debut performance as Boo is wordless and haunting — he appears in the final sequence, pale and terrified, having killed Bob Ewell to save the children. The film's Boo is more purely symbolic, less developed as a character in his own right."
     },
     {
+      "question": null,
       "title": "Maycomb's Social Fabric Is Thinned",
       "body": "Lee's novel is dense with secondary characters who constitute Maycomb's social fabric — Aunt Alexandra and her missionary circle, Mrs. Dubose and her morphine addiction, the Cunninghams and the Ewells and their respective places in the town's class hierarchy. The novel is as much about community as it is about the trial.\n\nThe film necessarily focuses on the central narrative and loses some of this texture. Aunt Alexandra appears briefly. Mrs. Dubose's subplot — which in the novel serves as Atticus's lesson about real courage — is cut entirely. The missionary circle tea, where Scout witnesses adult hypocrisy firsthand, is absent. The film is leaner and more focused, but Maycomb feels less lived-in."
     },
     {
+      "question": null,
       "title": "The Trial Sequence Is Devastating",
       "body": "Mulligan shoots the courtroom with restraint and precision — the segregated gallery where Scout sits with Reverend Sykes and the Black community, Atticus's closing argument delivered directly to the jury, the long wait for the verdict. The film's trial sequence is among the finest in courtroom cinema.\n\nThe novel's trial has more legal detail and more of Atticus's internal reasoning. Lee gives you the mechanics of how a guilty verdict is reached despite overwhelming evidence of innocence. But the film's version is arguably more emotionally devastating — Peck's quiet fury, Brock Peters's terrified dignity, the moment when the Black gallery stands as Atticus leaves the courtroom. Both are essential, but they work differently.\n\nEither order works — this is one of the very few cases where the film is good enough that watching first is not a diminishment. Read first if you want Scout's full interior world and the novel's double narration. Watch first if you want Gregory Peck's Atticus Finch in his full authority and the courtroom sequence in visual form. Both are essential American works.\n\nThe consequence of watching first is that Peck's performance will define Atticus in your imagination, which may make the novel's more ambiguous portrayal feel less vivid. The consequence of reading first is that the film's compression will feel like loss, even though what remains is nearly perfect. Choose based on whether you want the child's voice or the father's face to arrive first."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/to-kill-a-mockingbird",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

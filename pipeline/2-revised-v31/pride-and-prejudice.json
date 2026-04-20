@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Austen's irony is untranslatable",
       "body": "The novel's opening sentence — \"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife\" — establishes the ironic register that Austen sustains for the entire book. This irony is directed simultaneously at the marriage market, at the women who participate in it, and at the men who benefit from it.\n\nFilm cannot render sustained free indirect irony; it can suggest it through performance and direction, which Wright does skilfully but incompletely. The novel's voice is a constant presence, commenting on every scene and character. The film must rely on dialogue and visual cues, which are effective but fundamentally different."
     },
     {
+      "question": null,
       "title": "Elizabeth's wit lives in her interior voice",
       "body": "Keira Knightley plays Elizabeth with intelligence and energy — her sparring with Darcy at Netherfield and Rosings is the film's great pleasure. She captures Elizabeth's independence and refusal to be intimidated.\n\nThe novel's Elizabeth is funnier and more precisely observant. Her interior commentary on the social world around her — her assessment of Miss Bingley's jealousy, her reading of Lady Catherine's pomposity, her gradual recognition of her own prejudice — is the novel's finest quality and it belongs entirely to the page. Knightley's performance is excellent; it cannot replicate what happens inside Elizabeth's mind."
     },
     {
+      "question": null,
       "title": "Macfadyen's Darcy is softer and more romantic",
       "body": "Matthew Macfadyen's Darcy is romantic and wounded — his pride rendered as shyness rather than contempt. This is a legitimate interpretation that makes Darcy immediately sympathetic, particularly in the first proposal scene at Hunsford, where he seems genuinely confused by Elizabeth's rejection.\n\nAusten's Darcy is more genuinely difficult — his first proposal is an act of condescension as much as declaration, and Elizabeth's anger is entirely justified. The novel makes clear that Darcy must genuinely change, not simply be better understood. The film softens this, making his transformation less dramatic. Both interpretations are defensible, but they produce different emotional arcs."
     },
     {
+      "question": null,
       "title": "The film's visual beauty adds something genuine",
       "body": "Seamus McGarvey shoots the English countryside and country houses with extraordinary beauty — dawn light over Pemberley, the Bennet house in the blue hour before morning, Darcy walking across the misty field toward Elizabeth. The film's visual world is a genuine artistic achievement that adds something the novel cannot have: the specific physical beauty of the world Austen described.\n\nThe famous scene of Darcy's first proposal in the rain, shot in a stone temple with water streaming down, is pure cinema — emotionally heightened in a way that works on screen but would be melodramatic on the page. Wright understands that film can do things prose cannot, and he uses that freedom intelligently."
     },
     {
+      "question": null,
       "title": "The Bennet family is compressed and simplified",
       "body": "The film compresses the Bennet family's dynamics significantly. Jane, Lydia, and Mrs Bennet are vivid in Wright's film but less fully characterised than in the novel. Kitty and Mary are barely present. The novel gives each sister a distinct personality and shows how the family's dysfunction affects all of them differently.\n\nThe novel's Mrs Bennet is funnier and more pathetic and more sympathetically drawn than the film's version, which tends toward caricature. Austen makes clear that Mrs Bennet's vulgarity is partly a response to her genuine terror about her daughters' futures — they will inherit nothing when Mr Bennet dies. The film's Mrs Bennet is mostly comic relief.\n\nYes — Austen's prose is the experience. The novel's irony, Elizabeth's interiority, and the specific quality of Austen's observation of social behaviour are what make it one of the great works in English literature. The famous opening, the proposal scenes, the letter from Darcy, Elizabeth's visit to Pemberley — all of these are better on the page, where Austen's voice provides constant commentary and insight.\n\nRead first and the film becomes a beautiful companion. The 2005 Wright film is among the very best adaptations; it is still considerably less than the novel. Watch it after reading to see Macfadyen's Darcy, Knightley's Elizabeth, and McGarvey's cinematography bring Austen's world to visual life. Both are essential. The book is the thing."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/pride-and-prejudice",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

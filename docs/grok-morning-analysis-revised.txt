@@ -1,0 +1,301 @@
+/**
+ * GSC Morning Analysis Script - booksversusmovies.com
+ *
+ * OBJECTIVES:
+ * 1. Deliver a fast, actionable daily SEO morning brief.
+ * 2. Detect trends/spikes using 90-day vs 7-day data with dynamic protection rules.
+ * 3. Provide structured, high-quality input to the LLM.
+ * 4. Output BOTH JSON (for dashboard/history) and Markdown brief (for human reading).
+ *
+ * ENHANCEMENTS:
+ * - Dynamic protected pages based on performance
+ * - Robust LLM JSON parsing with fallback + debug file
+ * - Markdown brief generation restored
+ * - Better error handling and logging
+ */
+
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
+require('dotenv').config();
+
+const CONFIG_PATH = path.join(process.cwd(), 'config/gsc-analysis.json');
+const PROMPT_PATH = path.join(process.cwd(), 'scripts/prompts/gsc-prompt.txt');
+
+async function loadConfig() {
+  if (!fs.existsSync(CONFIG_PATH)) throw new Error(`Config not found: ${CONFIG_PATH}`);
+  return JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
+}
+
+async function loadPrompt() {
+  if (!fs.existsSync(PROMPT_PATH)) throw new Error(`Prompt not found: ${PROMPT_PATH}`);
+  return fs.readFileSync(PROMPT_PATH, 'utf8');
+}
+
+// Reusable auth
+let accessToken = null;
+
+async function getAuthToken() {
+  if (accessToken) return accessToken;
+
+  const creds = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
+  const privateKey = creds.private_key.replace(/\\n/g, '\n');
+
+  const auth = new (require('googleapis').google.auth.JWT)({
+    email: creds.client_email,
+    key: privateKey,
+    scopes: ['https://www.googleapis.com/auth/webmasters.readonly']
+  });
+
+  const tokens = await auth.authorize();
+  accessToken = tokens.access_token;
+  return accessToken;
+}
+
+async function fetchGscData(siteUrl, daysBack) {
+  console.log(`📡 Fetching ${daysBack}-day GSC data...`);
+  const token = await getAuthToken();
+
+  const endDate = new Date().toISOString().split('T')[0];
+  const startDate = new Date(Date.now() - daysBack * 86400000).toISOString().split('T')[0];
+
+  const requestBody = JSON.stringify({
+    startDate,
+    endDate,
+    dimensions: ["query", "page"],
+    rowLimit: 2500,
+    startRow: 0
+  });
+
+  return new Promise((resolve, reject) => {
+    const timeout = setTimeout(() => reject(new Error(`GSC timeout after 15s (${daysBack} days)`)), 15000);
+
+    const options = {
+      hostname: 'www.googleapis.com',
+      path: `/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(requestBody)
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      clearTimeout(timeout);
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode !== 200) return reject(new Error(`GSC HTTP ${res.statusCode}`));
+        try {
+          const json = JSON.parse(data);
+          if (json.error) return reject(new Error(`GSC Error: ${JSON.stringify(json.error)}`));
+          resolve(json.rows || []);
+        } catch (e) {
+          reject(new Error("Failed to parse GSC JSON"));
+        }
+      });
+    });
+
+    req.on('error', (e) => { clearTimeout(timeout); reject(e); });
+    req.write(requestBody);
+    req.end();
+  });
+}
+
+function aggregateByPage(rows) {
+  const map = {};
+  rows.forEach(row => {
+    const page = row.keys?.[1] || '(unknown)';
+    if (!map[page]) map[page] = { page, impressions: 0, clicks: 0, positionSum: 0, count: 0 };
+    const p = map[page];
+    p.impressions += row.impressions || 0;
+    p.clicks += row.clicks || 0;
+    p.positionSum += (row.position || 0) * (row.impressions || 1);
+    p.count++;
+  });
+
+  return Object.values(map).map(p => ({
+    page: p.page,
+    impressions: p.impressions,
+    clicks: p.clicks,
+    avgPosition: p.impressions > 0 ? Number((p.positionSum / p.impressions).toFixed(2)) : 0,
+    ctr: p.impressions > 0 ? Number(((p.clicks / p.impressions) * 100).toFixed(2)) : 0
+  }));
+}
+
+function buildDeltas(longTermPages, recentPages) {
+  const longMap = new Map(longTermPages.map(p => [p.page, p]));
+  return recentPages
+    .map(recent => {
+      const baseline = longMap.get(recent.page);
+      if (!baseline || baseline.impressions < 20) return null;
+      return {
+        page: recent.page,
+        recentPosition: recent.avgPosition,
+        baselinePosition: baseline.avgPosition,
+        deltaPosition: Number((recent.avgPosition - baseline.avgPosition).toFixed(2)),
+        deltaImpressionsPct: Number((((recent.impressions - baseline.impressions) / baseline.impressions) * 100).toFixed(1))
+      };
+    })
+    .filter(Boolean);
+}
+
+function getProtectedPages(pages) {
+  return pages
+    .filter(p => p.ctr > 5 || p.avgPosition < 10)
+    .map(p => p.page);
+}
+
+async function getLlmInsights(context, config) {
+  const apiKey = process.env[config.llm.apiKeyEnv];
+  if (!apiKey) throw new Error(`Missing ${config.llm.apiKeyEnv}`);
+
+  console.log(`🧠 Generating insights with ${config.llm.model}...`);
+
+  let promptTemplate = await loadPrompt();
+
+  promptTemplate = promptTemplate
+    .replace('{{longTermSummary}}', JSON.stringify(context.longTermSummary, null, 2))
+    .replace('{{recentSummary}}', JSON.stringify(context.recentSummary, null, 2))
+    .replace('{{topPagesByImpressions}}', JSON.stringify(context.topPagesByImpressions, null, 2))
+    .replace('{{lowCtrHighImpressions}}', JSON.stringify(context.lowCtrHighImpressions, null, 2))
+    .replace('{{recentHighPerformers}}', JSON.stringify(context.recentHighPerformers, null, 2))
+    .replace('{{deltas}}', JSON.stringify(context.deltas, null, 2))
+    .replace('{{protectedPages}}', JSON.stringify(context.protectedPages, null, 2));
+
+  const body = JSON.stringify({
+    model: config.llm.model,
+    temperature: 0.3,
+    messages: [{ role: "user", content: promptTemplate }],
+    response_format: { type: "json_object" }
+  });
+
+  return new Promise((resolve, reject) => {
+    const req = https.request({
+      hostname: 'openrouter.ai',
+      path: '/api/v1/chat/completions',
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'HTTP-Referer': 'https://booksversusmovies.com',
+        'X-Title': 'GSC Morning Analysis',
+        'Content-Type': 'application/json'
+      }
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        if (res.statusCode !== 200) return reject(new Error(`OpenRouter HTTP ${res.statusCode}`));
+
+        const json = JSON.parse(data);
+        if (json.error) return reject(new Error(`OpenRouter Error: ${json.error.message}`));
+
+        try {
+          const content = json.choices[0].message.content;
+          resolve(JSON.parse(content));
+        } catch (parseErr) {
+          console.error("❌ LLM returned malformed JSON. Saving raw response for debugging.");
+          const debugPath = path.join(process.cwd(), `data/reports/llm-debug-${Date.now()}.txt`);
+          fs.writeFileSync(debugPath, content);
+          reject(new Error(`Malformed JSON from LLM. Debug saved to: ${debugPath}`));
+        }
+      });
+    });
+
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+function generateMarkdownBrief(insights, dateStr) {
+  return `# GSC Morning Brief — ${dateStr}
+
+## 📊 Summary
+${insights.summary || 'No summary provided.'}
+
+## 🚨 Needs Attention
+${(insights.needsAttention || []).map(item => `- ${item}`).join('\n') || '- None flagged'}
+
+## 📈 Trending Up
+${(insights.trendingUp || []).map(item => `- ${item}`).join('\n') || '- None detected'}
+
+## 💡 Quick Wins
+${(insights.quickWins || []).map(item => `- ${item}`).join('\n') || '- None identified'}
+
+## ✅ Performing Well
+${(insights.performingWell || []).map(item => `- ${item}`).join('\n') || '- None highlighted'}
+
+## 🔍 External Signals
+${(insights.externalSignals || []).map(s => `- **${s.page}**: ${s.observation} → ${s.possibleCause} (${s.confidence})`).join('\n') || '- None detected'}
+
+## 📋 Recommended Actions
+${(insights.recommendations || []).map((rec, i) => `${i+1}. ${rec.action} (${rec.priority}) - ${rec.reason}`).join('\n') || '- No recommendations'}
+
+---
+Generated at ${new Date().toISOString()}
+`;
+}
+
+async function runMorningAnalysis() {
+  console.log('🌅 Starting GSC Morning Analysis with dynamic protection...\n');
+
+  const config = await loadConfig();
+  const siteUrl = config.sites[0];
+
+  const [longTermRows, recentRows] = await Promise.all([
+    fetchGscData(siteUrl, 90),
+    fetchGscData(siteUrl, 7)
+  ]);
+
+  console.log(`   → 90-day: ${longTermRows.length} rows`);
+  console.log(`   → 7-day:  ${recentRows.length} rows`);
+
+  if (longTermRows.length === 0 && recentRows.length === 0) {
+    console.log("⚠️ No GSC data found.");
+    return;
+  }
+
+  const longTermPages = aggregateByPage(longTermRows);
+  const recentPages = aggregateByPage(recentRows);
+  const deltas = buildDeltas(longTermPages, recentPages);
+  const protectedPages = getProtectedPages(longTermPages);
+
+  const context = {
+    longTermSummary: { totalImpressions: longTermPages.reduce((s, p) => s + p.impressions, 0), totalClicks: longTermPages.reduce((s, p) => s + p.clicks, 0), pageCount: longTermPages.length },
+    recentSummary: { totalImpressions: recentPages.reduce((s, p) => s + p.impressions, 0), totalClicks: recentPages.reduce((s, p) => s + p.clicks, 0), pageCount: recentPages.length },
+    topPagesByImpressions: longTermPages.sort((a,b)=>b.impressions-a.impressions).slice(0,15),
+    lowCtrHighImpressions: longTermPages.filter(p => p.impressions > 50 && p.ctr < 3).sort((a,b)=>a.ctr-b.ctr).slice(0,10),
+    recentHighPerformers: recentPages.sort((a,b)=>b.impressions-a.impressions).slice(0,10),
+    deltas: deltas.slice(0,15),
+    protectedPages
+  };
+
+  const insights = await getLlmInsights(context, config);
+
+  const dateStr = new Date().toISOString().split('T')[0];
+  const dir = path.join(process.cwd(), config.output.dir);
+  fs.mkdirSync(dir, { recursive: true });
+
+  // Save JSON
+  const jsonPath = path.join(dir, `${config.output.prefix}-${dateStr}.json`);
+  fs.writeFileSync(jsonPath, JSON.stringify({ generatedAt: new Date().toISOString(), site: siteUrl, protectedPages, insights }, null, 2));
+
+  // Save Markdown Brief
+  const mdBrief = generateMarkdownBrief(insights, dateStr);
+  const mdPath = path.join(dir, `gsc-morning-${dateStr}.md`);
+  fs.writeFileSync(mdPath, mdBrief);
+
+  console.log(`\n✅ Morning analysis complete!`);
+  console.log(`   JSON → ${jsonPath}`);
+  console.log(`   Markdown Brief → ${mdPath}`);
+
+  // Terminal quick view
+  console.log(`\n📊 ${insights.summary?.substring(0, 120)}...`);
+}
+
+runMorningAnalysis().catch(err => {
+  console.error('\n💥 Error during morning analysis:');
+  console.error(err.message);
+});

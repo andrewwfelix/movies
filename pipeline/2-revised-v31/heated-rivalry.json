@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Interior voice",
       "body": "The novel's central advantage is complete access to Shane and Ilya's internal lives — their denial, their rationalisation, their longing rendered with Reid's characteristic warmth and precision.\n\nThe show loses this by definition. Connor Storrie and Hudson Williams give performances of real sensitivity, but the subtext the novel makes text is sometimes harder to read on screen. What you feel watching them is real; what you know reading Reid is different and deeper."
     },
     {
+      "question": null,
       "title": "The timeline",
       "body": "Reid's novel spans several years of Shane and Ilya's careers, with time jumps that give the romance genuine scope and weight.\n\nThe show compresses and restructures this for six episodes — which works better than you might expect. Tierney uses the compression to tighten the emotional arc rather than lose it, and some of the novel's slower middle section actually benefits from the edit. The show's Episode 4, which condenses two years of stolen moments into forty minutes, is one of the best-paced episodes of television in recent memory."
     },
     {
+      "question": null,
       "title": "The hockey world",
       "body": "Reid is meticulous about the texture of professional hockey — the locker rooms, the road trips, the physical culture, the specific isolation of being an outsider inside the sport.\n\nThe show's production design and on-ice sequences are excellent, but the novel lives inside the sport in a way six episodes of television cannot fully replicate. Reid writes about hockey with the authority of someone who knows what a fourth-line grinder's career looks like versus a franchise player's, and that specificity accumulates across three hundred pages."
     },
     {
+      "question": null,
       "title": "Ilya's Russian identity",
       "body": "Ilya's background — his Russian upbringing, his complicated relationship with home and language, what it means to be who he is in the context he came from — is more fully developed in the novel.\n\nThe show handles it thoughtfully but necessarily briefly. Hudson Williams brings considerable depth to scenes the novel gives many more pages, but the weight of what Ilya would lose by coming out — not just professionally but culturally, familially — is more fully explored in Reid's text."
     },
     {
+      "question": null,
       "title": "The secondary characters",
       "body": "Reid's Game Changers world includes recurring characters whose histories add texture for readers who've come to the series in order.\n\nThe show introduces these characters freshly, which works on its own terms but lacks the accumulated affection novel readers bring to Scott Hunter, Kip Grady, and the broader cast. If you've read Tough Guy before Heated Rivalry, Scott's scenes with Shane carry extra weight the show can't replicate for first-time viewers.\n\nEither order works genuinely well — this is one of the site's most comfortable either-order recommendations. The show is faithful enough that watching first loses relatively little. But reading first means every scene the show gives you arrives loaded with interior knowledge that performance can only approximate.\n\nOur preference: read first. If you watched first and are now reading — welcome, and the book is even better than you're hoping."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/heated-rivalry",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

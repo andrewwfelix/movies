@@ -63,22 +63,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The book is about corruption; the film is about survival",
       "body": "Benchley's novel uses the shark as a MacGuffin for exploring Amity Island's social pathology—real estate fraud, sexual infidelity, political cowardice, class resentment. The shark is almost secondary to the human drama. Every major character is compromised: Brody is emasculated, Ellen is unfaithful, Hooper is a seducer, the mayor is a criminal. The town itself is the real antagonist.\n\nSpielberg jettisons nearly all of this. His film is a pure survival narrative with no interest in social critique. The mayor's corruption is played for laughs. Ellen's affair vanishes. The focus narrows to three men and one shark—a mythic confrontation stripped of sociological baggage. This is not a weakness; it's a clarifying choice that makes the film timeless rather than period-bound."
     },
     {
+      "question": null,
       "title": "Benchley's prose is baroque; Spielberg's direction is minimalist",
       "body": "The novel is thick with description, internal monologue, and digression. Benchley lingers on the mundane details of small-town life, the mechanics of the shark hunt, the texture of fear. There are entire chapters devoted to the shark's biology and hunting patterns. The narrative voice is omniscient and intrusive, constantly explaining motivation and emotion.\n\nSpielberg trusts silence and absence. The famous mechanical shark failures forced him to shoot around the creature, building terror through implication. The film's greatest scenes—the Indianapolis monologue, the barrels being dragged, the final confrontation—work because of what's unseen. Where Benchley tells, Spielberg shows. Where Benchley explains, Spielberg suggests."
     },
     {
+      "question": null,
       "title": "The book's ending is cynical; the film's is redemptive",
       "body": "In Benchley's novel, Brody kills the shark, but the victory feels hollow. He's still a failure, still despised by his wife, still an outsider. The shark's death doesn't resolve anything—it just ends the immediate crisis. The town will move on, corruption will continue, and Brody will remain fundamentally unchanged. There's a bitter, naturalistic quality to the ending.\n\nSpielberg's ending is cathartic. Brody's kill shot is a triumph of will over terror. He swims back to shore, to his wife and son, reborn. The film suggests that confronting the shark has transformed him—that he's earned his place in Amity Island through courage. It's a classical hero's journey, complete with redemption. This is not faithfulness to the source; it's a fundamental reimagining of what the story means."
     },
     {
+      "question": null,
       "title": "Benchley explores masculine anxiety; Spielberg explores masculine courage",
       "body": "The novel is saturated with Benchley's anxieties about male inadequacy. Brody's impotence, his fear of the ocean, his humiliation by his wife and the town—these are the emotional core. The shark becomes a projection of masculine failure. Even Quint and Hooper are defined by their competence in ways that make Brody's incompetence more acute.\n\nSpielberg's film reframes masculinity entirely. Brody's fear is not pathological; it's rational. His courage is not about proving himself to his wife; it's about doing what must be done. Quint's competence is shadowed by trauma, not superiority. Hooper's youth is tempered by respect for danger. The film suggests that real masculinity is about confronting fear, not denying it. This is a fundamentally more mature vision than Benchley's neurotic hand-wringing."
     },
     {
+      "question": null,
       "title": "The book is a thriller; the film is a myth",
       "body": "Benchley wrote a page-turner—a commercial thriller designed to sell copies and provoke anxiety about sharks. It's effective pulp, but it's rooted in the specific anxieties of 1974: real estate speculation, sexual liberation, small-town corruption. These details date it.\n\nSpielberg created something archetypal. By stripping away the social specificity and focusing on the primal confrontation between man and nature, he made a film that transcends its era. The Orca, the three men, the hunt—these become mythic elements that resonate across decades. This is why Jaws endures while the novel is largely forgotten. Spielberg understood that constraint and simplification are the path to universality."
     }
@@ -143,5 +148,28 @@
   ],
   "hasSpoilerWarning": false,
   "hasQuickAnswer": true,
-  "hasCharTable": true
+  "hasCharTable": true,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/jaws",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

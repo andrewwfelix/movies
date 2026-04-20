@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Jezzie Flanagan's betrayal is erased entirely",
       "body": "Patterson's most shocking twist is that Jezzie orchestrated the kidnapping with Soneji, seducing Cross to stay close to the investigation. The book's final chapters reveal she manipulated both men, planning to kill Soneji and keep the ransom. Cross's realization that the woman he loved engineered Maggie's abduction devastates him.\n\nThe film makes Jezzie a straightforward hero. Potter's character is haunted by a botched protection detail that cost an agent's life, but she's innocent of conspiracy. Instead, the movie invents a corrupt Secret Service supervisor as the villain, turning the story into a generic institutional-corruption thriller. This gutting of Jezzie's arc removes the book's emotional core—Cross's professional and romantic judgment both catastrophically failing."
     },
     {
+      "question": null,
       "title": "Soneji's dissociative identity disorder becomes simple villainy",
       "body": "The book's Soneji alternates between his mild-mannered teacher persona and his grandiose criminal identity, with Patterson devoting chapters to his fractured psychology. He doesn't want money—he wants to be remembered alongside Lindbergh kidnapper Bruno Hauptmann. His childhood abuse and obsession with criminal fame make him terrifying because he's comprehensible.\n\nWincott's Soneji is a sneering movie psychopath without psychological depth. The film mentions his desire for notoriety but emphasizes ransom money as his motive. His dissociative disorder is reduced to a single scene where he claims \"Gary Soneji doesn't exist,\" but the script never explores what that means. He's scary because he's generically crazy, not because we understand how he became this way."
     },
     {
+      "question": null,
       "title": "Cross's family life disappears",
       "body": "Patterson's Cross is a widowed father of two—Damon and Jannie—living with his grandmother Nana Mama in Southeast D.C. His children ground him, and Nana Mama's wisdom provides moral clarity. The book balances his investigation with domestic scenes: making breakfast, helping with homework, processing trauma with family. His romance with Jezzie matters because it's his first relationship since his wife's murder.\n\nFreeman's Cross has no children, no Nana Mama, no domestic life. He's a lone-wolf detective defined entirely by his work. This makes him more conventional and less vulnerable. When the book's Cross discovers Jezzie's betrayal, he's losing a partner and a potential stepmother for his kids. The film's Cross just loses a colleague. The stakes are professional, not personal."
     },
     {
+      "question": null,
       "title": "The kidnapping's aftermath is rushed",
       "body": "Patterson spends chapters on Maggie's captivity in a buried box, her terror and resilience, and her parents' anguish. Katherine Rose's guilt and Thomas Dunne's political calculations create a portrait of a family disintegrating under media scrutiny. Maggie's rescue isn't the end—the book follows her psychological recovery and her parents' divorce.\n\nThe film treats Maggie's rescue as the climax, then rushes to credits. We see her fear during captivity but not its lasting impact. Her parents are barely characters—the movie's interested in Cross and Soneji's cat-and-mouse game, not the human cost of kidnapping. Boorem's performance is fine, but the script doesn't give her the space Patterson does."
     },
     {
+      "question": null,
       "title": "The ending invents an action climax",
       "body": "The book ends with Cross confronting Jezzie in a hotel room, where she tries to seduce him one last time before he arrests her. It's quiet, devastating, and focused on Cross's emotional wreckage. Soneji is already captured; the final twist is realizing Jezzie was the mastermind. Patterson trusts this betrayal to carry the ending's weight.\n\nThe film stages a shootout on a moving train, with Cross and Jezzie fighting the corrupt Secret Service agent while Soneji escapes. Cross eventually corners Soneji in a hospital and shoots him. It's competent action filmmaking but generic—the ending could belong to any thriller. The book's intimate devastation becomes a loud, forgettable set piece.\n\nYes, because the film's changes eliminate what makes Patterson's novel compelling. If you watch first, you'll meet a generic detective chasing a generic villain through a generic conspiracy. You'll miss Soneji's fractured psychology, Jezzie's shocking betrayal, and Cross's family life—the elements that made Along Came a Spider a bestseller and launched a 30-book series.\n\nReading first means the film will disappoint, but that's preferable to thinking Patterson's novel is as shallow as its adaptation. The book earns its twists through character work; the movie replaces them with action beats. Freeman's performance is worth watching, but only after you've experienced the story Patterson actually wrote."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/along-came-a-spider",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

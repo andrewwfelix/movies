@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Thorpe's Prose Voice Is the Book's Defining Quality",
       "body": "The novel is written in Margo's first person—a voice of considerable wit, self-awareness, and emotional precision. Thorpe makes Margo funny without making her foolish, and the comedy and tenderness coexist in sentences in ways that are nearly impossible to translate to screen. Lines like \"My mother had always said that men were like buses—there'd be another one along in fifteen minutes\" or Margo's observations about the economics of attention are the book's texture.\n\nElle Fanning has the energy, charm, and comic timing the role requires. She's excellent casting. But she cannot replicate a voice that exists in prose rhythm and interior monologue. The series adds voiceover sparingly, but it's not the same—Fanning is performing Margo, not inhabiting her narrative consciousness."
     },
     {
+      "question": null,
       "title": "The Series Expands Shyanne's Perspective",
       "body": "In the novel, Shyanne is seen entirely through Margo's eyes—loving, judgmental, embarrassed by her daughter's choices. The series gives Michelle Pfeiffer scenes of her own: Shyanne at work, Shyanne with friends, Shyanne processing her daughter's pregnancy and career in ways the book only implies. It's a smart adaptation choice that makes Shyanne more than a foil.\n\nPfeiffer plays her with warmth and gravity. Her disapproval of Margo's OnlyFans work feels rooted in genuine fear—fear that her daughter is undoing the respectability Shyanne worked years to achieve, fear that Margo will be hurt. The series makes Shyanne's arc about learning to separate her own shame from her daughter's choices, and Pfeiffer handles it beautifully."
     },
     {
+      "question": null,
       "title": "Wrestling Culture Gets Visual Spectacle",
       "body": "Thorpe writes about professional wrestling with affectionate specificity—the kayfabe, the terminology, the particular culture of performance and pain. Jinx's wrestling wisdom applied to Margo's OnlyFans career is the novel's central comic conceit: both are about creating a persona, managing an audience, and understanding that authenticity is itself a performance.\n\nThe series has the production resources to render wrestling scenes with spectacle the novel can only describe. Flashbacks to Jinx's career are shot with the kinetic energy of actual wrestling broadcasts. Nick Offerman trained with wrestling consultants and performs some of his own stunts. The visual medium makes the wrestling world more immediate, though it can't quite replicate Thorpe's prose explanations of why wrestling matters as metaphor."
     },
     {
+      "question": null,
       "title": "David E. Kelley's Sensibility Runs Warmer",
       "body": "Kelley is one of television's most prolific showrunners—The Practice, Ally McBeal, Big Little Lies, Nine Perfect Strangers. His sensibility runs slightly warmer and more conventionally dramatic than Thorpe's. The novel is funny and tender but also unsentimental about economic precarity and the compromises people make. The series leans into the warmth, particularly in the Margo-Jinx reconciliation arc.\n\nThis isn't a flaw—it's a choice that makes the series more immediately accessible. But it does mean the series is slightly less sharp than the novel, slightly more inclined to resolve tensions with emotional catharsis rather than Thorpe's more ambiguous endings. The book trusts its readers to sit with discomfort; the series offers more reassurance."
     },
     {
+      "question": null,
       "title": "OnlyFans as Economic Strategy, Not Scandal",
       "body": "Both the book and the series treat Margo's OnlyFans work with matter-of-fact pragmatism—neither sensationalizing nor sanitizing it. Thorpe is interested in OnlyFans as a survival strategy for women in precarious economic circumstances, and the series follows her lead. Margo's work is shown as labor: the lighting, the angles, the customer service, the emotional management.\n\nThe series benefits from arriving in 2026, when cultural conversations about sex work and platform economies have evolved. Apple TV+ allowed the creative team to depict the work honestly without prurience. The visual medium necessarily shows more than the book's first-person narration describes, but the series is careful to frame Margo's work as her choice, made under constrained circumstances—exactly as Thorpe does.\n\nYes. Thorpe's voice is the experience, and the series, however good, cannot replicate it. The novel's wit, its emotional precision, its particular way of being funny and tender at once—these exist in sentences, not in performance or cinematography. Read first and the series becomes a warmly cast companion to a book whose voice you'll carry with you.\n\nThe novel is also recent enough that reading it before the series airs is entirely feasible. It's a quick read—Thorpe's prose moves—and the series will be richer if you've spent time inside Margo's head first. Watch the series and you'll get an excellent story, well told. Read the book first and you'll understand why the story works."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/margos-got-money-troubles",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

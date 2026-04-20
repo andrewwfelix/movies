@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Haymitch's family is given more weight in the book",
       "body": "Collins devotes significant space to Haymitch's relationship with his mother and younger brother, establishing what he stands to lose before the reaping even happens. The film compresses this into a single scene — effective but rushed. You understand why Haymitch volunteers, but you don't feel the full weight of what the Capitol takes from him after his victory.\n\nThe novel's epilogue, which shows Snow ordering the execution of Haymitch's family as punishment for his arena defiance, is one of Collins's most brutal passages. The film includes this, but it's a montage rather than a sustained sequence, which blunts its emotional impact."
     },
     {
+      "question": null,
       "title": "The arena's force field mechanics are clearer on screen",
       "body": "Collins describes the arena's perimeter force field in tactical terms — Haymitch figures out that it repels objects, then uses it to redirect an axe back at the final Career tribute. It's clever on the page but slightly abstract. Lawrence's film renders this visually, with the force field shimmering and distorting light, which makes Haymitch's final kill feel like a genuine eureka moment rather than a narrative convenience.\n\nThe film also expands the arena's environmental hazards — geysers, carnivorous plants, tracker jacker nests — into set pieces that give the Games more visual variety than the book's more focused approach."
     },
     {
+      "question": null,
       "title": "Snow's ideology is more explicit in the novel",
       "body": "The book includes scenes of Snow in strategy meetings with other Capitol officials, debating how to handle Haymitch's defiance. Collins uses these passages to articulate Snow's philosophy: that the Games exist not to punish the districts but to make them complicit in their own oppression. This is the novel's most ambitious political argument, and it doesn't translate directly to screen.\n\nFiennes conveys Snow's menace through performance rather than dialogue — his scenes are shorter and less overtly ideological, which makes him more immediately frightening but less intellectually interesting than the book version."
     },
     {
+      "question": null,
       "title": "Maysilee's death hits harder in the film",
       "body": "In the novel, Maysilee is killed by candy-pink birds — a grotesque, almost absurd death that Collins uses to emphasize the Capitol's cruelty. The film keeps the birds but stages the scene with more emotional weight. Fanning's performance in her final moments, and Zada's reaction, make this the film's most devastating sequence. Lawrence lingers on Haymitch's face as he realizes he's alone, which the book's first-person narration can't quite replicate."
     },
     {
+      "question": null,
       "title": "The novel's meditation on memory and propaganda has no direct film equivalent",
       "body": "Collins includes passages — almost essayistic — about how the Capitol controls what citizens are allowed to remember, and how the Quells exist to rewrite history. This is the book's most intellectually ambitious element, drawing on Orwell and Hume, and it's what elevates Sunrise above standard dystopian fare. The film gestures at these themes through visual motifs — propaganda posters, edited footage of the Games — but it can't replicate the novel's sustained argument.\n\nReaders interested in Collins's political thinking will find the book indispensable. Viewers looking for a propulsive, emotionally resonant thriller will find the film more than sufficient.\n\nThis is one case where the order matters less than usual — both versions work as standalone experiences, and neither strictly spoils the other. That said, the book deepens the film considerably, particularly in the Snow scenes and the political arguments about memory and propaganda. If you're new to Panem, start with The Hunger Games and work forward chronologically. The original trilogy provides essential context for why Haymitch's story matters.\n\nIf you already know the trilogy, read Sunrise on the Reaping before seeing the film. Collins's novel is a fast read — under 400 pages, with her characteristic propulsive pacing — and it will make Fiennes's performance as Snow and the film's final act significantly more resonant. The film assumes you understand the stakes of Haymitch's defiance; the book explains why those stakes matter to the entire structure of Panem."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/hunger-games-sunrise",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

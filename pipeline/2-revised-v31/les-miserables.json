@@ -76,22 +76,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Hugo's Digressions Are Entirely Absent",
       "body": "The novel famously interrupts its narrative for essays on topics ranging from the Battle of Waterloo (50 pages) to Parisian slang (20 pages) to the history of convents (30 pages). Hugo uses these digressions to contextualize his characters within French history and social structures—the Waterloo section, for instance, explains how Thénardier robbed corpses on the battlefield, establishing his moral bankruptcy.\n\nThe film, adapted from the stage musical, eliminates every digression. There's no Waterloo, no exploration of the Paris sewers' engineering, no philosophical treatise on the nature of monasticism. This makes for a tighter narrative, but it strips away Hugo's ambition to write not just a novel but a comprehensive portrait of early 19th-century France. The book is as much social history as fiction; the film is pure melodrama."
     },
     {
+      "question": null,
       "title": "Valjean's Moral Crises Are Compressed Into Songs",
       "body": "Hugo devotes an entire volume—\"A Tempest in a Skull\"—to Valjean's agonized decision about whether to reveal his identity and save Champmathieu, a man falsely accused of being the escaped convict Jean Valjean. The chapter tracks Valjean's internal debate hour by hour, weighing his duty to an innocent man against his responsibility to the workers who depend on him and to Cosette.\n\nThe film condenses this into the four-minute song \"Who Am I?\" Jackman's performance is powerful, but the format can't replicate Hugo's psychological depth. The novel makes you feel the weight of Valjean's choice; the film tells you it's difficult and moves on. Similarly, Valjean's decision to let Marius live (despite Marius taking Cosette from him) is a brief moment in the film, whereas Hugo explores it as an act of supreme self-sacrifice."
     },
     {
+      "question": null,
       "title": "The Barricade Sequence Loses Its Political Context",
       "body": "In the novel, the 1832 June Rebellion is a failed republican uprising with specific historical causes—anger over the death of General Lamarque, economic hardship, and disillusionment with the July Monarchy. Hugo names individual students like Enjolras, Combeferre, and Courfeyrac, giving each distinct political philosophies. The barricade scenes span over 150 pages, detailing the tactical progression of the battle and the students' doomed idealism.\n\nHooper's film reduces this to a series of rousing musical numbers—\"Do You Hear the People Sing?\" and \"One Day More\"—that emphasize emotion over politics. Aaron Tveit's Enjolras is charismatic but generic; we never learn what specific reforms the students are fighting for. The barricade falls quickly, and the focus shifts to Marius's survival and Éponine's death. The film captures the tragedy of young lives lost but not Hugo's critique of political violence and the futility of revolution without popular support."
     },
     {
+      "question": null,
       "title": "Javert's Suicide Is Less Philosophically Grounded",
       "body": "Hugo's Javert is a tragic figure whose entire identity rests on the belief that law and morality are identical. When Valjean spares his life at the barricades, Javert experiences a complete ontological crisis—if a criminal can show mercy, then the categories of \"good\" and \"evil\" that have structured his existence are meaningless. Hugo devotes a full chapter to Javert's mental breakdown before he jumps into the Seine, framing it as the collapse of an entire worldview.\n\nRussell Crowe's Javert sings \"Stars\" early in the film, establishing his rigid philosophy, but his final scene is brief. He releases Valjean, walks to the bridge, removes his medal, and jumps—effective visually, but lacking the novel's philosophical weight. The film presents his suicide as the act of a man who's been proven wrong; the book presents it as the death of a man who can no longer understand the universe."
     },
     {
+      "question": null,
       "title": "The Thénardiers Are Played for Laughs",
       "body": "Hugo's Thénardiers are genuinely dangerous. Monsieur Thénardier runs a criminal gang in Paris, attempts to rob Valjean's house, and participates in the ambush at the Gorbeau tenement. Madame Thénardier abuses Cosette with casual cruelty—forcing her to haul water in the freezing cold, beating her, starving her. They're comic at times, but primarily they're villains who embody the moral rot of poverty without virtue.\n\nSacha Baron Cohen and Helena Bonham Carter transform them into Dickensian grotesques. \"Master of the House\" is a bawdy, slapstick number where they cheat customers and crack jokes. They reappear at the wedding to pick pockets, providing comic relief in the finale. This tonal shift makes them entertaining but toothless—the film never conveys the genuine threat they pose to Cosette or the darkness of their exploitation.\n\nReading Hugo's novel first is essential if you want to understand Les Misérables as a work of literature rather than a musical spectacle. The book's philosophical depth—its meditations on justice, mercy, poverty, and redemption—can't be conveyed in sung dialogue. Hugo's digressions, while challenging, provide historical and social context that makes Valjean's journey resonate beyond individual tragedy. You'll understand why Javert's worldview is tragic rather than simply villainous, why the barricade sequence matters politically, and why Valjean's decision to save Champmathieu is the novel's moral climax.\n\nIf you watch the film first, you'll experience a powerful musical with stunning performances—Hathaway's \"I Dreamed a Dream\" and Redmayne's \"Empty Chairs at Empty Tables\" are genuinely moving. But you'll miss the novel's scope and intelligence. The film is an adaptation of the stage musical, which is itself an adaptation of Hugo's text, meaning you're two steps removed from the source. Read the book first, then watch the film to appreciate how Hooper translates Hugo's epic into cinematic terms—and to see what gets lost in translation."
     }
@@ -157,5 +162,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/les-miserables",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

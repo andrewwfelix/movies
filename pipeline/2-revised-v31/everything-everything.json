@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Medical Twist Lands Differently",
       "body": "Yoon's novel builds to the revelation that Madeline never had SCID—her mother fabricated the diagnosis after losing her husband and son in a car accident years earlier. The book devotes significant space to Madeline processing this betrayal, recognizing her mother's Munchausen syndrome by proxy, and grappling with rage, grief, and complicated love for the woman who imprisoned her.\n\nMeghie's film includes the same twist but rushes through its aftermath. The confrontation between Madeline and Pauline feels abbreviated, and the psychological horror of eighteen years of unnecessary medical isolation gets glossed over in favor of reuniting Madeline with Olly. The book treats this as a trauma that will take years to unpack; the movie treats it as an obstacle cleared on the way to a happy ending."
     },
     {
+      "question": null,
       "title": "Madeline's Interior World Gets Flattened",
       "body": "Book-Madeline is a specific person: she loves Tadao Ando's architecture, reads constantly, and has a sharp wit about her situation. Yoon's mixed-media format—including Madeline's illustrated dictionary definitions, IM conversations, and diary entries—creates intimacy with her thought process. Her voice is intelligent and self-aware, never self-pitying.\n\nFilm-Madeline loses much of this specificity. Stenberg is appealing, but the screenplay by J. Mills Goodloe gives her less to work with. The movie replaces Yoon's multimedia approach with fantasy sequences where Madeline and Olly interact in imagined locations—a beach, outer space—that feel more like music video interludes than genuine expressions of her creativity. Her architecture passion becomes set dressing rather than character definition."
     },
     {
+      "question": null,
       "title": "Olly's Family Crisis Loses Urgency",
       "body": "In Yoon's novel, Olly's father is violently abusive, and Olly's parkour isn't just a hobby—it's an escape mechanism and a way to protect his younger sister Kara. The tension in his home life parallels Madeline's captivity, making them both prisoners of different kinds. When Olly's family eventually moves away, it's a crisis that threatens the relationship and forces Madeline's hand.\n\nThe film includes Olly's troubled home but doesn't give it the same weight. His father's abuse is shown but not deeply explored, and Kara barely registers as a character. The urgency that drives Madeline's decision to leave for Hawaii feels more like romantic impulsiveness than a response to compounding pressures. Robinson plays Olly as likable but not haunted."
     },
     {
+      "question": null,
       "title": "Carla's Sacrifice Gets Shortchanged",
       "body": "Carla, Madeline's nurse, is the adult who enables the relationship by allowing Olly into the house and eventually helping Madeline book the Hawaii trip. When Pauline discovers the breach, Carla loses her job and her relationship with Madeline—a devastating consequence for someone who treated Madeline as more than a patient. Yoon gives this betrayal and loss significant emotional space.\n\nThe film includes Carla's firing but doesn't linger on it. Ana de la Reguera brings warmth to the role, but the screenplay treats Carla more as a plot device than a fully realized person making an enormous professional and personal sacrifice. The book makes clear that Carla's decision to help Madeline was both generous and reckless; the movie just needs her to move the plot forward."
     },
     {
+      "question": null,
       "title": "The Aesthetic Contradicts the Story",
       "body": "Yoon's prose is clean and direct, and the book's design—lots of white space, simple illustrations—reflects Madeline's sterile environment while also suggesting the blankness of a life unlived. The tone is intimate and occasionally claustrophobic, matching Madeline's physical reality.\n\nMeghie's film is sun-drenched and gorgeous, shot by cinematographer Igor Jadue-Lillo with a warm, romantic glow. Madeline's house looks like a luxury showroom, all white curves and designer furniture. The fantasy sequences are lush and colorful. It's a beautiful film, but the beauty undercuts the story's darkness. The book feels like a cage; the movie feels like an aspirational lifestyle magazine.\n\nRead the book first if you want the full impact of the medical revelation. Yoon structures the novel so that clues are present but easy to miss, and the twist recontextualizes everything that came before—Pauline's overprotectiveness, Carla's guilt, even Madeline's own narration. Discovering the truth alongside Madeline creates a gut-punch the film can't replicate because it's too rushed to let the horror sink in.\n\nThe film works as a standalone romantic drama if you don't know the source material, but it's a lesser version of the story. Watching it first won't ruin the book—Yoon's voice and format are different enough that the novel still feels fresh—but you'll spend the movie wishing it had the book's psychological depth and Madeline's narrative sharpness. The book earns its emotional beats; the film borrows them."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/everything-everything",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

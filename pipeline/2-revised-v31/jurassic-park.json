@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Hammond dies, and it matters",
       "body": "In Crichton's novel, John Hammond is killed by a pack of compys — the small, seemingly harmless dinosaurs he dismissed as irrelevant. It's a piece of thematic precision: the man who thought he could control nature dies because he underestimated it.\n\nSpielberg's film lets Hammond survive and gives him a sentimental exit, gazing at the island as they escape. Richard Attenborough plays him as a misguided dreamer rather than the novel's genuinely culpable megalomaniac. The film wants you to feel sorry for Hammond. The book wants you to understand that he earned his fate."
     },
     {
+      "question": null,
       "title": "Malcolm's chaos theory becomes decoration",
       "body": "Crichton gives Ian Malcolm extended passages on chaos theory, complexity, and the limits of human predictability — arguments that form the novel's intellectual spine and directly explain why the park was always doomed. Malcolm's lectures are genuinely interesting, not just thriller-novel filler.\n\nJeff Goldblum's performance is iconic, but the film reduces Malcolm's arguments to memorable one-liners: \"Life finds a way.\" The philosophical weight disappears. Spielberg wants wonder and terror, not a seminar on nonlinear systems. The film's Malcolm is a rock star; the book's Malcolm is a prophet."
     },
     {
+      "question": null,
       "title": "The film's dinosaurs are cinema magic",
       "body": "Spielberg's dinosaurs are one of cinema's great achievements. The initial appearance of the brachiosaurus — Grant and Sattler stepping out of the Jeep, John Williams' score swelling, the camera tilting up to reveal the impossible scale — is still breathtaking thirty years later. The T-rex attack in the rain, the kitchen raptors, the gallimimus stampede: these are images that no prose description can match.\n\nStan Winston's animatronics and ILM's CGI created creatures that feel real in a way that transcends technical accomplishment. This is the area where the film most clearly surpasses the source. Crichton's dinosaurs are described; Spielberg's dinosaurs exist."
     },
     {
+      "question": null,
       "title": "The novel is substantially darker",
       "body": "Crichton's book is a horror novel. More characters die, more graphically, and with less narrative protection. Ed Regis, the park's PR man, is eaten while hiding from a T-rex. Dennis Nedry's death by dilophosaurus is described in gruesome detail. The compys swarm and kill in extended sequences that emphasize the wrongness of what Hammond has created.\n\nSpielberg keeps the violence but softens it — the T-rex attack is terrifying but not graphic, and several characters who die in the book survive in the film. The movie wants to thrill you; the book wants to horrify you. Spielberg's film is rated PG-13 and became a family blockbuster. Crichton's novel is unambiguously adult."
     },
     {
+      "question": null,
       "title": "The children's roles are reversed and diminished",
       "body": "In the novel, Tim is the older child at eleven, a dinosaur expert whose knowledge proves useful. Lex is younger and largely irrelevant to the plot. The film reverses their ages, makes Lex the computer expert, and gives her the crucial moment of rebooting the park systems — \"It's a Unix system! I know this!\"\n\nBut both children are less intellectually active in the film. The novel's Tim helps Grant understand dinosaur behavior and contributes to solving problems. The film's children are conventional thriller kids: endangered, rescued, occasionally brave, but not genuinely useful. Spielberg wants you to fear for them, not rely on them.\n\nYes — specifically to get Crichton's darker, more intellectually serious version before Spielberg's magnificent but somewhat defanged blockbuster replaces it in your imagination. The film's images are so powerful that they will overwrite the book's descriptions. Once you've seen the T-rex attack in the rain, you'll never picture it differently.\n\nReading first also lets you appreciate what Spielberg chose to cut and why. The novel's extended chaos theory lectures would have killed the film's pacing, but they're the reason the story matters beyond its thrills. If you watch first, you'll get one of cinema's great experiences. If you read first, you'll understand what that experience was originally arguing."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/jurassic-park",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

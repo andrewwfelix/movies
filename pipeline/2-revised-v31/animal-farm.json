@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Allegory's Target",
       "body": "Orwell's novella is a point-by-point allegory of the Russian Revolution and Stalin's rise — Napoleon is Stalin, Snowball is Trotsky, the windmill is the Five-Year Plan, the Battle of the Cowshed is the Civil War. Every detail maps onto Soviet history with surgical precision.\n\nSerkis's adaptation softens the historical specificity to make the allegory applicable to contemporary authoritarianism broadly. The film gestures toward populist demagoguery, media manipulation, and the erosion of democratic norms without anchoring itself to 1917. This makes the film feel relevant to 2025 but costs it the bite that comes from Orwell's refusal to be vague.\n\nThe novella's power lies in its double function — it works as a fable and as a historical document. The film chooses the former at the expense of the latter."
     },
     {
+      "question": null,
       "title": "Orwell's Prose Economy",
       "body": "The novella dispatches entire political eras in single paragraphs. Orwell describes the purges — Napoleon's execution of animals who confess to conspiring with Snowball — in fewer than three pages. The prose is ruthlessly efficient, which is the point.\n\nThe film expands the story to feature length, which means scenes Orwell handled in a sentence become extended sequences. The windmill's construction, the animals' debates, and Squealer's propaganda speeches are given room to breathe. Some of this expansion works — Boxer's final journey to the knacker is more affecting when you watch it unfold. Some of it reveals why Orwell kept things brief.\n\nAnimation requires duration. Orwell's prose requires compression. The two are not always compatible."
     },
     {
+      "question": null,
       "title": "Squealer's Propaganda",
       "body": "Squealer is the novella's most chilling creation — the pig who convinces the other animals that their memories are wrong, that Snowball was always a traitor, that the commandments never said what they remember. Orwell shows how language is weaponized to rewrite reality.\n\nThe film gives Squealer more screen time and makes his manipulation more explicit. We see him coaching the sheep to bleat \"Four legs good, two legs better\" and watch him alter the commandments on the barn wall. The voice performance leans into his oily persuasiveness.\n\nBut the film's explicitness is less frightening than Orwell's restraint. In the novella, Squealer's lies work because they are delivered matter-of-factly. The film's version is menacing, but menace is easier to resist than the quiet rewriting of truth."
     },
     {
+      "question": null,
       "title": "Boxer's Fate",
       "body": "The carthorse who works himself to death in loyal service to Napoleon is the novella's emotional center. When he collapses and is sold to the knacker, Orwell delivers the betrayal in two pages. Benjamin reads the side of the van aloud — \"Horse Slaughterer\" — and the animals realize too late what has happened.\n\nThe film extends this sequence, showing Boxer's confusion as he is loaded into the van, the other animals' desperate chase, and Benjamin's anguished realization. The voice performance makes Boxer's decency audible in a way prose cannot. His final \"I will work harder\" is devastating.\n\nBoth versions earn the tragedy. The film's version benefits from the medium — animation allows us to see Boxer's exhaustion and betrayal in real time. This is one of the rare expansions that justifies itself."
     },
     {
+      "question": null,
       "title": "The Ending",
       "body": "Both versions end with the animals looking through the farmhouse window, unable to distinguish the pigs from the humans. Orwell's final sentence — \"The creatures outside looked from pig to man, and from man to pig, and from pig to man again; but already it was impossible to say which was which\" — is one of literature's most perfectly placed conclusions.\n\nThe film reaches the same destination with appropriate gravity. The animation shows the pigs walking upright, wearing clothes, and playing cards with the neighboring farmers. The visual transformation is effective, though it cannot improve on Orwell's prose.\n\nThe film adds a brief coda — Benjamin walking away from the farmhouse, his cynicism confirmed — that the novella does not need. Orwell ends on the image. Serkis adds a grace note that softens the blow.\n\nYes, and there is no excuse not to. The novella takes two to three hours to read — shorter than the film's runtime. Orwell's prose is the experience; the allegory lives in the compression of his sentences, the precision of his word choice, and the way he builds a political history in fewer than thirty thousand words. The film is an illustration of the novella, not a replacement for it.\n\nRead the book first and the film becomes a visual companion — a chance to see Boxer's exhaustion, hear Squealer's lies, and watch the commandments change on the barn wall. Watch the film first and you will miss the economy that makes the novella essential. At eighty pages, this is the easiest read-first recommendation on this site."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/animal-farm",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

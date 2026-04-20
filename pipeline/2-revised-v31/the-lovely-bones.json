@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Susie's Narrative Voice Is the Novel's Soul",
       "body": "The novel's Susie narrates in a voice of remarkable restraint — she watches and reports with a clarity that is more unsettling than grief or anger would be. She is dead and she knows it and she describes what she sees with a flat, precise attention that accumulates into something devastating.\n\nRonan's performance captures Susie's youth and longing, but the voiceover in the film cannot replicate the specific quality of watching someone process their own murder from the outside while remaining somehow inside it. The film's Susie sounds like a teenager reflecting on loss; the book's Susie sounds like someone who has moved beyond emotion into pure observation."
     },
     {
+      "question": null,
       "title": "The In-Between Becomes CGI Spectacle",
       "body": "Sebold's heaven is spare and personal — Susie's in-between is shaped by her own desires and populated by girls who shared her fate. It is quietly described and quietly strange. She has a duplex apartment, a gazebo, a version of her high school, and eventually a roommate named Holly.\n\nJackson renders the in-between as a spectacular visual environment — vast, luminous, continuously transforming. Ships in bottles become full-sized vessels; flowers bloom and shatter like glass; landscapes shift from pastoral to surreal. The spectacle overwhelms the intimacy. Sebold's heaven works because it is restrained; Jackson's is beautiful and somewhat beside the point."
     },
     {
+      "question": null,
       "title": "Stanley Tucci's Harvey Is the Film's Triumph",
       "body": "Tucci received an Academy Award nomination and it was deserved — his Harvey is fastidious, unremarkable, and deeply frightening in his ordinariness. He wears thick glasses, speaks softly, builds dollhouses, and blends into suburban life with practiced ease.\n\nThis is the film's genuine achievement: a performance that captures exactly the kind of killer Sebold describes. The novel's Harvey is rendered through Susie's omniscient observation; Tucci adds a physical specificity that is arguably more disturbing than the prose version. His Harvey is not a monster — he is a neighbor, and that is worse."
     },
     {
+      "question": null,
       "title": "The Family's Grief Is Compressed and Simplified",
       "body": "Sebold tracks the Salmon family's disintegration over years with great care — the marriage breaking under the weight of loss, each sibling finding their own relationship to Susie's absence, the grandmother arriving like a force of pragmatic life. Abigail's affair with Detective Fenerman and her eventual departure are given full weight.\n\nThe film compresses this significantly, and the family's grief becomes background to Susie's in-between rather than the novel's co-equal subject. Abigail's departure is rushed, her affair barely present. The novel is as much about how the living survive as it is about Susie's death; the film tilts the balance toward Susie's perspective."
     },
     {
+      "question": null,
       "title": "Tone and Restraint: Incompatible Approaches",
       "body": "Sebold's novel is emotionally precise — it earns its feeling through accumulation rather than emphasis. The prose is plain, the observations specific, the grief allowed to build slowly over hundreds of pages. Jackson's instinct is toward epic scale and emotional declaration. He uses swelling music, CGI dreamscapes, and visual metaphor where Sebold used silence and understatement.\n\nThese are incompatible approaches to the same material. The film is not bad; it is a different kind of work that uses the story's events to different ends. Jackson wants to make you feel; Sebold wants you to understand. The difference matters.\n\nYes — Susie's narrative voice is the novel's essential quality and the film's voiceover can only approximate it. Read first for the full experience of a dead girl watching her own story with terrible clarity. The novel's restraint allows the horror and grief to accumulate without spectacle, and that accumulation is what makes the book devastating.\n\nThen watch the film for Tucci, who does something the novel cannot: give Harvey a face and a body that will stay with you. His performance is worth the price of admission, even if the film around it cannot match the novel's emotional precision."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-lovely-bones",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

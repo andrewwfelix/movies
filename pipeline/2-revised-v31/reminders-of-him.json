@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The dual perspective is flattened into a single throughline",
       "body": "Hoover's novel alternates between Kenna's and Ledger's perspectives, giving the reader access to both sides of their complicated feelings simultaneously. This structure builds dramatic irony — we know what each character is thinking and feeling even when they can't say it to each other. It's what makes the romance feel earned rather than convenient.\n\nCaswill's screenplay condenses this into a more conventional single throughline, staying closer to Kenna's point of view. We lose Ledger's interior conflict and the novel's careful balance. The film compensates with Withers' performance, but it's not the same as having direct access to his thoughts. The dual perspective is what made the book's emotional architecture work."
     },
     {
+      "question": null,
       "title": "Maika Monroe reinterprets Kenna as contained rather than volatile",
       "body": "Monroe is best known for horror — It Follows, Longlegs, Watcher — and she brings a quality of watchful containment to Kenna that is interesting casting against type. Hoover's Kenna is more openly emotionally volatile, her grief and guilt expressed freely on the page.\n\nMonroe plays her grief as something held tightly, a woman who's learned in prison not to show too much. It's a valid interpretation, but it changes the character's energy. Hoover's Kenna is raw; Monroe's is guarded. Both are damaged, but the texture is different. Fans of the book may find Monroe's Kenna harder to access, but the performance is precise and committed."
     },
     {
+      "question": null,
       "title": "Kenna's letters to Scotty are reduced to occasional voiceover",
       "body": "The novel includes full letters that Kenna writes to Scotty throughout the story, processing her guilt, her love for him, and her desperate hope to know Diem. These letters are the novel's most emotionally direct material and give the reader access to Kenna's grief in a way that no amount of good acting can fully replicate.\n\nThe film uses them sparingly as voiceover, excerpting lines rather than presenting them whole. It's a practical choice — too much voiceover would feel literary and inert — but it's also a significant loss. The letters are where Hoover's prose voice is most present, and that voice is what carries the emotional weight of the CoHo formula. Without it, the film feels more mechanical."
     },
     {
+      "question": null,
       "title": "The romance feels more formulaic without Hoover's prose voice",
       "body": "Hoover's CoHo formula — romance built on grief and guilt, with characters whose damage is specific and whose love is redemptive — works consistently on the page because her prose voice carries the emotional weight. She writes interior monologue that makes the reader feel the characters' longing and conflict in real time.\n\nOn screen, without that voice, the formula can feel more mechanical. Caswill's direction finds visual equivalents with some success — lingering shots of Kenna watching Diem from a distance, Ledger's hesitation before touching her — but the film can't replicate the immediacy of Hoover's first-person narration. The romance still works, but it feels more like a well-executed genre exercise than an emotional experience."
     },
     {
+      "question": null,
       "title": "Grace is given more dimension in Carrie Coon's performance",
       "body": "In the novel, Grace is Scotty's grieving mother who refuses to forgive Kenna or allow her access to Diem. She's an obstacle, and while Hoover gives her understandable motivations, she's not a fully developed character — she's the force that keeps Kenna from her daughter.\n\nCarrie Coon brings depth to Grace that makes her more than an obstacle. Her anger is specific and lived-in; she's a mother protecting what's left of her son. Coon's performance adds weight to the film's final act, when Grace must decide whether to let Kenna into Diem's life. It's one of the places where the film improves on the book.\n\nYes. Hoover's dual perspective and Kenna's letters are what give the novel its emotional precision. The film is a sincere and well-cast adaptation that loses some of this interiority. Without the novel's prose voice, the CoHo formula feels more mechanical, and the romance less immediate. Monroe's performance is interesting, but it's a reinterpretation rather than a direct translation.\n\nRead first and the film becomes a moving companion piece — you'll bring the novel's interior life to the screen and appreciate what Caswill and her cast accomplish within the constraints of the medium. Watch first and you'll get a competent romance that may not fully explain why the book connected with so many readers. Fans of the book will find Monroe's Kenna interesting even where she differs from the page, and Coon's Grace is worth the price of admission."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/reminders-of-him",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

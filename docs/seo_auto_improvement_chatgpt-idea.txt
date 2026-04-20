@@ -1,0 +1,115 @@
+AUTO-IMPROVEMENT SEO LOOP FOR BOOKSVERSUSMOVIES.COM
+
+------------------------------------------------------------------------
+
+1.  OVERVIEW
+
+This system creates a continuous feedback loop between Google Search
+Console (GSC) data and your structured content pages. The goal is to
+automatically prioritize, diagnose, and improve pages based on real
+performance signals.
+
+------------------------------------------------------------------------
+
+2.  CORE INPUT DATA
+
+From GSC (JSON or CSV): - URL - Clicks - Impressions - CTR - Average
+Position
+
+From your content system: - Page type (pillar vs standard) - Whether
+page includes: - Comparison table - Snippet paragraph - FAQ schema -
+Internal links
+
+------------------------------------------------------------------------
+
+3.  SCORING MODEL
+
+Opportunity Score (0–100 scale):
+
+Normalize values first: - impressions_norm = impressions /
+max_impressions - position_norm = (20 - position) / 20 - ctr_gap =
+max(0, expected_ctr(position) - actual_ctr)
+
+Expected CTR curve (approx): - Position 1: 28% - Position 5: 10% -
+Position 10: 3%
+
+Score formula:
+
+Opportunity Score = (0.5 * impressions_norm) + (0.3 * position_norm) +
+(0.2 * ctr_gap)
+
+Multiply final result by 100.
+
+------------------------------------------------------------------------
+
+4.  PAGE CLASSIFICATION
+
+Tier 1: High Opportunity - Position: 5–12 - Impressions: High - CTR:
+Below expected
+
+Tier 2: Growth Potential - Position: 12–20 - Impressions: Moderate
+
+Tier 3: Low Priority - Low impressions or position >20
+
+------------------------------------------------------------------------
+
+5.  ACTION ENGINE
+
+Rules-based recommendations:
+
+IF position BETWEEN 5 AND 10 AND ctr LOW: → Rewrite title + meta
+description
+
+IF position BETWEEN 5 AND 15: → Add snippet paragraph (40–60 words
+answering query directly)
+
+IF no comparison table: → Add structured table (Book vs Movie)
+
+IF impressions HIGH AND clicks LOW: → Add “quick verdict” near top
+
+IF position >10: → Add 3–5 internal links from higher authority pages
+
+IF no FAQ schema: → Add 2–3 question-based H2s
+
+------------------------------------------------------------------------
+
+6.  AUTOMATION FLOW
+
+Step 1: Load GSC data Step 2: Load page metadata JSON Step 3: Join on
+URL Step 4: Calculate Opportunity Score Step 5: Assign Tier Step 6:
+Generate recommended actions Step 7: Output prioritized list
+
+------------------------------------------------------------------------
+
+7.  OUTPUT FORMAT
+
+[ { “url”: “…”, “score”: 82, “tier”: “High Opportunity”, “actions”: [
+“Rewrite title”, “Add comparison table”, “Add snippet paragraph” ] }]
+
+------------------------------------------------------------------------
+
+8.  EXECUTION STRATEGY
+
+Daily: - Pull 24-hour GSC data → detect spikes
+
+Weekly: - Run full scoring model on 3-month data
+
+Monthly: - Rebuild top 10 pages using full template
+
+------------------------------------------------------------------------
+
+9.  FUTURE ENHANCEMENTS
+
+-   Machine learning CTR prediction
+-   A/B testing titles
+-   Auto-generating snippet paragraphs with AI
+-   Internal linking optimizer
+-   Schema validation automation
+
+------------------------------------------------------------------------
+
+10. END STATE
+
+A self-improving SEO system that: - Identifies opportunities
+automatically - Prioritizes high-impact pages - Suggests precise fixes -
+Continuously increases traffic over time

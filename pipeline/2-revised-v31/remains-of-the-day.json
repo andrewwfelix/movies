@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Stevens's unreliable narration is the novel's entire architecture",
       "body": "The book rests on Stevens narrating his own emotional catastrophe without recognising it. He describes his feelings precisely and completely fails to understand them. Ishiguro sustains this for over two hundred pages with extraordinary control — the reader understands everything Stevens doesn't, and the gap is where the tragedy lives.\n\nHopkins performs repression magnificently, but the film can only show the outside of Stevens. We watch him suppress emotion; in the novel, we watch him suppress emotion while telling himself he's doing no such thing. The film shows you the mask. The novel shows you the man convincing himself the mask is his face."
     },
     {
+      "question": null,
       "title": "Miss Kenton is more present in the film, more mysterious in the book",
       "body": "Emma Thompson's Miss Kenton is the finest performance in the film — her frustration, her feeling, her slow understanding that Stevens will never let himself be known. She's warm, direct, and clearly in love with a man who will not permit himself to be loved.\n\nThe novel's Miss Kenton is rendered entirely through Stevens's partial and evasive account of her, which makes her more mysterious and more heartbreaking. We never know for certain what she felt or when. The film makes her more accessible, which is dramatically effective but slightly reduces the ambiguity that Ishiguro carefully maintains. Thompson's performance is magnificent; Ishiguro's technique is unrepeatable on screen."
     },
     {
+      "question": null,
       "title": "Lord Darlington's Nazi sympathies are compressed in the film",
       "body": "The novel spends considerable time on Lord Darlington's sympathy for Nazi Germany in the 1930s and Stevens's complicity in his employer's errors. Ishiguro is interested in how a man devoted to dignity can serve a cause that is beneath it, and how Stevens's professionalism becomes a form of moral abdication.\n\nThe film compresses this political dimension, which simplifies the novel's central argument about the moral cost of self-abnegation. James Fox plays Darlington as more sympathetic and less culpable. The novel makes Stevens's service to Darlington a tragedy of misplaced loyalty; the film makes it more forgivable, which is kinder but less devastating."
     },
     {
+      "question": null,
       "title": "The English landscape becomes a visual metaphor in the film",
       "body": "The film's great visual achievement is its rendering of the English countryside — the drive through a Britain that is beautiful and slightly melancholy, matching Stevens's internal register perfectly. Ivory and cinematographer Tony Pierce-Roberts give you the England that Stevens has devoted his life to serving without ever quite seeing. The light is golden, the estates are immaculate, and the whole thing feels like a country that exists only in memory.\n\nThe novel describes the landscape through Stevens's eyes, which means it's filtered through his need to justify his life's work. The film makes the landscape an objective beauty; the novel makes it Stevens's self-justification. Both work, but they work differently."
     },
     {
+      "question": null,
       "title": "The ending is quieter in the film, more articulate in the novel",
       "body": "Both versions end with Stevens on a pier at Weymouth watching the sunset, acknowledging in the most oblique possible terms what he has lost. The novel's Stevens is more articulate about his own evasiveness — his final sentences are among the most devastating in English literature. He speaks of \"making the best of what remains of the day,\" which is both hopeful and heartbreaking because we know he will not change.\n\nThe film's ending is quieter and relies entirely on Hopkins's face. He says less, and what he doesn't say is everything. Both work. The novel works more because Stevens's voice — his careful, evasive, self-deceiving voice — is what the whole book has been about.\n\nYes — and this is one of the cases where reading first will most transform your experience of the film. Ishiguro's narration is everything; without it, the film is a beautifully made story about repression. With it, the film becomes a meditation on what performance costs the performer. Stevens's voice in the novel — formal, evasive, heartbreaking — is the key to understanding what Hopkins is doing with his face and posture.\n\nRead the novel and then watch Hopkins do the same thing that Stevens does: hide everything in plain sight. The film becomes richer when you know what Stevens is refusing to say, because Ishiguro has taught you to read the silences. Watch the film first and you'll admire Hopkins's technique. Read the book first and you'll understand why that technique is the only way to play Stevens — because the character is all technique, all the way down."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/remains-of-the-day",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

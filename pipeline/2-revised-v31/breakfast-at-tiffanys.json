@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Narrator Becomes a Romantic Lead",
       "body": "Capote's unnamed narrator is a gay writer who observes Holly with detached fascination, never competing for her affection. He's a witness, not a participant—his sexuality ensures the story remains about Holly's search for belonging rather than romantic fulfillment.\n\nThe film transforms him into Paul Varjak, a kept man supported by decorator Emily Failenson (Patricia Neal), creating a parallel between his situation and Holly's. George Peppard plays Paul as conventionally masculine, and the entire narrative pivots toward their romance. The final scene—Paul chasing Holly through the rain, declaring \"You belong to me!\"—inverts Capote's point entirely. Holly's tragedy is that she belongs nowhere; Paul's declaration is precisely what she's been running from."
     },
     {
+      "question": null,
       "title": "Holly's Profession Gets Sanitized",
       "body": "In the novella, Holly explicitly accepts money for sex and companionship. She visits men's apartments, receives fifty-dollar bills for \"the powder room,\" and discusses her work matter-of-factly. Capote doesn't judge her—he presents her survival strategy in wartime New York with clear-eyed sympathy.\n\nThe 1961 Production Code forbade depicting prostitution, so screenwriter George Axelrod reimagined Holly as a party girl who receives vague \"tips\" from wealthy men. Hepburn's Holly seems more naive than mercenary, her financial arrangements left deliberately unclear. This softening makes her more palatable to mainstream audiences but erases the economic desperation that drives Capote's character. The book's Holly is a survivor; the film's Holly is a charming eccentric who happens to need money."
     },
     {
+      "question": null,
       "title": "The Ending: Ambiguity Versus Resolution",
       "body": "Capote's novella ends with Holly fleeing to South America after her arrest, abandoning the narrator without goodbye. Years later, he sees a wooden carving in Africa that resembles her and wonders if she found what she was looking for. She never does find Cat, who disappears into Spanish Harlem. The ending is haunting and unresolved—Holly remains in motion, still searching.\n\nBlake Edwards shoots the opposite ending. After Holly releases Cat in the rain, Paul convinces her to stop running. They find Cat in an alley, embrace in the downpour, and kiss as Henry Mancini's \"Moon River\" swells. It's romantic and satisfying, but it contradicts everything Capote wrote about Holly's inability to settle. Edwards later admitted the studio demanded a happy ending, and Axelrod delivered one that betrays the source material's melancholic truth."
     },
     {
+      "question": null,
       "title": "Audrey Hepburn Versus Capote's Vision",
       "body": "Capote wanted Marilyn Monroe—someone with raw sexuality and working-class vulnerability. When Monroe's acting coach convinced her to decline, Paramount cast Audrey Hepburn, who brought elegance, sophistication, and a European refinement completely at odds with Capote's Texas runaway.\n\nHepburn's performance is iconic but fundamentally different. Her Holly is gamine and chic, singing \"Moon River\" on the fire escape with practiced grace. Capote's Holly is messy, unpolished, and desperate beneath her party-girl facade. Hepburn makes Holly aspirational; Capote made her tragic. The film's Holly is someone you want to be; the book's Holly is someone you pity and admire for surviving. Capote never forgave the casting, and watching both versions, you understand why."
     },
     {
+      "question": null,
       "title": "Mr. Yunioshi: A Character the Film Should Have Cut",
       "body": "In Capote's novella, Mr. Yunioshi is a minor character—Holly's Japanese neighbor who occasionally complains about noise. He appears in perhaps two scenes, drawn without caricature or mockery.\n\nThe film expands him into a recurring comic relief character played by Mickey Rooney in yellowface, complete with prosthetic teeth, exaggerated accent, and slapstick pratfalls. Every appearance is meant to be funny—the angry Asian neighbor disrupted by Holly's parties. It's one of Hollywood's most notorious racial caricatures, and Blake Edwards later called it his biggest regret. The character serves no narrative purpose and actively damages the film's legacy. Modern viewers rightly find these scenes unwatchable, a stain on an otherwise stylish production.\n\nRead the novella first if you want to understand what Capote actually wrote—a melancholic portrait of a woman who can't stop running. The book's Holly is darker, more sexually frank, and ultimately unknowable. The narrator's gay perspective keeps the focus on Holly's psychology rather than romantic resolution, and the ambiguous ending honors her restless spirit.\n\nWatch the film first if you want the iconic images—Hepburn in Givenchy, \"Moon River,\" the Tiffany's window. But know you're getting a Hollywood romance that contradicts Capote's intentions. The film is gorgeous and Hepburn is luminous, but it's a different story with a different Holly. Reading afterward will feel like meeting the real woman behind the glamorous facade."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/breakfast-at-tiffanys",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

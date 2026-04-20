@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Nonlinear Structure Is Flattened Into Conventional Chronology",
       "body": "Walls' memoir jumps between past and present without warning, mirroring how trauma intrudes on daily life. She'll describe a Park Avenue party, then flash to eating margarine from the tub in Welch. This structure forces readers to hold two Jeannettes in mind simultaneously—the successful journalist and the hungry child—showing how the past never fully releases its grip.\n\nCretton's film uses a more predictable back-and-forth between adult Jeannette preparing for an engagement party and her childhood memories. The transitions are signaled clearly, often triggered by objects or conversations, which makes the story easier to follow but strips away the memoir's sense of psychological fragmentation. The book's abrupt cuts feel like intrusive memories; the film's feel like standard flashback storytelling."
     },
     {
+      "question": null,
       "title": "Rex's Darkness Is Softened to Preserve His Likability",
       "body": "The film needs Woody Harrelson's Rex to remain sympathetic, so it omits his worst acts. The book describes Rex taking Jeannette to a bar at age thirteen and allowing a man to take her upstairs \"to play pool,\" only intervening when she screams—he later admits he needed money to gamble. The film cuts this entirely, along with scenes of Rex stealing the children's piggy banks and smashing furniture during blackout drunks.\n\nHarrelson plays Rex as a lovable rogue whose alcoholism is a tragic flaw rather than a weapon he uses against his family. The movie includes the swimming lesson scene but frames it as tough love rather than near-drowning. It shows him teaching Jeannette about stars and physics, emphasizing his brilliance, but avoids showing how he weaponized that intelligence to manipulate his children into accepting neglect as adventure."
     },
     {
+      "question": null,
       "title": "Rose Mary's Neglect Becomes Artistic Eccentricity",
       "body": "The book's Rose Mary is infuriating—she hides chocolate bars while her children dig through garbage for food, refuses to leave bed to teach her classes, and tells Jeannette that being sexually assaulted by a neighborhood boy is \"not that big a deal.\" Walls documents her mother's selfishness with prosecutorial precision, showing a woman who chose self-actualization over her children's survival.\n\nNaomi Watts' Rose Mary is quirky and misunderstood, a dreamer trapped by conventional expectations. The film includes the scene where she eats chocolate in bed while her children are hungry, but frames it as a moment of weakness rather than a pattern of behavior. It omits her refusal to sell her Texas land to buy food and her insistence that homelessness is an \"adventure.\" The movie wants us to see her as flawed but ultimately redeemable; the book offers no such comfort."
     },
     {
+      "question": null,
       "title": "The Welch, West Virginia Years Are Compressed and Sanitized",
       "body": "The family's three years in Welch—living in a rotting house without indoor plumbing, heat, or electricity—occupy the memoir's brutal center. Walls describes using an outdoor pit toilet in winter, bathing in a neighbor's washtub, and watching her parents' marriage collapse into violence. She details the social ostracism the children face as \"garbage people\" and Maureen's gradual psychological breakdown from the isolation and poverty.\n\nThe film condenses Welch into a montage of hardship, hitting the major beats—the freezing house, the bullying at school, the lack of food—but moving through them quickly to reach the escape to New York. It omits the full extent of the squalor, including the family's practice of throwing garbage into a growing pile in the backyard and the children's lice infestations. The book makes you feel trapped in Welch; the film treats it as a difficult chapter that's soon overcome."
     },
     {
+      "question": null,
       "title": "The Ending Offers Hollywood Reconciliation Instead of Ambiguous Peace",
       "body": "Walls ends her memoir at Thanksgiving dinner after Rex's death, with the family gathered in Lori's apartment. She doesn't resolve her feelings about her parents or offer a neat moral. The final image is of everyone toasting Rex, a moment that contains both love and unspoken resentment—she's made peace with her past without forgiving it or pretending it was acceptable.\n\nThe film builds to a confrontation at Jeannette's engagement party where she defends her homeless parents to her fiancé's wealthy family, then reconciles with Rex before his death. The movie ends with adult Jeannette visiting the Glass Castle site and imagining it built, a visual metaphor for accepting her father's dreams. This provides emotional closure the book deliberately withholds—Walls never suggests her childhood was worth it or that her parents' love justified their failures.\n\nRead the book first, because the film's sanitized version will make the memoir's honesty feel like exaggeration. If you watch the movie and see Harrelson's charming Rex, then read about the real Rex pimping out his daughter, you'll wonder if Walls is being unfair. But she's not—she's being accurate. The book's power comes from its refusal to soften the truth for the reader's comfort, and the film's compromises undermine that.\n\nThe movie works as a companion piece if you've already read the memoir and want to see Harrelson and Watts inhabit these characters. But as an introduction to the story, it misrepresents what makes The Glass Castle significant: Walls' willingness to document her parents' failures without excusing them or pretending poverty was character-building rather than damaging. The film wants you to leave feeling uplifted; the book wants you to understand what survival actually costs."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-glass-castle",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

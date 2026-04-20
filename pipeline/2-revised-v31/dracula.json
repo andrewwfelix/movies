@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The epistolary format is abandoned for direct narrative",
       "body": "Stoker tells the entire novel through assembled documents—Jonathan's diary, Mina's journal, Dr. Seward's phonograph recordings, ship's logs, newspaper clippings, telegrams. No single character has the full picture; each account is partial and sometimes unreliable. The reader assembles the horror from fragments, and Dracula himself almost never appears directly on the page. His nature is reconstructed from the terrified reports of those who encountered him.\n\nNo film can replicate this accumulative indirection, but Coppola doesn't try. He presents Dracula directly and frequently—in the castle with Jonathan, in London pursuing Mina, transforming from ancient to young. This makes Oldman's performance spectacular but diminishes the Count's menace. The horror of the partially glimpsed becomes the spectacle of the fully displayed."
     },
     {
+      "question": null,
       "title": "Dracula becomes a tragic romantic rather than a pure predator",
       "body": "Coppola's most significant and controversial change: the film opens with a prologue showing Dracula as Vlad the Impaler, whose bride Elisabeta kills herself after receiving false news of his death. Dracula renounces God, and centuries later believes Mina is Elisabeta reincarnated. This romantic framework—entirely Coppola's invention—fundamentally alters the story's moral architecture.\n\nIn Stoker's novel, Dracula is not in love with Mina. He attacks her as part of his campaign of revenge against the men hunting him, forcing her to drink his blood to create a psychic connection. There is no reincarnation, no tragic backstory, no romantic conflict. Stoker's Dracula is purely predatory—an ancient evil that consumes. The romantic framing makes Coppola's film more operatic and visually gorgeous but considerably less horrifying."
     },
     {
+      "question": null,
       "title": "Gary Oldman's performance versus Stoker's absent monster",
       "body": "Oldman gives one of his most technically elaborate performances—the ancient Count with his white hair and red robes in the castle, the rejuvenated nobleman in blue-tinted glasses stalking London, the wolf-shadow that moves independently on the wall, the bat-creature with its membranous wings. He shifts accents, postures, and vocal registers across the film's runtime. It is a virtuoso display of actorly transformation.\n\nBut Stoker's Dracula works through absence. He appears in perhaps a dozen scenes across the novel's 400 pages. His power comes from implication—the drained bodies, the wolves that obey him, the madness he spreads, the fog that follows him. When he does appear, he is described through others' terrified perception: the white mustache, the hairy palms, the breath like a tomb. Oldman's interpretation makes Dracula romantic, tragic, and constantly present. Stoker's is more purely alien and therefore more frightening."
     },
     {
+      "question": null,
       "title": "Keanu Reeves's miscasting and Anthony Hopkins's compensation",
       "body": "Reeves's performance as Jonathan Harker has been universally acknowledged as the film's weakest element. His American accent drifts in and out, his line readings lack conviction, and he cannot convey the quality of steady English ordinariness that makes Jonathan an effective observer of the extraordinary in Stoker's novel. The early Transylvania sequences, which should be terrifying, are undermined by Reeves's inability to register genuine fear.\n\nAnthony Hopkins compensates with a Van Helsing who is theatrical, eccentric, and occasionally self-parodic in the most enjoyable way. Stoker's Van Helsing is methodical and scholarly; Hopkins plays him as energetic and slightly unhinged. The supporting cast—Richard E. Grant as Dr. Seward, Cary Elwes as Arthur Holmwood, Billy Campbell as Quincey Morris—is strong enough to carry the film around Reeves's limitations."
     },
     {
+      "question": null,
       "title": "Coppola's practical visual effects versus Stoker's literary restraint",
       "body": "The film was shot entirely with in-camera practical effects—no digital manipulation. Coppola and cinematographer Michael Ballhaus used shadow puppets, forced perspective, in-camera superimpositions, and other optical techniques from early cinema. The shadow that moves independently of Oldman's body, the transformation sequences, the forced-perspective castle interiors—these are achievements of practical filmmaking that reward close attention.\n\nEiko Ishioka's costume design won an Academy Award and remains iconic—Dracula's red armor, his elaborate robes, the increasingly revealing costumes for the vampire brides. The visual inventiveness gives the film a handmade, theatrical quality that matches the Victorian Gothic setting better than digital effects would have. Stoker's novel, by contrast, works through literary restraint—the horror is in what is not described, in the gaps between documents, in the reader's imagination filling the spaces Stoker leaves empty.\n\nYes—read Stoker's novel first, specifically to experience the epistolary format and to encounter Dracula through the terrified, partial accounts of those who met him. The novel is stranger and more unsettling than any film version. The accumulation of documents creates a unique reading experience: you piece together the horror from fragments, and Dracula's nature emerges through indirection rather than direct presentation. The Count's infrequent appearances make him more alien and frightening than any actor can be when shown constantly on screen.\n\nWatch Coppola's film afterward as a gorgeous, operatic reinterpretation that replaces the novel's restraint with spectacle and the novel's predator with a tragic lover. It is a different kind of work—visually inventive, emotionally operatic, and worth seeing for Oldman's performance and the practical effects. But the romantic framework fundamentally changes what Dracula is, and the film's beauty comes at the cost of the novel's deeper strangeness. Read first, then watch, and appreciate them as separate achievements."
     }
@@ -141,5 +146,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/dracula",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

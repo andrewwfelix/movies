@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The epic similes are untranslatable to film",
       "body": "Homer's text is structured around long, digressive comparisons — moments of violence or beauty that pause the narrative to compare what's happening to something from ordinary life: a farmer cutting wheat, a lion dragging a calf, women weeping at a harbour. These similes are the heartbeat of the poem, creating a double vision where heroic action is constantly measured against domestic reality.\n\nThey exist entirely outside what cinema can do. Nolan will find visual equivalents — slow-motion sequences, intercutting between timelines, Hans Zimmer's score doing the work of metaphor — but the simile is a literary technology with no film equivalent. You lose the texture of Homer's voice, which is half the experience of reading the poem."
     },
     {
+      "question": null,
       "title": "The non-linear structure is Nolan's natural territory",
       "body": "The Odyssey begins ten years into the journey, with Odysseus already stranded on Calypso's island. The famous wanderings — the Cyclops Polyphemus, the Sirens, Circe, the descent to the Underworld — are told in flashback by Odysseus himself at a dinner party hosted by King Alcinous of the Phaeacians. Homer invented the structure Nolan has made his signature.\n\nThis is the adaptation where Nolan's instincts and his source material are in genuine alignment rather than in tension. The trailer suggests he's leaning into the fractured chronology, intercutting Odysseus's wanderings with Penelope's resistance and Telemachus's coming-of-age journey. It's the rare case where a director's stylistic tics serve the source rather than competing with it."
     },
     {
+      "question": null,
       "title": "Penelope's interiority is expanded significantly",
       "body": "Homer's Penelope is cunning and patient — she unravels her weaving each night to stall the suitors, and her final test of Odysseus with the unmovable bed is a masterpiece of strategic verification. But the poem is primarily Odysseus's story; her interiority is largely implied through action rather than explored directly.\n\nNolan is reportedly expanding Penelope significantly, giving Hathaway scenes of political negotiation with the suitors, moments of doubt about Odysseus's return, and a parallel arc of endurance that matches her husband's trials. It's the right call for a 2026 film and may actually deepen the story by making the homecoming a reunion of equals rather than a rescue."
     },
     {
+      "question": null,
       "title": "The gods are treated with Nolan's characteristic ambiguity",
       "body": "Homer's gods are anthropomorphic, petty, and fully present — Athena disguises herself and walks among mortals, Poseidon nurses a grudge over his blinded son Polyphemus, Zeus adjudicates disputes on Olympus. They are characters with agency, not symbols. The poem's moral architecture depends on their reality.\n\nNolan handles divinity with more ambiguity, presenting divine intervention in ways that can be read as supernatural or psychological. Athena's guidance might be real or might be Telemachus's internalized sense of purpose. It's a defensible modern choice that changes the story's moral architecture from cosmic justice to human resilience, but it loses Homer's genuine belief in divine presence."
     },
     {
+      "question": null,
       "title": "The Phaeacian episode is compressed",
       "body": "In the poem, Odysseus spends several books as the guest of the Phaeacians — a civilised, seafaring people who treat him with extraordinary hospitality while he tells them his story. It's the structural hinge of the whole poem, the moment where Odysseus transforms from suffering wanderer to storyteller, and where Homer meditates on what hospitality means and what stories are for.\n\nNolan compresses this significantly, reducing the Phaeacians to a framing device rather than a fully realized culture. It's an understandable choice for pacing, but it means losing some of the poem's meditation on the relationship between guest and host, and the way stories create obligations between strangers.\n\nYes — but start with a modern translation. Emily Wilson's 2017 version is the most readable and the most honest to Homer's actual register: direct, swift, occasionally brutal. She strips away Victorian ornamentation and restores the poem's clarity. Robert Fagles's 1996 translation is the stronger second choice if you want something more elevated in diction while remaining accessible. Either will give you the poem in a form that feels urgent rather than academic.\n\nNolan's film will inevitably interpret the myth in ways that close off some imaginative possibilities. His Cyclops will look a certain way, his Sirens will sound a certain way, his Ithaca will have a specific geography. Read Homer first and keep those visions intact. The poem is short enough to finish in a week of evening reading, and it's the foundation of so much Western storytelling that encountering it directly is worth the effort regardless of the film."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-odyssey",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

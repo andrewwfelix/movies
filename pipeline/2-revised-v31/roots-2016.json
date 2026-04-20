@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Kunta's African Childhood Gets Gutted",
       "body": "Haley spends the first 200 pages in Juffure, detailing Kunta's manhood training, his brothers Lamin and Suwadu, his mother Binta's cooking, his father Omoro's dignity, and the Mandinka rituals that shape his identity. You learn the word \"toubob\" (white person) alongside Kunta, understand why he treasures his saphie charm, and feel the weight of his warrior training before the capture.\n\nThe miniseries gives Juffure 20 minutes. Kunta's family appears in brief scenes, his manhood ceremony is a montage, and his capture happens in episode one's first act. Malachi Kirby conveys Kunta's pride, but without the book's foundation, his later refusal to accept the name Toby feels like generic defiance rather than the specific preservation of Mandinka identity.\n\nThe whipping scene where Kunta finally says \"Toby\" lands harder in the book because you've spent months inside his head, hearing him recite Mandinka words to himself, remembering his father's lessons. The miniseries makes it brutal spectacle; the book makes it spiritual death."
     },
     {
+      "question": null,
       "title": "The Middle Passage Loses Its Psychological Horror",
       "body": "The miniseries depicts the slave ship's physical horror effectively—the hold's darkness, the chained bodies, the suicide attempts, the casual violence of the crew. But Haley's 30-page Middle Passage sequence is a psychological descent, tracking Kunta's loss of time sense, his hallucinations, his fantasies of killing the toubob, and his gradual realization that death might be preferable to this floating hell.\n\nThe book makes you endure the passage day by day, feeling Kunta's muscles atrophy, his mind fracture, his hope drain. The miniseries makes you witness it—a crucial difference. You see the horror but don't inhabit it."
     },
     {
+      "question": null,
       "title": "Chicken George's Complexity Becomes Charisma",
       "body": "In the book, George is a study in contradictions—proud of his cockfighting skill yet ashamed it comes from his white father Tom Lea, loyal to Master Lea yet desperate for freedom, vain about his appearance yet aware that vanity is survival. His trip to England with Lea, where he sees free Black people and realizes what he's missing, transforms him. He returns to buy his family's freedom, a process that takes years and costs him his pride.\n\nRegé-Jean Page's George is charming and defiant, but the miniseries cuts the England trip, compresses his cockfighting career into montage, and rushes his freedom purchase. Page delivers swagger where the book delivers ambivalence. You like miniseries George; you understand book George."
     },
     {
+      "question": null,
       "title": "Kizzy's Literacy Arc Gets Simplified",
       "body": "The book makes Kizzy's literacy a double-edged sword. Missy Anne teaches her to read as a childhood game, a secret bond between plantation girls. When Kizzy uses that literacy to forge a travel pass for a slave she loves, she's sold south as punishment. Her reading ability—the thing that made her valuable, that connected her to her father's stories—becomes the weapon that destroys her life.\n\nThe miniseries includes these beats but doesn't explore the irony. E'myri Crutchfield's Kizzy is heartbroken by Missy Anne's betrayal, but the show treats literacy as straightforward empowerment rather than the complicated gift-curse Haley depicts. The book asks what literacy means when it can't save you; the miniseries just shows that it can't."
     },
     {
+      "question": null,
       "title": "The Generational Scope Collapses",
       "body": "Haley gives roughly equal weight to seven generations, spending 80-100 pages with each. You feel the passage of time, the accumulation of small victories and devastating losses, the way family stories get passed down and distorted. Tom's children hear about Kunta Kinte as legend; Haley himself hears about \"the African\" as faint family myth.\n\nThe miniseries front-loads Kunta's story, then accelerates through subsequent generations. Tom appears primarily in the final episode. The post-emancipation generations—Haley's grandfather and father—get brief epilogue treatment. The book is about generational endurance; the miniseries is about Kunta Kinte with sequels.\n\nRead first if you want to understand why Roots mattered in 1976. The book's power lies in its accumulation—the way Haley makes you live through decades of small humiliations, brief joys, and crushing losses until you feel the weight of generational trauma. The miniseries delivers the story's highlights; the book delivers its texture. Kunta's internal monologues, Kizzy's literacy lessons, George's cockfighting pride, Tom's blacksmith negotiations—these aren't just plot points but psychological studies that the miniseries can only sketch.\n\nWatch first if you want the story's emotional core without the 688-page commitment. The miniseries captures the major beats and benefits from powerful performances, particularly Forest Whitaker's Fiddler and Malachi Kirby's physical embodiment of Kunta's defiance. But know that you're getting the CliffsNotes version—faithful in plot, abbreviated in depth. The book asks you to endure the journey; the miniseries asks you to witness it."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/roots-2016",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Paul's interiority is the novel's engine; the films can only imply it",
       "body": "Herbert's novel lives inside Paul's head. You experience his prescient visions as he does — fragmented, overwhelming, inevitable. You watch him calculate how to manipulate the Fremen's messianic beliefs, and you feel his growing horror at what he's becoming. The book makes Paul's complicity explicit: he knows he will unleash a jihad that kills billions, and he chooses power anyway.\n\nChalamet plays Paul as more passive and reactive. The internal dread becomes visual ambiguity — Villeneuve uses dream sequences and Chalamet's haunted expressions to suggest Paul's conflict, but the films are deliberately unclear about whether Paul is a hero or a warning. The critique is present, but it's muted."
     },
     {
+      "question": null,
       "title": "Chani becomes the moral conscience the book never gives her",
       "body": "In Herbert's novel, Chani is Paul's devoted companion. She's a skilled fighter and the mother of his first son, but her perspective on the Fremen prophecy is largely absent. She accepts Paul's destiny without resistance, and Herbert gives her no arc beyond loyalty.\n\nVilleneuve makes her a skeptic. Zendaya's Chani pushes back on the messiah narrative throughout both films, challenging Paul's transformation and refusing to celebrate his rise to power. The final scene of Part Two — Chani walking away from Paul — is Villeneuve's invention, and it sharpens the story's critique considerably. She becomes the character who sees what Paul is doing and refuses to endorse it."
     },
     {
+      "question": null,
       "title": "The Bene Gesserit's manipulation is background texture, not foreground argument",
       "body": "Herbert devotes significant space to the Bene Gesserit's centuries-long breeding program and their deliberate seeding of messianic myths across planets. The Missionaria Protectiva — the order's propaganda arm — planted the prophecy of the Lisan al-Gaib on Arrakis generations before Paul arrived. Their scheming is central to the novel's argument about manufactured religion and the danger of believing in chosen ones.\n\nIn the films, Charlotte Rampling is excellent as Reverend Mother Mohiam, and the Bene Gesserit's influence is present, but the full scope of their manipulation is background texture rather than foreground plot. The films gesture toward it but don't explore it with Herbert's rigor."
     },
     {
+      "question": null,
       "title": "The ending defers Herbert's moral conclusion",
       "body": "Paul's victory over the Emperor is explicitly pyrrhic in the novel. He defeats Shaddam IV, claims the throne, and forces Princess Irulan into a political marriage — but he knows he has unleashed a holy war across the universe. Herbert's final pages make clear that Paul has become exactly what he feared: a tyrant whose followers will kill in his name. The book is not celebrating him.\n\nPart Two ends on a more ambiguous note. The jihad is referenced — Paul tells the Great Houses that his Fremen will bring them to heel — but the full moral weight of Herbert's conclusion is deferred. Villeneuve leaves room for interpretation, and the film's final image is Chani's rejection, not Paul's horror. It's a powerful ending, but it's not Herbert's ending."
     },
     {
+      "question": null,
       "title": "Mentats are present but underexplained",
       "body": "Mentats — humans trained to replace computers, which are banned under the Butlerian Jihad — are a key part of the political world Herbert builds. Thufir Hawat, the Atreides Mentat, and Piter De Vries, the Harkonnen Mentat, are major characters defined by this role. Their computational abilities shape the strategy and intrigue of the novel.\n\nIn the films, Mentats are present but their function is underexplained. Thufir appears briefly in Part One, and Piter is reduced to a background villain. The worldbuilding context that makes them significant — the Butlerian Jihad, the ban on thinking machines — is largely absent. Casual viewers may not even notice they're a distinct class of character.\n\nYes — but Dune is a genuinely demanding novel, and that's worth knowing going in. The first hundred pages require patience. Herbert withholds conventional narrative momentum in favor of world-construction: ecology, politics, religion, the mechanics of spice production. He uses epigraphs from fictional historical texts to build context before scenes even begin. Push through and the payoff is enormous, but the opening is deliberately slow.\n\nThe films are an excellent entry point that make the story immediately accessible. Villeneuve's visual world-building does in minutes what Herbert takes chapters to establish. But the films soften exactly the elements that make the book worth reading: the complicity, the manipulation, the warning buried in the adventure. Read it before Part Three arrives, and you'll understand what Villeneuve is trying to preserve and what he's chosen to leave out."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/dune",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

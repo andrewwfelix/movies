@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The unreliable narrator becomes a visual question",
       "body": "Ellis's Bateman narrates his own murders with the same flat, detailed prose he uses to describe business cards and designer suits. The reader is never certain whether the murders are real or fantasy, and the uncertainty is the novel's central formal gambit. The final chapters suggest that nothing happened — Bateman's lawyer claims to have had dinner with Paul Allen in London, and the apartment where Bateman stored bodies is spotless and for sale.\n\nHarron's film resolves this ambiguity somewhat. The murders feel real — we see blood, bodies, chainsaws. But the ending preserves enough doubt to keep the satire intact. The unreliability is present but secondary to Bale's performance and the visual comedy."
     },
     {
+      "question": null,
       "title": "The consumer catalogue is compressed into montage",
       "body": "Ellis devotes pages to the precise description of restaurants, clothing, grooming products, and business cards — with a precision that is itself an argument about what Bateman values and what his world values. These passages are difficult to render on screen without stopping the film dead.\n\nHarron compresses them into montage and costume. The morning routine — Bateman's voiceover describing his skincare regimen while we watch him apply masks and lotions — is the film's closest equivalent. The business card scene, where Bateman and his colleagues compare cards with escalating anxiety, is a perfect distillation of the novel's satirical method."
     },
     {
+      "question": null,
       "title": "Christian Bale makes Bateman a comic creation",
       "body": "Bale's performance is one of cinema's great pieces of controlled physical comedy. The business card scene, the morning routine, the Phil Collins monologue before murdering Paul Allen — he found the absurdity inside the horror and played it with total commitment. His Bateman is sweating, panicked, desperate to fit in, and the comedy makes the satire sharper.\n\nThis is an area where the film has something the novel cannot. Ellis's Bateman is a voice on the page, affectless and unreachable. Bale's Bateman is a body in space, and the physicality — the forced smile, the stiff walk, the way he holds a knife — is its own argument about what this character is."
     },
     {
+      "question": null,
       "title": "The violence is restrained for artistic reasons",
       "body": "The novel's violence is graphic in ways the film is not. Ellis uses extended, precise descriptions of torture and murder that are deliberately nauseating — a rat, a starving dog, a nail gun, acts too specific to summarize here. The point is to make the reader complicit and uncomfortable.\n\nHarron understood that showing everything would overwhelm the satire. Her restraint is artistically correct. The chainsaw scene, for instance, is more suggested than shown. The film is disturbing but watchable; the book is designed to be almost unbearable. This means the film is more accessible but less challenging."
     },
     {
+      "question": null,
       "title": "The satirical target is the same but the tone is warmer",
       "body": "Both versions satirise the emptiness of 1980s Wall Street culture with precision. The men are interchangeable — they mistake each other for other people constantly. The women are decorative. The restaurants and clubs are status markers with no other meaning. The novel's satire is more sustained and more nihilistic — there is no redemptive reading of what Bateman represents.\n\nThe film is slightly warmer, which is partly Bale and partly Harron's direction. Jean, Bateman's secretary, is given more screen time and more sympathy. The ending, with Bateman's voiceover confession, feels almost like a plea for understanding. The novel offers no such comfort.\n\nYes. The novel is the original experience and the film is a brilliant compression of it. Read Ellis first to encounter the unreliability in full, to sit with the pages of brand names and violence, to feel the formal experiment of a narrator who cannot be trusted about anything. The book is harder to get through but more ambitious.\n\nThen watch Bale do something entirely his own with the material. The film is not a lesser version — it is a different argument, one that uses performance and visual comedy to make the satire accessible without softening it. Both are essential, but the book is the foundation."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/american-psycho",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

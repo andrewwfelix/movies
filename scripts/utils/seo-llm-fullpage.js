@@ -22,6 +22,8 @@
  *   node scripts/utils/seo-llm-fullpage.js --slug gone-girl  -- one page
  *   node scripts/utils/seo-llm-fullpage.js --limit 10        -- first N
  *   node scripts/utils/seo-llm-fullpage.js --dry             -- preview only
+ *   node scripts/utils/seo-llm-fullpage.js --dev             -- use haiku models
+ *   node scripts/utils/seo-llm-fullpage.js --force           -- rerun even if populated
  *   node scripts/utils/seo-llm-fullpage.js --call 2          -- one call only
  *
  * Destination: scripts/utils/seo-llm-fullpage.js
@@ -62,8 +64,9 @@ const FP       = CONFIG.fullpage;
 const DEV_MODE   = hasFlag('--dev') || process.env.DEV_MODE === 'true';
 const MODE       = DEV_MODE ? 'dev' : 'prod';
 const DEFAULT_OUT = DEV_MODE ? 'pipeline/2-revised-v31-haiku' : 'pipeline/2-revised-v31-sonnet';
-const SRC_DIR    = path.join(ROOT, INPUT_DIR);
-const OUT_DIR    = path.join(ROOT, OUTPUT_DIR || DEFAULT_OUT);
+const SRC_DIR      = path.join(ROOT, INPUT_DIR);
+const OUT_DIR      = path.join(ROOT, OUTPUT_DIR || DEFAULT_OUT);
+const ISSUES_DIR = path.join(ROOT, 'pipeline', 'content-issues');
 
 // ── Load .env ─────────────────────────────────────────────────────────────────
 
@@ -136,9 +139,28 @@ async function callWithRetry(model, systemPrompt, userContent, maxTokens, valida
     }
     const validation = validate ? validate(result.data) : { ok: true };
     if (validation.ok) return { data: result.data };
+    // On call 3 retry — if N/A is the issue, scrub it and retry with tighter prompt
+    if (!validation.ok && attempt === 1) {
+      await new Promise(r => setTimeout(r, 1000));
+      continue;
+    }
     if (attempt === 2) return { error: `Validation failed: ${validation.reason}` };
-    await new Promise(r => setTimeout(r, 1000));
   }
+}
+
+// ── Content issues logger ─────────────────────────────────────────────────────
+
+function writeIssue(slug, callNum, issueType, detail) {
+  if (!fs.existsSync(ISSUES_DIR)) fs.mkdirSync(ISSUES_DIR, { recursive: true });
+  const filename = `${slug}-call${callNum}.json`;
+  const payload  = {
+    slug,
+    callNum,
+    issueType,
+    detail,
+    timestamp: new Date().toISOString(),
+  };
+  fs.writeFileSync(path.join(ISSUES_DIR, filename), JSON.stringify(payload, null, 2), 'utf8');
 }
 
 // ── Validation helpers ────────────────────────────────────────────────────────
@@ -244,10 +266,13 @@ Generate an at-a-glance comparison table for Google snippet extraction.
 
 STRICT RULES:
 - 4-5 rows exactly
-- Every row must have feature, book, AND film values — no nulls, no N/A
+- Every row must have feature, book, AND film values — no nulls, no N/A, no empty strings
+- NEVER use "N/A" — if one version lacks something, describe what it has instead
+  Example: instead of book:"N/A" use book:"Not applicable — prose medium" or rephrase the feature
 - Parallel structure: both book and film values must be comparable phrases of similar length
 - Punchy values — not prose. Max 6 words per cell.
 - Feature names must be specific, not generic ("Point of view" not "POV difference")
+- If a feature only applies to one version, reframe it so both versions have a meaningful value
 
 Return ONLY a JSON array:
 [
@@ -315,6 +340,21 @@ Return ONLY a JSON object:
     "trailerThumbAlt": "..."
   }
 }`,
+
+  7: `You are an SEO specialist for BooksVersusMovies.com.
+${VOICE_NOTE}
+
+Convert each difference section title into a question-format H2 that targets People Also Ask queries.
+
+STRICT RULES:
+- Every question must include the book or film title
+- Must end with a question mark
+- Must match how a real person would type the query into Google
+- Return one question per difference, in the same order as the input
+- Keep questions specific — not "What is different?" but "Does the Gone Girl movie keep Amy's diary?"
+
+Return ONLY a JSON array of strings, one per difference:
+["Question for diff 1?", "Question for diff 2?", ...]`,
 };
 
 // ── Field already populated check ─────────────────────────────────────────────
@@ -328,6 +368,7 @@ function callNeeded(page, callNum) {
     case 4: return missing(page.keyDifferencesList);
     case 5: return missing(page.optimizedH2s) || missing(page.optimizedH2s?.keyDifferences);
     case 6: return missing(page.og) || missing(page.og?.title);
+    case 7: return (page.differences || []).some(d => d.question === null || d.question === undefined);
     default: return true;
   }
 }
@@ -364,6 +405,15 @@ function applyResult(page, callNum, data) {
       page.og          = data.og;
       page.images      = data.images;
       page.hasOpenGraph = true;
+      break;
+    case 7:
+      // data is an array of question strings, apply to differences[] in order
+      if (Array.isArray(data) && Array.isArray(page.differences)) {
+        page.differences = page.differences.map((d, i) => ({
+          ...d,
+          question: data[i] || d.question || null,
+        }));
+      }
       break;
   }
   page._schemaVersion = '3.1';
@@ -416,6 +466,13 @@ Page title: ${page.pageTitle}
 Meta description: ${page.metaDesc}
 Winner statement: ${page.winnerStatement || ''}
 Slug: ${page.slug}`;
+
+    case 7:
+      return `${base}
+Book title: ${page.bookTitle}
+Film year: ${page.filmYear}
+Difference titles to convert to questions:
+${(page.differences || []).map((d, i) => `${i+1}. ${d.title}`).join('\n')}`;
   }
 }
 
@@ -428,11 +485,117 @@ const VALIDATORS = {
   4: validateKeyDifferencesList,
   5: validateOptimizedH2s,
   6: validateOg,
+  7: d => {
+    if (!Array.isArray(d)) return fail('not an array');
+    if (d.length === 0) return fail('empty array');
+    if (!d.every(q => typeof q === 'string' && q.endsWith('?'))) return fail('all items must be strings ending with ?');
+    return ok();
+  },
 };
+
+// ── Page verification ─────────────────────────────────────────────────────────
+
+function verifyPage(page, callNum) {
+  const errors = [];
+  const warn   = msg => errors.push(msg);
+
+  switch(callNum) {
+    case 1:
+      if (!page.primaryKeyword || page.primaryKeyword.length < 5)
+        warn('primaryKeyword too short or missing');
+      if (!page.winnerStatement || page.winnerStatement.length < 10)
+        warn('winnerStatement too short or missing');
+      if (!Array.isArray(page.entities) || page.entities.length === 0)
+        warn('entities array empty');
+      break;
+
+    case 2: {
+      const para = page.snippetParagraph || '';
+      const words = para.trim().split(/\s+/).length;
+      if (words < 30)  warn(`snippetParagraph too short: ${words} words (min 30)`);
+      if (words > 110) warn(`snippetParagraph too long: ${words} words (max 110)`);
+      if (!para.match(/[.!?]$/)) warn('snippetParagraph does not end with punctuation');
+      break;
+    }
+
+    case 3: {
+      const table = page.atAGlanceTable || [];
+      if (table.length < 3 || table.length > 6)
+        warn(`atAGlanceTable wrong length: ${table.length} rows (need 3-6)`);
+      table.forEach((row, i) => {
+        if (!row.feature) warn(`table row ${i+1} missing feature`);
+        if (!row.book)    warn(`table row ${i+1} missing book value`);
+        if (!row.film)    warn(`table row ${i+1} missing film value`);
+        // N/A is only a problem if the other cell has real content
+        if (row.book === 'N/A' && row.film && row.film !== 'N/A' && row.film.length > 5)
+          warn(`table row ${i+1} book value is N/A but film has content — parallel structure required`);
+        if (row.film === 'N/A' && row.book && row.book !== 'N/A' && row.book.length > 5)
+          warn(`table row ${i+1} film value is N/A but book has content — parallel structure required`);
+      });
+      break;
+    }
+
+    case 4: {
+      const diffs = page.keyDifferencesList || [];
+      if (diffs.length < 3 || diffs.length > 5)
+        warn(`keyDifferencesList wrong length: ${diffs.length} (need 3-5)`);
+      diffs.forEach((item, i) => {
+        if (!item.label) warn(`keyDifferencesList item ${i+1} missing label`);
+        if (!item.text)  warn(`keyDifferencesList item ${i+1} missing text`);
+      });
+      break;
+    }
+
+    case 5: {
+      const h2s = page.optimizedH2s || {};
+      if (!h2s.keyDifferences) warn('optimizedH2s missing keyDifferences');
+      if (!h2s.readFirst)      warn('optimizedH2s missing readFirst');
+      // Build a set of meaningful words from book title and slug
+      const titleWords = [
+        ...(page.bookTitle || '').toLowerCase().split(/\s+/),
+        ...(page.slug || '').replace(/-/g,' ').toLowerCase().split(/\s+/),
+        ...(page.bookTitle || '').toLowerCase().split(/\s+/).map(w => w.replace(/[^a-z]/g,'')),
+      ].filter(w => w.length > 3);
+      Object.entries(h2s).forEach(([k, v]) => {
+        if (!v.endsWith('?')) warn(`optimizedH2s.${k} does not end with ?`);
+        const vLower = v.toLowerCase();
+        const hasTitle = titleWords.some(w => vLower.includes(w));
+        if (!hasTitle) warn(`optimizedH2s.${k} does not contain book or film title`);
+      });
+      break;
+    }
+
+    case 6: {
+      const og = page.og || {};
+      if (!og.title)       warn('og.title missing');
+      if (!og.description) warn('og.description missing');
+      if (og.title && og.title.length > 60)
+        warn(`og.title too long: ${og.title.length} chars (max 60)`);
+      if (og.description && og.description.length > 150)
+        warn(`og.description too long: ${og.description.length} chars (max 150)`);
+      if (!og.image || !og.image.startsWith('https://'))
+        warn('og.image missing or not a valid URL');
+      break;
+    }
+
+    case 7: {
+      const diffs = page.differences || [];
+      const nullQ = diffs.filter(d => !d.question).length;
+      if (nullQ > 0) warn(`${nullQ} differences[] still have null question`);
+      diffs.forEach((d, i) => {
+        if (d.question && !d.question.endsWith('?'))
+          warn(`differences[${i}].question does not end with ?`);
+      });
+      break;
+    }
+  }
+
+  return { ok: errors.length === 0, errors };
+}
 
 // ── Call config helpers ──────────────────────────────────────────────────────
 
-const CALL_KEYS = ['1_identity','2_snippet','3_table','4_differences','5_h2s','6_social'];
+const CALL_KEYS = ['1_identity','2_snippet','3_table','4_differences','5_h2s','6_social','7_questions'];
 
 function getCallConfig(callNum) {
   const key = CALL_KEYS[callNum - 1];
@@ -454,7 +617,8 @@ function loadRecords() {
     console.error(`✗ Input directory not found: ${INPUT_DIR}`);
     process.exit(1);
   }
-  if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
+  if (!fs.existsSync(OUT_DIR))    fs.mkdirSync(OUT_DIR,    { recursive: true });
+  if (!fs.existsSync(ISSUES_DIR)) fs.mkdirSync(ISSUES_DIR, { recursive: true });
 
   let files = fs.readdirSync(SRC_DIR).filter(f => f.endsWith('.json')).sort();
   if (SLUG_FILTER) {
@@ -480,7 +644,8 @@ function loadRecords() {
 
 async function run() {
   const records = loadRecords();
-  const callNums = CALL_FILTER ? [CALL_FILTER] : [1,2,3,4,5,6];
+  const callNums = CALL_FILTER ? [CALL_FILTER] : [1,2,3,4,5,6,7];
+  const FORCE    = hasFlag('--force');
 
   console.log(`\nseo-llm-fullpage.js`);
   console.log(`Input:    ${INPUT_DIR}`);
@@ -513,7 +678,7 @@ async function run() {
     let pageModified = false;
 
     for (const callNum of callNums) {
-      if (!callNeeded(page, callNum)) {
+      if (!FORCE && !callNeeded(page, callNum)) {
         process.stdout.write(`  Call ${callNum}: already populated — skip\n`);
         totalSkipped++;
         continue;
@@ -530,18 +695,30 @@ async function run() {
 
       if (result.error) {
         process.stdout.write(` ✗ ${result.error}\n`);
+        writeIssue(page.slug, callNum, 'api_error', result.error);
         totalFailed++;
-        continue;
+        continue; // skip this call, keep going with remaining calls + pages
       }
 
       // Apply to page object
       applyResult(page, callNum, result.data);
+
+      // Verify before saving
+      const verification = verifyPage(page, callNum);
+      if (!verification.ok) {
+        process.stdout.write(` ✗ verification failed:\n`);
+        verification.errors.forEach(e => console.log(`    → ${e}`));
+        writeIssue(page.slug, callNum, 'verification_failed', verification.errors.join(' | '));
+        totalFailed++;
+        continue; // skip saving this call, keep going with remaining calls + pages
+      }
+
       pageModified = true;
 
-      // Save immediately after each successful call
+      // Save immediately after each successful verified call
       fs.writeFileSync(records[i].outPath, JSON.stringify(page, null, 2), 'utf8');
 
-      process.stdout.write(` ✓ saved\n`);
+      process.stdout.write(` ✓ verified + saved\n`);
       totalApplied++;
 
       // Small delay between calls to avoid rate limiting
@@ -556,7 +733,9 @@ async function run() {
   console.log(`\n${'─'.repeat(60)}`);
   console.log(`✓ Applied: ${totalApplied} fields across ${records.length} pages`);
   console.log(`→ Skipped: ${totalSkipped} already-populated fields`);
-  if (totalFailed) console.log(`✗ Failed:  ${totalFailed} fields — review manually`);
+  if (totalFailed) {
+    console.log(`✗ Failed:  ${totalFailed} fields — issues logged to scripts/utils/content-issues/`);
+  }
   console.log(`\nNext: node scripts/pipeline-render.js --all --force\n`);
 }
 

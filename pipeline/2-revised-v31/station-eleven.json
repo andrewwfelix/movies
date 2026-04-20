@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Jeevan's expanded storyline transforms him from supporting character to co-lead",
       "body": "In Mandel's novel, Jeevan Chaudhary appears in the opening chapters — he tries to save Arthur Leander, then shelters young Kirsten in his brother's apartment during the pandemic's first weeks. After that, he vanishes from the narrative until a brief reappearance near the end.\n\nThe series makes Jeevan a central figure. Himesh Patel's performance anchors the first three episodes, which follow Jeevan and Kirsten through the first hundred days of collapse. We see him struggle to keep them alive, make impossible decisions, and eventually leave to find his own family. Later episodes reveal his life in the years after — his relationship with a deaf woman named Daria, his work as a medic, his guilt over leaving Kirsten.\n\nThis expansion works because Patel plays Jeevan as an ordinary man trying to be decent in circumstances that make decency nearly impossible. The novel's elliptical treatment of his character couldn't provide what the series does: a sustained portrait of someone learning to survive without losing himself."
     },
     {
+      "question": null,
       "title": "The series restructures the timeline into character-specific episodes",
       "body": "Mandel's novel moves between three main time periods — pre-pandemic, Year Zero, and Year Twenty — with elegant economy. Chapters shift between timelines fluidly, trusting readers to assemble the chronology. The structure is precise and controlled, revealing connections gradually.\n\nSomerville's series takes a more radical approach. Individual episodes dedicate themselves to single characters or timelines. Episode three follows only Jeevan and young Kirsten. Episode seven belongs entirely to Miranda Carroll, tracing her life from childhood through her death in Malaysia. Episode nine focuses on Tyler's transformation into the Prophet.\n\nThis restructuring makes the adaptation feel like a companion piece rather than a translation. The series trusts viewers to hold multiple timelines in suspension without constant cross-cutting. It's a formally ambitious choice that pays off — each episode can develop its own rhythm and emotional register while contributing to the larger whole."
     },
     {
+      "question": null,
       "title": "The Travelling Symphony receives more individual characterization",
       "body": "In the novel, the Symphony functions primarily as a collective presence. We know Kirsten, the conductor, and a few other members, but the company as a whole carries Mandel's argument about art's survival function. Individual personalities matter less than the group's shared purpose.\n\nThe series gives Symphony members distinct personalities and backstories. We learn about the conductor's past, about the tensions within the company, about why specific people joined and what they've lost. Mackenzie Davis's Kirsten is more fully realized on screen than on the page — her trauma, her relationships, her gradual opening to connection all receive sustained attention.\n\nThis shift reflects television's need for ongoing character development across ten episodes. The novel can make its point about collective survival through implication and symbol. The series needs viewers to care about specific people over ten hours of screen time."
     },
     {
+      "question": null,
       "title": "Tyler Leander's threat is softened and his psychology deepened",
       "body": "Both versions feature the Prophet — a young religious leader who collects child brides and threatens the Symphony. The novel reveals his identity as Tyler Leander, Arthur's son, through careful misdirection. He's genuinely dangerous, and his death comes as a relief.\n\nThe series makes Tyler more sympathetic. Daniel Zovatto plays him as a traumatized child who found meaning in apocalyptic religion, not as a straightforward villain. We see his childhood with his mother Elizabeth, his obsession with the Dr. Eleven comics, his genuine belief that he's building something meaningful. The series also changes his fate — he survives, and his final scene with Kirsten suggests possible redemption.\n\nThis softening is the adaptation's most significant tonal shift. The novel treats Tyler as a cautionary figure — someone who turned trauma into violence and control. The series is more interested in understanding how that transformation happened and whether it can be reversed. It's a more generous interpretation, though arguably less dramatically effective."
     },
     {
+      "question": null,
       "title": "The Dr. Eleven comic becomes a visual and thematic anchor",
       "body": "Miranda Carroll's graphic novel — depicting Dr. Eleven on an isolated space station, trying to return to Earth — is the novel's central symbol. Copies survive the pandemic and connect characters across time. Kirsten carries two issues. Tyler obsesses over them. The comic's imagery of isolation and longing mirrors the post-pandemic world.\n\nThe series brings the comic to visual life with animated sequences that appear throughout the show. These animations mirror the narrative's themes — the space station's isolation reflects the characters' emotional states, Dr. Eleven's journey parallels their search for connection. The series also expands Miranda's creative process, showing her draw the comics as a way to process her failing marriage and corporate career.\n\nThis is adaptation at its best — taking a literary symbol and finding its visual equivalent without losing the original's meaning. The animated sequences are beautiful and strange, and they reinforce the show's central argument about art's function in survival. Both versions use the comic as a through-line, but the series makes it a recurring aesthetic element that deepens with each appearance.\n\nEither order works unusually well here. The series is faithful enough to Mandel's themes and structure that watching first won't spoil the novel's pleasures — you'll simply experience the story's second telling with different emphases and additions. Reading first gives you the novel's formal precision and then lets you see how Somerville expands that framework into something equally accomplished but tonally distinct.\n\nIf forced to choose: read the novel first. Mandel's structure is more controlled and her prose more elegant. Then watch the series as the finest possible companion piece — an adaptation that understands the source material deeply enough to expand it without betraying it. This is one of the rare cases where both versions are essential and neither diminishes the other."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/station-eleven",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

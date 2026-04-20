@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Elena's Interior Voice Disappears",
       "body": "The book's power lies in Elena's first-person narration, which exposes her jealousy, insecurity, and the way she mythologizes Lila. Every observation is filtered through Elena's competitive anxiety—when she describes Lila's brilliance, we're reading Elena's fear of being surpassed. The series loses this entirely.\n\nMazzucco plays Elena as watchful and determined, but without access to her thoughts, we miss the self-loathing that drives her. When Elena studies obsessively, the book reveals she's motivated less by love of learning than by terror of Lila's natural genius. The series shows her studying; the book shows her suffering. That's the difference between plot and psychology."
     },
     {
+      "question": null,
       "title": "Lila Becomes More Sympathetic on Screen",
       "body": "In the novel, Lila exists only through Elena's narration, which means we never know if she's truly brilliant or if Elena has constructed a rival to justify her own ambition. Ferrante deliberately makes Lila unknowable—Elena admits she's writing about someone she never fully understood.\n\nThe series, by necessity, gives Lila objective existence. Girace's performance makes Lila's intelligence and suffering visible without Elena's mediating jealousy. When Stefano hits Lila, the series presents it as straightforward abuse. The book filters it through Elena's complicated reaction—horror mixed with shameful satisfaction that Lila's marriage has failed. The series makes Lila a character; the book makes her a mirror for Elena's psyche."
     },
     {
+      "question": null,
       "title": "The Neighborhood's Violence Becomes Visual Spectacle",
       "body": "Ferrante describes the rione's brutality through Elena's desensitized child's-eye view—men beating wives, loan sharks throwing people down stairs, children hurling rocks. The violence is environmental, normalized. Elena reports it without emphasis because it's her reality.\n\nCostanzo films this violence with unflinching realism: Don Achille's murder, the New Year's Eve fireworks battle, Stefano dragging Lila by her hair. The visual impact is visceral in ways the book's matter-of-fact narration isn't. But the series loses something crucial—Elena's emotional numbness to violence, which the book conveys through narrative tone. When Elena describes horror casually, we understand how the neighborhood has shaped her. The series shows us violence; the book shows us what violence does to consciousness."
     },
     {
+      "question": null,
       "title": "The Wedding Scene Shifts Focus",
       "body": "Lila's wedding to Stefano is the novel's climax, but its meaning lies in Elena's reaction. She watches Stefano arrive wearing the shoes Lila designed with Rino, shoes he'd promised to keep from the Solaras. Elena sees Lila's face freeze in betrayal and understands the marriage is already over. But Elena's narration also reveals her guilty relief—Lila's failure means Elena might still win their unspoken competition.\n\nThe series stages the wedding beautifully, and Girace's expression when she sees the shoes is devastating. But we lose Elena's internal response, which is the scene's true subject. The book is about Elena watching Lila's dreams collapse; the series is about Lila's dreams collapsing. That shift from observer to observed changes everything about what the story means."
     },
     {
+      "question": null,
       "title": "Class Analysis Becomes Period Detail",
       "body": "Ferrante's novel is a sustained examination of how poverty and class mobility shape consciousness. Elena's education doesn't free her—it alienates her from her family while never fully admitting her to the middle class. The book tracks how Elena internalizes shame about her origins, how she polices her dialect, how she watches Lila's untutored brilliance with envy and condescension simultaneously.\n\nThe series recreates 1950s working-class Naples with meticulous accuracy—the cramped apartments, the outdoor markets, the lack of plumbing. But production design isn't analysis. The series shows poverty; the book examines what poverty does to ambition, friendship, and self-conception. When Elena goes to middle school in a borrowed dress, the series shows her discomfort. The book shows her learning to be ashamed of her mother, a shame that will poison her for decades. That's not something costume and set design can convey.\n\nRead the book first, because the series adapts plot while the novel is about consciousness. Watching first means experiencing the story as a friendship drama set against poverty and violence—compelling, but not revelatory. Reading first means understanding that the story is Elena's decades-long attempt to comprehend a friendship that defined and distorted her entire life. Every scene in the series will resonate differently when you know it's filtered through Elena's jealousy, guilt, and obsessive need to make sense of Lila.\n\nThe series is beautifully made and worth watching, but it's an adaptation of events, not interiority. Ferrante's achievement is making Elena's voice so intimate that you feel complicit in her worst thoughts—her satisfaction when Lila suffers, her resentment when Lila succeeds. The series can't do that. Read the book to understand why this story became a phenomenon; watch the series to see those events given visual life. But the book is the experience that will stay with you, because it's not about what happened between Elena and Lila—it's about what Elena has spent sixty years trying to understand about what happened."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/my-brilliant-friend",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

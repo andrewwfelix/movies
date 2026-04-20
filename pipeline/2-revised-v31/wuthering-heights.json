@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Nested Narrative Structure Is Flattened",
       "body": "Brontë tells the story at double remove — Lockwood narrates what Nelly Dean told him, and Nelly herself is recounting events she witnessed or heard about from others. This creates deliberate distance, unreliability, and a quality of rumor that makes the novel's moral ambiguity possible. You never get direct access to Catherine or Heathcliff's interiority; everything is filtered through observers with their own biases.\n\nFennell uses Nelly's voiceover in the opening and closing but otherwise works in a more linear, visually immediate mode. The camera shows you what happened rather than what Nelly claims happened. This makes the film more emotionally direct but loses the novel's epistemological uncertainty — the sense that you're hearing a legend rather than witnessing truth."
     },
     {
+      "question": null,
       "title": "The Second Generation Is Severely Compressed",
       "body": "The novel's second half follows young Cathy, Linton Heathcliff, and Hareton Earnshaw as Heathcliff pursues his revenge across decades. This subplot occupies nearly half the book and is essential to understanding what Heathcliff actually becomes — not a romantic anti-hero but a man who tortures children to punish their parents.\n\nFennell reduces this to a brief coda. Young Cathy appears, and Hareton is present, but their slow, hard-won redemption of each other — the novel's only hopeful arc — is largely absent. The film ends shortly after Catherine's death and Heathcliff's final decline, which makes for a tighter narrative but loses Brontë's long view of generational damage. Without the second generation, Heathcliff remains more sympathetic than Brontë intended."
     },
     {
+      "question": null,
       "title": "Heathcliff's Race and Class Are Foregrounded",
       "body": "The novel leaves Heathcliff's origins deliberately ambiguous. He's described in ways Victorian readers would have coded as racially other — \"dark-skinned,\" \"a little Lascar,\" \"gypsy\" — and his outsider status is fundamental to how he's treated and how he retaliates. But Brontë never makes this explicit, leaving generations of adaptations to cast white actors and downplay the racial subtext.\n\nFennell updates the class dynamics for a contemporary reading and reportedly makes Heathcliff's racialized otherness more explicit. Elordi's casting (he's white but plays Heathcliff as visibly marked as different) and the script's attention to the language used against him change the story's historical texture while sharpening its contemporary resonance. This is a genuine reinterpretation rather than simple faithfulness."
     },
     {
+      "question": null,
       "title": "Catherine's Self-Awareness Is Harder to Convey",
       "body": "Brontë gives Catherine some of the most extraordinary self-aware speeches in Victorian fiction. Her description of her love for Heathcliff as being \"like the eternal rocks beneath\" while her feeling for Edgar is \"like the foliage\" is a precise account of a woman who understands herself perfectly and chooses wrong anyway. She knows marrying Edgar is a betrayal of her essential self and does it because the alternative is social suicide.\n\nRobbie conveys this through performance — the way Catherine's body language changes when she's with Edgar versus Heathcliff, the visible effort of maintaining social performance. But a film can show what Catherine does; only the novel can show you the exact quality of her self-knowledge as she does it. The famous \"I am Heathcliff\" speech is in the film, but it lands differently when you've spent 200 pages inside the narrative voice that makes such declarations possible."
     },
     {
+      "question": null,
       "title": "Fennell's Erotic Register Is Explicit",
       "body": "The novel implies rather than depicts the physical dimension of Catherine and Heathcliff's relationship. Brontë works through atmosphere, possession, and absence — the eroticism is in what's not shown, in Heathcliff digging up Catherine's grave, in the violence that substitutes for consummation.\n\nFennell, coming off Saltburn's bathtub scene, brings a more explicitly erotic lens to the material. The film includes scenes of Catherine and Heathcliff as teenagers on the moors that are physically intimate in ways the novel only suggests. This isn't a faithfulness failure — it's a genuine reinterpretation. The sexuality the novel implies through Gothic displacement, Fennell makes visible. Whether this clarifies or diminishes Brontë's achievement depends on whether you think the displacement was the point.\n\nYes — though Wuthering Heights is a more demanding read than its reputation suggests. The famous opening chapters are deliberately disorienting; Brontë makes you work through Lockwood's obtuseness and Nelly's biases before you understand what you're reading. The structure is nested and non-linear, the characters are almost uniformly unsympathetic, and the novel refuses to tell you how to feel about any of it. Push through and you'll find one of the strangest, most structurally controlled novels in the English language.\n\nRead it first to understand what risks Fennell is taking. The novel's power is inseparable from its form — the way it withholds and displaces and refuses easy access. Fennell's film is more immediate, more visceral, and more conventionally cinematic. Both are valid approaches, but you should know what the novel is doing before you watch someone translate it into a medium that can't replicate its central formal achievement. The Penguin Classics edition with Pauline Nestor's introduction is a good place to start."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/wuthering-heights",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

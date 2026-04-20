@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Stella's Internal Life Is the Book's Greatest Asset",
       "body": "The novel unfolds through Stella's first-person narration, giving readers access to her obsessive thoughts about medication timing, her guilt over Abby leaving for college, and her terror of dying before getting new lungs. She counts steps, catalogs symptoms, and uses control as armor against chaos.\n\nThe film can't replicate this interiority. Richardson does excellent physical work—her body language conveys Stella's rigidity and her gradual loosening—but we lose the spiraling anxiety that makes Stella's rule-breaking with Will feel genuinely dangerous. The movie shows us a girl who's strict; the book shows us why she has to be.\n\nLippincott also gives us chapters from Will's perspective, revealing his self-loathing and his belief that he's already dead. The film keeps Will more mysterious, which makes him more conventionally romantic but less psychologically complex."
     },
     {
+      "question": null,
       "title": "Poe's Death Lands Harder on the Page",
       "body": "In the book, Poe Ramirez dies roughly two-thirds through, and Stella's grief unfolds across chapters. We see her unable to enter his empty room, her anger at the hospital for failing him, and her realization that all her planning can't prevent loss.\n\nThe film compresses Poe's decline into a montage and his death into a single scene. Within minutes of screen time, Stella moves from his bedside to the pool scene with Will. It's emotionally efficient but robs Poe's death of its weight. Moisés Arias is charming and funny in the role, but the movie uses Poe primarily as a catalyst for Stella's rebellion rather than as a fully realized character whose loss reshapes her worldview.\n\nThe book also includes a gut-wrenching moment where Stella finds Poe's YouTube channel and watches his videos, hearing his voice after he's gone. The film omits this entirely."
     },
     {
+      "question": null,
       "title": "The Pool Scene Is Staged for Maximum Visual Impact",
       "body": "The hydrotherapy pool scene exists in both versions, but the film transforms it into a swooning romantic climax. Baldoni shoots it in dreamy blue light, with Stella and Will using a pool cue to maintain five feet of distance while their hands drift closer underwater. It's beautiful, scored to emotional music, and designed to make audiences cry.\n\nThe book version is more intimate and conflicted. Stella's narration reveals her internal war between wanting to touch Will and knowing the medical consequences. The scene is romantic, but it's also frightening—Lippincott doesn't let us forget that this moment could kill one or both of them. The book lingers on Stella's guilt afterward, while the film treats it as a triumphant act of love."
     },
     {
+      "question": null,
       "title": "Will's Cartoons and Art Are Mostly Absent from the Film",
       "body": "In the novel, Will is an artist who draws darkly comic cartoons about life with CF. His sketchbook is how he processes rage and fear, and Stella's discovery of his drawings is a key moment of intimacy. The cartoons reveal Will's interior life in ways his dialogue doesn't.\n\nThe film reduces this to a few brief shots of Will sketching. We never see his work in detail, and the cartoons don't function as a window into his psyche. It's a practical cut—visual art is hard to convey meaningfully on screen—but it flattens Will's character. Without the cartoons, he's just a handsome boy who doesn't follow the rules, rather than an artist using dark humor to survive."
     },
     {
+      "question": null,
       "title": "The Ending Offers Different Kinds of Hope",
       "body": "Both versions end with Stella falling through ice during an impulsive trip outside, and Will saving her despite the infection risk. But the book's final chapters are more ambiguous. Will leaves for his experimental treatment in another state, and Stella returns to her hospital routine. They're apart, possibly forever, and the novel doesn't promise a reunion. Lippincott ends on Stella choosing to live fully in the time she has, not on romantic resolution.\n\nThe film adds a more hopeful coda. We see Will eight months later, healthy and traveling. He sends Stella a video, and the movie implies they'll find their way back to each other. It's a sweeter, more conventionally satisfying ending that softens the book's harder truth: love doesn't cure disease, and sometimes distance is permanent.\n\nRead the book first if you want the full emotional architecture of Stella and Will's relationship. The novel gives you their internal lives—Stella's obsessive planning as a response to trauma, Will's self-destructive nihilism, and the specific ways they change each other. The film is a competent adaptation that hits the major plot points, but it's engineered for maximum tearjerking rather than psychological depth. You'll understand why Stella's rules matter more if you've lived inside her anxious mind for three hundred pages.\n\nThat said, the film has its own strengths. Haley Lu Richardson's performance is more nuanced than the screenplay, and the visual storytelling—particularly the pool scene and the lighting throughout—creates a romantic atmosphere the book can only describe. If you watch first, you'll get a emotionally satisfying romance. If you read first, you'll get that plus the messy, frightening reality underneath."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/five-feet-apart",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

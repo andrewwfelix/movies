@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Loss of First-Person Interiority",
       "body": "The novel's power comes from being trapped inside Pudge's head as he spirals through grief, guilt, and philosophical questioning. Green's first-person narration lets us experience Pudge's obsessive replaying of Alaska's last words, his tortured analysis of whether her death was suicide, and his desperate search for meaning in Dr. Hyde's religious studies class.\n\nThe series, shot in standard third-person, transforms this internal journey into external drama. We watch Pudge grieve rather than experiencing his grief. Charlie Plummer does what he can with voiceover narration, but it feels tacked on—explanatory rather than immersive. The philosophical weight that makes the book devastating becomes just another plot point."
     },
     {
+      "question": null,
       "title": "Alaska's Complexity Gets Smoothed Over",
       "body": "Book Alaska is genuinely difficult—she strings Pudge along while pining for her boyfriend Jake, she's sometimes cruel to Lara, she uses people when she's manic and withdraws when depressed. Her mother's death has damaged her in ways that make her magnetic but also destructive. She's not a manic pixie dream girl; she's a real teenager whose mental health issues have serious consequences.\n\nKristine Froseth's Alaska is more conventionally sympathetic. The series keeps her unpredictability but sands down her cruelty. Her treatment of Lara becomes thoughtless rather than mean. Her manipulation of Pudge's feelings reads as confusion rather than selfishness. The adaptation wants us to love Alaska without the discomfort of seeing her flaws, which makes her death feel more like a tragedy that happens to the characters rather than one partially caused by Alaska's own self-destructive choices."
     },
     {
+      "question": null,
       "title": "The \"After\" Section Loses Its Obsessive Focus",
       "body": "The novel's second half is a detective story driven by grief. Pudge and the Colonel become obsessed with reconstructing Alaska's final hours, analyzing her last words, debating whether she killed herself. This investigation is really about Pudge's inability to accept that Alaska is gone and his desperate need to forgive both her and himself for letting her drive drunk.\n\nThe series spreads this investigation across multiple episodes but dilutes its intensity with subplots—the Colonel's relationship drama, expanded scenes with Takumi, more time with the Weekday Warriors. The mystery becomes one element among many rather than the consuming obsession that defines the book's second half. The series also adds a flash-forward epilogue showing Pudge years later, providing closure that the novel deliberately withholds."
     },
     {
+      "question": null,
       "title": "Religious and Philosophical Themes Get Simplified",
       "body": "Dr. Hyde's world religions class is central to the book's exploration of how different traditions answer the question of suffering. Pudge's final essay on labyrinth imagery—how we suffer, how we find our way out—is the novel's thematic climax. Green uses Buddhism, Christianity, and other traditions to frame Pudge's grief in universal terms.\n\nThe series includes Dr. Hyde's class but treats it more as atmospheric boarding school detail than thematic foundation. The labyrinth metaphor appears but without the philosophical weight Green gives it. The adaptation seems nervous about dwelling on religious questions, perhaps worried about alienating viewers, so it keeps the imagery while losing the substance."
     },
     {
+      "question": null,
       "title": "The Pranks Become More Elaborate and Less Meaningful",
       "body": "In the book, the pranks against the Weekday Warriors—particularly the final \"barn prank\" that Alaska helps plan before her death—serve thematic purposes. They're about class warfare, about the scholarship kids asserting themselves against wealth and privilege. The barn prank's success is bittersweet because Alaska didn't live to see it.\n\nThe series expands the pranks into elaborate set pieces with higher production values—more explosions, more chaos, more visual spectacle. They're entertaining but lose their connection to the story's class dynamics. The barn prank becomes a crowd-pleasing finale rather than a melancholy reminder of Alaska's absence. The series wants the pranks to be fun; the book understands they're compensation for powerlessness.\n\nAbsolutely read the book first—the series cannot replicate what makes Green's novel devastating. The book's first-person narration creates an intimacy with Pudge's grief that the series' conventional camera work cannot match. You need to experience Alaska through Pudge's obsessed, unreliable perspective to understand why her death breaks him so completely. The series shows you a tragic story; the book makes you live inside the tragedy.\n\nIf you watch first, you'll get a competent YA drama with strong performances and beautiful cinematography. But you'll miss the philosophical depth that elevates Looking for Alaska above typical teen fiction—the way Green uses Pudge's search for Alaska's \"Great Perhaps\" to explore how we find meaning after loss. The series is adequate; the book is essential. Read it first, then watch the adaptation as a well-cast but ultimately shallow companion piece."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/looking-for-alaska",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

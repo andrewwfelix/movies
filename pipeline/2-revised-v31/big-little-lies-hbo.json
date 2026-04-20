@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The relocation from Sydney to Monterey loses Australian specificity but gains visual grandeur",
       "body": "Moriarty set the novel in Pirriwee, a beachside suburb of Sydney, and the specifically Australian texture — the school culture, the social dynamics, the particular flavor of middle-class anxiety down under — is part of the book's comedy. The parent interviews are peppered with Australian idioms and the social hierarchies reflect Sydney's coastal geography.\n\nVallée moves everything to Monterey, California, which gives the series the Big Sur coastline as a visual backdrop and loses some of the novel's local specificity. The Monterey setting works beautifully on screen — the crashing waves, the modernist beach houses, the fog rolling in — but it's a different kind of beauty than Moriarty's Sydney. Neither is a mistake; they're different registers of the same story."
     },
     {
+      "question": null,
       "title": "Nicole Kidman's performance as Celeste deepens the novel's portrayal of domestic violence",
       "body": "This is one of the great performances of recent television, and it genuinely deepens the source material. Moriarty writes Celeste's situation with clarity and without sentimentality — the way she rationalizes Perry's violence, the shame that keeps her silent, the genuine love that coexists with fear. Kidman plays it with a physical precision that makes the character's denial viscerally comprehensible.\n\nWatch the way Celeste holds herself after Perry hits her — the speed with which she rebuilds composure, the practiced smile she uses to deflect concern, the way her body tenses when he enters a room. There are scenes in the series, particularly Celeste's therapy sessions with Dr. Amanda Reisman, that are more affecting than the equivalent passages in the novel, and Kidman is why. She won an Emmy for the role and deserved it."
     },
     {
+      "question": null,
       "title": "Moriarty's comic voice is sharper and more sustained than the series can manage",
       "body": "The novel is funnier than the series, and this is the main thing the adaptation loses. Moriarty's comedy is delivered through the police interview transcripts that punctuate the narrative — parents offering wildly contradictory accounts of the other parents, the school community performing outrage while enjoying every moment of the scandal. The full comic texture of Moriarty's parent chorus is richer on the page.\n\nThe series keeps this structural device but compresses it; the interviews are shorter and less frequent, used more for atmosphere than sustained satire. The novel's funniest character, Thea, who runs the school petition against bullying with totalitarian zeal, is barely present in the series. Moriarty's wit is still there in the dialogue, but the novel's sustained comic register is one of its great pleasures, and the series can't quite match it."
     },
     {
+      "question": null,
       "title": "Reese Witherspoon's Madeline is warmer and more sympathetic than the novel's version",
       "body": "Witherspoon plays Madeline as a force of nature barely contained by social convention, which is exactly right. She also brings a warmth to the character that the novel occasionally withholds — Moriarty's Madeline is funnier and occasionally less sympathetic than Witherspoon's version. The novel's Madeline is more willing to be petty, more openly vindictive toward Bonnie, more comfortable weaponizing her daughter Chloe in her war against her ex-husband Nathan.\n\nThe series' Madeline is easier to root for; the novel's is more interesting to observe. Witherspoon's performance emphasizes Madeline's loyalty and her genuine love for her friends, making her affair with the theater director Joseph feel more like a mistake than a character revelation. Both versions work, but they're asking you to feel slightly different things about the same woman."
     },
     {
+      "question": null,
       "title": "The ending arrives at the same destination but the series draws out the trivia night with Vallée's visual style",
       "body": "Both versions arrive at the same destination: Perry Wright dead at the bottom of the stairs, pushed by Bonnie after he attacks Celeste and Jane reveals he raped her. The revelation lands with equivalent force in both versions — the moment when Jane recognizes Perry as \"Saxon Banks,\" the fake name he gave her the night of the assault, is devastating whether you're reading it or watching Shailene Woodley's face register the recognition.\n\nThe series has the advantage of seven hours of Monterey light and Vallée's lingering camera — the final episode's trivia night sequence is superbly constructed, intercutting the confrontation with flashbacks to Perry's violence and Jane's assault. The novel has the advantage of having built the same revelation through a different kind of accumulation, using the police transcripts to create dread without spectacle. Both endings work; both earn what they ask you to feel.\n\nEither order works better here than almost anywhere on this site. Read first for Moriarty's full comic register and the specifically Australian texture the series loses — the novel is funnier and sharper about the social dynamics of school gate politics. Watch first for Kidman and the Monterey coastline, for Vallée's direction and the way the series uses silence and landscape to build dread, then read to recover everything the adaptation compressed.\n\nThe consequence of watching first is that you'll know who dies and who killed him, which removes some of the novel's mystery structure but doesn't diminish its pleasures — Moriarty's wit and the precision of her character work remain intact. The consequence of reading first is that you'll spend the series waiting for the trivia night, but Kidman's performance and the visual beauty of the adaptation make the wait worthwhile. Both are excellent; you should do both."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/big-little-lies-hbo",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

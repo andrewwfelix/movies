@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Lisbeth's Institutional History",
       "body": "The novel is richer and more complete on Lisbeth's backstory. Larsson devotes substantial space to the Swedish guardianship system that has made her legally incompetent as an adult, her history with psychiatric institutions, and the specific bureaucratic machinery that has controlled her life since childhood. This context makes her rage and her methods comprehensible in ways the film can only gesture toward.\n\nFincher's version gives you a more mythic Lisbeth — introduced in a sequence that may be the finest character establishment in his filmography, physically transformed by Mara's performance, ferociously contained. What you lose is the full weight of institutional abuse that shapes her. The book's Lisbeth is more extensively explained; the film's Lisbeth is more iconic. Both work, but the novel's version is the richer one."
     },
     {
+      "question": null,
       "title": "The Wennerstrom Affair and Financial Journalism",
       "body": "Larsson opens with Blomkvist's libel conviction over his exposé of financier Hans-Erik Wennerstrom — the novel treats Swedish financial journalism, corporate fraud, and business reporting as central to Blomkvist's character and the story's stakes. This subplot runs through the entire book and provides the resolution's second act.\n\nThe film compresses this to backstory. Fincher gives you enough to understand Blomkvist's disgrace but treats it as setup rather than substance. Readers who want to understand what Blomkvist is fighting for — and why he's willing to spend months on a frozen island — need the novel. The film gives you a disgraced journalist; the book gives you a crusader."
     },
     {
+      "question": null,
       "title": "Fincher's Formal Mastery",
       "body": "The film is better made than the book it adapts. Fincher brings the same precision he applied to Zodiac and The Social Network — the film is shot in a blue-grey Swedish cold that makes every interior feel like a crime scene, Jeff Cronenweth's cinematography is immaculate, and the Trent Reznor and Atticus Ross score is one of the decade's best. The opening title sequence alone is a masterclass in tone-setting.\n\nLarsson's novel is baggy in places, occasionally digressive, and structurally uneven — the Harriet Vanger mystery and the Wennerstrom plot don't quite cohere. Fincher streamlines ruthlessly, and the result is a thriller of the highest craft. This is filmmaking that elevates its source material through sheer formal control."
     },
     {
+      "question": null,
       "title": "The Violence and Sexual Assault",
       "body": "Both versions handle the novel's most disturbing sequences with unflinching directness. The assaults on Lisbeth by her guardian Bjurman and her methodical revenge are depicted in both book and film without looking away. Fincher does not soften this material — the basement sequence with Martin Vanger is as brutal on screen as it is on the page.\n\nThis is not a case where adaptation has sanitized the source. Both are genuinely difficult to sit with, as they should be. The difference is that the novel gives you more time with Lisbeth's internal processing of trauma, while the film trusts Mara's performance to convey what cannot be spoken."
     },
     {
+      "question": null,
       "title": "The Ending and Lisbeth's Feelings",
       "body": "The film improves on the book's ending. Larsson closes with a coda involving Lisbeth's romantic feelings for Blomkvist — she buys him an expensive gift, travels to deliver it, and sees him with his longtime lover Erika Berger. The novel explores this at length and somewhat conventionally.\n\nFincher ends on Lisbeth alone, watching Blomkvist from a distance, discarding the gift in a dumpster. It's a colder, more ambiguous conclusion that suits the character better — Lisbeth as permanently outside, unable to cross the threshold into conventional intimacy. The film's final image of her riding away on her motorcycle is more honest than the novel's more sentimental resolution.\n\nEither order works unusually well here. Read first for the full Lisbeth — her institutional history, her legal situation under Swedish guardianship, the specific weight of her backstory that makes her methods comprehensible. You'll also get the complete Wennerstrom subplot and a richer sense of what Blomkvist is fighting for beyond the Vanger mystery.\n\nWatch first for one of cinema's great character introductions and a film that makes a legitimate case for equalling its source through formal mastery. Fincher's version is so precisely made that it doesn't spoil the novel — it makes you want to spend more time in Lisbeth's world. This is the site's closest contest, and you should experience both."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-girl-with-the-dragon-tattoo-fincher",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

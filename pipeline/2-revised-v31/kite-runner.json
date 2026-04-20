@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Amir's Interior Voice Is the Novel's Engine",
       "body": "The novel is narrated entirely by Amir, and Hosseini gives him one of the most forensically honest interior voices in popular fiction. Amir doesn't just feel guilty — he understands exactly why he did what he did, catalogues his own cowardice with painful clarity, and spends decades constructing elaborate self-justifications that he then dismantles. He tells you he's a coward, explains why he's a coward, and makes you complicit in his cowardice by forcing you to live inside his head.\n\nThe film can show Khalid Abdalla's Amir behaving guiltily — avoiding Hassan, planting the watch to drive him away, flinching when Rahim Khan mentions redemption — but it cannot replicate the queasy intimacy of being locked inside a narrator who knows he's a coward and tells you so anyway. Abdalla is a capable and sympathetic presence, but the film loses the psychological claustrophobia that makes the novel so devastating. You watch Amir seek redemption; in the book, you seek it with him."
     },
     {
+      "question": null,
       "title": "Hassan's Friendship Is Compressed",
       "body": "In the novel, Hassan is rendered with great tenderness across years of shared childhood. Hosseini takes his time establishing Hassan's loyalty, his dignity, his simple goodness, and the texture of his friendship with Amir — the kite tournaments, the pomegranate tree, the storytelling under the branches. The assault happens roughly a third of the way through the book, which means you've spent a hundred pages loving Hassan before you watch Amir fail him.\n\nThe film compresses their friendship into a handful of scenes. Ahmad Khan Mahmoodzada is affecting as young Hassan, and the kite tournament sequence is beautifully shot, but the accumulated weight of years together is necessarily thinner. The central betrayal is still affecting, but it doesn't carry quite the same devastating force it does on the page, where you've had time to understand exactly what Amir is throwing away."
     },
     {
+      "question": null,
       "title": "Afghanistan's Texture Is Flattened",
       "body": "One of the novel's great achievements is its portrait of Kabul before and after the Soviet invasion and Taliban rule — a city of kite tournaments, pomegranate trees, bustling bazaars, and ordinary life that most Western readers had never encountered. Hosseini's Afghanistan is vivid and specific in a way that makes its destruction feel like a genuine loss. He gives you the smells, the sounds, the social fabric, the way Baba moves through the city as a man of consequence.\n\nThe film captures this visually — the kite-fighting scenes are gorgeous, and the contrast between 1970s Kabul and the rubble of the Taliban years is stark — but the texture of daily life that Hosseini builds through prose is necessarily thinner on screen. The movie was shot largely in western China standing in for Afghanistan, and while the production design is convincing, you lose the sensory immersion that makes the novel's Afghanistan feel lived-in rather than merely depicted."
     },
     {
+      "question": null,
       "title": "Baba's Complexity Is Reduced",
       "body": "Amir's father Baba is one of Hosseini's richest creations — a man of tremendous charisma, fierce love, and genuine moral seriousness who has nonetheless committed a betrayal of his own that mirrors and explains Amir's. The novel has room to establish him fully: his contradictions, his disappointments in Amir, his struggle to maintain dignity as a refugee pumping gas in California, and the secret he carries about Hassan's parentage. Baba's hypocrisy — preaching honesty while hiding his own illegitimate son — is the novel's central irony.\n\nThe film gives Homayoun Ershadi the material to suggest this complexity, and he brings gravity and warmth to the role, but Baba's full arc is compressed. His trajectory from Kabul patriarch to San Jose gas station attendant is the novel's most quietly devastating thread, and the film rushes through it. The revelation that Hassan is Baba's son lands in both versions, but the novel earns it more fully by spending time with Baba's contradictions."
     },
     {
+      "question": null,
       "title": "Sohrab's Trauma Is Rushed",
       "body": "The novel's final third, in which Amir attempts to rescue Hassan's son Sohrab from Taliban captivity and then navigate the boy's profound psychological damage, is handled with care and patience. Sohrab's near-suicide in the bathtub and his long silence afterward — he barely speaks for months — are given the space they need. Hosseini doesn't rush the recovery. The kite-flying ending feels earned because you've lived through Sohrab's trauma and Amir's patient, uncertain attempts to reach him.\n\nThe film rushes through this section to reach its resolution. Ali Danish Bakhtyari is affecting as Sohrab, and the final kite-flying scene still lands emotionally, but the psychological recovery feels abbreviated. The movie compresses months of silence into what feels like weeks, and the catharsis is less fully earned than it is on the page. You get the redemption, but you don't feel the cost of it the way the novel makes you feel it.\n\nYes — this is a novel that works primarily through interiority and accumulated time, two things film handles poorly. The film is a reasonable companion piece and a sincere adaptation, but it was always going to struggle with a story whose power comes from being trapped inside a guilty conscience for four hundred pages. Hosseini's prose is direct and accessible, and the novel moves quickly despite its length. The emotional impact depends on spending time with Amir's self-examination, Hassan's goodness, and Baba's contradictions — all of which the film compresses.\n\nRead the book and you'll feel the ending's redemption properly, because you've earned it alongside Amir. Watch the film first and the ending will still move you — Marc Forster knows how to stage a cathartic moment — but you won't fully understand what it cost to get there. The kite-flying scene works in both versions, but only the novel makes you feel the weight of everything that had to happen for Amir to deserve that moment."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/kite-runner",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

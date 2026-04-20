@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Tóibín's prose restraint is the novel's central achievement",
       "body": "The book withholds Eilis's inner life almost entirely. Tóibín describes what she observes — the color of a dress, the taste of food, the layout of a room — and lets emotion accumulate in the space between observation and articulation. This technique resembles Kazuo Ishiguro's method in The Remains of the Day: the feeling is present, but the character never names it directly.\n\nThe film necessarily makes Eilis's emotions more visible. Ronan's face registers homesickness, longing, and conflict in ways that prose restraint forbids. This is warmer and more immediately accessible, but it reduces the distinctive quality of Tóibín's method. The novel asks you to feel what Eilis will not say; the film shows you what she feels."
     },
     {
+      "question": null,
       "title": "Saoirse Ronan bridges the gap between novel and film",
       "body": "Ronan's Oscar-nominated performance does real work that the screenplay cannot. She plays Eilis as observant, contained, and quietly luminous — performing interiority without narrating it. When Eilis sits at the boarding house dinner table or walks through Bartocci's, Ronan's face registers thought and feeling in ways that approximate the novel's restraint.\n\nThis is one of the rare cases where a lead performance partially compensates for what adaptation necessarily loses. Ronan doesn't replace Tóibín's prose, but she translates its method into cinematic terms. The result is a performance that feels literary in its withholding."
     },
     {
+      "question": null,
       "title": "The novel gives Ireland and Brooklyn equal weight",
       "body": "Tóibín renders Enniscorthy with the same specificity he gives Brooklyn. The social hierarchies, the Sunday routines, the texture of small-town surveillance — all are as fully realized as Eilis's life in America. The novel is genuinely ambivalent about which world is better, which makes Eilis's choice agonizing.\n\nThe film is beautiful in both settings, but it slightly favors Brooklyn as the aspirational space. The cinematography makes Brooklyn brighter, more open, more full of possibility. Ireland is lovely but constrained. This tonal preference makes Eilis's choice feel more obvious than it does in the novel, where both worlds offer real but incompatible forms of belonging."
     },
     {
+      "question": null,
       "title": "Tony is more ordinary in the novel, and that matters",
       "body": "Emory Cohen's Tony is warm, charming, and immediately likable. The romance feels natural and destined. In the novel, Tony is slightly less polished — more ordinary, less immediately appealing. He's kind and sincere, but Eilis's love for him develops slowly and deliberately.\n\nThis difference is crucial. The novel's Tony represents a choice Eilis makes, not a fate she falls into. The film's Tony is easier to love, which makes Eilis's return to Brooklyn feel more like following her heart. The novel's Tony makes her return feel more like choosing a life she built over a life she inherited."
     },
     {
+      "question": null,
       "title": "The ending is more abrupt and ambiguous in the novel",
       "body": "Both versions end with Eilis on the boat back to Brooklyn, having chosen Tony and America over Jim and Ireland. The film's ending is warmer and more resolved — Eilis smiles slightly, and the final shot suggests contentment. The novel's ending is more abrupt. Eilis boards the boat, and the book ends. There's no reassurance, no confirmation that she's made the right choice.\n\nBoth endings are satisfying, but the novel's is truer to the difficulty of what Eilis has done. She hasn't chosen happiness over sadness; she's chosen one form of belonging over another, and the cost is permanent. The film softens this slightly, which is understandable but diminishes the novel's clear-eyed honesty about what immigration requires.\n\nYes. Tóibín's prose restraint is the experience, not just a stylistic choice. The novel's meaning lives in what Eilis doesn't say, in the gap between her observations and her feelings. No film can replicate that method, no matter how faithful the adaptation or how exceptional the lead performance.\n\nRead the book first and the film becomes a companion piece — a chance to see Saoirse Ronan do the work of Tóibín's prose with her face. Watch first and you'll enjoy a beautiful, moving film, but you'll miss what makes the novel irreplaceable: its refusal to explain what it makes you feel."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/brooklyn",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

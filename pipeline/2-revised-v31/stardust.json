@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The film is funnier and warmer than the novel's formal restraint",
       "body": "Gaiman's novel is gently whimsical, written in a measured, slightly archaic prose that keeps the reader at a deliberate distance from its characters. This is not a flaw — it is a formal choice that honors the Victorian fairy tales Gaiman is evoking. The novel's tone is elegant and melancholy, with comedy that emerges from situation rather than performance.\n\nVaughn's film leans into comedy with more energy. The ghosts of the murdered princes bicker and comment on the action with visible relish. Robert De Niro's Captain Shakespeare is played for laughs and heart in equal measure. The witches' schemes are rendered with more physical comedy. This is not a failure of the adaptation — it is a deliberate tonal choice that makes the film more immediately entertaining and less formally distinctive. The novel's restraint is deliberate; the film's exuberance is also."
     },
     {
+      "question": null,
       "title": "Captain Shakespeare is the film's best invention",
       "body": "De Niro's Captain Shakespeare — a fearsome sky pirate who is secretly a cross-dresser, whose ship's crew knows and doesn't care — has no equivalent in the novel. He is the film's most beloved addition, and for good reason: De Niro is clearly having the time of his life, and the character adds a comic dimension and a surprisingly touching subplot about performance and authenticity that Gaiman's novel doesn't include.\n\nShakespeare's ship provides Tristran and Yvaine with safe passage and a space for their relationship to develop. His reveal — that his fearsome reputation is a performance, and that his true self is flamboyant and kind — is played with genuine warmth. This is one of the best original additions to a source material on this site, and it gives the film a tonal richness the novel doesn't attempt."
     },
     {
+      "question": null,
       "title": "The ending: Gaiman prefers the film's version to his own",
       "body": "The novel ends on a note of elegiac melancholy. Tristran and Yvaine reign as king and queen of Stormhold, but the ending withholds the warmth of a conventional fairy tale conclusion, leaning instead toward the bittersweetness of a story about mortality and starlight. Gaiman's prose in the final pages is beautiful and deliberately distant, refusing to give the reader the emotional release they might expect.\n\nVaughn's film gives the story a more conventionally joyful ending — Tristran and Yvaine are together, the kingdom is saved, and the final images are warm and triumphant. Gaiman has publicly stated he thinks the film got it right, that the ending he wrote was too melancholy for the story he had told. This is one of the rare cases on this site where the adapted ending is arguably superior to the source's, on the author's own authority."
     },
     {
+      "question": null,
       "title": "Michelle Pfeiffer's Lamia is a more developed antagonist",
       "body": "The novel's witches are a collective threat, less individualized. Lamia is one of three sisters, and while she is the most active, the novel treats them as a unit. The film focuses on Lamia and gives Pfeiffer room to be magnificent. She plays the witch with a cold, vain ferocity that makes her genuinely threatening, and her physical deterioration as she uses her magic is rendered with visible relish.\n\nPfeiffer's performance is one of the film's highlights — she is beautiful and terrifying in equal measure, and the film's decision to make her the primary antagonist gives the story a clearer villain than the novel provides. Her final confrontation with Yvaine is more dramatic and satisfying than the novel's equivalent scene."
     },
     {
+      "question": null,
       "title": "Gaiman's prose is the novel's irreplaceable pleasure",
       "body": "The novel's formal beauty is inseparable from its prose — the slightly archaic rhythms, the fairy-tale distancing that Gaiman uses to evoke a tradition while inhabiting it. Sentences like \"There was once a young man who wished to gain his Heart's Desire\" signal the genre and the tone from the first page. This voice is the reading experience, and the film necessarily trades it for something more immediately accessible.\n\nReaders of the novel will find a different but equally real pleasure in Gaiman's sentences that the film's warmth cannot replicate. The novel is a work of prose craft as much as it is a story, and that craft is what makes it worth reading even after you have seen the film.\n\nThis is one of the genuinely open questions on this site. The novel is short — an afternoon's reading, approximately 250 pages in most editions — and its prose is worth encountering in its own right. Gaiman's formal, slightly archaic voice is part of the reading experience, and it cannot be replicated by the film. If you value prose craft and the pleasures of a well-told fairy tale, read first.\n\nBut the film is so well-cast and so committed to its pleasures that watching first produces an equally satisfying experience. Charlie Cox and Claire Danes have real chemistry, De Niro and Pfeiffer are doing some of their most enjoyable work, and the film's tonal choices make it more immediately entertaining than the novel. The ending question cuts both ways: the film's version is arguably better, but the novel's elegiac close has its own distinctive quality. Either order works — choose based on whether you want prose or performance first."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/stardust",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

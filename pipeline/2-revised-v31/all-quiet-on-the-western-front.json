@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The German perspective restored",
       "body": "All previous major screen adaptations of the novel were made in English — most notably the celebrated 1930 Lewis Milestone film — which created an inherent strangeness in watching German soldiers speak English on the Western Front.\n\nBerger's film is made in German, by Germans, and this restoration of the novel's original perspective transforms the material: the audience is positioned with Paul rather than against him, inside German experience rather than observing it. For a novel written as a German soldier's account of what the war actually was, this seems so obviously correct it is startling that it took ninety years."
     },
     {
+      "question": null,
       "title": "The armistice negotiation subplot",
       "body": "The film adds an entirely new narrative thread showing Matthias Erzberger (Daniel Brühl) negotiating the November 1918 armistice with French officials while Paul is still dying in the trenches.\n\nThis addition is the film's boldest creative choice and its most controversial: it frames the waste of Paul's death against the bureaucratic indifference of the men who could have stopped the killing hours earlier. The novel doesn't make this argument explicitly; the film makes it the climax.\n\nBerger intercuts the armistice signing with General Friedrichs ordering a final, pointless attack in the last hours before the ceasefire takes effect — an invented character representing the military leadership's refusal to accept defeat. It works, and it goes further than Remarque went."
     },
     {
+      "question": null,
       "title": "Paul's interiority and the first-person voice",
       "body": "Remarque's novel is narrated in Paul's first person — his observations, his grief, his gradual understanding that the men who sent him here had nothing useful to tell him about what he would find.\n\nThe novel's voice is its central achievement: young, increasingly hollow, punctuated by moments of beauty that survive the war's efforts to kill them. Felix Kammerer's performance captures Paul's dissolution visually — his face does the work the novel's narration does — but the prose voice is irreplaceable.\n\nThe film cannot give you the specific quality of Paul's inner life as he watches himself become someone he doesn't recognise. Passages like Paul's return home on leave, where he realises he can no longer speak to his family about what he's seen, lose their precision without the narration."
     },
     {
+      "question": null,
       "title": "The combat sequences and visual scale",
       "body": "Berger's battle sequences are among the most viscerally effective depictions of World War I combat ever filmed — the mud, the tanks, the gas, the flamethrowers, the specific mechanical horror of industrial warfare rendered without any of the heroic framing that war films often struggle to avoid.\n\nThe novel describes the same horror in prose that is deliberately matter-of-fact about atrocity, which is its own formal achievement. Remarque's descriptions of rats in the trenches, of bodies used as sandbags, of men screaming for hours in no man's land are precise and unadorned.\n\nBoth versions refuse to make the killing beautiful; the film makes it overwhelming in ways that prose, which can be set down, cannot. The sound design — the constant mechanical grinding, the screaming, the silence after an artillery barrage — is as important as the visuals."
     },
     {
+      "question": null,
       "title": "The ending and the butterfly",
       "body": "Remarque's ending — Paul killed on a quiet day in October 1918, weeks before the armistice, reaching toward a butterfly — is one of literature's most famous final passages: the army report noting nothing of significance has happened on the day a generation ended.\n\nThe film uses the butterfly and the armistice framing simultaneously, which makes Paul's death resonate against the very moment when it could have been prevented. Berger shows Paul reaching for the butterfly in a crater while Erzberger signs the armistice agreement, and then shows General Friedrichs ordering the final attack that kills Paul in the last hours before the ceasefire.\n\nBoth endings are devastating; the film's is more operatic, the novel's more precise. Readers will feel the difference; neither is the wrong choice.\n\nYes — the novel's first-person narration is the experience of being inside a young man's disillusionment in real time, and it is best encountered before the film's visual weight fills in that space. Remarque's prose voice — matter-of-fact about horror, capable of sudden beauty, increasingly hollow as Paul loses the ability to imagine a future — is the novel's irreplaceable achievement. Read first for Paul's voice, for the passages where he tries to explain the war to his family and realises he can't, for the moment when he kills a French soldier in a shell hole and spends hours with the body.\n\nWatch Berger's film for the combat sequences and the armistice framing — which adds something Remarque didn't write and does it honourably. The film's visual scale and sound design create an overwhelming sensory experience that prose cannot replicate, and the restoration of the German perspective makes this the first adaptation that feels like it's made from inside the experience rather than observing it. Both are essential; the novel first."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/all-quiet-on-the-western-front",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

@@ -1,0 +1,104 @@
+{
+  "createdAt": "2026-04-20",
+  "lastUpdated": "2026-04-20",
+  "site": "booksversusmovies.com",
+  "currentBaseline": {
+    "date": "2026-04-20",
+    "dailyImpressions": 400,
+    "dailyClicks": 10,
+    "notes": "Current performance as of today"
+  },
+  "affiliateGoals": {
+    "primaryProgram": "Amazon Associates",
+    "targetFirstSale": {
+      "targetDate": "2026-05-25",
+      "daysFromNow": 35,
+      "realisticDateRange": ["2026-05-15", "2026-06-10"],
+      "requiredDailyImpressions": 1200,
+      "requiredDailyClicks": 30,
+      "assumedSiteToAffiliateCTR": 2.5,
+      "assumedConversionRate": 1.5,
+      "status": "in-progress",
+      "progressNotes": "Currently at ~400 impressions and 10 clicks. Need ~3x growth in impressions."
+    },
+    "targetConsistentSales": {
+      "goal": "3 sales per week",
+      "targetDate": "2026-07-01",
+      "requiredDailyImpressions": 2500,
+      "requiredDailyClicks": 60,
+      "status": "not-started"
+    }
+  },
+  "trafficMilestones": [
+    {
+      "name": "First Traffic Doubling",
+      "targetImpressions": 800,
+      "targetDate": "2026-05-10",
+      "status": "in-progress",
+      "notes": "Focus on optimizing top 10 existing pages"
+    },
+    {
+      "name": "Meaningful Volume",
+      "targetImpressions": 1500,
+      "targetDate": "2026-06-01",
+      "status": "not-started",
+      "notes": "This level should start generating consistent affiliate clicks"
+    },
+    {
+      "name": "Strong Growth Phase",
+      "targetImpressions": 3000,
+      "targetDate": "2026-08-01",
+      "status": "not-started"
+    }
+  ],
+  "contentGoals": {
+    "newComparisonPages": {
+      "target": 12,
+      "byDate": "2026-06-30",
+      "priorityPages": ["reminders-of-him", "gone-girl", "the-shining", "dune", "arrival"],
+      "status": "not-started"
+    },
+    "optimizeExistingPages": {
+      "target": 15,
+      "byDate": "2026-05-20",
+      "focus": "Improve CTR on high-impression low-CTR pages",
+      "status": "in-progress"
+    }
+  },
+  "streamingCTA": {
+    "goal": "Add 'Watch now on Amazon' links to top 10 pages",
+    "targetDate": "2026-05-05",
+    "status": "not-started",
+    "notes": "Higher conversion potential than book links. Prioritize this."
+  },
+  "trackingMetrics": {
+    "impressions": {
+      "current": 400,
+      "target": 1500,
+      "unit": "daily average"
+    },
+    "clicks": {
+      "current": 10,
+      "target": 40,
+      "unit": "daily average"
+    },
+    "affiliateLinkCTR": {
+      "current": null,
+      "target": 2.5,
+      "unit": "percent"
+    },
+    "conversionRate": {
+      "current": null,
+      "target": 1.5,
+      "unit": "percent"
+    }
+  },
+  "history": [
+    {
+      "date": "2026-04-20",
+      "dailyImpressions": 400,
+      "dailyClicks": 10,
+      "notes": "Baseline recorded"
+    }
+  ]
+}

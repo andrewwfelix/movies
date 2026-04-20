@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Ender's Age and the Compression of Time",
       "body": "The novel's Ender is six years old when recruited and spends years at Battle School — progressing through launch group, Salamander Army under Bonzo Madrid, Rat Army under Dink Meeker, and finally commanding Dragon Army. This duration is essential: we watch childhood being systematically stripped away across years of isolation and manipulation. Asa Butterfield was twelve during filming, and the timeline compresses to what feels like weeks or months.\n\nThe age difference fundamentally alters the story's horror. Card's novel is about small children being weaponised — six-year-olds playing war games that are not games. The film's older protagonist and compressed timeline make Ender's transformation seem rapid rather than the slow erosion it is in the book. The novel's power is partly chronological: duration matters when you're watching a childhood disappear."
     },
     {
+      "question": null,
       "title": "The Interior Experience",
       "body": "Card's novel lives inside Ender's head — his strategic calculations during battles, his awareness of how Graff is manipulating him, his horror at his own capacity for violence, his loneliness as a condition that has been deliberately engineered. The book constructs a child who is simultaneously brilliant, empathetic, and capable of extreme cruelty, and who knows all three things about himself. This self-awareness is the novel's engine.\n\nButterfield captures Ender's quietness and intelligence but cannot give us the internal monologue that makes the character's moral arc genuinely devastating. The film shows us Ender winning battles; the book shows us Ender understanding exactly why he wins and hating himself for it. Everything the novel does that matters requires the reader's sustained presence inside Ender's mind. The film cannot go there."
     },
     {
+      "question": null,
       "title": "Peter, Valentine, and the Missing Subplot",
       "body": "The novel's parallel storyline — in which Ender's psychopathic older brother Peter and compassionate sister Valentine manipulate global politics through anonymous online identities as Locke and Demosthenes — is almost entirely absent from the film. This subplot is one of Card's most prescient inventions, written in 1985, predicting how anonymous political commentary could shape public opinion through early computer networks.\n\nThe Locke and Demosthenes material provides thematic counterweight: while Ender is being trained to command fleets, his siblings are learning to command nations through rhetoric. The film's removal of this storyline leaves it with no world beyond Battle School, no sense of the geopolitical stakes that make Ender's training urgent. Valentine becomes a minor character who exists only to comfort Ender. The book is richer for containing both worlds simultaneously."
     },
     {
+      "question": null,
       "title": "The Battle Room Sequences",
       "body": "The zero-gravity combat arena is the film's visual centrepiece and Hood renders it with genuine imagination — the light-up suits, the frozen soldiers used as shields, the tactical geometry of three-dimensional combat, the gate at the far end that must be reached to win. This is the adaptation's strongest section, and it demonstrates what the film does well: turning Card's described battles into something kinetically exciting and spatially coherent.\n\nReaders who struggled to visualise the Battle Room in prose will find the film's version clarifying. The Dragon Army sequences — in which Ender's unorthodox tactics (splitting his force, using legs as shields, ignoring traditional formations) revolutionise Battle School strategy — are genuinely thrilling on screen. If the film has a case for its existence, it's here."
     },
     {
+      "question": null,
       "title": "The Command School Revelation",
       "body": "The novel's climax — in which Ender discovers that the Command School \"simulations\" were real battles and that he has just commanded the fleet that committed xenocide against the Formic homeworld — is one of science fiction's great ethical gut-punches. Card has spent three hundred pages making you understand Ender's psychology well enough that the revelation lands with full force: Ender has become exactly what he feared, and he was tricked into it.\n\nThe film's version hits the same narrative beats but cannot carry the same weight because it has not built the same foundation. You understand what happened; in the book, you feel what Ender feels when he understands it. The novel earns its ending through sustained interiority. The film delivers the twist and moves on.\n\nYes — emphatically. Ender's Game is one of the novels most often cited by readers as having shaped how they think about war, leadership, and the ethics of using children as soldiers. Its reputation rests almost entirely on the interior experience it provides — the sensation of being inside Ender's brilliant, tormented mind as it is systematically remade. The film gives you the plot; the book gives you the experience.\n\nIf you watch the film first, you will understand the story but miss what makes it matter. The Battle Room sequences are worth seeing for readers who want a visual reference, but they are not worth sacrificing the novel's psychological depth. Read first. The film is a reasonable companion for the zero-gravity combat and little else."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/enders-game-film",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

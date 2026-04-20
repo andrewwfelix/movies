@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Gilbert's Voice Is the Book's Primary Pleasure",
       "body": "The memoir is written in a voice of considerable charm and self-awareness — Gilbert is funny about herself, rigorous about her own failures, and genuinely curious about the spiritual traditions she encounters. She describes her divorce as \"sobbing so hard that a great lake of tears and snot was spreading before me on the bathroom tiles,\" and her meditation practice as \"like trying to nail a blob of mercury to the wall.\"\n\nThis voice is the book's primary pleasure. Julia Roberts is one of cinema's most charming performers, and she brings warmth and intelligence to the role. But she cannot replicate a voice that exists in sentences, in the rhythm of Gilbert's self-deprecation and intellectual engagement.\n\nThe film gives us Roberts looking thoughtful in beautiful locations. The book gives us Gilbert thinking on the page."
     },
     {
+      "question": null,
       "title": "The Spiritual Dimension Is Rendered as Atmosphere",
       "body": "Gilbert's engagement with meditation, yoga philosophy, and Balinese spirituality is given real intellectual weight in the memoir. She reads the Bhagavad Gita, studies Sanskrit, and writes seriously about the difficulty of sitting still with your own mind. She describes her breakthrough meditation experience in India with precision: \"I witnessed the first movement of what Yogis call Kundalini Shakti — the energy of the universe that lives within each of us.\"\n\nThe film renders the spiritual dimension as atmosphere and feeling. Roberts sits cross-legged, looks serene, and has a single breakthrough moment that is visually beautiful but intellectually shallow. The film shows meditation; the book explains what it feels like to fail at meditation for weeks before something shifts."
     },
     {
+      "question": null,
       "title": "Julia Roberts Is Both Asset and Obstacle",
       "body": "Roberts's presence works both for and against the film. She is warm and luminous and makes Gilbert immediately sympathetic. Her performance is generous and committed, and she carries the film with ease.\n\nBut she is also visibly Julia Roberts in Italy, which makes it difficult to believe in the vulnerability and lostness that the memoir's Gilbert actually experienced. The memoir's Gilbert is broke, frightened, and genuinely uncertain about her future. Roberts, even in her most vulnerable moments, radiates movie-star confidence.\n\nThe film's Gilbert is sad; the book's Gilbert is terrified. That difference matters."
     },
     {
+      "question": null,
       "title": "Italy Works Because the Pleasures Are Visual",
       "body": "Both versions make Italy glorious — the food, the light, the language lessons with Luca Spaghetti (yes, that's his real name), the pleasure of doing nothing important very slowly. Gilbert eats pizza in Naples, learns Italian in Rome, and befriends a Swedish woman named Sofie. The film captures all of this beautifully.\n\nThe film's Italy is the most effective section because the pleasures are visual and don't require interiority. Eat is the easiest third to adapt. You can film someone eating pasta and speaking broken Italian. You cannot film someone thinking about why she's eating pasta and what it means to choose pleasure after years of self-denial."
     },
     {
+      "question": null,
       "title": "The Memoir's Formal Structure Is Lost",
       "body": "Gilbert structures the memoir around 108 sections — one for each bead on a japa mala, the prayer beads used in meditation. This gives the book a formal shape that mirrors the spiritual practice she's learning. Each section is short, focused, and builds toward a larger understanding.\n\nThe film follows the geographical structure (Italy, India, Bali) but loses the precise formal architecture underneath it. The result is a more conventional three-act structure that feels less intentional, less shaped by the spiritual journey it's depicting.\n\nYes — the memoir's voice is the experience, and no film can render it. Gilbert's wit, self-awareness, and intellectual curiosity are what make the book worth reading. The film is a beautiful tourist companion to a story you'll remember better if you've read it first.\n\nWatch first and you'll have pretty pictures of Italy, India, and Bali with Julia Roberts. Read first and the film becomes a pleasant visual supplement to a memoir that is funnier, richer, and more honest than anything Murphy could put on screen."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/eat-pray-love",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

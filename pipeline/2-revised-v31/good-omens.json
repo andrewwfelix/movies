@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Footnotes Are Gone",
       "body": "Pratchett and Gaiman's novel is full of footnotes — sometimes longer than the text they annotate — in the Pratchett tradition of using the margin as a second stage for jokes, digressions, and observations that don't fit into the main narrative. One footnote explains the M25 motorway as a demonic sigil. Another discusses the naming conventions of Tibetan monks. A third offers a recipe for crêpes.\n\nThese footnotes are untranslatable to screen, and their absence is the most significant loss in the adaptation. The series compensates with Frances McDormand's voiceover narration as the voice of God, which captures some of the novel's omniscient tone and dry wit, but the specific pleasure of following a Pratchett-Gaiman footnote down its rabbit hole cannot be replicated. The footnotes are where the novel's dual authorship is most visible — you can feel Pratchett's satirical machinery working alongside Gaiman's mythological digressions."
     },
     {
+      "question": null,
       "title": "Michael Sheen and David Tennant Embody the Leads",
       "body": "The casting is among the finest in recent fantasy television. Sheen's Aziraphale — fussy, bookish, perpetually anxious, deeply kind — and Tennant's Crowley — languid, stylish, exasperated, secretly sentimental — are exactly the characters the novel describes, given bodies and voices that expand rather than constrain them.\n\nThe chemistry between the two actors does something the novel can suggest but not quite show: the specific texture of a six-thousand-year friendship between people who are not supposed to be friends. Sheen plays Aziraphale's love of humanity as genuine rather than abstract, and Tennant gives Crowley a rock-star swagger that never quite hides his affection for the angel. Their scenes together — particularly the opening sequence in Eden and the body-swap climax — are the series' heart."
     },
     {
+      "question": null,
       "title": "Gaiman Adapts His Own Work",
       "body": "Gaiman wrote the series himself and served as showrunner, which makes it less an adaptation than an author's second version of their own work — filtered through television's requirements but with full creative authority. This shows throughout: the choices about what to keep, expand, and cut feel motivated rather than commercial, and the series handles the novel's theological comedy with the same lightness the book achieves.\n\nIt also means certain additions — particularly the extended cold open showing Aziraphale and Crowley's meetings throughout history, and the expanded episode six, \"The Very Last Day of the Rest of Their Lives\" — feel genuinely Gaimanesque rather than interpolated. The series trusts the novel's structure and tone in ways studio-driven adaptations rarely do. Gaiman made the series as an act of love for Pratchett, who died in 2015 before production began, and that devotion is visible in every frame."
     },
     {
+      "question": null,
       "title": "Adam and the Them Get Less Screen Time",
       "body": "The novel devotes considerable space to Adam Young and his gang of childhood friends — Pepper, Wensleydale, and Brian, collectively known as the Them — playing in Tadfield and gradually coming to terms with Adam's nature as the Antichrist. These sections have a Gaiman-esque quality of English childhood nostalgia mixed with cosmic horror: Adam can reshape reality with a thought, but mostly he wants to play with his dog and avoid going home for tea.\n\nThe series handles this material well but somewhat more briefly, prioritising Aziraphale and Crowley's storyline in ways that shift the novel's balance. The book gives Adam's sections equal weight with the angel-and-demon plot; the series treats them as important but secondary. This is a defensible choice — Sheen and Tennant are the draw — but readers of the novel will notice the difference. The Them's final confrontation with the Horsemen is less developed on screen than on the page."
     },
     {
+      "question": null,
       "title": "The Pratchett Dimension Is Muted",
       "body": "Reading the novel, you can often feel where Pratchett ends and Gaiman begins — the satirical machinery, the specific rhythm of the jokes, the footnotes' relationship to English social comedy. Pratchett's voice is in the Witchfinder Army subplot, in the descriptions of the Four Horsemen updating their methods for the modern age, in the way the novel treats bureaucracy (both celestial and infernal) as fundamentally absurd.\n\nThe series is necessarily more purely Gaiman, since Pratchett died before it was made. This is not a criticism of the series, which Gaiman made as an act of love for his collaborator, but readers of the novel will sometimes feel the absence of Pratchett's specific comic sensibility in ways the screen version cannot replace. The novel is a duet; the series is a solo performance in memory of a partner. Both are beautiful, but they're not quite the same thing.\n\nYes — but this is one of the closer calls on this site. The novel's footnotes and its dual authorial voice are irreplaceable, and they're best encountered before Sheen and Tennant colonise your imagination of Aziraphale and Crowley. The book also gives Adam Young and the Them more space, and its satirical edge is sharper. Read first, then watch the series as the warmest possible companion.\n\nThat said, the series is faithful enough that watching first won't ruin the book — Gaiman's adaptation preserves the novel's structure, tone, and theological comedy with rare fidelity. If you watch first, you'll still find plenty to love in the novel's footnotes, its Pratchett-esque digressions, and its specific comic rhythms. Both versions are worth loving. This is one of the rare cases where the adaptation earns its place beside the source."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/good-omens",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

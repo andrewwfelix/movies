@@ -11,8 +11,6 @@ yarn-error.log*
 
 # ── Pipeline working directories ──────────────────────────────────────────────
 # These are regenerable scratch space — do not commit
-pipeline/1-extracted/
-pipeline/2-revised/
 pipeline/3-rendered/
 
 # ── Logs ──────────────────────────────────────────────────────────────────────

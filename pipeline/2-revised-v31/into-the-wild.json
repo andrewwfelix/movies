@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Krakauer's self-implication and ambivalence",
       "body": "The book's most important quality is Krakauer's honesty about his own complicated response to McCandless — the recognition in the young man's idealism of something in himself, and the simultaneous awareness that McCandless's death was at least partly the result of arrogance and inadequate preparation. Krakauer devotes an entire chapter to his own near-fatal 1977 solo climb of Devils Thumb in Alaska, drawing explicit parallels between his youthful certainty and McCandless's.\n\nHe admires and critiques in equal measure, and the book holds this tension throughout. Penn's film tilts the balance toward elegy — McCandless is presented as a noble seeker and his death as a tragedy rather than as one possible consequence of a philosophy that underestimated difficulty. The film omits Krakauer entirely, removing the journalistic frame that makes the book's ambivalence possible."
     },
     {
+      "question": null,
       "title": "The parallel stories of other wilderness seekers",
       "body": "Krakauer intercuts McCandless's story with accounts of other young men who were drawn to extreme solitude and wilderness — Everett Ruess, who vanished in the Utah desert in 1934; John Waterman, who froze to death on Mount Denali; Carl McCunn, who starved in the Alaskan bush; and Gene Rosellini, who attempted to live as a Stone Age man and eventually killed himself. This context is the book's most important structural decision: it places McCandless within a tradition of a particular kind of American idealism, showing that his journey was not unique and that its dangers were not unpredictable.\n\nThe film focuses almost entirely on McCandless alone, which makes his story feel singular rather than representative. Penn's choice emphasises emotional identification over intellectual context, which makes the film more immediately moving but less analytically rigorous."
     },
     {
+      "question": null,
       "title": "Emile Hirsch's physical transformation and performance",
       "body": "Hirsch lost approximately 40 pounds for the role, filming the Alaskan sequences last so his physical deterioration would be visible on screen. His McCandless is intelligent, warm, and genuinely compelling in his certainty — you understand why people were drawn to him. This is the film's great achievement: making McCandless's appeal felt rather than explained.\n\nThe book renders his appeal through the accounts of those who met him — Wayne Westerberg's description of his work ethic, Jan Burres's maternal affection, Ron Franz's near-adoption of him. Hirsch renders it directly, and the directness is more immediately persuasive. His performance in the final scenes inside the bus, as McCandless realises he is dying, is devastating without being sentimental."
     },
     {
+      "question": null,
       "title": "The supporting characters and their emotional weight",
       "body": "The people McCandless met on his journey — Wayne Westerberg, Jan Burres and her boyfriend Bob, the octogenarian Ron Franz — are rendered with particular care in the film, and Hal Holbrook's Franz is quietly devastating, earning an Oscar nomination. The scene in which Franz asks McCandless to be his adopted grandson, and McCandless gently refuses, is the film's emotional centre.\n\nThe book gives these characters more space and more reflection; the film gives them more emotional immediacy. Both approaches illuminate the loneliness of a man who was loved by everyone he met briefly and could not sustain connection with anyone permanently. Penn's decision to cast Catherine Keener and Vince Vaughn — actors with warmth and lived-in faces — makes the supporting characters feel like real people rather than symbolic figures."
     },
     {
+      "question": null,
       "title": "The cause of death and Krakauer's forensic investigation",
       "body": "Krakauer investigates the cause of McCandless's death with journalistic rigour. The initial assumption was starvation — McCandless's final journal entries record his weight loss and weakness — but Krakauer theorised that he was poisoned by seeds from wild potato plants (Hedysarum alpinum) that he had been eating, which may have contained a toxic alkaloid called swainsonine. Krakauer consulted botanists, toxicologists, and chemists, and his theory has been both supported and contested by subsequent research.\n\nThe book's engagement with this question gives McCandless's death a specific cause and thus a slightly different moral valence than Penn's film, which is somewhat more ambiguous about what exactly killed him and more interested in the symbolic dimensions of his end. The film shows McCandless eating the seeds and becoming ill, but it does not dwell on the forensic details, preferring instead to focus on his final realisation — written in the margins of a book — that \"happiness only real when shared.\"\n\nYes — Krakauer's ambivalence is the book's essential quality and the film's comparative romanticism means watching first will give you a version of the story that the book then complicates. Read first for the full picture — the journalism, the parallel stories of other wilderness seekers, Krakauer's honest self-implication, the forensic investigation into what killed McCandless — and the film becomes a beautiful, elegiac companion that chooses feeling over scrutiny. Penn's film is not dishonest, but it is less interested in the questions Krakauer asks about whether McCandless's death was avoidable and what his story says about a certain kind of American idealism.\n\nIf you watch first, you will be moved by Hirsch's performance and Eddie Vedder's score and the Alaskan landscape, and you will likely come away thinking McCandless was a tragic hero. If you read first, you will understand that he was also arrogant, inadequately prepared, and that his death was at least partly the result of choices that Krakauer — who made similar choices and survived — is honest enough to critique. Both choices are defensible. Krakauer's is more honest."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/into-the-wild",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

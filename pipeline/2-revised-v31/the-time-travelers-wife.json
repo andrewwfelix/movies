@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The non-linear structure is the novel's meaning",
       "body": "Niffenegger heads every chapter with the date and the ages of both Henry and Clare — a simple device that does enormous work. You're constantly reminded that you're seeing a moment from two different positions in each character's life. The novel's meaning accumulates through the juxtaposition of these moments: a scene of Henry and Clare as an established couple is followed by a scene of Clare meeting Henry for the first time, and the gap between them is where the novel lives.\n\nThe film necessarily presents events in a more comprehensible sequence. Schwentke uses some flashbacks and time-jumps, but the architecture collapses into a conventional romance — boy meets girl, obstacles arise, tragedy strikes. What the novel does with structure, the film tries to do with McAdams' performance, and it's not enough."
     },
     {
+      "question": null,
       "title": "Clare's interiority is reduced to reaction",
       "body": "The novel alternates between Henry and Clare's perspectives with genuine equity. Clare's experience of loving someone who disappears without warning, of building a life around an absence that is also a presence, is given as much space as Henry's experience of the condition itself. Her chapters are as specific and interior as his.\n\nThe film centres on Henry. Clare becomes more purely the person waiting — patient, loving, but defined by her relationship to Henry's condition rather than by her own interior life. McAdams brings considerable warmth and intelligence to the role, but she's working with less of the character than Niffenegger provides. The novel's Clare is an artist whose work is shaped by time and absence; the film's Clare is an artist because the book says so."
     },
     {
+      "question": null,
       "title": "The ethical dimension of Henry's visits to young Clare",
       "body": "The novel is quietly interested in the ethics of Henry's visits to young Clare — an adult man appearing repeatedly in a child's life, forming a bond that shapes her romantic future before she can consent to it. Niffenegger raises this without resolving it, and it gives the love story a complexity that the film largely sidesteps. Clare chooses Henry knowing everything; but the novel asks whether the choice was ever fully free.\n\nThe film presents the meadow visits as purely romantic — a love story written across time. It's not that the film endorses the dynamic uncritically, but it doesn't interrogate it the way the novel does. The book's Henry is aware of the ethical problem and proceeds anyway; the film's Henry is simply in love."
     },
     {
+      "question": null,
       "title": "Henry's pragmatic survival skills",
       "body": "The novel's Henry is pragmatic about his condition in a way that is darkly funny — he has learned to pick locks, fight, and steal clothes because he arrives naked in unpredictable places. This practical dimension gives the science fiction grounding. He's been beaten, arrested, and hospitalised. He knows which alleys have unlocked dumpsters and which buildings have accessible rooftops.\n\nThe film renders time travel more conventionally romantically. Bana's Henry is weary and tragic, but the film loses the slightly grim daily reality Niffenegger establishes. We see him arrive naked a few times, but not the years of accumulated survival knowledge that the novel makes central to his character."
     },
     {
+      "question": null,
       "title": "The ending's emotional weight",
       "body": "Both versions arrive at the same destination — Henry dies from a gunshot wound in the meadow, shot by Clare's brother as a teenager during a hunting accident that Henry has always known is coming. The novel's ending carries more weight because it has spent more time establishing what is being lost. Clare's grief is built across four hundred pages of alternating perspectives, of seeing her love Henry at different ages, of understanding the architecture of their life together.\n\nThe film's final scenes are moving — McAdams is excellent, and the image of Clare waiting in the meadow for Henry's future visits is genuinely affecting. But it's compressed into two hours rather than the novel's accumulated time. The book earns its ending; the film borrows it.\n\nYes — the novel's structural architecture is the experience, and no film can replicate what it feels like to read a chapter dated five years before the previous one and understand immediately how it changes everything that came before. The date headings alone — \"Henry is 36, Clare is 26\" — do more work than any film can. Read first and the film becomes a warm, well-cast simplification of a richer source.\n\nIf you watch first, you'll get the plot and the ending, but you won't understand why the novel is considered structurally ambitious. The film is a conventional romance with a science fiction premise. The novel is a meditation on how we experience time in relationships — how the past and future are always present, how love is built from moments that don't arrive in order. That's not something a film can show by rearranging scenes. It's something Niffenegger built into the novel's DNA."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-time-travelers-wife",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

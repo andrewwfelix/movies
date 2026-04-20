@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The film is extraordinarily faithful to the novel's structure and dialogue",
       "body": "Polanski adapted Levin's novel scene by scene, keeping most of the dialogue verbatim and preserving the narrative's careful pacing. The famous Scrabble game scene, Rosemary's haircut at Vidal Sassoon, the New Year's Eve party where she meets Hutch, the lunch at the Time-Life Building where she reveals her suspicions — all of these appear in the film exactly as Levin wrote them. This is one of the most faithful literary adaptations in cinema history.\n\nThe only significant structural change is the compression of some of Rosemary's research into the Bramford's history and the Castevets' background. The novel includes more detail about the building's past residents and Roman's true identity as Steven Marcato. Polanski streamlined these revelations without losing their impact, trusting the audience to follow Rosemary's logic without extensive exposition."
     },
     {
+      "question": null,
       "title": "The novel's strict first-person perspective creates genuine ambiguity about the conspiracy",
       "body": "Levin's greatest achievement is his control of point of view — we experience only what Rosemary experiences, and the novel maintains genuine uncertainty about whether the conspiracy is real or whether Rosemary is experiencing a psychotic break brought on by pregnancy hormones and isolation. The reader shares her doubt and her certainty in alternation, and the ambiguity holds until the final pages when she sees her baby's eyes.\n\nThe film necessarily makes the conspiracy more visible to the audience. John Cassavetes plays Guy's guilt and discomfort in ways that telegraph his complicity. The staging of scenes Rosemary isn't present for — Guy's conversation with Roman about his rival actor going blind, the coven members gathering in the Castevets' apartment — confirms what the novel keeps ambiguous. This is a small but inevitable loss; film cannot sustain the same kind of unreliable narration that prose can."
     },
     {
+      "question": null,
       "title": "Mia Farrow's physical transformation makes the pregnancy horror visceral",
       "body": "Farrow lost significant weight during filming to portray Rosemary's physical deterioration during the pregnancy. Her increasingly gaunt appearance — the famous pixie haircut making her face look even more skeletal — gives the film a documentary quality that is deeply unsettling. When she looks at herself in the mirror and sees how thin she's become, the shock on her face is genuine.\n\nThe novel describes Rosemary's weight loss and pain, but prose cannot achieve what Farrow's visible transformation does. Her performance makes the body horror of pregnancy — the sense of something growing inside you that you cannot control — more immediate than any amount of description could. Frank Sinatra served her divorce papers on set because she refused to leave the production; her commitment to the role is visible in every frame."
     },
     {
+      "question": null,
       "title": "The dream sequence is more explicit and more ambiguous in the film",
       "body": "The scene in which Rosemary is drugged and raped by Satan while the coven watches is the novel's most difficult passage and the film's most controversial sequence. Levin describes the assault through Rosemary's drugged, fragmented consciousness — she believes she's on a yacht, sees the Pope, feels claws scratching her skin. The novel keeps the scene brief and maintains some distance through its dreamlike narration.\n\nPolanski stages the sequence as a surreal nightmare that lasts several minutes of screen time. We see Rosemary's naked body painted with occult symbols, the coven members chanting around her, and a figure with yellow eyes mounting her while she drifts in and out of consciousness. The scene is simultaneously more explicit than the novel — we see more of what happens — and more ambiguous, because Polanski films it with the logic of a nightmare rather than realistic staging. It remains one of cinema's most disturbing sequences precisely because it refuses to clarify what is real and what is hallucination."
     },
     {
+      "question": null,
       "title": "Ruth Gordon's Oscar-winning performance makes Minnie both comic and terrifying",
       "body": "Gordon plays Minnie Castevet as a cheerful, intrusive busybody whose constant gifts of food and herbal drinks gradually reveal themselves as instruments of control. She won the Academy Award for Best Supporting Actress at age 72, and the performance is a masterclass in playing villainy through excessive friendliness. Her Minnie is funny — the way she barges into the apartment, her malapropisms, her insistence on being involved in every aspect of Rosemary's pregnancy — and genuinely threatening precisely because her warmth makes it impossible for Rosemary to refuse her without seeming rude or paranoid.\n\nThe novel's Minnie is equally well-drawn on the page, but Gordon's performance adds a physical comedy and vocal specificity that makes the character iconic. Her line readings — \"He chose you out of all the world!\" — are simultaneously absurd and chilling. This is the film's most important creative achievement after Farrow's performance, and it elevates material that could have been played as straightforward villainy into something more complex and more disturbing.\n\nYes — Levin's controlled first-person narration is the experience, and the novel's genuine uncertainty about whether Rosemary is right or delusional is best encountered before the film's staging makes the conspiracy more visible. The novel is short and propulsive — you can read it in an evening — and Levin's prose style is clean and precise, never overwritten. The book's final revelation, when Rosemary sees her baby's eyes and realizes everything she feared was true, lands with devastating force precisely because Levin has kept you uncertain until that moment.\n\nThen watch Polanski's film immediately after and notice what he kept, what he added, and how much of Levin's vision he understood completely. The film is not an illustration of the novel but a parallel work of art that uses cinema's specific tools — Farrow's physical presence, Gordon's performance, the claustrophobic framing of the Dakota's interiors — to achieve the same psychological effects through different means. This is one of the rare cases where both versions are genuinely essential and neither diminishes the other."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/rosemarys-baby",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

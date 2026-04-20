@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The prose is the subject",
       "body": "On the Road is not really about what happens — it's about how Kerouac describes what happens. The rushing, associative, jazz-influenced prose is the experience. Sentences pile up without conventional punctuation, capturing the speed and hunger of the road itself. \"We were all delighted, we all realized we were leaving confusion and nonsense behind and performing our one and noble function of the time, move.\"\n\nSalles's film necessarily substitutes images for prose, which is the correct formal choice for cinema and a fundamental loss. The cinematography by Eric Gautier is beautiful — long highways, neon-lit diners, smoky jazz clubs — but images describe what Kerouac's sentences enact. The film shows you the road. The novel makes you feel like you're moving."
     },
     {
+      "question": null,
       "title": "Dean Moriarty's darkness",
       "body": "Garrett Hedlund plays Dean as beautiful, feral, and magnetic — a performance that captures the character's charisma and the way people fall into his orbit. But the film softens Dean's selfishness into romantic excess, making him a lovable rogue rather than the increasingly troubling figure Kerouac documents.\n\nIn the novel, Dean abandons Sal when he's sick in Mexico, steals cars, lies compulsively, and uses women with casual cruelty. Kerouac's portrait grows more critical as the book progresses — the final image is of Dean leaving Sal behind to go to a party, and Sal realizing \"the road is life\" but also that Dean's version of that life is unsustainable and destructive. The film keeps Dean sympathetic throughout, which makes for a more likeable character and a less honest adaptation."
     },
     {
+      "question": null,
       "title": "Sal's narrative voice",
       "body": "Sam Riley's Sal is the film's quiet centre, observer and participant, and Riley plays the role with understated intelligence. But the film loses the specific quality of Sal's voice — the breathless enthusiasm, the self-implication, the simultaneous love and critical distance that characterizes Kerouac's self-portrait.\n\nThe novel is written in first person, and Sal's voice is everywhere — excited, conflicted, aware of his own complicity in Dean's chaos. The film uses some voiceover narration, but it can't reproduce the texture of Kerouac's prose or the way Sal's consciousness shapes every observation. Without that voice, the film becomes a story about events rather than a record of how those events felt."
     },
     {
+      "question": null,
       "title": "Kristen Stewart's Marylou",
       "body": "Stewart plays Marylou — Dean's teenage wife, one of several women discarded by the novel's male protagonists — and she delivers the film's most interesting performance. Stewart brings a quality of knowingness to the role, playing Marylou as someone who understands exactly what Dean is and chooses him anyway, at least for a while.\n\nThe novel treats Marylou less carefully, describing her mostly through Sal's male gaze and Dean's casual exploitation. Stewart's performance gives Marylou agency and intelligence the book doesn't quite grant her. It's one of the few places where the film improves on its source material, finding dimension in a character Kerouac sketches in passing."
     },
     {
+      "question": null,
       "title": "The historical moment",
       "body": "The novel captures a specific post-war American energy — the felt possibility of the open road, the reaction against domesticity and conformity, the discovery of jazz and Black American culture by white Beats who romanticized it without fully understanding their own position. Kerouac writes from inside that moment, when it felt new and urgent.\n\nSalles's film recreates the period beautifully — the cars, the clothes, the jazz clubs — but it arrives sixty years later, after the counterculture, after the road trip became a cliché, after we've seen what happened to the Beats. The film is nostalgic for a moment the novel was living through. It can show you 1947, but it can't make 1947 feel like the future.\n\nYes — read the novel first, or instead. The film is a beautiful production of an unfilmable book. If you've read it, the film gives you images for the road and strong performances that deepen your sense of the characters. If you haven't, the film will give you the story but not the experience that made the novel matter.\n\nThe novel's value is inseparable from its prose style. Watching the film first won't spoil the plot — there isn't much plot to spoil — but it will give you a conventional narrative where Kerouac offers something stranger and more immediate. Read the book to understand why it became a defining work of American literature. Watch the film to see what happens when talented filmmakers try to translate the untranslatable."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/on-the-road",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

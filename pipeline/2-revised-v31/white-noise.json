@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "DeLillo's Prose Style Becomes Conventional Dialogue",
       "body": "The novel's power lives in its sentences—the way DeLillo layers brand names, media fragments, and philosophical asides into a prose texture that mimics the white noise of modern consciousness. Jack's narration is detached and ironic, filtering family life through an anthropologist's lens.\n\nBaumbach translates this into naturalistic dialogue and visual storytelling, which makes the material more accessible but strips away its postmodern strangeness. The film's conversations feel like actual family exchanges rather than DeLillo's stylized verbal constructs. You lose the accumulation of product names, the rhythm of repeated phrases, the sense that language itself is breaking down under consumer capitalism's weight.\n\nThe supermarket scenes demonstrate this gap. In the book, Jack catalogs brand names and shelf arrangements with obsessive precision, turning grocery shopping into a meditation on American abundance and spiritual emptiness. The film shows colorful aisles and shopping carts but can't replicate the hypnotic effect of DeLillo's lists."
     },
     {
+      "question": null,
       "title": "The Airborne Toxic Event Becomes a Spectacle",
       "body": "Baumbach stages the chemical disaster as a visually impressive set piece—highways clogged with fleeing families, ominous black clouds, evacuation camps lit by emergency floodlights. It's the film's most cinematic sequence, shot with scope and urgency.\n\nThe book treats the event with deliberate anticlimax. DeLillo focuses on bureaucratic confusion, contradictory information from authorities, and Jack's internal monologue as he waits in line for medical screening. The disaster is less important than the systems that respond to it—the way media, government, and medicine create competing narratives about what's happening.\n\nThe film's approach is more conventionally dramatic, which makes for engaging cinema but misses DeLillo's point. The toxic event isn't supposed to be thrilling. It's supposed to reveal how modern institutions manage fear and uncertainty through language and procedure."
     },
     {
+      "question": null,
       "title": "Murray's Theories Get Condensed",
       "body": "Don Cheadle delivers Murray's pop culture monologues with perfect deadpan timing, but the film can only include a fraction of his material. The novel gives Murray extended riffs on car crashes, déjà vu, and the spiritual significance of supermarkets—absurdist philosophy disguised as academic discourse.\n\nThe film keeps his most quotable lines but loses the cumulative effect of his presence. In the book, Murray appears throughout, constantly theorizing about American life in ways that are simultaneously insightful and ridiculous. He's Jack's intellectual companion and the novel's comic relief.\n\nBaumbach reduces him to a supporting character who shows up for key scenes. His famous lecture comparing Elvis and Hitler—delivered as a tag-team performance with Jack—gets abbreviated. You miss the full absurdity of two professors treating pop culture icons with the same analytical rigor as historical catastrophes."
     },
     {
+      "question": null,
       "title": "Babette's Dylar Addiction Loses Its Gradual Revelation",
       "body": "The novel slowly reveals Babette's secret over many chapters. Jack notices her forgetfulness, her evasions, her unexplained absences. The discovery that she's been trading sex for an experimental death-fear drug arrives as a devastating betrayal that recontextualizes everything we've seen.\n\nThe film compresses this timeline, moving more quickly to Jack's discovery and confrontation. Gerwig plays Babette's distraction and anxiety well, but the adaptation doesn't have space for the book's patient accumulation of clues. The revelation feels more like a plot point than a psychological unraveling.\n\nYou also lose some of DeLillo's exploration of how the drug works—or doesn't work. The book treats Dylar as both a pharmaceutical product and a philosophical problem, questioning whether fear of death can be chemically suppressed and what it would mean if it could. The film addresses this more briefly, focusing on the marital betrayal rather than the existential implications."
     },
     {
+      "question": null,
       "title": "The Ending Adds a Musical Number",
       "body": "Both versions end in the supermarket, where the Gladneys find temporary peace in consumer ritual. DeLillo's final paragraphs describe the rearranged shelves and the confusion they cause, suggesting that even our most reliable comforts are subject to invisible forces beyond our control.\n\nBaumbach includes this scene, then adds a closing credits sequence where the cast performs a choreographed dance to LCD Soundsystem's \"New Body Rhumba\" in a brightly lit supermarket. It's surreal, energetic, and tonally jarring—some viewers find it a brilliant commentary on consumer culture, others consider it a misjudged attempt at Lynchian weirdness.\n\nThe dance number makes explicit what DeLillo leaves implicit: that we're all performing scripted roles in capitalism's theater. It's a bold choice that either enhances or undermines the adaptation depending on your tolerance for postmodern flourishes. The book trusts its ending to land quietly; the film wants to go out with a statement.\n\nRead the book first if you want to experience DeLillo's prose style—the fragmented dialogue, the brand-name poetry, the way sentences accumulate into something larger than their parts. The novel is a postmodern masterpiece that uses language itself as its primary tool. Baumbach's adaptation is competent and occasionally inspired, but it can't replicate what makes DeLillo's writing distinctive. If you watch first, you'll get the plot and characters but miss the literary texture that makes White Noise a landmark of American fiction.\n\nThat said, the film works as an entry point if you're intimidated by DeLillo's reputation or prefer visual storytelling. Driver and Gerwig are excellent, the production design captures 1980s suburban America with meticulous detail, and Baumbach's satirical instincts align with the source material's dark humor. Just know that the book offers a richer, stranger experience—one that lingers in your mind long after the story ends."
     }
@@ -141,5 +146,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/white-noise",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

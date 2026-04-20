@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Jude's Backstory Is Revealed Too Quickly",
       "body": "Yanagihara withholds the full horror of Jude's childhood until page 200, letting readers grow attached to him before understanding why he cuts himself or recoils from touch. The novel's structure mirrors trauma itself—fragmented, non-linear, surfacing in flashbacks triggered by present-day events.\n\nThe film front-loads this information, showing Brother Luke's abuse in the first act. This choice sacrifices suspense and the reader's gradual realization that Jude's self-destruction has specific, unspeakable roots. By explaining him too soon, the adaptation makes his suffering feel more like a plot device than a lived reality."
     },
     {
+      "question": null,
       "title": "The Caleb Subplot Loses Its Buildup",
       "body": "In the book, Jude's relationship with Caleb Porter unfolds over 80 pages, beginning with Caleb's charm and escalating into psychological torture—he mocks Jude's limp, forces him to strip, then beats and rapes him before throwing him down the stairs. The abuse is methodical, designed to confirm Jude's belief that he deserves punishment.\n\nThe film compresses this into two scenes: a dinner where Caleb insults Jude, then the staircase assault. Without the slow erosion of Jude's boundaries, Caleb reads as a one-dimensional villain rather than the predator who exploits Jude's self-hatred with surgical precision. The aftermath—Jude's months of recovery, his shame at having \"let\" it happen—is reduced to a montage."
     },
     {
+      "question": null,
       "title": "Willem and Jude's Romance Is Simplified",
       "body": "The novel devotes 150 pages to Willem and Jude's transition from friends to partners, exploring Willem's confusion about his own sexuality and Jude's terror of physical intimacy. Their first attempt at sex ends with Jude dissociating; it takes years before they find a rhythm that accommodates Jude's trauma.\n\nThe film collapses this into a single conversation and a fade-to-black. We never see Willem's patience tested or Jude's panic attacks during intimacy. The relationship becomes a given rather than an achievement, which undercuts the novel's argument that love, even profound love, cannot erase trauma—it can only coexist with it."
     },
     {
+      "question": null,
       "title": "Harold's Grief Is Truncated",
       "body": "The book's final 100 pages belong to Harold, who survives both his wife Julia and his adopted son. His chapters are a meditation on parental grief—the guilt of outliving a child, the impossibility of protecting someone from their own past. Harold's voice, dry and professorial even in anguish, provides the novel's only distance from Jude's self-loathing.\n\nThe film ends with Jude's death, giving Harold a brief reaction shot before cutting to credits. This robs the story of its coda, the perspective that insists Jude's life, despite its suffering, mattered to those who loved him. Without Harold's reflection, the film feels more nihilistic than the book, which is a remarkable feat given the novel's bleakness."
     },
     {
+      "question": null,
       "title": "The Self-Harm Scenes Are Less Visceral",
       "body": "Yanagihara describes Jude's cutting in clinical detail—the razors he hides in his bathroom, the methodical way he cleans and bandages the wounds, the relief that floods him afterward. The prose forces readers to sit with the physicality of self-harm, to understand it as both compulsion and communication.\n\nThe film shows Jude cutting once, in dim lighting, with the camera pulling away. This restraint is understandable—graphic self-harm on screen risks voyeurism—but it also sanitizes the behavior that defines Jude's relationship with his body. The book's unflinching gaze is what makes readers comprehend, if not condone, why Jude cannot stop. The film's discretion turns self-harm into a symbol rather than a reality.\n\nRead the book first, or skip the film entirely. Yanagihara's novel is an endurance test—700 pages of accumulating dread, punctuated by moments of grace so fragile they feel like hallucinations. The experience of reading it is inseparable from its length; Jude's inability to escape his past only lands because you, the reader, cannot escape it either. You are trapped in his perspective for hours, days, weeks, depending on your pace. The film, by necessity, offers escape routes: a two-hour runtime, a more distant camera, the option to look away.\n\nIf you watch first, you will know the plot but miss the suffocating interiority that makes the plot matter. The book is not about what happens to Jude—it is about how it feels to be Jude, to live in a body you hate, to love people you believe will abandon you once they know the truth. The film can show you his scars; only the book can make you feel them. And if you find the novel too punishing to finish, the film will not offer a gentler alternative—it will simply offer less."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/a-little-life",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

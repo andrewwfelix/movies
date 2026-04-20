@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The epistolary form cannot be filmed",
       "body": "Walker's novel is written entirely in Celie's letters—her vernacular, her spelling, her particular way of seeing. The formal choice is the novel's most important decision: Celie's voice is the experience. She writes \"Dear God\" because she has no one else to tell, and later \"Dear Nettie\" when she learns her sister is alive.\n\nNo film can render first-person epistolary form without voiceover narration, and Spielberg wisely avoids it. But the absence means the film cannot capture the intimacy of a letter written to God by someone who has never been permitted to speak. Goldberg's performance is extraordinary, but it is not the same as hearing Celie's voice on the page, unmediated."
     },
     {
+      "question": null,
       "title": "Celie and Shug's relationship is softened",
       "body": "The film implies that Celie and Shug are lovers but does not show it explicitly. Walker's novel is direct: Shug teaches Celie about her own body, they sleep together, and their physical intimacy is central to Celie's liberation. The novel's treatment of their relationship is sexually explicit and emotionally radical.\n\nSpielberg's 1985 restraint is understandable but costly. The film shows Shug kissing Celie once, briefly, and the rest is implication. Margaret Avery's Shug is glamorous and warm, but the film reduces the relationship's meaning by refusing to show what Walker wrote plainly. The novel's Shug is more sexually complex and more essential to Celie's transformation."
     },
     {
+      "question": null,
       "title": "Spielberg's sentimentality enlarges the reunions",
       "body": "Spielberg is a maximalist of emotion, and The Color Purple is his most emotionally demanding material. He handles it with enormous care and occasional excess. The film's final reunion—Celie and Nettie embracing in a field of purple flowers, Quincy Jones's score swelling—is bigger and more pictorial than Walker writes it.\n\nThe novel's reunion is quieter: \"I see Nettie getting out of the car. I see my children.\" The restraint is devastating. Spielberg's version is sincere and beautiful, but it is not spare. The novel's pain is quieter and more sustained; the film's is louder and more cathartic."
     },
     {
+      "question": null,
       "title": "Nettie's African letters are compressed",
       "body": "The novel's parallel narrative—Nettie's letters from Africa, suppressed by Mister for decades—is substantial and gives the novel a global dimension. Nettie writes about the Olinka people, about colonialism, about her adopted children (who are Celie's biological children). Her story spans continents and decades.\n\nThe film compresses Nettie's African story to a handful of scenes. We see her teaching, we see the children, but the scope is reduced. The novel uses Nettie's letters to connect Celie's suffering in Georgia to the suffering of colonized Africans; the film keeps the focus on Georgia. The compression is practical but diminishes the novel's ambition."
     },
     {
+      "question": null,
       "title": "Whoopi Goldberg's performance is the film's greatest achievement",
       "body": "Goldberg's Celie is one of the great overlooked performances in American cinema. She communicates decades of internal life without the letters, without the narration, with only her face and body. Watch her in the early scenes—she makes herself small, her eyes down, her voice barely audible. Watch her in the final scenes—she stands upright, she laughs, she claims space.\n\nThat she did not win the Academy Award remains one of the institution's more notable failures. Goldberg lost to Geraldine Page for The Trip to Bountiful. Page's performance is fine; Goldberg's is transformative. The film has many flaws, but Goldberg is not one of them.\n\nYes—the novel's epistolary form is the experience. Celie's voice cannot be filmed. Her letters to God, written in her own vernacular, are the novel's formal and emotional core. Reading first allows you to hear that voice unmediated, to experience Walker's radical decision to let Celie speak for herself in her own language.\n\nRead first and the film becomes a companion: Spielberg and Goldberg finding what can be shown of a story that lives on the page. The film is sincere and often beautiful, but it is not the novel. The novel is formally daring in ways the film cannot replicate. See the film after, and appreciate what Goldberg manages to translate without Walker's words."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-color-purple",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

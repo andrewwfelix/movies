@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Conspiracy Loses Its Environmental Teeth",
       "body": "Grisham's novel spends considerable time detailing Victor Mattiece's plan to drill for oil in the Louisiana marshlands where the endangered brown pelican nests, explaining how Justices Rosenberg and Jensen were the swing votes blocking his permits. The book makes clear that Mattiece's scheme would destroy the habitat, connecting environmental law to the murders in specific, technical detail.\n\nPakula's film mentions the pelican habitat but never makes the environmental stakes visceral or clear. The conspiracy becomes generic corporate villainy rather than a specific ecological crime. This vagueness weakens the story's foundation—without understanding exactly what Mattiece stands to gain and lose, the murders feel like thriller mechanics rather than logical extensions of greed."
     },
     {
+      "question": null,
       "title": "Darby's Intellectual Journey Gets Compressed",
       "body": "The novel tracks Darby's research process in detail: her late nights in the law library, her cross-referencing of Supreme Court decisions with environmental impact statements, her methodical construction of the brief that connects seemingly unrelated facts. Grisham shows her legal mind at work, making her brilliance credible rather than asserted.\n\nRoberts' Darby writes the brief in what feels like a single inspired session, then spends most of the film running and hiding. The movie emphasizes her vulnerability—she's scared, isolated, constantly in danger—but rarely shows her thinking her way through problems. The shift makes Darby more conventionally sympathetic but less interesting as a protagonist."
     },
     {
+      "question": null,
       "title": "Gray Grantham's Moral Complexity Vanishes",
       "body": "In the book, Gray is a functioning alcoholic whose marriage collapsed under the weight of his obsessive reporting. He's willing to manipulate sources, bend ethical rules, and put others at risk for a story. His partnership with Darby involves real moral tension—he needs her to break the story, but protecting her could mean losing his scoop.\n\nWashington's Gray is a straightforward hero journalist with no apparent vices or ethical gray areas. The film invents a romantic attraction between Gray and Darby that the book only hints at, using their chemistry to smooth over the transactional nature of their alliance. It's more audience-friendly but less honest about how investigative journalism actually works."
     },
     {
+      "question": null,
       "title": "The White House Source Subplot Gets Gutted",
       "body": "Grisham devotes substantial pages to Curtis Morgan, the young White House aide who feeds Gray information about the President's connection to Mattiece. Morgan's paranoia, his careful dead-drop communications, and his eventual murder provide a parallel thriller track that deepens the conspiracy's reach into government.\n\nThe film reduces Morgan to a few brief scenes and phone calls, losing the suspense of his cat-and-mouse game with White House security. More significantly, the movie never fully explores how high the conspiracy reaches—the President's complicity remains vague rather than damning. This softening makes the story less politically sharp."
     },
     {
+      "question": null,
       "title": "The Ending Trades Ambiguity for Romance",
       "body": "Grisham's novel ends with Darby disappearing into permanent hiding after the story breaks, her brief published but her life permanently derailed. Gray gets his Pulitzer-worthy scoop but loses contact with Darby. The conspiracy is exposed but not fully dismantled—Mattiece dies but his political enablers largely escape consequences. It's a cynical ending that questions whether truth really wins.\n\nPakula adds a coda where Darby and Gray meet on a Caribbean beach, suggesting a romantic future together. The film also implies more complete justice, with the President's administration collapsing. This Hollywood ending provides emotional closure but undercuts the book's darker message about power protecting itself even when exposed.\n\nRead Grisham's novel before watching Pakula's film. The book's detailed conspiracy mechanics and legal procedural elements provide context the movie assumes you'll fill in yourself. More importantly, the novel's morally complex characters—especially Gray's ethical compromises and Darby's transformation from student to fugitive—give weight to scenes the film rushes through. Watching first will leave you confused about why certain plot points matter.\n\nThe film works as a star-vehicle thriller showcasing Roberts and Washington's charisma, but it's a Cliffs Notes version of Grisham's story. Reading first lets you appreciate what Pakula adapted well—the paranoid atmosphere, the ticking-clock tension—while recognizing what got lost in translation. The book's ending will also hit harder if you haven't been primed to expect Hollywood resolution."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-pelican-brief",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

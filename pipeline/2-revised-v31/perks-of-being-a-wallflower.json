@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The author as director changes everything",
       "body": "Chbosky spent over a decade fighting to adapt his own novel and the investment shows. He knows what matters, what can be lost, and what must be found through different means. The film has the authority of someone who understands the material from inside — a quality absent from most literary adaptations, which are made by people who admire a book rather than people who wrote it.\n\nThis shows in small choices: the decision to keep Charlie's voiceover sparse rather than constant, the selection of which subplots to condense, the understanding that some of the novel's power comes from what Charlie doesn't yet understand about himself. Chbosky trusts his own material enough to let it breathe."
     },
     {
+      "question": null,
       "title": "Charlie's epistolary voice becomes voiceover and performance",
       "body": "The novel's letters give Charlie a specific written voice — earnest, careful, sometimes heartbreaking in its precision. The film uses voiceover narration drawn from the letters, which preserves some of this quality. Logan Lerman's performance does the rest — his Charlie is interior and watchful in a way that matches the novel's register unusually well.\n\nWhat's lost is the epistolary format's built-in distance. In the novel, Charlie is writing to someone, which creates a layer of reflection. In the film, we're simply with him. This makes some moments more immediate and others less mediated by Charlie's careful self-presentation."
     },
     {
+      "question": null,
       "title": "Ezra Miller's Patrick is more dimensional than the novel's version",
       "body": "Miller's Patrick is the film's great surprise — funny, generous, heartbreaking in his vulnerability. The novel's Patrick is rendered through Charlie's adoring perception, which makes him slightly idealized. Miller's performance is more fully dimensional and gives Patrick an interior life the novel only implies.\n\nThe scene where Patrick breaks down after Brad's father catches them together is more devastating in the film because Miller shows us Patrick's pain directly. In the novel, we see it through Charlie's worried observation. Both work, but Miller's performance adds layers Chbosky's prose couldn't quite reach."
     },
     {
+      "question": null,
       "title": "Emma Watson's star quality works against Sam's ordinariness",
       "body": "Watson plays Sam with warmth and intelligence but her star quality — the very quality that made her casting such a commercial decision — works slightly against the character. The novel's Sam is more ordinary and more aspirational for that ordinariness. Watson is too luminous to be the girl Charlie sees as extraordinary.\n\nThis doesn't ruin the performance, which is affecting and honest. But it changes the dynamic. In the novel, Sam is a high school senior with dreams and insecurities. In the film, she's Emma Watson playing a high school senior, and the difference matters for a story about finding beauty in the overlooked."
     },
     {
+      "question": null,
       "title": "The tunnel scene exists perfectly in both versions",
       "body": "The scene in the tunnel — standing on the truck bed, David Bowie's Heroes, the specific feeling of being infinite — is the novel's most beloved passage and the film's most beloved scene. Both versions earn it. The film's version, with the wind and the music and three young actors at the top of their game, may be the definitive rendering.\n\nChbosky understands that this moment is the emotional center of both works. He films it with the Fort Pitt Tunnel's lights streaking past, Sam standing with her arms out, Charlie watching her with complete devotion. It's one of the rare cases where cinema enhances rather than diminishes a literary moment.\n\nEither order works — this is the site's most genuine tie and the one case where reading after watching loses least. Chbosky's film is so faithful and so right that the two versions illuminate each other rather than one diminishing the other. The novel gives you Charlie's voice in its purest form, the careful construction of his letters, the way he processes experience through writing. The film gives you Ezra Miller's Patrick and the tunnel scene in motion.\n\nIf forced to choose: read first, for Charlie's voice and the epistolary format's particular intimacy. But watch either way, and know that this is one of the vanishingly rare cases where an author understood how to translate their own work without losing what made it matter."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/perks-of-being-a-wallflower",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

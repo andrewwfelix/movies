@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Carl Hanratty Is Entirely Fictional",
       "body": "The book never names a single FBI agent who pursued Abagnale. Tom Hanks' Carl Hanratty is a composite character invented by screenwriter Jeff Nathanson to give the film a dramatic center.\n\nThe Christmas Eve phone calls between Frank and Carl—where Frank reaches out from loneliness and Carl traces the call—are pure Hollywood. So is the final scene where Carl recruits Frank to work for the FBI's fraud division. In reality, Abagnale was released early for good behavior and later approached law enforcement on his own terms.\n\nThis invention works brilliantly for the film, giving Spielberg a surrogate father figure to mirror Frank Sr.'s failures. But it fundamentally alters the story from a solo criminal's memoir into a buddy drama about two men who need each other."
     },
     {
+      "question": null,
       "title": "The Parents' Divorce Becomes Frank's Motivation",
       "body": "Spielberg's film opens with Frank Sr. and Paula's crumbling marriage, making the divorce Frank's emotional wound and primary motivation. Christopher Walken's performance—particularly the scene where Frank Sr. refuses to sign the divorce papers—frames the entire story as a son's attempt to restore his family.\n\nThe book mentions his parents' separation in a single paragraph. Abagnale describes running away at sixteen but attributes his cons to opportunity and thrill-seeking, not trauma. He never suggests he was trying to earn enough money to reunite his parents, as DiCaprio's Frank explicitly states in the film.\n\nThis change makes the movie more emotionally accessible but less honest about the psychology of fraud. The real Abagnale seems motivated by ego and the rush of deception; the film's Frank is a wounded boy playing dress-up."
     },
     {
+      "question": null,
       "title": "The Film Glamorizes the Cons",
       "body": "The book describes Abagnale's scams in procedural detail—how he obtained blank security paper, which banks were easiest to defraud, how he studied pilot manuals to fake his way through conversations. It reads like a how-to guide, clinical and unsentimental.\n\nSpielberg transforms these cons into glossy set pieces. The opening credits sequence, animated by Kuntzel + Deygas, plays like a Saul Bass homage, all mid-century modern graphics and jazzy energy. When DiCaprio's Frank walks through airports in his pilot uniform, Kamiński's camera glides alongside him, the lighting golden and warm. John Williams' score bounces with mischievous delight.\n\nThe film never lets you forget you're watching a movie about a charming rogue, not a felon who endangered hospital patients by posing as a doctor. The book offers no such aesthetic distance—it's Abagnale explaining his crimes in his own words, and the effect is far less romantic."
     },
     {
+      "question": null,
       "title": "Brenda Strong and the Engagement Subplot",
       "body": "Amy Adams' Brenda Strong doesn't exist in the book. The film invents her to give Frank a romantic stakes and a reason to consider going straight. Their engagement and her father's suspicion create the film's emotional climax, forcing Frank to choose between love and freedom.\n\nThe real Abagnale mentions brief relationships and even a marriage in his memoir, but none receive more than a sentence or two. He doesn't present himself as someone torn between crime and domesticity—he's fully committed to the con until he's caught.\n\nThe Brenda subplot softens Frank, making him sympathetic in a way the book never attempts. It's effective drama, but it's also a significant departure from the source material's colder, more sociopathic protagonist."
     },
     {
+      "question": null,
       "title": "The Ending Shifts from Punishment to Redemption",
       "body": "The book ends with Abagnale's capture in France, his extradition to the United States, and his imprisonment. He describes his time in various prisons matter-of-factly, then briefly mentions his eventual release and consulting work. There's no emotional resolution, no reconciliation—just the facts of his capture and subsequent career.\n\nSpielberg's film ends with Carl visiting Frank in prison and offering him a deal to work for the FBI. The final scene shows Frank designing secure checks in a government office, with Carl watching over him like a proud father. The last shot reveals Frank still works for the FBI decades later, a full redemption arc complete.\n\nThis ending is far more satisfying cinematically, but it's also more sentimental than anything in Abagnale's memoir. The book doesn't argue Frank earned forgiveness—it just reports what happened next.\n\nIf you watch the film first, you'll be surprised by how much of the emotional architecture is invented. The book has no Carl Hanratty, no Brenda Strong, no Christmas Eve phone calls, and no tearful reunion with Frank Sr. What it does have is a more detailed account of the actual mechanics of check fraud, airline security in the 1960s, and the specific cons Abagnale pulled in each city. Reading first means you'll appreciate Spielberg's additions as smart screenwriting rather than feeling misled about what's true.\n\nIf you read first, the film will feel like a jazz riff on the source material—looser, more playful, more interested in emotion than procedure. You'll notice what Nathanson and Spielberg added and recognize it as an improvement for cinema, even if it's less faithful to the facts. Either way, the two versions complement each other: the book is the blueprint, the film is the performance."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/catch-me-if-you-can",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

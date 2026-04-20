@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Henry's prose voice is the novel's engine",
       "body": "Henry writes Poppy in first person with a voice of considerable warmth and self-aware humor — funny about her own failures, precise about her feelings, and genuinely curious about Alex. This voice is the novel's primary pleasure and what gives the slow-burn its charge. Every observation about Alex is filtered through Poppy's specific way of seeing him.\n\nBader's performance captures Poppy's energy and delivers Henry's dialogue with charm, but film can't replicate the interiority of Henry's sentences. The novel lets you live inside Poppy's head for 364 pages; the film shows you her actions. It's a structural limitation, not a failure of adaptation, but it's the reason readers who loved the book will always prefer it."
     },
     {
+      "question": null,
       "title": "The flashback structure works better on the page",
       "body": "Henry alternates between the present — Poppy trying to plan one last vacation to fix things — and each of their ten annual trips, from Vail to New Orleans to Tuscany to Croatia. This structure builds the relationship's history with deliberate accumulation, so when the fracture comes it lands with full weight. You've earned the payoff because you've been on every trip.\n\nThe film preserves this structure and it mostly works, though the compression means some vacations are reduced to single scenes or montages. The Sanibel trip, which in the novel is a turning point where Poppy realizes she's in love, becomes a brief sequence. Haley compensates with strong visual storytelling — the way Blyth and Bader look at each other does narrative work — but the accumulation feels faster and lighter than Henry intended."
     },
     {
+      "question": null,
       "title": "Tom Blyth brings conventional appeal to Alex",
       "body": "Alex is described as book-loving, quiet, and reluctant to travel — an internal person who comes alive in specific contexts. Henry writes him as someone Poppy finds deeply attractive but who doesn't register as obviously handsome to others. That gap is part of the novel's point: Poppy sees something real that the world overlooks.\n\nBlyth plays Alex with genuine restraint and intelligence, and his chemistry with Bader is evident. But he's Tom Blyth — he was cast as young Coriolanus Snow in The Hunger Games prequel. Some readers felt his casting brought more obvious leading-man appeal than Henry's Alex is supposed to have, which slightly alters the novel's dynamic. It's a minor shift, but it changes the texture of Poppy's devotion from \"I see what no one else does\" to \"I see what everyone would see if they paid attention.\""
     },
     {
+      "question": null,
       "title": "The Croatia confession scene loses specificity",
       "body": "The novel contains a pivotal scene in Croatia where Alex's full feelings are revealed through a specific, intimate action — he kisses Poppy, and then immediately apologizes and pulls back because he's dating someone else. The moment is devastating because of its restraint and the way Henry writes Poppy's realization that Alex has been in love with her for years but won't act on it while committed to another person.\n\nThe film's adaptation of this scene was the most discussed departure among early viewers. Haley stages it with the same beats, but the emotional specificity that made it land on the page — the exact way Alex hesitates, the precise words he uses to apologize — feels slightly generalized. Some readers felt it lost the devastating intimacy of Henry's version. Others thought Blyth and Bader sold it. It's the film's most divisive choice."
     },
     {
+      "question": null,
       "title": "The locations are gorgeous and earn their place",
       "body": "Henry's novel takes Poppy and Alex through a range of destinations that each have a specific emotional register — some beautiful, some deliberately unglamorous, some chosen because they're cheap or convenient. The variety matters because it shows that the friendship works anywhere, not just in postcard settings.\n\nThe film shot in Tuscany, Barcelona, New Orleans, and Palm Springs with evident care. Cinematographer Luc Montpellier gives each location a distinct visual palette — Tuscany is golden and warm, Croatia is blue and sharp, Palm Springs is saturated and dreamlike. The locations are gorgeous and match the novel's sense that travel is both escape and self-discovery. If anything, the film makes a stronger case for Poppy's career as a travel writer than the novel does, because you see why someone would want to live this way.\n\nYes — Henry's prose voice and the slow accumulation of ten years of friendship are what make the payoff land. The novel earns its ending through 364 pages of precise observation and withheld emotion. The film earns its ending too, but more quickly and with less interiority. If you read first, you'll appreciate what Haley preserved and understand what he couldn't replicate. If you watch first, you'll enjoy a well-made romantic drama but miss what readers fell in love with.\n\nThe novel also contains several subplots — Poppy's complicated relationship with her family, Alex's academic ambitions, the specific reasons their friendship works — that the film compresses or omits. Those details aren't essential to the central romance, but they're what make Poppy and Alex feel like whole people rather than romantic archetypes. Read first and the film becomes a warm, well-cast companion piece. Watch first and you'll wonder what the fuss was about."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/people-we-meet-on-vacation",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

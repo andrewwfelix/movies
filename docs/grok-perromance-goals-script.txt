@@ -1,0 +1,163 @@
+/**
+ * Update Performance Goals Script
+ * 
+ * Reads the latest GSC morning report and updates performance-goals.json
+ * with current impressions, clicks, and progress tracking.
+ * 
+ * Run this after your morning analysis: 
+ *   node scripts/update-performance-goals.js
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const GOALS_PATH = path.join(process.cwd(), 'performance-goals.json');
+const REPORTS_DIR = path.join(process.cwd(), 'data/reports');
+
+async function findLatestReport() {
+  if (!fs.existsSync(REPORTS_DIR)) {
+    throw new Error(`Reports directory not found: ${REPORTS_DIR}`);
+  }
+
+  const files = fs.readdirSync(REPORTS_DIR)
+    .filter(file => file.startsWith('gsc-insights-') && file.endsWith('.json'))
+    .sort()
+    .reverse();
+
+  if (files.length === 0) {
+    throw new Error('No gsc-insights report found in data/reports/');
+  }
+
+  const latestFile = files[0];
+  const fullPath = path.join(REPORTS_DIR, latestFile);
+  console.log(`📊 Using latest report: ${latestFile}`);
+  return JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+}
+
+function calculateDailyAverages(report) {
+  const days = report.config?.periods?.longTerm || 90;
+  const totalImpressions = report.dataSummary?.longTerm?.totalImpressions || 0;
+  const totalClicks = report.dataSummary?.longTerm?.totalClicks || 0;
+
+  return {
+    dailyImpressions: Math.round(totalImpressions / days),
+    dailyClicks: Math.round(totalClicks / days)
+  };
+}
+
+async function updatePerformanceGoals() {
+  console.log('🔄 Updating performance-goals.json...\n');
+
+  // Load latest GSC report
+  const report = await findLatestReport();
+  const averages = calculateDailyAverages(report);
+
+  // Load or create goals file
+  let goals = {};
+  if (fs.existsSync(GOALS_PATH)) {
+    goals = JSON.parse(fs.readFileSync(GOALS_PATH, 'utf8'));
+  } else {
+    console.log('⚠️ performance-goals.json not found. Creating new file...');
+    goals = {
+      createdAt: "2026-04-20",
+      lastUpdated: "2026-04-20",
+      site: "booksversusmovies.com",
+      currentBaseline: {
+        date: "2026-04-20",
+        dailyImpressions: 400,
+        dailyClicks: 10,
+        notes: "Initial baseline"
+      },
+      affiliateGoals: {
+        primaryProgram: "Amazon Associates",
+        targetFirstSale: {
+          targetDate: "2026-05-25",
+          daysFromNow: 35,
+          realisticDateRange: ["2026-05-15", "2026-06-10"],
+          requiredDailyImpressions: 1200,
+          requiredDailyClicks: 30,
+          assumedSiteToAffiliateCTR: 2.5,
+          assumedConversionRate: 1.5,
+          status: "in-progress",
+          progressNotes: ""
+        },
+        targetConsistentSales: {
+          goal: "3 sales per week",
+          targetDate: "2026-07-01",
+          requiredDailyImpressions: 2500,
+          requiredDailyClicks: 60,
+          status: "not-started"
+        }
+      },
+      trafficMilestones: [
+        { name: "First Traffic Doubling", targetImpressions: 800, targetDate: "2026-05-10", status: "in-progress", notes: "" },
+        { name: "Meaningful Volume", targetImpressions: 1500, targetDate: "2026-06-01", status: "not-started", notes: "" },
+        { name: "Strong Growth Phase", targetImpressions: 3000, targetDate: "2026-08-01", status: "not-started", notes: "" }
+      ],
+      contentGoals: {
+        newComparisonPages: { target: 12, byDate: "2026-06-30", status: "not-started" },
+        optimizeExistingPages: { target: 15, byDate: "2026-05-20", status: "in-progress" }
+      },
+      streamingCTA: {
+        goal: "Add 'Watch now on Amazon' links to top 10 pages",
+        targetDate: "2026-05-05",
+        status: "not-started"
+      },
+      trackingMetrics: {
+        impressions: { current: 400, target: 1500, unit: "daily average" },
+        clicks: { current: 10, target: 40, unit: "daily average" },
+        affiliateLinkCTR: { current: null, target: 2.5, unit: "percent" },
+        conversionRate: { current: null, target: 1.5, unit: "percent" }
+      },
+      history: []
+    };
+  }
+
+  // Update with latest data
+  const today = new Date().toISOString().split('T')[0];
+  goals.lastUpdated = today;
+
+  // Update current baseline
+  goals.currentBaseline = {
+    date: today,
+    dailyImpressions: averages.dailyImpressions,
+    dailyClicks: averages.dailyClicks,
+    notes: `Updated from GSC report: ${report.generatedAt}`
+  };
+
+  // Update tracking metrics
+  goals.trackingMetrics.impressions.current = averages.dailyImpressions;
+  goals.trackingMetrics.clicks.current = averages.dailyClicks;
+
+  // Add to history
+  goals.history.unshift({
+    date: today,
+    dailyImpressions: averages.dailyImpressions,
+    dailyClicks: averages.dailyClicks,
+    notes: `Auto-updated from morning GSC analysis`
+  });
+
+  // Keep only last 30 history entries
+  if (goals.history.length > 30) {
+    goals.history = goals.history.slice(0, 30);
+  }
+
+  // Save updated file
+  fs.writeFileSync(GOALS_PATH, JSON.stringify(goals, null, 2));
+
+  console.log(`✅ performance-goals.json successfully updated!`);
+  console.log(`   Date: ${today}`);
+  console.log(`   Daily Impressions: ${averages.dailyImpressions}`);
+  console.log(`   Daily Clicks: ${averages.dailyClicks}`);
+  console.log(`   History entries: ${goals.history.length}`);
+  
+  // Quick progress check
+  const firstSaleGoal = goals.affiliateGoals.targetFirstSale;
+  const progress = Math.round((averages.dailyImpressions / firstSaleGoal.requiredDailyImpressions) * 100);
+  console.log(`\n🎯 Progress toward first sale: ${progress}% (${averages.dailyImpressions}/${firstSaleGoal.requiredDailyImpressions} impressions)`);
+}
+
+updatePerformanceGoals().catch(err => {
+  console.error('💥 Error updating performance goals:');
+  console.error(err.message);
+});

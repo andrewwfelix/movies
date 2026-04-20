@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The marsh as character and emotional landscape",
       "body": "Owens is a wildlife scientist and it shows—her descriptions of the North Carolina marsh are extraordinarily precise and beautiful. The marsh isn't backdrop; it's the novel's beating heart, mirroring Kya's isolation, her resilience, and her way of understanding the world. Owens writes about tidal patterns, heron behavior, and firefly mating rituals with the same attention she gives to human relationships.\n\nThe film, shot on location in Louisiana marshlands, captures visual beauty—golden light on water, Spanish moss, egrets in flight. But cinematography cannot replicate the intimacy of Owens' prose relationship with the natural world. The marsh becomes setting rather than character, and that shift diminishes what makes the novel distinctive."
     },
     {
+      "question": null,
       "title": "Kya's interiority and self-education",
       "body": "The novel spends years inside Kya's development—her loneliness, her self-education through observation, her intricate understanding of animal behavior and what it teaches her about human behavior. Owens shows Kya learning to read, studying biology texts, cataloging specimens, and publishing scientific illustrations. This isn't montage material; it's the substance of who Kya becomes.\n\nDaisy Edgar-Jones gives a committed performance, capturing Kya's wariness and gradual opening to trust. But two hours cannot carry the weight of a childhood rendered in full. The film's Kya is sympathetic; the novel's Kya is fully inhabited. We lose the years of solitude that shape her, the scientific mind that defines her, and the slow accumulation of knowledge that makes her survival credible."
     },
     {
+      "question": null,
       "title": "The nature writing and scientific observation",
       "body": "Owens weaves Kya's scientific observations throughout the novel—firefly behavior, marsh hawk courtship, the biology of survival and abandonment. These passages are not decorations; they're arguments about how Kya understands love, betrayal, and what it means to be left behind. When Kya watches female fireflies lure males to their deaths, she's learning something about Chase Andrews.\n\nThe film strips most of this out, which is understandable—voiceover nature writing rarely works on screen. But removing it removes the novel's most distinctive quality. What remains is a competent murder mystery and coming-of-age story. What's lost is the voice that made twelve million people fall in love with this book."
     },
     {
+      "question": null,
       "title": "Chase Andrews' assault and Kya's response",
       "body": "In the novel, Chase's assault of Kya is explicit and brutal. He tries to rape her on the beach; she fights him off and escapes. The scene is visceral and makes clear what kind of man Chase is beneath the charm. It also makes Kya's subsequent actions—and the novel's final revelation—morally weightier.\n\nThe film softens this. Chase is aggressive and entitled, but the assault is less explicit, the violence less clear. Harris Dickinson plays him as arrogant rather than dangerous. This makes his death feel less justified and reduces the moral complexity of the ending. The novel asks harder questions about justice and survival; the film asks easier ones."
     },
     {
+      "question": null,
       "title": "Jumpin and Mabel's role in Kya's life",
       "body": "The novel gives significant space to Jumpin, the Black shopkeeper who quietly supports Kya across decades, and his wife Mabel. They provide supplies on credit when Kya has no money. They protect her from town gossip. Mabel brings her her first bra and teaches her about menstruation. Their relationship with Kya—the only genuine family she has—is deeply moving and carefully drawn across years.\n\nThe film includes them but cannot give them the same depth. Sterling Macer Jr. brings warmth to Jumpin, but the role is reduced to supportive shopkeeper rather than surrogate father. Mabel appears briefly. Their significance in Kya's survival is acknowledged but not felt, and that's a loss—they're the novel's moral center.\n\nYes—the film is a serviceable adaptation of the plot but an inadequate adaptation of the experience. The novel's nature writing, Kya's full interiority, and the slow accumulation of years in the marsh are what make it a phenomenon. Owens' prose has a specificity and intimacy that cannot be translated to screen. Read first and the film becomes a companion piece—a chance to see Daisy Edgar-Jones embody a character you already know, to see the marsh visualized, to hear Taylor Swift's end-credits song.\n\nWatch first and you'll get the story—the mystery, the romance, the courtroom drama. But you'll miss what made twelve million people love this book. You'll miss the firefly passages, the heron observations, the tidal patterns that mirror Kya's emotional life. You'll miss the voice. And the voice is the real thing."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/where-the-crawdads-sing",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

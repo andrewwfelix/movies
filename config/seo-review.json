@@ -202,6 +202,27 @@
           "maxTokens": 600,
           "maxTokensMultiplier": 5
         }
+      },
+      "7_questions": {
+        "fields": [
+          "differences[].question"
+        ],
+        "requiresReview": false,
+        "_notes": "Converts each difference title to a question-format string for PAA targeting. Array output, one question per difference.",
+        "prod": {
+          "model": "anthropic/claude-sonnet-4-5",
+          "label": "Claude Sonnet 4.5",
+          "temperature": 0.2,
+          "maxTokens": 600,
+          "maxTokensMultiplier": 5
+        },
+        "dev": {
+          "model": "anthropic/claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "temperature": 0.2,
+          "maxTokens": 600,
+          "maxTokensMultiplier": 5
+        }
       }
     },
     "adjudicator": {
@@ -210,7 +231,10 @@
       "temperature": 0.1,
       "maxTokens": 2000,
       "_notes": "Reads all review model outputs for requiresReview fields, writes final accepted version"
-    }
+    },
+    "stopOnFailureThreshold": 0,
+    "verifyAfterEachCall": true,
+    "_verifyNotes": "0 = stop on any failure. verifyPage runs after each call. Failures stop remaining calls for that page and halt the entire run immediately."
   },
   "_notes": "Three models review title/meta independently. Fullpage pipeline uses per-call model config. Add model to config not to script."
 }

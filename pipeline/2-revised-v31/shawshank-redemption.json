@@ -63,22 +63,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "King's frame narrative becomes Darabont's pure cinema",
       "body": "King's novella is narrated by Red from a future vantage point, creating distance and inevitability. The reader knows Andy escapes because Red is telling the story from outside prison. This narrative structure is King's greatest strength in the novella—it creates suspense despite the foregone conclusion.\n\nDarabont abandons the frame entirely, trusting the camera to show rather than tell. Red's voiceover is used sparingly, as mood and reflection rather than plot exposition. This forces the film to earn its emotional beats through performance and editing, not narrative convenience. The result is more immediate and visceral."
     },
     {
+      "question": null,
       "title": "The film excises King's subplot about Andy's wife and her lover",
       "body": "King's novella includes Andy's backstory about his wife's infidelity and his murder of both her and her lover. This context humanizes Andy's crime and adds psychological complexity to his imprisonment.\n\nDarabont strips this entirely, leaving Andy's crime ambiguous and his innocence a matter of faith rather than fact. This is a brilliant choice: it forces the audience to trust Andy the way Red does, without the reassurance of backstory. It also shifts focus from Andy's personal tragedy to the universal question of institutional injustice."
     },
     {
+      "question": null,
       "title": "The film transforms the escape from plot device to earned climax",
       "body": "In King's novella, Andy's escape is almost anticlimactic—we learn about it through Red's narration after the fact. The novella's power lies in the friendship and hope, not in the mechanics of escape. The tunnel is functional, not dramatic.\n\nDarabont builds the escape into a genuine climax, intercutting Andy's crawl through the sewage pipe with the warden's discovery of his absence. The film makes the physical act of escape matter, turning it into a visual and emotional crescendo. This is a departure from King's structure, but it's narratively sound—it gives the film a third act that the novella deliberately avoids."
     },
     {
+      "question": null,
       "title": "King's cynicism about institutional hope becomes Darabont's humanism",
       "body": "King's novella is fundamentally skeptical about redemption within the system. Red's arc is about accepting his fate and finding small joys within it. Hope is dangerous in King's world—it's what kills Brooks.\n\nDarabont's film argues that hope is not just possible but necessary, even in the darkest places. The film's ending—with Red and Andy reunited—is earned and triumphant in a way King's novella deliberately avoids. Darabont believes in redemption; King is more ambivalent about whether it's even possible."
     },
     {
+      "question": null,
       "title": "The film uses visual language where King relies on introspection",
       "body": "King's novella is rich with internal monologue and Red's reflections on prison life, mortality, and friendship. Much of its power comes from psychological depth and philosophical meditation.\n\nDarabont translates this into visual metaphor: the opera scene, the rain on Andy's face, the way light falls through prison bars. The film trusts images to carry meaning that King's prose articulates directly. This is not a loss—it's a translation that proves cinema can achieve what prose achieves through entirely different means."
     }
@@ -143,5 +148,28 @@
   ],
   "hasSpoilerWarning": false,
   "hasQuickAnswer": true,
-  "hasCharTable": true
+  "hasCharTable": true,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/shawshank-redemption",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

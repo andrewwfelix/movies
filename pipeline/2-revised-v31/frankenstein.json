@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Creature's Eloquence",
       "body": "Del Toro restores what two centuries of adaptations have erased: the creature's voice. Shelley's creature is one of literature's most articulate characters. His account of his own development — learning language by listening to the De Laceys, reading Paradise Lost and identifying with Satan, constructing philosophical arguments about why he was made to suffer — is central to the novel's moral architecture.\n\nMost adaptations have made the creature mute or minimally verbal. Boris Karloff's 1931 performance established the grunting, inarticulate monster in popular imagination. Kenneth Branagh's 1994 version gave Robert De Niro a few lines but nothing approaching Shelley's rhetoric.\n\nJacob Elordi's creature speaks in full paragraphs, quotes Milton, and delivers the novel's most devastating line to Victor: \"I ought to be thy Adam, but I am rather the fallen angel.\" This is the adaptation's most significant and correct choice."
     },
     {
+      "question": null,
       "title": "The Frame Narrative Structure",
       "body": "Shelley's novel is structured as letters from Robert Walton to his sister Margaret, containing Victor's first-person account, which itself contains the creature's first-person narrative. This nested structure creates moral complexity: we receive the creature's perspective through Victor's transcription, filtered through Walton's letters, and must judge whose account to trust.\n\nMost films flatten this to a single perspective, usually Victor's. Del Toro retains Walton's frame with Christoph Waltz in the Arctic sequences, and preserves the creature's extended first-person account of his education and rejection by the De Laceys.\n\nThe film simplifies — it must — but it retains more of the original architecture than any previous adaptation. The effect is that we still receive multiple perspectives on who is responsible for the tragedy."
     },
     {
+      "question": null,
       "title": "Victor's Culpability and Self-Pity",
       "body": "Shelley is unambiguous: Victor is the monster of his own novel. He creates life without considering the consequences, abandons his creation the moment it breathes, refuses to take responsibility for the murders, and spends the novel in self-pitying guilt while doing nothing to prevent further deaths. When the creature begs for a female companion, Victor agrees, then destroys her in front of him — the act that triggers the murder of Elizabeth.\n\nMost adaptations soften Victor into a tragic hero, a man of science undone by forces beyond his control. Oscar Isaac's performance preserves Shelley's critique. His Victor is narcissistic, cowardly, and incapable of seeing past his own suffering to acknowledge what he has done.\n\nThe film makes explicit what the novel implies: Victor's real crime is not creating the creature but abandoning it. Del Toro frames this as a story about parental responsibility, which is exactly what Shelley wrote."
     },
     {
+      "question": null,
       "title": "The Female Characters and Feminist Critique",
       "body": "Shelley's female characters — Elizabeth Lavenza, Justine Moritz, Safie — are largely passive in the plot, but their treatment is part of the novel's feminist critique. Women in Frankenstein are creatures of a world made by men and suffer for it. Justine is executed for William's murder. Elizabeth is murdered on her wedding night. The female creature is destroyed before she can live.\n\nDel Toro expands the female roles. Mia Goth's Elizabeth is more aware of Victor's obsession and more vocal in her objections. The film adds scenes of Elizabeth confronting Victor about his secrecy and his treatment of her as an object to be claimed rather than a person to be known.\n\nThis brings the adaptation into conversation with contemporary concerns about agency and representation, but it departs from Shelley's more oblique approach. Shelley's point was that women are silenced — del Toro gives them voices, which changes the critique."
     },
     {
+      "question": null,
       "title": "Del Toro's Visual Language and Gothic Atmosphere",
       "body": "Del Toro is the ideal director for this material. His visual sensibility — the beauty of the grotesque, the sympathy for monsters, the attention to texture and decay — suits Shelley's themes perfectly. The creature design is extraordinary: eight feet tall, stitched and scarred, but with Elordi's expressive face visible beneath the prosthetics.\n\nThe film's Gothic atmosphere — the storms, the Alpine landscapes, the laboratory sequences — realizes what Shelley describes but cannot show. The creation sequence, with its galvanic apparatus and Victor's manic energy, is the most visceral depiction of the moment of animation ever filmed.\n\nThis is an area where the film does something the novel cannot. Shelley's prose is precise but restrained. Del Toro's images are overwhelming. The film earns its existence by showing us the horror and beauty of the creature in ways that prose, however good, cannot achieve.\n\nYes, and this is particularly important for Frankenstein because two centuries of cultural mythology have accumulated around the novel. Most people think they know the story. They know the Boris Karloff version: the flat-headed, bolt-necked, grunting monster. They know the phrase \"It's alive!\" which does not appear in Shelley's novel. They know the idea of the mad scientist, which is a distortion of what Shelley wrote.\n\nRead the novel and meet the real Frankenstein's monster: articulate, philosophical, capable of reading Paradise Lost and constructing arguments about his own existence. Meet Victor as Shelley wrote him: not a tragic hero but a narcissistic coward who creates life and then refuses to take responsibility for it. The novel is short, readable, and more radical than any adaptation has managed to be. Del Toro's film is the closest any director has come, but it is still a translation. Read the original first."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/frankenstein",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

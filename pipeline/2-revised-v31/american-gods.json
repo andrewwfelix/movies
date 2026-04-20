@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The road-trip structure is slowed and expanded",
       "body": "Gaiman's novel is fundamentally a road novel — Shadow and Wednesday moving through a mythological America full of diners, motels, small towns, and roadside attractions, each location revealing another layer of the country's forgotten spiritual life. The novel's America is a specific, carefully observed landscape, and the journey through it is the plot.\n\nThe series slows this movement considerably, expanding individual episodes and locations to fill television's requirement for sustained drama. The House on the Rock sequence, which occupies one chapter in the book, becomes multiple episodes. The road's accumulative momentum is partly lost in the expansion, though Fuller's visual interpretation of mythological America — particularly the carousel of the gods — is genuinely extraordinary."
     },
     {
+      "question": null,
       "title": "Ian McShane's Wednesday is the series' definitive achievement",
       "body": "This is the series' casting triumph and its most compelling argument for its own existence. McShane plays Wednesday with a precise mixture of charm, menace, and old-man cunning that matches exactly what Gaiman describes — a god who has survived by being the most interesting person in any room.\n\nHis scenes carry the weight the series needs, and they make a convincing case for why Shadow would follow this man across the country despite every reason not to. The novel's Wednesday is equally compelling; the difference is that McShane gives him a face, a voice, and a physical presence that makes Wednesday's con feel immediate and dangerous in ways prose can only describe."
     },
     {
+      "question": null,
       "title": "The \"Coming to America\" interludes become visual masterpieces",
       "body": "Both novel and series include standalone sections showing how specific gods came to America — Anansi arriving on a slave ship, Czernobog working in a Chicago slaughterhouse, Bilquis surviving into modernity, the Jinn driving a New York taxi. The series expands these interludes into fully produced episodes and short films, and they are among the most visually inventive sequences in recent American television.\n\nFuller's direction of the Anansi sequence, in particular, is genuinely extraordinary — Orlando Jones delivers a speech about the commodification of Black bodies that may be more powerful on screen than the equivalent passage in the book. These interludes justify the series' existence even when the main narrative falters."
     },
     {
+      "question": null,
       "title": "Laura Moon becomes a co-protagonist",
       "body": "The novel's Laura is a peripheral but significant presence — Shadow's dead wife, resurrected and following him with a zombie's purposeful loyalty. She appears in key moments but remains mysterious. The series greatly expands her role, giving her a full episode of her own backstory (\"Git Gone\") and making her a co-protagonist of sorts.\n\nEmily Browning plays Laura with a sardonic blankness that suits the character, and the expansion mostly works. Her relationship with Mad Sweeney becomes one of the series' emotional centers. Novel readers will find a fuller Laura in the series; series watchers will find a somewhat more mysterious one in the book."
     },
     {
+      "question": null,
       "title": "The series declines across three seasons and ends unresolved",
       "body": "This is worth stating plainly: the series ran for three seasons, lost Bryan Fuller as showrunner after the first, changed direction repeatedly, and was cancelled without resolving its story. The first season is excellent — visually ambitious, mythologically inventive, anchored by McShane's performance. The second and third seasons are increasingly uneven, losing cast members and creative coherence.\n\nThe novel has a beginning, middle, and end, and delivers its resolution with the satisfying completeness that television's production realities denied the series. Wednesday's true con, Shadow's role in it, and the nature of the war between old and new gods are all resolved in Gaiman's final chapters. The series never reaches that conclusion. This is the clearest argument for reading first: the book finishes.\n\nYes — emphatically. The novel is complete, the series is not, and the book's road-trip accumulation of mythological America is the experience that the series, for all its visual brilliance, cannot replicate across three seasons of diminishing returns. Gaiman's prose creates a specific America — the roadside attractions, the forgotten gods in small towns, the weight of immigrant belief — that television can visualize but not sustain at the pace required.\n\nRead first, then watch the first season for McShane's Wednesday, the Anansi sequence, and Fuller's visual interpretation of the House on the Rock. Stop there with your memories intact. The novel will give you the complete story; the series' first season will show you what that story looks like when a visionary director gets it right for eight episodes before production reality intervenes."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/american-gods",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

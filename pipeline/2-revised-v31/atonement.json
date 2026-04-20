@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Briony's interiority is the novel's greatest achievement and the film's necessary sacrifice",
       "body": "The novel's first section is one of the great feats of literary ventriloquism — McEwan writes from inside a thirteen-year-old's overactive imagination with total precision. We see exactly how Briony's romantic fantasies, her nascent writer's sensibility, and her misreading of adult sexuality combine to produce a catastrophic misinterpretation. She sees Robbie and Cecilia at the fountain and constructs a narrative of male aggression. She reads Robbie's explicit letter to Cecilia and decides he's a \"sex maniac.\" She glimpses them in the library and interprets passion as violence.\n\nSaoirse Ronan is extraordinary in the film — her performance earned an Oscar nomination at age thirteen — but she can only show us Briony from the outside. Wright uses visual cues brilliantly: Briony's play rehearsal establishes her need for control, her watching from windows emphasizes her role as observer. But the novel shows us how a bright, well-meaning child could do something unforgivable and makes it feel inevitable. The film shows us that she did it."
     },
     {
+      "question": null,
       "title": "The structure collapses from four distinct modes into conventional tragedy",
       "body": "McEwan divides the novel into four sections with radically different narrative modes. Part One is country-house realism filtered through Briony's consciousness. Part Two is Robbie's stream-of-consciousness journey to Dunkirk, his mind deteriorating from infected wound and exhaustion. Part Three is wartime London through nurse Briony's limited perspective. Part Four is elderly Briony's confession, which reframes everything as her novel.\n\nThe film compresses this architecture into a more conventional three-act romantic tragedy with a coda. Wright's version is beautiful and emotionally devastating, but it loses the formal argument McEwan is making about fiction's relationship to reality and guilt. The novel asks what kind of narrative can contain this story; the film tells the story movingly but doesn't interrogate storytelling itself."
     },
     {
+      "question": null,
       "title": "The Dunkirk tracking shot is cinema at its absolute finest",
       "body": "This is the film's greatest achievement and the one area where it genuinely surpasses the source. Wright's five-minute unbroken tracking shot through the chaos of the Dunkirk evacuation is among the finest sequences in recent British cinema. The camera follows Robbie and his companions through a landscape of surreal horror: soldiers singing on a beached boat, a Ferris wheel turning against smoke-filled sky, horses being shot, a makeshift cinema showing a newsreel to men who will never make it home.\n\nMcEwan's Dunkirk section is superb prose — Robbie's fragmenting consciousness rendered in broken syntax and fever-dream imagery. But Wright does something here the novel cannot: pure immersive spectacle that conveys Robbie's deteriorating state through visual overwhelm. The tracking shot is a technical marvel that serves emotional purpose. It's the moment where the film stops being an adaptation and becomes its own work of art."
     },
     {
+      "question": null,
       "title": "The metafictional ending loses its power in translation from page to screen",
       "body": "This is where the novel is irreplaceable. McEwan's final section reveals that the story we have been reading is Briony's novel — her attempt at atonement — and that the ending she has written for Robbie and Cecilia is a fiction. The real ending is darker: Robbie died of septicemia at Dunkirk, Cecilia died in the Balham tube station flooding during the Blitz. They never reunited. An elderly Briony, now a successful novelist with vascular dementia, confesses that she has given the lovers a happiness they never had in life.\n\nShe asks whether this constitutes atonement or merely another act of self-serving imagination. The question is devastating because we've spent three hundred pages inside what we thought was reality. The film attempts this with a Vanessa Redgrave coda — elderly Briony on television, explaining the truth. But the reveal lands differently when you've been inside a novel all along rather than watching a film. Cinema always announces itself as constructed; prose can masquerade as truth until the final pages pull the rug out."
     },
     {
+      "question": null,
       "title": "Cecilia and Robbie are more vivid on screen than on the page",
       "body": "Keira Knightley and James McAvoy are luminous together, and the film earns its romance more vividly than the novel does. McEwan is more interested in Briony than in the lovers — his Cecilia and Robbie are slightly more schematic, their relationship established efficiently but not dwelt upon. Wright gives them room to breathe. The fountain scene, the library scene, their brief reunion in wartime London — these moments have a physical intensity the novel doesn't quite match.\n\nThis is one area where Wright's adaptation genuinely improves on the source. You feel the loss of their relationship more acutely on screen precisely because you've been allowed to inhabit it more fully. Knightley's Cecilia has a fierce independence that makes her choice of Robbie over family more powerful. McAvoy's Robbie has a warmth that makes his suffering more unbearable. The novel makes you understand the tragedy intellectually; the film makes you feel it in your chest.\n\nYes — emphatically. The film is beautiful and the ending will move you, but without having read the novel you're watching a gorgeous wartime romance with a twist ending. With the novel, you understand that the entire story is an argument about guilt, narrative, and whether art can ever make good on life's damage. The metafictional dimension is diluted in the film; on the page it's the whole point.\n\nRead it first and the film becomes a meditation on what even a masterful adaptation must sacrifice. You'll appreciate Wright's Dunkirk sequence more because you'll know what he's translating from McEwan's prose. You'll understand why Vanessa Redgrave's final monologue can't quite replicate the novel's ending. And you'll see how cinema and literature do different things — the film gives you Knightley and McAvoy's faces, the novel gives you Briony's consciousness. Both are valuable. The novel is essential."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/atonement",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

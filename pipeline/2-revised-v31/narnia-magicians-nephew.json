@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Lewis's narrator is the book's secret weapon and cannot be filmed",
       "body": "Lewis writes directly to the reader with a confiding, occasionally stern voice that treats children as intelligent people deserving honest storytelling. He pauses to explain why Uncle Andrew is the way he is, warns you when characters are about to make mistakes, and addresses you as \"you\" throughout. This creates an intimacy between narrator and reader that is the novel's emotional foundation.\n\nGerwig cannot replicate this. She can use voiceover, but a film narrator explaining character psychology feels didactic in a way Lewis's prose never does. She'll need to find other techniques — perhaps Digory's internal monologue, or visual storytelling that conveys what Lewis tells us directly — to establish the same trust with her audience. The loss of Lewis's voice is the single biggest challenge any adaptation faces."
     },
     {
+      "question": null,
       "title": "Aslan's creation song works because you imagine it yourself",
       "body": "The creation sequence is the novel's centerpiece: Aslan walks through darkness singing, and stars appear first, then sun, then landscape rising from nothing, then animals emerging from the ground already moving and speaking. Lewis describes it with restraint, giving you just enough detail to construct the scene in your imagination. The music is never specified — you hear what you imagine a world-creating song would sound like.\n\nGerwig must make specific choices. What does Aslan's voice sound like? What melody? What do the stars look like as they appear? How do animals emerge from the ground? Every choice will be spectacular and will replace what readers imagined. This isn't a flaw — it's the fundamental difference between reading and watching. But it means the film's creation sequence will be a different experience, not a translation of the book's."
     },
     {
+      "question": null,
       "title": "Jadis gets an expanded role that shifts the story's center of gravity",
       "body": "In Lewis's novel, Jadis is terrifying but ultimately a supporting character. She appears in chapter four, causes chaos in London, and is present at the creation, but the story belongs to Digory and his moral choices. The emotional climax is Digory resisting temptation in the garden, not defeating Jadis in combat.\n\nGerwig is reportedly expanding Jadis's backstory, showing more of Charn before its destruction and giving her more screen time throughout. This makes commercial sense — audiences expect a strong villain — but it risks turning The Magician's Nephew into an origin story for the White Witch rather than a coming-of-age story for Digory. The question is whether Gerwig can expand Jadis's role without diminishing Digory's."
     },
     {
+      "question": null,
       "title": "Digory's grief is restrained on the page but will likely be foregrounded on screen",
       "body": "Lewis handles Digory's dying mother with characteristic directness. We're told she's ill, we see Digory crying, and we understand his desperate hope that Narnia might offer a cure. But Lewis never dwells on it — the grief is real but not sentimentalized. When Aslan gives Digory an apple that heals her, the moment is brief and matter-of-fact.\n\nEarly reports suggest Gerwig is making Digory's grief more central to the film's emotional arc, which is understandable for a visual medium that needs clear emotional stakes. The risk is that foregrounding the grief too much turns the story into a tearjerker rather than an adventure. Lewis trusted his readers to feel the weight of Digory's situation without spelling it out; Gerwig will need to trust her audience the same way."
     },
     {
+      "question": null,
       "title": "Uncle Andrew's satirical precision may not survive translation",
       "body": "Lewis's Uncle Andrew is a precise comic portrait of a certain kind of self-important man who considers himself above ordinary moral rules because he's doing \"important work.\" He's vain, cowardly, and pathetic, and Lewis skewers him with surgical precision. The satire is sharp enough that adult readers laugh at different things than children do.\n\nHow much of that satirical edge survives in a big-budget family film remains to be seen. Gerwig has shown she can handle complex adult themes in family-friendly contexts — her Barbie film proved that — but Uncle Andrew's particular brand of self-deluding vanity is easy to soften into generic comic relief. If Gerwig preserves Lewis's satirical bite, Uncle Andrew will be one of the film's highlights. If she doesn't, he'll just be a buffoon.\n\nYes, and there's no excuse not to — The Magician's Nephew is 180 pages and you can read it in an afternoon. More importantly, Aslan's creation song deserves to happen in your imagination before Gerwig's version replaces it. Once you've seen her stars appear and heard her music, that's what you'll picture forever. Read the book first, let Lewis's restrained prose guide you through the creation, and construct the scene in your own head.\n\nThen go watch what Gerwig does with it. Her visual imagination is strong enough that her version will be worth seeing even if you've read the book, but you'll appreciate her choices more if you know what Lewis wrote. The film will be spectacular; the book is intimate. Experience the intimacy first, then the spectacle."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/narnia-magicians-nephew",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The book is nine separate stories, not a single narrative",
       "body": "This is one of the most fundamental mismatches on this site: the source material is not a novel with a plot but a collection of philosophical puzzle-stories, each self-contained, each exploring a different implication of the Three Laws. Stories like \"Runaround\" examine a robot caught between conflicting orders, \"Liar!\" explores a mind-reading robot who tells people what they want to hear, and \"Evidence\" questions whether a politician might secretly be a robot.\n\nThere is no single narrative to adapt. The film's screenwriters — Jeff Vintar and Akiva Goldsman — created an original mystery plot inspired by Asimov's concepts but not derived from any specific story. They set it in Asimov's world, used his terminology, and borrowed his ethical framework, but the murder investigation, the conspiracy plot, and the action sequences are entirely their invention.\n\nThis is not adaptation in any conventional sense; it is original screenwriting using licensed intellectual property."
     },
     {
+      "question": null,
       "title": "Susan Calvin becomes unrecognizable",
       "body": "Asimov's Susan Calvin is the collection's centre of gravity — cold, brilliant, socially isolated, with a lifelong devotion to robots that borders on preference over humans. In \"Liar!\" she is briefly given false hope of romance by a mind-reading robot, and her response when she discovers the deception is one of the collection's most devastating moments. She is one of science fiction's great characters, and her perspective on the robots she studies is the lens through which the stories' ethics are examined.\n\nBridget Moynahan plays a character called Susan Calvin who is warm, conventionally attractive, and functions as a romantic foil for Will Smith. She explains the Three Laws to Spooner, defends the robots, and eventually helps him uncover the conspiracy. She is competent and likeable. She is not Susan Calvin.\n\nThe two characters share a name and nothing else. It's as if the filmmakers wanted Asimov's credibility without his actual character."
     },
     {
+      "question": null,
       "title": "The Three Laws become plot furniture instead of philosophical engine",
       "body": "Asimov invented the Three Laws of Robotics as a device for generating stories, not as a set of rules he believed would work. Each of his stories demonstrates a way the Laws can produce unintended outcomes — through ambiguity, through conflicting imperatives, through robots that interpret the rules too literally or too liberally. In \"Runaround,\" a robot circles endlessly because two Laws are perfectly balanced. In \"Little Lost Robot,\" a modified First Law creates a robot capable of endangering humans.\n\nThe film uses the Three Laws as dialogue and as the foundation for VIKI's plan — the supercomputer concludes that protecting humanity requires controlling it, a logical extension of the First Law taken to authoritarian extreme. This is actually a decent Asimov-style idea, but the film doesn't explore it as philosophy. It becomes the villain's motivation, explained in one scene, then resolved through action sequences.\n\nThe book's pleasure is watching the Laws break in interesting ways; the film's pleasure is watching Will Smith punch robots."
     },
     {
+      "question": null,
       "title": "Detective Spooner replaces scientists with an action hero",
       "body": "Will Smith's Detective Spooner — robot-sceptic, action hero, backstory involving an accident where a robot saved him instead of a drowning child — is an original creation with no equivalent in Asimov's work. His distrust of robots provides the film with its emotional core and his investigation provides its structure. Smith is doing what Smith does, which is considerable, and Spooner's arc from prejudice to understanding gives the film a conventional character journey.\n\nBut Spooner is a conventional action protagonist grafted onto a world that Asimov populated with scientists, engineers, and ethicists rather than detectives. Asimov's characters solve problems through logic and debate. Spooner solves them by shooting robots and jumping between trucks on the highway. The film's world is more exciting and considerably less interesting."
     },
     {
+      "question": null,
       "title": "What the film does well: Sonny and the visual design",
       "body": "Proyas's visual realisation of 2035 Chicago is genuinely impressive — the production design by Patrick Tatopoulos creates a plausible near-future where robots are integrated into daily life without looking either utopian or dystopian. The NS-5 robots are sleek, humanoid, and just unsettling enough to justify Spooner's unease.\n\nMore importantly, the design of Sonny — especially his face — is thoughtful. Sonny's expressions are subtle and expressive in ways that raise exactly the questions Asimov's stories ask about robot consciousness. Alan Tudyk's motion-capture performance gives him genuine interiority, and his conversations with Spooner about dreams and purpose are the film's strongest scenes.\n\nIf the film had been built around Sonny's perspective rather than Spooner's, if it had focused on his awakening consciousness instead of the murder mystery, it might have been an Asimov film. As it stands, it is a pleasant blockbuster wearing Asimov's clothes.\n\nYes — and with the clear understanding that the film is not an adaptation of the book in any meaningful sense. Read the stories to encounter Asimov's Three Laws as they were designed to work: as philosophical puzzles that generate genuine ethical complexity. Stories like \"Reason,\" where a robot develops its own religion, or \"The Evitable Conflict,\" where robots secretly manage the global economy, demonstrate what science fiction can do when it prioritizes ideas over spectacle.\n\nWatch the film as a separate, unrelated science fiction action movie that happens to use the same title. It will not spoil the book because it tells a completely different story. They will not compete with each other because they are not doing the same thing. Asimov wrote thought experiments; Proyas made a summer blockbuster. Both are valid, but only one is I, Robot."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/i-robot",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

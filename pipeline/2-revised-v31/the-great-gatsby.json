@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Fitzgerald's prose cannot be filmed",
       "body": "The novel's power is almost entirely in its sentences. Nick's narration has a quality of lyric sadness that Fitzgerald sustains across the whole book. The famous final lines about boats against the current being borne back ceaselessly into the past are the culmination of a prose argument, not just a pretty ending.\n\nLuhrmann's film cannot render this. It quotes the sentences on screen, which is an acknowledgment of defeat that is also an act of respect. The film adds a framing device with Nick writing the story in a sanitarium, which gives Maguire's voiceover a narrative excuse but flattens the novel's ambiguity. Fitzgerald's Nick is unreliable in subtle ways; Luhrmann's is just sad."
     },
     {
+      "question": null,
       "title": "Luhrmann amplifies the spectacle of Gatsby's parties",
       "body": "Luhrmann makes films about excess and spectacle, which makes Gatsby's parties an ideal subject. The parties in the film are magnificent — chaotic, gorgeous, overwhelming, with CGI fireworks and hundreds of extras. The novel's parties are quieter and stranger, described from the outside of Gatsby's dream rather than inside it.\n\nFitzgerald's parties are observed with detachment: guests arrive uninvited, gossip about their host, and leave without meeting him. Luhrmann pulls you into the fantasy; Fitzgerald keeps you on the lawn, watching. The difference is the difference between immersion and critique."
     },
     {
+      "question": null,
       "title": "DiCaprio's Gatsby is too sympathetic",
       "body": "Leonardo DiCaprio's Gatsby is warm, yearning, visibly desperate. The performance gives you everything except what the novel withholds: the precise nature of Gatsby's fraudulence, his capacity for self-delusion. DiCaprio makes Gatsby sympathetic in a way Fitzgerald carefully does not.\n\nThe novel's Gatsby is a magnificent fake whose past is a series of half-truths and whose present is a performance. DiCaprio's Gatsby is a genuine romantic whose love for Daisy is transparently sincere. It's an excellent performance that fundamentally misreads the character's opacity."
     },
     {
+      "question": null,
       "title": "The soundtrack breaks the period atmosphere",
       "body": "Luhrmann's decision to score the 1920s with contemporary hip-hop and pop was divisive and mostly wrong. It works as an argument about the timelessness of aspiration but breaks the novel's specific period atmosphere. The novel's Jazz Age is not an allegory; it is a specific historical moment with a specific sound.\n\nJay-Z's production and tracks by Lana Del Rey, Florence + the Machine, and others create a sonic anachronism that some critics praised as bold and others found distracting. Fitzgerald's novel is precise about its moment — the music, the slang, the social codes. Luhrmann's film trades precision for metaphor."
     },
     {
+      "question": null,
       "title": "Nick Carraway loses his moral ambiguity",
       "body": "Tobey Maguire plays Nick as wide-eyed and passive, which captures half of Nick's function. The novel's Nick is both more morally alert and more complicit. He knows what he's watching is destructive and watches it anyway, with something close to admiration. This moral ambiguity is harder to sustain on screen.\n\nThe film's framing device — Nick in a sanitarium, writing the story as therapy — makes him a victim rather than a participant. Fitzgerald's Nick is complicit in Gatsby's delusion and Tom's cruelty. Luhrmann's Nick is just a witness, which simplifies the novel's ethical complexity.\n\nYes — and this is among the most important read-first recommendations on the site. Fitzgerald's prose is the experience, and no film can replicate it. The novel is 180 pages, can be read in an afternoon, and will stay with you for years. Every sentence is deliberate, every image earned. The green light, the eyes of Doctor T. J. Eckleburg, the valley of ashes — these are not just symbols but prose achievements.\n\nLuhrmann's film is a sincere, sometimes brilliant attempt to translate a work that resists translation. Read the novel first, and the film becomes a meditation on what is lost in the crossing. Watch the film first, and you'll miss what makes Gatsby great: not the story, but the sentences."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-great-gatsby",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

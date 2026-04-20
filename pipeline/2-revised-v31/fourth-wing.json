@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The adaptation does not exist yet",
       "body": "This is not a comparison of two finished works — it is an assessment of what the Prime Video series will need to accomplish when it arrives. The novel is complete, beloved, and commercially dominant. The series is in early development with no confirmed cast, script, or production timeline. Everything that follows is about the challenge ahead, not the result."
     },
     {
+      "question": null,
       "title": "The romance must be earned, not rushed",
       "body": "Yarros writes the Violet-Xaden romance with considerable craft — the tension, the mistrust, the specific beats of their dynamic are precisely calibrated across 498 pages. The series will need to resist the temptation to accelerate this timeline. The antagonism is not a prologue to the romance; it is half the romance.\n\nXaden's protection of Violet must feel reluctant and tactical before it becomes emotional. The moment he admits he wants her alive for reasons beyond duty is the novel's emotional centre. If the series rushes to that moment, the entire structure collapses."
     },
     {
+      "question": null,
       "title": "The dragons are characters, not set pieces",
       "body": "Tairn and Sgaeyl are not background creatures — they have dialogue, personality, and agency. Tairn's sarcasm and Sgaeyl's disdain are as important to the novel's tone as Violet's internal monologue. The series must render them at the budget and quality the material requires, which means House of the Dragon-level effects work sustained across multiple seasons.\n\nThe bonding scenes — Violet's first flight, Tairn's decision to choose her, the mental connection between rider and dragon — are the novel's most iconic moments. If the dragons look cheap or feel like visual effects rather than characters, the series fails its central premise."
     },
     {
+      "question": null,
       "title": "Violet's disability is tactical, not symbolic",
       "body": "Yarros treats Violet's Ehlers-Danlos syndrome as a tactical disadvantage that requires strategic compensation, not as a metaphor or character trait. The novel is specific about what Violet can and cannot do physically, and how she adapts her training and combat style accordingly. The series will need to show this without making it the defining aspect of her character.\n\nThe challenge is to depict a protagonist who is genuinely at physical risk without making her helpless, and who compensates through intelligence without becoming a wish-fulfillment fantasy of disability overcome through willpower. Yarros walks this line carefully; the series must do the same."
     },
     {
+      "question": null,
       "title": "The war college setting must feel dangerous",
       "body": "Basgiath War College kills students regularly — this is not Hogwarts with dragons. The Gauntlet, the Parapet, the challenges and sparring matches are designed to produce casualties. The novel earns its stakes by showing named characters die in training. The series will need to commit to this level of danger or risk feeling sanitized.\n\nThe first episode will likely include the Parapet crossing, where Violet watches multiple cadets fall to their deaths. If the series flinches from this, the entire premise — that Violet is surviving something genuinely lethal — loses credibility.\n\nYes — read the novel before the series arrives. It is a genuinely enjoyable ten hours and understanding what the adaptation needs to capture will make the series more interesting to evaluate when it comes. The novel is complete and satisfying on its own terms; the series is a future event with no guarantee of success.\n\nReading first also means you will experience Violet's internal voice — the wit, the tactical thinking, the self-awareness — in its original form. Television will need to externalize this through dialogue and performance, which is always a translation. The novel gives you the definitive version of the character before the adaptation interprets her."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/fourth-wing",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

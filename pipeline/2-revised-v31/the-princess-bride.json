@@ -76,22 +76,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The framing device is completely different",
       "body": "Goldman's novel presents itself as his abridgement of S. Morgenstern's classic Florinese tale — a fictional source that never existed. This elaborate meta-fictional conceit runs throughout the book with footnotes and editorial asides about cutting boring Florinese history and keeping \"the good parts.\" Goldman the editor commenting on Morgenstern's choices is one of the novel's great pleasures.\n\nReiner's film replaces this with a simpler frame: Peter Falk's grandfather reads the story to Fred Savage's sick grandson, who is initially resistant (\"Is this a kissing book?\") and gradually won over. The frame serves the same purpose — reminding us that stories are acts of love passed between generations — but is more immediately accessible than Goldman's elaborate literary joke.\n\nBoth frames work perfectly for their medium. The novel's meta-fiction is a pleasure that cannot survive adaptation. The film's grandfather is a warmth the novel's ironic distance cannot match."
     },
     {
+      "question": null,
       "title": "Mandy Patinkin makes Inigo Montoya transcendent",
       "body": "This is one of the rare cases where a performance surpasses the source material. Goldman's novel gives Inigo the same arc, the same backstory, the same great lines. But Patinkin's performance adds a layer of operatic grief beneath the comedy that the prose can only describe.\n\nHis delivery of \"Hello. My name is Inigo Montoya. You killed my father. Prepare to die\" is one of cinema's most quoted lines, but it's the way Patinkin plays the final confrontation with Count Rugen — the tears, the rage, the twenty years of grief released in one moment — that elevates the character. Goldman wrote a great supporting role. Patinkin made it immortal."
     },
     {
+      "question": null,
       "title": "André the Giant as Fezzik is inspired casting",
       "body": "André the Giant was a real giant playing a fictional giant, which gave the role an authenticity no special effects could match. His natural gentleness and warmth — he was genuinely beloved by the cast and crew — perfectly matched Goldman's characterization of Fezzik as a gentle soul who hates fighting despite his size.\n\nThe novel's Fezzik is well-drawn and sympathetic. The film's Fezzik is iconic because André brought his real self to the role. When Fezzik says \"I just want you to feel you're doing well,\" it's André's kindness as much as Goldman's dialogue. The casting turned a supporting character into one of the film's emotional anchors."
     },
     {
+      "question": null,
       "title": "The novel has darker edges the film softens",
       "body": "Goldman's novel is slightly darker than Reiner's film. The torture sequences in the Pit of Despair are more extended and graphic. Prince Humperdinck's cruelty is more elaborately detailed. The satire of romance conventions is more pointed — Goldman's Buttercup is deliberately not very bright, a subversion of fairy tale heroines that the film softens by giving Robin Wright more agency and warmth.\n\nThe film's tone is warmer and more purely celebratory of the genre it's playing with. Both tones work for the material. The novel's occasional darkness makes the comedy land differently — more satirical, less affectionate. The film's warmth makes it more rewatchable and more beloved."
     },
     {
+      "question": null,
       "title": "The Zoo of Death is reduced in the film",
       "body": "Goldman's novel features an elaborate sequence in Prince Humperdinck's Zoo of Death — five levels of increasingly dangerous creatures that Westley, Inigo, and Fezzik must navigate. The film reduces this to a brief mention and focuses instead on the sword fight with Count Rugen.\n\nThis is a smart adaptation choice. The Zoo of Death works on the page as part of Goldman's satirical excess, but would have required extensive special effects and slowed the film's momentum. By cutting it, Reiner keeps the focus on character and dialogue, which is where both versions excel.\n\nEither order works — and this is the most genuine either-order recommendation on the site. Goldman wrote both versions and understood what each medium required. The novel's meta-fictional framing device is a pleasure the film cannot replicate. The film's cast — particularly Patinkin, André, and Wallace Shawn — creates performances the novel cannot anticipate. Neither version spoils the other because both are telling you the same story with full awareness of what they're doing.\n\nRead the novel first to experience Goldman's editorial voice and the elaborate Morgenstern conceit. Watch the film first to let the cast define the characters in your imagination. Read after watching to see how Goldman adapted his own work. Watch after reading to see how Reiner and the cast brought it to life. All paths lead to the same place: two versions of equal merit that honour each other. As you wish."
     }
@@ -157,5 +162,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-princess-bride",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

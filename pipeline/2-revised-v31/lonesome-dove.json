@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Gus McCrae's Interior Life",
       "body": "Robert Duvall's Gus is a performance for the ages — garrulous, philosophical, brave, infuriating, and entirely loveable. But McMurtry's Gus is stranger and more interior.\n\nThe novel gives you Gus's meditations on what he has lived and failed to live — his regret over Clara, his understanding that he and Call have outlived their time, his clear-eyed acceptance of death when it comes. These reflections are richer on the page than any performance could fully capture. Duvall is the best possible Gus. McMurtry's Gus is still more."
     },
     {
+      "question": null,
       "title": "The Supporting Cast's Depth",
       "body": "McMurtry populates his novel with dozens of fully realised characters, each given enough space to become complete.\n\nElmira, July Johnson's wife who abandons him to search for an old lover, gets a full interior life in the novel — her desperation, her selfishness, her tragic end. July Johnson, the hapless sheriff pursuing her, is more complex on the page. Blue Duck, the Comanche renegade, is more terrifying. Dish Boggett's hopeless love for Lorena is more fully developed. The incomparable Bolivar, the cook who fires his pistol at the dinner bell, appears more frequently.\n\nThe miniseries, at nearly seven hours, preserves more of these characters than any theatrical film could, but even seven hours cannot carry eight hundred pages. Some characters are compressed; a few are lost. The novel has room for everyone."
     },
     {
+      "question": null,
       "title": "The Landscape as Character",
       "body": "McMurtry writes the American West with the authority of someone who knows it from the inside.\n\nThe specific beauty and brutality of the landscape — the light in Texas, the storms on the plains, the cold in Montana, the way the land shapes and kills the people who cross it — is rendered in prose that makes the geography inseparable from the story. The miniseries was shot on location in Texas, New Mexico, and Montana, and cinematographer Douglas Milsome captures the visual grandeur beautifully.\n\nBut McMurtry's prose gives you the landscape from the inside — the heat, the dust, the distances that break men and horses. The novel makes you feel the journey in your bones."
     },
     {
+      "question": null,
       "title": "Woodrow Call's Emotional Paralysis",
       "body": "Tommy Lee Jones plays Call as a man of almost pathological reticence, and it works — the performance is all restraint and buried feeling.\n\nBut McMurtry's Call is stranger and more damaged. The novel has more room to establish the specific shape of Call's emotional armor — his inability to speak love, his refusal to acknowledge Newt as his son even when the boy is desperate for a word, his one act of tenderness directed toward a corpse. The miniseries suggests this damage; the novel shows it from inside, making Call's final journey with Gus's body both absurd and the only possible act of love he can manage."
     },
     {
+      "question": null,
       "title": "The Ending's Earned Weight",
       "body": "Both versions end with the same extraordinary image — Call carrying Gus's body back to Texas across the continent, a journey that makes no practical sense and complete human sense.\n\nThe miniseries earns this through Duvall and Jones, through seven hours of watching these men together. The novel earns it through eight hundred pages — through every conversation, every silence, every moment of Gus's life and Call's inability to live one. Both endings are devastating. The novel's is more devastatingly earned, because you have lived longer with these men and understand more fully what Call has lost and what he is trying, too late, to say.\n\nRead first — but with the understanding that the miniseries is exceptional and you should watch it too. At seven hours it's the most faithful long-form television adaptation of a major novel you're likely to find. Duvall and Jones are perfect. The script by Bill Wittliff honors McMurtry's dialogue and structure. The production values are high. It's a masterpiece of television.\n\nBut McMurtry wrote eight hundred pages for a reason, and every page earns its place. The novel gives you the interior lives of Gus and Call and a dozen other characters. It gives you the landscape as a living presence. It gives you the time to understand why Call's final journey matters. Read first. Watch after. Gus McCrae deserves both."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/lonesome-dove",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

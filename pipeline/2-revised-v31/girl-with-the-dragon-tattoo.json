@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Lisbeth's interior world is far richer on the page",
       "body": "Larsson devotes substantial chapters to Lisbeth's history — her institutionalization at twelve after setting her father on fire, her diagnosis as mentally incompetent, her photographic memory, her hacking skills developed in isolation. The novel explores her thought processes, her ethical code (she divides the world into \"bastards\" and everyone else), and her complicated feelings about intimacy.\n\nRooney Mara gives one of the great screen performances of the 2010s, earning an Oscar nomination for her intensity and physical transformation. But two and a half hours can't contain what 465 pages provide. We see Lisbeth's actions in the film; we inhabit her consciousness in the book."
     },
     {
+      "question": null,
       "title": "The Swedish institutional critique is largely absent from the film",
       "body": "Larsson was an investigative journalist who spent his career exposing right-wing extremism and violence against women. His novel is saturated with specific knowledge of Swedish failures — the guardianship system that allows men like Bjurman to abuse vulnerable women, the corporate culture that protects men like Martin Vanger, the police incompetence that left Harriet's case unsolved for forty years.\n\nFincher's film streamlines this social context into a more conventional thriller structure. The result is a brilliant genre exercise that loses the novel's documentary anger. Larsson wrote an indictment disguised as entertainment; Fincher made entertainment that gestures toward indictment."
     },
     {
+      "question": null,
       "title": "Fincher's visual language creates a frozen moral landscape",
       "body": "Fincher shoots Sweden in desaturated winter light, all grays and blacks and whites, making the Vanger island feel like a place where warmth has been permanently extinguished. Cinematographer Jeff Cronenweth uses digital cameras to create an almost clinical clarity — every detail is visible, nothing is softened.\n\nThe opening title sequence, set to Trent Reznor and Atticus Ross's industrial cover of \"Immigrant Song,\" shows Lisbeth constructed and deconstructed in liquid darkness — it's one of the finest credit sequences in modern cinema. Fincher's aesthetic control is absolute. The novel has no visual equivalent, but it has something else: the accumulation of documentary detail that makes Sweden feel like a real place rather than a stylized backdrop."
     },
     {
+      "question": null,
       "title": "The Vanger family investigation is more elaborate in the novel",
       "body": "Larsson devotes extensive pages to Blomkvist's archival work — reading through decades of Henrik's notes, studying photographs from the day Harriet disappeared, tracking down family members for interviews. The novel includes detailed genealogies, timelines, and the slow accumulation of evidence. There's pleasure in watching a journalist do actual journalism.\n\nFincher compresses this efficiently, using montages and visual shorthand to convey months of investigation in minutes. The film's pacing is tighter, but some of the procedural satisfaction is lost. The book lets you solve the mystery alongside Blomkvist; the film tells you the solution."
     },
     {
+      "question": null,
       "title": "The Wennerström subplot is drastically reduced",
       "body": "The novel's second half, after Martin Vanger's death, focuses on Blomkvist and Lisbeth's investigation into financier Hans-Erik Wennerström's corporate fraud. Larsson, drawing on his journalism background, provides detailed explanations of money laundering, shell corporations, and financial journalism. This section runs over 150 pages and is central to the novel's critique of Swedish corporate corruption.\n\nFincher reduces this to roughly fifteen minutes of screen time. The film ends with Lisbeth transferring Wennerström's money and Blomkvist publishing his exposé, but the mechanics and implications are sketched rather than explored. It's a necessary compression for cinematic pacing, but it means the film is primarily about the Vanger mystery while the book is about two interconnected investigations into male power.\n\nYes — read first to inhabit Lisbeth's full interior world before Fincher necessarily narrows her to what can be conveyed through Rooney Mara's performance, however brilliant. The novel provides the backstory, the institutional critique, and the psychological depth that the film can only gesture toward. You'll understand why Lisbeth does what she does, not just what she does.\n\nThe novel also has a substantial second half that Fincher compresses into the film's final act. The Wennerström investigation is richer and more detailed on the page, and Larsson's explanations of financial fraud and journalistic ethics give the story a documentary weight that the film's thriller mechanics can't replicate. Watch Fincher's film afterward to see one of the great adaptations — faithful in spirit, brilliant in execution, and honest about what it can't include."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/girl-with-the-dragon-tattoo",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The novel's satirical bite is sharper and more sustained",
       "body": "Weisberger writes with the knowledgeable contempt of an insider. Her Andy is funnier, more self-aware, and more morally compromised than Hathaway's version. The novel's satire of fashion industry culture—the absurdity of fetching hot Starbucks in a snowstorm, the hierarchies of the sample closet, the particular cruelties of assistants protecting their territory—is more precise and sustained than the film's glossier treatment.\n\nThe 2006 film softened the edges to make Andy more sympathetic and Miranda more charismatic, which worked commercially but dulled the satire. The sequel film inherits those softer edges because it's working with the film's versions of these characters, not the novel's. The result is a story about ambition and compromise that's less uncomfortable and less honest than Weisberger's original."
     },
     {
+      "question": null,
       "title": "Miranda Priestly is a monster on the page, an icon on screen",
       "body": "In the novel, Miranda is irredeemable—a tyrant whose brief moments of vulnerability (her divorce, her fear of being replaced) don't soften her cruelty. Weisberger gives her no witty one-liners, no charisma, no redemption. She's the villain, full stop.\n\nMeryl Streep made her something else entirely. Her Miranda is still terrifying—the cerulean sweater monologue, the whispered \"That's all,\" the way she drops her coat without looking—but she's also magnetic, funny, and briefly human. The scene in the car after her divorce, where Miranda admits \"Everybody wants to be us,\" gives her a vulnerability the novel never offers. The sequel film leans into Streep's interpretation, which is the right call cinematically but means both films are working from a more generous version than Weisberger intended."
     },
     {
+      "question": null,
       "title": "The sequel novel and sequel film tell different stories",
       "body": "Revenge Wears Prada (2013) follows Andy a decade later, now running a bridal magazine called The Plunge and planning her own wedding to Max Harrison. When Miranda resurfaces and threatens Andy's career, old wounds reopen. The novel is about whether Andy has truly escaped Runway's influence or simply moved it to a different address.\n\nThe 2026 sequel film uses this setup loosely—Andy returns to Runway as creative director, Miranda navigates the collapse of print media—but tells an essentially original story. Readers of the sequel novel will find familiar themes (ambition, identity, the cost of success) but an unfamiliar plot. The film's choice to bring Andy back to Runway rather than keep her at a rival publication is a bolder narrative move and gives Streep and Hathaway more direct conflict."
     },
     {
+      "question": null,
       "title": "Andy's arc is more morally complicated in the novel",
       "body": "The novel's Andy is ultimately complicit in the world she claims to reject. She takes what Runway gives her—the connections, the wardrobe, the insider knowledge—and uses it to land a job at Seventeen. She doesn't burn bridges; she crosses them and keeps walking. Weisberger's ending is honest and uncomfortable: Andy has changed, and not entirely for the better.\n\nThe 2006 film gives Andy a cleaner moral exit. She throws her phone in the fountain, walks away from Paris Fashion Week, and gets her old boyfriend back. It's satisfying but less true. The sequel film, working with an older Andy who chose differently, has more interesting territory to explore—whether she has actually changed or simply moved the same ambitions to a different address. Early reviews suggest the film doesn't fully commit to this darker reading, but it's closer to Weisberger's vision than the first film was."
     },
     {
+      "question": null,
       "title": "The fashion industry details are richer on the page",
       "body": "Weisberger writes about fashion with insider specificity. The novel's details—the way Emily hoards sample-sale invitations, the hierarchy of who gets which designer freebies, the particular humiliation of returning a Hermès scarf because Miranda decided she wanted orange instead of red—are sharper and more absurd than anything in the films. The 2006 film captures the visual glamour but not the granular absurdity.\n\nThe sequel film updates this to the collapse of print media and the rise of digital fashion influencers, which is fresher territory but less intimately observed. Weisberger knew the world of 2003 Runway from the inside; the 2026 film is working from research and imagination. The difference shows in the specificity of the satire.\n\nRead the original novel before seeing the sequel film—not because the film requires it, but because Weisberger's Andy is more interesting than the films' version. The sequel film is working with twenty years of audience affection for characters who have been softened from their literary originals. Read the book to see what was there before the softening: an Andy who's more complicit, a Miranda who's less charismatic, and a satire that's funnier and meaner.\n\nThen watch Meryl Streep do things with Miranda that Weisberger never quite intended, and enjoy both. The novel is the sharper text; the films are the more entertaining experience. You don't have to choose, but reading first gives you the unvarnished version before Hollywood's polish. If you haven't seen the 2006 film, watch that before the sequel—it's the foundation both the new film and your understanding of these characters will rest on."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/devil-wears-prada",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

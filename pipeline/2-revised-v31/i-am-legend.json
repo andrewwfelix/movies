@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Ending Inverts the Entire Story",
       "body": "Matheson's novella concludes with Neville captured by the new vampire society and awaiting execution. Ruth, a vampire spy he befriended, reveals that the infected have formed a civilization—they fear him as a monster who murders them in their sleep. Neville realizes he has become legend: the boogeyman of the new world order. This inversion of perspective is the novel's enduring power and its central philosophical argument.\n\nThe 2007 theatrical cut abandons this entirely. Neville discovers a cure, sacrifices himself in a grenade blast to save Anna and Ethan, and becomes a literal legend—a hero whose cure saves humanity. It's emotionally satisfying but thematically opposite to Matheson's point. The alternate ending shows Neville recognizing the alpha male's humanity when he sees the creature desperate to save his infected mate, allowing them to leave—closer to the book's moral complexity but still lacking its full impact."
     },
     {
+      "question": null,
       "title": "Vampires vs. Darkseekers: Intelligence and Society",
       "body": "Matheson's vampires retain intelligence, fear, and social organization. They're building a new civilization with its own rules and morality. Ben Cortman's nightly calls aren't mindless—they're strategic psychological warfare. Ruth's people have developed a treatment that allows them to function during the day. They see Neville as a serial killer who must be stopped.\n\nThe film's CGI-rendered Darkseekers are purely predatory. They're fast, aggressive, and animalistic, with no dialogue or visible culture. The alpha male shows protective instincts toward his mate in the alternate ending, but the theatrical cut presents them as monsters to be eradicated. This serves the horror and action elements but eliminates the novel's commentary on perspective, evolution, and what defines humanity."
     },
     {
+      "question": null,
       "title": "Neville's Scientific Journey: Autodidact vs. Expert",
       "body": "The book's Neville is a factory worker with no scientific training. He teaches himself biology, chemistry, and bacteriology from library books, conducting crude experiments in his home. His gradual understanding of the vampire bacteria—how garlic affects their olfactory systems, why crosses repel some but not others—is the intellectual spine of the novella. His persistence in the face of ignorance makes him heroic.\n\nSmith's Neville is a U.S. Army virologist who was working on a cure before the outbreak. He has a fully equipped basement laboratory and the expertise to conduct sophisticated experiments. This makes his scientific work more credible cinematically but removes the everyman quality that made Matheson's character relatable. The film's Neville is competent from the start; the book's Neville earns his competence through desperate study."
     },
     {
+      "question": null,
       "title": "Sam's Death: The Film's Emotional Peak",
       "body": "Both versions feature Neville's dog as his sole companion, but the film elevates Sam's role dramatically. Abbey, the German Shepherd playing Sam, is Neville's constant companion—his hunting partner, his alarm system, his reason to maintain a daily routine. When Sam is infected during a darkseeker attack and Neville must strangle her as she turns, Smith delivers a raw, devastating performance. It's the film's most emotionally resonant moment.\n\nThe novella's dog appears briefly—a stray Neville befriends who dies of the plague after a few days. It's a moment of loss, but not the emotional centerpiece. This is one area where the film genuinely improves on the source material, using Sam's death to externalize Neville's isolation and breaking point in a way that's more cinematically powerful than Matheson's internal monologues."
     },
     {
+      "question": null,
       "title": "Setting: Los Angeles Suburbs vs. Post-Apocalyptic Manhattan",
       "body": "Matheson's Neville lives in a suburban Los Angeles home fortified with garlic, mirrors, and wooden stakes. The setting is deliberately mundane—a normal house in a normal neighborhood, now surrounded by horror. The vampires are his former neighbors. The familiarity makes the isolation more psychologically oppressive.\n\nLawrence's film transforms New York City into a stunning post-apocalyptic landscape. Neville drives through Times Square overgrown with vegetation, hunts deer in the streets, and hits golf balls off an aircraft carrier. The visual spectacle is impressive—the CGI work depicting an abandoned Manhattan is the film's technical achievement. But it trades psychological claustrophobia for epic scale, making Neville's isolation more cinematic but less intimate than the book's suburban nightmare.\n\nAbsolutely. Reading the novella is essential to experience Matheson's ending—one of the most paradigm-shifting conclusions in genre fiction. The film's theatrical cut doesn't just change the ending; it inverts the story's entire meaning. Watching the movie first gives you a competent survival thriller but denies you the philosophical gut-punch that made the book influential. The novella is under 200 pages and reads quickly, building to a final revelation that recontextualizes everything that came before.\n\nAfter reading, watch the film for Smith's performance and the technical craft, then seek out the alternate ending to see what might have been. The alternate version at least gestures toward Matheson's themes, even if it doesn't fully commit. But the theatrical ending—heroic sacrifice and humanity saved—is the opposite of what Matheson wrote. Read first, or you'll never understand why the book remains a touchstone of science fiction while the film, despite its success, is remembered as a missed opportunity."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/i-am-legend",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

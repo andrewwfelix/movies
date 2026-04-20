@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Maxim Murdered Rebecca—Except in the Film",
       "body": "In du Maurier's novel, Maxim confesses to the narrator that he shot Rebecca during an argument in the boathouse, then sank her body in her sailboat. The narrator accepts this, loves him anyway, and becomes complicit in concealing the crime. This is the novel's moral center: a woman so erased by insecurity that she forgives murder.\n\nThe 1940 Production Code forbade depicting a murderer who goes unpunished and is rewarded with love. Hitchcock changed Rebecca's death to an accident—she fell, hit her head, and Maxim merely disposed of the body. This removes the narrator's complicity and Maxim's guilt. The film's ending is tidy; the novel's is morally disturbing."
     },
     {
+      "question": null,
       "title": "The Narrator Has No Name",
       "body": "Du Maurier never names the second Mrs de Winter. She is \"I\" throughout, defined only by her relationship to Maxim and her inadequacy compared to Rebecca. This formal choice is radical: the protagonist at the center of the story has no identity outside what others impose on her.\n\nHitchcock's film necessarily gives her a face—Joan Fontaine's—and a physical presence. Fontaine's performance captures the character's nervous anxiety and self-doubt, but the formal dimension of namelessness is lost. On screen, she is visible, embodied, present. In the novel, she is a voice haunted by absence."
     },
     {
+      "question": null,
       "title": "Mrs Danvers' Obsession",
       "body": "Judith Anderson's Mrs Danvers is one of cinema's great villains—silent, spectral, gliding through Manderley's corridors, her devotion to Rebecca bordering on the erotic. The scene where she shows the narrator Rebecca's bedroom, stroking her nightgown and describing her beauty, is unforgettable. Anderson makes Mrs Danvers iconic.\n\nDu Maurier's Mrs Danvers is filtered entirely through the narrator's terrified perspective. She is less a character than a psychological force—the embodiment of the narrator's fear that she will never measure up. Both versions are extraordinary, but Anderson's is more immediately iconic. The novel's is more insidious."
     },
     {
+      "question": null,
       "title": "Manderley as a Living Presence",
       "body": "The novel opens with the narrator's dream: \"Last night I dreamt I went to Manderley again.\" The estate is the novel's central character—oppressive, beautiful, suffocating. Du Maurier describes it as a living organism, its rooms and gardens infused with Rebecca's presence. The narrator is never at home there; she is always an intruder.\n\nHitchcock's Manderley is visually stunning, designed by Lyle Wheeler and built on a soundstage. The cinematography by George Barnes is haunting, with shadows and staircases that evoke Gothic dread. But it is still a set. Du Maurier's Manderley breathes; Hitchcock's is architecture."
     },
     {
+      "question": null,
       "title": "The Costume Ball Humiliation",
       "body": "In both versions, Mrs Danvers manipulates the narrator into wearing a costume identical to one Rebecca wore, humiliating her in front of Maxim and his guests. The scene is devastating in both. But the novel lingers on the narrator's internal collapse—her realization that she will never escape Rebecca's shadow. Hitchcock stages it as visual spectacle; du Maurier makes it psychological torture.\n\nYes. Read the novel first to experience the narrator's nameless anxiety in its full, formal intensity, and to understand the ending before the Hays Code sanitizes it. Du Maurier's Rebecca is a Gothic masterpiece about female erasure and complicity in violence. Hitchcock's is a brilliant adaptation of a morally cleaner version of that story.\n\nIf you watch the film first, you will miss the novel's most disturbing revelation: that the narrator loves Maxim despite—or perhaps because of—his capacity for murder. That moral ambiguity is what makes the novel endure. The film is among Hitchcock's finest, but it is not the same story."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/rebecca",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Mantel's formal invention is the experience",
       "body": "The novel's defining characteristic is its present-tense close third person — \"he\" always means Cromwell, narration that never leaves his perspective, a prose style that creates the sensation of being inside a sixteenth-century mind in real time. This is one of modern fiction's most discussed formal choices: readers who surrender to it find the novel overwhelmingly intimate; readers who fight it find it confusing.\n\nThe series resolves the pronoun problem by simply showing us the scenes, which is more immediately accessible and loses the specific quality of being sealed inside Cromwell's consciousness. The novel makes you think like Cromwell; the series lets you watch him."
     },
     {
+      "question": null,
       "title": "Mark Rylance as Cromwell is career-defining work",
       "body": "Rylance's performance is one of the great screen characterisations in British television history — still, watchful, processing everything behind eyes that rarely give anything away, capable of warmth and calculation in the same gesture. He makes Cromwell's stillness feel like power rather than absence, and his physicality — the way he occupies a room differently from everyone else in it — does the work that Mantel's prose does on the page.\n\nThe novel's Cromwell is richer in interiority, particularly in his grief for his dead wife Liz and his tenderness toward his daughters. Rylance's Cromwell is more guarded — we see less of his domestic warmth. Both are essential Cromwells, but the book gives you the full emotional range."
     },
     {
+      "question": null,
       "title": "The darkness of the series is historically accurate and dramatically bold",
       "body": "Kosminsky shot the series in available light — candles, firelight, window light — which gives it a visual texture that is historically accurate and dramatically atmospheric. Some viewers found the dimness difficult; most found it immersive. The choice signals a commitment to period authenticity that historical drama rarely attempts, and it gives the Tudor world a physical reality that brightly lit productions of the same material have always lacked.\n\nThe novel's prose creates its own atmospheric darkness through accumulation of specific detail — the smell of the Thames, the cold of stone floors, the flicker of candlelight on tapestries. The series' candlelight does it visually, and the effect is that both versions feel like the same world approached through different senses."
     },
     {
+      "question": null,
       "title": "The supporting cast expands on the novel's characterizations",
       "body": "Damian Lewis as Henry VIII is a revelation — not the familiar bloated tyrant of popular imagination but a young, physically vital, dangerously charming king who is used to getting what he wants and has not yet fully understood the consequences of that expectation. Claire Foy as Anne Boleyn brings an intelligence and a desperation to the role that makes Anne's eventual fall feel inevitable and unjust simultaneously.\n\nAnton Lesser's Thomas More is cold, certain, and willing to burn heretics — the series does not soften More's fanaticism or present him as a martyr. Jonathan Pryce's Cardinal Wolsey has a warmth and weariness that makes his fall genuinely tragic. Both performances expand on the novel's versions of these characters — the series has visual access to the king's physical presence and Anne's particular volatility that prose can describe but cannot embody."
     },
     {
+      "question": null,
       "title": "The series compresses two novels into six episodes",
       "body": "The six-episode series covers both Wolf Hall and its sequel Bring Up the Bodies — which takes Cromwell through Anne Boleyn's trial and execution in 1536 — compressing two long novels into approximately six hours. This compression means some of the novel's slower, more ruminative passages are necessarily cut, particularly the extended family scenes and the quieter moments of Cromwell's domestic life that give the novel its texture of a whole life being lived between historical events.\n\nThe series is the highlights; the novels are the full experience. You lose Cromwell's memories of his time in Europe as a young man, his relationship with his son Gregory, and the extended scenes at Austin Friars where Cromwell runs his household like a small state. These absences don't damage the series, but they're what make the novels feel like complete lives rather than historical episodes.\n\nYes — Mantel's formal invention is the experience and it requires sustained engagement with prose that rewards patience. Read Wolf Hall first, then Bring Up the Bodies, then watch the series as the finest visual companion to those novels you could hope for. The first fifty pages require adjustment to Mantel's pronoun convention and present-tense narration, but once you surrender to the rhythm, the prose becomes hypnotic.\n\nRylance as Cromwell will inhabit the character you've spent eight hundred pages inside, and the fit is extraordinary. Watching the series after reading gives you the pleasure of seeing Mantel's scenes realized with absolute fidelity — Kosminsky and his cast understand exactly what they're adapting. Watch-first viewers will get a superb historical drama; read-first viewers will get that plus the experience of seeing a great novel translated into its ideal screen form."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/wolf-hall",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

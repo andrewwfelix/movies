@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Lord Henry's Philosophy Is Gutted",
       "body": "The novel's Lord Henry is Wilde's mouthpiece for aesthetic philosophy, delivering paradoxical epigrams that seduce Dorian into hedonism. His famous preface—\"There is no such thing as a moral or an immoral book\"—and his dinner party wit define the novel's intellectual framework. He gives Dorian the poisonous yellow book (likely Huysmans's À rebours) that becomes Dorian's bible of decadence.\n\nThe film reduces Lord Henry to a smirking aristocrat who occasionally says something clever. Colin Firth delivers his lines well, but the screenplay by Toby Finlay cuts the extended philosophical dialogues that make Lord Henry dangerous. The yellow book appears briefly but its corrupting influence is barely explored. Without Lord Henry's seductive rhetoric, Dorian's corruption feels less like intellectual seduction and more like simple bad influence."
     },
     {
+      "question": null,
       "title": "Dorian's Crimes Are Simplified",
       "body": "Wilde's novel catalogs Dorian's descent through suggestion and implication—he frequents opium dens in Whitechapel, ruins young men and women of good families, and collects obscure books on perfumes, jewels, and ecclesiastical vestments. An entire chapter details his aesthetic obsessions as his soul rots. He murders Basil in a rage, then coldly blackmails Alan Campbell into dissolving the body in acid, driving Campbell to suicide.\n\nThe film shows Dorian stabbing Basil and visiting opium dens, but eliminates Alan Campbell entirely and rushes through the catalog of sins. We see Dorian's debauchery in montage—drinking, gambling, implied orgies—but the specific cruelties that define his character in the novel are absent. The film opts for visual Gothic horror over Wilde's more insidious portrait of moral decay through accumulated small cruelties and aesthetic obsession."
     },
     {
+      "question": null,
       "title": "Sibyl Vane's Tragedy Loses Weight",
       "body": "In the novel, Sibyl's suicide is the first major consequence of Dorian's vanity. Wilde gives her three brothers and a mother, making her death ripple through a family. Her brother James becomes a vengeful sailor who tracks Dorian for years, creating a subplot of delayed justice. Dorian's reaction to her death—his decision to treat it as an artistic experience rather than a moral catastrophe—marks his point of no return.\n\nThe film includes Sibyl's death but eliminates James Vane entirely, removing the revenge subplot. Rachel Hurd-Wood plays Sibyl sweetly, but the compressed timeline means we barely know her before she dies. The film shows Dorian's callousness but not his extended rationalization, which in the novel reveals how thoroughly Lord Henry's philosophy has poisoned him. Without James Vane's pursuit, Sibyl's death has no consequences beyond Dorian's momentary guilt."
     },
     {
+      "question": null,
       "title": "The Portrait's Corruption Is Too Literal",
       "body": "Wilde describes the portrait's changes sparingly and ambiguously. After Dorian rejects Sibyl, he notices \"a touch of cruelty in the mouth.\" After murdering Basil, the hands are \"red with blood.\" The horror is psychological—Dorian's obsessive checking of the portrait, his terror that someone will see it, his realization that his soul is visible. The portrait is a metaphor made flesh, but Wilde keeps the descriptions suggestive.\n\nParker's film shows the portrait transforming frequently and explicitly, using digital effects to add scars, decay, and blood. The visual approach is effective Gothic horror, but it makes the portrait a special effect rather than a psychological symbol. By showing the corruption so literally and often, the film loses the novel's emphasis on Dorian's internal awareness of his own evil. The portrait becomes an external curse rather than a mirror of conscience."
     },
     {
+      "question": null,
       "title": "The Ending Rushes Past Dorian's Self-Knowledge",
       "body": "The novel's final chapters show Dorian attempting reform after James Vane's accidental death. He spares a country girl he was planning to seduce, hoping this good deed will improve the portrait—but it only adds hypocrisy to the painted face. Dorian realizes he can never escape what he's become. His decision to destroy the portrait is both an attempt to destroy evidence and a suicidal recognition that he and the painting are one. Wilde's ending is ambiguous about whether Dorian seeks redemption or merely convenience.\n\nThe film's ending is visually striking—Ben Barnes's aged corpse, the restored portrait—but lacks the novel's psychological complexity. Without James Vane's subplot, there's no catalyst for Dorian's attempted reform. The film shows Dorian stabbing the portrait in a moment of rage rather than calculated desperation. The ending works as Gothic spectacle but misses Wilde's point: Dorian's tragedy isn't that a magic portrait aged instead of him, but that he chose a life that made his soul hideous.\n\nRead the book first—the film cannot convey what makes Wilde's novel essential. The Picture of Dorian Gray isn't just a Gothic horror story about a magic portrait; it's a philosophical novel about aestheticism, morality, and the relationship between art and life. Lord Henry's paradoxes, Dorian's aesthetic obsessions, and Wilde's epigrammatic prose are the substance of the work. The plot is almost secondary to the ideas.\n\nThe 2009 film captures the surface—Ben Barnes looks the part, the Victorian London setting is atmospheric, and the portrait's decay is visually effective. But watching it first will give you a simplified Gothic thriller that misses Wilde's wit, philosophy, and the psychological depth that makes Dorian's corruption genuinely disturbing. The novel is short enough to read in an afternoon, and every page contains the kind of quotable brilliance the film can only gesture toward."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-picture-of-dorian-gray",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

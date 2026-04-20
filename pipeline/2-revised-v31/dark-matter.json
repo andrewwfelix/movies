@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The series expands the multiverse sequences into full episodes",
       "body": "Crouch's novel moves through alternate realities at breakneck speed — Jason and Amanda visit dozens of worlds in rapid succession, each one a brief glimpse before they jump again. The thriller momentum depends on not dwelling too long in any single reality. The series slows this down dramatically, dedicating entire episodes to worlds the novel passes through in pages.\n\nEpisode 5, for instance, spends nearly an hour in a reality where a pandemic has devastated Chicago. The novel mentions this world in a paragraph. The series uses it to explore what Jason and Amanda would become if they stayed — the temptation of giving up, the ethics of abandoning one world for another. It's more cinematic and more philosophical, but also less purely suspenseful than the novel's relentless forward drive."
     },
     {
+      "question": null,
       "title": "Jennifer Connelly makes Daniela a protagonist, not just a prize",
       "body": "In the novel, Daniela is rendered almost entirely through Jason's love for her. She's the reason for everything — the life he wants back, the choice that mattered — but she doesn't get her own perspective until very late in the story. Connelly changes this fundamentally.\n\nThe series gives Daniela scenes without Jason, her own relationships, her own intelligence. When Jason2 arrives to replace Jason1, Daniela notices the differences — small behavioral changes, shifts in intimacy. Connelly plays these scenes with a growing unease that makes Daniela an active participant in the story rather than simply the object of Jason's quest. It's one of the adaptation's clearest improvements over the source material."
     },
     {
+      "question": null,
       "title": "Joel Edgerton's dual performance is the series' central achievement",
       "body": "The novel's Jason is a first-person narrator — you're inside his head, experiencing his panic and determination directly. Edgerton has to translate that internal experience into physical performance, and he does it by playing the two Jasons with subtle but crucial distinctions.\n\nJason1, the family man, is warmer, more open, quicker to smile. Jason2, the successful physicist, is more controlled, more isolated, and increasingly desperate as the series progresses. Edgerton makes both versions feel like complete people, not just hero and villain. When they finally confront each other in the finale, you understand both of them — what they want, what they've lost, why they're willing to destroy each other to get it back."
     },
     {
+      "question": null,
       "title": "Amanda's role is expanded and complicated by romance",
       "body": "In the novel, Amanda Lucas is a psychiatrist who helps Jason navigate the multiverse. She's competent, essential, and clearly attracted to him, but the novel keeps this attraction mostly subtext. The series makes it text, giving Amanda and Jason a romance that complicates his mission to return to Daniela.\n\nThis addition is controversial among readers of the novel. It adds emotional complexity and gives Amanda more to do, but it also risks making Jason's devotion to Daniela seem less absolute. The series handles this by making the romance genuine but ultimately insufficient — Jason chooses Daniela not because Amanda doesn't matter, but because the life he built with Daniela matters more. It's a more complicated emotional landscape than the novel's clearer devotion."
     },
     {
+      "question": null,
       "title": "The ending is the same but takes longer to reach and lingers on consequences",
       "body": "Both versions end with Jason1 returning to his family and Jason2 being cast into the multiverse. The novel reaches this conclusion in a rush of action and then stops — it's over, Jason won, the end. The series takes an entire episode to resolve the confrontation and then adds a coda that explores what happens after.\n\nThe finale shows Daniela processing what happened, Charlie trying to understand, and Jason1 dealing with the knowledge that infinite versions of himself are still out there, still trying to get back. It's less cathartic than the novel's clean ending, but more honest about the psychological aftermath of what these characters have been through. Apple TV+ has renewed the series for a second season that will be entirely original material, exploring those infinite Jasons further.\n\nEither order works genuinely well here. Crouch's novel is a page-turner that can be read in a day or two, and the experience of its momentum — the feeling of being unable to stop, of needing to know what happens next — is distinct from the series' more measured pacing. If you want pure propulsive energy, the kind of thriller that keeps you up past midnight, read the novel first.\n\nIf you watch the series first, you'll experience Edgerton's performance without preconceptions and appreciate the expanded character work without comparing it to the source. The series doesn't spoil the novel's pleasures — the novel's velocity is its own reward even if you know where it's going. This is one of the rare cases where both versions are genuinely competitive, and the order you experience them in is less important than experiencing both."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/dark-matter",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

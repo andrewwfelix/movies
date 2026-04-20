@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Will's interiority is the novel's structural advantage",
       "body": "The novel alternates between Louisa's and Will's first-person perspectives, giving the reader direct access to Will's experience of paralysis, his memories of the life he had, and his feelings for Louisa. This access is what earns the novel's ending — you understand Will's choice from inside it, as a considered decision by someone with full information about his condition and future.\n\nSam Claflin's performance is excellent — he conveys Will's wit, his anger, and his tenderness with precision. But the film necessarily shows Will's interiority through behavior and dialogue rather than narration. You see his pain; in the novel, you inhabit it. That difference is structural, not a failure of adaptation, but it changes the emotional weight of the ending."
     },
     {
+      "question": null,
       "title": "The assisted dying debate is handled more directly in the novel",
       "body": "Moyes's novel presents Will's position with genuine seriousness — not as a tragedy to be prevented but as a principled choice by someone who has lived two years post-injury and knows what his future holds. The novel doesn't flinch from the ethics. Will's chapters make clear that he's not depressed in a clinical sense; he simply doesn't want the life his body now permits.\n\nThe film softens this slightly. It emphasizes the romance and Louisa's efforts to change Will's mind, making the ending feel more like a love story's sad conclusion than a philosophical argument about autonomy and quality of life. Sharrock's film is more consolatory — the final Paris café scene, with Louisa reading Will's letter, offers comfort the novel earns at greater cost."
     },
     {
+      "question": null,
       "title": "Emilia Clarke is the film's great strength",
       "body": "Clarke's Louisa is funny, warm, and genuinely affecting, with a physical expressiveness that captures the character's particular quality of life-force — the thing that makes her compelling to Will. She wears ridiculous outfits with conviction, delivers comic lines without mugging, and handles the film's emotional climax with real skill. It's difficult to imagine better casting.\n\nThe novel's Louisa is slightly less performatively upbeat and slightly more interior. Her narration reveals insecurity and self-doubt beneath the cheerful exterior. Clarke's version is more confident, more immediately likable. Both work, but the novel's Louisa has more room to be complicated."
     },
     {
+      "question": null,
       "title": "Louisa's family gets less space in the film",
       "body": "The novel gives Louisa's family — particularly her mother Josie, her father Bernard, and her sister Treena — substantial development. They constitute the world Louisa is trying to escape, and their ordinariness is part of the point. The novel treats them with affection and specificity; they're not obstacles but people with their own limitations and kindnesses.\n\nThe film uses them more efficiently. Josie and Bernard appear in key scenes but without the novel's depth. Patrick, Louisa's boyfriend, is played for broader comedy by Matthew Lewis. The film's focus is tighter — it's about Louisa and Will, not Louisa's entire world. That's a reasonable choice but it narrows the novel's social observation."
     },
     {
+      "question": null,
       "title": "The ending reaches the same destination with different emotional weight",
       "body": "Both versions end with Will going to Switzerland and Louisa accompanying him to say goodbye. Both include Will's letter to Louisa, urging her to live boldly. The film's final scene — Louisa in a Paris café, reading the letter, wearing clothes Will would approve of — is genuinely moving and offers a sense that Louisa will be fine, that Will's gift to her was permission to live fully.\n\nThe novel earns the same consolation but at more cost, because you've spent more time inside Will's reasoning and Louisa's grief. The novel's ending is sadder and more ethically complex. The film's ending is warmer. Both are honest to the story, but the novel carries more weight.\n\nYes — the novel earns its ending through the slow accumulation of Will's interiority and the full weight of Louisa's grief. The alternating perspectives give you access to both sides of the central conflict, and that access is what makes the ending feel like something other than tragedy. You understand why Will makes his choice, even if you wish he wouldn't.\n\nThe film is genuinely moving and Emilia Clarke's performance is worth watching, but the novel is more so. Read first and the film becomes a companion — a chance to see Clarke embody Louisa and to hear Craig Armstrong's score underscore scenes you already know. Watch first and you'll have the plot without the full experience, the conclusion without the argument that earns it."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/me-before-you",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

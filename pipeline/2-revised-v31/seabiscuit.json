@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Red Pollard's Blindness and the Extent of His Injuries",
       "body": "Hillenbrand reveals that Pollard was functionally blind in his right eye from repeated blows during his boxing career—a secret he kept from racing officials who would have revoked his license. The book details how he compensated by positioning himself strategically and relying on his left eye, a remarkable feat of adaptation that made his riding achievements even more extraordinary.\n\nThe film mentions Pollard's vision problems only in passing, never emphasizing the severity or the deception required to continue racing. Ross also softens the brutality of Pollard's 1939 leg injury, which Hillenbrand describes in graphic detail: the shattered bones, the botched medical treatment, and the agonizing rehabilitation that nearly ended his career. The movie shows the injury but rushes through the recovery, losing the full weight of Pollard's determination to ride Seabiscuit in the 1940 Santa Anita Handicap."
     },
     {
+      "question": null,
       "title": "The War Admiral Match Race Build-Up and Execution",
       "body": "The 1938 Pimlico match race occupies nearly 30 pages in Hillenbrand's book, with meticulous attention to the negotiations, training strategies, and psychological warfare between the two camps. She describes how Smith deliberately kept Seabiscuit's workouts slow to deceive War Admiral's team, how Woolf studied War Admiral's running style for weeks, and how the race itself unfolded stride by stride, including Woolf's famous mid-race glance at War Admiral's jockey.\n\nRoss compresses this into a five-minute sequence that captures the drama but eliminates the tactical complexity. The film invents a scene where Howard and Smith debate whether Seabiscuit is ready, adding manufactured tension, while omitting Hillenbrand's detailed explanation of how Woolf's strategy—letting War Admiral take the lead, then challenging him at the turn—exploited the champion's psychological weaknesses. The book makes clear this wasn't just a race but a chess match; the film presents it as pure heart versus pedigree."
     },
     {
+      "question": null,
       "title": "Charles Howard's First Marriage and Son's Death",
       "body": "Hillenbrand dedicates an entire chapter to the 1926 death of Howard's teenage son Frankie in a truck accident, and the subsequent dissolution of his first marriage. She portrays Howard's grief as the catalyst for his personality transformation—from a man obsessed with automobiles to someone seeking meaning through horses. The book doesn't shy from the messiness: Howard's first wife never recovered from the loss, and their divorce was painful and protracted.\n\nThe film reduces this to a single brief scene where Howard mentions his son's death to Pollard, using it as a bonding moment rather than exploring its psychological impact. Marcela Howard appears as Charles's only wife, with no mention of the first Mrs. Howard or the complicated circumstances of their separation. This simplification makes Howard more sympathetic but less human—Hillenbrand's version is a flawed man rebuilding himself, while Bridges plays a man already rebuilt."
     },
     {
+      "question": null,
       "title": "Tom Smith's Backstory and Frontier Experience",
       "body": "The book traces Smith's origins as a frontiersman who spent decades in the vanishing American West, breaking wild mustangs and living among Native American tribes. Hillenbrand explains how this experience gave Smith an intuitive understanding of horse psychology that Eastern trainers, with their by-the-book methods, couldn't match. She describes specific techniques he used with Seabiscuit: the companion pony Pumpkin, the unusual training schedule, the refusal to use a whip.\n\nRoss's film presents Smith as quietly competent but never explores where that competence originated. Cooper's performance is excellent—taciturn, observant—but the script provides no context for why Smith thinks differently. The movie shows him using Pumpkin and unconventional methods without explaining the philosophy behind them, turning Smith into a stock character (the wise horse whisperer) rather than the specific, historically grounded figure Hillenbrand portrays."
     },
     {
+      "question": null,
       "title": "The Role of the Press and Public Obsession",
       "body": "Hillenbrand devotes substantial space to how Seabiscuit became a media phenomenon, with more newspaper coverage in 1938 than FDR or Hitler. She details the role of specific journalists, the radio broadcasts that drew 40 million listeners, and how Howard brilliantly manipulated publicity to build Seabiscuit's legend. The book shows how the horse became a symbol of Depression-era resilience—not by accident, but through calculated image-making.\n\nThe film uses David McCullough's narration and archival footage to gesture at Seabiscuit's fame but never examines the mechanics of how that fame was constructed. Ross presents the public adoration as organic and inevitable, missing Hillenbrand's insight that Howard was essentially inventing modern sports marketing. The movie includes a montage of newspaper headlines but doesn't show the reporters, the negotiations for exclusive stories, or the way Howard leveraged media attention into bigger purses and better match-ups.\n\nReading Hillenbrand's book before watching Ross's film will deepen your appreciation for what the movie gets right while making you acutely aware of what it simplifies. The film works as a standalone inspirational sports drama—Maguire, Bridges, and Cooper deliver strong performances, and the racing sequences are viscerally exciting. But if you've read the book, you'll notice the absent complexity: Pollard's blindness reduced to a footnote, Smith's frontier wisdom unexplained, Howard's grief sanitized, the media manipulation ignored.\n\nThe consequence of watching first is that you'll get a satisfying but incomplete story, one that trades Hillenbrand's nuanced character studies for Hollywood's preference for uncomplicated heroes. Reading first means you'll understand that Seabiscuit's triumph wasn't just about an underdog horse—it was about three damaged men, a shrewd businessman's publicity genius, and a nation desperate for symbols of resilience. The film gives you the symbol; the book shows you how it was made."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/seabiscuit",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

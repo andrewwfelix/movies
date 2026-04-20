@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Eleanor's consciousness becomes the Crain family's trauma",
       "body": "Jackson's novel is a masterwork of unreliable narration — we experience Hill House entirely through Eleanor's perception, and the horror is inseparable from the question of whether Eleanor is haunted by the house or by herself. Jackson's prose mimics Eleanor's dissociation so precisely that the novel's most disturbing passages feel like reports from inside a mind coming apart. The famous opening paragraph establishes Hill House as a character, but the novel's true subject is Eleanor's interior collapse.\n\nFlanagan's series reimagines Eleanor as Nell Crain (Victoria Pedretti), one of five siblings, and distributes the narrative across the entire family. The novel's claustrophobic interiority becomes something more expansive and emotionally accessible. Each sibling gets an episode focused on their perspective, and the series moves between two timelines — the summer of 1992 when they were children, and the present day when they're adults scattered and estranged. Both choices are right for their respective forms, but they produce entirely different experiences."
     },
     {
+      "question": null,
       "title": "Flanagan's family drama replaces Jackson's paranormal investigation",
       "body": "The series is as much about grief, addiction, estrangement, and the long aftermath of a traumatic childhood as it is about ghosts. Flanagan uses Hill House as a metaphor for inherited trauma — the house does to the Crain children what bad childhoods do, marking them in ways they carry into adult lives. Steven (Michiel Huisman) becomes a bestselling author who writes about Hill House while denying the supernatural. Shirley (Elizabeth Reaser) runs a funeral home and controls her family obsessively. Theo (Kate Siegel) wears gloves to avoid touch. Luke (Oliver Jackson-Cohen) battles heroin addiction. Nell sees the Bent-Neck Lady.\n\nThis psychological dimension is not absent from the novel — Jackson's Eleanor is damaged by her past, particularly her guilt over her mother's death — but Flanagan develops it across five siblings and two timelines in ways that give the series an emotional range the book's narrower focus doesn't attempt. The series is interested in how families break under pressure and whether they can repair. The novel is interested in a single consciousness dissolving."
     },
     {
+      "question": null,
       "title": "The long-take episode has no literary equivalent",
       "body": "Episode six, \"Two Storms,\" is constructed to appear as two continuous single takes — the adult Crains in the present gathering at Hill House for a family crisis, and the child Crains in the past spending a stormy night in the house, cut between through ingenious staging and hidden edits. It is one of the most formally audacious episodes of recent American television, and it has no equivalent in the novel.\n\nFlanagan uses the single-take illusion to make the two timelines feel simultaneously present, which is exactly what the novel achieves through prose — Jackson's narrative slips between Eleanor's present experience and her memories without clear transitions, creating a sense of temporal collapse. But Flanagan achieves this through entirely cinematic means: actors moving through doorways that serve as edit points, camera movements that reveal different time periods in the same space, dialogue that bridges past and present. It's a demonstration of what adaptation can do when it translates effect rather than content."
     },
     {
+      "question": null,
       "title": "The ghosts are real, visible, and everywhere",
       "body": "Jackson's novel is famously ambiguous about whether the hauntings are real or internal — Eleanor may be projecting, the house may be feeding on her psychology, the manifestations may have no independent existence. The novel's most frightening moment is the hand-holding scene, where Eleanor holds what she believes is Theodora's hand in the dark, only to realize Theodora is across the room. The horror is in the uncertainty.\n\nFlanagan's series makes the ghosts real and visible — the famous background ghost easter eggs hidden in scenes throughout the season, often unnoticed on first viewing — and gives them identities and histories. The Bent-Neck Lady who haunts Nell is revealed to be Nell herself, time-looped in her moment of death. The ghosts are the family's dead, and they're always present, watching. This removes the novel's most distinctive quality (its radical ambiguity) in exchange for something more emotionally legible and visually striking. The series' ghosts are grief made visible."
     },
     {
+      "question": null,
       "title": "Jackson's prose cannot be adapted",
       "body": "The novel opens with one of the most celebrated paragraphs in horror literature, and it maintains that level of stylistic control for two hundred pages. Jackson's sentences perform the instability they describe — the grammar itself begins to shift as Eleanor's hold on reality loosens, pronouns become uncertain, and the boundary between Eleanor's thoughts and the narrative voice dissolves. \"Journeys end in lovers meeting,\" Eleanor thinks repeatedly, a line from a song that becomes a mantra and then a prophecy.\n\nThis is the experience of the novel, and no series can replicate it. Flanagan doesn't try — he builds his own formal vocabulary through editing, sound design, and the hidden ghosts that reward close viewing. But readers who encounter the book after the series will find something entirely different from what they're expecting: quieter, stranger, and more disturbing in a specifically literary way. The novel's horror is in its sentences. The series' horror is in its images and its emotional architecture.\n\nYes — the novel is short (under two hundred pages), can be read in a day, and delivers a form of horror that the series, for all its brilliance, cannot replicate. Read first to encounter Jackson's Eleanor in her own voice, to experience the radical ambiguity of the hauntings, and to understand why this novel has been terrifying readers for sixty-five years. Jackson's prose is the point — the way it performs psychological dissolution, the way it makes you uncertain of what's real. That experience is worth having before you encounter Flanagan's reimagining.\n\nThen watch Flanagan's series as the magnificent separate object it is — inspired by the novel rather than faithful to it, and equally worth your time. The series won't spoil the book because they tell different stories. You'll recognize the house, some names, and the basic architecture of a place that damages people. But Flanagan's Crain family, his exploration of trauma and grief, his formal ambition, and his deeply felt argument about whether families can heal — these are his own. Both are masterworks. Neither diminishes the other."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-haunting-of-hill-house",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

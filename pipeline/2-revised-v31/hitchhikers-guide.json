@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Adams's narrative voice is the joke the film cannot tell",
       "body": "The novel's comedy is inseparable from Adams's prose style — the deadpan asides, the elaborate digressions, the narrative voice that treats the destruction of Earth with the same mild interest it brings to the question of what to have for lunch. This voice is the joke. The famous opening about humans thinking digital watches were a pretty neat idea, the extended footnote about Vogon poetry being the third worst in the universe, the philosophical meditation on the Babel fish — these work because Adams is writing them, not because the events themselves are inherently funny.\n\nThe film uses Stephen Fry as the voice of the Guide itself, which is the right instinct and Fry delivers the lines with perfect dryness. But the jokes that work on the page as prose — the extended footnotes, the philosophical asides about the nature of improbability — become something different when they have to be dramatised rather than read. The film includes many of Adams's lines verbatim, but without the prose rhythm around them, they land differently. It's the difference between reading a joke and having someone explain it to you."
     },
     {
+      "question": null,
       "title": "Martin Freeman is Arthur Dent in a way that transcends casting",
       "body": "Freeman is perhaps the most precisely correct casting decision in literary adaptation history. Arthur Dent is a man defined by mild bewilderment and the stubborn persistence of English ordinariness in the face of cosmic absurdity — Freeman embodies this completely. His Arthur is not the funniest thing in the film but he is the most right thing, the still point around which the universe's chaos revolves.\n\nWatch Freeman's face as Earth is destroyed, as he's told the answer to everything is forty-two, as he tries to make tea in space. He plays Arthur not as a comic buffoon but as a reasonable man in an unreasonable universe, and that reasonableness is what makes the absurdity work. The novel's Arthur exists mostly as a point-of-view character for Adams's observations; Freeman's Arthur is a fully realized person who happens to be trapped in those observations."
     },
     {
+      "question": null,
       "title": "The Vogons are the film's greatest visual triumph",
       "body": "The Vogons — the bureaucratic alien species responsible for Earth's demolition, and for the worst poetry in the universe — are rendered in the film as magnificent Jim Henson creature-shop creations, physically perfect embodiments of Adams's description. They are grotesque, lumbering, and magnificently indifferent. This is one area where the film's visual imagination adds something the prose can only describe.\n\nThe Vogon sequences, particularly the poetry torture scene and the bureaucratic nightmare of the Vogon ship, are the film at its best. The design captures Adams's vision of a universe where the truly terrifying thing is not malice but bureaucratic indifference. The Vogons don't hate humans; they simply have the proper forms filled out for Earth's demolition."
     },
     {
+      "question": null,
       "title": "The romance between Arthur and Trillian is amplified for conventional stakes",
       "body": "The film introduces a more developed romance between Arthur and Trillian — a storyline that does not have the same prominence in the novel and that feels grafted on to provide conventional emotional stakes. Adams's novel is not particularly interested in romance; the film's version of Trillian (Zooey Deschanel) is given more agency and more centrality than the source provides.\n\nThis works for the film as a film — it gives Arthur an emotional arc beyond bewilderment — but it works slightly against the novel's specific flavour of cosmic indifference. The book's joke is that nothing matters and that's oddly comforting; the film's romance suggests that some things do matter, which is a different joke entirely. Adams worked on the screenplay before his death and approved these changes, so they have authorial blessing, but they shift the tone."
     },
     {
+      "question": null,
       "title": "The answer to everything lands differently without Adams's buildup",
       "body": "The revelation that the answer to life, the universe, and everything is forty-two works in the novel because Adams has built up to it through the specific rhythm of his prose — the absurdity of the question machine, the millions of years of waiting, the bathos of the answer. The film delivers the same punchline to a different rhythm and it still works, but the buildup is compressed and the joke is slightly less devastating.\n\nIn the book, the joke is nested in layers of narrative digression — Deep Thought's philosophical musings, the mice's frustration, the revelation that Earth itself was a computer designed to calculate the question. The film includes these elements but cannot replicate the prose rhythm that makes the joke build and build until the answer's absurdity becomes profound. It's still funny. It's just not the same funny.\n\nYes — and this is among the most emphatic read-first recommendations on the site, because the prose voice is not just the delivery mechanism for the jokes but the jokes themselves. Adams's comedy is literary in the most fundamental sense: it exists in the way sentences are constructed, in the rhythm of paragraphs, in the narrative voice that observes the universe with amused detachment. The film can show you the events of the story, but it cannot replicate the experience of reading Adams describe those events.\n\nRead the novel and the film becomes a warm, well-cast companion — a chance to see Martin Freeman be Arthur Dent and to watch the Vogons lumber across the screen. Watch the film first and you will enjoy it and miss everything that made readers love the source for forty years. The book is not just a better version of the same story; it is a different kind of story, one that lives in prose and cannot be fully translated."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/hitchhikers-guide",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

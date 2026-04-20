@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Simon's Voice Is Flattened Without First-Person Intimacy",
       "body": "Albertalli's novel is told entirely in Simon's first-person present tense, a choice that immerses readers in his anxious, self-deprecating, and often hilarious internal monologue. Simon's narration reveals not just what happens but how he processes it—his shame about staying closeted, his guilt over manipulating his friends, his obsessive parsing of Blue's emails for clues.\n\nThe film uses voiceover narration to approximate this, but Nick Robinson's delivery is more wistful and polished than the book's raw, jittery voice. The screenplay, by Isaac Aptaker and Elizabeth Berger, smooths out Simon's neuroses, making him more conventionally likable but less psychologically complex. We lose the book's access to Simon's spiraling thoughts, which are where much of the story's emotional texture lives."
     },
     {
+      "question": null,
       "title": "Blue's Identity Is Revealed Earlier, Killing the Mystery",
       "body": "In the novel, Blue's identity remains a genuine mystery until the final chapters. Simon suspects multiple classmates—Cal Price, a soccer player; Bram Greenfeld, a quiet guy in the school musical—but Albertalli withholds confirmation until Simon and Blue finally meet at the carnival. The delayed reveal makes the payoff feel earned and surprising.\n\nThe film reveals Bram as Blue much earlier, allowing for on-screen scenes of the two interacting and building chemistry. This works for cinematic pacing but sacrifices the novel's suspense. The carnival Ferris wheel scene, where Simon and Bram kiss in front of the school, becomes a triumphant public declaration rather than a private, tentative first meeting. It's crowd-pleasing but less emotionally nuanced."
     },
     {
+      "question": null,
       "title": "Leah's Unrequited Love Is Sidelined",
       "body": "Leah Burke is Simon's oldest friend, and in the book, her unrequited love for him is a major subplot. Albertalli gives Leah her own chapters' worth of emotional real estate—her jealousy of Abby, her hurt when Simon prioritizes his new friends, her drunken confession at a party. Simon's realization that he's hurt Leah by being oblivious is one of the novel's most painful moments.\n\nKatherine Langford's Leah in the film is reduced to a supporting role. Her feelings for Simon are acknowledged in one brief scene, then quickly resolved. The film prioritizes Simon's romance with Bram over the messier, more uncomfortable dynamics within his friend group, which is a loss—Albertalli's novel is as much about friendship as it is about romance."
     },
     {
+      "question": null,
       "title": "Martin's Blackmail Is Simplified Into Clear Villainy",
       "body": "Martin Addison is the novel's most morally complicated character. Albertalli portrays him as desperate, socially inept, and genuinely infatuated with Abby, but also willing to weaponize Simon's sexuality to get what he wants. Simon's complicity—he goes along with the blackmail for weeks, manipulating his friends—is treated with appropriate discomfort. The novel doesn't let Simon off the hook easily.\n\nThe film, by contrast, makes Martin a more straightforward antagonist. Logan Miller plays him as creepy and entitled, and the screenplay rushes through the blackmail plot to get to Simon's public outing and redemption. The moral ambiguity is sanded down, which makes the story easier to digest but less interesting. The book asks harder questions about what people do when they're scared."
     },
     {
+      "question": null,
       "title": "The Film's Utopian Creekwood Lacks the Book's Realism",
       "body": "Albertalli's Creekwood High is a recognizable American suburb—mostly accepting, but with pockets of casual homophobia and a pervasive pressure to conform. Simon's fear of coming out is rooted in real anxieties about how his peers and family will react, even though most of them ultimately respond well. The novel acknowledges that Simon's experience is relatively privileged but doesn't pretend that coming out is ever easy.\n\nBerlanti's film presents Creekwood as an almost utopian space where Simon's coming-out is met with overwhelming support. The vice principal shuts down a homophobic heckler with a stirring speech. Simon's parents are immediately, tearfully supportive. Even the school's jocks are allies. This aspirational vision is heartwarming and politically important—it shows queer teens a world where they're celebrated—but it lacks the book's textured realism. The film's Creekwood feels like a fantasy, which is both its strength and its limitation.\n\nRead the book first. Albertalli's novel is a richer, more emotionally complex experience than the film, and knowing the plot won't diminish your enjoyment of Love, Simon—the movie's charm lies in its performances and visual storytelling, not in narrative surprises. If you watch the film first, you'll miss the depth of Simon's internal struggle, Leah's heartbreak, and the moral ambiguity of the blackmail plot, all of which are central to what makes the story resonate.\n\nThe film works best as a companion piece to the novel—a celebration of the story's cultural impact and a showcase for Nick Robinson's charisma. But the book is where the real emotional work happens, and it's the version that will stay with you longer."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/love-simon",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

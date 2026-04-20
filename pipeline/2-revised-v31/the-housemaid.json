@@ -58,22 +58,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Twist's Construction",
       "body": "McFadden's novel is engineered around a revelation that reframes the entire narrative — Millie is not the vulnerable ex-con she appears to be, and Nina is not the villain. The novel holds this twist with precision across 300 pages, using first-person narration to control what the reader knows and when.\n\nThe film preserves the twist but the 110-minute runtime means less accumulation of misdirection. Readers of the novel will clock the mechanics more easily than first-time viewers, and even viewers unfamiliar with the book may sense the reversal coming. Feig's direction is less interested in sustained dread than in genre pleasure, which makes the twist feel more like a satisfying genre move than a genuine shock."
     },
     {
+      "question": null,
       "title": "Amanda Seyfried's Nina",
       "body": "Seyfried's performance is the film's most discussed element and its strongest asset. Her Nina is theatrical, unpredictable, alternately threatening and pitiable — a woman who has internalized a form of performance so completely that she no longer knows where it ends.\n\nThis is more interesting than the novel's Nina, who is more straightforwardly a victim once the twist reveals Andrew's abuse. Seyfried plays Nina as someone performing madness, performing victimhood, performing wealth, until the performances collapse into something genuine. Critics who found the film uneven largely exempted Seyfried. She earned a Golden Globe nomination and is considered a likely Oscar contender."
     },
     {
+      "question": null,
       "title": "Sydney Sweeney's Millie",
       "body": "Sweeney's Millie divided critics. Some found her performance too interior for a thriller, others felt she captured Millie's wariness and calculation precisely. The challenge is that McFadden's Millie is rendered in first person, which gives her a voice of dry observation that Sweeney cannot replicate through expression alone.\n\nThe novel's Millie is funny, sharp, and gradually revealed as far more dangerous than she appears. Sweeney's Millie is watchful and guarded, but the performance lacks the novel's wit. The film adds a framing device — Millie narrating the story to a police detective — that attempts to restore some of the book's narrative voice, but it feels grafted on rather than organic."
     },
     {
+      "question": null,
       "title": "Feig's Tonal Shift",
       "body": "Paul Feig directed A Simple Favor and brought a similar quality of knowing camp to The Housemaid. The film is aware of its genre pleasures and leans into them — the production design is lush, the score is melodramatic, and Seyfried's performance is pitched at a level of theatricality that signals the film is enjoying itself.\n\nThis is partly what made it commercially effective and partly what divided critics who wanted a straighter thriller. The novel is somewhat more earnestly tense; McFadden plays the genre straight and trusts the twist to deliver the payoff. The film is more interested in being entertaining than suspenseful, which makes it a better communal viewing experience but a less gripping solo one."
     },
     {
+      "question": null,
       "title": "The Attic as Metaphor",
       "body": "Both versions use the locked attic bedroom as the story's central spatial metaphor — the space that contains the secret the house is built to hide. In the novel, Millie's confinement in the attic is claustrophobic and sustained; McFadden gives the reader extended time inside Millie's imprisonment, which makes the eventual revelation of what the attic represents more powerful.\n\nThe film's attic is effectively menacing — production designer Jess Gonchor made it feel both prison and tomb — but the shorter runtime means less time spent inside it. The film also adds a visual motif of Nina staring up at the attic ceiling from below, which makes the metaphor more explicit than the novel's approach. It's effective but less subtle.\n\nYes. The novel's twist lands harder when built over the full reading experience, and McFadden's construction of the reveal is more satisfying with the accumulated dread of 300 pages. The film's twist is effective but abbreviated — the shorter journey means less investment in the misdirection and less payoff when it's revealed. Reading first also allows you to appreciate how Feig adapted the novel's structure, particularly the challenge of translating first-person narration to screen.\n\nThat said, the film is worth watching even if you know the twist, largely because of Amanda Seyfried's performance. Nina is more interesting on screen than on the page, and the film's knowing camp makes it a better communal viewing experience. Read first for the full mechanism, then watch for Seyfried and enjoy the film as a glossy genre exercise that knows exactly what it is."
     }
@@ -139,5 +144,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-housemaid",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

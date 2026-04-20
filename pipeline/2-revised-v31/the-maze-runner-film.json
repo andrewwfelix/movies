@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The immersive ignorance",
       "body": "Dashner's central formal achievement is that Thomas's ignorance is total and genuine — he knows nothing about the Glade, the maze, or his own past, and neither do we. The novel builds the Gladers' world through Thomas's learning of it, and this slow accumulation of rules, hierarchy, slang, and history gives the Glade a texture that feels earned. We learn what \"shank\" means, what the Changing is, why the doors close at night, all at the pace Thomas does.\n\nThe film necessarily shows us the Glade as a visual space from the beginning, which gives us information Thomas doesn't yet have and slightly undermines the mystery of arriving somewhere that has its own deep history. We see the walls, the jobs, the structure before Thomas understands them. It's a necessary compromise for visual storytelling, but it costs the story some of its disorienting power."
     },
     {
+      "question": null,
       "title": "The Glade's society",
       "body": "One of the novel's genuine pleasures is the detail of the society the boys have built — the jobs (Builders, Slicers, Cooks, Med-jacks), the rules (no going into the maze unless you're a Runner, no hurting another Glader), the punishments (a night in the Slammer, or banishment for the worst offences), the specific culture that has developed among boys who arrived with no memories but still managed to create something functional and surprisingly ordered. Dashner gives this world anthropological weight.\n\nThe film gives this social texture less room than it deserves, prioritising the maze and the action over the anthropology of the Glade. We see the jobs and the hierarchy, but we don't live in them the way the novel lets us. Readers will know the world more fully; viewers will find it more immediately exciting but less inhabited."
     },
     {
+      "question": null,
       "title": "Teresa's telepathic connection",
       "body": "In the novel, Teresa and Thomas can communicate telepathically — a strange, unsettling element that makes their connection feel both intimate and alien. It's one of the book's weirder choices, and it gives Teresa a presence in Thomas's mind that makes her arrival feel like the fulfilment of something he didn't know he was missing. The telepathy is never fully explained, which makes it more eerie.\n\nThe film removes the telepathy entirely, simplifying their relationship into something more conventionally dramatic — they meet, they talk, they trust each other. It's a defensible choice for a more grounded adaptation, but it makes Teresa less distinctive and removes one of the novel's stranger mysteries. Scodelario does what she can with a more conventional role, but novel readers will notice what's missing."
     },
     {
+      "question": null,
       "title": "The Grievers and the escape",
       "body": "Dashner's Grievers are described as grotesque hybrids of machine and flesh, with mechanical limbs and organic parts that make them feel genuinely alien. The novel's escape sequence is chaotic and costly — several Gladers die, and the survivors are traumatised by what they've had to do to get out. The weight of those deaths lingers.\n\nThe film's Grievers are impressively designed — massive, spider-like, genuinely threatening — and the escape sequence is more kinetic and action-forward. Ball stages the maze sequences with real tension, and the Grievers feel dangerous. But the film compresses the aftermath and moves more quickly past the cost of escape. It's more exciting and less haunting."
     },
     {
+      "question": null,
       "title": "The ending and WICKED's reveal",
       "body": "Both versions end with the revelation that the maze was a test, that WICKED (World In Catastrophe: Killzone Experiment Department) has been watching them, and that the world outside is a wasteland ravaged by solar flares and a disease called the Flare. The novel's ending carries more of the moral weight of what the characters have lost to get out — the Glade was a prison, but it was also a home, and leaving it means entering something worse.\n\nThe film's ending is more action-forward, with the rescue and the reveal of WICKED's facility happening in quicker succession. It sets up the sequel effectively and ends on a note of forward momentum rather than ambivalence. Both versions work, but the novel lingers longer on what's been sacrificed.\n\nYes — the novel's slow immersion in the Glade's world is the experience that the film, necessarily, compresses. Read first to arrive in the Glade the way Thomas does, knowing nothing, learning everything gradually through the accumulation of slang, rules, and history. The book gives you the anthropological detail of the Gladers' society, the strangeness of Teresa's telepathy, and the full weight of what it costs to escape.\n\nThe film is a confident, well-made adaptation that works perfectly well as a standalone — Ball directs with clarity and tension, O'Brien is excellent casting, and the maze sequences are genuinely thrilling. But the book gives you more of the world you're arriving in, and the mystery is richer when you know as little as Thomas does."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-maze-runner-film",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

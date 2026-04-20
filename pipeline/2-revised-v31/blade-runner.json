@@ -63,22 +63,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The film abandons Dick's religious subplot for pure noir existentialism",
       "body": "Dick's novel is saturated with Mercerism, a quasi-religious movement centered on a figure called Wilbur Mercer. Deckard owns an empathy box that connects him to Mercer's suffering, and the religion functions as Dick's exploration of shared consciousness and artificial faith. It's philosophically ambitious but narratively diffuse, and it dilutes the book's focus on the android question itself.\n\nScott strips this entirely, replacing spiritual ambiguity with visual and moral ambiguity. The film's Los Angeles is secular, decaying, and noir—a world where the only transcendence comes through human connection and the confrontation with mortality. By removing Mercerism, Scott actually sharpens Dick's central question: what makes us human? The answer becomes not faith or empathy boxes, but the capacity to recognize consciousness in another being."
     },
     {
+      "question": null,
       "title": "Scott makes the Deckard-android question central; Dick leaves it peripheral",
       "body": "In the novel, the possibility that Deckard might be an android is a late-game twist that Dick hints at but never fully explores. It's a clever idea that gets lost in the book's sprawling structure and multiple subplots. The reader is never quite sure if it's real or Deckard's paranoia.\n\nScott makes this ambiguity the film's entire foundation. Every scene is shot and performed in a way that makes Deckard's humanity questionable—his emotional flatness, his isolation, the way he moves through the world. The film's final scene, where Deckard and Rachael leave together, is rendered ambiguous by Scott's visual language in a way that the book never achieves. By making this the central mystery rather than a peripheral one, Scott creates a more unified and haunting work."
     },
     {
+      "question": null,
       "title": "The film elevates Roy Batty from antagonist to tragic protagonist",
       "body": "In Dick's novel, Roy Batty is dangerous and intelligent, but he's fundamentally a plot obstacle—the android Deckard must hunt and kill. He has no inner life to speak of, and his motivations are functional rather than emotional. He's a threat, not a character.\n\nScott and Hauer transform Roy into the film's moral and philosophical center. His four-year lifespan becomes the film's meditation on mortality and meaning. His final monologue—about seeing things humans wouldn't believe, about memories dissolving like tears in rain—is not in the book, but it's the film's most profound moment. By making Roy sympathetic and eloquent, Scott forces the audience to question who the real villain is. Deckard becomes the hunter of a being more aware of existence's preciousness than Deckard himself."
     },
     {
+      "question": null,
       "title": "Dick's paranoia is diffuse; Scott's paranoia is visual and concentrated",
       "body": "Dick's novel generates paranoia through Deckard's unreliable interior monologue and the constant uncertainty about what's real. The reader is trapped in Deckard's fragmenting consciousness, which is philosophically rich but narratively scattered. The paranoia is intellectual rather than visceral.\n\nScott creates paranoia through visual language—the perpetual rain, the oppressive architecture, the way characters are framed in shadows and isolation. The film's paranoia is environmental and emotional rather than philosophical. By concentrating the paranoia into a visual and emotional experience, Scott makes it more immediately affecting. The audience doesn't just think about uncertainty; they feel it in every frame."
     },
     {
+      "question": null,
       "title": "The film's ending is ambiguous transcendence; the book's is ambiguous despair",
       "body": "Dick's novel ends with Deckard and his wife finding a live toad in the desert—a moment of grace in a dead world, though even this is undercut by uncertainty about whether the toad is real or artificial. It's a hopeful ending that Dick immediately complicates, leaving the reader in philosophical limbo.\n\nScott's ending—Deckard and Rachael leaving the city, the film suggesting they might escape—is visually transcendent but narratively ambiguous. Are they both androids? Is Deckard's newfound humanity real or programmed? The film doesn't answer, but it suggests that the question itself is less important than the connection they've made. Scott's ambiguity is more emotionally resonant because it's grounded in relationship rather than metaphysical puzzle-solving."
     }
@@ -143,5 +148,28 @@
   ],
   "hasSpoilerWarning": false,
   "hasQuickAnswer": true,
-  "hasCharTable": true
+  "hasCharTable": true,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/blade-runner",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

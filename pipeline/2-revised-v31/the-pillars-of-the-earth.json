@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The cathedral as protagonist",
       "body": "Follett's most remarkable achievement is making the building of a cathedral genuinely suspenseful — the architectural decisions, the engineering challenges, the specific problems of Gothic construction in an era before modern mathematics are rendered with enough detail to be fascinating and enough narrative propulsion to keep a thousand pages moving. The novel explains why pointed arches distribute weight differently than rounded ones, why flying buttresses allow for larger windows, why the collapse of the original roof requires Jack to redesign the entire structure.\n\nThe series shows us the cathedral rising visually, which is its own satisfaction, but the architectural texture — the reasoning behind each decision, the beauty of Follett's technical research made dramatic — is necessarily compressed. You see the building grow; you don't understand its bones the way the novel teaches you to. The book gives you a building that you understand; the series gives you a building that you can see."
     },
     {
+      "question": null,
       "title": "The compression of decades",
       "body": "The novel spans approximately forty years, from Tom Builder's initial dream through Jack's completion of the cathedral as a master architect. Follett uses this timeframe to show how political, religious, and personal fortunes shift across a generation — characters age, children grow up, enemies become irrelevant, new villains emerge. Tom dies midway through; Jack grows from a forest-raised boy to England's finest architect; Aliena builds a wool empire over decades.\n\nThe series compresses this timeline into what feels like perhaps fifteen years, using aged makeup and subtle costume changes that are variably effective. Redmayne and Atwell play their characters from youth to middle age, which works on screen but loses the novel's sense of watching history grind through individual lives over decades. The longitudinal sweep — the specific quality of seeing the same characters navigate entirely different political landscapes as young people and then as aging survivors — is one of the novel's defining qualities, and eight hours is not enough time to fully replicate it."
     },
     {
+      "question": null,
       "title": "Aliena's wool trade and economic detail",
       "body": "In the novel, Aliena's reconstruction of her life after her father's dispossession is told through the specific mechanics of the medieval wool trade — she learns to judge fleece quality, negotiate with Flemish buyers, navigate the complexities of credit and transport. Follett makes medieval commerce as dramatic as medieval warfare, and Aliena's business acumen is as central to her character as her relationship with Jack.\n\nThe series preserves Aliena's wool merchant storyline but reduces the economic detail that makes it fascinating in the novel. Atwell's performance conveys Aliena's intelligence and determination, but the series can't afford the page space Follett devotes to explaining how she outmaneuvers her competitors or why the Flemish market matters. You see that she's successful; the novel shows you how."
     },
     {
+      "question": null,
       "title": "The villains and their motivations",
       "body": "Follett's villains — particularly William Hamleigh and Bishop Waleran — are among the novel's most discussed elements, criticized by some as cartoonishly evil and defended by others as necessary to the epic's moral architecture. William's brutality is relentless and his motivations are largely psychological — his rejected proposal to Aliena festers into decades of violence. Waleran is ambitious and corrupt but given enough political context to feel like a product of medieval church politics.\n\nThe series inherits this quality: David Oakes plays William with maximum menace, and the character's crimes — including the rape of Aliena and the burning of Kingsbridge — are staged with a directness that Starz's cable format allows. Ian McShane's Waleran is more charismatic than Follett's version, which makes him more watchable but perhaps less believably petty. Both versions are designed to be straightforwardly despised, and both succeed."
     },
     {
+      "question": null,
       "title": "Ellen's witchcraft and the supernatural",
       "body": "In the novel, Ellen — Jack's mother — is presented as a woman living outside society, knowledgeable about herbs and nature, who curses those who wrong her family. Her curses are ambiguous; Follett leaves it unclear whether they have supernatural power or simply psychological effect. She's a figure of folk wisdom and maternal ferocity, and her presence gives the novel a touch of the uncanny without committing to outright magic.\n\nThe series, with Natalia Wörner playing Ellen, leans slightly more into the supernatural, staging her curses with visual effects and ominous music that make them feel more explicitly magical. It's a small shift, but it changes the texture — the novel's Ellen exists in a world where superstition and reality blur; the series' Ellen exists in a world where curses demonstrably work. The difference is subtle but affects the story's relationship to the medieval worldview it depicts.\n\nYes — the novel's architectural detail, its longitudinal sweep, and its specific texture of a world constructed over twelve years of research are the experience. Follett teaches you how cathedrals are built, how medieval commerce worked, how political power shifted during The Anarchy, and he does it through characters whose lives span decades. The series is a faithful companion that preserves the main narrative and delivers strong performances, but it abbreviates too much of what makes the novel exceptional.\n\nRead first; watch the series to see the cathedral rise and to see Redmayne and Atwell embody Jack and Aliena. The book is the fuller world, the one where you understand not just what happens but how and why. The series is the visual companion, best appreciated after you've lived in Follett's Kingsbridge long enough to know its stones."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-pillars-of-the-earth",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

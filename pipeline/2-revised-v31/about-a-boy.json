@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The dual first-person narration is preserved through voiceover",
       "body": "Hornby alternates between Will and Marcus's first-person perspectives — a structural choice that gives both characters equal interiority and equal comedy. The reader inhabits Will's determined superficiality and Marcus's bewildered earnestness with equal intimacy.\n\nThe film uses voiceover narration from both characters, which preserves more of this dual perspective than most adaptations manage. Grant's voiceover captures Will's self-satisfied detachment, while Hoult's captures Marcus's confusion. It is one of the film's most faithful structural choices and it works."
     },
     {
+      "question": null,
       "title": "Hugh Grant plays Will Freeman as a man who has weaponized charm",
       "body": "Grant had spent the 1990s playing variations on charming diffidence, and Will Freeman is the apotheosis of that persona — a man who has refined pleasantness into a defense system so effective he has never had to feel anything difficult. Grant understood this completely and plays it with a self-awareness that the character himself lacks.\n\nThe novel's Will is funny because Hornby lets you see the calculation behind the charm. The film's Will is funny because Grant lets you see it too, in the flicker of his eyes before he says something designed to deflect. It is his best performance and one that the novel's Will recognizes completely."
     },
     {
+      "question": null,
       "title": "Marcus's strangeness is slightly softened for the screen",
       "body": "Hornby's Marcus is genuinely peculiar — a child raised outside mainstream culture who has no idea how to be normal and is completely unself-conscious about his abnormality. He sings Joni Mitchell songs in public, wears the wrong clothes, and doesn't understand why any of this matters. Nicholas Hoult captures this with remarkable precision for a twelve-year-old debut performance.\n\nThe film's Marcus is slightly more conventionally sympathetic than the novel's. He's still strange, but the film gives him more moments of self-awareness and vulnerability. Hornby's version is funnier because his strangeness is more total — he genuinely doesn't know he's weird, which makes his obliviousness both comic and heartbreaking."
     },
     {
+      "question": null,
       "title": "Fiona's depression gets careful treatment but less complexity",
       "body": "Marcus's mother Fiona — played by Toni Collette — is genuinely depressed in both versions, and her attempted suicide is the novel's most serious moment. The film handles this carefully and Collette is excellent, playing Fiona's depression as exhaustion rather than melodrama.\n\nThe novel gives Fiona's depression more space and more texture. Her relationship with New Age spirituality, her obliviousness to Marcus's struggles at school, her inability to see that her honesty with Marcus about her feelings is a burden he can't carry — all of this makes her more complicated and less purely a plot device. The film's Fiona is sympathetic; the novel's is sympathetic and frustrating, which is more honest."
     },
     {
+      "question": null,
       "title": "The ending is warmer in the film, more ambiguous in the novel",
       "body": "Both versions resolve with Will genuinely changed — connected, responsible, willing to be needed. The film's ending is slightly warmer and more conclusive, with Will hosting Christmas dinner for his assembled makeshift family and Marcus performing at the school concert with Will's support.\n\nThe novel's ending is more ambiguous about the nature of Will's transformation. Hornby leaves you with the feeling that Will has changed enough, rather than that he has changed completely, which is the more honest conclusion. Will is still Will — he's just Will with people he cares about now, which is all the growth Hornby thinks anyone can reasonably manage.\n\nEither order works genuinely well — this is one of the site's most comfortable either-order recommendations. The film is faithful enough that watching first loses very little, and the novel's dual voiceover adds texture rather than revelation. If you watch first, you'll get Hugh Grant's performance in your head while reading, which is not a bad thing. If you read first, you'll appreciate how well the Weitz brothers understood Hornby's tonal balance.\n\nIf you have to choose: read first for the full warmth of Hornby's prose and the sharper edges of Marcus's strangeness, then watch Grant do something with Will that the novel describes but cannot perform. But honestly, flip a coin. Both versions are good enough that the order doesn't matter as much as the fact that you experience both."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/about-a-boy",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

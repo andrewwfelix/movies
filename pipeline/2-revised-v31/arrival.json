@@ -63,22 +63,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The novella is a thought experiment; the film is a tragedy",
       "body": "Chiang's \"Story of Your Life\" operates as a philosophical puzzle box. Louise learns the alien language, her perception of time becomes non-linear, and she experiences her entire life simultaneously. The ending is intellectually stunning but emotionally neutral—she accepts her predetermined future with the calm of someone who has transcended linear causality. There is no conflict, only revelation.\n\nVilleneuve's Arrival weaponizes the same premise into heartbreak. By adding Hannah and the romance with Ian, the film transforms linguistic relativity into a story about choosing to live a predetermined life knowing it will end in loss. Louise's acceptance becomes an act of courage rather than philosophical resignation. The film asks: would you live your entire life, knowing how it ends, if it meant experiencing love?"
     },
     {
+      "question": null,
       "title": "Villeneuve adds geopolitical conflict that Chiang deliberately avoids",
       "body": "The novella mentions that Louise's work might prevent war, but this is background context. Chiang is uninterested in military thriller mechanics. The story unfolds in Louise's consciousness; external plot is irrelevant. The aliens' purpose, the threat of global conflict, the military's demands—these are all subordinate to the central question: how does language shape thought?\n\nThe film makes geopolitical tension its primary dramatic engine. Villeneuve stages scenes of military standoffs, Chinese generals threatening nuclear war, and Louise racing against time to prevent catastrophe. This creates conventional narrative stakes that the novella deliberately rejects. The film is more conventionally thrilling, but it also dilutes Chiang's focus on pure intellectual transformation. Where the novella asks \"What does it mean to think non-linearly?\" the film asks \"Can one woman prevent World War III?\""
     },
     {
+      "question": null,
       "title": "The novella privileges Louise's interiority; the film privileges visual spectacle",
       "body": "Chiang's story is almost entirely Louise's internal monologue. We experience the alien contact through her consciousness, her linguistic analysis, her philosophical reflections. The aliens themselves are barely described; the focus is on how their language rewires human cognition. The novella is a masterpiece of intellectual science fiction precisely because it trusts the reader's imagination and intellect.\n\nVilleneuve's film is a visual symphony. The Heptapods are rendered as stunning, otherworldly creatures. Their language appears as three-dimensional calligraphy. The film uses sound design, cinematography, and production design to create an immersive sensory experience. This is not a weakness—it's a different artistic choice. The film makes the alien contact visceral and immediate in ways prose cannot. But it necessarily sacrifices Chiang's focus on pure thought for the power of images."
     },
     {
+      "question": null,
       "title": "Chiang's ending is acceptance; Villeneuve's is sacrifice",
       "body": "In the novella, Louise learns the alien language and experiences her life non-linearly. She sees her future—including her daughter's birth and death—and accepts it with equanimity. There is no dramatic choice; she simply understands that linear causality is an illusion. Her acceptance is almost Zen, a transcendence of human limitation. The ending is profound but emotionally distant.\n\nVilleneuve's ending is a choice. Louise knows her future with Ian will be brief and painful. She knows her daughter will die young. She chooses to live it anyway. She calls Ian and says his name—a simple human gesture that carries the weight of predetermined love and loss. The film's ending is more conventionally tragic and emotionally devastating. It asks Louise (and the audience) to embrace suffering as the price of love. Chiang's Louise transcends suffering; Villeneuve's Louise walks toward it with open eyes."
     },
     {
+      "question": null,
       "title": "The novella is about language; the film is about love",
       "body": "Chiang's \"Story of Your Life\" is fundamentally a story about how language structures reality. The alien language is non-linear, simultaneous, visual—and learning it literally changes how Louise's brain processes time and causality. The story's power comes from exploring linguistic relativity as a form of cognitive transformation. Love, family, and personal relationships are secondary to this central intellectual premise.\n\nVilleneuve's Arrival uses the same linguistic premise but subordinates it to a love story. The alien language is still central, but it becomes a vehicle for exploring how Louise can choose to love and be loved despite knowing the future. The film's emotional core is not linguistic theory but maternal and romantic love. Where Chiang asks \"What is language?\" Villeneuve asks \"What is worth loving?\" Both are profound questions, but they point in entirely different directions."
     }
@@ -143,5 +148,28 @@
   ],
   "hasSpoilerWarning": false,
   "hasQuickAnswer": true,
-  "hasCharTable": true
+  "hasCharTable": true,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/arrival",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

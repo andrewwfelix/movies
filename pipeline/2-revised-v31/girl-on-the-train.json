@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The London to New York relocation strips away the novel's essential dreariness",
       "body": "The novel is rooted in the specific geography of the London commuter belt — the particular dreariness of the suburban train from Ashbury to Euston, the terraced houses glimpsed at speed, the English social textures that give Rachel's decline a specific flavour. Hawkins uses the grey ordinariness of commuter London as Rachel's emotional landscape.\n\nThe film moves everything to New York's Hudson Valley, presumably for commercial reasons. It's a significant loss. Westchester County is too glossy, too spacious, too American-suburban to carry the same claustrophobic weight. The train becomes a Metro-North commuter line, the houses become larger and more spread out, and the entire atmosphere shifts from grey English misery to something more generically affluent."
     },
     {
+      "question": null,
       "title": "Rachel's unreliability works better on the page than on screen",
       "body": "The novel's engine is Rachel's alcoholic blackouts — she genuinely cannot trust her own memory, and neither can the reader. Hawkins builds this through first-person narration that is deliberately fragmentary, looping, and self-contradicting. Rachel's voice is desperate, self-aware, and trapped in a fog of her own making. She tells us things that turn out to be false, not because she's lying but because she doesn't know what's true.\n\nEmily Blunt gives a committed and sympathetic performance, but film is a fundamentally more reliable medium than first-person prose. What we see on screen feels more authoritative than what Rachel tells us on the page. The camera doesn't lie the way Rachel's narration does, which slightly defangs the novel's central trick. We trust our eyes more than we trust Rachel's words."
     },
     {
+      "question": null,
       "title": "The three-narrator structure loses depth in adaptation",
       "body": "The novel rotates between three first-person narrators — Rachel, Megan, and Anna — each with a distinct voice and timeline. This structure keeps the reader perpetually off-balance, withholding and revealing information across the three perspectives in carefully controlled sequence. Megan's chapters are set in the months before her disappearance, Anna's in the present alongside Rachel's, and the interweaving creates a puzzle the reader assembles piece by piece.\n\nThe film preserves the three-narrator structure but necessarily externalises what the novel keeps internal. The result is that Megan and Anna feel thinner on screen than on the page, where their chapters carry equal narrative weight to Rachel's. Megan's backstory — her grief over a lost child, her affair with her therapist Kamal Abdic — is compressed. Anna's anxieties about Tom and her own complicity are sketched rather than fully explored."
     },
     {
+      "question": null,
       "title": "Megan's chapters do more work in the novel than the film allows",
       "body": "One of the novel's more affecting threads is Megan's history — a grief and guilt she carries over the death of her infant daughter years earlier, a trauma that reframes her apparent perfection and makes her disappearance feel like more than a plot mechanism. Her sessions with Kamal, her restlessness in her marriage to Scott, her affair with Tom — all of it is given space and interiority in the novel.\n\nThe film touches on this but compresses it, which means Megan remains slightly more of a cipher than Hawkins intended. Haley Bennett is good in the role, but the film's Megan is primarily a mystery to be solved rather than a fully realized person whose disappearance carries emotional weight independent of the plot mechanics."
     },
     {
+      "question": null,
       "title": "The reveal lands harder when you've lived inside Rachel's fractured consciousness",
       "body": "The novel's climax works because Hawkins has spent the entire book earning Rachel's unreliability — when the truth emerges that Tom has been gaslighting her, that he killed Megan when she threatened to expose their affair and his lies to Anna, it recontextualizes everything, including things Rachel told us directly. The reader has been inside Rachel's head for 300 pages, experiencing her self-doubt and confusion as lived reality.\n\nThe film's reveal hits the same plot beats but with less accumulated weight behind it. You haven't lived inside Rachel's fractured consciousness long enough for the resolution to land with the full force it carries on the page. It's still satisfying as a thriller — the final confrontation where Rachel and Anna kill Tom together is visceral and well-executed — but it's a shorter distance to travel.\n\nYes — the novel's unreliable narration is the whole point, and it works better on the page than on screen. Read it first and the film becomes a competent thriller adaptation with a strong lead performance. Watch it first and the book will feel like the fuller, richer version of a story you already know the ending to. The twist is the same either way, but arriving at it through Rachel's fractured prose is the experience Hawkins designed.\n\nThe novel also gives you the London setting, which is integral to the atmosphere, and the full depth of Megan's and Anna's perspectives. If you're going to experience this story only once, make it the book. If you're doing both, read first and then watch Blunt's performance as a skilled interpretation of a character the page renders more fully."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/girl-on-the-train",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

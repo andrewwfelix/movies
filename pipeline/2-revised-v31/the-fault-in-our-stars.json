@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Hazel's voice is the novel's greatest asset and cannot be filmed",
       "body": "The book is narrated by Hazel in first person, and her voice — sardonic, precise, occasionally furious, always intelligent — is its greatest achievement. Green writes a teenager who is genuinely smart and genuinely dying, and who uses wit as both armor and honest expression. She describes her cancer support group as \"a circle of trust for people who can't be trusted with their own bodies\" and calls her oxygen tank \"Philip\" because it's always with her. This is not quirk for quirk's sake; it's how she survives.\n\nWoodley is excellent and brings warmth and intelligence to the role, but voiceover can only carry so much of what exists in sentences. The film gives us Hazel's face where the book gives us her mind, and the mind is richer company. Woodley's performance is moving, but it cannot replicate the experience of spending 300 pages inside Hazel's head."
     },
     {
+      "question": null,
       "title": "Augustus is more complicated and less perfect in the book",
       "body": "Elgort's Augustus is charming and appealing in the way the character needs to be for the film to work. What the adaptation can't quite reproduce is the novel's careful management of Augustus — Green lets us see, through Hazel's narration, both why she loves him and where his self-mythology tips into performance. Augustus wants desperately to be remembered, to do something heroic, to matter. The book is more honest about this as both endearing and slightly exhausting.\n\nThe film, needing its romantic lead to function as one, smooths Augustus into something simpler and more conventionally heroic. We lose the moments where Hazel gently mocks his pretensions, and we lose the sense that his philosophical pronouncements are partly a defense mechanism. Elgort is good, but the character is less interesting than the one on the page."
     },
     {
+      "question": null,
       "title": "The treatment of illness is more physically honest in the book",
       "body": "Green is notably unsentimental about what cancer actually does — the oxygen tank Hazel drags everywhere, the fatigue that makes stairs an ordeal, the indignity of vomiting in public, the bureaucracy of insurance and clinical trials. The novel includes a scene where Hazel's lungs fill with fluid and she nearly dies in the ICU, which is terrifying and unglamorous. The film includes this scene but softens it, and generally treats illness with more care and less ugliness.\n\nThis is understandable for a studio production aimed at a wide audience, and the film is not dishonest about cancer. But the book is more willing to be ugly about it, which makes the love story feel harder-won and more honest. When Augustus tells Hazel he loves her in the book, we have spent more time with what it costs them both to be together."
     },
     {
+      "question": null,
       "title": "Peter Van Houten's role is diminished in the adaptation",
       "body": "The reclusive author at the center of Hazel's obsession is played by Willem Dafoe, which is inspired casting. The Amsterdam sequence — where Hazel and Augustus finally meet their literary hero and find him monstrous — is the novel's most formally interesting section, and the film handles it reasonably well. Dafoe is cruel and drunk and pathetic in exactly the right proportions.\n\nBut Van Houten's later reappearance at Augustus's funeral, and the explanation offered for his bitterness (his own daughter died of cancer, and An Imperial Affliction was written for her), lands more heavily in the book because we have spent more time with Hazel's attachment to his work. The film includes this scene but moves through it quickly, and the emotional payoff is smaller as a result."
     },
     {
+      "question": null,
       "title": "The pre-funeral scene deserves more space than the film gives it",
       "body": "One of the novel's most quietly devastating sequences — Augustus, dying, asks Hazel and Isaac to speak at a pre-funeral so he can hear his own eulogies — is in the film but receives less time than it deserves. In the book, this scene carries enormous weight because Green has spent more time establishing what each of these people means to the others. Isaac's speech is funny and heartbreaking; Hazel's is one of the most honest declarations of love in recent fiction.\n\nThe film hits the emotional beats and both Wolff and Woodley are excellent, but it moves through the scene faster than it merits. The book lets the moment breathe, and the result is more devastating. This is a structural problem: the film has two hours, and the book has as long as it needs.\n\nYes — and not because the film is bad, but because Hazel's voice is the experience and no performance can replicate it. The novel is funny in ways the film cannot be, because humor on the page can coexist with grief in ways that are harder to manage on screen. Green's sentences do work that images cannot, and the book's intelligence is inseparable from its narrator's intelligence. Read first and the film becomes a handsome, faithful companion that lets you see Hazel and Augustus as people rather than voices.\n\nWatch first and the book will still expand what the film gave you — you'll hear Hazel's narration in Woodley's voice, which is not a bad thing, and you'll understand why certain scenes in the film feel compressed. Either order works, but the book is the better version. It's sharper, funnier, and more honest about what it means to love someone who is dying, and to be someone who is dying and still want to be loved."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/the-fault-in-our-stars",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

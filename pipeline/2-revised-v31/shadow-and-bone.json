@@ -70,22 +70,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "The Six of Crows integration",
       "body": "The series introduces Kaz Brekker, Inej Ghafa, and Jesper Fahey into the same timeline as Alina's story, despite these characters appearing in books set years later.\n\nThis shouldn't work chronologically, and Heisserer adjusts the timeline to make it fit. It works spectacularly well: the Crows are the series' most beloved characters, Freddy Carter, Amita Suman, and Kit Young are perfectly cast, and their storyline — a heist to kidnap Alina — gives the series a propulsive energy that the novel's more focused narrative doesn't have. The Crows' scenes in Ketterdam, particularly Kaz's interactions with gang leader Pekka Rollins, establish a criminal underworld that feels fully realized.\n\nReaders coming from the books will need to accept the timeline liberties; everyone else will simply enjoy the best parts of two books simultaneously."
     },
     {
+      "question": null,
       "title": "Ben Barnes as the Darkling",
       "body": "Barnes plays General Kirigan with a layered ambiguity that makes him more complex than the novel's version.\n\nThe casting of Ben Barnes as the Darkling is the series' other great creative success. Barnes is genuinely menacing and genuinely compelling, and the series builds his relationship with Alina into something more nuanced than the novel manages in its first volume. His scenes with Alina in the Little Palace — particularly their conversations about power and belonging — crackle with tension that feels both romantic and dangerous. When his true intentions are revealed, Barnes makes the betrayal land with real emotional weight.\n\nReaders who found the Darkling's arc in the trilogy satisfying may find the series' version adds new dimensions; those who didn't may find Barnes more sympathetic than they want him to be."
     },
     {
+      "question": null,
       "title": "Alina's identity and racial prejudice",
       "body": "The series makes Alina half-Shu and builds her experience of racism in Ravka into a significant part of her character.\n\nThis is an addition the novel doesn't include, reflecting actress Jessie Mei Li's background, and it deepens Alina's outsider status in ways that feel thematically coherent. The series shows Ravkan soldiers mocking her appearance, calling her \"rice-eater,\" and treating her as inherently suspicious. When she arrives at the Little Palace, her Shu heritage continues to mark her as different even among other Grisha.\n\nMei Li brings warmth and vulnerability to the role; the series' Alina is somewhat more immediately sympathetic than the novel's, and her journey toward self-acceptance carries additional weight."
     },
     {
+      "question": null,
       "title": "The Grishaverse's visual world-building",
       "body": "The series renders Bardugo's carefully constructed world with impressive production design on a Netflix budget.\n\nBardugo's novel constructs the Grishaverse with considerable care — the three orders of Grisha (Corporalki, Etherealki, Materialki), the Small Science that powers their abilities, the political tension between Ravka and its neighbours Fjerda and Shu Han, the folklore of the Shadow Fold and Sankt Ilya. The series makes this world immediately visible: the Little Palace's opulent interiors, the color-coded keftas that denote Grisha orders, the Shadow Fold's swirling darkness and shrieking volcra.\n\nFirst-time readers of the novel will find the world more extensively explained through Alina's perspective; series-first viewers will find it more immediately immersive."
     },
     {
+      "question": null,
       "title": "The novel's focused intimacy",
       "body": "The book maintains a single, tightly focused perspective on Alina's discovery of her power that the series necessarily dilutes.\n\nThe novel's intimacy with Alina's experience — her self-doubt, her complicated friendship with Genya, her gradual understanding of what the Darkling actually wants from her — is split in the series by the parallel Crows storyline, however much better that storyline is. Bardugo's prose stays close to Alina's internal voice, tracking her transformation from self-effacing cartographer to someone who must accept her own power. The series gives us multiple perspectives, which enriches the world but reduces the intensity of Alina's personal journey.\n\nFans of Alina specifically may prefer the novel's undivided attention to her story.\n\nRead the novel first for Alina's focused story and the Grishaverse's careful world-building — then read Six of Crows before or after the series, since the Crows are the series' best argument for the Grishaverse as a whole. The novel explains the Small Science and Grisha orders more thoroughly than the series has time for, and Bardugo's prose gives you Alina's internal voice in ways the adaptation can only approximate.\n\nThe series is an excellent entry point if you want to see whether the Grishaverse appeals to you before committing to multiple books. Watch first, then read to understand why Bardugo's fans are so devoted to these characters — and why the Crows, in particular, inspired Netflix to take the risk of combining two separate storylines into one ambitious adaptation."
     }
@@ -151,5 +156,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/shadow-and-bone",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

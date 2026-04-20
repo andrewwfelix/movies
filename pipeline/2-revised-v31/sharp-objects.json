@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Camille's Interior Voice Is the Novel's Primary Texture",
       "body": "The novel is narrated entirely from inside Camille's head, and Flynn's prose captures a specific kind of dissociation — Camille observes herself from a slight remove, notices her own bad decisions with weary detachment, experiences her self-harm as something between compulsion and communication. This interior register is the book's primary texture, and it is genuinely difficult to reproduce on screen.\n\nAdams conveys damage through stillness and exhaustion, which is effective, but the series can only show us Camille's surface where the novel gives us the whole churning interior. The book's Camille is darkly funny, self-aware, and constantly narrating her own unraveling. The series' Camille is more opaque, more purely traumatized, less verbally present."
     },
     {
+      "question": null,
       "title": "Vallée's Visual Style Replaces Flynn's Sharp Prose",
       "body": "The series is shot with a languid, heat-soaked beauty that makes Wind Gap feel genuinely oppressive — the slow pans, the memory flash cuts, the way the camera lingers on surfaces and textures. This is the adaptation's greatest strength and its most notable departure from the source.\n\nFlynn's prose is sharp and direct; Vallée's images are impressionistic and dreamy. The series is more visually interesting than most prestige television and less psychologically precise than the novel it is based on. Vallée uses the same techniques he brought to Big Little Lies — fragmented editing, atmospheric sound design, a sense of memory bleeding into present — and they work beautifully, but they soften the novel's harder edges."
     },
     {
+      "question": null,
       "title": "Patricia Clarkson's Adora Is an Improvement in One Dimension",
       "body": "This is the series' best performance and possibly an improvement on the novel in one specific dimension: Clarkson makes Adora's particular brand of malevolence — all surface charm and deep manipulation — physically present in a way that prose can describe but cannot embody.\n\nThe novel tells us Adora is beautiful and frightening. Clarkson shows us both simultaneously, in the same gesture. Her Adora is all pastel dresses and soft Southern vowels and absolute control, and the performance makes Munchausen syndrome by proxy feel less like a clinical diagnosis and more like a specific expression of narcissism and cruelty. It is one of the great villain performances in recent television."
     },
     {
+      "question": null,
       "title": "The Words on Camille's Skin Accumulate Differently",
       "body": "A central element of the novel is that Camille has carved words — hundreds of them — into her body, and Flynn uses this detail with considerable care, revealing specific words at specific moments. The series handles this visually but necessarily makes the words more legible and more shocking as a visual effect.\n\nIn the novel, the words accumulate slowly as a portrait of a mind that processes pain through language — \"vanish,\" \"wrong,\" \"milk,\" \"nasty.\" The series shows them all at once in several key scenes, making them immediately horrifying but less psychologically sustained. The book's version is more unsettling precisely because you build the picture gradually, word by word, over the course of the narrative."
     },
     {
+      "question": null,
       "title": "The Ending Is the Same, but the Delivery Differs",
       "body": "Both versions reveal that Amma is the killer and that Adora has been poisoning her daughters for years. The novel delivers this information in a brief, devastating epilogue after Camille has left Wind Gap. The series adds a post-credits sequence that shows Amma committing the murders, making the horror more explicit where Flynn left it implied.\n\nThe novel's approach is more effective — the epilogue is four pages long, and Flynn delivers the revelation with brutal efficiency. The series' post-credits sequence is visually striking but less shocking because the show has already prepared you for Amma's capacity for violence. The book's version hits harder because it trusts you to imagine the worst.\n\nYes — the novel is short, fast, and will leave you genuinely disturbed in ways the series softens. Flynn's debut is more raw and more direct than Gone Girl; it has less plot architecture and more psychological honesty. The book's Camille is a more specific, more verbally present narrator, and the novel's claustrophobic first-person perspective is the story's most distinctive feature. Read first and the series becomes a beautiful, if somewhat dreamier, companion.\n\nWatch first and the book will still give you everything the series couldn't quite reach — the interior voice, the accumulation of dread, the specific unease of being inside a damaged mind. But you'll lose the experience of discovering Amma's crimes through Flynn's brutal four-page epilogue, which is one of the most effective endings in recent thriller fiction."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/sharp-objects",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

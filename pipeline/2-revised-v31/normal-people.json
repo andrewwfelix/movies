@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "Rooney's free indirect style cannot be filmed",
       "body": "Rooney writes in free indirect discourse, moving fluidly between Connell and Marianne's perspectives without signaling the shift. You're inside both their heads simultaneously, understanding both sides of every miscommunication as it happens. The novel's power comes from this double access — you see exactly why Connell doesn't ask Marianne to the Debs, and exactly how Marianne interprets his silence.\n\nThe series uses close-up photography, restrained performance, and careful editing to approximate this intimacy. Abrahamson and Macdonald shoot Mescal and Edgar-Jones in tight frames, often in natural light, creating visual privacy. But the experience is different: watching two people fail to communicate is painful in a way that understanding why they're failing is not. The novel gives you the interior dimension; the series gives you the physical one."
     },
     {
+      "question": null,
       "title": "Mescal and Edgar-Jones exceed what prose can do",
       "body": "Paul Mescal's performance as Connell is one of the finest in recent television. He makes Connell's discomfort in his own popularity visible — the way he holds his shoulders, the way he looks away when someone compliments him, the gentleness of his hands during sex. His inability to say what he means is rendered through body language in ways the novel can only describe.\n\nEdgar-Jones matches him. Her Marianne is all sharp edges in secondary school — defensive posture, challenging eye contact — and the series tracks her physical transformation at Trinity as she learns to take up space. The moment in Episode 6 where she tells Connell \"I'm not a religious person\" while lying in his arms is devastating precisely because of Edgar-Jones's delivery: flat affect concealing absolute need.\n\nThis is the area where the series most clearly surpasses its source. Rooney can tell you what Connell and Marianne are thinking; Mescal and Edgar-Jones show you what they cannot say."
     },
     {
+      "question": null,
       "title": "The sex scenes are frank and narratively essential",
       "body": "Rooney writes about sex frankly and specifically, using physical intimacy as a way to show what Connell and Marianne cannot articulate verbally. The novel's sex scenes are detailed but not gratuitous — they reveal character. Connell's gentleness during sex contrasts with his cowardice outside the bedroom. Marianne's request that Jamie hit her shows how her family abuse has shaped her sexuality.\n\nThe series handles this with equal frankness, which was controversial but is narratively correct. Intimacy coordinator Ita O'Brien worked with Mescal and Edgar-Jones to choreograph scenes that feel genuinely collaborative rather than observed. The result is sex that looks like communication — hesitant, generous, sometimes painful — rather than performance. The scene in Episode 5 where Marianne asks Connell to hit her and he refuses is more powerful on screen than on the page because you see his physical recoil."
     },
     {
+      "question": null,
       "title": "Marianne's family abuse is compressed",
       "body": "The novel spends significant time establishing the specific dynamics of Marianne's home life: her brother Alan's physical violence, her mother Denise's emotional cruelty, the way both treat her as fundamentally unlovable. This context is crucial for understanding why Marianne later seeks out relationships where she's hurt, and why she believes Connell's kindness cannot be genuine.\n\nThe series compresses this, partly for runtime and partly because showing sustained domestic abuse on screen is more difficult than describing it. We see Alan hit Marianne and Denise's coldness, but the accumulation is less thorough. This means some of Marianne's behavior in later episodes — particularly her relationship with Lukas in Sweden — is slightly less grounded than it is on the page. The novel makes it clearer that Marianne is not choosing pain arbitrarily; she's repeating the only pattern of intimacy she knows."
     },
     {
+      "question": null,
       "title": "The ending carries more weight on the page",
       "body": "Both versions end in the same place: Connell has been accepted to a writing MFA program in New York, and Marianne tells him to go, that she'll always be there. It's deliberately ambiguous — neither a clean break nor a commitment, which is true to the characters and their pattern of connection and separation.\n\nThe series builds toward this moment across twelve episodes, and the final scene — Connell and Marianne walking through Dublin, the camera pulling back — is beautifully executed. But the novel's ending carries more weight because Rooney has spent 266 pages inside both their heads. The accumulation of their interior lives means the final ambiguity feels earned rather than imposed. The series does it well; the novel does it better.\n\nEither order works, which is genuinely unusual. If you read first, the series gives you Mescal's performance — the way he makes Connell's body language a form of dialogue — and Edgar-Jones's physical transformation, which adds something the novel cannot provide. If you watch first, the novel gives you the interior dimension that the series, excellent as it is, cannot fully reach. You'll understand why Connell doesn't ask Marianne to the Debs, not just that he doesn't.\n\nThe ideal approach is both. Read the novel for Rooney's free indirect style and her precision about class and intimacy. Watch the series for Mescal and Edgar-Jones, for the Irish locations, for the way Abrahamson and Macdonald use close-ups to create privacy. This is one of the rare cases where neither version is definitively better — they're complementary rather than competitive."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/normal-people",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }

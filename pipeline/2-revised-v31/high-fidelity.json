@@ -64,22 +64,27 @@
   ],
   "differences": [
     {
+      "question": null,
       "title": "London vs Chicago — The Transatlantic Shift",
       "body": "The novel is specifically set in North London — Hornby names streets, pubs, and neighborhoods that anchor Rob's world in a particular geography and class texture.\n\nFrears and Cusack moved the story to Chicago, which has its own music culture — blues, house, independent record shops — and its own specific flavour of self-aware urban cool. Championship Vinyl becomes a Wicker Park fixture. The transposition works because Hornby's subject, a certain kind of emotionally avoidant man who uses culture as a shield, is not specifically British. He is universal enough to survive the crossing.\n\nThe film loses some of the novel's class-consciousness — the British relationship between education, aspiration, and record shop ownership — but gains Chicago's authentic music history. Remarkably, almost nothing essential is lost."
     },
     {
+      "question": null,
       "title": "Rob's Direct Address to Camera",
       "body": "The novel is written in Rob's first person — a confessional, self-deprecating voice that is aware of its own evasions and uses humor to deflect genuine feeling.\n\nThe film gives Cusack extended direct address to the camera. Rob talks to the audience as he talks to himself in the novel, explaining his situation, making his lists, rationalising his behaviour. He breaks the fourth wall constantly, turning the viewer into his confidant and accomplice.\n\nThis is exactly the right adaptation of the prose voice into cinematic terms. Cusack's delivery of these monologues — wry, self-aware, occasionally desperate — is the film's greatest achievement. It preserves Hornby's tone without resorting to voiceover narration."
     },
     {
+      "question": null,
       "title": "Jack Black's Barry — From Supporting to Scene-Stealing",
       "body": "Barry is a supporting character in the novel, vivid but not central. He argues about music, insults customers, and represents one version of what Rob might become if he never grows up.\n\nJack Black's performance made Barry one of the most memorable supporting characters in the film's era. Black's Barry is funnier, more physically expressive, and more immediately likeable than Hornby's. He gets extended comic sequences — the argument about whether to sell a record to a customer, his karaoke performance of Marvin Gaye's \"Let's Get It On\" — that shift the story's balance slightly toward ensemble comedy.\n\nThis is a slight distortion of the novel's emotional architecture, which keeps Rob at the center, but an undeniable pleasure. Black earned the role a prominence that influenced how audiences remember the story."
     },
     {
+      "question": null,
       "title": "The Music — Soundtrack as Argument",
       "body": "Hornby's novel is saturated with specific musical references. Rob stocks obscure singles, compiles top five lists of songs for every occasion, and uses music as a way of organizing his emotional history. The novel names dozens of artists — The Clash, Aretha Franklin, The Velvet Underground — and treats musical taste as a form of identity.\n\nThe film uses licensed music throughout and includes a genuinely brilliant sequence in which Rob, Barry, and Dick debate the merits of various songs while processing Rob's grief. The soundtrack — curated by Cusack and featuring The Kinks, Bob Dylan, Stevie Wonder, and others — is impeccable. The film adds a subplot in which Rob produces a single for a local musician, giving the music a narrative function beyond decoration.\n\nBoth versions understand that the music is not decoration but argument — evidence of how Rob thinks and what he uses thinking for. The film's soundtrack became iconic in its own right."
     },
     {
+      "question": null,
       "title": "Laura — From Partial Account to Full Presence",
       "body": "Hornby's Laura is rendered through Rob's partial and self-serving account of her. We see her only as Rob sees her, which makes her both more mysterious and more sympathetic than his version admits. The novel's structure — Rob's first-person narration — means we never fully escape his perspective.\n\nIben Hjejle plays Laura with a quality of weary intelligence. The film gives her scenes without Rob, moments where we see her making decisions independent of his narrative. She is more fully present, which is warmer and slightly reduces the gap between Rob's version of events and the truth.\n\nThis is a necessary adaptation choice — film requires characters to exist outside the narrator's gaze — but it changes the novel's epistemological game. Hornby's Laura is unknowable because Rob is an unreliable narrator. The film's Laura is knowable, which makes her more human but less enigmatic.\n\nEither order works — this is one of the most comfortable either-order recommendations on the site, alongside About a Boy. The film is so faithful in spirit that watching first loses almost nothing. You will still experience the novel's wit, its specific observations about music and masculinity, and Hornby's prose style, which is sharper and more interior than the film can be. Read first for the full texture of Rob's London voice and the novel's class-consciousness.\n\nWatch first for Cusack's monologues, Jack Black's Barry, and the impeccable soundtrack. The film is a complete experience on its own terms, and knowing the plot does not diminish the novel's pleasures. Both versions are essential. This is one of the rare cases where you can genuinely choose based on mood rather than strategy."
     }
@@ -145,5 +150,28 @@
   "hasCharTable": true,
   "generation": "v2",
   "_warnings": [],
-  "_warningCount": 0
+  "_warningCount": 0,
+  "primaryKeyword": null,
+  "secondaryKeywords": [],
+  "targetQueries": [],
+  "winnerStatement": null,
+  "hook": null,
+  "entities": [],
+  "snippetParagraph": null,
+  "atAGlanceTable": null,
+  "keyDifferencesList": null,
+  "optimizedH2s": null,
+  "og": null,
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@booksversusmovies"
+  },
+  "images": null,
+  "canonicalUrl": "https://booksversusmovies.com/high-fidelity",
+  "hasAtAGlanceTable": false,
+  "hasSnippetParagraph": false,
+  "hasKeyDifferencesList": false,
+  "hasOpenGraph": false,
+  "hasOptimizedH2s": false,
+  "_schemaVersion": "3.1"
 }
