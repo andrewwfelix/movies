@@ -43,11 +43,12 @@ const SLUG_FILTER  = get('--slug', null);
 const DRY_RUN      = hasFlag('--dry');
 const LIMIT        = parseInt(get('--limit', '0')) || 0;
 const CALL_FILTER  = parseInt(get('--call', '0')) || 0; // run only one call number
+const INPUT_DIR    = get('--input',  'pipeline/2-revised-v31');
+const OUTPUT_DIR   = get('--output', null); // defaults based on mode below
 
 // ── Paths + Config ───────────────────────────────────────────────────────────
 
 const ROOT        = path.resolve(__dirname, '..', '..');
-const SRC_DIR     = path.join(ROOT, 'pipeline', '2-revised');
 const SITE_URL    = 'https://booksversusmovies.com';
 const CONFIG_PATH = path.join(ROOT, 'config', 'seo-review.json');
 
@@ -58,8 +59,11 @@ if (!fs.existsSync(CONFIG_PATH)) {
 
 const CONFIG   = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
 const FP       = CONFIG.fullpage;
-const DEV_MODE = hasFlag('--dev') || process.env.DEV_MODE === 'true';
-const MODE     = DEV_MODE ? 'dev' : 'prod';
+const DEV_MODE   = hasFlag('--dev') || process.env.DEV_MODE === 'true';
+const MODE       = DEV_MODE ? 'dev' : 'prod';
+const DEFAULT_OUT = DEV_MODE ? 'pipeline/2-revised-v31-haiku' : 'pipeline/2-revised-v31-sonnet';
+const SRC_DIR    = path.join(ROOT, INPUT_DIR);
+const OUT_DIR    = path.join(ROOT, OUTPUT_DIR || DEFAULT_OUT);
 
 // ── Load .env ─────────────────────────────────────────────────────────────────
 
@@ -316,13 +320,14 @@ Return ONLY a JSON object:
 // ── Field already populated check ─────────────────────────────────────────────
 
 function callNeeded(page, callNum) {
+  const missing = v => v === null || v === undefined || (Array.isArray(v) && v.length === 0);
   switch(callNum) {
-    case 1: return !page.primaryKeyword || !page.winnerStatement || !page.entities?.length;
-    case 2: return !page.snippetParagraph;
-    case 3: return !page.atAGlanceTable || !page.atAGlanceTable.length;
-    case 4: return !page.keyDifferencesList || !page.keyDifferencesList.length;
-    case 5: return !page.optimizedH2s || !page.optimizedH2s.keyDifferences;
-    case 6: return !page.og || !page.og.title;
+    case 1: return missing(page.primaryKeyword) || missing(page.winnerStatement) || missing(page.entities);
+    case 2: return missing(page.snippetParagraph);
+    case 3: return missing(page.atAGlanceTable);
+    case 4: return missing(page.keyDifferencesList);
+    case 5: return missing(page.optimizedH2s) || missing(page.optimizedH2s?.keyDifferences);
+    case 6: return missing(page.og) || missing(page.og?.title);
     default: return true;
   }
 }
@@ -445,17 +450,30 @@ function getCallConfig(callNum) {
 // ── Load records ──────────────────────────────────────────────────────────────
 
 function loadRecords() {
+  if (!fs.existsSync(SRC_DIR)) {
+    console.error(`✗ Input directory not found: ${INPUT_DIR}`);
+    process.exit(1);
+  }
+  if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
+
   let files = fs.readdirSync(SRC_DIR).filter(f => f.endsWith('.json')).sort();
   if (SLUG_FILTER) {
     files = files.filter(f => f.replace('.json','') === SLUG_FILTER);
     if (!files.length) { console.error(`✗ No JSON for: ${SLUG_FILTER}`); process.exit(1); }
   }
   if (LIMIT > 0) files = files.slice(0, LIMIT);
-  return files.map(file => ({
-    file,
-    jsonPath: path.join(SRC_DIR, file),
-    data: JSON.parse(fs.readFileSync(path.join(SRC_DIR, file), 'utf8')),
-  }));
+  return files.map(file => {
+    // Read from input dir — check output dir first in case of partial run
+    const outPath = path.join(OUT_DIR, file);
+    const srcPath = path.join(SRC_DIR, file);
+    const readPath = fs.existsSync(outPath) ? outPath : srcPath;
+    return {
+      file,
+      srcPath,
+      outPath,
+      data: JSON.parse(fs.readFileSync(readPath, 'utf8')),
+    };
+  });
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
@@ -465,6 +483,8 @@ async function run() {
   const callNums = CALL_FILTER ? [CALL_FILTER] : [1,2,3,4,5,6];
 
   console.log(`\nseo-llm-fullpage.js`);
+  console.log(`Input:    ${INPUT_DIR}`);
+  console.log(`Output:   ${OUTPUT_DIR || DEFAULT_OUT}`);
   console.log(`Records:  ${records.length}`);
   console.log(`Calls:    ${callNums.join(', ')}`);
   console.log(`Dry run:  ${DRY_RUN ? 'yes' : 'no'}`);
@@ -487,7 +507,7 @@ async function run() {
   let totalFailed  = 0;
 
   for (let i = 0; i < records.length; i++) {
-    const { file, jsonPath, data: page } = records[i];
+    const { file, srcPath, outPath, data: page } = records[i];
     console.log(`\n[${i+1}/${records.length}] ${page.slug}`);
 
     let pageModified = false;
@@ -519,7 +539,7 @@ async function run() {
       pageModified = true;
 
       // Save immediately after each successful call
-      fs.writeFileSync(jsonPath, JSON.stringify(page, null, 2), 'utf8');
+      fs.writeFileSync(records[i].outPath, JSON.stringify(page, null, 2), 'utf8');
 
       process.stdout.write(` ✓ saved\n`);
       totalApplied++;

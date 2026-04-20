@@ -30,6 +30,7 @@ const DRY_RUN     = hasFlag('--dry');
 
 const ROOT    = path.resolve(__dirname, '..', '..');
 const SRC_DIR = path.join(ROOT, 'pipeline', '2-revised');
+const OUT_DIR = path.join(ROOT, 'pipeline', '2-revised-v31');
 
 // New v3.1 fields with defaults
 function getNewFields(slug) {
@@ -80,6 +81,8 @@ async function run() {
   }
 
   console.log(`\nschema-migrate.js`);
+  console.log(`Input:    pipeline/2-revised/`);
+  console.log(`Output:   pipeline/2-revised-v31/`);
   console.log(`Files:    ${files.length}`);
   console.log(`Dry run:  ${DRY_RUN ? 'yes' : 'no'}`);
   console.log(`${'─'.repeat(56)}`);
@@ -88,8 +91,9 @@ async function run() {
   let alreadyCurrent = 0;
 
   for (const file of files) {
-    const jsonPath = path.join(SRC_DIR, file);
-    const page = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+    const srcPath = path.join(SRC_DIR, file);
+    const outPath = path.join(OUT_DIR, file);
+    const page = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
     const slug = page.slug || file.replace('.json','');
 
     if (page._schemaVersion === '3.1') {
@@ -118,10 +122,11 @@ async function run() {
     }
 
     if (DRY_RUN) {
-      console.log(`  ${slug}: would add ${fieldsAdded} fields → v3.1`);
+      console.log(`  ${slug}: would add ${fieldsAdded} fields → pipeline/2-revised-v31/`);
     } else {
-      fs.writeFileSync(jsonPath, JSON.stringify(page, null, 2), 'utf8');
-      console.log(`  ${slug}: +${fieldsAdded} fields → v3.1`);
+      if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
+      fs.writeFileSync(outPath, JSON.stringify(page, null, 2), 'utf8');
+      console.log(`  ${slug}: +${fieldsAdded} fields → pipeline/2-revised-v31/`);
     }
     migrated++;
   }
@@ -134,7 +139,7 @@ async function run() {
   } else {
     console.log(`✓ Migrated:     ${migrated} pages`);
     console.log(`→ Already v3.1: ${alreadyCurrent} pages`);
-    console.log(`\nNext: node scripts/utils/seo-llm-fullpage.js\n`);
+    console.log(`\nNext: node scripts/utils/seo-llm-fullpage.js\n  (reads pipeline/2-revised-v31/)\n`);
   }
 }
 
