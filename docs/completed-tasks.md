@@ -3,7 +3,7 @@
 [//]: # (Rules: H1 title, H2 sections, H3 subsections, dates YYYY-MM-DD, no escaped chars, no asterisk bullets)
 
 # BooksVersusMovies.com — Completed Tasks
-Last updated: 2026-04-19
+Last updated: 2026-04-20
 Format: [YYYY-MM-DD] Description — one entry per task
 
 ---
@@ -225,25 +225,49 @@ Format: [YYYY-MM-DD] Description — one entry per task
 - [2026-04-19] docs/strategy/seo-greenfield.md — client-facing greenfield site guide
 - [2026-04-19] docs/strategy/seo-pipeline-gameplan.md — multi-model pipeline philosophy document
 - [2026-04-19] scripts/utils/schema-migrate.js — reads pipeline/2-revised/, writes to pipeline/2-revised-v31/ with null v3.1 fields. Run complete (171 pages).
-- [2026-04-19] scripts/utils/seo-llm-fullpage.js — 7-call per-page v3.1 field generator. Per-call model config, separate input/output dirs, inline verification, 0-tolerance failure threshold, --dev/--force/--slug/--limit flags
+- [2026-04-19] scripts/utils/seo-llm-fullpage.js — 7-call per-page v3.1 field generator. Per-call model config, separate input/output dirs, inline verification, --dev/--force/--slug/--limit flags
 - [2026-04-19] config/seo-review.json — updated with fullpage.calls section, per-call prod/dev model config
 - [2026-04-19] pipeline/2-revised/ and pipeline/1-extracted/ added to git tracking (removed from .gitignore)
 - [2026-04-19] Branch schema-v31-migration-2 created off main for v3.1 migration work
 - [2026-04-19] schema-migrate.js run — 171 pages migrated to pipeline/2-revised-v31/
-- [2026-04-19] seo-llm-fullpage.js dev run in progress — stopped at page 52/171 (hannibal-series call 5 verification failure, fix applied)
 - [2026-04-19] Three verification bugs caught and fixed during dev run: N/A table check, H2 title word-level matching, callNums missing Call 7
 - [2026-04-19] docs/session-handoff.md — comprehensive session handoff document created
 
 ---
 
+## 2026-04-20
+
+- [2026-04-20] seo-llm-fullpage.js — removed hard stop on failures, writes to pipeline/content-issues/, run never stops on page or call failure
+- [2026-04-20] pipeline/content-issues/ — failure logging directory established
+- [2026-04-20] seo-llm-fullpage.js — Call 5 prompt tightened: EVERY H2 must include exact book/film title by name
+- [2026-04-20] seo-llm-fullpage.js dev run complete — haiku, 171 pages in pipeline/2-revised-v31-haiku/
+- [2026-04-20] seo-llm-fullpage.js prod run complete — Sonnet, 171 pages in pipeline/2-revised-v31-sonnet/
+- [2026-04-20] Content issues resolved: hamnet timeouts retried, it-muschietti + one-day call 5 fixed, call 6 og.title overages (61-65 chars) accepted as non-blocking
+- [2026-04-20] pipeline-render.js — desktop layout: page-layout grid wrapper, renderRightRail(), difference section anchor IDs, second CTA block removed
+- [2026-04-20] style.css — desktop two-column layout, right rail styles, quick answer horizontal strip, meta badge prominence, FAQ questions bold + ink color
+- [2026-04-20] All 171 pages re-rendered with new desktop layout and pushed to production
+- [2026-04-20] Desktop layout multi-LLM review — right rail, quick answer strip, meta badge confirmed. Hero redesign, character table, alternating layouts deferred.
+- [2026-04-20] trim-index.js — utility to extract fold-relevant HTML for LLM layout review (scripts/utils/)
+- [2026-04-20] analyze-gsc-morning.js — major revision: 90-day + 7-day, deltas, dynamic protection, greenfield slugs, LLM 90s timeout, content scope fix, markdown brief, delta CTR field
+- [2026-04-20] gsc-prompt.txt — revised: site context, protection rules, external signal confidence guide, greenfield publish opportunities, April 19 deployment context, delta field guide, publishOpportunities schema
+- [2026-04-20] brainstorm.js — two-model iterative brainstorm utility, full conversation history per turn, Model B final adjudicator (scripts/utils/)
+- [2026-04-20] config/brainstorm.json + scripts/prompts/brainstorm-prompt.txt — brainstorm config and prompt file
+- [2026-04-20] Grok migration script feedback reviewed — normalizeTable() added to architecture rules + future scripts
+- [2026-04-20] Grok ContentForge pitch deck reviewed — saved to docs/business-pitch-ideas/, retainer model to lead, traction slide to be updated
+- [2026-04-20] Performance goals JSON + update script reviewed — saved to docs/performance-goals/, added to medium priority kanban
+- [2026-04-20] docs/ restructured — auto-improvement-thoughts/, business-pitch-ideas/, morning-analysis/, new-desktop-ui-fixes/, performance-goals/ directories created
+- [2026-04-20] schema-v31-migration-2 merged to main and pushed
+- [2026-04-20] Impression spike on older pages noted — investigate next session with fresh GSC data
+
+---
+
 ## Current State
 
-Status: v3.1 migration in progress on schema-v31-migration-2 branch
-Date: 2026-04-19
-Branch: schema-v31-migration-2
+Status: v3.1 migration complete, merged to main
+Date: 2026-04-20
+Branch: main
 Pages: 191 URLs in sitemap (171 reviews + 10 pillars + 10 static)
-Pipeline/2-revised: 162 pages with new titles/metas, deployed
-Pipeline/2-revised-v31: 171 pages migrated with null v3.1 fields
-Pipeline/2-revised-v31-haiku: 51 pages complete, stopped at page 52
-GSC: 13 clicks, 306 impressions, 3.28% CTR, avg position 26.8 (28-day)
-Top performer: Reminders of Him — 8.84% CTR, position 8.29
+Pipeline/2-revised-v31-sonnet: 171 pages complete with all v3.1 fields
+Rendered: 171 pages re-rendered with desktop layout, right rail, quick answer strip
+GSC: impression spike observed on older pages — investigation pending
+Top performer: Reminders of Him — protected permanently

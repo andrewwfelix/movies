@@ -9,55 +9,40 @@ Last updated: 2026-04-20
 
 ## In Progress
 
-- Schema v3.1 migration — branch schema-v31-migration-2, prod Sonnet run in progress (~50 pages complete)
-- seo-llm-fullpage.js prod run — node scripts/utils/seo-llm-fullpage.js (Sonnet, pipeline/2-revised-v31-sonnet/)
+- v3.1 migration complete — schema-v31-migration-2 merged to main and pushed
 
 ---
 
-## Today / Next Session
+## Next Session
 
-### Priority 1 — Content review of revised pipeline (v3.1)
+### Priority 1 — Morning analysis script deployment
 
-- [ ] Wait for prod Sonnet run to complete — pipeline/2-revised-v31-sonnet/
-- [ ] Spot check prod output — 10-15 pages across genres
-- [ ] Update pipeline-render.js for v3.1 fields — snippetParagraph, atAGlanceTable, keyDifferencesList, optimizedH2s, og/twitter, image alts, canonicalUrl, differences[].question
-- [ ] Re-render all pages from v31-sonnet output — node scripts/pipeline-render.js --all --force
-- [ ] Spot check rendered HTML — verify new structural elements appear correctly
-- [ ] Deploy v3.1 pages to production
-- [ ] Commit and push all changes on schema-v31-migration-2 branch
-
-### Priority 2 — Individual page UI/UX render fixes (desktop)
-
-- [ ] Test pipeline-render.js desktop layout changes on single page — node scripts/pipeline-render.js --slug gone-girl --force
-- [ ] Verify right rail renders correctly — verdict, CTA, jump links
-- [ ] Verify quick answer horizontal strip on desktop
-- [ ] Verify meta strip badge prominence
-- [ ] Spot check mobile layout unchanged
-- [ ] Deploy style.css + pipeline-render.js desktop fixes
-- [ ] Investigate impression spike on older pages — noticed 2026-04-20 during Sonnet prod run
-      - Possible causes: new titles/metas getting crawled, pillar page authority passing, Google query-matching evaluation
-      - Cross-reference GSC by page and query — check if spike correlates with 2026-04-19 title/meta deployment
-      - Check with fresh GSC data after prod run completes
-
-### Priority 3 — Morning analysis script
-
-- [ ] Deploy analyze-gsc-morning.js revised version — 90-day + 7-day, deltas, dynamic protection, greenfield slugs
-- [ ] Deploy gsc-prompt.txt revised version — site context, protection rules, external signals, publish opportunities
+- [ ] Deploy analyze-gsc-morning.js revised version — 90-day + 7-day, deltas, dynamic protection, greenfield slugs, LLM timeout
+- [ ] Deploy gsc-prompt.txt revised version — site context, protection rules, external signals, publish opportunities, delta field guide
 - [ ] Test run — node scripts/analyze-gsc-morning.js
 - [ ] Verify JSON report + markdown brief both save correctly
 - [ ] Verify protected pages auto-detected from live data
 - [ ] Add to daily cron or morning workflow
 
+### Priority 2 — Investigate impression spike
+
+- [ ] Run morning script — pull fresh GSC data
+- [ ] Cross-reference impression spike against 2026-04-19 title/meta deployment
+- [ ] Check if spike correlates with specific pages or query patterns
+- [ ] Document findings in docs/morning-analysis/
+
+### Priority 3 — Pipeline robustness: normalizeTable()
+
+- [ ] Add normalizeTable() to seo-llm-fullpage.js Call 3 — auto-reconciles N/A values
+      - if book = N/A and film has content: book = "Not emphasized in the novel"
+      - if film = N/A and book has content: film = "Not shown in the film"
+      - Prevents call 3 verification failures without prompt changes
+      - Grok feedback confirmed this is the right fix
+
 ---
 
 ## High Priority
 
-- [ ] Desktop layout audit — fix fold problem, sidebar, review snippet disconnect, info density
-      - at-a-glance table and first difference must be visible above fold on desktop
-      - replace sidebar with jump-to-differences menu + verdict box + affiliate CTA
-      - add visible rating/verdict box near top so Review Snippet CTR converts (162 impressions, 0 clicks)
-      - widen content column on desktop, move toward side-by-side table layout for differences
-      - root cause: 0.45% desktop CTR vs significantly higher mobile engagement
 - [ ] Affiliate links — "Watch on Amazon" for top pages
       - APPROACH: semi-automated hybrid — manual lookup once per title, stored in JSON
       - Step 1: run morning script, check topPagesByImpressions, identify top 10
@@ -70,7 +55,7 @@ Last updated: 2026-04-20
       - Morning script: flag pages where videoAffiliateLink is null as a data gap
       - Andrew doing manual lookups in downtime — not blocking pipeline work
       - Note: swap tracking ID from readingtheill-20 to LLC ID after W-9 confirmed
-- [ ] Replace manual .env parser with dotenv package across all scripts (after migration complete)
+- [ ] Replace manual .env parser with dotenv package across all scripts
 - [ ] Transfer movies repo from andrewwfelix to Andrew-RavensEdge on GitHub
 - [ ] Fix orphaned schema-v31-migration branch worktree issue
 - [ ] DMARC DNS record — _dmarc TXT v=DMARC1; p=none; rua=mailto:andrew@ravensedge.ai
@@ -115,12 +100,17 @@ Last updated: 2026-04-20
 - [ ] Auto-implement pipeline — GSC detects low CTR → auto-queue SEO fix → Claude adjudicates → re-renders overnight. No human involvement.
 - [ ] Task router — structured task objects dispatched to right model by type/cost
 - [ ] PA API script — Node.js search for movie title in Movies and TV category, returns direct Prime Video affiliate link for videoAffiliateLink field population
+- [ ] Smart retry with corrective prompt — on verification failure, re-call with specific error context instead of blind retry. Grok feedback: cuts failures significantly.
 
 ---
 
 ## Partner Meeting Prep (14 days)
 
 - [ ] docs/strategy/seo-greenfield.md is the client pitch doc — review before meeting
+- [ ] docs/business-pitch-ideas/ — Grok ContentForge pitch deck saved here for reference
+      - Lead with retainer model not done-for-you — positions as system not content agency
+      - Traction slide: update to 171 pages, full pipeline, GSC intelligence, multi-model review
+      - "ContentForge" brand name worth considering for the system
 - [ ] Have Vercel backend live with dashboard showing real data for demo
 - [ ] Prepare content taxonomy example for her domain
 - [ ] Prepare timeline slide — week 1 through month 6 realistic traffic expectations
@@ -129,6 +119,12 @@ Last updated: 2026-04-20
 
 ## Medium Priority
 
+- [ ] Performance goals dashboard — track progress toward traffic and affiliate milestones
+      - performance-goals.json designed (docs/performance-goals/) — baseline: 400 impressions/day, 10 clicks/day
+      - update-performance-goals.js drafted — reads latest GSC report, updates baseline, appends history
+      - Wire into admin dashboard as new tab — milestone progress bars, daily vs target
+      - Auto-run after morning analysis script
+      - First sale target: 1200 daily impressions, 30 daily clicks by 2026-05-25
 - [ ] Genre hub pages — /thriller, /romance, /literary-fiction
 - [ ] WebP conversion for book cover images
 - [ ] Reader verdict poll below verdict box
@@ -162,6 +158,7 @@ Last updated: 2026-04-20
 - 0 tolerance verification — stop on any failure, fix the rule not the threshold
 - Protect high-performing pages — never auto-apply changes to pages with CTR > 5% or position < 10
 - Never stop a pipeline run on individual page failures — log to content-issues/, continue
+- normalizeTable() before verification — fix N/A structurally, not via prompt retry
 
 ---
 
@@ -173,6 +170,7 @@ Last updated: 2026-04-20
         traffic decline risk. The pipeline itself is the asset, not the affiliate revenue.
       - CORE VALUE PROPOSITION: "High-signal, SEO-optimized, structured media comparison
         content at scale — with built-in trend detection and performance intelligence."
+      - BRAND: "ContentForge" — The Operating System for High-Performance Media Comparison Content
       - TARGET COMPANY TYPES (priority order):
         1. Major book publishers — backlist + new release promotion, direct-to-retailer traffic
         2. Streaming services (Netflix, Prime, Hulu, Disney+) — adaptation comparison hubs
@@ -180,21 +178,18 @@ Last updated: 2026-04-20
         4. Education / study guide platforms — modern SparkNotes replacement
         5. Large media/entertainment sites — white-label comparison vertical
         6. AI companies — structured human-curated comparison data for training/citation
-      - POSSIBLE REVENUE MODELS:
-        - Done-for-you content service ($X/month, 8-15 articles + ongoing optimization)
+      - POSSIBLE REVENUE MODELS (lead with retainer):
+        - Retainer + performance — positions as system not agency
         - White-label / SaaS pipeline (license prompts, scripts, GSC workflow)
+        - Done-for-you content service ($X/month, 8-15 articles + ongoing optimization)
         - Consulting + training (help internal teams adopt the system)
-        - Hybrid: setup fee + monthly retainer + performance bonus
       - KEY PITCH ANGLE: "AI search is summarizing your content for free. We create owned
         comparison content that ranks, gets cited by AI, and drives direct traffic back to
         you — while giving you full control over the narrative."
-      - DIFFERENTIATORS: data-driven GSC insights, structured + reusable pipeline,
-        battle-tested on live site, optimized for AI citation signals
+      - Grok pitch deck saved to docs/business-pitch-ideas/ — 10-slide ContentForge deck
       - NEXT STEPS WHEN READY: pick 2-3 dream clients (one publisher + one streaming service),
-        build one-page case study from booksversusmovies.com data, draft pitch deck or Loom,
-        outreach via LinkedIn / warm intro — light ask, 15 min call
-      - NOTE: partner meeting in ~14 days is a live test of this pitch model.
-        docs/strategy/seo-greenfield.md is the current client-facing document.
+        build one-page case study from booksversusmovies.com data, outreach via LinkedIn
+      - NOTE: partner meeting in ~14 days is a live test of this pitch model
 - [ ] About page rewrite — real person, real story, why this site exists
 - [ ] Voice pass on top 10 traffic pages — sharpen opinions, remove hedging
 - [ ] Hire Content Researcher (Person 1)
@@ -230,15 +225,25 @@ Status: gated on LLC setup
 
 - [x] seo-llm-fullpage.js — removed hard stop on failures, writes slug+issue to pipeline/content-issues/, run continues under all circumstances
 - [x] pipeline/content-issues/ directory established for failure logging
-- [x] seo-llm-fullpage.js dev run completed clean (haiku)
-- [x] seo-llm-fullpage.js prod run started — Sonnet, pipeline/2-revised-v31-sonnet/
-- [x] pipeline-render.js — desktop layout added: page-layout wrapper, renderRightRail(), difference anchor IDs
-- [x] style.css — desktop two-column grid, right rail styles, quick answer horizontal strip, meta badge prominence
+- [x] seo-llm-fullpage.js — Call 5 prompt tightened: EVERY question must include exact book/film title by name
+- [x] seo-llm-fullpage.js dev run completed clean (haiku, 171 pages)
+- [x] seo-llm-fullpage.js prod run completed — Sonnet, 171 pages in pipeline/2-revised-v31-sonnet/
+- [x] Content issues resolved — hamnet retried (timeouts), it-muschietti + one-day call 5 retried, call 6 og.title minor overages accepted (61-65 chars)
+- [x] pipeline-render.js — desktop layout: page-layout wrapper, renderRightRail(), difference anchor IDs, removed second CTA block
+- [x] style.css — desktop two-column grid, right rail styles, quick answer horizontal strip, meta badge prominence, FAQ questions bold + ink color
+- [x] Gone Girl test render reviewed — right rail, jump links, quick answer strip all confirmed working
+- [x] All 171 pages re-rendered with new desktop layout
 - [x] trim-index.js — utility script to extract fold-relevant HTML for LLM layout review
-- [x] analyze-gsc-morning.js — major revision: 90-day + 7-day deltas, dynamic protection, greenfield slugs, LLM timeout, content scope fix, markdown brief restored
-- [x] gsc-prompt.txt — revised: site context block, protection rules, external signal confidence guide, greenfield publish opportunities, April 19 deployment context, delta field guide
-- [x] Desktop layout reviewed by multiple LLMs — consensus: right rail is highest priority, quick answer horizontal strip, meta badge. Defer hero redesign, character table, alternating layouts.
-- [x] Impression spike on older pages noted for investigation — possible causes: title/meta crawl, pillar authority, Google query evaluation
+- [x] analyze-gsc-morning.js — major revision: 90-day + 7-day deltas, dynamic protection, greenfield slugs, LLM timeout, content scope fix, markdown brief, delta CTR field
+- [x] gsc-prompt.txt — revised: site context, protection rules, external signal confidence guide, greenfield publish opportunities, April 19 deployment context, delta field guide
+- [x] brainstorm.js + brainstorm.json + brainstorm-prompt.txt — two-model iterative brainstorm utility built and configured
+- [x] Desktop layout reviewed by multiple LLMs — consensus on right rail priority, quick answer strip, meta badge. Hero redesign, character table, alternating layouts deferred.
+- [x] Impression spike on older pages noted for investigation
+- [x] Grok migration script feedback reviewed — normalizeTable() added to future scripts + architecture rules
+- [x] Grok ContentForge pitch deck reviewed — saved to docs/business-pitch-ideas/, retainer model to lead
+- [x] Performance goals JSON + update script reviewed — added to medium priority
+- [x] docs/ restructured — auto-improvement-thoughts/, business-pitch-ideas/, morning-analysis/, new-desktop-ui-fixes/, performance-goals/ created
+- [x] schema-v31-migration-2 merged to main and pushed
 
 ---
 
